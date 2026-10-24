@@ -335,3 +335,18 @@ footer.card-footer .sub {
   color: var(--muted); letter-spacing: 0.18em;
   text-transform: uppercase; margin-top: 4px;
 }
+
+/* ===== Back to top ===== */
+html { scroll-behavior: smooth; }
+.to-top {
+  display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  padding: 8px 30px 8px 18px; text-decoration: none;
+  background: var(--ink); color: var(--white);
+  font-family: var(--font-mono); font-size: 1rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+  border-bottom: 5px solid var(--red);
+}
+.to-top svg { width: 24px; height: 24px; fill: var(--red); }
+.to-top:hover { background: var(--red); }
+.to-top:hover svg { fill: var(--white); }
+.to-top:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }

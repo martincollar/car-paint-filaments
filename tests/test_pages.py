@@ -48,7 +48,7 @@ class PageBits(unittest.TestCase):
         page = build_html.render("hudson", "cz", [m], {}, [],
                                  {"display": "Hudson", "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson"})
         self.assertTrue(page.startswith("<!doctype html>"))
-        self.assertIn("</head>", page); self.assertIn("<body>", page)
+        self.assertIn("</head>", page); self.assertIn("<body", page)
         self.assertNotIn("autocolorlibrary", page)
 
 

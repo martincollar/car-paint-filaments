@@ -336,3 +336,18 @@ footer.card-footer .sub {
 
 a { color: var(--teal-deep); }
 img { max-width: 100%; }
+
+/* ===== Back to top ===== */
+html { scroll-behavior: smooth; }
+.to-top {
+  display: inline-flex; align-items: center; gap: 10px; margin-bottom: 16px;
+  padding: 7px 18px 7px 10px; text-decoration: none;
+  background: var(--navy); color: #fdf7e4; border-radius: 999px;
+  font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700;
+  box-shadow: 3px 3px 0 var(--orange), 3px 3px 0 1px var(--orange-deep);
+  transition: transform .08s, box-shadow .08s;
+}
+.to-top svg { width: 26px; height: 26px; padding: 5px; box-sizing: border-box; border-radius: 50%; background: var(--mustard); fill: var(--navy); }
+.to-top:hover { background: var(--teal-deep); }
+.to-top:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--orange); }
+.to-top:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
