@@ -134,19 +134,19 @@ HERO_CSS = """
 .hero-preview .hp-credit a { color: var(--muted); }
 /* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
 .hero-preview .hp-close, .hero-preview .hp-zoom {
-  position: absolute; top: 12px; width: 34px; height: 34px; padding: 0;
+  position: absolute; top: 12px; width: 24px; height: 24px; padding: 0;
   display: flex; align-items: center; justify-content: center;
-  border: 2px solid var(--navy); border-radius: 50%; cursor: pointer;
-  font-family: var(--font-display); font-size: 1.1rem; line-height: 1; color: var(--navy);
-  box-shadow: 2px 2px 0 var(--navy); transition: transform .08s, box-shadow .08s;
+  border: 1.5px solid var(--navy); border-radius: 50%; cursor: pointer;
+  font-family: var(--font-display); font-size: 0.8rem; line-height: 1; color: var(--navy);
+  box-shadow: 1.5px 1.5px 0 var(--navy); transition: transform .08s, box-shadow .08s;
 }
 .hero-preview .hp-close { right: 12px; background: var(--orange-weak); }
-.hero-preview .hp-zoom  { right: 54px; background: var(--mustard-weak); }
+.hero-preview .hp-zoom  { right: 42px; background: var(--mustard-weak); }
 .hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--mustard); }
-.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--navy); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(1.5px, 1.5px); box-shadow: 0 0 0 var(--navy); }
 .hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
-.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 42px; height: 42px; font-size: 1.3rem; }
-.hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 74px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; font-size: 1rem; }
+.hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview canvas { cursor: zoom-in; }
 .hero-preview.big {
   width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%);
@@ -163,7 +163,7 @@ HERO_CSS = """
 }
 .hero-preview.closed .hp-zoom { display: none; }
 .hero-preview.closed canvas, .hero-preview.closed .hp-name { display: none; }
-.hero-preview.closed { width: auto; padding: 10px 56px 8px 12px; min-height: 34px; }
+.hero-preview.closed { width: auto; padding: 10px 44px 8px 12px; min-height: 28px; }
 .hero-preview.closed .hp-close { top: 8px; right: 8px; }
 """
 
