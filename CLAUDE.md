@@ -52,14 +52,14 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
-**New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the live root page, not a green build.
+**New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the push to `main`.
 1. Work in a git worktree (`.worktrees/<branch>`, gitignored); symlink `.venv`, `filaments/sources` and `filaments/.cache` from the main checkout.
 2. `cars/<name>/car.json` (years newest-first, `pages_per_year`, URL patterns), then `scripts/fetch_car_cards.sh <name>` (ask the user before downloading).
 3. `card_layout.json`: pick only the chips that belong to the model; cards with smaller chips set `box_width`/`box_height` per card. Check the boxes on an overlay image before measuring.
 4. `scripts/rebuild.sh <name>`, unit tests, and show the user the sampling preview and the HTML page (check both region views) before pushing.
 5. **README.md "Current cars" table**: add or update the car's row (years, colour count, page link).
 6. **Publish**: `"publish": true` in `car.json` (only when the user wants it live). `build_site.sh` then adds it to the root index automatically; there is no hand-written list of cars on the site.
-7. Push to `main`, then confirm the `pages` workflow run succeeds (`https://api.github.com/repos/martincollar/car-paint-filaments/actions/runs`) and that **https://martincollar.github.io/car-paint-filaments/** links to `<name>/` and that `<name>/?region=int` opens the INT view. The deploy takes a few minutes; do not report "live" before checking.
+7. Push to `main`. The `pages` workflow deploys on its own: do not wait for it or check the build/live page unless the user asks.
 8. Update the car list in this file ("Current shops"-style docs) if it names cars, and say in the reply what was not done.
 9. The main checkout may be on another branch with someone else's uncommitted work: never commit there. Use a temporary worktree on `origin/main` to commit and push.
 
