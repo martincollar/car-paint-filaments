@@ -350,15 +350,14 @@ TOP_JS = ("(function(){var b=document.querySelector('.to-top');if(!b)return;docu
           "function f(){b.classList.toggle('show',window.scrollY>600)}addEventListener('scroll',f,{passive:true});f();})();")
 
 def counter_html():
-    """GoatCounter hit script + footer visitor number. Empty without config.GOATCOUNTER; silent on file:// and localhost."""
+    """GoatCounter hit tag + footer visitor number. Empty without config.GOATCOUNTER.
+    count.js itself skips localhost and file://, so previews don't count."""
     code = config.GOATCOUNTER
     if not code:
         return ""
     host = f"https://{code}.goatcounter.com"
-    return ("<script>(function(){var h=location.hostname;if(location.protocol==='file:'||h==='localhost'||h==='127.0.0.1')return;"
-            "var s=document.createElement('script');s.async=true;s.src='//gc.zgo.at/count.js';"
-            f"s.setAttribute('data-goatcounter','{host}/count');document.head.appendChild(s);"
-            "var v=document.getElementById('vc');if(!v)return;"
+    return (f'<script data-goatcounter="{host}/count" async src="//gc.zgo.at/count.js"></script>\n'
+            "<script>(function(){var v=document.getElementById('vc');if(!v)return;"
             f"fetch('{host}/counter/TOTAL.json').then(function(r){{return r.json()}})"
             ".then(function(d){v.textContent='Visitor no. '+d.count;v.hidden=false}).catch(function(){});})();</script>")
 
