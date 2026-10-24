@@ -35,6 +35,9 @@ SHOP_DEFAULTS     = SHOPS_DIR / "_defaults.yaml"            # rules shared by ev
 
 CARS_DIR = ROOT / "cars"
 
+# GoatCounter site code (https://<code>.goatcounter.com). Set GOATCOUNTER= (empty) for no visit counter.
+GOATCOUNTER = os.environ.get("GOATCOUNTER", "mkolar")
+
 # Material labels (shops/_defaults.yaml `materials`) grouped into the two page columns.
 PLA_MATERIALS  = ("PLA", "PLA+")
 PETG_MATERIALS = ("PETG",)
