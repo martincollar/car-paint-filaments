@@ -47,8 +47,8 @@ car-paint-filaments/
 │   ├── color_tools.py                # _load, median_rgb, filament_rgb, delta_e_2000
 │   ├── measure_car.py                # car colors from scanned cards → car_colors.json
 │   ├── measure_filaments.py          # one filaments.json from every filaments_raw*.json
-│   ├── compute_matches.py            # top-K PLA/PETG per car color → matches.json
-│   ├── prepare_thumbnails.py         # base64 swatches + product photos → thumbnails.json
+│   ├── compute_matches.py            # top-K PLA/PETG per car color → matches_<lib>.json
+│   ├── prepare_thumbnails.py         # base64 swatches + product photos → thumbnails_<lib>.json
 │   ├── build_html.py                 # final HTML page → cars/<car>/output/<car>.html
 │   ├── fetch_all.py                  # every shop: sitemap → rules → product pages → raw JSON
 │   ├── shoplib.py                    # polite HTTP, robots.txt, cache, sitemap, JSON-LD/microdata, rules
@@ -68,8 +68,8 @@ car-paint-filaments/
         ├── sources/                     # scanned color cards (jpg/png)
         ├── data/
         │   ├── car_colors.json          # measured car swatches
-        │   ├── matches.json             # top-K PLA/PETG per color
-        │   └── thumbnails.json          # inline base64 JPEGs for the HTML
+        │   ├── matches_{cz,intl}.json   # top-K PLA/PETG per color
+        │   └── thumbnails_{cz,intl}.json # inline base64 JPEGs for the HTML
         └── output/
             └── <car_name>.html          # final self-contained HTML page
 ```
@@ -149,6 +149,6 @@ The filament catalog is reused as-is; no need to re-fetch unless you want fresh 
 
 ## Dependencies
 
-Runtime: Python 3.11, pillow, numpy, colour-science, reportlab. All in `requirements.txt`.
+Runtime: Python 3.11, pillow, numpy, colour-science, pyyaml. All in `requirements.txt`.
 
 Nothing else outside the virtualenv — HTML is self-contained (no external JS, images embedded as base64) and the only external resources it loads are Google Fonts for the retro type pair.

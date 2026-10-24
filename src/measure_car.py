@@ -68,9 +68,7 @@ def main():
             records.append({
                 "name":        sw["name"],
                 "year":        year,
-                "hudson_code": sw.get("car_code", sw.get("hudson_code", "")),  # keep legacy key for existing consumers
                 "car_code":    sw.get("car_code", ""),
-                "ditzler":     sw.get("paint_ref", sw.get("ditzler", "")),     # keep legacy key
                 "paint_ref":   sw.get("paint_ref", ""),
                 "rgb":         list(rgb),
                 "hex":         rgb_to_hex(rgb),

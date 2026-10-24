@@ -1,6 +1,7 @@
 # Sitemap lists only parent pages (colour is a variant), so colours are pinned by hand.
 # The pinned image_url is the colour render; the page is fetched for availability only.
-# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+# pins: the only products of this shop (manual platform: nothing is discovered). Each fixes brand,
+# material, colour name and photo; the finish ban still applies.
 name: Prusa3D
 platform: manual
 base: https://www.prusa3d.com
@@ -13,26 +14,12 @@ pins:
   color_name: Anthracite Grey
   image_url: https://prusament.com/wp-content/uploads/2022/09/antracit_grey_new-256x236.png
   local_image: prusament-petg-anthracite-grey.jpg
-- url: https://www.prusa3d.com/product/prusament-petg-carmine-red-transparent-1kg/
-  slug: prusament-petg-carmine-red-transparent
-  brand: Prusament
-  material: PETG
-  color_name: Carmine Red Transparent
-  image_url: https://prusament.com/wp-content/uploads/2019/02/carmine_red2-256x236.png
-  local_image: prusament-petg-carmine-red-transparent.jpg
 - url: https://www.prusa3d.com/product/prusament-petg-chalky-blue-1kg/
   brand: Prusament
   material: PETG
   color_name: Chalky Blue
   image_url: https://prusament.com/wp-content/uploads/2020/09/chalky_blue-256x236.png
   local_image: prusament-petg-chalky-blue.jpg
-- url: https://www.prusa3d.com/product/prusament-petg-clear-1kg/
-  slug: prusament-petg-clear
-  brand: Prusament
-  material: PETG
-  color_name: Clear
-  image_url: https://prusament.com/wp-content/uploads/2020/02/clear-256x236.png
-  local_image: prusament-petg-clear.jpg
 - url: https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/
   slug: prusament-petg-jet-black
   brand: Prusament
@@ -245,13 +232,6 @@ pins:
   color_name: Mystic Brown
   image_url: https://prusament.com/wp-content/uploads/2018/09/mystic_brown_split-256x236.png
   local_image: prusament-pla-mystic-brown.jpg
-- url: https://www.prusa3d.com/product/prusament-pla-natural-1kg/
-  slug: prusament-pla-natural
-  brand: Prusament
-  material: PLA
-  color_name: Natural
-  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/02/95bff7d3-obrazek_2025-02-05_130832087-256x236.png
-  local_image: prusament-pla-natural.jpg
 - url: https://www.prusa3d.com/product/prusament-pla-noctua-beige-1kg-nfc/
   slug: prusament-pla-noctua-beige
   brand: Prusament

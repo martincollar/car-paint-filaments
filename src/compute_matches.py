@@ -1,7 +1,6 @@
 """For each car color, find top-K PLA and PETG filament candidates by ΔE2000.
 
-Writes `cars/<car>/data/matches_<library>.json` (and the legacy `matches.json`
-alias when --library cz, so older scripts keep working).
+Writes `cars/<car>/data/matches_<library>.json`.
 
 Usage:
     python compute_matches.py [--car <name>] [--library cz|intl] [--k 5]
@@ -31,23 +30,17 @@ def main():
 
     pla  = [f for f in filaments if f["material"] in ("PLA", "PLA+")]
     petg = [f for f in filaments if f["material"] == "PETG"]
-    other = [f for f in filaments if f["material"] not in ("PLA","PLA+","PETG")]
-    print(f"[{args.car}/{args.library}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG + {len(other)} other")
+    print(f"[{args.car}/{args.library}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG")
 
     matches = []
     for h in colors:
         rec = dict(h)
         rec["pla"]   = topk(h["rgb"], pla, k=args.k)
         rec["petg"]  = topk(h["rgb"], petg, k=args.k)
-        rec["other"] = topk(h["rgb"], other, k=2) if other else []
         matches.append(rec)
 
     out = car_data / f"matches_{args.library}.json"
     out.write_text(json.dumps(matches, indent=2, ensure_ascii=False), encoding="utf-8")
-    # Legacy alias (what build_html.py read before --library existed)
-    if args.library == "cz":
-        (car_data / "matches.json").write_text(
-            json.dumps(matches, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"→ {out}")
 
 if __name__ == "__main__":

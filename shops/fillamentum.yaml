@@ -1,5 +1,7 @@
 # Shopify: whole catalogue from /products.json, no per-page requests.
-# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+# pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
+# keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
 name: Fillamentum
 platform: shopify
 base: https://fillamentum.shop
@@ -57,11 +59,6 @@ pins:
   material: PETG
   color_name: Melon Yellow
   local_image: fillamentum-petg-petg-melon-yellow.png
-- url: https://fillamentum.shop/products/petg-natural-1
-  brand: Fillamentum
-  material: PETG
-  color_name: Natural
-  local_image: fillamentum-petg-petg-natural-1.png
 - url: https://fillamentum.shop/products/petg-sea-wave
   brand: Fillamentum
   material: PETG
@@ -72,11 +69,6 @@ pins:
   material: PLA
   color_name: Abu Dhabi Green
   local_image: fillamentum-pla-pla-extrafill-abu-dhabi-green.jpg
-- url: https://fillamentum.shop/products/pla-extrafill-baby-blue
-  brand: Fillamentum
-  material: PLA
-  color_name: Baby Blue
-  local_image: fillamentum-pla-pla-extrafill-baby-blue.jpg
 - url: https://fillamentum.shop/products/pla-extrafill-cairo-gold
   brand: Fillamentum
   material: PLA
@@ -132,11 +124,6 @@ pins:
   material: PLA
   color_name: Mint
   local_image: fillamentum-pla-pla-extrafill-mint-1kg.jpg
-- url: https://fillamentum.shop/products/pla-extrafill-natural-1kg
-  brand: Fillamentum
-  material: PLA
-  color_name: Natural
-  local_image: fillamentum-pla-pla-extrafill-natural-1kg.jpg
 - url: https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg
   brand: Fillamentum
   material: PLA
@@ -157,11 +144,6 @@ pins:
   material: PLA
   color_name: Pearl Ruby Red
   local_image: fillamentum-pla-pla-extrafill-pearl-ruby-red-1kg.jpg
-- url: https://fillamentum.shop/products/pla-extrafill-peppered-mustard
-  brand: Fillamentum
-  material: PLA
-  color_name: Peppered Mustard
-  local_image: fillamentum-pla-pla-extrafill-peppered-mustard.png
 - url: https://fillamentum.shop/products/pla-extrafill-rapunzel-silver-1kg
   brand: Fillamentum
   material: PLA
@@ -202,11 +184,6 @@ pins:
   material: PLA
   color_name: Turquoise Blue
   local_image: fillamentum-pla-pla-extrafill-turquoise-blue-1kg.jpg
-- url: https://fillamentum.shop/products/pla-extrafill-turquoise-green
-  brand: Fillamentum
-  material: PLA
-  color_name: Turquoise Green
-  local_image: fillamentum-pla-pla-extrafill-turquoise-green.jpg
 - url: https://fillamentum.shop/products/pla-extrafill-vertigo-cherry-1-kg-1-75-mm
   brand: Fillamentum
   material: PLA
@@ -232,8 +209,3 @@ pins:
   material: PLA
   color_name: Vertigo Starlight
   local_image: fillamentum-pla-pla-extrafill-vertigo-starlight-1kg.jpg
-- url: https://fillamentum.shop/products/pla-extrafill-volcanic-dust
-  brand: Fillamentum
-  material: PLA
-  color_name: Volcanic Dust
-  local_image: fillamentum-pla-pla-extrafill-volcanic-dust.jpg

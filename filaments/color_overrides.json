@@ -23,10 +23,6 @@
     "hex": "#F3F2ED",
     "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
   },
-  "p166": {
-    "hex": "#D7D7D7",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
-  },
   "pla-extrafill-traffic-white-1kg": {
     "hex": "#D2D0CB",
     "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."

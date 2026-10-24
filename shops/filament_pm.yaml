@@ -1,5 +1,7 @@
 # Product URLs are /<slug>/p<id>; record slug is the trailing p<id> (legacy).
-# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+# pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
+# keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
 name: FilamentPM
 platform: generic
 base: https://www.filament-pm.cz
@@ -8,26 +10,6 @@ include:
 - ^/(pla|petg)-[^/]+/p\d+$
 default_brand: Filament PM
 pins:
-- url: https://www.filament-pm.cz/pla-marblejet-light-1-75-mm-0-5-kg/p164
-  brand: Filament PM
-  material: PLA
-  color_name: Marblejet Light
-  local_image: filamentpm-pla-pla-marblejet-light-1-75-mm-0-5-kg.jpg
-- url: https://www.filament-pm.cz/petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg/p166
-  brand: Filament PM
-  material: PETG
-  color_name: FR-jet White
-  local_image: filamentpm-petg-petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg.jpg
-- url: https://www.filament-pm.cz/pla-woodjet-natur-1-75-mm-0-5-kg/p269
-  brand: Filament PM
-  material: PLA
-  color_name: Woodjet Natur
-  local_image: filamentpm-pla-pla-woodjet-natur-1-75-mm-0-5-kg.jpg
-- url: https://www.filament-pm.cz/petg-transparentni-oranzova-1-75-mm-1-kg/p286
-  brand: Filament PM
-  material: PETG
-  color_name: Orange Transparent
-  local_image: filamentpm-petg-petg-transparentni-oranzova-1-75-mm-1-kg.jpg
 - url: https://www.filament-pm.cz/pla-graphite-black-1-75-mm-1-kg/p299
   brand: Filament PM
   material: PLA
@@ -108,11 +90,6 @@ pins:
   material: PETG
   color_name: Yellow
   local_image: filamentpm-petg-petg-zluta-1-75-mm-1-kg.jpg
-- url: https://www.filament-pm.cz/pla-transparentni-1-75-mm-1-kg/p60
-  brand: Filament PM
-  material: PLA
-  color_name: Transparent
-  local_image: filamentpm-pla-pla-transparentni-1-75-mm-1-kg.jpg
 - url: https://www.filament-pm.cz/pla-bila-1-75-mm-1-kg/p61
   brand: Filament PM
   material: PLA

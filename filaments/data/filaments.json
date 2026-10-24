@@ -8727,53 +8727,6 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "p164",
-    "brand": "Filament PM",
-    "material": "PLA",
-    "color_name": "Marblejet Light",
-    "shop": "FilamentPM",
-    "url": "https://www.filament-pm.cz/pla-marblejet-light-1-75-mm-0-5-kg/p164",
-    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4698-marblejet-light-0-5kg-1-75-1-product-og.jpg?v=137701264",
-    "local_image": "filamentpm-pla-pla-marblejet-light-1-75-mm-0-5-kg.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PLA MarbleJet - Light",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      201,
-      194,
-      173
-    ],
-    "hex": "#C9C2AD",
-    "pixel_count": 105438,
-    "confidence": "measured_dominant_hue"
-  },
-  {
-    "slug": "p166",
-    "brand": "Filament PM",
-    "material": "PETG",
-    "color_name": "FR-jet White",
-    "shop": "FilamentPM",
-    "url": "https://www.filament-pm.cz/petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg/p166",
-    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4792-FRJET-WHITE-NEW-SPOOL1-product-og.jpg?v=4017030925",
-    "local_image": "filamentpm-petg-petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PETG FRJet samozhášivý - Bílá",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      215,
-      215,
-      215
-    ],
-    "hex": "#D7D7D7",
-    "pixel_count": 141334,
-    "confidence": "manual_override",
-    "measured_hex": "#343434"
-  },
-  {
     "slug": "p179",
     "brand": "Filament PM",
     "material": "PETG",
@@ -35377,29 +35330,6 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "pla-extrafill-baby-blue",
-    "brand": "Fillamentum",
-    "material": "PLA",
-    "color_name": "Baby Blue",
-    "shop": "Fillamentum",
-    "url": "https://fillamentum.shop/products/pla-extrafill-baby-blue",
-    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Baby_Blue_1_75.jpg",
-    "local_image": "fillamentum-pla-pla-extrafill-baby-blue.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PLA Extrafill \"Baby Blue\" | 2.85 mm",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      191,
-      216,
-      226
-    ],
-    "hex": "#BFD8E2",
-    "pixel_count": 380776,
-    "confidence": "measured_dominant_hue"
-  },
-  {
     "slug": "pla-extrafill-baby-blue-1kg",
     "brand": "Fillamentum",
     "material": "PLA",
@@ -35952,29 +35882,6 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "pla-extrafill-peppered-mustard",
-    "brand": "Fillamentum",
-    "material": "PLA",
-    "color_name": "Peppered Mustard",
-    "shop": "Fillamentum",
-    "url": "https://fillamentum.shop/products/pla-extrafill-peppered-mustard",
-    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Peppered_Mustard_1_75_foto.png",
-    "local_image": "fillamentum-pla-pla-extrafill-peppered-mustard.png",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PLA Extrafill \"Peppered Mustard\" | 2.85 mm",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      206,
-      144,
-      4
-    ],
-    "hex": "#CE9004",
-    "pixel_count": 339917,
-    "confidence": "measured_dominant_hue"
-  },
-  {
     "slug": "pla-extrafill-purple-red-1kg",
     "brand": "Fillamentum",
     "material": "PLA",
@@ -36207,29 +36114,6 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "pla-extrafill-turquoise-green",
-    "brand": "Fillamentum",
-    "material": "PLA",
-    "color_name": "Turquoise Green",
-    "shop": "Fillamentum",
-    "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-green",
-    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Turquoise_Green_1_75.jpg",
-    "local_image": "fillamentum-pla-pla-extrafill-turquoise-green.jpg",
-    "availability": "OutOfStock",
-    "stock": "Vyprodáno",
-    "title": "PLA Extrafill \"Turquoise Green\" | 2.85 mm",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      95,
-      172,
-      154
-    ],
-    "hex": "#5FAC9A",
-    "pixel_count": 369168,
-    "confidence": "measured_dominant_hue"
-  },
-  {
     "slug": "pla-extrafill-vertigo-cherry-1-kg-1-75-mm",
     "brand": "Fillamentum",
     "material": "PLA",
@@ -36365,29 +36249,6 @@
     ],
     "hex": "#282B3F",
     "pixel_count": 358036,
-    "confidence": "measured_dominant_hue"
-  },
-  {
-    "slug": "pla-extrafill-volcanic-dust",
-    "brand": "Fillamentum",
-    "material": "PLA",
-    "color_name": "Volcanic Dust",
-    "shop": "Fillamentum",
-    "url": "https://fillamentum.shop/products/pla-extrafill-volcanic-dust",
-    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/be001e98-7f14-4f23-9d3a-ed40d0b3d5f8.jpg",
-    "local_image": "fillamentum-pla-pla-extrafill-volcanic-dust.jpg",
-    "availability": "OutOfStock",
-    "stock": "Vyprodáno",
-    "title": "PLA Extrafill \"Volcanic Dust\" | 2.85 mm",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      142,
-      140,
-      143
-    ],
-    "hex": "#8E8C8F",
-    "pixel_count": 280222,
     "confidence": "measured_dominant_hue"
   },
   {
@@ -58073,29 +57934,6 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-    "brand": "ROSA3D",
-    "material": "ASA",
-    "color_name": "Tyrkysová RAL 5018 (refill)",
-    "shop": "Smart3D",
-    "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-    "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-    "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-    "last_ok": "2026-10-24",
-    "library": "cz",
-    "rgb": [
-      32,
-      119,
-      132
-    ],
-    "hex": "#207784",
-    "pixel_count": 173801,
-    "confidence": "measured_dominant_hue"
-  },
-  {
     "slug": "refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
     "brand": "ROSA3D",
     "material": "PLA",
@@ -61732,7 +61570,7 @@
   {
     "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
     "brand": "TheFilament",
-    "material": "HT-PLA",
+    "material": "PLA",
     "color_name": "Tooling Green (refill)",
     "shop": "Smart3D",
     "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
@@ -61778,7 +61616,7 @@
   {
     "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
     "brand": "TheFilament",
-    "material": "HT-PLA",
+    "material": "PLA",
     "color_name": "Tooling Turquoise (refill)",
     "shop": "Smart3D",
     "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",

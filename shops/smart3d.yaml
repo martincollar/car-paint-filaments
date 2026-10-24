@@ -1,5 +1,7 @@
 # Aggregator — discovers every CZ filament/refill page in the product sitemap.
-# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+# pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
+# keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
 name: Smart3D
 platform: upgates
 base: https://www.smart3d.cz
@@ -58,11 +60,6 @@ pins:
   material: PLA
   color_name: Metalická Tyrkysová
   local_image: filament-aurapol-pla-metalicka-tyrkysova-1-75-mm-1-kg.png
-- url: https://www.smart3d.cz/p/filament-aurapol-pla-mint-breeze-castecne-transparentni-1-75-mm-1-kg
-  brand: AURAPOL
-  material: PLA
-  color_name: Mint Breeze
-  local_image: filament-aurapol-pla-mint-breeze-castecne-transparentni-1-75-mm-1-kg.png
 - url: https://www.smart3d.cz/p/filament-aurapol-pla-nordic-blue-1-75-mm-1-kg
   brand: AURAPOL
   material: PLA
@@ -308,11 +305,6 @@ pins:
   material: PLA
   color_name: Azurová (refill)
   local_image: refill-azurefilm-pla-azurova-1-75-mm-1-kg.webp
-- url: https://www.smart3d.cz/p/refill-azurefilm-pla-silk-olivove-zelena-1-75-mm-1-kg
-  brand: AZUREFILM
-  material: PLA
-  color_name: Silk Olivově zelená (refill)
-  local_image: refill-azurefilm-pla-silk-olivove-zelena-1-75-mm-1-kg.jpg
 - url: https://www.smart3d.cz/p/refill-azurefilm-pla-smaragdova-1-75-mm-1-kg
   brand: AZUREFILM
   material: PLA
@@ -323,11 +315,6 @@ pins:
   material: PLA
   color_name: Basic Turquoise (refill)
   local_image: refill-bambu-lab-pla-basic-turquoise-1-75-mm-1-kg.jpg
-- url: https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg
-  brand: ROSA3D
-  material: ASA
-  color_name: Tyrkysová RAL 5018 (refill)
-  local_image: refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg
 - url: https://www.smart3d.cz/p/refill-rosa3d-pla-pastel-matova-1-75-mm-1-kg
   brand: ROSA3D
   material: PLA
@@ -360,12 +347,12 @@ pins:
   local_image: refill-spectrum-pla-pastello-water-blue-1-75-mm-1-kg.jpg
 - url: https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg
   brand: TheFilament
-  material: HT-PLA
+  material: PLA
   color_name: Tooling Green (refill)
   local_image: refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg
 - url: https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg
   brand: TheFilament
-  material: HT-PLA
+  material: PLA
   color_name: Tooling Turquoise (refill)
   local_image: refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg
 - url: https://www.smart3d.cz/p/refill-thefilament-pla-nebesky-modra-1-75-mm-1-kg

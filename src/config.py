@@ -10,13 +10,10 @@ Folder layout:
       cars/<car_name>/     — one folder per car / color card source
         car.json           — car metadata (name, year range, source URLs)
         sources/           — scanned color cards (jpg/png)
-        data/              — car_colors.json, matches.json, thumbnails.json
+        data/              — car_colors.json, matches_<lib>.json, thumbnails_<lib>.json
         output/            — <car_name>.html
 
-Add a new car:
-    mkdir cars/<name>/{sources,data,output}
-    echo '{"name":"<Display>","display":"<Display>","years":[...]}' > cars/<name>/car.json
-    # then run per-car scripts with --car <name>
+Add a new car: see README.md ("Adding a new car"), then scripts/rebuild.sh <name>.
 """
 from __future__ import annotations
 import os, json

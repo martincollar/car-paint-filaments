@@ -2,9 +2,7 @@
   {
     "name": "Oriental Green Poly",
     "year": 1951,
-    "hudson_code": "P-25",
     "car_code": "P-25",
-    "ditzler": "40521",
     "paint_ref": "40521",
     "rgb": [
       42,
@@ -263,64 +261,12 @@
         "pixel_count": 240967,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 9.86,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 18.61,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Peacock Green Poly",
     "year": 1951,
-    "hudson_code": "S-26",
     "car_code": "S-26",
-    "ditzler": "40522",
     "paint_ref": "40522",
     "rgb": [
       51,
@@ -579,64 +525,12 @@
         "pixel_count": 162719,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 10.63,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 11.42,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Newport Gray Poly",
     "year": 1951,
-    "hudson_code": "Q-61",
     "car_code": "Q-61",
-    "ditzler": "30860",
     "paint_ref": "30860",
     "rgb": [
       91,
@@ -895,64 +789,12 @@
         "pixel_count": 321028,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 19.52,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 19.59,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Jefferson Green Poly",
     "year": 1951,
-    "hudson_code": "S-62",
     "car_code": "S-62",
-    "ditzler": "41061",
     "paint_ref": "41061",
     "rgb": [
       56,
@@ -1211,64 +1053,12 @@
         "pixel_count": 231187,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 9.3,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 21.95,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Naples Green Poly",
     "year": 1951,
-    "hudson_code": "P-63",
     "car_code": "P-63",
-    "ditzler": "41060",
     "paint_ref": "41060",
     "rgb": [
       31,
@@ -1527,64 +1317,12 @@
         "pixel_count": 179784,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 10.48,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 27.99,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Gulf Green",
     "year": 1952,
-    "hudson_code": "Q-115",
     "car_code": "Q-115",
-    "ditzler": "41206",
     "paint_ref": "41206",
     "rgb": [
       147,
@@ -1843,64 +1581,12 @@
         "pixel_count": 180786,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 32.54,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 33.1,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Southern Blue",
     "year": 1952,
-    "hudson_code": "J-97",
     "car_code": "J-97",
-    "ditzler": "10813",
     "paint_ref": "10813",
     "rgb": [
       95,
@@ -2159,64 +1845,12 @@
         "pixel_count": 137850,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 14.59,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 16.16,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Broadway Blue",
     "year": 1952,
-    "hudson_code": "B-96",
     "car_code": "B-96",
-    "ditzler": "10814",
     "paint_ref": "10814",
     "rgb": [
       40,
@@ -2475,64 +2109,12 @@
         "pixel_count": 268093,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 19.46,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 27.21,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Boston Ivory",
     "year": 1952,
-    "hudson_code": "N-92",
     "car_code": "N-92",
-    "ditzler": "80558",
     "paint_ref": "80558",
     "rgb": [
       228,
@@ -2791,64 +2373,12 @@
         "pixel_count": 289556,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 41.75,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 43.13,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Jupiter Gray Poly",
     "year": 1952,
-    "hudson_code": "G-95",
     "car_code": "G-95",
-    "ditzler": "30921",
     "paint_ref": "30921",
     "rgb": [
       71,
@@ -3107,64 +2637,12 @@
         "pixel_count": 129304,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 16.75,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 23.42,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Texas Tan Poly",
     "year": 1952,
-    "hudson_code": "H-27",
     "car_code": "H-27",
-    "ditzler": "20644",
     "paint_ref": "20644",
     "rgb": [
       108,
@@ -3423,64 +2901,12 @@
         "pixel_count": 423429,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 31.32,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 32.14,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Symphony Blue Green Light",
     "year": 1952,
-    "hudson_code": "CC-93",
     "car_code": "CC-93",
-    "ditzler": "41119",
     "paint_ref": "41119",
     "rgb": [
       97,
@@ -3739,64 +3165,12 @@
         "pixel_count": 122752,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 13.3,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 14.32,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Symphony Blue Green Dark",
     "year": 1952,
-    "hudson_code": "P",
     "car_code": "P",
-    "ditzler": "41238",
     "paint_ref": "41238",
     "rgb": [
       46,
@@ -4055,64 +3429,12 @@
         "pixel_count": 286870,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 7.47,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 21.18,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Honey Cream",
     "year": 1953,
-    "hudson_code": "N-135",
     "car_code": "N-135",
-    "ditzler": "80600",
     "paint_ref": "80600",
     "rgb": [
       231,
@@ -4371,64 +3693,12 @@
         "pixel_count": 308591,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 42.59,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 44.01,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Robin's Egg Green",
     "year": 1953,
-    "hudson_code": "CC-134",
     "car_code": "CC-134",
-    "ditzler": "41298",
     "paint_ref": "41298",
     "rgb": [
       120,
@@ -4445,30 +3715,6 @@
     ],
     "confidence": "measured_from_card",
     "pla": [
-      {
-        "delta_e": 6.02,
-        "slug": "pla-extrafill-turquoise-green",
-        "brand": "Fillamentum",
-        "material": "PLA",
-        "color_name": "Turquoise Green",
-        "shop": "Fillamentum",
-        "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-green",
-        "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Turquoise_Green_1_75.jpg",
-        "local_image": "fillamentum-pla-pla-extrafill-turquoise-green.jpg",
-        "availability": "OutOfStock",
-        "stock": "Vyprodáno",
-        "title": "PLA Extrafill \"Turquoise Green\" | 2.85 mm",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          95,
-          172,
-          154
-        ],
-        "hex": "#5FAC9A",
-        "pixel_count": 369168,
-        "confidence": "measured_dominant_hue"
-      },
       {
         "delta_e": 6.37,
         "slug": "pla-extrafill-mint-1kg",
@@ -4563,6 +3809,30 @@
         ],
         "hex": "#59ADA4",
         "pixel_count": 210114,
+        "confidence": "measured_dominant_hue"
+      },
+      {
+        "delta_e": 7.04,
+        "slug": "p242",
+        "brand": "Filament PM",
+        "material": "PLA+",
+        "color_name": "Pastelová edice Sweet Mint",
+        "shop": "FilamentPM",
+        "url": "https://www.filament-pm.cz/pla-pastelova-edice-sweet-mint-1-75-mm-1-kg/p242",
+        "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4126-pla-sweet-mint-1kg-1-75-1-product-og.jpg?v=3012524391",
+        "local_image": "filament_pm-p242.jpg",
+        "availability": "InStock",
+        "stock": "Skladem",
+        "title": "PLA+ pastelová edice - Sweet Mint",
+        "last_ok": "2026-10-24",
+        "library": "cz",
+        "rgb": [
+          137,
+          186,
+          178
+        ],
+        "hex": "#89BAB2",
+        "pixel_count": 128472,
         "confidence": "measured_dominant_hue"
       }
     ],
@@ -4687,64 +3957,12 @@
         "pixel_count": 173871,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 18.79,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 20.53,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Blue Grass Green",
     "year": 1953,
-    "hudson_code": "P-136",
     "car_code": "P-136",
-    "ditzler": "41297",
     "paint_ref": "41297",
     "rgb": [
       49,
@@ -5003,64 +4221,12 @@
         "pixel_count": 225981,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 7.43,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 18.91,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Pearl Gray Poly",
     "year": 1953,
-    "hudson_code": "G-128",
     "car_code": "G-128",
-    "ditzler": "31056",
     "paint_ref": "31056",
     "rgb": [
       110,
@@ -5319,64 +4485,12 @@
         "pixel_count": 205584,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 19.13,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 20.68,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Seal Gray",
     "year": 1953,
-    "hudson_code": "RR-137",
     "car_code": "RR-137",
-    "ditzler": "31051",
     "paint_ref": "31051",
     "rgb": [
       156,
@@ -5636,64 +4750,12 @@
         "pixel_count": 146550,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 24.56,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 26.05,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Surf Green",
     "year": 1953,
-    "hudson_code": "Q-133",
     "car_code": "Q-133",
-    "ditzler": "41300",
     "paint_ref": "41300",
     "rgb": [
       136,
@@ -5952,64 +5014,12 @@
         "pixel_count": 441108,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 30.14,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 30.67,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Meadow Green Poly",
     "year": 1953,
-    "hudson_code": "S-132",
     "car_code": "S-132",
-    "ditzler": "41303",
     "paint_ref": "41303",
     "rgb": [
       40,
@@ -6268,64 +5278,12 @@
         "pixel_count": 286870,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 8.82,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 26.44,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Beret Blue Poly",
     "year": 1954,
-    "hudson_code": "B-158",
     "car_code": "B-158",
-    "ditzler": "11070",
     "paint_ref": "11070",
     "rgb": [
       27,
@@ -6584,64 +5542,12 @@
         "pixel_count": 268093,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 18.58,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 27.02,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Palm Beach Green",
     "year": 1954,
-    "hudson_code": "CC-163",
     "car_code": "CC-163",
-    "ditzler": "41470",
     "paint_ref": "41470",
     "rgb": [
       127,
@@ -6755,27 +5661,27 @@
         "confidence": "measured_dominant_hue"
       },
       {
-        "delta_e": 5.04,
-        "slug": "pla-extrafill-turquoise-green",
-        "brand": "Fillamentum",
-        "material": "PLA",
-        "color_name": "Turquoise Green",
-        "shop": "Fillamentum",
-        "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-green",
-        "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Turquoise_Green_1_75.jpg",
-        "local_image": "fillamentum-pla-pla-extrafill-turquoise-green.jpg",
-        "availability": "OutOfStock",
-        "stock": "Vyprodáno",
-        "title": "PLA Extrafill \"Turquoise Green\" | 2.85 mm",
+        "delta_e": 5.55,
+        "slug": "filament-filament-pm-pla-sladce-mentolova-1-75-mm-1-kg",
+        "brand": "FILAMENT-PM",
+        "material": "PLA+",
+        "color_name": "Sladce mentolová",
+        "shop": "Smart3D",
+        "url": "https://www.smart3d.cz/p/filament-filament-pm-pla-sladce-mentolova-1-75-mm-1-kg",
+        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/4/d43432ccedad3f4d3a8b570a7c535061-pic-pla-sweet-mint-1kg-1-75-1.png",
+        "local_image": "smart3d-filament-filament-pm-pla-sladce-mentolova-1-75-mm-1-kg.png",
+        "availability": "InStock",
+        "stock": "Skladem",
+        "title": "Filament FILAMENT-PM / PLA+ / sladce mentolová / 1,75 mm / 1 kg.",
         "last_ok": "2026-10-24",
         "library": "cz",
         "rgb": [
-          95,
-          172,
-          154
+          127,
+          180,
+          176
         ],
-        "hex": "#5FAC9A",
-        "pixel_count": 369168,
+        "hex": "#7FB4B0",
+        "pixel_count": 60944,
         "confidence": "measured_dominant_hue"
       }
     ],
@@ -6900,64 +5806,12 @@
         "pixel_count": 721940,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 22.91,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 24.98,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Spring Green",
     "year": 1954,
-    "hudson_code": "Q-161",
     "car_code": "Q-161",
-    "ditzler": "41471",
     "paint_ref": "41471",
     "rgb": [
       134,
@@ -7216,64 +6070,12 @@
         "pixel_count": 441108,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 30.73,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 31.22,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Royal Red",
     "year": 1954,
-    "hudson_code": "M-167",
     "car_code": "M-167",
-    "ditzler": "70451",
     "paint_ref": "70451",
     "rgb": [
       75,
@@ -7532,64 +6334,12 @@
         "pixel_count": 433206,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 41.78,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 53.74,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "St. Clair Gray",
     "year": 1954,
-    "hudson_code": "RR-160",
     "car_code": "RR-160",
-    "ditzler": "31123",
     "paint_ref": "31123",
     "rgb": [
       175,
@@ -7848,64 +6598,12 @@
         "pixel_count": 20643,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 29.02,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 30.7,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Pasture Green Poly",
     "year": 1954,
-    "hudson_code": "S-164",
     "car_code": "S-164",
-    "ditzler": "41469",
     "paint_ref": "41469",
     "rgb": [
       39,
@@ -8164,64 +6862,12 @@
         "pixel_count": 179784,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 9.67,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 26.75,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Pacific Blue Green",
     "year": 1954,
-    "hudson_code": "P-162",
     "car_code": "P-162",
-    "ditzler": "41472",
     "paint_ref": "41472",
     "rgb": [
       53,
@@ -8480,64 +7126,12 @@
         "pixel_count": 107055,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 7.88,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 17.52,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Algerian Blue Poly",
     "year": 1954,
-    "hudson_code": "G-168",
     "car_code": "G-168",
-    "ditzler": "11068",
     "paint_ref": "11068",
     "rgb": [
       55,
@@ -8796,64 +7390,12 @@
         "pixel_count": 167104,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 15.36,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 17.88,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Silver Blue",
     "year": 1954,
-    "hudson_code": "J-159",
     "car_code": "J-159",
-    "ditzler": "11069",
     "paint_ref": "11069",
     "rgb": [
       103,
@@ -9112,64 +7654,12 @@
         "pixel_count": 150353,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 13.56,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 14.02,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Coronation Cream",
     "year": 1954,
-    "hudson_code": "N-166",
     "car_code": "N-166",
-    "ditzler": "80639",
     "paint_ref": "80639",
     "rgb": [
       236,
@@ -9428,64 +7918,12 @@
         "pixel_count": 158341,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 42.41,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 44.04,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Roman Bronze",
     "year": 1954,
-    "hudson_code": "H-165",
     "car_code": "H-165",
-    "ditzler": "70453",
     "paint_ref": "70453",
     "rgb": [
       111,
@@ -9744,64 +8182,12 @@
         "pixel_count": 361723,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 40.73,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 52.16,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Caribbean Blue Green",
     "year": 1955,
-    "hudson_code": "P-44",
     "car_code": "P-44",
-    "ditzler": "41161",
     "paint_ref": "41161",
     "rgb": [
       32,
@@ -10060,64 +8446,12 @@
         "pixel_count": 268093,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 12.17,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 15.1,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Coral Red",
     "year": 1955,
-    "hudson_code": "P-65",
     "car_code": "P-65",
-    "ditzler": "60178",
     "paint_ref": "60178",
     "rgb": [
       189,
@@ -10376,64 +8710,12 @@
         "pixel_count": 451518,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 44.08,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 47.51,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Rio Red",
     "year": 1955,
-    "hudson_code": "P-64",
     "car_code": "P-64",
-    "ditzler": "70533",
     "paint_ref": "70533",
     "rgb": [
       149,
@@ -10692,64 +8974,12 @@
         "pixel_count": 248479,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 45.37,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 56.27,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Bermuda Green",
     "year": 1955,
-    "hudson_code": "P-67",
     "car_code": "P-67",
-    "ditzler": "41696",
     "paint_ref": "41696",
     "rgb": [
       172,
@@ -11010,64 +9240,12 @@
         "pixel_count": 171800,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 34.04,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 36.42,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Sunburst Yellow",
     "year": 1955,
-    "hudson_code": "P-66",
     "car_code": "P-66",
-    "ditzler": "80725",
     "paint_ref": "80725",
     "rgb": [
       221,
@@ -11326,64 +9504,12 @@
         "pixel_count": 8576,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 47.01,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 47.44,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Mist Blue",
     "year": 1955,
-    "hudson_code": "P-68",
     "car_code": "P-68",
-    "ditzler": "11282",
     "paint_ref": "11282",
     "rgb": [
       177,
@@ -11400,30 +9526,6 @@
     ],
     "confidence": "measured_from_card",
     "pla": [
-      {
-        "delta_e": 5.58,
-        "slug": "pla-extrafill-baby-blue",
-        "brand": "Fillamentum",
-        "material": "PLA",
-        "color_name": "Baby Blue",
-        "shop": "Fillamentum",
-        "url": "https://fillamentum.shop/products/pla-extrafill-baby-blue",
-        "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/PLA_Extrafill_Baby_Blue_1_75.jpg",
-        "local_image": "fillamentum-pla-pla-extrafill-baby-blue.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "PLA Extrafill \"Baby Blue\" | 2.85 mm",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          191,
-          216,
-          226
-        ],
-        "hex": "#BFD8E2",
-        "pixel_count": 380776,
-        "confidence": "measured_dominant_hue"
-      },
       {
         "delta_e": 5.85,
         "slug": "refill-thefilament-pla-high-speed-seda-mirage-1-75-mm-1-kg",
@@ -11518,6 +9620,30 @@
         ],
         "hex": "#91BBC4",
         "pixel_count": 133761,
+        "confidence": "measured_dominant_hue"
+      },
+      {
+        "delta_e": 7.05,
+        "slug": "pla-extrafill-baby-blue-1kg",
+        "brand": "Fillamentum",
+        "material": "PLA",
+        "color_name": "Extrafill Baby Blue",
+        "shop": "Fillamentum",
+        "url": "https://fillamentum.shop/products/pla-extrafill-baby-blue-1kg",
+        "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum__Baby_Blue_1KG.jpg",
+        "local_image": "fillamentum-pla-extrafill-baby-blue-1kg.jpg",
+        "availability": "OutOfStock",
+        "stock": "Vyprodáno",
+        "title": "PLA Extrafill \"Baby Blue\" | 1 KG | 1.75 mm",
+        "last_ok": "2026-10-24",
+        "library": "cz",
+        "rgb": [
+          146,
+          178,
+          181
+        ],
+        "hex": "#92B2B5",
+        "pixel_count": 451358,
         "confidence": "measured_dominant_hue"
       }
     ],
@@ -11643,64 +9769,12 @@
         "pixel_count": 33910,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 27.43,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 30.39,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Island Green",
     "year": 1955,
-    "hudson_code": "P-62",
     "car_code": "P-62",
-    "ditzler": "41685",
     "paint_ref": "41685",
     "rgb": [
       18,
@@ -11959,64 +10033,12 @@
         "pixel_count": 121741,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 16.37,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 29.39,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Snowberry White",
     "year": 1955,
-    "hudson_code": "P-69",
     "car_code": "P-69",
-    "ditzler": "8017",
     "paint_ref": "8017",
     "rgb": [
       233,
@@ -12276,64 +10298,12 @@
         "pixel_count": 66912,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 40.84,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 42.78,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Midshipman Blue",
     "year": 1955,
-    "hudson_code": "P-61",
     "car_code": "P-61",
-    "ditzler": "11277",
     "paint_ref": "11277",
     "rgb": [
       15,
@@ -12592,64 +10562,12 @@
         "pixel_count": 121741,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 24.39,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 35.46,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Palomino Brown",
     "year": 1955,
-    "hudson_code": "P-71",
     "car_code": "P-71",
-    "ditzler": "21139",
     "paint_ref": "21139",
     "rgb": [
       160,
@@ -12908,64 +10826,12 @@
         "pixel_count": 349938,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 36.9,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 38.07,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Frost White",
     "year": 1956,
-    "hudson_code": "P-72",
     "car_code": "P-72",
-    "ditzler": "8108",
     "paint_ref": "8108",
     "rgb": [
       242,
@@ -13224,64 +11090,12 @@
         "pixel_count": 407962,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 42.8,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 44.61,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Grenadier Red",
     "year": 1956,
-    "hudson_code": "P-78",
     "car_code": "P-78",
-    "ditzler": "70642",
     "paint_ref": "70642",
     "rgb": [
       181,
@@ -13540,64 +11354,12 @@
         "pixel_count": 176670,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 47.87,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 48.09,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Willow Green",
     "year": 1956,
-    "hudson_code": "P-73",
     "car_code": "P-73",
-    "ditzler": "41868",
     "paint_ref": "41868",
     "rgb": [
       150,
@@ -13856,64 +11618,12 @@
         "pixel_count": 254809,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 37.55,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 37.6,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Boulevard Gray",
     "year": 1956,
-    "hudson_code": "P-80",
     "car_code": "P-80",
-    "ditzler": "31331",
     "paint_ref": "31331",
     "rgb": [
       52,
@@ -14172,64 +11882,12 @@
         "pixel_count": 106206,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 13.64,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 23.15,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Crocus Yellow",
     "year": 1956,
-    "hudson_code": "P-74",
     "car_code": "P-74",
-    "ditzler": "80737",
     "paint_ref": "80737",
     "rgb": [
       226,
@@ -14488,64 +12146,12 @@
         "pixel_count": 291644,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 45.24,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 46.23,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Solitaire Blue",
     "year": 1956,
-    "hudson_code": "P-81",
     "car_code": "P-81",
-    "ditzler": "11206",
     "paint_ref": "11206",
     "rgb": [
       120,
@@ -14804,64 +12410,12 @@
         "pixel_count": 337839,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 18.12,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 21.88,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Polo Green",
     "year": 1956,
-    "hudson_code": "P-75",
     "car_code": "P-75",
-    "ditzler": "41867",
     "paint_ref": "41867",
     "rgb": [
       29,
@@ -14878,6 +12432,30 @@
     ],
     "confidence": "measured_from_card",
     "pla": [
+      {
+        "delta_e": 1.89,
+        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
+        "brand": "TheFilament",
+        "material": "PLA",
+        "color_name": "Tooling Green (refill)",
+        "shop": "Smart3D",
+        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
+        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
+        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
+        "availability": "InStock",
+        "stock": "Skladem",
+        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
+        "last_ok": "2026-10-24",
+        "library": "cz",
+        "rgb": [
+          19,
+          66,
+          58
+        ],
+        "hex": "#13423A",
+        "pixel_count": 245465,
+        "confidence": "measured_dominant_hue"
+      },
       {
         "delta_e": 2.83,
         "slug": "filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
@@ -14972,30 +12550,6 @@
         ],
         "hex": "#2A4C45",
         "pixel_count": 230096,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 3.68,
-        "slug": "filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm",
-        "brand": "3DFOX",
-        "material": "PLA",
-        "color_name": "Emerald green ŠA",
-        "shop": "3DFox",
-        "url": "https://www.3dfoxshop.cz/filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm/",
-        "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/8034_emerald-green.png?ff=1&x=1024&y=768&q=85&ts=6abe4d0f&sg=161563f2",
-        "local_image": "3dfox-filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm.png",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "Filament 3DFOX PLA REFILL emerald green ŠA 1 kg 1,75 mm",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          17,
-          66,
-          53
-        ],
-        "hex": "#114235",
-        "pixel_count": 124392,
         "confidence": "measured_dominant_hue"
       }
     ],
@@ -15120,64 +12674,12 @@
         "pixel_count": 99957,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 1.89,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 19.97,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Pacific Blue",
     "year": 1956,
-    "hudson_code": "P-82",
     "car_code": "P-82",
-    "ditzler": "11462",
     "paint_ref": "11462",
     "rgb": [
       24,
@@ -15436,64 +12938,12 @@
         "pixel_count": 189417,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 24.56,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 29.7,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Golden Brown",
     "year": 1956,
-    "hudson_code": "P-76",
     "car_code": "P-76",
-    "ditzler": "21221",
     "paint_ref": "21221",
     "rgb": [
       138,
@@ -15752,64 +13202,12 @@
         "pixel_count": 271495,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 38.97,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 39.77,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Ballerina Red",
     "year": 1956,
-    "hudson_code": "P-83",
     "car_code": "P-83",
-    "ditzler": "70641",
     "paint_ref": "70641",
     "rgb": [
       216,
@@ -16068,64 +13466,12 @@
         "pixel_count": 196243,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 53.15,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 57.6,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Mint Green",
     "year": 1956,
-    "hudson_code": "P-77",
     "car_code": "P-77",
-    "ditzler": "41819",
     "paint_ref": "41819",
     "rgb": [
       100,
@@ -16384,64 +13730,12 @@
         "pixel_count": 251197,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 30.94,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 31.07,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Bermuda Green",
     "year": 1957,
-    "hudson_code": "P-67",
     "car_code": "P-67",
-    "ditzler": "41696",
     "paint_ref": "41696",
     "rgb": [
       179,
@@ -16702,64 +13996,12 @@
         "pixel_count": 431408,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 34.34,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 36.55,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Mardi Gras Red",
     "year": 1957,
-    "hudson_code": "P-90",
     "car_code": "P-90",
-    "ditzler": "70711",
     "paint_ref": "70711",
     "rgb": [
       189,
@@ -17018,64 +14260,12 @@
         "pixel_count": 428138,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 48.05,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 49.04,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Glacier Blue",
     "year": 1957,
-    "hudson_code": "P-84",
     "car_code": "P-84",
-    "ditzler": "11548",
     "paint_ref": "11548",
     "rgb": [
       161,
@@ -17334,64 +14524,12 @@
         "pixel_count": 41327,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 26.17,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 29.66,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Mojave Yellow",
     "year": 1957,
-    "hudson_code": "P-92",
     "car_code": "P-92",
-    "ditzler": "80861",
     "paint_ref": "80861",
     "rgb": [
       246,
@@ -17650,64 +14788,12 @@
         "pixel_count": 407962,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 46.32,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 47.54,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Lagoon Blue",
     "year": 1957,
-    "hudson_code": "P-85",
     "car_code": "P-85",
-    "ditzler": "11549",
     "paint_ref": "11549",
     "rgb": [
       63,
@@ -17966,64 +15052,12 @@
         "pixel_count": 169871,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 13.99,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 15.03,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Sierra Peach",
     "year": 1957,
-    "hudson_code": "P-93",
     "car_code": "P-93",
-    "ditzler": "70710",
     "paint_ref": "70710",
     "rgb": [
       239,
@@ -18282,64 +15316,12 @@
         "pixel_count": 383591,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 44.21,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 45.58,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Plum Poly",
     "year": 1957,
-    "hudson_code": "P-86",
     "car_code": "P-86",
-    "ditzler": "50462",
     "paint_ref": "50462",
     "rgb": [
       58,
@@ -18598,64 +15580,12 @@
         "pixel_count": 476046,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 41.25,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 52.35,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Cinnamon Bronze Poly",
     "year": 1957,
-    "hudson_code": "P-94",
     "car_code": "P-94",
-    "ditzler": "21303",
     "paint_ref": "21303",
     "rgb": [
       114,
@@ -18914,64 +15844,12 @@
         "pixel_count": 73700,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 28.46,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 29.29,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Berkshire Green",
     "year": 1957,
-    "hudson_code": "P-87",
     "car_code": "P-87",
-    "ditzler": "41986",
     "paint_ref": "41986",
     "rgb": [
       59,
@@ -19010,6 +15888,30 @@
         ],
         "hex": "#487C86",
         "pixel_count": 178117,
+        "confidence": "measured_dominant_hue"
+      },
+      {
+        "delta_e": 3.1,
+        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
+        "brand": "TheFilament",
+        "material": "PLA",
+        "color_name": "Tooling Turquoise (refill)",
+        "shop": "Smart3D",
+        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
+        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
+        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
+        "availability": "InStock",
+        "stock": "Skladem",
+        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
+        "last_ok": "2026-10-24",
+        "library": "cz",
+        "rgb": [
+          13,
+          130,
+          148
+        ],
+        "hex": "#0D8294",
+        "pixel_count": 251224,
         "confidence": "measured_dominant_hue"
       },
       {
@@ -19082,30 +15984,6 @@
         ],
         "hex": "#137D84",
         "pixel_count": 235898,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 5.16,
-        "slug": "filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg",
-        "brand": "AURAPOL",
-        "material": "PLA",
-        "color_name": "Ht110 Machine Modrá",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/72cd12d0905973dc9c61e7f355ec56c5-6ca2f5388b5fc4fa0c41ca3d243dee8a-pet-g-machine-blue-aurapol-makita.png",
-        "local_image": "smart3d-filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg.png",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "Filament AURAPOL / PLA HT110 / MACHINE MODRÁ / 1,75 mm / 1 kg.",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          125,
-          132
-        ],
-        "hex": "#137D84",
-        "pixel_count": 236043,
         "confidence": "measured_dominant_hue"
       }
     ],
@@ -19230,64 +16108,12 @@
         "pixel_count": 236043,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 3.1,
-        "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Turquoise (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/b/5bd01720e3ad35a7d9fe7039b09ab6d6-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-turquoise-1kg-3351-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING TURQUOISE / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          13,
-          130,
-          148
-        ],
-        "hex": "#0D8294",
-        "pixel_count": 251224,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 4.23,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Gotham Gray Poly",
     "year": 1957,
-    "hudson_code": "P-95",
     "car_code": "P-95",
-    "ditzler": "31403",
     "paint_ref": "31403",
     "rgb": [
       54,
@@ -19546,64 +16372,12 @@
         "pixel_count": 268093,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 19.11,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 26.1,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Oregon Green",
     "year": 1957,
-    "hudson_code": "P-88",
     "car_code": "P-88",
-    "ditzler": "41987",
     "paint_ref": "41987",
     "rgb": [
       18,
@@ -19862,64 +16636,12 @@
         "pixel_count": 268093,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 19.2,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 26.47,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Rebel Silver Gray Poly",
     "year": 1957,
-    "hudson_code": "P-96",
     "car_code": "P-96",
-    "ditzler": "31588",
     "paint_ref": "31588",
     "rgb": [
       115,
@@ -20178,64 +16900,12 @@
         "pixel_count": 104814,
         "confidence": "measured_dominant_hue"
       }
-    ],
-    "other": [
-      {
-        "delta_e": 27.07,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 29.18,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      }
     ]
   },
   {
     "name": "Avocado Poly",
     "year": 1957,
-    "hudson_code": "P-89",
     "car_code": "P-89",
-    "ditzler": "41985",
     "paint_ref": "41985",
     "rgb": [
       110,
@@ -20492,56 +17162,6 @@
         ],
         "hex": "#656D5A",
         "pixel_count": 153119,
-        "confidence": "measured_dominant_hue"
-      }
-    ],
-    "other": [
-      {
-        "delta_e": 24.16,
-        "slug": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "brand": "TheFilament",
-        "material": "HT-PLA",
-        "color_name": "Tooling Green (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/e/aeeed4f4810bc81e58c7123a0bafc1b5-eng-pl-the-filament-refill-ht-pla-1-75mm-tooling-green-1kg-3352-1.jpg",
-        "local_image": "refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill TheFilament / HT-PLA / TOOLING GREEN / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          19,
-          66,
-          58
-        ],
-        "hex": "#13423A",
-        "pixel_count": 245465,
-        "confidence": "measured_dominant_hue"
-      },
-      {
-        "delta_e": 24.99,
-        "slug": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "brand": "ROSA3D",
-        "material": "ASA",
-        "color_name": "Tyrkysová RAL 5018 (refill)",
-        "shop": "Smart3D",
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/724bd33ebf451bd0dacaac6afc80201f-refill-asa-turquoise-ral-5018-1.jpg",
-        "local_image": "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg",
-        "availability": "InStock",
-        "stock": "Skladem",
-        "title": "ReFill ROSA3D / ASA / TYRKYSOVÁ ( RAL 5018) / 1,75 mm / 1 kg",
-        "last_ok": "2026-10-24",
-        "library": "cz",
-        "rgb": [
-          32,
-          119,
-          132
-        ],
-        "hex": "#207784",
-        "pixel_count": 173801,
         "confidence": "measured_dominant_hue"
       }
     ]

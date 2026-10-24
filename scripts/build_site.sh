@@ -3,7 +3,7 @@
 # Every cars/<car>/car.json with "publish": true contributes
 #   output/<car>.html       → _site/<car>/index.html
 #   output/<car>-intl.html  → _site/<car>/intl.html   (if built)
-# plus _site/index.html linking to each car by its made-up display name.
+# plus _site/index.html linking to each car by its `display` name.
 # Used by .github/workflows/pages.yml and as a local check in scripts/publish.sh.
 # Usage: scripts/build_site.sh [out_dir]     (defaults to _site)
 set -euo pipefail

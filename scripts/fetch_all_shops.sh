@@ -7,7 +7,7 @@
 set -euo pipefail
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PY="${PY:-$HERE/.venv/bin/python}"
-[ -x "$PY" ] || PY="${PY_FALLBACK:-$HOME/.venvs/hudson/bin/python}"
+[ -x "$PY" ] || { echo "no $PY — run: python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt" >&2; exit 1; }
 
 "$PY" "$HERE/src/fetch_all.py" "$@"
 echo "✓ all shops done — review: git diff filaments/data/catalog.lock.json — then run scripts/rebuild.sh <car>"

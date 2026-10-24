@@ -1983,16 +1983,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
-      "p164": {
-        "url": "https://www.filament-pm.cz/pla-marblejet-light-1-75-mm-0-5-kg/p164",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
-      "p166": {
-        "url": "https://www.filament-pm.cz/petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg/p166",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
       "p179": {
         "url": "https://www.filament-pm.cz/petg-tmava-purpurova-1-75-mm-1-kg/p179",
         "first_seen": "2026-10-24",
@@ -2245,6 +2235,8 @@
       }
     },
     "rejected": {
+      "p164": "rules",
+      "p166": "rules",
       "p269": "finish:natural",
       "p286": "finish:transparent",
       "p369": "finish:transparent",
@@ -2322,11 +2314,6 @@
       },
       "pla-extrafill-abu-dhabi-green": {
         "url": "https://fillamentum.shop/products/pla-extrafill-abu-dhabi-green",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
-      "pla-extrafill-baby-blue": {
-        "url": "https://fillamentum.shop/products/pla-extrafill-baby-blue",
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
@@ -2450,11 +2437,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
-      "pla-extrafill-peppered-mustard": {
-        "url": "https://fillamentum.shop/products/pla-extrafill-peppered-mustard",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
       "pla-extrafill-purple-red-1kg": {
         "url": "https://fillamentum.shop/products/pla-extrafill-purple-red-1kg",
         "first_seen": "2026-10-24",
@@ -2505,11 +2487,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
-      "pla-extrafill-turquoise-green": {
-        "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-green",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
       "pla-extrafill-vertigo-cherry-1-kg-1-75-mm": {
         "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-cherry-1-kg-1-75-mm",
         "first_seen": "2026-10-24",
@@ -2540,11 +2517,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
-      "pla-extrafill-volcanic-dust": {
-        "url": "https://fillamentum.shop/products/pla-extrafill-volcanic-dust",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
       "pla-extrafill-witch-please": {
         "url": "https://fillamentum.shop/products/pla-extrafill-witch-please",
         "first_seen": "2026-10-24",
@@ -2570,16 +2542,20 @@
       "pla-crystal-clear-kiwi-green": "finish:transparent",
       "pla-crystal-clear-smaragd-green": "finish:transparent",
       "pla-crystal-clear-tangerine-orange": "finish:transparent",
+      "pla-extrafill-baby-blue": "title",
       "pla-extrafill-lilac": "title",
       "pla-extrafill-luminous-yellow": "title",
       "pla-extrafill-natural": "finish:natural",
       "pla-extrafill-natural-1kg": "finish:natural",
+      "pla-extrafill-peppered-mustard": "title",
       "pla-extrafill-purple-red": "title",
       "pla-extrafill-signal-red": "title",
       "pla-extrafill-traffic-purple": "title",
+      "pla-extrafill-turquoise-green": "title",
       "pla-extrafill-vertigo-cherry": "title",
       "pla-extrafill-vertigo-galaxy": "title",
       "pla-extrafill-vertigo-jade": "title",
+      "pla-extrafill-volcanic-dust": "title",
       "pla-pellets": "finish:natural"
     }
   },
@@ -7337,11 +7313,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-24"
       },
-      "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg": {
-        "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-24"
-      },
       "refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg": {
         "url": "https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
         "first_seen": "2026-10-24",
@@ -8641,6 +8612,7 @@
       "refill-bambu-lab-petg-translucent-seda-1-75-mm-1-kg": "finish:transparent",
       "refill-bambu-lab-petg-translucent-svetle-modra-1-75-mm-1-kg": "finish:transparent",
       "refill-bambu-lab-petg-translucent-tyrkysova-1-75-mm-1-kg": "finish:transparent",
+      "refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg": "material",
       "refill-rosa3d-petg-standard-hs-cervena-transparentni-1-75-mm-1-kg": "finish:transparent",
       "refill-rosa3d-petg-standard-hs-cervena-wine-transparentni-1-75-mm-1-kg": "finish:transparent",
       "refill-rosa3d-petg-standard-hs-lahvove-zelena-transparentni-1-75-mm-1-kg": "finish:transparent",

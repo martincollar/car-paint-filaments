@@ -2,9 +2,7 @@
   {
     "name": "Oriental Green Poly",
     "year": 1951,
-    "hudson_code": "P-25",
     "car_code": "P-25",
-    "ditzler": "40521",
     "paint_ref": "40521",
     "rgb": [
       42,
@@ -273,15 +271,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Peacock Green Poly",
     "year": 1951,
-    "hudson_code": "S-26",
     "car_code": "S-26",
-    "ditzler": "40522",
     "paint_ref": "40522",
     "rgb": [
       51,
@@ -550,15 +545,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Newport Gray Poly",
     "year": 1951,
-    "hudson_code": "Q-61",
     "car_code": "Q-61",
-    "ditzler": "30860",
     "paint_ref": "30860",
     "rgb": [
       91,
@@ -827,15 +819,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Jefferson Green Poly",
     "year": 1951,
-    "hudson_code": "S-62",
     "car_code": "S-62",
-    "ditzler": "41061",
     "paint_ref": "41061",
     "rgb": [
       56,
@@ -1104,15 +1093,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Naples Green Poly",
     "year": 1951,
-    "hudson_code": "P-63",
     "car_code": "P-63",
-    "ditzler": "41060",
     "paint_ref": "41060",
     "rgb": [
       31,
@@ -1381,15 +1367,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Gulf Green",
     "year": 1952,
-    "hudson_code": "Q-115",
     "car_code": "Q-115",
-    "ditzler": "41206",
     "paint_ref": "41206",
     "rgb": [
       147,
@@ -1658,15 +1641,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Southern Blue",
     "year": 1952,
-    "hudson_code": "J-97",
     "car_code": "J-97",
-    "ditzler": "10813",
     "paint_ref": "10813",
     "rgb": [
       95,
@@ -1935,15 +1915,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Broadway Blue",
     "year": 1952,
-    "hudson_code": "B-96",
     "car_code": "B-96",
-    "ditzler": "10814",
     "paint_ref": "10814",
     "rgb": [
       40,
@@ -2212,15 +2189,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Boston Ivory",
     "year": 1952,
-    "hudson_code": "N-92",
     "car_code": "N-92",
-    "ditzler": "80558",
     "paint_ref": "80558",
     "rgb": [
       228,
@@ -2489,15 +2463,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Jupiter Gray Poly",
     "year": 1952,
-    "hudson_code": "G-95",
     "car_code": "G-95",
-    "ditzler": "30921",
     "paint_ref": "30921",
     "rgb": [
       71,
@@ -2766,15 +2737,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Texas Tan Poly",
     "year": 1952,
-    "hudson_code": "H-27",
     "car_code": "H-27",
-    "ditzler": "20644",
     "paint_ref": "20644",
     "rgb": [
       108,
@@ -3043,15 +3011,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Symphony Blue Green Light",
     "year": 1952,
-    "hudson_code": "CC-93",
     "car_code": "CC-93",
-    "ditzler": "41119",
     "paint_ref": "41119",
     "rgb": [
       97,
@@ -3320,15 +3285,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Symphony Blue Green Dark",
     "year": 1952,
-    "hudson_code": "P",
     "car_code": "P",
-    "ditzler": "41238",
     "paint_ref": "41238",
     "rgb": [
       46,
@@ -3597,15 +3559,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Honey Cream",
     "year": 1953,
-    "hudson_code": "N-135",
     "car_code": "N-135",
-    "ditzler": "80600",
     "paint_ref": "80600",
     "rgb": [
       231,
@@ -3874,15 +3833,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Robin's Egg Green",
     "year": 1953,
-    "hudson_code": "CC-134",
     "car_code": "CC-134",
-    "ditzler": "41298",
     "paint_ref": "41298",
     "rgb": [
       120,
@@ -4151,15 +4107,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Blue Grass Green",
     "year": 1953,
-    "hudson_code": "P-136",
     "car_code": "P-136",
-    "ditzler": "41297",
     "paint_ref": "41297",
     "rgb": [
       49,
@@ -4428,15 +4381,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Pearl Gray Poly",
     "year": 1953,
-    "hudson_code": "G-128",
     "car_code": "G-128",
-    "ditzler": "31056",
     "paint_ref": "31056",
     "rgb": [
       110,
@@ -4705,15 +4655,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Seal Gray",
     "year": 1953,
-    "hudson_code": "RR-137",
     "car_code": "RR-137",
-    "ditzler": "31051",
     "paint_ref": "31051",
     "rgb": [
       156,
@@ -4982,15 +4929,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Surf Green",
     "year": 1953,
-    "hudson_code": "Q-133",
     "car_code": "Q-133",
-    "ditzler": "41300",
     "paint_ref": "41300",
     "rgb": [
       136,
@@ -5259,15 +5203,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Meadow Green Poly",
     "year": 1953,
-    "hudson_code": "S-132",
     "car_code": "S-132",
-    "ditzler": "41303",
     "paint_ref": "41303",
     "rgb": [
       40,
@@ -5536,15 +5477,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Beret Blue Poly",
     "year": 1954,
-    "hudson_code": "B-158",
     "car_code": "B-158",
-    "ditzler": "11070",
     "paint_ref": "11070",
     "rgb": [
       27,
@@ -5813,15 +5751,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Palm Beach Green",
     "year": 1954,
-    "hudson_code": "CC-163",
     "car_code": "CC-163",
-    "ditzler": "41470",
     "paint_ref": "41470",
     "rgb": [
       127,
@@ -6090,15 +6025,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Spring Green",
     "year": 1954,
-    "hudson_code": "Q-161",
     "car_code": "Q-161",
-    "ditzler": "41471",
     "paint_ref": "41471",
     "rgb": [
       134,
@@ -6367,15 +6299,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Royal Red",
     "year": 1954,
-    "hudson_code": "M-167",
     "car_code": "M-167",
-    "ditzler": "70451",
     "paint_ref": "70451",
     "rgb": [
       75,
@@ -6644,15 +6573,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "St. Clair Gray",
     "year": 1954,
-    "hudson_code": "RR-160",
     "car_code": "RR-160",
-    "ditzler": "31123",
     "paint_ref": "31123",
     "rgb": [
       175,
@@ -6921,15 +6847,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Pasture Green Poly",
     "year": 1954,
-    "hudson_code": "S-164",
     "car_code": "S-164",
-    "ditzler": "41469",
     "paint_ref": "41469",
     "rgb": [
       39,
@@ -7198,15 +7121,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Pacific Blue Green",
     "year": 1954,
-    "hudson_code": "P-162",
     "car_code": "P-162",
-    "ditzler": "41472",
     "paint_ref": "41472",
     "rgb": [
       53,
@@ -7475,15 +7395,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Algerian Blue Poly",
     "year": 1954,
-    "hudson_code": "G-168",
     "car_code": "G-168",
-    "ditzler": "11068",
     "paint_ref": "11068",
     "rgb": [
       55,
@@ -7752,15 +7669,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Silver Blue",
     "year": 1954,
-    "hudson_code": "J-159",
     "car_code": "J-159",
-    "ditzler": "11069",
     "paint_ref": "11069",
     "rgb": [
       103,
@@ -8029,15 +7943,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Coronation Cream",
     "year": 1954,
-    "hudson_code": "N-166",
     "car_code": "N-166",
-    "ditzler": "80639",
     "paint_ref": "80639",
     "rgb": [
       236,
@@ -8306,15 +8217,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Roman Bronze",
     "year": 1954,
-    "hudson_code": "H-165",
     "car_code": "H-165",
-    "ditzler": "70453",
     "paint_ref": "70453",
     "rgb": [
       111,
@@ -8583,15 +8491,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Caribbean Blue Green",
     "year": 1955,
-    "hudson_code": "P-44",
     "car_code": "P-44",
-    "ditzler": "41161",
     "paint_ref": "41161",
     "rgb": [
       32,
@@ -8860,15 +8765,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Coral Red",
     "year": 1955,
-    "hudson_code": "P-65",
     "car_code": "P-65",
-    "ditzler": "60178",
     "paint_ref": "60178",
     "rgb": [
       189,
@@ -9137,15 +9039,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Rio Red",
     "year": 1955,
-    "hudson_code": "P-64",
     "car_code": "P-64",
-    "ditzler": "70533",
     "paint_ref": "70533",
     "rgb": [
       149,
@@ -9414,15 +9313,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Bermuda Green",
     "year": 1955,
-    "hudson_code": "P-67",
     "car_code": "P-67",
-    "ditzler": "41696",
     "paint_ref": "41696",
     "rgb": [
       172,
@@ -9691,15 +9587,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Sunburst Yellow",
     "year": 1955,
-    "hudson_code": "P-66",
     "car_code": "P-66",
-    "ditzler": "80725",
     "paint_ref": "80725",
     "rgb": [
       221,
@@ -9968,15 +9861,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Mist Blue",
     "year": 1955,
-    "hudson_code": "P-68",
     "car_code": "P-68",
-    "ditzler": "11282",
     "paint_ref": "11282",
     "rgb": [
       177,
@@ -10245,15 +10135,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Island Green",
     "year": 1955,
-    "hudson_code": "P-62",
     "car_code": "P-62",
-    "ditzler": "41685",
     "paint_ref": "41685",
     "rgb": [
       18,
@@ -10522,15 +10409,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Snowberry White",
     "year": 1955,
-    "hudson_code": "P-69",
     "car_code": "P-69",
-    "ditzler": "8017",
     "paint_ref": "8017",
     "rgb": [
       233,
@@ -10799,15 +10683,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Midshipman Blue",
     "year": 1955,
-    "hudson_code": "P-61",
     "car_code": "P-61",
-    "ditzler": "11277",
     "paint_ref": "11277",
     "rgb": [
       15,
@@ -11076,15 +10957,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Palomino Brown",
     "year": 1955,
-    "hudson_code": "P-71",
     "car_code": "P-71",
-    "ditzler": "21139",
     "paint_ref": "21139",
     "rgb": [
       160,
@@ -11353,15 +11231,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Frost White",
     "year": 1956,
-    "hudson_code": "P-72",
     "car_code": "P-72",
-    "ditzler": "8108",
     "paint_ref": "8108",
     "rgb": [
       242,
@@ -11630,15 +11505,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Grenadier Red",
     "year": 1956,
-    "hudson_code": "P-78",
     "car_code": "P-78",
-    "ditzler": "70642",
     "paint_ref": "70642",
     "rgb": [
       181,
@@ -11907,15 +11779,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Willow Green",
     "year": 1956,
-    "hudson_code": "P-73",
     "car_code": "P-73",
-    "ditzler": "41868",
     "paint_ref": "41868",
     "rgb": [
       150,
@@ -12184,15 +12053,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Boulevard Gray",
     "year": 1956,
-    "hudson_code": "P-80",
     "car_code": "P-80",
-    "ditzler": "31331",
     "paint_ref": "31331",
     "rgb": [
       52,
@@ -12461,15 +12327,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Crocus Yellow",
     "year": 1956,
-    "hudson_code": "P-74",
     "car_code": "P-74",
-    "ditzler": "80737",
     "paint_ref": "80737",
     "rgb": [
       226,
@@ -12738,15 +12601,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Solitaire Blue",
     "year": 1956,
-    "hudson_code": "P-81",
     "car_code": "P-81",
-    "ditzler": "11206",
     "paint_ref": "11206",
     "rgb": [
       120,
@@ -13015,15 +12875,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Polo Green",
     "year": 1956,
-    "hudson_code": "P-75",
     "car_code": "P-75",
-    "ditzler": "41867",
     "paint_ref": "41867",
     "rgb": [
       29,
@@ -13292,15 +13149,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Pacific Blue",
     "year": 1956,
-    "hudson_code": "P-82",
     "car_code": "P-82",
-    "ditzler": "11462",
     "paint_ref": "11462",
     "rgb": [
       24,
@@ -13569,15 +13423,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Golden Brown",
     "year": 1956,
-    "hudson_code": "P-76",
     "car_code": "P-76",
-    "ditzler": "21221",
     "paint_ref": "21221",
     "rgb": [
       138,
@@ -13846,15 +13697,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Ballerina Red",
     "year": 1956,
-    "hudson_code": "P-83",
     "car_code": "P-83",
-    "ditzler": "70641",
     "paint_ref": "70641",
     "rgb": [
       216,
@@ -14123,15 +13971,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Mint Green",
     "year": 1956,
-    "hudson_code": "P-77",
     "car_code": "P-77",
-    "ditzler": "41819",
     "paint_ref": "41819",
     "rgb": [
       100,
@@ -14400,15 +14245,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Bermuda Green",
     "year": 1957,
-    "hudson_code": "P-67",
     "car_code": "P-67",
-    "ditzler": "41696",
     "paint_ref": "41696",
     "rgb": [
       179,
@@ -14677,15 +14519,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Mardi Gras Red",
     "year": 1957,
-    "hudson_code": "P-90",
     "car_code": "P-90",
-    "ditzler": "70711",
     "paint_ref": "70711",
     "rgb": [
       189,
@@ -14954,15 +14793,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Glacier Blue",
     "year": 1957,
-    "hudson_code": "P-84",
     "car_code": "P-84",
-    "ditzler": "11548",
     "paint_ref": "11548",
     "rgb": [
       161,
@@ -15231,15 +15067,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Mojave Yellow",
     "year": 1957,
-    "hudson_code": "P-92",
     "car_code": "P-92",
-    "ditzler": "80861",
     "paint_ref": "80861",
     "rgb": [
       246,
@@ -15508,15 +15341,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Lagoon Blue",
     "year": 1957,
-    "hudson_code": "P-85",
     "car_code": "P-85",
-    "ditzler": "11549",
     "paint_ref": "11549",
     "rgb": [
       63,
@@ -15785,15 +15615,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Sierra Peach",
     "year": 1957,
-    "hudson_code": "P-93",
     "car_code": "P-93",
-    "ditzler": "70710",
     "paint_ref": "70710",
     "rgb": [
       239,
@@ -16062,15 +15889,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Plum Poly",
     "year": 1957,
-    "hudson_code": "P-86",
     "car_code": "P-86",
-    "ditzler": "50462",
     "paint_ref": "50462",
     "rgb": [
       58,
@@ -16339,15 +16163,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Cinnamon Bronze Poly",
     "year": 1957,
-    "hudson_code": "P-94",
     "car_code": "P-94",
-    "ditzler": "21303",
     "paint_ref": "21303",
     "rgb": [
       114,
@@ -16616,15 +16437,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Berkshire Green",
     "year": 1957,
-    "hudson_code": "P-87",
     "car_code": "P-87",
-    "ditzler": "41986",
     "paint_ref": "41986",
     "rgb": [
       59,
@@ -16893,15 +16711,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Gotham Gray Poly",
     "year": 1957,
-    "hudson_code": "P-95",
     "car_code": "P-95",
-    "ditzler": "31403",
     "paint_ref": "31403",
     "rgb": [
       54,
@@ -17170,15 +16985,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Oregon Green",
     "year": 1957,
-    "hudson_code": "P-88",
     "car_code": "P-88",
-    "ditzler": "41987",
     "paint_ref": "41987",
     "rgb": [
       18,
@@ -17447,15 +17259,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Rebel Silver Gray Poly",
     "year": 1957,
-    "hudson_code": "P-96",
     "car_code": "P-96",
-    "ditzler": "31588",
     "paint_ref": "31588",
     "rgb": [
       115,
@@ -17724,15 +17533,12 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   },
   {
     "name": "Avocado Poly",
     "year": 1957,
-    "hudson_code": "P-89",
     "car_code": "P-89",
-    "ditzler": "41985",
     "paint_ref": "41985",
     "rgb": [
       110,
@@ -18001,7 +17807,6 @@
         ],
         "confidence": "api_measured_hex"
       }
-    ],
-    "other": []
+    ]
   }
 ]

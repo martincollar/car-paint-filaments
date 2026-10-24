@@ -1,12 +1,11 @@
-"""Barevné nástroje pro Hudson Hornet projekt.
+"""Colour helpers shared by the pipeline.
 
-Funkce:
-  median_rgb(path, box=None)         - medián RGB z celého obrázku nebo z boxu (left, top, right, bottom)
-  median_rgb_circle(path, center=None, radius=None, trim=0.9)
-                                      - medián z kruhové masky (vhodné pro špulky filamentu)
-  rgb_to_hex(rgb)
-  rgb_to_lab(rgb)
-  delta_e_2000(rgb_a, rgb_b)
+  _load(path)                 image as an RGB array, transparent PNGs composited over white
+  filament_rgb(path, ...)     measured colour of a filament product photo (see CLAUDE.md)
+  neutral_class(name)         black / dark / white / grey from a colour name, else None
+  kraft_share(path)           share of a photo that looks like kraft cardboard (review flag)
+  kraft_like_name / _rgb      cardboard-coloured name or RGB
+  rgb_to_hex, rgb_to_lab, delta_e_2000
 """
 from __future__ import annotations
 import math, warnings, numpy as np
@@ -16,10 +15,10 @@ warnings.filterwarnings("ignore", message=r'"(SciPy|Matplotlib)" related API fea
 import colour
 
 def _load(path):
-    """Načte obrázek jako RGB, u transparentních PNG kompozituje přes bílé pozadí.
+    """Load an image as RGB, compositing transparent PNGs over white.
 
-    Důvod: PIL `.convert("RGB")` u palette PNG s transparency vrací default
-    palette barvu (často zelenou nebo černou), což by zcela zkreslilo měření.
+    PIL's `.convert("RGB")` on a palette PNG with a transparency entry returns the
+    first palette colour (often green or black), not the rendered pixel.
     """
     im = Image.open(path)
     has_alpha = im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info)
@@ -53,30 +52,6 @@ def kraft_share(path, *, drop_white_v=0.93, drop_white_s=0.08):
     fg = ~((v > drop_white_v) & (s < drop_white_s))
     kraft = fg & (h >= 18) & (h <= 45) & (s >= 0.18) & (s < 0.6) & (v >= 0.35)
     return float(kraft.sum() / max(int(fg.sum()), 1))
-
-def median_rgb(path, box=None):
-    arr = _load(path)
-    if box is not None:
-        l, t, r, b = box
-        arr = arr[t:b, l:r]
-    med = np.median(arr.reshape(-1, 3), axis=0)
-    return tuple(int(round(x)) for x in med)
-
-def median_rgb_circle(path, center=None, radius=None, trim=0.9):
-    """Medián z kruhové masky kolem středu obrázku; vhodné pro produktové fotky špulek,
-    kde je navinutý filament zhruba uprostřed. `trim` zmenší poloměr aby se vyloučil
-    okraj (štítek/zápisy)."""
-    arr = _load(path)
-    h, w = arr.shape[:2]
-    cx = w // 2 if center is None else center[0]
-    cy = h // 2 if center is None else center[1]
-    r = min(w, h) // 2 if radius is None else radius
-    r = int(r * trim)
-    yy, xx = np.ogrid[:h, :w]
-    mask = (xx - cx) ** 2 + (yy - cy) ** 2 <= r * r
-    pixels = arr[mask]
-    med = np.median(pixels.reshape(-1, 3), axis=0)
-    return tuple(int(round(x)) for x in med)
 
 _NEUTRAL_WORDS = {   # matched on the diacritics-folded colour name, first class wins
     "black": r"\b(cern|black|onyx|stealth|ebony|jet)\w*",
@@ -303,106 +278,6 @@ def filament_rgb(path, *,
             return again, n
     return tuple(out), valid_count
 
-def dominant_hue_rgb(path, *,
-                      min_sat=0.12, min_v=0.20, max_v=0.97,
-                      drop_yellow_watermark=True,
-                      hue_window=12,  # ± stupňů kolem dominantního hue
-                      verbose=False):
-    """Pro produktové fotky filamentu: najde dominantní barvu podle histogramu hue
-    po odfiltrování pozadí, stínů a šedých dílů (cívka/stojan).
-
-    Postup:
-      1. HSV, odfiltruj: saturace < min_sat (šedé), jas mimo [min_v, max_v]
-      2. Vylouč žlutou (watermark Smart3D) pokud drop_yellow_watermark
-      3. Z filtrovaných pixelů najdi hue histogram (360 binů)
-      4. Dominantní hue (vyhlazené průměrem oken ±5°)
-      5. Medián z pixelů v hue_window kolem dominantního
-    """
-    import colorsys
-    arr = _load(path).astype(np.float32) / 255.0
-    H, W, _ = arr.shape
-    rgb = arr.reshape(-1, 3)
-    # HSV přes numpy (rychlé)
-    r, g, b = rgb[:,0], rgb[:,1], rgb[:,2]
-    maxc = rgb.max(axis=1); minc = rgb.min(axis=1)
-    v = maxc
-    s = np.where(maxc > 1e-6, (maxc - minc) / np.maximum(maxc, 1e-6), 0)
-    # Hue
-    dc = maxc - minc
-    rc = np.where(dc > 0, (maxc - r) / np.maximum(dc, 1e-6), 0)
-    gc = np.where(dc > 0, (maxc - g) / np.maximum(dc, 1e-6), 0)
-    bc = np.where(dc > 0, (maxc - b) / np.maximum(dc, 1e-6), 0)
-    h = np.zeros_like(maxc)
-    h = np.where(maxc == r, bc - gc, h)
-    h = np.where(maxc == g, 2 + rc - bc, h)
-    h = np.where(maxc == b, 4 + gc - rc, h)
-    h = (h / 6.0) % 1.0  # 0..1
-    h_deg = h * 360.0
-
-    mask = (s >= min_sat) & (v >= min_v) & (v <= max_v)
-    if drop_yellow_watermark:
-        yellow = (h_deg >= 40) & (h_deg <= 65) & (s > 0.3)
-        mask &= ~yellow
-    # Odfiltrovat hnědý/béžový karton krabic a špulek
-    cardboard = (h_deg >= 10) & (h_deg <= 50) & (s < 0.65) & (v < 0.90)
-    mask &= ~cardboard
-    if mask.sum() == 0:
-        if verbose: print("No valid pixels after filter.")
-        return (0,0,0), 0
-
-    hues = h_deg[mask]
-    sats = s[mask]
-    # Vážený histogram: každý pixel přispívá podle své saturace (sat^2 preferuje syté)
-    # Pak hnědé/šedé pixely, které projdou filtrem, přesto nevyhrají nad sytými zelenými.
-    hist, edges = np.histogram(hues, bins=360, range=(0,360), weights=sats**2)
-    # Vyhladit (moving average 11 stupňů)
-    k = 11
-    pad = np.r_[hist[-k:], hist, hist[:k]]  # cyklický
-    sm = np.convolve(pad, np.ones(k)/k, mode='valid')[k//2:k//2+360]
-    peak = int(np.argmax(sm))
-    if verbose: print(f"Dominant hue = {peak}°,  total valid pixels = {mask.sum()}")
-
-    # Vybrat pixely v okně kolem peak (cyklicky)
-    dist = np.minimum(np.abs(h_deg - peak), 360 - np.abs(h_deg - peak))
-    sel = mask & (dist <= hue_window)
-    pix = (rgb[sel] * 255).round()
-    if len(pix) == 0:
-        return (0,0,0), 0
-    med = np.median(pix, axis=0)
-    return tuple(int(round(x)) for x in med), int(len(pix))
-
-def median_rgb_masked(path, *,
-                       drop_white_v=0.90, drop_white_s=0.08,
-                       drop_dark_v=0.18,
-                       min_sat=0.10):
-    """Medián RGB s automatickým maskováním.
-
-    Odstraní:
-      - bílé / béžové pozadí (vysoká hodnota a nízká saturace)
-      - stíny (velmi nízká hodnota)
-      - šedé pixely (nízká saturace)
-    Z toho co zbyde vezme medián. Funguje pro produktové fotky filamentu
-    (Lego potisky, špulky), kde je barva kolem středu zajímavosti.
-    """
-    import colorsys
-    arr = _load(path).astype(np.float32) / 255.0
-    rgb = arr.reshape(-1, 3)
-    r, g, b = rgb[:,0], rgb[:,1], rgb[:,2]
-    maxc = np.max(rgb, axis=1); minc = np.min(rgb, axis=1)
-    v = maxc
-    s = np.where(maxc > 1e-6, (maxc - minc) / np.maximum(maxc, 1e-6), 0)
-    is_white = (v > drop_white_v) & (s < drop_white_s)
-    is_dark  = v < drop_dark_v
-    is_gray  = s < min_sat
-    mask = ~(is_white | is_dark | is_gray)
-    pix = (rgb[mask] * 255).round()
-    if len(pix) == 0:
-        # fallback: aspoň odfiltrovat bílou
-        mask = ~is_white
-        pix = (rgb[mask] * 255).round()
-    med = np.median(pix, axis=0)
-    return tuple(int(round(x)) for x in med), int(len(pix))
-
 def rgb_to_hex(rgb):
     return "#{:02X}{:02X}{:02X}".format(*rgb)
 
@@ -415,12 +290,3 @@ def delta_e_2000(rgb_a, rgb_b):
     la = rgb_to_lab(rgb_a)
     lb = rgb_to_lab(rgb_b)
     return float(colour.delta_E(la, lb, method="CIE 2000"))
-
-if __name__ == "__main__":
-    import sys, json
-    # self-test: Aurapol Cloud Nine z dokumentu RGB(152,218,216)
-    ref = (152, 218, 216)
-    print("Cloud Nine hex:", rgb_to_hex(ref))
-    print("Cloud Nine LAB:", rgb_to_lab(ref))
-    print("ΔE2000 vs same:", delta_e_2000(ref, ref))
-    print("ΔE2000 vs (112,164,163) [uživ. vzorek]:", delta_e_2000(ref, (112, 164, 163)))

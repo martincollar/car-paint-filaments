@@ -1,7 +1,6 @@
 """Build inline base64 thumbnails for the HTML.
 
-Produces `cars/<car>/data/thumbnails_<library>.json`. For library=cz keeps the
-legacy `thumbnails.json` alias so older build_html.py reads keep working.
+Produces `cars/<car>/data/thumbnails_<library>.json`.
 
 Usage:
     python prepare_thumbnails.py [--car <name>] [--library cz|intl]
@@ -106,9 +105,6 @@ def main():
 
     out = car_data / f"thumbnails_{args.library}.json"
     out.write_text(json.dumps({"car": car_thumb, "filaments": fil_thumb}), encoding="utf-8")
-    if args.library == "cz":
-        (car_data / "thumbnails.json").write_text(
-            json.dumps({"car": car_thumb, "filaments": fil_thumb}), encoding="utf-8")
     total_kb = (sum(len(v) for v in car_thumb.values())
                 + sum(len(v) for v in fil_thumb.values())) / 1024
     print(f"[{args.car}/{args.library}] {len(car_thumb)} car + {len(fil_thumb)} filament thumbs → {out} ({total_kb:.1f} KB)")

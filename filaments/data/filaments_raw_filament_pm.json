@@ -126,34 +126,6 @@
     "last_ok": "2026-10-24"
   },
   {
-    "slug": "p164",
-    "brand": "Filament PM",
-    "material": "PLA",
-    "color_name": "Marblejet Light",
-    "shop": "FilamentPM",
-    "url": "https://www.filament-pm.cz/pla-marblejet-light-1-75-mm-0-5-kg/p164",
-    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4698-marblejet-light-0-5kg-1-75-1-product-og.jpg?v=137701264",
-    "local_image": "filamentpm-pla-pla-marblejet-light-1-75-mm-0-5-kg.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PLA MarbleJet - Light",
-    "last_ok": "2026-10-24"
-  },
-  {
-    "slug": "p166",
-    "brand": "Filament PM",
-    "material": "PETG",
-    "color_name": "FR-jet White",
-    "shop": "FilamentPM",
-    "url": "https://www.filament-pm.cz/petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg/p166",
-    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4792-FRJET-WHITE-NEW-SPOOL1-product-og.jpg?v=4017030925",
-    "local_image": "filamentpm-petg-petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg.jpg",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "PETG FRJet samozhášivý - Bílá",
-    "last_ok": "2026-10-24"
-  },
-  {
     "slug": "p179",
     "brand": "Filament PM",
     "material": "PETG",

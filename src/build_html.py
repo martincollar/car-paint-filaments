@@ -48,7 +48,7 @@ total_count = sum(len(v) for v in by_year.values())
 
 def esc(s): return html_mod.escape(str(s))
 
-def hudson_block(h):
+def paint_block(h):
     poly = ' <span class="chip">metallic</span>' if h.get("poly") else ""
     return f"""
       <div class="paint">
@@ -57,8 +57,8 @@ def hudson_block(h):
           <div class="name">{esc(h['name'])}{poly}</div>
           <div class="sub">
             <span class="year">{h['year']}</span>
-            · {esc(h['hudson_code'])}
-            · ref. {esc(h['ditzler'])}
+            · {esc(h['car_code'])}
+            · ref. {esc(h['paint_ref'])}
           </div>
           <div class="hex">{h['hex']} <span class="rgb">RGB {h['rgb'][0]},{h['rgb'][1]},{h['rgb'][2]}</span></div>
         </div>
@@ -145,7 +145,7 @@ for year in sorted(by_year.keys(), reverse=True):
     for m in by_year[year]:
         rows.append(f"""
         <article class="row">
-          <div class="col paint-col">{hudson_block(m)}</div>
+          <div class="col paint-col">{paint_block(m)}</div>
           <div class="col pla-col">{filament_column(m['pla'], 'PLA')}</div>
           <div class="col petg-col">{filament_column(m['petg'], 'PETG')}</div>
         </article>

@@ -4,7 +4,7 @@ set -euo pipefail
 CAR="${1:-hudson}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PY="${PY:-$HERE/.venv/bin/python}"
-[ -x "$PY" ] || PY="${PY_FALLBACK:-$HOME/.venvs/hudson/bin/python}"
+[ -x "$PY" ] || { echo "no $PY — run: python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt" >&2; exit 1; }
 
 echo "→ measuring car swatches ($CAR)"
 "$PY" "$HERE/src/measure_car.py"        --car "$CAR"
