@@ -144,14 +144,13 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview.big canvas { cursor: zoom-out; }
 .hero-preview.big .hp-credit { letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px; }
-.hero-preview.closed .hp-zoom { display: none; }
-.hero-preview.closed canvas, .hero-preview.closed .hp-info { display: none; }
-.hero-preview.closed { width: auto; padding: 10px 44px 8px 12px; min-height: 28px; }
-.hero-preview.closed .hp-close { top: 8px; right: 8px; }
+.hero-preview.empty .hp-zoom { display: none; }
+.hero-preview.empty canvas { cursor: default; }
+.hero-preview.closed { display: none; }
 """
 
 HERO_HTML = """
-<aside class="hero-preview" id="hero-preview" aria-label="Recolored car preview">
+<aside class="hero-preview empty" id="hero-preview" aria-label="Recolored car preview">
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview"></button>
   <canvas id="hero-canvas"></canvas>
@@ -166,8 +165,8 @@ HERO_JS = """
   var H = __HERO__;
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
       info = document.getElementById('hero-info'), ctx = cv.getContext('2d');
-  box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.toggle('closed'); };
-  function zoom() { box.classList.toggle('big'); }
+  box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.add('closed'); };
+  function zoom() { if (!box.classList.contains('empty')) box.classList.toggle('big'); }
   box.querySelector('.hp-zoom').onclick = zoom; cv.onclick = zoom;
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.classList.remove('big'); });
   var M = [[0.4124564,0.3575761,0.1804375],[0.2126729,0.7151522,0.0721750],[0.0193339,0.1191920,0.9503041]];
@@ -251,7 +250,7 @@ HERO_JS = """
     cur = el.dataset.hex; info.innerHTML = window.filInfo(el.dataset);
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
-    box.classList.remove('closed');
+    box.classList.remove('closed', 'empty');
     if (loaded < 2) return;
     cv.classList.add('swap');
     setTimeout(function () { paint(cur); cv.classList.remove('swap'); }, 60);
