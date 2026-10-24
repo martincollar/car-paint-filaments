@@ -1,5 +1,6 @@
 {
   "name": "torq",
+  "redirect_from": ["plymouth_barracuda"],
   "display": "3D Sets Torq",
   "publish": true,
   "script_tagline": "Vitamin C & Bad Decisions",
