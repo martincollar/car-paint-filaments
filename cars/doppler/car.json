@@ -11,7 +11,7 @@
   "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson",
   "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-hudson-pg{page:02d}.jpg",
   "hero": {
-    "photo": "sources/hero.jpg",
+    "photo": "sources/hero_neutral.jpg",
     "mask": "sources/hero_mask.png",
     "roof": "#f2f2f2",
     "credit": "3D Sets Model 23 Doppler",
