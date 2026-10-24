@@ -344,6 +344,43 @@ img { max-width: 100%; }
 .to-top:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--orange); }
 .to-top:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 
+/* ===== Recolor preview + hover bubble (shared CSS holds layout only; this theme owns the look) ===== */
+:root { --hero-q-bg: rgba(45,34,23,0.72); --hero-q-fg: #fffdf4; --hero-q-font: Georgia, serif; }
+.hero-preview {
+  background: var(--bg-raised); border: 1px solid var(--rule); color: var(--navy);
+  box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.22);
+}
+/* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
+.hero-preview .hp-close, .hero-preview .hp-zoom {
+  border: 1.5px solid var(--navy); border-radius: 50%;
+  font-family: var(--font-display); font-size: 0.8rem; color: var(--navy);
+  box-shadow: 1.5px 1.5px 0 var(--navy); transition: transform .08s, box-shadow .08s;
+}
+.hero-preview .hp-close::before { content: "✕"; }
+.hero-preview .hp-zoom::before { content: "⤢"; }
+.hero-preview .hp-close { background: var(--orange-weak); }
+.hero-preview .hp-zoom  { background: var(--mustard-weak); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--mustard); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(1.5px, 1.5px); box-shadow: 0 0 0 var(--navy); }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { font-size: 1rem; }
+.hero-preview.big {
+  box-shadow: 0 0 0 100vmax rgba(45,34,23,0.45), 0 8px 24px rgba(45,34,23,0.3);
+  outline: 1px solid var(--rule); outline-offset: -7px;
+}
+.hero-preview.big .t-name {
+  font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; letter-spacing: 0.02em;
+  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak);
+}
+.hero-preview.big .hp-credit { font-size: 0.7rem; }
+.fil-tip {
+  background: var(--bg-raised); color: var(--navy); border: 1px solid var(--rule);
+  box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.25);
+}
+.fil-tip img { border: 1px solid var(--rule); }
+.fil-tip .t-sw, .hero-preview .t-sw { border: 1px solid var(--rule); }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--orange-deep, var(--navy)); }
+
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
   display: inline-flex; align-items: center; justify-content: center;
@@ -365,67 +402,42 @@ body[data-region="int"] .rcols[data-r="int"] { display: contents; }
 a.pick { display: contents; }
 a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--teal); outline-offset: 1px; }
 a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
+/* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
-  width: min(270px, 52vw); background: var(--bg-raised);
-  border: 1px solid var(--rule); box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.22);
-  padding: 10px; font-size: 0.8rem; line-height: 1.3; color: var(--navy);
+  width: min(270px, 52vw); padding: 10px; font-size: 0.8rem; line-height: 1.3;
 }
-.hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; }
+.hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; margin-bottom: 8px; cursor: zoom-in; }
 .hero-preview canvas.swap { opacity: .55; }
-.hero-preview canvas { margin-bottom: 8px; }
 .hero-preview .hp-info:empty { display: none; }
 .hero-preview .t-link { display: inline-block; margin-bottom: 6px; }
 .hero-preview .hp-credit { margin-top: 2px; font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
-/* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
 .hero-preview .hp-close, .hero-preview .hp-zoom {
-  position: absolute; top: 12px; width: 24px; height: 24px; padding: 0;
-  display: flex; align-items: center; justify-content: center;
-  border: 1.5px solid var(--navy); border-radius: 50%; cursor: pointer;
-  font-family: var(--font-display); font-size: 0.8rem; line-height: 1; color: var(--navy);
-  box-shadow: 1.5px 1.5px 0 var(--navy); transition: transform .08s, box-shadow .08s;
+  position: absolute; top: 12px; width: 24px; height: 24px; padding: 0; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; line-height: 1;
 }
-.hero-preview .hp-close { right: 12px; background: var(--orange-weak); }
-.hero-preview .hp-zoom  { right: 42px; background: var(--mustard-weak); }
-.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--mustard); }
-.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(1.5px, 1.5px); box-shadow: 0 0 0 var(--navy); }
-.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
-.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; font-size: 1rem; }
+.hero-preview .hp-close { right: 12px; }
+.hero-preview .hp-zoom  { right: 42px; }
+.hero-preview.big { width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%); padding: 14px 16px 10px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
-.hero-preview canvas { cursor: zoom-in; }
-.hero-preview.big {
-  width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%);
-  box-shadow: 0 0 0 100vmax rgba(45,34,23,0.45), 0 8px 24px rgba(45,34,23,0.3);
-}
 .hero-preview.big canvas { cursor: zoom-out; }
-.hero-preview.big { padding: 14px 16px 10px; outline: 1px solid var(--rule); outline-offset: -7px; }
-.hero-preview.big .t-name {
-  font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; letter-spacing: 0.02em;
-  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak);
-}
-.hero-preview.big .hp-credit {
-  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px;
-}
+.hero-preview.big .hp-credit { letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px; }
 .hero-preview.closed .hp-zoom { display: none; }
 .hero-preview.closed canvas, .hero-preview.closed .hp-info { display: none; }
 .hero-preview.closed { width: auto; padding: 10px 44px 8px 12px; min-height: 28px; }
 .hero-preview.closed .hp-close { top: 8px; right: 8px; }
 
 
-.fil-tip {
-  position: fixed; z-index: 30; width: 220px; padding: 10px; display: none;
-  background: var(--bg-raised); color: var(--navy); border: 1px solid var(--rule);
-  box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.25);
-  font-size: 0.8rem; line-height: 1.3;
-}
+.fil-tip { position: fixed; z-index: 30; width: 220px; padding: 10px; display: none; font-size: 0.8rem; line-height: 1.3; }
 .fil-tip.show { display: block; }
-.fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; border: 1px solid var(--rule); margin-bottom: 8px; }
+.fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; margin-bottom: 8px; }
 .fil-tip img.t-car { height: auto; object-fit: contain; background: #f8f8f8; }
 .fil-tip .t-name, .hero-preview .t-name { font-weight: 600; margin-bottom: 6px; }
 .fil-tip .t-row, .hero-preview .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
-.fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; border: 1px solid var(--rule); flex: none; }
-.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); font-weight: 600; color: var(--orange-deep, var(--navy)); text-decoration: none; }
+.fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
+.fil-tip .t-link, .hero-preview .t-link { font-weight: 600; text-decoration: none; }
 .fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
 
 </style>
@@ -8400,8 +8412,8 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
 <script>(function(){var b=document.querySelector('.to-top');if(!b)return;document.documentElement.classList.add('js');function f(){b.classList.toggle('show',window.scrollY>600)}addEventListener('scroll',f,{passive:true});f();})();</script>
 
 <aside class="hero-preview" id="hero-preview" aria-label="Recolored car preview">
-  <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">✕</button>
-  <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview">⤢</button>
+  <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
+  <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview"></button>
   <canvas id="hero-canvas"></canvas>
   <div class="hp-info" id="hero-info"></div>
   <div class="hp-credit">Photo: <a href="https://3dsets.com/product/model-23-doppler/" target="_blank" rel="noopener">3D Sets Model 23 Doppler</a></div>
@@ -8456,8 +8468,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
     }
     ctx.putImageData(g, 0, 0);
     var r = Hh * 0.2, x = W / 2, y0 = Hh / 2;
-    ctx.fillStyle = 'rgba(45,34,23,0.72)'; ctx.beginPath(); ctx.arc(x, y0, r, 0, 6.2832); ctx.fill();
-    ctx.fillStyle = '#fffdf4'; ctx.font = '700 ' + Math.round(r * 1.5) + 'px Georgia, serif';
+    var cs = getComputedStyle(document.documentElement), q = function (n) { return cs.getPropertyValue(n).trim(); };
+    ctx.fillStyle = q('--hero-q-bg'); ctx.beginPath(); ctx.arc(x, y0, r, 0, 6.2832); ctx.fill();
+    ctx.fillStyle = q('--hero-q-fg'); ctx.font = '700 ' + Math.round(r * 1.5) + 'px ' + q('--hero-q-font');
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
   }
 
