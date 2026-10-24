@@ -1,0 +1,1062 @@
+[
+  {
+    "name": "Winchester Gray Poly",
+    "year": 1971,
+    "car_code": "A4",
+    "paint_ref": "2314",
+    "rgb": [
+      71,
+      84,
+      91
+    ],
+    "hex": "#47545B",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      100
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Slate Gray Poly",
+    "year": 1971,
+    "car_code": "A-8",
+    "paint_ref": "2315",
+    "rgb": [
+      48,
+      57,
+      64
+    ],
+    "hex": "#303940",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      162
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Glacial Blue Poly",
+    "year": 1971,
+    "car_code": "B-2",
+    "paint_ref": "2304",
+    "rgb": [
+      57,
+      85,
+      115
+    ],
+    "hex": "#395573",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      224
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "True Blue Poly",
+    "year": 1971,
+    "car_code": "B-5",
+    "paint_ref": "2306",
+    "rgb": [
+      35,
+      55,
+      100
+    ],
+    "hex": "#233764",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      289
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Evening Blue Poly",
+    "year": 1971,
+    "car_code": "B-7",
+    "paint_ref": "2302",
+    "rgb": [
+      24,
+      36,
+      60
+    ],
+    "hex": "#18243C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      352
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "In-Violet Poly",
+    "year": 1971,
+    "car_code": "C-7",
+    "paint_ref": "2210",
+    "rgb": [
+      54,
+      49,
+      86
+    ],
+    "hex": "#363156",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      414
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Mood Indigo Poly",
+    "year": 1971,
+    "car_code": "C-8",
+    "paint_ref": "2305",
+    "rgb": [
+      21,
+      26,
+      55
+    ],
+    "hex": "#151A37",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      478
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Rallye Red",
+    "year": 1971,
+    "car_code": "E-5",
+    "paint_ref": "2136",
+    "rgb": [
+      138,
+      21,
+      20
+    ],
+    "hex": "#8A1514",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      540
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Burnished Red Poly",
+    "year": 1971,
+    "car_code": "E-7",
+    "paint_ref": "2321",
+    "rgb": [
+      65,
+      28,
+      22
+    ],
+    "hex": "#411C16",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      171,
+      602
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Amber Sherwood Poly",
+    "year": 1971,
+    "car_code": "F-3",
+    "paint_ref": "2316",
+    "rgb": [
+      77,
+      94,
+      52
+    ],
+    "hex": "#4D5E34",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      100
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sherwood Green Poly",
+    "year": 1971,
+    "car_code": "F-7",
+    "paint_ref": "2317",
+    "rgb": [
+      41,
+      49,
+      33
+    ],
+    "hex": "#293121",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      162
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "April Green Poly",
+    "year": 1971,
+    "car_code": "J-4",
+    "paint_ref": "2319",
+    "rgb": [
+      108,
+      106,
+      57
+    ],
+    "hex": "#6C6A39",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      224
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sassy Grass Green",
+    "year": 1971,
+    "car_code": "J-6",
+    "paint_ref": "2259",
+    "rgb": [
+      77,
+      123,
+      34
+    ],
+    "hex": "#4D7B22",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      289
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Autumn Bronze Poly",
+    "year": 1971,
+    "car_code": "K-6",
+    "paint_ref": "2312",
+    "rgb": [
+      50,
+      25,
+      20
+    ],
+    "hex": "#321914",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      352
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sandalwood Beige",
+    "year": 1971,
+    "car_code": "L-1",
+    "paint_ref": "22542",
+    "rgb": [
+      168,
+      157,
+      129
+    ],
+    "hex": "#A89D81",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      414
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Bahama Yellow",
+    "year": 1971,
+    "car_code": "L-5",
+    "paint_ref": "2325",
+    "rgb": [
+      154,
+      105,
+      39
+    ],
+    "hex": "#9A6927",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      478
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Coral Turquoise Poly",
+    "year": 1971,
+    "car_code": "Q-5",
+    "paint_ref": "2301",
+    "rgb": [
+      27,
+      62,
+      87
+    ],
+    "hex": "#1B3E57",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      540
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Tunisian Tan Poly",
+    "year": 1971,
+    "car_code": "T-2",
+    "paint_ref": "2313",
+    "rgb": [
+      123,
+      100,
+      68
+    ],
+    "hex": "#7B6444",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      339,
+      602
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Tahitian Walnut Poly",
+    "year": 1971,
+    "car_code": "T-8",
+    "paint_ref": "2309",
+    "rgb": [
+      70,
+      51,
+      37
+    ],
+    "hex": "#463325",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      100
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Tor-Red",
+    "year": 1971,
+    "car_code": "V-2",
+    "paint_ref": "2186",
+    "rgb": [
+      179,
+      40,
+      21
+    ],
+    "hex": "#B32815",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      162
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spinnaker White",
+    "year": 1971,
+    "car_code": "W-1",
+    "paint_ref": "2033",
+    "rgb": [
+      222,
+      216,
+      194
+    ],
+    "hex": "#DED8C2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      224
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sno-White",
+    "year": 1971,
+    "car_code": "W-3",
+    "paint_ref": "2300",
+    "rgb": [
+      232,
+      233,
+      221
+    ],
+    "hex": "#E8E9DD",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      289
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Curious Yellow",
+    "year": 1971,
+    "car_code": "Y-3",
+    "paint_ref": "2320",
+    "rgb": [
+      180,
+      196,
+      44
+    ],
+    "hex": "#B4C42C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      352
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Light Gold",
+    "year": 1971,
+    "car_code": "Y-4",
+    "paint_ref": "2310",
+    "rgb": [
+      159,
+      143,
+      92
+    ],
+    "hex": "#9F8F5C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      414
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Gold Leaf Poly",
+    "year": 1971,
+    "car_code": "Y-8",
+    "paint_ref": "2307",
+    "rgb": [
+      108,
+      93,
+      58
+    ],
+    "hex": "#6C5D3A",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      478
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Tawny Gold Poly",
+    "year": 1971,
+    "car_code": "Y-9",
+    "paint_ref": "2311",
+    "rgb": [
+      58,
+      51,
+      36
+    ],
+    "hex": "#3A3324",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
+    "source_file": "sources/1971-plymouth-pg01.jpg",
+    "source_pos": [
+      506,
+      540
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Silver Poly",
+    "year": 1970,
+    "car_code": "A-4",
+    "paint_ref": "2016",
+    "rgb": [
+      121,
+      124,
+      116
+    ],
+    "hex": "#797C74",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      94
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Ice Blue Poly",
+    "year": 1970,
+    "car_code": "B-3",
+    "paint_ref": "2018",
+    "rgb": [
+      59,
+      87,
+      110
+    ],
+    "hex": "#3B576E",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      157
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Blue Fire Poly",
+    "year": 1970,
+    "car_code": "B-5",
+    "paint_ref": "2019",
+    "rgb": [
+      29,
+      66,
+      109
+    ],
+    "hex": "#1D426D",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      220
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Jamaica Blue Poly",
+    "year": 1970,
+    "car_code": "B-7",
+    "paint_ref": "2020",
+    "rgb": [
+      23,
+      39,
+      60
+    ],
+    "hex": "#17273C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      284
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "In Violet",
+    "year": 1970,
+    "car_code": "C-7",
+    "paint_ref": "2210",
+    "rgb": [
+      52,
+      48,
+      83
+    ],
+    "hex": "#343053",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      346
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Rallye Red",
+    "year": 1970,
+    "car_code": "E-5",
+    "paint_ref": "2136",
+    "rgb": [
+      138,
+      20,
+      20
+    ],
+    "hex": "#8A1414",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      409
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Lime Green Poly",
+    "year": 1970,
+    "car_code": "F-4",
+    "paint_ref": "2133",
+    "rgb": [
+      75,
+      80,
+      51
+    ],
+    "hex": "#4B5033",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      471
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Ivy Green Poly",
+    "year": 1970,
+    "car_code": "F-8",
+    "paint_ref": "43786",
+    "rgb": [
+      35,
+      40,
+      28
+    ],
+    "hex": "#23281C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Limelight Poly",
+    "year": 1970,
+    "car_code": "J-5",
+    "paint_ref": "2128",
+    "rgb": [
+      134,
+      185,
+      59
+    ],
+    "hex": "#86B93B",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      182,
+      596
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sassy Grass Green",
+    "year": 1970,
+    "car_code": "J-6",
+    "paint_ref": "2259",
+    "rgb": [
+      77,
+      123,
+      34
+    ],
+    "hex": "#4D7B22",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      94
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Vitamin \"C\"",
+    "year": 1970,
+    "car_code": "K-2",
+    "paint_ref": "2201",
+    "rgb": [
+      192,
+      64,
+      24
+    ],
+    "hex": "#C04018",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      157
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Burnt Orange Poly",
+    "year": 1970,
+    "car_code": "K-3",
+    "paint_ref": "2134",
+    "rgb": [
+      113,
+      52,
+      39
+    ],
+    "hex": "#713427",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      220
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Deep Burnt Orange Poly",
+    "year": 1970,
+    "car_code": "K-5",
+    "paint_ref": "2135",
+    "rgb": [
+      99,
+      42,
+      30
+    ],
+    "hex": "#632A1E",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      284
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sandpebble Beige",
+    "year": 1970,
+    "car_code": "L-1",
+    "paint_ref": "22542",
+    "rgb": [
+      167,
+      156,
+      128
+    ],
+    "hex": "#A79C80",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      346
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Moulin Rouge",
+    "year": 1970,
+    "car_code": "M-3",
+    "paint_ref": "2260",
+    "rgb": [
+      121,
+      38,
+      63
+    ],
+    "hex": "#79263F",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      409
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Frosted Teal Poly",
+    "year": 1970,
+    "car_code": "P-6",
+    "paint_ref": "2132",
+    "rgb": [
+      45,
+      74,
+      82
+    ],
+    "hex": "#2D4A52",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      471
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Scorch Red",
+    "year": 1970,
+    "car_code": "R-6",
+    "paint_ref": "2029",
+    "rgb": [
+      94,
+      18,
+      20
+    ],
+    "hex": "#5E1214",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sahara Tan Poly",
+    "year": 1970,
+    "car_code": "T-3",
+    "paint_ref": "2131",
+    "rgb": [
+      108,
+      88,
+      64
+    ],
+    "hex": "#6C5840",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      348,
+      596
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Burnt Tan Poly",
+    "year": 1970,
+    "car_code": "T-6",
+    "paint_ref": "2129",
+    "rgb": [
+      89,
+      61,
+      41
+    ],
+    "hex": "#593D29",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      94
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Walnut Poly",
+    "year": 1970,
+    "car_code": "T-8",
+    "paint_ref": "2130",
+    "rgb": [
+      63,
+      46,
+      35
+    ],
+    "hex": "#3F2E23",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      157
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Tor-Red",
+    "year": 1970,
+    "car_code": "V-2",
+    "paint_ref": "2186",
+    "rgb": [
+      180,
+      40,
+      22
+    ],
+    "hex": "#B42816",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      220
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Alpine White",
+    "year": 1970,
+    "car_code": "W-1",
+    "paint_ref": "2033",
+    "rgb": [
+      222,
+      215,
+      193
+    ],
+    "hex": "#DED7C1",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      284
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Lemon Twist",
+    "year": 1970,
+    "car_code": "Y-1",
+    "paint_ref": "2211",
+    "rgb": [
+      246,
+      206,
+      50
+    ],
+    "hex": "#F6CE32",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      346
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sunfire Yellow",
+    "year": 1970,
+    "car_code": "Y-2",
+    "paint_ref": "81574",
+    "rgb": [
+      215,
+      211,
+      113
+    ],
+    "hex": "#D7D371",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      409
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Yellow Gold",
+    "year": 1970,
+    "car_code": "Y-3",
+    "paint_ref": "81575",
+    "rgb": [
+      200,
+      184,
+      124
+    ],
+    "hex": "#C8B87C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      471
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Citron Mist Poly",
+    "year": 1970,
+    "car_code": "Y-4",
+    "paint_ref": "2117",
+    "rgb": [
+      122,
+      116,
+      88
+    ],
+    "hex": "#7A7458",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Citron Gold Poly",
+    "year": 1970,
+    "car_code": "Y-6",
+    "paint_ref": "2102",
+    "rgb": [
+      96,
+      90,
+      55
+    ],
+    "hex": "#605A37",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-plymouth",
+    "source_file": "sources/1970-plymouth-pg01.jpg",
+    "source_pos": [
+      515,
+      596
+    ],
+    "confidence": "measured_from_card"
+  }
+]

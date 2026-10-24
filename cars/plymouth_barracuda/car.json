@@ -1,0 +1,14 @@
+{
+  "name": "plymouth_barracuda",
+  "display": "Plymouth Barracuda",
+  "script_tagline": "Hemi Orange & High Impact",
+  "subtitle_source": "Plymouth Ditzler color cards (1970-1971)",
+  "years": [1971, 1970],
+  "pages_per_year": {"1970": 2, "1971": 2},
+  "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-plymouth",
+  "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-plymouth-pg{page:02d}.jpg",
+  "notes": [
+    "Cards cover the whole Plymouth range; only the chips that were offered on the Barracuda/'Cuda are picked by hand in card_layout.json.",
+    "Reference model: 3D Sets Model 19 Torq, which looks like a 1970 Barracuda/'Cuda."
+  ]
+}
