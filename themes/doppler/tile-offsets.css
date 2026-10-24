@@ -1,0 +1,4 @@
+.tile--doppler .t-star-1 { translate: -16px -19px; }
+.tile--doppler .tile-meta { translate: -47px -23px; }
+.tile--doppler .tile-name { translate: -60px -44px; scale: 1.05; transform-origin: left center; }
+.tile--doppler .tile-tag { translate: -67px -25px; scale: 1.28; transform-origin: left center; }

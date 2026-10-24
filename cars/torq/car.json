@@ -33,5 +33,15 @@
     "mask": "sources/hero_mask.png",
     "credit": "3D Sets Model 19 Torq",
     "credit_url": "https://3dsets.com/product/model-19-torq/"
+  },
+  "index": {
+    "paints": [
+      "In-Violet Poly",
+      "Lemon Twist",
+      "Charcoal Poly",
+      "Basin Street Blue",
+      "Meadow Green",
+      "Spinnaker White"
+    ]
   }
 }

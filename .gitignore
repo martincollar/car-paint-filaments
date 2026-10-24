@@ -10,3 +10,4 @@ filaments/.cache/
 /_site/
 /.worktrees/
 /.claude/
+cars/*/sources/cut_work/

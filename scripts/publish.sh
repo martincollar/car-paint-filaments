@@ -12,10 +12,12 @@ src="$HERE/cars/$CAR/output/$CAR.html"
 [ "$(jq -r '.publish // false' "$HERE/cars/$CAR/car.json")" = "true" ] \
   || echo "! $CAR has no \"publish\": true in car.json — committed, but it won't appear on the site" >&2
 
+PY="${PY:-$HERE/.venv/bin/python}"
+"$PY" "$HERE/src/build_index.py" >/dev/null   # root page tiles follow the published cars
 "$HERE/scripts/build_site.sh" >/dev/null   # same assembly CI runs; fails early if anything is missing
 
 cd "$HERE"
-git add "cars/$CAR/output" "cars/$CAR/car.json"
+git add "cars/$CAR/output" "cars/$CAR/car.json" site
 if git diff --cached --quiet; then
   echo "no changes to publish"
   exit 0

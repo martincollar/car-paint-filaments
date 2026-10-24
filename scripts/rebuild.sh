@@ -18,4 +18,5 @@ echo "→ preparing thumbnails"
 "$PY" "$HERE/src/prepare_thumbnails.py" --car "$CAR"
 echo "→ building HTML"
 "$PY" "$HERE/src/build_html.py"         --car "$CAR"
+"$PY" "$HERE/src/build_index.py"                       # site/index.html (root page tiles)
 echo "✓ done — cars/$CAR/output/$CAR.html"

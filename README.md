@@ -39,7 +39,7 @@ car-paint-filaments/
 │   ├── rebuild.sh <car>              # full pipeline
 │   ├── rebuild_html_only.sh <car>    # matches + HTML only
 │   ├── fetch_all_shops.sh            # fetch every shop (src/fetch_all.py)
-│   ├── build_site.sh                 # assemble _site/ for GitHub Pages from committed outputs
+│   ├── build_site.sh                 # assemble _site/ for GitHub Pages from committed outputs + site/index.html
 │   └── publish.sh <car>              # commit output + push → Pages workflow deploys
 ├── shops/                    # one <shop>.yaml per e-shop + _defaults.yaml (shared rules, banned finishes)
 ├── tests/                    # unit tests for src/shoplib.py
@@ -83,7 +83,7 @@ Every script takes `--car <name>` and defaults to `doppler` (overridable with `C
 Pages are built locally (the filament photos are gitignored, so CI can't rebuild) and committed in `cars/<car>/output/`. On push to `main`, `.github/workflows/pages.yml` runs `scripts/build_site.sh` and deploys to GitHub Pages:
 
 - `https://martincollar.github.io/car-paint-filaments/<car>/`: `<car>.html`, with an EU / CZ ↔ INT switch (`?region=int` opens INT; `<car>/intl.html` redirects there)
-- root: index of all cars with `"publish": true` in `car.json`
+- root: one big tile per car with `"publish": true` in `car.json`; the car recolours through its best filaments on hover (tap on mobile). Built locally by `src/build_index.py` into `site/index.html` (committed)
 
 ```bash
 scripts/rebuild_html_only.sh doppler && scripts/publish.sh doppler
