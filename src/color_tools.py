@@ -5,10 +5,11 @@
   neutral_class(name)         black / dark / white / grey from a colour name, else None
   kraft_share(path)           share of a photo that looks like kraft cardboard (review flag)
   kraft_like_name / _rgb      cardboard-coloured name or RGB
-  rgb_to_hex, rgb_to_lab, delta_e_2000
+  rgb_to_hex, hex_to_rgb, rgb_to_lab, delta_e_2000, delta_e_2000_many (Lab arrays)
+  fold(s)                     lowercase ASCII without diacritics
 """
 from __future__ import annotations
-import math, warnings, numpy as np
+import math, re, unicodedata, warnings, numpy as np
 from PIL import Image
 # colour-science warns on import that optional SciPy/Matplotlib are missing; we use neither.
 warnings.filterwarnings("ignore", message=r'"(SciPy|Matplotlib)" related API features are not available')
@@ -31,6 +32,26 @@ def _load(path):
         im = im.convert("RGB")
     return np.asarray(im, dtype=np.uint8)
 
+def _hsv(rgb):
+    """(N, 3) RGB in 0-1 → hue in degrees, saturation, value, chroma (max-min), each (N,)."""
+    maxc = rgb.max(axis=1); minc = rgb.min(axis=1)
+    v = maxc
+    s = np.where(maxc > 1e-6, (maxc - minc) / np.maximum(maxc, 1e-6), 0)
+    dc = maxc - minc
+    r, g, b = rgb[:,0], rgb[:,1], rgb[:,2]
+    rc = np.where(dc > 0, (maxc - r) / np.maximum(dc, 1e-6), 0)
+    gc = np.where(dc > 0, (maxc - g) / np.maximum(dc, 1e-6), 0)
+    bc = np.where(dc > 0, (maxc - b) / np.maximum(dc, 1e-6), 0)
+    h = np.zeros_like(maxc)
+    h = np.where(maxc == r, bc - gc, h)
+    h = np.where(maxc == g, 2 + rc - bc, h)
+    h = np.where(maxc == b, 4 + gc - rc, h)
+    return ((h / 6.0) % 1.0) * 360.0, s, v, dc
+
+def fold(s):
+    """Lowercase ASCII without diacritics: 'Černá' → 'cerna' (same as shoplib._fold)."""
+    return unicodedata.normalize("NFKD", str(s or "")).encode("ascii", "ignore").decode().lower()
+
 def kraft_share(path, *, drop_white_v=0.93, drop_white_s=0.08):
     """Share of non-background pixels that look like light kraft cardboard
     (hue 18-45°, saturation 0.18-0.6, value >= 0.35): refill boxes and spool cores.
@@ -39,16 +60,7 @@ def kraft_share(path, *, drop_white_v=0.93, drop_white_s=0.08):
     brown filament scores high too, so use this to *flag* a photo, never to
     mask pixels out of the measurement.
     """
-    rgb = _load(path).astype(np.float32).reshape(-1, 3) / 255.0
-    maxc, minc = rgb.max(axis=1), rgb.min(axis=1)
-    dc = maxc - minc
-    v = maxc
-    s = np.where(maxc > 1e-6, dc / np.maximum(maxc, 1e-6), 0)
-    r, g, b = rgb[:, 0], rgb[:, 1], rgb[:, 2]
-    safe = np.maximum(dc, 1e-6)
-    h = np.where(maxc == r, ((g - b) / safe) % 6,
-        np.where(maxc == g, (b - r) / safe + 2, (r - g) / safe + 4)) * 60.0
-    h = np.where(dc > 0, h, 0)
+    h, s, v, _dc = _hsv(_load(path).astype(np.float32).reshape(-1, 3) / 255.0)
     fg = ~((v > drop_white_v) & (s < drop_white_s))
     kraft = fg & (h >= 18) & (h <= 45) & (s >= 0.18) & (s < 0.6) & (v >= 0.35)
     return float(kraft.sum() / max(int(fg.sum()), 1))
@@ -69,9 +81,7 @@ _KRAFT_LIKE_NAMES = (r"bez|beige|sand|pisk|tan\b|taupe|khaki|linen|cream|krem|sm
 
 def kraft_like_name(name):
     """True when the colour name is a beige/brown/tan family colour (looks like cardboard)."""
-    import re, unicodedata
-    n = unicodedata.normalize("NFKD", str(name or "")).encode("ascii", "ignore").decode().lower()
-    return re.search(_KRAFT_LIKE_NAMES, n) is not None
+    return re.search(_KRAFT_LIKE_NAMES, fold(name)) is not None
 
 def kraft_like_rgb(rgb):
     """True when an (0-255) RGB colour sits in the kraft-cardboard band of kraft_share()."""
@@ -81,8 +91,7 @@ def kraft_like_rgb(rgb):
 
 def neutral_class(name):
     """'black' / 'white' / 'grey' when the colour name says so, else None."""
-    import re, unicodedata
-    n = unicodedata.normalize("NFKD", str(name or "")).encode("ascii", "ignore").decode().lower()
+    n = fold(name)
     for cls, rx in _NEUTRAL_WORDS.items():
         if re.search(rx, n):
             return cls
@@ -98,17 +107,20 @@ def filament_rgb(path, *,
                   drop_yellow_watermark=True,
                   min_valid_pixels=200,
                   verbose=False):
-    """Měří dominantní barvu filamentu z produktové fotky — funguje i pro bílé/béžové/šedé.
+    """Measured colour of a filament product photo → ((r, g, b) | None, pixel count).
 
-    Postup:
-      1. Odfiltruj bílé/světlé pozadí studia (vysoká hodnota + nízká saturace).
-      2. Odfiltruj černé stíny.
-      3. Odfiltruj hnědý karton krabic / špulek (hue 10-50°, nižší saturace).
-      4. Odfiltruj žlutý watermark Smart3D (hue 40-65° s vysokou saturací).
-      5. Z toho, co zbyde, najdi:
-         - průměrnou saturaci pixelů
-         - pokud > 0.15: barevný filament → dominant hue (vážené podle sat²)
-         - pokud ≤ 0.15: neutrální filament → medián všech zbylých pixelů
+    Steps (thresholds and their reasons: CLAUDE.md, "filament_rgb() branches…"):
+      1. Drop studio-white background (v > 0.93, s < 0.08) and shadows (v < 0.15).
+      2. Drop dark cardboard (hue 15-45°, s 0.15-0.55, v < 0.65), the yellow Smart3D
+         watermark (hue 42-62°, s > 0.40, only while it is < 4 % of the foreground)
+         and a per-brand `drop_hue_band`.
+      3. Coloured when the colourful pixels (s >= 0.10, chroma >= `min_chroma`) are
+         > max(200, 2 %) of what is left and their mean saturation > 0.15: median of
+         the pixels within ±15° of the saturation²-weighted dominant hue.
+      4. Otherwise neutral: median of the rest, minus light kraft and dark spool
+         flanges when enough remains without them.
+      5. Kraft second pass when the result looks like cardboard but the name doesn't.
+    Returns (None, 0) when no pixel survives step 1.
 
     `name` (colour name) helps neutral filaments: when it says black / white /
     grey, the median is taken from dark / light / mid-grey low-saturation pixels
@@ -119,28 +131,16 @@ def filament_rgb(path, *,
     arr = _load(path).astype(np.float32) / 255.0
     H, W, _ = arr.shape
     rgb = arr.reshape(-1, 3)
-    maxc = rgb.max(axis=1); minc = rgb.min(axis=1)
-    v = maxc
-    s = np.where(maxc > 1e-6, (maxc - minc) / np.maximum(maxc, 1e-6), 0)
-    dc = maxc - minc
-    r, g, b = rgb[:,0], rgb[:,1], rgb[:,2]
-    rc = np.where(dc > 0, (maxc - r) / np.maximum(dc, 1e-6), 0)
-    gc = np.where(dc > 0, (maxc - g) / np.maximum(dc, 1e-6), 0)
-    bc = np.where(dc > 0, (maxc - b) / np.maximum(dc, 1e-6), 0)
-    h = np.zeros_like(maxc)
-    h = np.where(maxc == r, bc - gc, h)
-    h = np.where(maxc == g, 2 + rc - bc, h)
-    h = np.where(maxc == b, 4 + gc - rc, h)
-    h_deg = ((h / 6.0) % 1.0) * 360.0
+    h_deg, s, v, dc = _hsv(rgb)
 
-    # Pozadí studia (velmi světlé a nenasycené)
+    # Studio background (very light, unsaturated)
     is_bg_white = (v > drop_white_v) & (s < drop_white_s)
-    # Stíny
+    # Shadows
     is_shadow = v < drop_dark_v
-    # Hnědý karton krabic / špulek: tmavší než béžový pigment (v < 0.65)
-    # Béžový filament mívá v > 0.65. Karton je typicky v okolí 0.35-0.60.
+    # Brown box / spool cardboard: darker than beige pigment (beige filament is
+    # usually v > 0.65, cardboard around 0.35-0.60)
     is_cardboard = (h_deg >= 15) & (h_deg <= 45) & (s >= 0.15) & (s < 0.55) & (v < 0.65)
-    # Žlutý watermark Smart3D (vysoká saturace, specifický odstín)
+    # Smart3D yellow watermark (high saturation, a specific hue)
     is_watermark = (h_deg >= 42) & (h_deg <= 62) & (s > 0.40) if drop_yellow_watermark else np.zeros_like(v, dtype=bool)
     # The watermark is thin text: when "watermark yellow" covers a real area, it's a yellow filament.
     fg = ~(is_bg_white | is_shadow)
@@ -189,7 +189,7 @@ def filament_rgb(path, *,
     valid_count = int(valid.sum())
 
     if valid_count < min_valid_pixels:
-        # Hodně málo pixelů prošlo filtrem — zkusit mírnější verzi (jen pozadí a stíny)
+        # Too few pixels survived the filters: retry with only background and shadows dropped
         valid = ~(is_bg_white | is_shadow)
         valid_count = int(valid.sum())
         if valid_count == 0:
@@ -200,8 +200,8 @@ def filament_rgb(path, *,
     valid_h = h_deg[valid]
     mean_sat = float(valid_s.mean())
 
-    # Pro histogram odfiltruj šedé pixely (s < 0.10) — jejich "hue" je numerický šum
-    # a při dost velkém počtu by jinak zcela dominovaly výsledek.
+    # Keep grey pixels (s < 0.10) out of the hue histogram: their "hue" is numerical noise
+    # and, when there are enough of them, would dominate the result.
     # `min_chroma` (per-brand hint, see shops/_defaults.yaml measure_hints): also require
     # absolute chroma (max-min). HSV inflates the saturation of dark pixels, so Aurapol's
     # slightly bluish black spool outvotes a pastel winding. Not global: a dark bronze or
@@ -215,7 +215,7 @@ def filament_rgb(path, *,
     # Relative, not just > 200: on a large photo a few hundred anti-aliased edge pixels of a
     # removed spool would otherwise turn a pale neutral winding into a "coloured" filament.
     if len(colorful_h) > max(200, 0.02 * len(valid_rgb)) and colorful_mean_sat > 0.15:
-        # Barevný filament — dominant hue z barevných pixelů
+        # Coloured filament: dominant hue of the colourful pixels
         hist, _ = np.histogram(colorful_h, bins=360, range=(0,360), weights=colorful_s**2)
         pad = np.r_[hist[-11:], hist, hist[:11]]
         sm = np.convolve(pad, np.ones(11)/11, mode='valid')[5:5+360]
@@ -239,8 +239,8 @@ def filament_rgb(path, *,
             med = np.median(colorful_rgb[sel], axis=0)
         if verbose: print(f"colored: peak={peak}°, mean_sat={colorful_mean_sat:.2f}, in-window={int(sel.sum())}, colorful={len(colorful_h)}")
     else:
-        # Neutrální filament (bílá/béžová/šedá/pastel) — medián všeho co prošlo; kraft karton
-        # (krabice, jádro cívky) vynech, pokud po něm zbude dost — u béžového filamentu nezbude.
+        # Neutral filament (white/beige/grey/pastel): median of everything that passed; leave out
+        # kraft cardboard (box, spool core) when enough remains without it (a beige filament won't).
         keep = np.ones(len(valid_rgb), dtype=bool)
         not_kraft = ~is_kraft[valid]
         if not_kraft.sum() >= max(min_valid_pixels, 0.6 * len(valid_rgb)):

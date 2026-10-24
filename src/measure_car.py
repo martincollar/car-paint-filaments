@@ -79,7 +79,7 @@ def main():
             })
 
     out = data_dir / "car_colors.json"
-    out.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+    config.write_json(out, records)
     print(f"[{args.car}] {len(records)} swatches measured → {out}")
 
 if __name__ == "__main__":

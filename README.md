@@ -8,7 +8,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 
 | Car | Years | Colors | Page |
 |---|---|---|---|
-| Hudson & Nash-Hudson | 1951-1957 | 65 | [hudson](https://martincollar.github.io/car-paint-filaments/hudson/) |
+| Hudson Hornet | 1951-1957 | 65 | [hudson](https://martincollar.github.io/car-paint-filaments/hudson/) |
 | Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
 
 ## Quick start
@@ -48,7 +48,7 @@ car-paint-filaments/
 │   ├── measure_car.py                # car colors from scanned cards → car_colors.json
 │   ├── measure_filaments.py          # one filaments.json from every filaments_raw*.json
 │   ├── compute_matches.py            # top-K PLA/PETG per car color → matches_<lib>.json
-│   ├── prepare_thumbnails.py         # base64 swatches + product photos → thumbnails_<lib>.json
+│   ├── prepare_thumbnails.py         # base64 product photos → thumbnails_<lib>.json
 │   ├── build_html.py                 # final HTML page → cars/<car>/output/<car>.html
 │   ├── fetch_all.py                  # every shop: sitemap → rules → product pages → raw JSON
 │   ├── shoplib.py                    # polite HTTP, robots.txt, cache, sitemap, JSON-LD/microdata, rules
@@ -96,7 +96,7 @@ scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
 2. **`fetch_all.py`** — for each `shops/<shop>.yaml`: discover products from the sitemap (or Shopify JSON / pins), filter them by rules, read each product page, download photos into `filaments/sources/` and write `filaments/data/filaments_raw_<shop>.json`. Transparent, natural and silk filaments are never included.
 3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, deduplicates by (library, URL, slug), writes the single `filaments/data/filaments.json`.
 4. **`compute_matches.py --car <name>`** — top-5 PLA + top-5 PETG per car color via ΔE2000.
-5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (car swatches cropped from the cards + product photos resized to 100px, white-composited over transparency).
+5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (product photos resized to 100px, white-composited over transparency).
 6. **`build_html.py --car <name>`** — final HTML. Reads `car.json` for title, tagline, subtitle etc., so the same code works for any car.
 
 ## Adding a new car
@@ -144,7 +144,7 @@ The filament catalog is reused as-is; no need to re-fetch unless you want fresh 
 - **PNG transparency**: Many e-shop PNGs use palette mode with a `transparency` entry; `PIL.Image.convert("RGB")` on these returns the first palette color (often green or black), *not* the actually rendered pixel. `color_tools._load()` detects alpha / palette-transparency and composites over white first.
 - **Dominant-hue extraction**: For colored filaments, read the median of pixels within ±15° of the saturation²-weighted hue peak, excluding studio-white background, cardboard boxes (hue 15-45° at v < 0.65), yellow watermarks (hue 42-62° at s > 0.4) and gray pixels (s < 0.10, their hue is numerical noise and otherwise dominates).
 - **Neutral filaments** (beige, cream, gray, white) use plain median of non-background pixels instead of dominant hue — their saturation is too low for the hue approach.
-- **ΔE2000 vs vision**: ΔE weights lightness heavily, so a bright yellow may score closer to a beige than a muted peach. For HTML display, candidates with ΔE ≥ 12 trigger a "no close match" banner and alternatives below the primary are hidden unless they are within ~2 ΔE of it.
+- **ΔE2000 vs vision**: ΔE weights lightness heavily, so a bright yellow may score closer to a beige than a muted peach. For HTML display, a primary with ΔE ≥ 12 gets a "no close match" banner, and up to 4 alternatives are shown when their ΔE < max(10, primary + 2).
 - **Real names**: pages show the real make/model, colour names and codes from the cards, and credit the card source. Third-party affiliate/tracking codes are stripped from shop links (`build_html.clean_url()`).
 
 ## Dependencies

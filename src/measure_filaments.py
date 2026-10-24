@@ -21,23 +21,22 @@ Usage:
 import json, sys, glob
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from color_tools import filament_rgb, rgb_to_hex, rgb_to_lab, delta_e_2000
+from color_tools import filament_rgb, hex_to_rgb, neutral_class, rgb_to_hex, rgb_to_lab, delta_e_2000
 import config, shoplib
 
 # filament_rgb() can't measure white/black filaments: white pixels are dropped as studio
 # background and near-black ones as shadow, so the median lands on the spool or box.
 # Flag records whose name contradicts the measured lightness; fix them in color_overrides.json.
-WHITE_WORDS = ("white", "bílá", "bila", "snowflake", "snow")
-BLACK_WORDS = ("black", "černá", "cerna")
+# The name classes are color_tools.neutral_class(), the same words filament_rgb() uses.
 
 def suspicious_neutral(rec):
     if rec.get("confidence") != "measured_dominant_hue" or not rec.get("rgb"):
         return None
-    name = rec.get("color_name", "").lower()
+    cls = neutral_class(rec.get("color_name"))
     L = float(rgb_to_lab(rec["rgb"])[0])
-    if any(w in name for w in WHITE_WORDS) and L < 75:
+    if cls == "white" and L < 75:
         return f"named white but L={L:.0f}"
-    if any(w in name for w in BLACK_WORDS) and L > 30:
+    if cls == "black" and L > 30:
         return f"named black but L={L:.0f}"
     return None
 
@@ -46,11 +45,13 @@ def load_overrides():
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
 
 def apply_override(rec, ov):
-    hx = ov["hex"].lstrip("#")
+    rgb = hex_to_rgb(ov["hex"])
+    if rgb is None:
+        raise SystemExit(f"color_overrides.json: bad hex {ov['hex']!r} for {rec.get('slug')}")
     if rec.get("hex"):
         rec["measured_hex"] = rec["hex"]
-    rec["rgb"] = [int(hx[i:i+2], 16) for i in (0, 2, 4)]
-    rec["hex"] = "#" + hx.upper()
+    rec["rgb"] = rgb
+    rec["hex"] = rgb_to_hex(rgb)
     rec["confidence"] = "manual_override"
     rec.pop("error", None)
     return rec
@@ -151,8 +152,11 @@ def main():
         if why:
             print(f"  ! suspicious measurement {r['hex']} ({why}): {r.get('slug')} — add to color_overrides.json")
 
-    config.FILAMENTS_JSON.write_text(json.dumps(dedup, indent=2, ensure_ascii=False), encoding="utf-8")
+    config.write_json(config.FILAMENTS_JSON, dedup)
     ok = sum(1 for r in dedup if r.get("rgb"))
+    for r in dedup:
+        if r.get("error"):
+            print(f"  ! not measured ({r['error']}): {r.get('slug')}")
     by_lib = {}
     for r in dedup:
         by_lib.setdefault(r.get("library", "cz"), 0)

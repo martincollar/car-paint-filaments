@@ -130,6 +130,8 @@ def fetch_shop(rules, args, lock, report):
             facts = adapter.product(rules, url, c, max_age)
         except shoplib.NotFound as e:
             rep["not_found"].append(url); print(f"  404  {url}"); continue
+        except shoplib.Disallowed:      # permanent until robots.txt changes: drop, don't keep as stale
+            reject(slug, "robots"); continue
         except Exception as e:      # FetchError, or a page the extractor chokes on
             e = e if isinstance(e, shoplib.FetchError) else f"{type(e).__name__}: {e} ({url})"
             if slug in prev_records:

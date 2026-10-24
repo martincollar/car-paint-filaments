@@ -11,7 +11,7 @@ Folder layout:
         car.json           — car metadata (name, year range, source URLs)
         sources/           — scanned color cards (jpg/png)
         data/              — car_colors.json, matches_<lib>.json, thumbnails_<lib>.json
-        output/            — <car_name>.html
+        output/            — <car_name>.html (cz library), <car_name>-intl.html
 
 Add a new car: see README.md ("Adding a new car"), then scripts/rebuild.sh <name>.
 """
