@@ -100,7 +100,7 @@ class HeroPreview(unittest.TestCase):
              "hex": "#112233", "shop": "Smart3D", "url": "https://x.example/"}
         row = build_html.filament_column([c], "PLA", {})
         self.assertIn('data-hex="#112233"', row)
-        self.assertIn('tabindex="0"', row)
+        self.assertIn('<a class="pick" href="https://x.example/"', row)   # a real link: focusable, keyboard-pickable
 
 
 class HeroPrepare(unittest.TestCase):

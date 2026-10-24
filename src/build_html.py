@@ -466,7 +466,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     hero_css, hero_html, hero_js = hero_parts(hero)
-    tip_js = TIP_JS.replace("__THUMBS__", json.dumps({k: fil_thumbs[k] for k in sorted(USED_THUMBS)}))
+    tip_js = TIP_JS.replace("__THUMBS__", json.dumps({k: fil_thumbs[k] for k in sorted(USED_THUMBS)}).replace("</", "<\\/"))
     return f"""<!doctype html>
 <html lang="en">
 <head>
