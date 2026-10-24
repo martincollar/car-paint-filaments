@@ -1936,6 +1936,576 @@
       "aurapol-pla-3d-filament-raspberry-partially-transparent-1-kg-1-75-mm": "finish:transparent"
     }
   },
+  "bambulab": {
+    "products": {
+      "bambu-lab-petg-black": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-dark-beige": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-dark-brown": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-gray": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-black": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-cream": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-dark-gray": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-forest-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-gray": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-lake-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-lime-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-orange": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-peanut-brown": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-red": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-white": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-hf-yellow": {
+        "url": "https://eu.store.bambulab.com/products/petg-hf",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-avocado-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-baby-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-black": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-gray": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-lime": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-pink": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-violet": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-matte-white": {
+        "url": "https://eu.store.bambulab.com/products/petg-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-misty-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-navy-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-orange": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-pine-green": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-red": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-reflex-blue": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-white": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-petg-yellow": {
+        "url": "https://eu.store.bambulab.com/products/petg-basic",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-absolute-black": {
+        "url": "https://eu.store.bambulab.com/products/pla-pure",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-alpine-green-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-apricot": {
+        "url": "https://eu.store.bambulab.com/products/pla-pure",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-baby-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-pure",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-bambu-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-beige": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-black": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-blue-grey": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-bright-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-bronze": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-brown": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-classic-gold-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-cobalt-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-cobalt-blue-metallic": {
+        "url": "https://eu.store.bambulab.com/products/pla-metal",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-cocoa-brown": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-copper-brown-metallic": {
+        "url": "https://eu.store.bambulab.com/products/pla-metal",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-crimson-red-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-cyan": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-dark-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-gold": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-hot-pink": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-indigo-purple": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-iridium-gold-metallic": {
+        "url": "https://eu.store.bambulab.com/products/pla-metal",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-iron-gray-metallic": {
+        "url": "https://eu.store.bambulab.com/products/pla-metal",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-jade-white": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-light-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-magenta": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-maroon-red": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-apple-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-ash-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-bone-white": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-caramel": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-charcoal": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-dark-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-dark-brown": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-dark-chocolate": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-dark-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-dark-red": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-desert-tan": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-grass-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-ice-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-ivory-white": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-latte-brown": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-lemon-yellow": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-lilac-purple": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-mandarin-orange": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-marine-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-nardo-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-plum": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-sakura-pink": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-scarlet-red": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-sky-blue": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-matte-terracotta": {
+        "url": "https://eu.store.bambulab.com/products/pla-matte",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-milky-pink": {
+        "url": "https://eu.store.bambulab.com/products/pla-pure",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-mistletoe-green": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-onyx-black-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-orange": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-oxide-green-metallic": {
+        "url": "https://eu.store.bambulab.com/products/pla-metal",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-pink": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-pumpkin-orange": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-pure-white": {
+        "url": "https://eu.store.bambulab.com/products/pla-pure",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-purple": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-red": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-royal-purple-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-silver": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-slate-gray-sparkle": {
+        "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-sunflower-yellow": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-black": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-cyan": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-gray": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-orange": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-silver": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-white": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-tough-yellow": {
+        "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-turquoise": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      },
+      "bambu-lab-pla-yellow": {
+        "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+        "first_seen": "2026-10-24",
+        "last_seen": "2026-10-24"
+      }
+    },
+    "rejected": {}
+  },
   "filament_pm": {
     "products": {
       "p104": {
