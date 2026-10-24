@@ -53,8 +53,7 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
 **New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the push to `main`.
-1. Work in a git worktree (`.worktrees/<branch>`, gitignored); symlink `.venv`, `filaments/sources` and `filaments/.cache` from the main checkout.
-2. `cars/<name>/car.json` (years newest-first, `pages_per_year`, URL patterns), then `scripts/fetch_car_cards.sh <name>` (ask the user before downloading).
+1. Work in a git worktree (`.worktrees/<branch>`, gitignored); symlink `.venv`, `filaments/sources` and `filaments/.cache` from the main checkout.2. `cars/<name>/car.json` (years newest-first, `pages_per_year`, URL patterns), then `scripts/fetch_car_cards.sh <name>` (ask the user before downloading).
 3. `card_layout.json`: pick only the chips that belong to the model; cards with smaller chips set `box_width`/`box_height` per card. Check the boxes on an overlay image before measuring.
 4. `scripts/rebuild.sh <name>`, unit tests, and show the user the sampling preview and the HTML page (check both region views) before pushing.
 5. **README.md "Current cars" table**: add or update the car's row (years, colour count, page link).
@@ -62,6 +61,7 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 7. Push to `main`. The `pages` workflow deploys on its own: do not wait for it or check the build/live page unless the user asks.
 8. Update the car list in this file ("Current shops"-style docs) if it names cars, and say in the reply what was not done.
 9. The main checkout may be on another branch with someone else's uncommitted work: never commit there. Use a temporary worktree on `origin/main` to commit and push.
+10. **Previews from a worktree need a local server.** Whenever the user wants to see the result of work done in a worktree, start a local server in a Terminal panel tab (`run_in_terminal`), e.g. `.venv/bin/python -m http.server <port> --directory .worktrees/<branch>/cars/<car>/output`, and give the user the `http://localhost:<port>/<car>.html` link to open in Chrome. Don't just hand over a file path.
 
 **Adding a new shop** must not require code either, if its platform is known: write `shops/<key>.yaml` (`name`, `platform`, **`regions`**, `base`, `sitemap`, `include` regex for product URLs), run `src/fetch_all.py --shop <key> --dry-run` to check the candidate list, then a real run. Add a `.shop-tag.shop-<slugified name>` CSS block in `build_html.py`. Platforms (`src/adapters/`): `upgates` / `shoptet` / `generic` = sitemap + one product page each (JSON-LD → microdata → `<h1>`/og); `shopify` = `/products.json`; `manual` = only `pins:`. A shop on a new platform that has a sitemap and schema.org markup works as `generic`. Record shape downstream: `{slug, brand, material, color_name, shop, url, image_url, local_image, availability, stock, title, last_ok, stale?}` (no `price`, see below).
 
