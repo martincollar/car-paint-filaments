@@ -1,0 +1,1 @@
+family=Alfa+Slab+One&family=Yesteryear&family=Pacifico&family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400

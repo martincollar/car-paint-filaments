@@ -146,7 +146,7 @@ h1 {
   display: flex; flex-wrap: wrap; gap: 8px 6px; margin: 22px 0 0;
   align-items: center; font-family: var(--font-mono); font-size: 0.95rem;
 }
-.year-nav .nav-label { color: var(--muted); letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; margin-right: 6px; }
+.year-nav .nav-label { color: var(--white); letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; margin-right: 6px; }
 .year-nav a {
   padding: 4px 18px; background: var(--blue); color: var(--white);
   text-decoration: none; font-weight: 700; letter-spacing: 0.06em;
@@ -202,15 +202,14 @@ h2.year-head {
 .year-badge {
   position: relative; display: inline-flex; flex-direction: column; align-items: flex-start;
   background: var(--ink); color: var(--white);
-  padding: 7px 64px 9px 18px; line-height: 1;
-  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  padding: 7px 58px 9px 18px; margin-right: 22px; line-height: 1;
 }
+/* the fender shield again, same as the header one */
 .year-badge::after {
-  content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 40px;
-  background:
-    linear-gradient(var(--blue) 0 42%, transparent 42%),
-    repeating-linear-gradient(90deg, var(--red) 0 5.7px, var(--white) 5.7px 11.4px);
-  border-left: 3px solid var(--white);
+  content: ""; position: absolute; right: -24px; top: 50%;
+  width: 52px; height: 64px; transform: translateY(-50%) rotate(4deg);
+  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 122%22 aria-hidden=%22true%22%3E%3Cdefs%3E%3CclipPath id=%22c%22%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22%23fff%22 stroke=%22%23111%22 stroke-width=%226%22 stroke-linejoin=%22round%22/%3E%3Cg clip-path=%22url%28%23c%29%22%3E%3Crect x=%225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2215.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2235.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2245.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2255.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2265.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2275.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2285.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%220%22 y=%220%22 width=%22100%22 height=%2246%22 fill=%22%2327407a%22/%3E%3Cpolygon points=%2224.0%2C19.0 25.7%2C23.6 30.7%2C23.8 26.8%2C26.9 28.1%2C31.7 24.0%2C28.9 19.9%2C31.7 21.2%2C26.9 17.3%2C23.8 22.3%2C23.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2242.0%2C17.0 43.7%2C21.6 48.7%2C21.8 44.8%2C24.9 46.1%2C29.7 42.0%2C26.9 37.9%2C29.7 39.2%2C24.9 35.3%2C21.8 40.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2258.0%2C17.0 59.7%2C21.6 64.7%2C21.8 60.8%2C24.9 62.1%2C29.7 58.0%2C26.9 53.9%2C29.7 55.2%2C24.9 51.3%2C21.8 56.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2276.0%2C19.0 77.7%2C23.6 82.7%2C23.8 78.8%2C26.9 80.1%2C31.7 76.0%2C28.9 71.9%2C31.7 73.2%2C26.9 69.3%2C23.8 74.3%2C23.6%22 fill=%22%23fff%22/%3E%3C/g%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22none%22 stroke=%22%23111%22 stroke-width=%223%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") center / contain no-repeat;
+  filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.35));
 }
 .year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.28em; color: var(--gold); margin-bottom: 3px; }
 .year-badge-num { font-family: var(--font-display); font-size: 2.1rem; line-height: 1; letter-spacing: 0.03em; }
@@ -327,7 +326,7 @@ h2.year-head {
   .filament.alt .hex { margin-left: 25px; }
   .hero-top { padding-right: 0; }
   .shield { top: 14px; transform: rotate(4deg); width: 56px; }
-  .year-badge { padding-right: 56px; }
+  .year-badge { padding-right: 50px; }
 }
 
 /* ===== Footer ===== */

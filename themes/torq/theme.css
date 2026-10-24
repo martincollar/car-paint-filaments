@@ -1,0 +1,337 @@
+/* Torq theme: 1970s muscle car. Red-orange body, white lettering with a black outline,
+   the stars-and-stripes shield from the fender, hood stripes and vent slats.
+   Same markup as every theme; the --teal/--orange/--mustard aliases at the bottom of :root
+   exist only because the shared recolor-preview CSS reads those names. */
+:root {
+  --red: #d9432b;
+  --red-deep: #a82c17;
+  --red-weak: #f7cfc6;
+  --blue: #27407a;
+  --blue-deep: #172a58;
+  --blue-weak: #d3dbf0;
+  --ink: #111111;
+  --white: #ffffff;
+
+  --bg: #e8e4dc;
+  --bg-paper: #ffffff;
+  --bg-raised: #ffffff;
+  --fg: #16161a;
+  --muted: #666a73;
+  --rule: #cfcac0;
+  --rule-soft: #e7e3da;
+
+  --good: #1f7a45;
+  --warn: #8a5a00;
+  --bad: #a82c17;
+  --gold: #f0b429;
+
+  --font-display: "Russo One", "Arial Black", Impact, sans-serif;
+  --font-mono:    "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body:    "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --pad: clamp(18px, 3vw, 36px);
+  color-scheme: light;
+
+  /* names read by the shared recolor-preview CSS */
+  --teal: var(--blue);  --teal-deep: var(--blue-deep);  --teal-weak: var(--blue-weak);
+  --orange: var(--red); --orange-deep: var(--red-deep); --orange-weak: var(--red-weak);
+  --mustard: var(--gold); --mustard-weak: #fbe7a8;
+  --cherry: var(--red); --navy: var(--ink);
+}
+body {
+  background-color: var(--bg);
+  /* the vertical vent slats on the fender */
+  background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.05) 0 3px, transparent 3px 14px);
+  color: var(--fg); font-family: var(--font-body);
+  line-height: 1.45; max-width: 1360px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper {
+  --pad: clamp(18px, 3vw, 36px);
+  background: var(--bg-paper);
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  padding: 0 var(--pad) 28px;
+  position: relative;
+}
+/* shield stripes along the top and bottom edge */
+.paper::before, .paper::after {
+  content: ""; display: block; height: 14px; margin: 0 calc(-1 * var(--pad));
+  background: repeating-linear-gradient(90deg, var(--red) 0 28px, var(--white) 28px 56px);
+}
+.paper::before { border-bottom: 3px solid var(--ink); }
+.paper::after  { margin-top: 28px; margin-bottom: -28px; border-top: 3px solid var(--ink); }
+
+/* ===== Hero ===== */
+header.page-head {
+  position: relative; overflow: hidden; isolation: isolate;
+  margin: 0 calc(-1 * var(--pad)) 28px; padding: 28px var(--pad) 46px;
+  background: var(--red); color: var(--white);
+  border-bottom: 3px solid var(--ink);
+}
+/* vent slats fading in from the left */
+header.page-head::before {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 46%; z-index: -1;
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,0.32) 0 5px, transparent 5px 15px);
+  -webkit-mask: linear-gradient(90deg, #000, transparent); mask: linear-gradient(90deg, #000, transparent);
+}
+/* hood stripes: wide, thin, wide */
+header.page-head::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: -1;
+  background: linear-gradient(var(--ink) 0 6px, var(--white) 6px 12px, var(--ink) 12px 15px, var(--white) 15px 19px, var(--ink) 19px 22px);
+}
+.shield {
+  position: absolute; z-index: 1; right: var(--pad); top: 50%;
+  width: clamp(64px, 11vw, 124px); transform: translateY(-58%) rotate(4deg);
+  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.35));
+}
+.hero-top {
+  display: flex; gap: 12px; align-items: center;
+  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--white); margin-bottom: 8px; padding-right: clamp(80px, 14vw, 160px);
+}
+.hero-top::before { content: ""; width: 34px; height: 3px; background: var(--white); }
+.hero-top::after  { content: ""; flex: 1; height: 3px; background: rgba(255,255,255,0.35); }
+
+h1 {
+  font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
+  font-size: clamp(2.4rem, 6.4vw + 0.6rem, 5rem);
+  margin: 0; line-height: 1; letter-spacing: 0.02em;
+  /* white decal lettering with a black outline, like the fender badge */
+  color: var(--white); -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill;
+  text-shadow: 4px 4px 0 var(--ink); text-wrap: balance;
+}
+.script {
+  display: inline-block; margin-top: 18px; padding: 5px 18px 5px 14px;
+  font-family: var(--font-mono); font-style: italic; font-weight: 700;
+  font-size: clamp(1.1rem, 1.8vw + 0.4rem, 1.7rem); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--white); background: var(--ink); line-height: 1.1;
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+
+/* ===== Stats strip ===== */
+.meta-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px; margin: 24px 0 0;
+}
+.meta-grid > div {
+  background: var(--white); border: 2px solid var(--ink);
+  border-top: 7px solid var(--blue);
+  padding: 8px 12px 10px; text-align: center;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.meta-grid > div strong {
+  display: block; font-family: var(--font-display); font-weight: 400;
+  font-size: 2rem; line-height: 1.1; color: var(--blue-deep);
+}
+.meta-grid > div span {
+  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--muted);
+}
+
+/* ===== Year nav ===== */
+.year-nav {
+  display: flex; flex-wrap: wrap; gap: 8px 6px; margin: 22px 0 0;
+  align-items: center; font-family: var(--font-mono); font-size: 0.95rem;
+}
+.year-nav .nav-label { color: var(--white); letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; margin-right: 6px; }
+.year-nav a {
+  padding: 4px 18px; background: var(--blue); color: var(--white);
+  text-decoration: none; font-weight: 700; letter-spacing: 0.06em;
+  clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%);
+}
+.year-nav a:hover { background: var(--red); }
+
+/* ===== Legend ===== */
+.legend {
+  display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center;
+  padding: 12px 16px; background: var(--white);
+  border: 2px solid var(--ink); border-left: 8px solid var(--red);
+  margin: 24px 0; font-size: 0.82rem;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.legend .lblock { display: inline-flex; gap: 5px; align-items: center; }
+.legend .legend-head { font-family: var(--font-display); font-size: 0.95rem; color: var(--ink); text-transform: uppercase; letter-spacing: 0.04em; }
+.pill, .de {
+  padding: 1px 9px; font-weight: 700; letter-spacing: 0.03em;
+  font-family: var(--font-mono); font-size: 0.82rem;
+  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+.pill.exc, .de.exc  { background: var(--good); color: #fff; }
+.pill.vg,  .de.vg   { background: var(--blue); color: #fff; }
+.pill.ok,  .de.ok   { background: var(--gold); color: var(--ink); }
+.pill.weak,.de.weak { background: #c9c9cf; color: #333; }
+.pill.bad, .de.bad  { background: var(--red); color: #fff; }
+
+/* ===== Shop tags ===== */
+.shop-tag {
+  display: inline-block; font-family: var(--font-mono); font-size: 0.78rem;
+  padding: 0 7px; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase;
+  background: var(--rule-soft); color: var(--muted); border: 1px solid var(--rule);
+}
+.shop-tag.shop-smart3d { background: var(--blue-weak); color: var(--blue-deep); }
+.shop-tag.shop-prusa3d { background: var(--red-weak); color: var(--red-deep); }
+.shop-tag.shop-3djake  { background: #fbe7a8; color: var(--warn); }
+.shop-tag.shop-aurapol { background: color-mix(in srgb, var(--red) 15%, transparent); color: var(--bad); }
+.shop-tag.shop-fillamentum { background: color-mix(in srgb, #6b3fa0 15%, transparent); color: #6b3fa0; }
+.shop-tag.shop-filamentpm { background: color-mix(in srgb, #2d7f3f 15%, transparent); color: #2d7f3f; }
+.shop-tag.shop-na3d { background: color-mix(in srgb, #0066a3 15%, transparent); color: #0066a3; }
+.shop-tag.shop-hubacek3d { background: color-mix(in srgb, #8a5a2b 15%, transparent); color: #8a5a2b; }
+.shop-tag.shop-3dfox { background: color-mix(in srgb, #c4561a 15%, transparent); color: #c4561a; }
+
+/* ===== Year section header: number plate with a little flag ===== */
+h2.year-head {
+  display: flex; align-items: center; gap: 16px;
+  margin: 40px 0 14px; padding: 0 0 12px;
+  border: none; scroll-margin-top: 10px; font-weight: 400;
+  border-bottom: 4px solid var(--ink);
+  background: linear-gradient(90deg, var(--red) 0 120px, transparent 120px) bottom / 100% 4px no-repeat;
+}
+.year-badge {
+  position: relative; display: inline-flex; flex-direction: column; align-items: flex-start;
+  background: var(--ink); color: var(--white);
+  padding: 7px 58px 9px 18px; margin-right: 22px; line-height: 1;
+}
+/* the fender shield again, same as the header one */
+.year-badge::after {
+  content: ""; position: absolute; right: -24px; top: 50%;
+  width: 52px; height: 64px; transform: translateY(-50%) rotate(4deg);
+  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 122%22 aria-hidden=%22true%22%3E%3Cdefs%3E%3CclipPath id=%22c%22%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22%23fff%22 stroke=%22%23111%22 stroke-width=%226%22 stroke-linejoin=%22round%22/%3E%3Cg clip-path=%22url%28%23c%29%22%3E%3Crect x=%225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2215.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2235.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2245.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2255.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2265.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2275.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2285.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%220%22 y=%220%22 width=%22100%22 height=%2246%22 fill=%22%2327407a%22/%3E%3Cpolygon points=%2224.0%2C19.0 25.7%2C23.6 30.7%2C23.8 26.8%2C26.9 28.1%2C31.7 24.0%2C28.9 19.9%2C31.7 21.2%2C26.9 17.3%2C23.8 22.3%2C23.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2242.0%2C17.0 43.7%2C21.6 48.7%2C21.8 44.8%2C24.9 46.1%2C29.7 42.0%2C26.9 37.9%2C29.7 39.2%2C24.9 35.3%2C21.8 40.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2258.0%2C17.0 59.7%2C21.6 64.7%2C21.8 60.8%2C24.9 62.1%2C29.7 58.0%2C26.9 53.9%2C29.7 55.2%2C24.9 51.3%2C21.8 56.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2276.0%2C19.0 77.7%2C23.6 82.7%2C23.8 78.8%2C26.9 80.1%2C31.7 76.0%2C28.9 71.9%2C31.7 73.2%2C26.9 69.3%2C23.8 74.3%2C23.6%22 fill=%22%23fff%22/%3E%3C/g%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22none%22 stroke=%22%23111%22 stroke-width=%223%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") center / contain no-repeat;
+  filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.35));
+}
+.year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.28em; color: var(--gold); margin-bottom: 3px; }
+.year-badge-num { font-family: var(--font-display); font-size: 2.1rem; line-height: 1; letter-spacing: 0.03em; }
+.year-tagline {
+  font-family: var(--font-mono); font-style: italic; font-weight: 700; font-size: 1.1rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); line-height: 1;
+}
+
+/* ===== Table rows ===== */
+.row {
+  display: grid; grid-template-columns: 1fr 1.1fr 1.1fr; gap: 16px;
+  padding: 18px 0; border-bottom: 1px solid var(--rule); align-items: start;
+}
+.row:last-of-type { border-bottom: none; }
+@media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
+
+.col-label {
+  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 6px 2px;
+}
+
+/* ===== Paint block ===== */
+.paint { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
+.paint .swatch.big {
+  width: 88px; height: 88px; flex-shrink: 0;
+  border: 3px solid var(--white); outline: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--red);
+}
+.paint .meta { min-width: 0; flex: 1; }
+.paint .name {
+  font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
+  font-size: 1rem; line-height: 1.2; color: var(--ink); letter-spacing: 0.02em;
+}
+.paint .sub {
+  font-family: var(--font-mono); font-size: 0.86rem; font-weight: 500;
+  color: var(--muted); margin-top: 3px; letter-spacing: 0.03em;
+}
+.paint .year { color: var(--red-deep); font-weight: 700; }
+.paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
+.paint a.year:hover { background: var(--red-weak); }
+
+.no-match {
+  margin: 0 0 6px; padding: 5px 10px;
+  background: var(--ink); color: var(--white); border-left: 8px solid var(--red);
+  font-family: var(--font-mono); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.04em;
+}
+.paint .hex { font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-top: 4px; }
+.paint .rgb { color: var(--muted); font-size: 0.82rem; margin-left: 4px; font-weight: 500; }
+
+.chip {
+  display: inline-block; padding: 1px 9px;
+  font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; font-weight: 700;
+  text-transform: uppercase; background: var(--gold); color: var(--ink);
+  margin-left: 6px; vertical-align: middle;
+  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+/* ===== Primary filament card ===== */
+.filament.primary {
+  display: grid; grid-template-columns: 48px 1fr; gap: 12px;
+  padding: 10px 12px; background: var(--white);
+  border: 2px solid var(--ink); border-left: 8px solid var(--blue);
+  margin-bottom: 8px; box-shadow: 3px 3px 0 var(--rule);
+}
+.filament.primary .swatch.mini { width: 48px; height: 48px; border: 2px solid var(--ink); }
+.filament.primary .fname { font-size: 0.92rem; line-height: 1.3; }
+.filament.primary .fname strong { font-family: var(--font-display); font-weight: 400; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.filament.primary .fname .color { color: var(--muted); font-size: 0.86rem; }
+.filament.primary .fsub {
+  display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center;
+  margin-top: 4px; font-size: 0.86rem; font-family: var(--font-mono); font-weight: 600;
+}
+.filament.primary .hex { color: var(--muted); }
+.filament.primary .shop {
+  display: inline-block; margin-top: 4px;
+  color: var(--red-deep); text-decoration: none;
+  font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.filament.primary .shop:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.filament.primary .fil-thumb {
+  display: block; margin-top: 8px; width: 64px; height: 64px;
+  object-fit: cover; border: 2px solid var(--ink);
+}
+
+/* Alt row, compact */
+.filament.alt {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto auto auto auto;
+  gap: 5px 7px; align-items: center;
+  padding: 5px 10px; font-size: 0.8rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.filament.alt:hover { background: #f5f2ea; }
+.filament.alt:last-child { border-bottom: none; }
+.filament.alt .swatch.tiny { width: 18px; height: 18px; border: 1px solid var(--ink); }
+.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.84rem; }
+.filament.alt .fname-inline .color { color: var(--muted); font-size: 0.78rem; }
+.filament.alt .hex { font-family: var(--font-mono); color: var(--muted); font-size: 0.84rem; font-weight: 600; }
+.filament.alt .shop-arrow { color: var(--red); text-decoration: none; font-weight: 800; padding: 0 4px; font-size: 1rem; }
+.filament.alt .shop-arrow:hover { color: var(--red-deep); }
+.filament.empty { color: var(--muted); font-style: italic; padding: 8px 10px; }
+
+/* ===== Phones ===== */
+@media (max-width: 600px) {
+  .paint .swatch.big { width: 64px; height: 64px; }
+  .filament.primary { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .filament.primary .swatch.mini { width: 40px; height: 40px; }
+  .filament.alt { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; }
+  .filament.alt .fname-inline {
+    flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip;
+    font-size: 0.9rem; line-height: 1.25;
+  }
+  .filament.alt .hex { margin-left: 25px; }
+  .hero-top { padding-right: 0; }
+  .shield { top: 14px; transform: rotate(4deg); width: 56px; }
+  .year-badge { padding-right: 50px; }
+}
+
+/* ===== Footer ===== */
+footer.card-footer {
+  margin-top: 28px; padding-top: 22px; text-align: center;
+  border-top: 4px solid var(--ink);
+}
+footer.card-footer .brand {
+  font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;
+  color: var(--ink); letter-spacing: 0.12em;
+}
+footer.card-footer .sub {
+  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600;
+  color: var(--muted); letter-spacing: 0.18em;
+  text-transform: uppercase; margin-top: 4px;
+}

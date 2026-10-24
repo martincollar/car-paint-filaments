@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FILAMENTS_SOURCES = ROOT / "filaments" / "sources"
 FILAMENTS_DATA    = ROOT / "filaments" / "data"
 FILAMENTS_JSON    = FILAMENTS_DATA / "filaments.json"
+THEMES            = ROOT / "themes"      # themes/<name>/{theme.css,fonts.txt,motif.html}
 FILAMENT_COLOR_OVERRIDES = ROOT / "filaments" / "color_overrides.json"
 FILAMENTS_CACHE   = ROOT / "filaments" / ".cache"          # HTTP cache, not versioned
 CATALOG_LOCK      = FILAMENTS_DATA / "catalog.lock.json"   # discovered product URLs per shop
