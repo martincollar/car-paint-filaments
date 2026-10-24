@@ -10,6 +10,8 @@ echo "→ measuring car swatches ($CAR)"
 "$PY" "$HERE/src/measure_car.py"        --car "$CAR"
 echo "→ measuring all filaments"
 "$PY" "$HERE/src/measure_filaments.py"
+echo "→ preparing hero preview ($CAR)"
+"$PY" "$HERE/src/prepare_hero.py"       --car "$CAR"
 for LIB in cz intl; do
   echo "→ computing matches ($LIB)"
   "$PY" "$HERE/src/compute_matches.py"    --car "$CAR" --library "$LIB"
