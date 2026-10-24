@@ -10,7 +10,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 |---|---|---|---|
 | Hudson Hornet | 1951-1957 | 65 | [hudson](https://martincollar.github.io/car-paint-filaments/hudson/) |
 | Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
-| Plymouth Barracuda | 1970-1974 | 124 | not published yet |
+| Plymouth Barracuda | 1970-1974 | 124 | [plymouth_barracuda](https://martincollar.github.io/car-paint-filaments/plymouth_barracuda/) |
 
 ## Quick start
 

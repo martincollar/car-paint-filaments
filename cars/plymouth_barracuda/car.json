@@ -1,6 +1,7 @@
 {
   "name": "plymouth_barracuda",
   "display": "Plymouth Barracuda",
+  "publish": true,
   "script_tagline": "Hemi Orange & High Impact",
   "subtitle_source": "Plymouth Ditzler color cards (1970-1974)",
   "years": [
