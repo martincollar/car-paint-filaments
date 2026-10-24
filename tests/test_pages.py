@@ -35,18 +35,13 @@ class PageBits(unittest.TestCase):
         self.assertEqual([build_html.de_class(x) for x in (1.9, 2, 5, 8, 11.99, 12)],
                          ["exc", "vg", "ok", "weak", "weak", "bad"])
 
-    def test_source_host(self):
-        self.assertEqual(build_html.source_host("https://www.autocolorlibrary.com/pages/1952-hudson"),
-                         "autocolorlibrary.com")
-        self.assertEqual(build_html.source_host(""), "")
-
     def test_banner_only_at_no_match(self):
         def cand(dE): return {"delta_e": dE, "slug": "s", "brand": "B", "material": "PLA",
                               "color_name": "C", "hex": "#000000", "shop": "Smart3D", "url": "https://x.example/"}
         self.assertIn("no-match", build_html.filament_column([cand(12.0)], "PLA", {}))
         self.assertNotIn("no-match", build_html.filament_column([cand(11.9)], "PLA", {}))
 
-    def test_render_is_a_full_document_with_credit(self):
+    def test_render_is_a_full_document_without_card_source(self):
         m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
              "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
              "pla": [], "petg": []}
@@ -54,8 +49,7 @@ class PageBits(unittest.TestCase):
                                  {"display": "Hudson", "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson"})
         self.assertTrue(page.startswith("<!doctype html>"))
         self.assertIn("</head>", page); self.assertIn("<body>", page)
-        self.assertIn('href="https://www.autocolorlibrary.com/"', page)
-        self.assertIn('href="https://www.autocolorlibrary.com/pages/1952-hudson"', page)
+        self.assertNotIn("autocolorlibrary", page)
 
 
 class HeroPreview(unittest.TestCase):

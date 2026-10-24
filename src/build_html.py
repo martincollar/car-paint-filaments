@@ -24,18 +24,10 @@ def de_class(dE):
 
 def esc(s): return html_mod.escape(str(s))
 
-def source_host(url):
-    """'https://www.autocolorlibrary.com/pages/…' → 'autocolorlibrary.com'."""
-    host = urlsplit(url or "").hostname or ""
-    return host[4:] if host.startswith("www.") else host
-
 def paint_block(h):
     poly = ' <span class="chip">metallic</span>' if h.get("poly") else ""
-    year = esc(h['year'])
-    if safe_url(h.get("source_url")):
-        year = f'<a class="year" href="{esc(h["source_url"])}" target="_blank" rel="noopener" title="original colour card">{year}</a>'
-    else:
-        year = f'<span class="year">{year}</span>'
+    # No link to the card source: pages don't name or link the card library (the data keeps source_url).
+    year = f'<span class="year">{esc(h["year"])}</span>'
     return f"""
       <div class="paint">
         <div class="swatch big" style="background:{h['hex']}"></div>
@@ -140,30 +132,44 @@ HERO_CSS = """
 .hero-preview .hp-name { font-size: 0.74rem; margin-top: 5px; min-height: 1.1em; }
 .hero-preview .hp-credit { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
-.hero-preview .hp-close {
-  position: absolute; top: 2px; right: 4px; border: 0; background: none; cursor: pointer;
-  color: var(--muted); font-size: 1rem; line-height: 1;
+/* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
+.hero-preview .hp-close, .hero-preview .hp-zoom {
+  position: absolute; top: 12px; width: 34px; height: 34px; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--navy); border-radius: 50%; cursor: pointer;
+  font-family: var(--font-display); font-size: 1.1rem; line-height: 1; color: var(--navy);
+  box-shadow: 2px 2px 0 var(--navy); transition: transform .08s, box-shadow .08s;
 }
+.hero-preview .hp-close { right: 12px; background: var(--orange-weak); }
+.hero-preview .hp-zoom  { right: 54px; background: var(--mustard-weak); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--mustard); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(2px, 2px); box-shadow: 0 0 0 var(--navy); }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 42px; height: 42px; font-size: 1.3rem; }
+.hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 74px; }
 .hero-preview canvas { cursor: zoom-in; }
 .hero-preview.big {
   width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%);
   box-shadow: 0 0 0 100vmax rgba(45,34,23,0.45), 0 8px 24px rgba(45,34,23,0.3);
 }
 .hero-preview.big canvas { cursor: zoom-out; }
-.hero-preview.big .hp-name { font-size: 0.95rem; }
-.hero-preview.big .hp-credit { font-size: 0.74rem; }
-.hero-preview .hp-zoom {
-  position: absolute; top: 2px; right: 24px; border: 0; background: none; cursor: pointer;
-  color: var(--muted); font-size: 0.95rem; line-height: 1;
+.hero-preview.big { padding: 14px 16px 10px; outline: 1px solid var(--rule); outline-offset: -7px; }
+.hero-preview.big .hp-name {
+  font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; letter-spacing: 0.02em;
+  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak); margin-top: 10px;
+}
+.hero-preview.big .hp-credit {
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px;
 }
 .hero-preview.closed .hp-zoom { display: none; }
 .hero-preview.closed canvas, .hero-preview.closed .hp-name { display: none; }
-.hero-preview.closed { width: auto; padding: 4px 28px 4px 8px; }
+.hero-preview.closed { width: auto; padding: 10px 56px 8px 12px; min-height: 34px; }
+.hero-preview.closed .hp-close { top: 8px; right: 8px; }
 """
 
 HERO_HTML = """
 <aside class="hero-preview" id="hero-preview" aria-label="Recolored car preview">
-  <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">×</button>
+  <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">✕</button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview">⤢</button>
   <canvas id="hero-canvas"></canvas>
   <div class="hp-name" id="hero-name"></div>
@@ -289,10 +295,6 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
     DISPLAY    = meta.get("display", car.title())
     SCRIPT_TAG = meta.get("script_tagline", "")
     BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
-    card_url   = meta.get("card_source_url", "")
-    card_host  = source_host(card_url)
-    credit_link = (f'<a href="https://{esc(urlsplit(card_url).hostname)}/" target="_blank" rel="noopener">{esc(card_host)}</a>'
-                   if card_host and safe_url(card_url) else "")
 
     by_year = {}
     for m in matches:
@@ -329,8 +331,6 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     _title_suffix = " color card" if library == "cz" else " · intl library"
-    _hero_credit = f" · cards: {credit_link}" if credit_link else ""
-    _foot_credit = f"Colour cards courtesy of {credit_link} · " if credit_link else ""
     hero_css, hero_html, hero_js = hero_parts(hero)
     return f"""<!doctype html>
 <html lang="en">
@@ -689,7 +689,7 @@ img {{ max-width: 100%; }}
 
 <header class="page-head">
   {STARBURST}
-  <div class="hero-top"><span>Factory Paint Archive · {_year_range}{_hero_credit}</span></div>
+  <div class="hero-top"><span>Factory Paint Archive · {_year_range}</span></div>
   <h1>{esc(DISPLAY)}</h1>
   <span class="script">{esc(SCRIPT_TAG)}</span>
   <div class="meta-grid">
@@ -720,7 +720,7 @@ img {{ max-width: 100%; }}
 
 <footer class="card-footer">
   <div class="brand">{esc(DISPLAY)} factory colors · 3D-print filament matches</div>
-  <div class="sub">{_foot_credit}Generated by car-paint-filaments · {_year_range} color cards · {date.today().year}</div>
+  <div class="sub">Generated by car-paint-filaments · {_year_range} color cards · {date.today().year}</div>
 </footer>
 
 </div>

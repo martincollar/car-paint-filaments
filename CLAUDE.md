@@ -11,7 +11,7 @@ Always use the in-project venv (`./.venv/bin/python`), never the system Python o
 python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 # Full rebuild for one car (measures swatches, measures all filaments, matches, thumbnails, HTML)
-scripts/rebuild.sh <car_name>              # defaults to hudson
+scripts/rebuild.sh <car_name>              # defaults to doppler
 
 # HTML-only rebuild (after a filaments.json tweak, build_html.py styling, or car.json edit)
 scripts/rebuild_html_only.sh <car_name>
@@ -38,7 +38,7 @@ Only `src/shoplib.py` has unit tests. Everything else is verified manually: open
 - `filaments/{sources,data}/` — shared product photos and the single `filaments.json`.
 - `cars/<name>/{sources,data,output}/` + `car.json` + `card_layout.json` — everything specific to one paint source.
 
-Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_SOURCES`, `FILAMENTS_JSON`, and `car_sources(name) / car_data(name) / car_output(name) / car_meta(name)`. Nothing else should hard-code paths. `DEFAULT_CAR` reads the `CAR` env var and falls back to `hudson`.
+Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_SOURCES`, `FILAMENTS_JSON`, and `car_sources(name) / car_data(name) / car_output(name) / car_meta(name)`. Nothing else should hard-code paths. `DEFAULT_CAR` reads the `CAR` env var and falls back to `doppler`.
 
 **Pipeline stages, in order:**
 
@@ -62,7 +62,7 @@ Current shops (`shops/*.yaml`): Smart3D, Aurapol, Hubacek3D (upgates); 3DFox (sh
 
 ## Recolor preview (optional per car)
 
-A car with a `hero` block in `car.json` (`photo`, `mask`, optional `roof` hex, `credit`, `credit_url`) gets a floating car preview: greyed out with a "?" until the user clicks a filament swatch, then recoloured live in the browser (canvas, CIELAB: the photo's lightness variation around the body mean is kept, a/b come from the filament hex). `mask` is an RGB PNG the same size as the photo: R = body paint, G = roof paint (soft edges); everything else (chrome, tyres, glass) is never touched. One photo + one mask per car; no `src/` change to add one. `roof` fixes the roof colour (two-tone cars); without it the roof follows the body. `prepare_hero.py` embeds both at 1000 px. The Hudson hero is a 3D Sets photo (`cars/hudson/sources/hero.jpg`, gitignored via `cars/*/sources/hero.*`): the built HTML and `hero.json` embed it, so **don't publish them without permission from 3D Sets**.
+A car with a `hero` block in `car.json` (`photo`, `mask`, optional `roof` hex, `credit`, `credit_url`) gets a floating car preview: greyed out with a "?" until the user clicks a filament swatch, then recoloured live in the browser (canvas, CIELAB: the photo's lightness variation around the body mean is kept, a/b come from the filament hex). `mask` is an RGB PNG the same size as the photo: R = body paint, G = roof paint (soft edges); everything else (chrome, tyres, glass) is never touched. One photo + one mask per car; no `src/` change to add one. `roof` fixes the roof colour (two-tone cars); without it the roof follows the body. `prepare_hero.py` embeds both at 1000 px. The Doppler (Hudson) hero is a 3D Sets photo (`cars/doppler/sources/hero.jpg`, gitignored via `cars/*/sources/hero.*`): the built HTML and `hero.json` embed it, so **don't publish them without permission from 3D Sets**.
 
 ## Non-obvious details
 
@@ -92,7 +92,7 @@ A car with a `hero` block in `car.json` (`photo`, `mask`, optional `roof` hex, `
 
 **Single-theme light-only page.** The HTML commits to one paper-cream look, no dark mode. All colors live in `:root` only — do not add `@media (prefers-color-scheme: dark)` or `[data-theme="dark"]` blocks (they were removed on purpose). Years are listed newest-first in the main loop and in year navigation; keep that order.
 
-**Real car names.** This is a tool for matching real cars to filament colours, so pages use the real make/model (`display` in `car.json`, e.g. "Hudson", "Toyota Land Cruiser FJ40"), the real colour names and codes from the cards, and credit the card source (`card_source_url` host, in the header and footer; each paint's year links to its card page). Don't invent fictional car names or brands. What must stay out of published pages are third-party affiliate/tracking codes on shop links: `build_html.clean_url()` strips them.
+**Public naming.** Pages use `display` from `car.json` (Hudson's is "3D Sets Doppler", matching its preview photo), the real colour names and codes from the cards, and do **not** name or link the card library (`autocolorlibrary.com`): that host stays in code and data (`card_source_url`, `source_url`, fetch/measure scripts) only, never in generated HTML. Don't invent fictional car names or brands. What must stay out of published pages are third-party affiliate/tracking codes on shop links: `build_html.clean_url()` strips them.
 
 **Thumbnails cost context in the HTML.** The page is self-contained with ~500-750 KB of base64 image data (filament photos only); keep thumbnail max_dim at 100-200 px and quality 70-78, and never embed raw card scans. If size balloons unexpectedly, check for transparent PNGs being compressed poorly after the white composite.
 

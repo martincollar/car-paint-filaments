@@ -2,9 +2,9 @@
 # Download a car's scanned color cards into cars/<car>/sources/.
 # Reads years, pages_per_year and card_image_url_pattern from cars/<car>/car.json.
 # Skips files already on disk; a page that 404s upstream is reported and skipped.
-# Usage: scripts/fetch_car_cards.sh [car]     (defaults to $CAR, then hudson)
+# Usage: scripts/fetch_car_cards.sh [car]     (defaults to $CAR, then doppler)
 set -euo pipefail
-CAR="${1:-${CAR:-hudson}}"
+CAR="${1:-${CAR:-doppler}}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 META="$HERE/cars/$CAR/car.json"
 OUT="$HERE/cars/$CAR/sources"

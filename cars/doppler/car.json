@@ -1,6 +1,8 @@
 {
-  "name": "hudson",
-  "display": "Hudson Hornet",
+  "name": "doppler",
+  "redirect_from": ["hudson"],
+  "display": "3D Sets Doppler",
+  "badge_label": "DOPPLER",
   "publish": true,
   "script_tagline": "Fins, Chrome & Flakes",
   "subtitle_source": "Hudson & Nash-Hudson Ditzler color cards (1951-1957)",
