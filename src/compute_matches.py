@@ -14,6 +14,12 @@ import numpy as np
 from color_tools import delta_e_2000_many, rgb_to_lab
 import config, shoplib
 
+# Neon filaments rank as if this far away (the shown ΔE stays real): on a car they only look
+# right when the paint itself is neon, and their photos measure darker than they are, so plain
+# ΔE flatters them. Not applied to a paint whose Lab chroma is at least NEON_PAINT_CHROMA.
+NEON_PENALTY = 8.0
+NEON_PAINT_CHROMA = 85.0
+
 def topk(target_rgb, pool, k=5, pool_lab=None):
     """The k filaments of `pool` closest to `target_rgb`; ties keep pool order.
     Pass `pool_lab` (rgb_to_lab of every pool rgb) to convert the pool only once."""
@@ -21,8 +27,12 @@ def topk(target_rgb, pool, k=5, pool_lab=None):
         return []
     if pool_lab is None:
         pool_lab = rgb_to_lab([f["rgb"] for f in pool])
-    dE = delta_e_2000_many(rgb_to_lab(target_rgb), pool_lab)
-    order = np.argsort(dE, kind="stable")[:k]
+    target_lab = rgb_to_lab(target_rgb)
+    dE = delta_e_2000_many(target_lab, pool_lab)
+    rank = dE
+    if np.hypot(target_lab[1], target_lab[2]) < NEON_PAINT_CHROMA:
+        rank = dE + NEON_PENALTY * np.array([bool(f.get("neon")) for f in pool])
+    order = np.argsort(rank, kind="stable")[:k]
     return [{"delta_e": round(float(dE[i]), 2), **pool[i]} for i in order]
 
 def in_region(filaments, region):
