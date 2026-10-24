@@ -3,6 +3,7 @@
 # Every cars/<car>/car.json with "publish": true contributes
 #   output/<car>.html       → _site/<car>/index.html
 #   output/<car>-intl.html  → _site/<car>/intl.html   (if built)
+# A car may list old folder names in "redirect_from": each gets _site/<old>/{index,intl}.html that forward to the new URL.
 # plus _site/index.html linking to each car by its `display` name.
 # Used by .github/workflows/pages.yml and as a local check in scripts/publish.sh.
 # Usage: scripts/build_site.sh [out_dir]     (defaults to _site)
@@ -32,6 +33,23 @@ for META in "$HERE"/cars/*/car.json; do
   TAGLINE="$(jq -r '.script_tagline // ""' "$META")"
   links+="<li><a href=\"$CAR/\">$DISPLAY</a> <span>$TAGLINE</span>$intl</li>"$'\n'
   echo "✓ $CAR → $CAR/"
+  for OLD in $(jq -r '.redirect_from[]? // empty' "$META"); do
+    mkdir -p "$OUT/$OLD"
+    for PAGE in index intl; do
+      [ "$PAGE" = "index" ] && TARGET="../$CAR/" || TARGET="../$CAR/intl.html"
+      [ "$PAGE" = "intl" ] && [ ! -f "$OUT/$CAR/intl.html" ] && continue
+      cat > "$OUT/$OLD/$PAGE.html" <<REDIR
+<!doctype html>
+<meta charset="utf-8">
+<title>Moved</title>
+<meta http-equiv="refresh" content="0; url=$TARGET">
+<link rel="canonical" href="$TARGET">
+<script>location.replace("$TARGET" + location.search + location.hash)</script>
+<p>This page moved to <a href="$TARGET">$TARGET</a>.</p>
+REDIR
+    done
+    echo "✓ $OLD → $CAR (redirect)"
+  done
   n=$((n + 1))
 done
 

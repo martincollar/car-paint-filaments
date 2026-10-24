@@ -64,7 +64,7 @@ def list_cars():
     return sorted(d.name for d in CARS_DIR.iterdir() if d.is_dir() and (d / "car.json").exists())
 
 # Convenience: default car (for scripts that only serve one at a time)
-DEFAULT_CAR = os.environ.get("CAR", "hudson")
+DEFAULT_CAR = os.environ.get("CAR", "doppler")
 
 if __name__ == "__main__":
     print(f"ROOT:              {ROOT}")

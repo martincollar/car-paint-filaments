@@ -1,6 +1,8 @@
 {
-  "name": "hudson",
-  "display": "Hudson Hornet",
+  "name": "doppler",
+  "redirect_from": ["hudson"],
+  "display": "3D Sets Doppler",
+  "badge_label": "DOPPLER",
   "publish": true,
   "script_tagline": "Fins, Chrome & Flakes",
   "subtitle_source": "Hudson & Nash-Hudson Ditzler color cards (1951-1957)",
@@ -8,6 +10,13 @@
   "pages_per_year": {"1951": 3, "1952": 2, "1953": 1, "1954": 2, "1955": 2, "1956": 2, "1957": 6},
   "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson",
   "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-hudson-pg{page:02d}.jpg",
+  "hero": {
+    "photo": "sources/hero.jpg",
+    "mask": "sources/hero_mask.png",
+    "roof": "#f2f2f2",
+    "credit": "3D Sets Model 23 Doppler",
+    "credit_url": "https://3dsets.com/product/model-23-doppler/"
+  },
   "notes": [
     "Color names printed on the cards are kept for reference only.",
     "Poly basecoats look dark on the Ditzler card but on a real car they appear brighter due to aluminum flakes."

@@ -11,7 +11,7 @@ Always use the in-project venv (`./.venv/bin/python`), never the system Python o
 python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
 
 # Full rebuild for one car (measures swatches, measures all filaments, matches, thumbnails, HTML)
-scripts/rebuild.sh <car_name>              # defaults to hudson
+scripts/rebuild.sh <car_name>              # defaults to doppler
 
 # HTML-only rebuild (after a filaments.json tweak, build_html.py styling, or car.json edit)
 scripts/rebuild_html_only.sh <car_name>
@@ -38,7 +38,7 @@ Only `src/shoplib.py` has unit tests. Everything else is verified manually: open
 - `filaments/{sources,data}/` — shared product photos and the single `filaments.json`.
 - `cars/<name>/{sources,data,output}/` + `car.json` + `card_layout.json` — everything specific to one paint source.
 
-Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_SOURCES`, `FILAMENTS_JSON`, and `car_sources(name) / car_data(name) / car_output(name) / car_meta(name)`. Nothing else should hard-code paths. `DEFAULT_CAR` reads the `CAR` env var and falls back to `hudson`.
+Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_SOURCES`, `FILAMENTS_JSON`, and `car_sources(name) / car_data(name) / car_output(name) / car_meta(name)`. Nothing else should hard-code paths. `DEFAULT_CAR` reads the `CAR` env var and falls back to `doppler`.
 
 **Pipeline stages, in order:**
 
@@ -47,7 +47,8 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 3. `measure_car.py --car <name>` reads `cars/<name>/card_layout.json` (per-swatch cx/cy coordinates), crops each sample from its card scan, writes `cars/<name>/data/car_colors.json`
 4. `compute_matches.py --car <name>` → top-K PLA + top-K PETG per color via ΔE2000
 5. `prepare_thumbnails.py --car <name>` → inline base64 JPEGs of the filament photos (self-contained HTML)
-6. `build_html.py --car <name>` → `cars/<name>/output/<name>.html`
+6. `prepare_hero.py --car <name>` → `cars/<name>/data/hero.json` (optional, only when `car.json` has `hero`; see below)
+7. `build_html.py --car <name>` → `cars/<name>/output/<name>.html`
 
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
@@ -69,6 +70,10 @@ Current shops (`shops/*.yaml`): Smart3D, Aurapol, Hubacek3D (upgates); 3DFox (sh
 **No prices, anywhere.** The pipeline deliberately does not scrape, store, hard-code, or display filament prices. That covers no `extract_price()` in fetchers, no `price` key in any record or JSON, no price columns in fetcher logs, and no prices or currency in the HTML. Prices change constantly, discounts make them wrong within days, and the old hard-coded "749 Kč" for Prusament was already stale. The shop link on each candidate is the source of truth. Don't add prices back when writing a new fetcher or touching `build_html.py`.
 
 **Two libraries, side by side.** Every filament record carries a `library` field — `"cz"` for the Czech shop pool (`shops/*.yaml`), `"intl"` for FilamentColors.xyz. `compute_matches.py`, `prepare_thumbnails.py` and `build_html.py` all take `--library cz|intl` and write side-by-side artifacts: `cars/<car>/data/matches_<lib>.json`, `thumbnails_<lib>.json`, and `output/<car>.html` (cz, kept legacy name) vs `output/<car>-intl.html`. `scripts/rebuild.sh` runs both. The intl library (`fetch_filamentcolors.py`) is special — it hits a REST API (`/api/swatch/`) and keeps the hex that the API already carries, skipping `filament_rgb()` measurement entirely. `measure_filaments.py` recognises records that already have `rgb+hex` and leaves them untouched. The two libraries never mix in a single HTML; the eventual plan is one JS-driven page with a filter, which is why they share the same `filaments.json` but stay partitioned downstream.
+
+## Recolor preview (optional per car)
+
+A car with a `hero` block in `car.json` (`photo`, `mask`, optional `roof` hex, `credit`, `credit_url`) gets a floating car preview: greyed out with a "?" until the user clicks a filament swatch, then recoloured live in the browser (canvas, CIELAB: the photo's lightness variation around the body mean is kept, a/b come from the filament hex). `mask` is an RGB PNG the same size as the photo: R = body paint, G = roof paint (soft edges); everything else (chrome, tyres, glass) is never touched. One photo + one mask per car; no `src/` change to add one. `roof` fixes the roof colour (two-tone cars); without it the roof follows the body. `prepare_hero.py` embeds both at 1000 px. The Doppler (Hudson) hero is a 3D Sets photo (`cars/doppler/sources/hero.jpg`, gitignored via `cars/*/sources/hero.*`): the built HTML and `hero.json` embed it, so **don't publish them without permission from 3D Sets**.
 
 ## Non-obvious details
 
@@ -98,7 +103,7 @@ Current shops (`shops/*.yaml`): Smart3D, Aurapol, Hubacek3D (upgates); 3DFox (sh
 
 **Single-theme light-only page.** The HTML commits to one paper-cream look, no dark mode. All colors live in `:root` only — do not add `@media (prefers-color-scheme: dark)` or `[data-theme="dark"]` blocks (they were removed on purpose). Years are listed newest-first in the main loop and in year navigation; keep that order.
 
-**Real car names.** This is a tool for matching real cars to filament colours, so pages use the real make/model (`display` in `car.json`, e.g. "Hudson", "Toyota Land Cruiser FJ40"), the real colour names and codes from the cards, and credit the card source (`card_source_url` host, in the header and footer; each paint's year links to its card page). Don't invent fictional car names or brands. What must stay out of published pages are third-party affiliate/tracking codes on shop links: `build_html.clean_url()` strips them.
+**Public naming.** Pages use `display` from `car.json` (Hudson's is "3D Sets Doppler", matching its preview photo), the real colour names and codes from the cards, and do **not** name or link the card library (`autocolorlibrary.com`): that host stays in code and data (`card_source_url`, `source_url`, fetch/measure scripts) only, never in generated HTML. Don't invent fictional car names or brands. What must stay out of published pages are third-party affiliate/tracking codes on shop links: `build_html.clean_url()` strips them.
 
 **Thumbnails cost context in the HTML.** The page is self-contained with ~500-750 KB of base64 image data (filament photos only); keep thumbnail max_dim at 100-200 px and quality 70-78, and never embed raw card scans. If size balloons unexpectedly, check for transparent PNGs being compressed poorly after the white composite.
 

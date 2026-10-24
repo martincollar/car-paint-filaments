@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Commit a car's built HTML and push; .github/workflows/pages.yml deploys it.
 # The car must have "publish": true in cars/<car>/car.json to appear on the site.
-# Usage: scripts/publish.sh [car_name]       (defaults to hudson)
+# Usage: scripts/publish.sh [car_name]       (defaults to doppler)
 set -euo pipefail
 
-CAR="${1:-hudson}"
+CAR="${1:-doppler}"
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
 src="$HERE/cars/$CAR/output/$CAR.html"
 

@@ -8,7 +8,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 
 | Car | Years | Colors | Page |
 |---|---|---|---|
-| Hudson Hornet | 1951-1957 | 65 | [hudson](https://martincollar.github.io/car-paint-filaments/hudson/) |
+| 3D Sets Doppler (Hudson Hornet paints) | 1951-1957 | 65 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
 | Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
 | 3D Sets Torq (Plymouth Barracuda paints) | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
 
@@ -20,10 +20,10 @@ python3.11 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
 # Rebuild everything for an existing car (measurements → matches → HTML)
-scripts/rebuild.sh hudson
+scripts/rebuild.sh doppler
 
 # Rebuild only matches + HTML (after a filaments.json tweak or a styling change)
-scripts/rebuild_html_only.sh hudson
+scripts/rebuild_html_only.sh doppler
 
 # Fetch the filament catalog from every shop in shops/*.yaml (sitemap discovery, cached)
 scripts/fetch_all_shops.sh            # --shop <key>, --dry-run, --refresh, --force
@@ -77,7 +77,7 @@ car-paint-filaments/
 
 **Design rule:** `filaments/` is shared across cars (one filament catalog serves every car). `cars/<name>/` holds everything specific to one paint source.
 
-Every script takes `--car <name>` and defaults to `hudson` (overridable with `CAR=foo python ...`).
+Every script takes `--car <name>` and defaults to `doppler` (overridable with `CAR=foo python ...`).
 
 ## Publishing
 
@@ -88,7 +88,7 @@ Pages are built locally (the filament photos are gitignored, so CI can't rebuild
 - root: index of all cars with `"publish": true` in `car.json`
 
 ```bash
-scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
+scripts/rebuild_html_only.sh doppler && scripts/publish.sh doppler
 ```
 
 ## Scripts, in order
@@ -98,6 +98,7 @@ scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
 3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, deduplicates by (library, URL, slug), writes the single `filaments/data/filaments.json`.
 4. **`compute_matches.py --car <name>`** — top-5 PLA + top-5 PETG per car color via ΔE2000.
 5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (product photos resized to 100px, white-composited over transparency).
+5b. **`prepare_hero.py --car <name>`** — optional recolor preview: embeds the `hero` photo and paint mask from `car.json` (skipped when absent).
 6. **`build_html.py --car <name>`** — final HTML. Reads `car.json` for title, tagline, subtitle etc., so the same code works for any car.
 
 ## Adding a new car

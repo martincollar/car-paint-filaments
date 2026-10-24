@@ -24,18 +24,10 @@ def de_class(dE):
 
 def esc(s): return html_mod.escape(str(s))
 
-def source_host(url):
-    """'https://www.autocolorlibrary.com/pages/…' → 'autocolorlibrary.com'."""
-    host = urlsplit(url or "").hostname or ""
-    return host[4:] if host.startswith("www.") else host
-
 def paint_block(h):
     poly = ' <span class="chip">metallic</span>' if h.get("poly") else ""
-    year = esc(h['year'])
-    if safe_url(h.get("source_url")):
-        year = f'<a class="year" href="{esc(h["source_url"])}" target="_blank" rel="noopener" title="original colour card">{year}</a>'
-    else:
-        year = f'<span class="year">{year}</span>'
+    # No link to the card source: pages don't name or link the card library (the data keeps source_url).
+    year = f'<span class="year">{esc(h["year"])}</span>'
     return f"""
       <div class="paint">
         <div class="swatch big" style="background:{h['hex']}"></div>
@@ -85,7 +77,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     if is_primary:
         return f"""
       <div class="filament primary">
-        <div class="swatch {sw_cls}" style="background:{c['hex']}"></div>
+        <div class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></div>
         <div class="finfo">
           <div class="fname">{name}</div>
           <div class="fsub">
@@ -100,7 +92,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     """
     return f"""
       <div class="filament alt">
-        <span class="swatch {sw_cls}" style="background:{c['hex']}"></span>
+        <span class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></span>
         <span class="fname-inline">{name}</span>
         <span class="hex">{c['hex']}</span>
         <span class="de {cls}">ΔE {c['delta_e']:.1f}</span>
@@ -124,6 +116,171 @@ def filament_column(cands, kind, fil_thumbs):
         out.append(filament_row(c, fil_thumbs, is_primary=False))
     return "".join(out)
 
+
+HERO_CSS = """
+.pick { cursor: pointer; }
+.pick:hover, .pick:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
+.pick.picked { outline: 2px solid var(--orange); outline-offset: 1px; }
+.hero-preview {
+  position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
+  width: min(340px, 52vw); background: var(--bg-raised);
+  border: 1px solid var(--rule); box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.22);
+  padding: 8px 8px 6px;
+}
+.hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; }
+.hero-preview canvas.swap { opacity: .55; }
+.hero-preview .hp-name { font-size: 0.74rem; margin-top: 5px; min-height: 1.1em; }
+.hero-preview .hp-credit { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
+.hero-preview .hp-credit a { color: var(--muted); }
+/* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
+.hero-preview .hp-close, .hero-preview .hp-zoom {
+  position: absolute; top: 12px; width: 24px; height: 24px; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid var(--navy); border-radius: 50%; cursor: pointer;
+  font-family: var(--font-display); font-size: 0.8rem; line-height: 1; color: var(--navy);
+  box-shadow: 1.5px 1.5px 0 var(--navy); transition: transform .08s, box-shadow .08s;
+}
+.hero-preview .hp-close { right: 12px; background: var(--orange-weak); }
+.hero-preview .hp-zoom  { right: 42px; background: var(--mustard-weak); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--mustard); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(1.5px, 1.5px); box-shadow: 0 0 0 var(--navy); }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; font-size: 1rem; }
+.hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
+.hero-preview canvas { cursor: zoom-in; }
+.hero-preview.big {
+  width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%);
+  box-shadow: 0 0 0 100vmax rgba(45,34,23,0.45), 0 8px 24px rgba(45,34,23,0.3);
+}
+.hero-preview.big canvas { cursor: zoom-out; }
+.hero-preview.big { padding: 14px 16px 10px; outline: 1px solid var(--rule); outline-offset: -7px; }
+.hero-preview.big .hp-name {
+  font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; letter-spacing: 0.02em;
+  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak); margin-top: 10px;
+}
+.hero-preview.big .hp-credit {
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px;
+}
+.hero-preview.closed .hp-zoom { display: none; }
+.hero-preview.closed canvas, .hero-preview.closed .hp-name { display: none; }
+.hero-preview.closed { width: auto; padding: 10px 44px 8px 12px; min-height: 28px; }
+.hero-preview.closed .hp-close { top: 8px; right: 8px; }
+"""
+
+HERO_HTML = """
+<aside class="hero-preview" id="hero-preview" aria-label="Recolored car preview">
+  <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">✕</button>
+  <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview">⤢</button>
+  <canvas id="hero-canvas"></canvas>
+  <div class="hp-name" id="hero-name"></div>
+  <div class="hp-credit">Photo: <a href="__CREDIT_URL__" target="_blank" rel="noopener">__CREDIT__</a></div>
+</aside>
+"""
+
+HERO_JS = """
+<script>
+(function () {
+  var H = __HERO__;
+  var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
+      label = document.getElementById('hero-name'), ctx = cv.getContext('2d');
+  box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.toggle('closed'); };
+  function zoom() { box.classList.toggle('big'); }
+  box.querySelector('.hp-zoom').onclick = zoom; cv.onclick = zoom;
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.classList.remove('big'); });
+  var M = [[0.4124564,0.3575761,0.1804375],[0.2126729,0.7151522,0.0721750],[0.0193339,0.1191920,0.9503041]];
+  var Mi = [[3.2404542,-1.5371385,-0.4985314],[-0.9692660,1.8760108,0.0415560],[0.0556434,-0.2040259,1.0572252]];
+  var WP = [0.95047, 1, 1.08883];
+  function lin(c) { c /= 255; return c > 0.04045 ? Math.pow((c + 0.055) / 1.055, 2.4) : c / 12.92; }
+  function gam(c) { c = c <= 0.0031308 ? 12.92 * c : 1.055 * Math.pow(c, 1 / 2.4) - 0.055; return Math.max(0, Math.min(1, c)) * 255; }
+  function f(t) { return t > 216 / 24389 ? Math.cbrt(t) : (24389 / 27 * t + 16) / 116; }
+  function finv(t) { var t3 = t * t * t; return t3 > 216 / 24389 ? t3 : (116 * t - 16) / (24389 / 27); }
+  function toLab(r, g, b) {
+    r = lin(r); g = lin(g); b = lin(b);
+    var fx = f((M[0][0]*r + M[0][1]*g + M[0][2]*b) / WP[0]), fy = f(M[1][0]*r + M[1][1]*g + M[1][2]*b),
+        fz = f((M[2][0]*r + M[2][1]*g + M[2][2]*b) / WP[2]);
+    return [116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz)];
+  }
+  function hexRgb(h) { return [1, 3, 5].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
+
+  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [0, 0], cur = null;
+  function ready() {
+    if (++loaded < 2) return;
+    W = cv.width = photo.width; Hh = cv.height = photo.height;
+    ctx.drawImage(photo, 0, 0); base = ctx.getImageData(0, 0, W, Hh);
+    ctx.clearRect(0, 0, W, Hh); ctx.drawImage(mask, 0, 0); mk = ctx.getImageData(0, 0, W, Hh).data;
+    var n = W * Hh, lab = new Float32Array(n * 3), sum = [0, 0], wt = [0, 0], d = base.data;
+    for (var i = 0; i < n; i++) {
+      var c = toLab(d[4*i], d[4*i+1], d[4*i+2]); lab[3*i] = c[0]; lab[3*i+1] = c[1]; lab[3*i+2] = c[2];
+      for (var k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; sum[k] += a * c[0]; wt[k] += a; }
+    }
+    L = lab; Lm = [sum[0] / wt[0], sum[1] / wt[1]];
+    if (cur) paint(cur); else greyed();
+  }
+  photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
+
+  function greyed() {
+    var g = ctx.createImageData(W, Hh), o = g.data, d = base.data;
+    for (var i = 0; i < W * Hh * 4; i += 4) {
+      var y = 0.3 * d[i] + 0.59 * d[i+1] + 0.11 * d[i+2];
+      o[i] = o[i+1] = o[i+2] = 255 - (255 - y) * 0.7; o[i+3] = 255;
+    }
+    ctx.putImageData(g, 0, 0);
+    var r = Hh * 0.2, x = W / 2, y0 = Hh / 2;
+    ctx.fillStyle = 'rgba(45,34,23,0.72)'; ctx.beginPath(); ctx.arc(x, y0, r, 0, 6.2832); ctx.fill();
+    ctx.fillStyle = '#fffdf4'; ctx.font = '700 ' + Math.round(r * 1.5) + 'px Georgia, serif';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
+  }
+
+  function paint(hex) {
+    var tb = toLab.apply(null, hexRgb(hex)), tr = H.roof ? toLab.apply(null, hexRgb(H.roof)) : tb,
+        out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh;
+    for (var i = 0; i < n; i++) {
+      var ab = mk[4*i] / 255, ar = mk[4*i+1] / 255, r = d[4*i], g = d[4*i+1], b = d[4*i+2];
+      if (ab > 0 || ar > 0) {
+        var kk = ab >= ar ? 0 : 1, t = kk ? tr : tb, a = kk ? ar : ab, dev = L[3*i] - Lm[kk];
+        dev *= dev > 0 ? Math.min(1, (100 - t[0]) / (100 - Lm[kk])) : Math.min(1, t[0] / Lm[kk]);
+        var ly = (Math.max(0, Math.min(100, t[0] + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
+            X = finv(fx) * WP[0], Y = finv(ly), Z = finv(fz) * WP[2];
+        r = r * (1 - a) + gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z) * a;
+        g = g * (1 - a) + gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z) * a;
+        b = b * (1 - a) + gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z) * a;
+      }
+      o[4*i] = r; o[4*i+1] = g; o[4*i+2] = b; o[4*i+3] = 255;
+    }
+    ctx.putImageData(out, 0, 0);
+  }
+
+  var picked = null;
+  function pick(el) {
+    cur = el.dataset.hex; label.textContent = el.dataset.name + ' · ' + cur;
+    if (picked) picked.classList.remove('picked');
+    (picked = el).classList.add('picked');
+    box.classList.remove('closed');
+    if (loaded < 2) return;
+    cv.classList.add('swap');
+    setTimeout(function () { paint(cur); cv.classList.remove('swap'); }, 60);
+  }
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest && e.target.closest('.pick');
+    if (el) pick(el);
+  });
+  document.addEventListener('keydown', function (e) {
+    var el = e.target.classList && e.target.classList.contains('pick') ? e.target : null;
+    if (el && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pick(el); }
+  });
+})();
+</script>
+"""
+
+def hero_parts(hero):
+    """(css, html, js) for the recolor preview; empty strings when the car has no hero."""
+    if not hero:
+        return "", "", ""
+    html = (HERO_HTML.replace("__CREDIT__", esc(hero.get("credit") or "source"))
+                     .replace("__CREDIT_URL__", esc(hero["credit_url"]) if safe_url(hero.get("credit_url", "")) else "#"))
+    js = HERO_JS.replace("__HERO__", json.dumps({k: hero.get(k) for k in ("photo", "mask", "roof")}).replace("</", "<\\/"))
+    return HERO_CSS, html, js
+
 # SVG starburst — mid-century atomic motif
 STARBURST = '''<svg class="starburst" viewBox="-50 -50 100 100" aria-hidden="true">
   <g fill="currentColor">
@@ -133,15 +290,11 @@ STARBURST = '''<svg class="starburst" viewBox="-50 -50 100 100" aria-hidden="tru
   <circle cx="0" cy="0" r="4" fill="currentColor"/>
 </svg>'''
 
-def render(car, library, matches, fil_thumbs, all_filaments, meta):
+def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
     """The whole self-contained page as a string."""
     DISPLAY    = meta.get("display", car.title())
     SCRIPT_TAG = meta.get("script_tagline", "")
     BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
-    card_url   = meta.get("card_source_url", "")
-    card_host  = source_host(card_url)
-    credit_link = (f'<a href="https://{esc(urlsplit(card_url).hostname)}/" target="_blank" rel="noopener">{esc(card_host)}</a>'
-                   if card_host and safe_url(card_url) else "")
 
     by_year = {}
     for m in matches:
@@ -178,8 +331,7 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta):
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     _title_suffix = " color card" if library == "cz" else " · intl library"
-    _hero_credit = f" · cards: {credit_link}" if credit_link else ""
-    _foot_credit = f"Colour cards courtesy of {credit_link} · " if credit_link else ""
+    hero_css, hero_html, hero_js = hero_parts(hero)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -526,6 +678,7 @@ footer.card-footer .sub {{
 
 a {{ color: var(--teal-deep); }}
 img {{ max-width: 100%; }}
+{hero_css}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yesteryear&family=Pacifico&family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&display=swap">
@@ -536,7 +689,7 @@ img {{ max-width: 100%; }}
 
 <header class="page-head">
   {STARBURST}
-  <div class="hero-top"><span>Factory Paint Archive · {_year_range}{_hero_credit}</span></div>
+  <div class="hero-top"><span>Factory Paint Archive · {_year_range}</span></div>
   <h1>{esc(DISPLAY)}</h1>
   <span class="script">{esc(SCRIPT_TAG)}</span>
   <div class="meta-grid">
@@ -567,10 +720,12 @@ img {{ max-width: 100%; }}
 
 <footer class="card-footer">
   <div class="brand">{esc(DISPLAY)} factory colors · 3D-print filament matches</div>
-  <div class="sub">{_foot_credit}Generated by car-paint-filaments · {_year_range} color cards · {date.today().year}</div>
+  <div class="sub">Generated by car-paint-filaments · {_year_range} color cards · {date.today().year}</div>
 </footer>
 
 </div>
+{hero_html}
+{hero_js}
 </body>
 </html>
 """
@@ -586,8 +741,10 @@ def main():
     thumbs   = json.loads((car_data / f"thumbnails_{args.library}.json").read_text(encoding="utf-8"))
     all_filaments = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
                      if f.get("library", "cz") == args.library]
+    hero_path = car_data / "hero.json"
+    hero = json.loads(hero_path.read_text(encoding="utf-8")) if hero_path.exists() else None
     page = render(args.car, args.library, matches, thumbs["filaments"], all_filaments,
-                  config.car_meta(args.car))
+                  config.car_meta(args.car), hero)
 
     out = config.car_output(args.car) / (f"{args.car}.html" if args.library == "cz" else f"{args.car}-{args.library}.html")
     out.parent.mkdir(parents=True, exist_ok=True)
