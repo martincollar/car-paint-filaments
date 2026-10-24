@@ -68,36 +68,36 @@ def clean_url(c):
                        if not TRACKING_PARAMS.match(k)])
     return urlunsplit((parts.scheme, parts.netloc, path, query, ""))
 
+USED_THUMBS = set()     # slugs whose photo the page needs (filled while rows are built)
+
 def filament_row(c, fil_thumbs, is_primary=False):
     cls = de_class(c["delta_e"])
-    tsrc = fil_thumbs.get(c["slug"], "")
-    sw_cls = "mini" if is_primary else "tiny"
-    thumb = f'<img class="fil-thumb" src="{tsrc}" alt="">' if tsrc and is_primary else ""
+    if fil_thumbs.get(c["slug"]):
+        USED_THUMBS.add(c["slug"])
+    full = f"{c['brand']} {c['material']} {c['color_name']}"
+    # Swatch and name are both .pick: click recolours the preview, hover/focus opens the bubble (TIP_JS).
+    attrs = (f'data-hex="{c["hex"]}" data-name="{esc(full)}" data-slug="{esc(c["slug"])}" '
+             f'data-shop="{esc(c.get("shop") or "?")}" data-shop-cls="{slugify(c.get("shop") or "") or "unknown"}" '
+             f'data-url="{esc(clean_url(c))}"')
+    # One <a> around swatch + name (display: contents keeps the row's grid): hover opens the bubble, a plain
+    # click recolours the preview (HERO_JS), ctrl/middle click follows the shop link.
+    link = f'<a class="pick" href="{esc(clean_url(c))}" target="_blank" rel="noopener" {attrs}>'
     name = f"<strong>{esc(c['brand'])}</strong> {esc(c['material'])} <span class=\"color\">{esc(c['color_name'])}</span>"
     if is_primary:
         return f"""
-      <div class="filament primary">
-        <div class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></div>
+      <div class="filament primary">{link}
+        <div class="swatch mini" style="background:{c['hex']}"></div>
         <div class="finfo">
           <div class="fname">{name}</div>
-          <div class="fsub">
-            <span class="hex">{c['hex']}</span>
-            <span class="de {cls}">ΔE {c['delta_e']:.1f}</span>
-            {shop_tag(c.get('shop'))}
-          </div>
-          <a class="shop" href="{esc(clean_url(c))}" target="_blank" rel="noopener">Open ↗</a>
-          {thumb}
-        </div>
+          <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span></div>
+        </div></a>
       </div>
     """
     return f"""
-      <div class="filament alt">
-        <span class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></span>
+      <div class="filament alt">{link}
+        <span class="swatch tiny" style="background:{c['hex']}"></span>
         <span class="fname-inline">{name}</span>
-        <span class="hex">{c['hex']}</span>
-        <span class="de {cls}">ΔE {c['delta_e']:.1f}</span>
-        {shop_tag(c.get('shop'))}
-        <a class="shop-arrow" href="{esc(clean_url(c))}" target="_blank" rel="noopener">↗</a>
+        <span class="de {cls}">ΔE {c['delta_e']:.1f}</span></a>
       </div>
     """
 
@@ -118,9 +118,10 @@ def filament_column(cands, kind, fil_thumbs):
 
 
 HERO_CSS = """
-.pick { cursor: pointer; }
-.pick:hover, .pick:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
-.pick.picked { outline: 2px solid var(--orange); outline-offset: 1px; }
+.pick { cursor: pointer; color: inherit; text-decoration: none; }
+a.pick { display: contents; }
+a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--teal); outline-offset: 1px; }
+a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
   width: min(340px, 52vw); background: var(--bg-raised);
@@ -231,7 +232,7 @@ HERO_JS = """
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
   }
 
-  function paint(hex) {
+  function render(hex) {
     var tb = toLab.apply(null, hexRgb(hex)), tr = H.roof ? toLab.apply(null, hexRgb(H.roof)) : tb,
         out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh;
     for (var i = 0; i < n; i++) {
@@ -247,8 +248,20 @@ HERO_JS = """
       }
       o[4*i] = r; o[4*i+1] = g; o[4*i+2] = b; o[4*i+3] = 255;
     }
-    ctx.putImageData(out, 0, 0);
+    return out;
   }
+  function paint(hex) { ctx.putImageData(render(hex), 0, 0); }
+
+  // Small recoloured copy for the hover bubble: a JPEG data URL per colour, '' until the photo has loaded.
+  var small = {}, off = document.createElement('canvas'), tmp = document.createElement('canvas');
+  window.heroRender = function (hex) {
+    if (loaded < 2) return '';
+    if (small[hex]) return small[hex];
+    tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(hex), 0, 0);
+    off.width = 440; off.height = Math.round(440 * Hh / W);
+    off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
+    return (small[hex] = off.toDataURL('image/jpeg', 0.85));
+  };
 
   var picked = null;
   function pick(el) {
@@ -262,7 +275,7 @@ HERO_JS = """
   }
   document.addEventListener('click', function (e) {
     var el = e.target.closest && e.target.closest('.pick');
-    if (el) pick(el);
+    if (el && !(e.ctrlKey || e.metaKey || e.shiftKey || e.button)) { e.preventDefault(); pick(el); }
   });
   document.addEventListener('keydown', function (e) {
     var el = e.target.classList && e.target.classList.contains('pick') ? e.target : null;
@@ -271,6 +284,64 @@ HERO_JS = """
 })();
 </script>
 """
+
+TIP_CSS = """
+.fil-tip {
+  position: fixed; z-index: 30; width: 220px; padding: 10px; display: none;
+  background: var(--bg-raised); color: var(--navy); border: 1px solid var(--rule);
+  box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.25);
+  font-size: 0.8rem; line-height: 1.3;
+}
+.fil-tip.show { display: block; }
+.fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; border: 1px solid var(--rule); margin-bottom: 8px; }
+.fil-tip img.t-car { height: auto; object-fit: contain; background: #f8f8f8; }
+.fil-tip .t-name { font-weight: 600; margin-bottom: 6px; }
+.fil-tip .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
+.fil-tip .t-sw { width: 16px; height: 16px; border: 1px solid var(--rule); flex: none; }
+.fil-tip .t-link { font-family: var(--font-mono); font-weight: 600; color: var(--orange-deep, var(--navy)); text-decoration: none; }
+.fil-tip .t-link:hover { text-decoration: underline; }
+"""
+
+TIP_JS = """
+<script>
+(function () {
+  var T = __THUMBS__, tip = document.createElement('div'), cur = null, timer = null;
+  tip.className = 'fil-tip'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip);
+  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function show(el) {
+    clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
+    var d = el.dataset, car = window.heroRender ? window.heroRender(d.hex) : '', src = car || T[d.slug],
+        img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '',
+        link = d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '';
+    tip.innerHTML = img + '<div class="t-name">' + esc(d.name) + '</div>' +
+      '<div class="t-row"><span class="t-sw" style="background:' + d.hex + '"></span>' + d.hex + '</div>' +
+      '<div class="t-row"><span class="shop-tag shop-' + d.shopCls + '">' + esc(d.shop) + '</span></div>' + link;
+    tip.classList.add('show');
+    var r = (el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight,
+        x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
+        y = r.bottom + 6; if (y + h > innerHeight - 8) y = Math.max(8, r.top - h - 6);
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  function hide() { timer = setTimeout(function () { tip.classList.remove('show'); cur = null; }, 180); }
+  document.addEventListener('mouseover', function (e) {
+    var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) show(el);
+  });
+  document.addEventListener('mouseout', function (e) {
+    var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) hide();
+  });
+  document.addEventListener('focusin', function (e) { if (e.target.dataset && e.target.dataset.slug) show(e.target); });
+  document.addEventListener('focusout', hide);
+  tip.addEventListener('mouseenter', function () { clearTimeout(timer); });
+  tip.addEventListener('mouseleave', hide);
+  document.addEventListener('click', function (e) {          // touch: tap opens it, tap elsewhere closes it
+    var el = e.target.closest && e.target.closest('.pick');
+    if (el && el.dataset.slug) show(el); else if (!tip.contains(e.target)) tip.classList.remove('show');
+  });
+  addEventListener('scroll', function () { tip.classList.remove('show'); }, {passive: true});
+})();
+</script>
+"""
+
 
 def hero_parts(hero):
     """(css, html, js) for the recolor preview; empty strings when the car has no hero."""
@@ -352,6 +423,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         by_year.setdefault(m["year"], []).append(m)
     total_count = sum(len(v) for v in by_year.values())
 
+    USED_THUMBS.clear()
     rows = []
     for year in sorted(by_year.keys(), reverse=True):
         rows.append(f"""
@@ -394,6 +466,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     hero_css, hero_html, hero_js = hero_parts(hero)
+    tip_js = TIP_JS.replace("__THUMBS__", json.dumps({k: fil_thumbs[k] for k in sorted(USED_THUMBS)}))
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -407,6 +480,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {REGION_SWITCH_CSS}
 {region_css(regions)}
 {hero_css}
+{TIP_CSS}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts_q)}&display=swap">
@@ -455,6 +529,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 <script>{TOP_JS}</script>
 {hero_html}
 {hero_js}
+{tip_js}
 {REGION_JS if len(regions) > 1 else ""}
 </body>
 </html>
