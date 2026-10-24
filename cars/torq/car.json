@@ -1,6 +1,8 @@
 {
   "name": "torq",
-  "redirect_from": ["plymouth_barracuda"],
+  "redirect_from": [
+    "plymouth_barracuda"
+  ],
   "display": "3D Sets Torq",
   "publish": true,
   "script_tagline": "Vitamin C & Bad Decisions",
@@ -24,5 +26,12 @@
   "notes": [
     "Reference model: 3D Sets Model 19 Torq, which looks like a 1970 Plymouth Barracuda/'Cuda; the paint colours come from the real Plymouth Barracuda-era Ditzler cards (1970-1974).",
     "Cards cover the whole Plymouth range; only the chips that were offered on the Barracuda/'Cuda are picked by hand in card_layout.json."
-  ]
+  ],
+  "theme": "torq",
+  "hero": {
+    "photo": "sources/hero.jpg",
+    "mask": "sources/hero_mask.png",
+    "credit": "3D Sets Model 19 Torq",
+    "credit_url": "https://3dsets.com/product/model-19-torq/"
+  }
 }
