@@ -281,6 +281,14 @@ def filament_rgb(path, *,
 def rgb_to_hex(rgb):
     return "#{:02X}{:02X}{:02X}".format(*rgb)
 
+def hex_to_rgb(hx):
+    """'#AABBCC' or 'AABBCC' → [170, 187, 204]; None when it isn't a 6-digit hex."""
+    h = str(hx or "").lstrip("#")
+    try:
+        return [int(h[i:i + 2], 16) for i in (0, 2, 4)] if len(h) == 6 else None
+    except ValueError:
+        return None
+
 def rgb_to_lab(rgb):
     a = np.asarray(rgb, dtype=float) / 255.0
     xyz = colour.sRGB_to_XYZ(a)
@@ -290,3 +298,9 @@ def delta_e_2000(rgb_a, rgb_b):
     la = rgb_to_lab(rgb_a)
     lb = rgb_to_lab(rgb_b)
     return float(colour.delta_E(la, lb, method="CIE 2000"))
+
+def delta_e_2000_many(lab_a, lab_b):
+    """ΔE2000 between Lab colours, broadcast: one (3,) target against an (N, 3) pool → (N,).
+    Same numbers as delta_e_2000(), without converting and calling once per pair."""
+    lab_a, lab_b = np.broadcast_arrays(np.asarray(lab_a, dtype=float), np.asarray(lab_b, dtype=float))
+    return np.asarray(colour.delta_E(lab_a, lab_b, method="CIE 2000"), dtype=float)

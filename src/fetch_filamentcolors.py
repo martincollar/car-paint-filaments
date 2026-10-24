@@ -4,91 +4,99 @@ FilamentColors has 2000+ pre-measured filament swatches with hex + CIELAB
 baked in, so no image measurement step. We filter to PLA/PETG only and tag
 every record with library="intl" to keep this catalog separate from the
 Czech-shop catalog ("cz").
+
+Goes through `shoplib.http_get()` like the shop fetchers (robots.txt, throttling,
+retry, conditional-GET cache). The raw file is only rewritten after every API
+page came back, and not when the library would shrink below `min_keep_ratio`
+of the previous run (shops/_defaults.yaml); `--force` accepts a shrink.
+
+Usage:
+    python fetch_filamentcolors.py [--force]
+Exit code 1 when a page failed or the shrink guard tripped (previous file kept).
 """
-import json, sys, os, time, urllib.request, urllib.parse
+import argparse, json, os, sys, urllib.parse
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-import config
+import config, shoplib
+from color_tools import hex_to_rgb
 
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
 API = "https://filamentcolors.xyz/api/swatch/"
-OUT = config.FILAMENTS_SOURCES
-DATA = config.FILAMENTS_DATA
+RAW = config.FILAMENTS_DATA / "filaments_raw_filamentcolors.json"
 
 # Keep PLA / PETG. Skip exotic materials (TPU, PCTG, ASA/ABS) for the car-paint use case.
 KEEP_TYPES = {"PLA", "PETG"}
 
-def fetch_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read())
-
 def download_image(img_url, local_name, referer=None):
-    local = OUT / local_name
+    local = config.FILAMENTS_SOURCES / local_name
     if local.exists(): return local_name
     try:
-        req = urllib.request.Request(img_url, headers={"User-Agent": UA, **({"Referer": referer} if referer else {})})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            local.write_bytes(r.read())
+        local.write_bytes(shoplib.http_get(img_url, binary=True, referer=referer, use_cache=False,
+                                           check_robots=False))
         return local_name
-    except Exception as e:
+    except shoplib.FetchError as e:
         print(f"  IMG fail {local_name}: {e}"); return None
 
-def hex_to_rgb(h):
-    h = h.lstrip("#")
-    try: return [int(h[0:2],16), int(h[2:4],16), int(h[4:6],16)]
-    except Exception: return None
+def record(sw):
+    """One API swatch → raw record, or None when it isn't a usable PLA/PETG swatch."""
+    ft = (sw.get("filament_type") or {}).get("name", "")
+    if ft not in KEEP_TYPES:
+        return None
+    hex_v = (sw.get("hex_color") or "").upper().lstrip("#")
+    rgb = hex_to_rgb(hex_v)
+    if not rgb:
+        return None
+    slug = sw.get("slug") or f"fc-{sw['id']}"
+    img_url = sw.get("card_img") or sw.get("image_front")
+    local = None
+    if img_url:
+        ext = os.path.splitext(urllib.parse.urlparse(img_url).path)[1] or ".jpg"
+        local = download_image(img_url, f"fc-{sw['id']}{ext}", referer="https://filamentcolors.xyz/")
+    avail = "InStock" if sw.get("is_available") else "OutOfStock"
+    return {
+        "slug": slug,
+        "brand": (sw.get("manufacturer") or {}).get("name", "Unknown"),
+        "material": ft,
+        "color_name": sw.get("color_name", ""),
+        "shop": "FilamentColors",
+        "library": "intl",
+        "url": sw.get("mfr_purchase_link") or sw.get("amazon_purchase_link") or f"https://filamentcolors.xyz/swatch/{slug}/",
+        "image_url": img_url,
+        "local_image": local,
+        "availability": avail,
+        "stock": "available" if avail == "InStock" else "unavailable",
+        "rgb": rgb,
+        "hex": "#" + hex_v,
+        "lab": [sw.get("lab_l"), sw.get("lab_a"), sw.get("lab_b")],
+        "confidence": "api_measured_hex",
+    }
 
-results = []
-page = 1
-url = API
-kept = skipped = 0
-while url:
-    try:
-        data = fetch_json(url)
-    except Exception as e:
-        print(f"  page {page} FAIL: {e}"); break
-    page_hits = 0
-    for sw in data["results"]:
-        ft = (sw.get("filament_type") or {}).get("name", "")
-        if ft not in KEEP_TYPES:
-            skipped += 1
-            continue
-        hex_v = sw.get("hex_color", "").upper().lstrip("#")
-        rgb = hex_to_rgb(hex_v)
-        if not rgb: continue
-        mfr = (sw.get("manufacturer") or {}).get("name", "Unknown")
-        name = sw.get("color_name", "")
-        slug = sw.get("slug") or f"fc-{sw['id']}"
-        img_url = sw.get("card_img") or sw.get("image_front")
-        local = None
-        if img_url:
-            ext = os.path.splitext(urllib.parse.urlparse(img_url).path)[1] or ".jpg"
-            local = download_image(img_url, f"fc-{sw['id']}{ext}", referer="https://filamentcolors.xyz/")
-        buy = sw.get("mfr_purchase_link") or sw.get("amazon_purchase_link") or f"https://filamentcolors.xyz/swatch/{slug}/"
-        results.append({
-            "slug": slug,
-            "brand": mfr,
-            "material": ft,
-            "color_name": name,
-            "shop": "FilamentColors",
-            "library": "intl",
-            "url": buy,
-            "image_url": img_url,
-            "local_image": local,
-            "stock": "available" if sw.get("is_available") else "unavailable",
-            "rgb": rgb,
-            "hex": "#" + hex_v,
-            "lab": [sw.get("lab_l"), sw.get("lab_a"), sw.get("lab_b")],
-            "confidence": "api_measured_hex",
-        })
-        kept += 1
-        page_hits += 1
-    print(f"  page {page}: {len(data['results'])} total, {page_hits} kept  (running total: {kept})")
-    url = data.get("next")
-    page += 1
-    time.sleep(0.3)
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    ap.add_argument("--force", action="store_true", help="write even if the shrink guard trips")
+    args = ap.parse_args()
 
-(DATA / "filaments_raw_filamentcolors.json").write_text(
-    json.dumps(results, indent=2, ensure_ascii=False), encoding="utf-8")
-print(f"\n{kept} kept (PLA/PETG), {skipped} skipped (other materials)  →  filaments_raw_filamentcolors.json")
+    config.FILAMENTS_SOURCES.mkdir(parents=True, exist_ok=True)
+    results, skipped, page, url = [], 0, 1, API
+    while url:
+        try:
+            data = json.loads(shoplib.http_get(url))
+        except (shoplib.FetchError, ValueError) as e:
+            print(f"  page {page} FAIL: {e} — keeping the previous {RAW.name}")
+            sys.exit(1)
+        hits = [r for r in map(record, data["results"]) if r]
+        skipped += len(data["results"]) - len(hits)
+        results += hits
+        print(f"  page {page}: {len(data['results'])} total, {len(hits)} kept  (running total: {len(results)})")
+        url = data.get("next")
+        page += 1
+
+    prev = len(json.loads(RAW.read_text(encoding="utf-8"))) if RAW.exists() else 0
+    ratio = float(shoplib.load_defaults().get("min_keep_ratio", 0.8))
+    if prev and len(results) < ratio * prev and not args.force:
+        print(f"GUARD {len(results)} < {ratio:.0%} of previous {prev} — not written (use --force)")
+        sys.exit(1)
+    config.write_json(RAW, results)
+    print(f"\n{len(results)} kept (PLA/PETG), {skipped} skipped (other materials)  →  {RAW.name}")
+
+if __name__ == "__main__":
+    main()
