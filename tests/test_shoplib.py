@@ -91,7 +91,7 @@ class Regions(unittest.TestCase):
     def test_every_shop_declares_known_regions(self):
         regs = shoplib.shop_regions()
         self.assertTrue(regs)
-        self.assertEqual(regs["Prusa3D"], ["int"])
+        self.assertEqual(regs["Prusa3D"], ["eu", "int"])
         self.assertEqual(regs["Smart3D"], ["eu"])
 
 

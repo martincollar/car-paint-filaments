@@ -4,7 +4,7 @@
 # material, colour name and photo; the finish ban still applies.
 name: Prusa3D
 platform: manual
-regions: [int]
+regions: [eu, int]
 base: https://www.prusa3d.com
 default_brand: Prusament
 pins:

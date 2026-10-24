@@ -6,7 +6,7 @@
 # Regenerate the pins when Bambu adds a colour: open the parent page and copy the Color selector entries.
 name: Bambu Lab
 platform: manual
-regions: [int]
+regions: [eu, int]
 base: https://eu.store.bambulab.com
 default_brand: Bambu Lab
 pins:
