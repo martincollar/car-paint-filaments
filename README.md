@@ -10,6 +10,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 |---|---|---|---|
 | Hudson Hornet | 1951-1957 | 65 | [hudson](https://martincollar.github.io/car-paint-filaments/hudson/) |
 | Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
+| Plymouth Barracuda | 1970-1974 | 124 | not published yet |
 
 ## Quick start
 
@@ -126,6 +127,7 @@ scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
      "cards": [
        {
          "card_file": "1961-example-pg01.jpg",
+         "box_width": 60, "box_height": 24,
          "swatches": [
            {"cx": 185, "cy":  87, "name": "Sea Mist Green", "year": 1961, "car_code": "G-10", "paint_ref": "12345", "poly": false},
            ...
@@ -135,6 +137,7 @@ scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
      ]
    }
    ```
+   `box_width`/`box_height` on a card are optional and override the file-wide sample box for cards with smaller chips.
 5. Run `scripts/rebuild.sh <new_car>` → `cars/<new_car>/output/<new_car>.html`.
 
 The filament catalog is reused as-is; no need to re-fetch unless you want fresh stock status or new products.
