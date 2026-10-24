@@ -1,0 +1,13 @@
+# Polymaker US store (Shopify). Colours are variants of one product, so split_variants emits one record per colour
+# (1.75 mm, 1 kg spool; no refills / 2.85 mm / 0.5-0.75 kg), with the variant's own photo.
+# Left out: Silk, Translucent, Galaxy, Marble, Starlight, Gradient, Dual, Glow, Luminous, UV-shift, Wood, GF/CF/ESD lines.
+name: Polymaker
+platform: shopify
+regions: [int]
+base: https://us.polymaker.com
+include:
+- ^/products/(panchroma-pla|matte-pla|polymaker-pla-pro|polylite-pla|satin-pla|metallic-pla|neon-pla|petg)$
+default_brand: Polymaker
+split_variants:
+  option: Color
+  keep: '^(?!.*(refill|2\.85)).*\b1 ?kg$'

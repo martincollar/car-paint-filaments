@@ -20,7 +20,7 @@ Usage:
     python fetch_all.py --force            # write even if the shrink guard trips
 Exit code 1 when any shop failed or tripped the guard.
 """
-import argparse, json, os, sys, time, urllib.parse
+import argparse, json, os, re, sys, time, urllib.parse
 from datetime import date
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -42,7 +42,7 @@ def candidates(rules, adapter):
     """slug → {url, lastmod, data, pin}. Pins override discovered entries with the same slug."""
     found = {}
     for url, info in adapter.discover(rules).items():
-        found.setdefault(rules.slug(url), {"url": url, "pin": None, **info})
+        found.setdefault(info.get("slug") or rules.slug(url), {"url": url, "pin": None, **info})
     for pin in rules.pins:
         slug = pin.get("slug") or rules.slug(pin["url"])
         prev = found.get(slug, {})
@@ -148,7 +148,9 @@ def fetch_shop(rules, args, lock, report):
             reject(slug, "title"); continue
         brand = (ov.get("brand") or pin.get("brand") or shoplib.clean_brand(facts.get("brand"))
                  or rules.cfg.get("default_brand") or rules.name)
-        color = ov.get("color_name") or pin.get("color_name") or shoplib.derive_color_name(title, brand, material)
+        color = ov.get("color_name") or pin.get("color_name") or facts.get("color") or shoplib.derive_color_name(title, brand, material)
+        if rules.cfg.get("color_strip") and not (ov.get("color_name") or pin.get("color_name") or facts.get("color")):
+            color = shoplib._tidy_case(re.sub(rules.cfg["color_strip"], "", color, flags=re.I).strip()) or color
         finish = shoplib.excluded_finish(slug, url, title, color, patterns=rules.finishes)
         if finish:
             reject(slug, f"finish:{finish}"); continue

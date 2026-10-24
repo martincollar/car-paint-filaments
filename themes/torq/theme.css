@@ -191,6 +191,9 @@ h1 {
 .shop-tag.shop-hubacek3d { background: color-mix(in srgb, #8a5a2b 15%, transparent); color: #8a5a2b; }
 .shop-tag.shop-3dfox { background: color-mix(in srgb, #c4561a 15%, transparent); color: #c4561a; }
 .shop-tag.shop-bambu-lab { background: color-mix(in srgb, #00ae42 15%, transparent); color: #007a2e; }
+.shop-tag.shop-polymaker { background: color-mix(in srgb, #0b6fb8 15%, transparent); color: #0b5a94; }
+.shop-tag.shop-spectrum { background: color-mix(in srgb, #d6336c 15%, transparent); color: #b02a58; }
+.shop-tag.shop-overture { background: color-mix(in srgb, #e8590c 15%, transparent); color: #b8460a; }
 
 /* ===== Year section header: number plate with a little flag ===== */
 h2.year-head {

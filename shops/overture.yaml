@@ -1,0 +1,16 @@
+# Overture (Shopify). Colours are variants; one record per colour (1.75 mm, 1 kg).
+# Multicolour spools hide inside plain-looking colour names (not stated on the page); listed by hand
+# after review: Avocado, Christmas Prism, Aurora Berry, Light Blue-Yellow.
+# Left out: multi-packs, refills duplicate the same colours, gradient/dual/rock/glow/shimmer lines.
+name: Overture
+platform: shopify
+regions: [int]
+base: https://overture3d.com
+include:
+- ^/products/overture-(pla|matte-pla|pla-plus-3d-printer-filament-1-75mm|super-pla-3d-printer-filament-1-75mm|easy-pla-3d-printer-filament|high-speed-petg-refill-3d-printer-filament-1-75mm)$
+exclude:
+- '\bglow\b|\bshimmer\b|carbon fiber|\brock\b|\bwood\b|rocket pop|black-white|avocado|christmas prism|aurora berry|light blue-yellow'
+default_brand: Overture
+split_variants:
+  option: Color
+  keep: '^(?!.*2\.85).*1\.75mm / 1 ?kg$'
