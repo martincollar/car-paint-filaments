@@ -3,6 +3,7 @@
 # material, colour name and photo; the finish ban still applies.
 name: Na3D
 platform: manual
+regions: [eu]
 base: https://www.na3d.cz
 default_brand: FIBER3D
 pins:

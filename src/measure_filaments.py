@@ -1,19 +1,18 @@
 """Measure every filament from every `filaments_raw_*.json` and build filaments.json.
 
 Reads all raw shop fetches in `filaments/data/filaments_raw*.json`, measures each
-image with `color_tools.filament_rgb()` **unless the raw record already has rgb/hex**
-(FilamentColors.xyz gives pre-measured hex via API), deduplicates by (library, url, slug)
-and writes a single `filaments/data/filaments.json`.
+image with `color_tools.filament_rgb()` **unless the raw record already has rgb/hex**,
+deduplicates by (url, slug) and writes a single `filaments/data/filaments.json`.
 
 Finishes banned in `shops/_defaults.yaml` (`exclude_finishes`: transparent, natural,
-silk) are dropped here too — fetch_all.py already skips them, this also covers the
-intl library and any hand-made raw file.
+silk) are dropped here too — fetch_all.py already skips them, this also covers any
+hand-made raw file.
 
 Manual colors from `filaments/color_overrides.json` ({slug: {hex, note}}) win over
 the measurement; the measured value is kept as `measured_hex` for comparison.
 
-Each record carries a `library` field (defaults to "cz" for the Czech shop pool)
-so downstream `compute_matches.py` can keep catalogs separate.
+Each record carries `regions` (e.g. ["eu"]), copied from its shop's `regions:` in
+shops/<key>.yaml, so downstream scripts can build one match set per region.
 
 Usage:
     python measure_filaments.py
@@ -72,9 +71,7 @@ def measure_hints(brand):
 
 def measure_record(r):
     rec = dict(r)
-    # Default library tag — Czech-shop fetchers predate the field
-    rec.setdefault("library", "cz")
-    # If raw already has rgb (e.g. FilamentColors API), keep it as-is
+    # If raw already has rgb (hand-made raw file), keep it as-is
     if r.get("rgb") and r.get("hex"):
         rec.setdefault("confidence", "preset_from_source")
         return rec
@@ -98,11 +95,15 @@ def measure_record(r):
 def main():
     raws = sorted(glob.glob(str(config.FILAMENTS_DATA / "filaments_raw*.json")))
     all_rows, banned = [], {}
+    shop_regions = shoplib.shop_regions()
     for p in raws:
         rows = json.loads(Path(p).read_text(encoding="utf-8"))
         kept = []
         for r in rows:
             r.setdefault("shop", "?")
+            r["regions"] = shop_regions.get(r["shop"])
+            if not r["regions"]:
+                sys.exit(f"{Path(p).name}: shop {r['shop']!r} is in no shops/*.yaml, so it has no regions")
             finish = shoplib.excluded_finish(r.get("slug"), r.get("color_name"), r.get("title"), r.get("url"))
             if finish:
                 banned[finish] = banned.get(finish, 0) + 1
@@ -117,7 +118,7 @@ def main():
     if config.FILAMENTS_JSON.exists():
         for r in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8")):
             if r.get("rgb"):
-                prev[(r.get("library", "cz"), r.get("url"), r.get("slug"))] = r
+                prev[(r.get("url"), r.get("slug"))] = r
 
     measured = [measure_record(r) for r in all_rows]
 
@@ -131,18 +132,18 @@ def main():
     for slug in sorted(set(overrides) - used):
         print(f"  ! override for unknown slug: {slug}")
 
-    # Dedup by (library, url, slug): keep first (earliest raw file wins).
+    # Dedup by (url, slug): keep first (earliest raw file wins).
     # Slug is part of the key because one page can carry many colours (Na3D).
     seen = set(); dedup = []
     for r in measured:
-        key = (r.get("library", "cz"), r.get("url"), r.get("slug"))
-        if key[1] and key in seen: continue
-        if key[1]: seen.add(key)
+        key = (r.get("url"), r.get("slug"))
+        if key[0] and key in seen: continue
+        if key[0]: seen.add(key)
         dedup.append(r)
 
     changed = 0
     for r in dedup:
-        old = prev.get((r.get("library", "cz"), r.get("url"), r.get("slug")))
+        old = prev.get((r.get("url"), r.get("slug")))
         if old and r.get("rgb") and delta_e_2000(old["rgb"], r["rgb"]) >= 3:
             r["previous_hex"] = old["hex"]
             changed += 1
@@ -157,11 +158,11 @@ def main():
     for r in dedup:
         if r.get("error"):
             print(f"  ! not measured ({r['error']}): {r.get('slug')}")
-    by_lib = {}
+    by_region = {}
     for r in dedup:
-        by_lib.setdefault(r.get("library", "cz"), 0)
-        by_lib[r.get("library", "cz")] += 1
-    print(f"→ {config.FILAMENTS_JSON}  ({ok}/{len(dedup)} with RGB)  by library: {by_lib}")
+        for g in r["regions"]:
+            by_region[g] = by_region.get(g, 0) + 1
+    print(f"→ {config.FILAMENTS_JSON}  ({ok}/{len(dedup)} with RGB)  by region: {by_region}")
 
 if __name__ == "__main__":
     main()

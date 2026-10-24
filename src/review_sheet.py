@@ -77,7 +77,7 @@ def main():
     args = ap.parse_args()
 
     recs = [r for r in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
-            if r.get("library", "cz") == "cz" and r.get("rgb") and r.get("local_image")
+            if r.get("rgb") and r.get("local_image")
             and (not args.shop or r["shop"] == args.shop)]
     print(f"{len(recs)} filaments: looking for same-colour clusters…", flush=True)
     clusters = cluster_flags(recs)

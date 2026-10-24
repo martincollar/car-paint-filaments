@@ -360,6 +360,21 @@ def excluded_finish(*texts, patterns: dict[str, re.Pattern] | None = None) -> st
     return None
 
 
+def region_labels(defaults: dict | None = None) -> dict[str, str]:
+    """{region key: label} in display order, from `regions:` in shops/_defaults.yaml."""
+    return dict((defaults if defaults is not None else load_defaults()).get("regions") or {})
+
+def validate_regions(regions, defaults: dict, where: str) -> list[str]:
+    """A shop's `regions:` list; every entry must be a key of the defaults' `regions:` map."""
+    known = region_labels(defaults)
+    if not regions or not isinstance(regions, list):
+        raise ValueError(f"{where}: `regions:` must be a non-empty list (known: {', '.join(known)})")
+    bad = [r for r in regions if r not in known]
+    if bad:
+        raise ValueError(f"{where}: unknown region {', '.join(bad)} (known: {', '.join(known)})")
+    return list(regions)
+
+
 class ShopRules:
     """Compiled `shops/<key>.yaml` merged over `_defaults.yaml`.
 
@@ -386,6 +401,7 @@ class ShopRules:
         self.refresh_days = float(cfg.get("refresh_days", defaults.get("refresh_days", 7)))
         self.min_keep_ratio = float(cfg.get("min_keep_ratio", defaults.get("min_keep_ratio", 0.8)))
         self.finishes = _finish_patterns(defaults)
+        self.regions = validate_regions(cfg.get("regions"), defaults, f"shops/{key}.yaml")
 
     def path(self, url: str) -> str:
         return _fold(urllib.parse.unquote(urllib.parse.urlsplit(url).path))
@@ -423,6 +439,10 @@ def list_shops() -> list[str]:
 def load_shop(key: str) -> ShopRules:
     cfg = yaml.safe_load((config.SHOPS_DIR / f"{key}.yaml").read_text(encoding="utf-8"))
     return ShopRules(key, cfg, load_defaults())
+
+def shop_regions() -> dict[str, list[str]]:
+    """{shop display name: regions} for every shops/*.yaml."""
+    return {r.name: r.regions for r in map(load_shop, list_shops())}
 
 
 # ---------------------------------------------------------- naming ----

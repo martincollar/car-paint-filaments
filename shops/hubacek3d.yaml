@@ -1,6 +1,7 @@
 # Hubáček 3D — Upgates, product sitemap (/p/<slug>). Sells mostly 3DPower filaments.
 name: Hubacek3D
 platform: upgates
+regions: [eu]
 base: https://www.hubacek3d.cz
 sitemap: https://www.hubacek3d.cz/sitemap.xml
 sitemap_filter: product

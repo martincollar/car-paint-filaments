@@ -10,8 +10,8 @@ Folder layout:
       cars/<car_name>/     — one folder per car / color card source
         car.json           — car metadata (name, year range, source URLs)
         sources/           — scanned color cards (jpg/png)
-        data/              — car_colors.json, matches_<lib>.json, thumbnails_<lib>.json
-        output/            — <car_name>.html (cz library), <car_name>-intl.html
+        data/              — car_colors.json, matches.json (per region), thumbnails.json
+        output/            — <car_name>.html (one page, EU / CZ + INT switch)
 
 Add a new car: see README.md ("Adding a new car"), then scripts/rebuild.sh <name>.
 """

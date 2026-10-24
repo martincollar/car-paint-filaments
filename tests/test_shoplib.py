@@ -34,7 +34,7 @@ class FinishFilter(unittest.TestCase):
 
 class Rules(unittest.TestCase):
     def setUp(self):
-        self.r = shoplib.ShopRules("t", {"name": "T", "platform": "upgates",
+        self.r = shoplib.ShopRules("t", {"name": "T", "platform": "upgates", "regions": ["eu"],
                                          "include": ["^/p/"], "exclude": ["^/p/akce-"]},
                                    shoplib.load_defaults())
 
@@ -59,8 +59,27 @@ class Rules(unittest.TestCase):
     def test_slug(self):
         self.assertEqual(self.r.slug("https://x.cz/p/abc-def"), "abc-def")
         self.assertEqual(self.r.slug("https://x.cz/abc-def/"), "abc-def")
-        r = shoplib.ShopRules("t", {"name": "T", "platform": "generic", "slug_regex": r"/([^/]+/p\d+)$"}, {})
+        r = shoplib.ShopRules("t", {"name": "T", "platform": "generic", "regions": ["eu"],
+                                       "slug_regex": r"/([^/]+/p\d+)$"}, {"regions": {"eu": "EU"}})
         self.assertEqual(r.slug("https://www.filament-pm.cz/pla-bila-1-75-mm-1-kg/p61"), "pla-bila-1-75-mm-1-kg/p61")
+
+
+class Regions(unittest.TestCase):
+    D = {"regions": {"eu": "EU / CZ", "int": "INT"}}
+
+    def test_valid_regions_kept_in_order(self):
+        self.assertEqual(shoplib.validate_regions(["int", "eu"], self.D, "t"), ["int", "eu"])
+
+    def test_missing_empty_or_unknown_region_is_an_error(self):
+        for bad in (None, [], "eu", ["us"], ["eu", "us"]):
+            with self.assertRaises(ValueError, msg=repr(bad)):
+                shoplib.validate_regions(bad, self.D, "t")
+
+    def test_every_shop_declares_known_regions(self):
+        regs = shoplib.shop_regions()
+        self.assertTrue(regs)
+        self.assertEqual(regs["Prusa3D"], ["int"])
+        self.assertEqual(regs["Smart3D"], ["eu"])
 
 
 class Sitemap(unittest.TestCase):

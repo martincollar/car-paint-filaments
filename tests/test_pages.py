@@ -21,13 +21,12 @@ class CleanUrl(unittest.TestCase):
         self.assertEqual(self.url("https://www.amazon.com/dp/B0X/ref=sr_1_1?tag=aff-20"),
                          "https://www.amazon.com/dp/B0X")
 
-    def test_shortener_falls_back_to_swatch(self):
-        self.assertEqual(self.url("https://amzn.to/3abc", slug="sunlu-red-12"),
-                         "https://filamentcolors.xyz/swatch/sunlu-red-12/")
+    def test_shortener_has_no_link(self):
+        self.assertEqual(self.url("https://amzn.to/3abc"), "#")
 
     def test_non_http_scheme_never_reaches_href(self):
         for bad in ("javascript:alert(1)", "data:text/html,x", ""):
-            self.assertTrue(self.url(bad, slug="s").startswith("https://filamentcolors.xyz/"), bad)
+            self.assertEqual(self.url(bad), "#", bad)
 
 
 class PageBits(unittest.TestCase):
@@ -45,11 +44,33 @@ class PageBits(unittest.TestCase):
         m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
              "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
              "pla": [], "petg": []}
-        page = build_html.render("hudson", "cz", [m], {}, [],
+        page = build_html.render("hudson", {"eu": [m], "int": [m]}, {}, [],
                                  {"display": "Hudson", "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson"})
         self.assertTrue(page.startswith("<!doctype html>"))
-        self.assertIn("</head>", page); self.assertIn("<body>", page)
+        self.assertIn("</head>", page); self.assertIn("<body data-region=\"eu\">", page)
         self.assertNotIn("autocolorlibrary", page)
+
+
+class RegionPage(unittest.TestCase):
+    def fil(self, slug, regions):
+        return {"slug": slug, "brand": "B", "material": "PLA", "color_name": slug, "shop": "S", "url": "https://s.example/" + slug,
+                "hex": "#336699", "rgb": [51, 102, 153], "regions": regions}
+
+    def test_candidates_are_in_their_region_only_and_switch_is_present(self):
+        eu, bambu = self.fil("eu-only", ["eu"]), self.fil("int-only", ["int"])
+        m = {"name": "Blue", "year": 1952, "car_code": "B", "paint_ref": "1", "hex": "#336699", "rgb": [51, 102, 153],
+             "source_url": "https://x.example", "petg": []}
+        page = build_html.render("c", {"eu": [{**m, "pla": [{"delta_e": 0.5, **eu}]}],
+                                       "int": [{**m, "pla": [{"delta_e": 0.5, **bambu}]}]},
+                                 {}, [eu, bambu], {"display": "C"})
+        self.assertRegex(page, r'(?s)<div class="rcols" data-r="eu">(?:(?!</article>).)*eu-only')
+        self.assertRegex(page, r'(?s)<div class="rcols" data-r="int">(?:(?!</article>).)*int-only')
+        self.assertIn('data-region-btn="int"', page)
+
+    def test_compute_matches_in_region(self):
+        fs = [self.fil("a", ["eu"]), self.fil("b", ["int"]), self.fil("c", ["eu", "int"])]
+        self.assertEqual([f["slug"] for f in compute_matches.in_region(fs, "eu")], ["a", "c"])
+        self.assertEqual([f["slug"] for f in compute_matches.in_region(fs, "int")], ["b", "c"])
 
 
 class HeroPreview(unittest.TestCase):
