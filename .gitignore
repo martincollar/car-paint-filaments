@@ -8,3 +8,4 @@ __pycache__/
 filaments/sources/
 filaments/.cache/
 /_site/
+/.worktrees/
