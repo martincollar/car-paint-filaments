@@ -1,0 +1,14 @@
+{
+  "name": "hudson",
+  "display": "Hudson",
+  "publish": true,
+  "script_tagline": "Fins, Chrome & Flakes",
+  "subtitle_source": "Hudson & Nash-Hudson Ditzler color cards (1951-1957)",
+  "years": [1951, 1952, 1953, 1954, 1955, 1956, 1957],
+  "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson",
+  "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-hudson-pg{page:02d}.jpg",
+  "notes": [
+    "Color names printed on the cards are kept for reference only.",
+    "Poly basecoats look dark on the Ditzler card but on a real car they appear brighter due to aluminum flakes."
+  ]
+}

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.bak
+/tmp/
+filaments/sources/
+filaments/.cache/
+/_site/

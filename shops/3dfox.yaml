@@ -1,0 +1,10 @@
+# 3DFox — the shop is 3dfoxshop.cz (3dfox.cz is only the company WordPress site).
+# Shoptet: one flat sitemap with brands/categories/products; products live at /<slug>/
+# and filament ones start with "filament-".
+name: 3DFox
+platform: shoptet
+base: https://www.3dfoxshop.cz
+sitemap: https://www.3dfoxshop.cz/sitemap.xml
+include:
+- ^/filament-[^/]+/$
+pins: []

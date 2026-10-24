@@ -1,0 +1,239 @@
+# Shopify: whole catalogue from /products.json, no per-page requests.
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: Fillamentum
+platform: shopify
+base: https://fillamentum.shop
+include:
+- ^/products/(pla|petg)
+default_brand: Fillamentum
+pins:
+- url: https://fillamentum.shop/products/petg-aloe-green
+  brand: Fillamentum
+  material: PETG
+  color_name: Aloe Green
+  local_image: fillamentum-petg-petg-aloe-green.png
+- url: https://fillamentum.shop/products/petg-black-soul
+  brand: Fillamentum
+  material: PETG
+  color_name: Black Soul
+  local_image: fillamentum-petg-petg-black-soul.png
+- url: https://fillamentum.shop/products/petg-calendula-orange
+  brand: Fillamentum
+  material: PETG
+  color_name: Calendula Orange
+  local_image: fillamentum-petg-petg-calendula-orange.png
+- url: https://fillamentum.shop/products/petg-copper-with-me
+  brand: Fillamentum
+  material: PETG
+  color_name: Copper With Me
+  local_image: fillamentum-petg-petg-copper-with-me.png
+- url: https://fillamentum.shop/products/petg-forget-me-not-blue
+  brand: Fillamentum
+  material: PETG
+  color_name: Forget-Me-Not Blue
+  local_image: fillamentum-petg-petg-forget-me-not-blue.png
+- url: https://fillamentum.shop/products/petg-ghost-white
+  brand: Fillamentum
+  material: PETG
+  color_name: Ghost White
+  local_image: fillamentum-petg-petg-ghost-white.png
+- url: https://fillamentum.shop/products/petg-gold-cloud
+  brand: Fillamentum
+  material: PETG
+  color_name: Gold Cloud
+  local_image: fillamentum-petg-petg-gold-cloud.png
+- url: https://fillamentum.shop/products/petg-greedy-dragon
+  brand: Fillamentum
+  material: PETG
+  color_name: Greedy Dragon
+  local_image: fillamentum-petg-petg-greedy-dragon.png
+- url: https://fillamentum.shop/products/petg-koala-grey
+  brand: Fillamentum
+  material: PETG
+  color_name: Koala Grey
+  local_image: fillamentum-petg-petg-koala-grey.png
+- url: https://fillamentum.shop/products/petg-melon-yellow
+  brand: Fillamentum
+  material: PETG
+  color_name: Melon Yellow
+  local_image: fillamentum-petg-petg-melon-yellow.png
+- url: https://fillamentum.shop/products/petg-natural-1
+  brand: Fillamentum
+  material: PETG
+  color_name: Natural
+  local_image: fillamentum-petg-petg-natural-1.png
+- url: https://fillamentum.shop/products/petg-sea-wave
+  brand: Fillamentum
+  material: PETG
+  color_name: Sea Wave
+  local_image: fillamentum-petg-petg-sea-wave.png
+- url: https://fillamentum.shop/products/pla-extrafill-abu-dhabi-green
+  brand: Fillamentum
+  material: PLA
+  color_name: Abu Dhabi Green
+  local_image: fillamentum-pla-pla-extrafill-abu-dhabi-green.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-baby-blue
+  brand: Fillamentum
+  material: PLA
+  color_name: Baby Blue
+  local_image: fillamentum-pla-pla-extrafill-baby-blue.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-cairo-gold
+  brand: Fillamentum
+  material: PLA
+  color_name: Cairo Gold
+  local_image: fillamentum-pla-pla-extrafill-cairo-gold.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-cobalt-blue-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Cobalt Blue
+  local_image: fillamentum-pla-pla-extrafill-cobalt-blue-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-concrete-grey-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Concrete Grey
+  local_image: fillamentum-pla-pla-extrafill-concrete-grey-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-electric-grey-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Electric Grey
+  local_image: fillamentum-pla-pla-extrafill-electric-grey-1kg.png
+- url: https://fillamentum.shop/products/pla-extrafill-green-grass-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Green Grass
+  local_image: fillamentum-pla-pla-extrafill-green-grass-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-light-ivory-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Light Ivory
+  local_image: fillamentum-pla-pla-extrafill-light-ivory-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-lilac-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Lilac
+  local_image: fillamentum-pla-pla-extrafill-lilac-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-marrakesh-red
+  brand: Fillamentum
+  material: PLA
+  color_name: Marrakesh Red
+  local_image: fillamentum-pla-pla-extrafill-marrakesh-red.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-melon-yellow-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Melon Yellow
+  local_image: fillamentum-pla-pla-extrafill-melon-yellow-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-metallic-grey-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Metallic Grey
+  local_image: fillamentum-pla-pla-extrafill-metallic-grey-1kg.png
+- url: https://fillamentum.shop/products/pla-extrafill-mint-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Mint
+  local_image: fillamentum-pla-pla-extrafill-mint-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-natural-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Natural
+  local_image: fillamentum-pla-pla-extrafill-natural-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Noble Blue
+  local_image: fillamentum-pla-pla-extrafill-noble-blue-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-orange-orange-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Orange Orange
+  local_image: fillamentum-pla-pla-extrafill-orange-orange-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-pearl-night-blue-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Pearl Night Blue
+  local_image: fillamentum-pla-pla-extrafill-pearl-night-blue-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-pearl-ruby-red-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Pearl Ruby Red
+  local_image: fillamentum-pla-pla-extrafill-pearl-ruby-red-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-peppered-mustard
+  brand: Fillamentum
+  material: PLA
+  color_name: Peppered Mustard
+  local_image: fillamentum-pla-pla-extrafill-peppered-mustard.png
+- url: https://fillamentum.shop/products/pla-extrafill-rapunzel-silver-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Rapunzel Silver
+  local_image: fillamentum-pla-pla-extrafill-rapunzel-silver-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-signal-red-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Signal Red
+  local_image: fillamentum-pla-pla-extrafill-signal-red-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-sky-blue-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Sky Blue
+  local_image: fillamentum-pla-pla-extrafill-sky-blue-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-traffic-black-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Traffic Black
+  local_image: fillamentum-pla-pla-extrafill-traffic-black-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-traffic-red-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Traffic Red
+  local_image: fillamentum-pla-pla-extrafill-traffic-red-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-traffic-white-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Traffic White
+  local_image: fillamentum-pla-pla-extrafill-traffic-white-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-traffic-yellow-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Traffic Yellow
+  local_image: fillamentum-pla-pla-extrafill-traffic-yellow-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-turquoise-blue-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Turquoise Blue
+  local_image: fillamentum-pla-pla-extrafill-turquoise-blue-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-turquoise-green
+  brand: Fillamentum
+  material: PLA
+  color_name: Turquoise Green
+  local_image: fillamentum-pla-pla-extrafill-turquoise-green.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-vertigo-cherry-1-kg-1-75-mm
+  brand: Fillamentum
+  material: PLA
+  color_name: Vertigo Cherry
+  local_image: fillamentum-pla-pla-extrafill-vertigo-cherry-1-kg-1-75-mm.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-vertigo-galaxy-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Vertigo Galaxy
+  local_image: fillamentum-pla-pla-extrafill-vertigo-galaxy-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-vertigo-grey-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Vertigo Grey
+  local_image: fillamentum-pla-pla-extrafill-vertigo-grey-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-vertigo-jade-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Vertigo Jade
+  local_image: fillamentum-pla-pla-extrafill-vertigo-jade-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-vertigo-starlight-1kg
+  brand: Fillamentum
+  material: PLA
+  color_name: Vertigo Starlight
+  local_image: fillamentum-pla-pla-extrafill-vertigo-starlight-1kg.jpg
+- url: https://fillamentum.shop/products/pla-extrafill-volcanic-dust
+  brand: Fillamentum
+  material: PLA
+  color_name: Volcanic Dust
+  local_image: fillamentum-pla-pla-extrafill-volcanic-dust.jpg

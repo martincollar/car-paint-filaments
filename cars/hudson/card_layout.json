@@ -1,0 +1,627 @@
+{
+  "box_width": 120,
+  "box_height": 35,
+  "source_url_template": "https://www.autocolorlibrary.com/pages/{year}-hudson",
+  "cards": [
+    {
+      "card_file": "1951-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 149,
+          "cy": 232,
+          "name": "Oriental Green Poly",
+          "year": 1951,
+          "car_code": "P-25",
+          "paint_ref": "40521",
+          "poly": true
+        },
+        {
+          "cx": 151,
+          "cy": 301,
+          "name": "Peacock Green Poly",
+          "year": 1951,
+          "car_code": "S-26",
+          "paint_ref": "40522",
+          "poly": true
+        },
+        {
+          "cx": 529,
+          "cy": 235,
+          "name": "Newport Gray Poly",
+          "year": 1951,
+          "car_code": "Q-61",
+          "paint_ref": "30860",
+          "poly": true
+        },
+        {
+          "cx": 527,
+          "cy": 302,
+          "name": "Jefferson Green Poly",
+          "year": 1951,
+          "car_code": "S-62",
+          "paint_ref": "41061",
+          "poly": true
+        },
+        {
+          "cx": 528,
+          "cy": 370,
+          "name": "Naples Green Poly",
+          "year": 1951,
+          "car_code": "P-63",
+          "paint_ref": "41060",
+          "poly": true
+        }
+      ]
+    },
+    {
+      "card_file": "1952-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 185,
+          "cy": 87,
+          "name": "Gulf Green",
+          "year": 1952,
+          "car_code": "Q-115",
+          "paint_ref": "41206",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 87,
+          "name": "Southern Blue",
+          "year": 1952,
+          "car_code": "J-97",
+          "paint_ref": "10813",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 159,
+          "name": "Broadway Blue",
+          "year": 1952,
+          "car_code": "B-96",
+          "paint_ref": "10814",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 159,
+          "name": "Boston Ivory",
+          "year": 1952,
+          "car_code": "N-92",
+          "paint_ref": "80558",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 231,
+          "name": "Jupiter Gray Poly",
+          "year": 1952,
+          "car_code": "G-95",
+          "paint_ref": "30921",
+          "poly": true
+        },
+        {
+          "cx": 420,
+          "cy": 231,
+          "name": "Texas Tan Poly",
+          "year": 1952,
+          "car_code": "H-27",
+          "paint_ref": "20644",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 301,
+          "name": "Symphony Blue Green Light",
+          "year": 1952,
+          "car_code": "CC-93",
+          "paint_ref": "41119",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 301,
+          "name": "Symphony Blue Green Dark",
+          "year": 1952,
+          "car_code": "P",
+          "paint_ref": "41238",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "1953-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 185,
+          "cy": 89,
+          "name": "Honey Cream",
+          "year": 1953,
+          "car_code": "N-135",
+          "paint_ref": "80600",
+          "poly": false
+        },
+        {
+          "cx": 464,
+          "cy": 91,
+          "name": "Robin's Egg Green",
+          "year": 1953,
+          "car_code": "CC-134",
+          "paint_ref": "41298",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 179,
+          "name": "Blue Grass Green",
+          "year": 1953,
+          "car_code": "P-136",
+          "paint_ref": "41297",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 179,
+          "name": "Pearl Gray Poly",
+          "year": 1953,
+          "car_code": "G-128",
+          "paint_ref": "31056",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 267,
+          "name": "Seal Gray",
+          "year": 1953,
+          "car_code": "RR-137",
+          "paint_ref": "31051",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 267,
+          "name": "Surf Green",
+          "year": 1953,
+          "car_code": "Q-133",
+          "paint_ref": "41300",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 361,
+          "name": "Meadow Green Poly",
+          "year": 1953,
+          "car_code": "S-132",
+          "paint_ref": "41303",
+          "poly": true
+        }
+      ]
+    },
+    {
+      "card_file": "1954-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 185,
+          "cy": 80,
+          "name": "Beret Blue Poly",
+          "year": 1954,
+          "car_code": "B-158",
+          "paint_ref": "11070",
+          "poly": true
+        },
+        {
+          "cx": 420,
+          "cy": 80,
+          "name": "Palm Beach Green",
+          "year": 1954,
+          "car_code": "CC-163",
+          "paint_ref": "41470",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 160,
+          "name": "Spring Green",
+          "year": 1954,
+          "car_code": "Q-161",
+          "paint_ref": "41471",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 160,
+          "name": "Royal Red",
+          "year": 1954,
+          "car_code": "M-167",
+          "paint_ref": "70451",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 243,
+          "name": "St. Clair Gray",
+          "year": 1954,
+          "car_code": "RR-160",
+          "paint_ref": "31123",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 243,
+          "name": "Pasture Green Poly",
+          "year": 1954,
+          "car_code": "S-164",
+          "paint_ref": "41469",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 323,
+          "name": "Pacific Blue Green",
+          "year": 1954,
+          "car_code": "P-162",
+          "paint_ref": "41472",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 323,
+          "name": "Algerian Blue Poly",
+          "year": 1954,
+          "car_code": "G-168",
+          "paint_ref": "11068",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 408,
+          "name": "Silver Blue",
+          "year": 1954,
+          "car_code": "J-159",
+          "paint_ref": "11069",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 408,
+          "name": "Coronation Cream",
+          "year": 1954,
+          "car_code": "N-166",
+          "paint_ref": "80639",
+          "poly": false
+        },
+        {
+          "cx": 184,
+          "cy": 487,
+          "name": "Roman Bronze",
+          "year": 1954,
+          "car_code": "H-165",
+          "paint_ref": "70453",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "1955-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 185,
+          "cy": 85,
+          "name": "Caribbean Blue Green",
+          "year": 1955,
+          "car_code": "P-44",
+          "paint_ref": "41161",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 85,
+          "name": "Coral Red",
+          "year": 1955,
+          "car_code": "P-65",
+          "paint_ref": "60178",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 166,
+          "name": "Rio Red",
+          "year": 1955,
+          "car_code": "P-64",
+          "paint_ref": "70533",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 166,
+          "name": "Bermuda Green",
+          "year": 1955,
+          "car_code": "P-67",
+          "paint_ref": "41696",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 248,
+          "name": "Sunburst Yellow",
+          "year": 1955,
+          "car_code": "P-66",
+          "paint_ref": "80725",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 248,
+          "name": "Mist Blue",
+          "year": 1955,
+          "car_code": "P-68",
+          "paint_ref": "11282",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 331,
+          "name": "Island Green",
+          "year": 1955,
+          "car_code": "P-62",
+          "paint_ref": "41685",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 331,
+          "name": "Snowberry White",
+          "year": 1955,
+          "car_code": "P-69",
+          "paint_ref": "8017",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 412,
+          "name": "Midshipman Blue",
+          "year": 1955,
+          "car_code": "P-61",
+          "paint_ref": "11277",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 412,
+          "name": "Palomino Brown",
+          "year": 1955,
+          "car_code": "P-71",
+          "paint_ref": "21139",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "1956-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 180,
+          "cy": 91,
+          "name": "Frost White",
+          "year": 1956,
+          "car_code": "P-72",
+          "paint_ref": "8108",
+          "poly": false
+        },
+        {
+          "cx": 463,
+          "cy": 91,
+          "name": "Grenadier Red",
+          "year": 1956,
+          "car_code": "P-78",
+          "paint_ref": "70642",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 174,
+          "name": "Willow Green",
+          "year": 1956,
+          "car_code": "P-73",
+          "paint_ref": "41868",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 174,
+          "name": "Boulevard Gray",
+          "year": 1956,
+          "car_code": "P-80",
+          "paint_ref": "31331",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 255,
+          "name": "Crocus Yellow",
+          "year": 1956,
+          "car_code": "P-74",
+          "paint_ref": "80737",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 255,
+          "name": "Solitaire Blue",
+          "year": 1956,
+          "car_code": "P-81",
+          "paint_ref": "11206",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 338,
+          "name": "Polo Green",
+          "year": 1956,
+          "car_code": "P-75",
+          "paint_ref": "41867",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 338,
+          "name": "Pacific Blue",
+          "year": 1956,
+          "car_code": "P-82",
+          "paint_ref": "11462",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 420,
+          "name": "Golden Brown",
+          "year": 1956,
+          "car_code": "P-76",
+          "paint_ref": "21221",
+          "poly": false
+        },
+        {
+          "cx": 467,
+          "cy": 420,
+          "name": "Ballerina Red",
+          "year": 1956,
+          "car_code": "P-83",
+          "paint_ref": "70641",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 502,
+          "name": "Mint Green",
+          "year": 1956,
+          "car_code": "P-77",
+          "paint_ref": "41819",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "1957-hudson-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 185,
+          "cy": 76,
+          "name": "Bermuda Green",
+          "year": 1957,
+          "car_code": "P-67",
+          "paint_ref": "41696",
+          "poly": false
+        },
+        {
+          "cx": 467,
+          "cy": 84,
+          "name": "Mardi Gras Red",
+          "year": 1957,
+          "car_code": "P-90",
+          "paint_ref": "70711",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 165,
+          "name": "Glacier Blue",
+          "year": 1957,
+          "car_code": "P-84",
+          "paint_ref": "11548",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 165,
+          "name": "Mojave Yellow",
+          "year": 1957,
+          "car_code": "P-92",
+          "paint_ref": "80861",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 247,
+          "name": "Lagoon Blue",
+          "year": 1957,
+          "car_code": "P-85",
+          "paint_ref": "11549",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 247,
+          "name": "Sierra Peach",
+          "year": 1957,
+          "car_code": "P-93",
+          "paint_ref": "70710",
+          "poly": false
+        },
+        {
+          "cx": 185,
+          "cy": 327,
+          "name": "Plum Poly",
+          "year": 1957,
+          "car_code": "P-86",
+          "paint_ref": "50462",
+          "poly": true
+        },
+        {
+          "cx": 420,
+          "cy": 327,
+          "name": "Cinnamon Bronze Poly",
+          "year": 1957,
+          "car_code": "P-94",
+          "paint_ref": "21303",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 411,
+          "name": "Berkshire Green",
+          "year": 1957,
+          "car_code": "P-87",
+          "paint_ref": "41986",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 411,
+          "name": "Gotham Gray Poly",
+          "year": 1957,
+          "car_code": "P-95",
+          "paint_ref": "31403",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 493,
+          "name": "Oregon Green",
+          "year": 1957,
+          "car_code": "P-88",
+          "paint_ref": "41987",
+          "poly": false
+        },
+        {
+          "cx": 420,
+          "cy": 493,
+          "name": "Rebel Silver Gray Poly",
+          "year": 1957,
+          "car_code": "P-96",
+          "paint_ref": "31588",
+          "poly": true
+        },
+        {
+          "cx": 185,
+          "cy": 575,
+          "name": "Avocado Poly",
+          "year": 1957,
+          "car_code": "P-89",
+          "paint_ref": "41985",
+          "poly": true
+        }
+      ]
+    }
+  ]
+}

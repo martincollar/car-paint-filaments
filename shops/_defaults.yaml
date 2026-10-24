@@ -1,0 +1,42 @@
+# Rules shared by every shop. A shop's own `exclude` list is appended to this one;
+# `materials` and the numeric limits can be overridden per shop.
+# All regexes match diacritics-folded, lowercased text ("průhledná" → "pruhledna").
+
+# Finishes we never print with. Applied to slug, URL, product title and colour name
+# of EVERY record — discovered, pinned, legacy, and the intl library too
+# (measure_filaments.py drops them again as a safety net).
+exclude_finishes:
+  transparent: '\btransparent\w*|\btranslucent\w*|\bpruhledn\w*|\bpruhled\w*|\bcir(a|e|y|i|ou)\b|\bclear\b'
+  natural:     '\bnatur\w*|\bprirodn\w*'
+  silk:        '\bsilk\w*|\bhedvab\w*'
+
+# URL-path excludes: things that are not a single-colour 1.75 mm ~1 kg spool.
+exclude:
+  - 'vzor|sample|probe|tester|(^|-)\d+-?pack(-|$)'
+  - 'bundle|balicek|multipack|multi-pack|\bbox\b|-box-|(^|[-/])sada([-/]|$)|(^|[-/])set([-/]|$)|-kopie|/akce-|/akcia-'
+  - '2-85|2[.,]85|285-?mm'
+  - '(^|[-/])(2|3|4|5|8|10)-?kg'
+  - '(^|[-/])(cf|carbon|karbon|wood|drevo|woodjet|glow|svitici|tungsten|magnetite?)([-/]|$)'
+  - 'rainbow|duhov|multicolou?r|tricolou?r|dual-colou?r|gradient|dvoubarev|dvojbarev|tribarev|trojbarev|termo|thermo|chameleon|kameleon'
+  - '(^|[-/])(asa|abs|tpu|tpe|pc|pa|nylon|pva|hips|pp)([-/]|$)'
+
+# First match wins (on URL path + product title).
+materials:
+  PETG: '(^|[^a-z])pet-?g([^a-z]|$)'
+  PLA+: '(^|[^a-z])pla(\+|-?plus)'
+  PLA:  '(^|[^a-z])pla([^a-z]|$)'
+
+material_in_url: true   # URL must already name PLA/PETG (cheap pre-filter before any page fetch)
+max_new_per_run: 300   # cap on never-seen product pages fetched in one run (first crawl spreads over runs)
+refresh_days: 7        # re-fetch a known product page (stock) when the cached copy is older
+min_keep_ratio: 0.8    # refuse to overwrite a shop's raw JSON if it would shrink below 80 %
+
+# Per-brand hints for color_tools.filament_rgb(), matched on the record's brand
+# (case-insensitive regex). Use only for a brand whose photos share one layout.
+measure_hints:
+  # Black slightly bluish spool + grey "A" stand next to every winding: ignore
+  # near-achromatic dark pixels when picking the hue, or pastels measure as the spool.
+  'aurapol': {min_chroma: 0.06}
+  # Blue-grey (lavender-looking) SUNLU spool with a navy hub, hue ~220°, next to pale
+  # marble windings: drop that band or every SUNLU colour measures as the spool (#767C93).
+  'sunlu': {drop_hue_band: [205, 240, 0.05, 1.0]}

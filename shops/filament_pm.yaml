@@ -1,0 +1,130 @@
+# Product URLs are /<slug>/p<id>; record slug is the trailing p<id> (legacy).
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: FilamentPM
+platform: generic
+base: https://www.filament-pm.cz
+sitemap: https://www.filament-pm.cz/sitemap.xml
+include:
+- ^/(pla|petg)-[^/]+/p\d+$
+default_brand: Filament PM
+pins:
+- url: https://www.filament-pm.cz/pla-marblejet-light-1-75-mm-0-5-kg/p164
+  brand: Filament PM
+  material: PLA
+  color_name: Marblejet Light
+  local_image: filamentpm-pla-pla-marblejet-light-1-75-mm-0-5-kg.jpg
+- url: https://www.filament-pm.cz/petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg/p166
+  brand: Filament PM
+  material: PETG
+  color_name: FR-jet White
+  local_image: filamentpm-petg-petg-frjet-samozhasivy-bila-1-75-mm-0-5-kg.jpg
+- url: https://www.filament-pm.cz/pla-woodjet-natur-1-75-mm-0-5-kg/p269
+  brand: Filament PM
+  material: PLA
+  color_name: Woodjet Natur
+  local_image: filamentpm-pla-pla-woodjet-natur-1-75-mm-0-5-kg.jpg
+- url: https://www.filament-pm.cz/petg-transparentni-oranzova-1-75-mm-1-kg/p286
+  brand: Filament PM
+  material: PETG
+  color_name: Orange Transparent
+  local_image: filamentpm-petg-petg-transparentni-oranzova-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-graphite-black-1-75-mm-1-kg/p299
+  brand: Filament PM
+  material: PLA
+  color_name: Graphite Black
+  local_image: filamentpm-pla-pla-graphite-black-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308
+  brand: Filament PM
+  material: PLA
+  color_name: Skin 477C
+  local_image: filamentpm-pla-pla-skin-edice-skin-477c-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-skin-edice-skin-478c-1-75-mm-1-kg/p309
+  brand: Filament PM
+  material: PLA
+  color_name: Skin 478C
+  local_image: filamentpm-pla-pla-skin-edice-skin-478c-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-skin-edice-skin-479c-1-75-mm-1-kg/p310
+  brand: Filament PM
+  material: PLA
+  color_name: Skin 479C
+  local_image: filamentpm-pla-pla-skin-edice-skin-479c-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-skin-edice-skin-480c-1-75-mm-1-kg/p311
+  brand: Filament PM
+  material: PLA
+  color_name: Skin 480C
+  local_image: filamentpm-pla-pla-skin-edice-skin-480c-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-lithophane-1-75-mm-1-kg/p320
+  brand: Filament PM
+  material: PLA
+  color_name: Lithophane
+  local_image: filamentpm-pla-pla-lithophane-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-viva-magenta-1-75-mm-1-kg/p322
+  brand: Filament PM
+  material: PLA
+  color_name: Viva Magenta
+  local_image: filamentpm-pla-pla-viva-magenta-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-envy-green-1-75-mm-1-kg/p325
+  brand: Filament PM
+  material: PLA
+  color_name: Envy Green
+  local_image: filamentpm-pla-pla-envy-green-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/petg-zelena-1-75-mm-1-kg/p327
+  brand: Filament PM
+  material: PETG
+  color_name: Green
+  local_image: filamentpm-petg-petg-zelena-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/petg-metalicka-edice-zabi-zlato-1-75-mm-1-kg/p345
+  brand: Filament PM
+  material: PETG
+  color_name: Frog Gold
+  local_image: filamentpm-petg-petg-metalicka-edice-zabi-zlato-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/petg-metalicka-edice-kavova-bronzova-1-75-mm-1kg/p346
+  brand: Filament PM
+  material: PETG
+  color_name: Coffee Bronze
+  local_image: filamentpm-petg-petg-metalicka-edice-kavova-bronzova-1-75-mm-1kg.jpg
+- url: https://www.filament-pm.cz/petg-metalicka-edice-bridlicova-stribrna-1-75-mm-1kg/p347
+  brand: Filament PM
+  material: PETG
+  color_name: Slate Silver
+  local_image: filamentpm-petg-petg-metalicka-edice-bridlicova-stribrna-1-75-mm-1kg.jpg
+- url: https://www.filament-pm.cz/pla-iron-grey-1-75-mm-1-kg/p363
+  brand: Filament PM
+  material: PLA
+  color_name: Iron Grey
+  local_image: filamentpm-pla-pla-iron-grey-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-navy-blue-1-75-mm-1-kg/p397
+  brand: Filament PM
+  material: PLA
+  color_name: Navy Blue
+  local_image: filamentpm-pla-pla-navy-blue-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-race-red-1-75-mm-1-kg/p399
+  brand: Filament PM
+  material: PLA
+  color_name: Race Red
+  local_image: filamentpm-pla-pla-race-red-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/petg-zluta-1-75-mm-1-kg/p49
+  brand: Filament PM
+  material: PETG
+  color_name: Yellow
+  local_image: filamentpm-petg-petg-zluta-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-transparentni-1-75-mm-1-kg/p60
+  brand: Filament PM
+  material: PLA
+  color_name: Transparent
+  local_image: filamentpm-pla-pla-transparentni-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-bila-1-75-mm-1-kg/p61
+  brand: Filament PM
+  material: PLA
+  color_name: White
+  local_image: filamentpm-pla-pla-bila-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-metallic-violet-1-75-mm-1-kg/p71
+  brand: Filament PM
+  material: PLA
+  color_name: Metallic Violet
+  local_image: filamentpm-pla-pla-metallic-violet-1-75-mm-1-kg.jpg
+- url: https://www.filament-pm.cz/pla-cerna-1-75-mm-1-kg/p85
+  brand: Filament PM
+  material: PLA
+  color_name: Black
+  local_image: filamentpm-pla-pla-cerna-1-75-mm-1-kg.jpg

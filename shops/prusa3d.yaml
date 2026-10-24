@@ -1,0 +1,367 @@
+# Sitemap lists only parent pages (colour is a variant), so colours are pinned by hand.
+# The pinned image_url is the colour render; the page is fetched for availability only.
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: Prusa3D
+platform: manual
+base: https://www.prusa3d.com
+default_brand: Prusament
+pins:
+- url: https://www.prusa3d.com/product/prusament-petg-anthracite-grey-1kg/
+  slug: prusament-petg-anthracite-grey
+  brand: Prusament
+  material: PETG
+  color_name: Anthracite Grey
+  image_url: https://prusament.com/wp-content/uploads/2022/09/antracit_grey_new-256x236.png
+  local_image: prusament-petg-anthracite-grey.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-carmine-red-transparent-1kg/
+  slug: prusament-petg-carmine-red-transparent
+  brand: Prusament
+  material: PETG
+  color_name: Carmine Red Transparent
+  image_url: https://prusament.com/wp-content/uploads/2019/02/carmine_red2-256x236.png
+  local_image: prusament-petg-carmine-red-transparent.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-chalky-blue-1kg/
+  brand: Prusament
+  material: PETG
+  color_name: Chalky Blue
+  image_url: https://prusament.com/wp-content/uploads/2020/09/chalky_blue-256x236.png
+  local_image: prusament-petg-chalky-blue.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-clear-1kg/
+  slug: prusament-petg-clear
+  brand: Prusament
+  material: PETG
+  color_name: Clear
+  image_url: https://prusament.com/wp-content/uploads/2020/02/clear-256x236.png
+  local_image: prusament-petg-clear.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/
+  slug: prusament-petg-jet-black
+  brand: Prusament
+  material: PETG
+  color_name: Jet Black
+  image_url: https://prusament.com/wp-content/uploads/2018/11/jet_black-256x236.png
+  local_image: prusament-petg-jet-black.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-jungle-green-1kg/
+  brand: Prusament
+  material: PETG
+  color_name: Jungle Green
+  image_url: https://prusament.com/wp-content/uploads/2020/10/jungle_green-256x236.png
+  local_image: prusament-petg-jungle-green.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-lipstick-red-1kg/
+  slug: prusament-petg-lipstick-red
+  brand: Prusament
+  material: PETG
+  color_name: Lipstick Red
+  image_url: https://prusament.com/wp-content/uploads/2021/06/lipstick_red-256x236.png
+  local_image: prusament-petg-lipstick-red.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-mango-yellow-1kg/
+  slug: prusament-petg-mango-yellow
+  brand: Prusament
+  material: PETG
+  color_name: Mango Yellow
+  image_url: https://prusament.com/wp-content/uploads/2020/10/mango_yellow-256x236.png
+  local_image: prusament-petg-mango-yellow.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-matte-black-1kg/
+  slug: prusament-petg-matte-black
+  brand: Prusament
+  material: PETG
+  color_name: Matte Black
+  image_url: https://prusament.com/wp-content/uploads/2022/12/matte_black_tr-256x236.png
+  local_image: prusament-petg-matte-black.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-ocean-blue-1kg/
+  brand: Prusament
+  material: PETG
+  color_name: Ocean Blue
+  image_url: https://prusament.com/wp-content/uploads/2020/10/ocean_blue-256x236.png
+  local_image: prusament-petg-ocean-blue.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-pistachio-green-1kg/
+  brand: Prusament
+  material: PETG
+  color_name: Pistachio Green
+  image_url: https://prusament.com/wp-content/uploads/2020/07/pistacio_green-1-256x236.png
+  local_image: prusament-petg-pistachio-green.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-prusa-orange-1kg/
+  slug: prusament-petg-prusa-orange
+  brand: Prusament
+  material: PETG
+  color_name: Prusa Orange
+  image_url: https://prusament.com/wp-content/uploads/2018/11/prusa_orange-256x236.png
+  local_image: prusament-petg-prusa-orange.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-prusa-pro-green-1kg/
+  brand: Prusament
+  material: PETG
+  color_name: Prusa Pro Green
+  image_url: https://prusament.com/wp-content/uploads/2025/04/eb1bba91-petg-prusament-green-1.jpg
+  local_image: prusament-petg-prusa-pro-green.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-signal-white-1kg/
+  slug: prusament-petg-signal-white
+  brand: Prusament
+  material: PETG
+  color_name: Signal White
+  image_url: https://prusament.com/wp-content/uploads/2020/06/signal_white-256x236.png
+  local_image: prusament-petg-signal-white.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-sky-blue-1kg-nfc
+  brand: Prusament
+  material: PETG
+  color_name: Sky Blue
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/11/9f5f81e9-dbc8-4320-906e-09748375d52b-256x236.jpg
+  local_image: prusament-petg-sky-blue.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-terracotta-light-1kg/
+  slug: prusament-petg-terracotta-light
+  brand: Prusament
+  material: PETG
+  color_name: Terracotta Light
+  image_url: https://prusament.com/wp-content/uploads/2020/08/terracotta_light-256x236.png
+  local_image: prusament-petg-terracotta-light.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-urban-grey-1kg/
+  slug: prusament-petg-urban-grey
+  brand: Prusament
+  material: PETG
+  color_name: Urban Grey
+  image_url: https://prusament.com/wp-content/uploads/2019/02/urban_grey-256x236.png
+  local_image: prusament-petg-urban-grey.jpg
+- url: https://www.prusa3d.com/product/prusament-petg-yellow-gold-1kg/
+  slug: prusament-petg-yellow-gold
+  brand: Prusament
+  material: PETG
+  color_name: Yellow Gold
+  image_url: https://prusament.com/wp-content/uploads/2019/06/gold-256x236.png
+  local_image: prusament-petg-yellow-gold.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-anthracite-grey-1kg
+  slug: prusament-pla-anthracite-grey
+  brand: Prusament
+  material: PLA
+  color_name: Anthracite Grey
+  image_url: https://prusament.com/wp-content/uploads/2025/10/16cc98bc-9783-471a-998a-e91468ed78d8.jpg
+  local_image: prusament-pla-anthracite-grey.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-army-green-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Army Green
+  image_url: https://prusament.com/wp-content/uploads/2018/09/green-256x236.png
+  local_image: prusament-pla-army-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-azure-blue-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Azure Blue
+  image_url: https://prusament.com/wp-content/uploads/2018/09/prusament_web_blue-256x236.png
+  local_image: prusament-pla-azure-blue.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg
+  brand: Prusament
+  material: PLA
+  color_name: Chalky Blue
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/10/945a684f-3b2b-4627-8726-2ca319a5ee44-scaled.jpg
+  local_image: prusament-pla-chalky-blue.jpg
+- url: https://www.prusa3d.com/cs/produkt/prusament-pla-electric-green-1kg-nfc/
+  brand: Prusament
+  material: PLA
+  color_name: Electric Green
+  image_url: https://www.prusa3d.com/content/images/product/ce55fca2-4631-44c6-b37c-5d1ab9888f2d.png
+  local_image: prusament-pla-electric-green.jpg
+- url: https://www.prusa3d.com/cs/produkt/prusament-pla-emerald-green-1kg-nfc/
+  brand: Prusament
+  material: PLA
+  color_name: Emerald Green
+  image_url: https://www.prusa3d.com/content/images/product/4b4c0f4b-be7c-48ac-acb5-4230a5c373a5.png
+  local_image: prusament-pla-emerald-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-galaxy-green-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Galaxy Green
+  image_url: https://prusament.com/wp-content/uploads/2021/09/galaxy_green_produkt_tr_reduced-256x236.png
+  local_image: prusament-pla-galaxy-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-galaxy-purple-1kg/
+  slug: prusament-pla-galaxy-purple
+  brand: Prusament
+  material: PLA
+  color_name: Galaxy Purple
+  image_url: https://prusament.com/wp-content/uploads/2019/05/purple-256x236.png
+  local_image: prusament-pla-galaxy-purple.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-galaxy-red-1kg/
+  slug: prusament-pla-galaxy-red
+  brand: Prusament
+  material: PLA
+  color_name: Galaxy Red
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/02/c049bff9-obrazek_2025-02-05_125945831-256x236.png
+  local_image: prusament-pla-galaxy-red.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-galaxy-silver-1kg/
+  slug: prusament-pla-galaxy-silver
+  brand: Prusament
+  material: PLA
+  color_name: Galaxy Silver
+  image_url: https://prusament.com/wp-content/uploads/2018/07/prusament_web_silver-256x236.png
+  local_image: prusament-pla-galaxy-silver.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-gentleman-s-grey-1kg/
+  slug: prusament-pla-gentlemans-grey
+  brand: Prusament
+  material: PLA
+  color_name: Gentleman's Grey
+  image_url: https://prusament.com/wp-content/uploads/2022/10/gentlemans_grey_update_2-1-256x236.png
+  local_image: prusament-pla-gentlemans-grey.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-gravity-grey-1kg/
+  slug: prusament-pla-gravity-grey
+  brand: Prusament
+  material: PLA
+  color_name: Gravity Grey
+  image_url: https://prusament.com/wp-content/uploads/2021/08/gravity_grey-256x236.png
+  local_image: prusament-pla-gravity-grey.jpg
+- url: https://shop.prusa3d.com/prusament/959-prusament-pla-jet-black-1kg.html
+  slug: prusament-pla-jet-black
+  brand: Prusament
+  material: PLA
+  color_name: Jet Black
+  image_url: https://prusament.com/wp-content/uploads/2018/09/jet_black-256x236.png
+  local_image: prusament-pla-jet-black.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-lime-green-blend-970g/
+  brand: Prusament
+  material: PLA
+  color_name: Lime Green (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2020/06/lime_green-1-256x236.png
+  local_image: prusament-pla-lime-green-blend.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-lipstick-red-1kg/
+  slug: prusament-pla-lipstick-red
+  brand: Prusament
+  material: PLA
+  color_name: Lipstick Red
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2023/10/3c013741-pla-lipstick-red-product-256x236.jpeg
+  local_image: prusament-pla-lipstick-red.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-marble-grey-1kg/
+  slug: prusament-pla-marble-grey
+  brand: Prusament
+  material: PLA
+  color_name: Marble Grey
+  image_url: https://prusament.com/wp-content/uploads/2022/05/pla_marble_grey_spool-256x236.png
+  local_image: prusament-pla-marble-grey.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-ms-pink-blend-970g/
+  slug: prusament-pla-ms.-pink-blend
+  brand: Prusament
+  material: PLA
+  color_name: Ms. Pink (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2018/09/Prusament_PINK_lion_v4-256x236.png
+  local_image: prusament-pla-ms.-pink-blend.jpg
+- url: https://www.prusa3d.com/product/prusament-premium-pla-mystic-brown-1kg-2/
+  slug: prusament-pla-mystic-brown
+  brand: Prusament
+  material: PLA
+  color_name: Mystic Brown
+  image_url: https://prusament.com/wp-content/uploads/2018/09/mystic_brown_split-256x236.png
+  local_image: prusament-pla-mystic-brown.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-natural-1kg/
+  slug: prusament-pla-natural
+  brand: Prusament
+  material: PLA
+  color_name: Natural
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/02/95bff7d3-obrazek_2025-02-05_130832087-256x236.png
+  local_image: prusament-pla-natural.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-noctua-beige-1kg-nfc/
+  slug: prusament-pla-noctua-beige
+  brand: Prusament
+  material: PLA
+  color_name: Noctua Beige
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/12/7f401b4e-noctua-beige-fan-transparent.png
+  local_image: prusament-pla-noctua-beige.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/
+  slug: prusament-pla-noctua-brown
+  brand: Prusament
+  material: PLA
+  color_name: Noctua Brown
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/12/60ddab82-noctua-brown-fan-transparent.png
+  local_image: prusament-pla-noctua-brown.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-oh-my-gold-blend-970g/
+  slug: prusament-pla-oh-my-gold-blend
+  brand: Prusament
+  material: PLA
+  color_name: Oh My Gold (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2020/11/oh_my_gold-256x236.png
+  local_image: prusament-pla-oh-my-gold-blend.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-opal-green-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Opal Green
+  image_url: https://prusament.com/wp-content/uploads/2019/06/opal_green-256x236.png
+  local_image: prusament-pla-opal-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-pearl-mouse-1kg/
+  slug: prusament-pla-pearl-mouse
+  brand: Prusament
+  material: PLA
+  color_name: Pearl Mouse
+  image_url: https://prusament.com/wp-content/uploads/2018/09/PearlMouse-1-256x236.png
+  local_image: prusament-pla-pearl-mouse.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-pearl-white-blend-970g/
+  slug: prusament-pla-pearl-white-blend
+  brand: Prusament
+  material: PLA
+  color_name: Pearl White (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2022/04/pearl_white_product_trans-256x236.png
+  local_image: prusament-pla-pearl-white-blend.jpg
+- url: https://shop.prusa3d.com/prusament/1078-prusament-pla-pineapple-yellow-1kg.html
+  slug: prusament-pla-pineapple-yellow
+  brand: Prusament
+  material: PLA
+  color_name: Pineapple Yellow
+  image_url: https://prusament.com/wp-content/uploads/2018/09/pineapple_yellow-256x236.png
+  local_image: prusament-pla-pineapple-yellow.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-pistachio-green-1kg
+  brand: Prusament
+  material: PLA
+  color_name: Pistachio Green
+  image_url: https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/10/93bef0f3-261b-4593-b0f5-44f17e4f8ddf-256x236.jpg
+  local_image: prusament-pla-pistachio-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-pristine-white-1kg/
+  slug: prusament-pla-pristine-white
+  brand: Prusament
+  material: PLA
+  color_name: Pristine White
+  image_url: https://prusament.com/wp-content/uploads/2023/01/pla_white_produkt_tr-256x236.png
+  local_image: prusament-pla-pristine-white.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-prusa-galaxy-black-1kg/
+  slug: prusament-pla-prusa-galaxy-black
+  brand: Prusament
+  material: PLA
+  color_name: Prusa Galaxy Black
+  image_url: https://prusament.com/wp-content/uploads/2023/04/galaxy_black_produkt_tr-256x236.png
+  local_image: prusament-pla-prusa-galaxy-black.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-prusa-orange-1kg/
+  slug: prusament-pla-prusa-orange
+  brand: Prusament
+  material: PLA
+  color_name: Prusa Orange
+  image_url: https://prusament.com/wp-content/uploads/2018/09/prusa_orange-1-256x236.png
+  local_image: prusament-pla-prusa-orange.jpg
+- url: https://www.prusa3d.com/cs/produkt/prusament-pla-prusa-pro-green-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Prusa Pro Green
+  image_url: https://prusament.com/wp-content/uploads/2025/04/6b0606aa-pla-prusament-green-1.jpg
+  local_image: prusament-pla-prusa-pro-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-royal-blue-blend-970g/
+  brand: Prusament
+  material: PLA
+  color_name: Royal Blue (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2018/09/royal_blue-256x236.png
+  local_image: prusament-pla-royal-blue-blend.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-simply-green-1kg/
+  brand: Prusament
+  material: PLA
+  color_name: Simply Green
+  image_url: https://prusament.com/wp-content/uploads/2021/12/prusament_pla_simply_green-256x236.png
+  local_image: prusament-pla-simply-green.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-vanilla-white-1kg/
+  slug: prusament-pla-vanilla-white
+  brand: Prusament
+  material: PLA
+  color_name: Vanilla White
+  image_url: https://prusament.com/wp-content/uploads/2018/09/VanillaWhite-256x236.png
+  local_image: prusament-pla-vanilla-white.jpg
+- url: https://www.prusa3d.com/product/prusament-pla-viva-la-bronze-blend-970g/
+  slug: prusament-pla-viva-la-bronze-blend
+  brand: Prusament
+  material: PLA
+  color_name: Viva La Bronze (Blend)
+  image_url: https://prusament.com/wp-content/uploads/2020/11/viva_la_bronze-256x236.png
+  local_image: prusament-pla-viva-la-bronze-blend.jpg
+- url: https://www.prusa3d.com/product/prusament-premium-pla-mystic-green-1kg-2/
+  brand: Prusament
+  material: PLA
+  color_name: Mystic Green
+  image_url: https://prusament.com/wp-content/uploads/2018/12/mystic_green_split-256x236.png
+  local_image: prusament-pla-mystic-green.jpg

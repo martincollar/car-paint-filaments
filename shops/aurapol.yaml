@@ -1,0 +1,181 @@
+# Own e-shop; only the Czech (/cz/p/) variant of each product.
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: Aurapol
+platform: upgates
+base: https://www.aurapol.com
+sitemap: https://www.aurapol.com/sitemap.xml
+sitemap_filter: product
+include:
+- ^/cz/p/aurapol-
+default_brand: Aurapol
+pins:
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-army-desert-storm-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: ARMY Desert Storm
+  local_image: aurapol-pet-g-army-desert-storm-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-bright-white-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Bright White
+  local_image: aurapol-pet-g-bright-white-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-copper-brown-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Copper Brown
+  local_image: aurapol-pet-g-copper-brown-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-dusty-brown-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Dusty Brown
+  local_image: aurapol-pet-g-dusty-brown-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-light-terracotta-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Light Terracotta
+  local_image: aurapol-pet-g-light-terracotta-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-red-wine-transparent-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Red Wine Transparent
+  local_image: aurapol-pet-g-red-wine-transparent-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sugar-sunbeam-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Sugar Sunbeam
+  local_image: aurapol-pet-g-sugar-sunbeam-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sunset-mochi-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Sunset Mochi
+  local_image: aurapol-pet-g-sunset-mochi-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-traffic-red-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Traffic Red
+  local_image: aurapol-pet-g-traffic-red-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-white-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: White
+  local_image: aurapol-pet-g-white-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Cloud Stone (recycled)
+  local_image: aurapol-pet-g-recycled-cloud-stone-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-recycled-filament-earth-taupe-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Earth Taupe (recycled)
+  local_image: aurapol-pet-g-recycled-earth-taupe-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pet-g-rose-dust-filament-1-kg-1-75-mm
+  brand: Aurapol
+  material: PETG
+  color_name: Rose Dust
+  local_image: aurapol-pet-g-rose-dust-petg.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-almond-silk-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Almond Silk
+  local_image: aurapol-pla-almond-silk-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-body-color-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Body Color
+  local_image: aurapol-pla-body-color-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-caramel-champagne-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Caramel Champagne
+  local_image: aurapol-pla-caramel-champagne-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Cherry Gleam
+  local_image: aurapol-pla-cherry-gleam-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-clay-brown-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Clay Brown
+  local_image: aurapol-pla-clay-brown-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-honey-partially-transparent-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Honey (partially transparent)
+  local_image: aurapol-pla-honey-partially-transparent-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-l-ego-brown-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: L-EGO Brown
+  local_image: aurapol-pla-l-ego-brown-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-l-ego-desert-dune-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: L-EGO Desert Dune
+  local_image: aurapol-pla-l-ego-desert-dune-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-l-ego-nude-color-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: L-EGO Nude Color
+  local_image: aurapol-pla-l-ego-nude-color-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-lipstick-red-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Lipstick Red
+  local_image: aurapol-pla-lipstick-red-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-red-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Metallic Red
+  local_image: aurapol-pla-metallic-red-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-mustard-field-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Mustard Field
+  local_image: aurapol-pla-mustard-field-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-peach-flame-castecne-transparentni-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Peach Flame
+  local_image: aurapol-pla-peach-flame-castecne-transparentni-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-royal-red-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Royal Red
+  local_image: aurapol-pla-royal-red-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-sandy-blush-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Sandy Blush
+  local_image: aurapol-pla-sandy-blush-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Snowflake
+  local_image: aurapol-pla-snowflake-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-soft-linen-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Soft Linen
+  local_image: aurapol-pla-soft-linen-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-toffee-biscuit-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Toffee Biscuit
+  local_image: aurapol-pla-toffee-biscuit-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-vintage-red-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Vintage Red
+  local_image: aurapol-pla-vintage-red-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-white-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: White
+  local_image: aurapol-pla-white-pla.png
+- url: https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm
+  brand: Aurapol
+  material: PLA
+  color_name: Wild Honey
+  local_image: aurapol-pla-wild-honey-pla.png

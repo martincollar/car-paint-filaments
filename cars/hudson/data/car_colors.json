@@ -1,0 +1,1432 @@
+[
+  {
+    "name": "Oriental Green Poly",
+    "year": 1951,
+    "hudson_code": "P-25",
+    "car_code": "P-25",
+    "ditzler": "40521",
+    "paint_ref": "40521",
+    "rgb": [
+      42,
+      67,
+      72
+    ],
+    "hex": "#2A4348",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      149,
+      232
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Peacock Green Poly",
+    "year": 1951,
+    "hudson_code": "S-26",
+    "car_code": "S-26",
+    "ditzler": "40522",
+    "paint_ref": "40522",
+    "rgb": [
+      51,
+      91,
+      96
+    ],
+    "hex": "#335B60",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      151,
+      301
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Newport Gray Poly",
+    "year": 1951,
+    "hudson_code": "Q-61",
+    "car_code": "Q-61",
+    "ditzler": "30860",
+    "paint_ref": "30860",
+    "rgb": [
+      91,
+      92,
+      91
+    ],
+    "hex": "#5B5C5B",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      529,
+      235
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Jefferson Green Poly",
+    "year": 1951,
+    "hudson_code": "S-62",
+    "car_code": "S-62",
+    "ditzler": "41061",
+    "paint_ref": "41061",
+    "rgb": [
+      56,
+      80,
+      58
+    ],
+    "hex": "#38503A",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      527,
+      302
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Naples Green Poly",
+    "year": 1951,
+    "hudson_code": "P-63",
+    "car_code": "P-63",
+    "ditzler": "41060",
+    "paint_ref": "41060",
+    "rgb": [
+      31,
+      44,
+      34
+    ],
+    "hex": "#1F2C22",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      528,
+      370
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Gulf Green",
+    "year": 1952,
+    "hudson_code": "Q-115",
+    "car_code": "Q-115",
+    "ditzler": "41206",
+    "paint_ref": "41206",
+    "rgb": [
+      147,
+      181,
+      131
+    ],
+    "hex": "#93B583",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      87
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Southern Blue",
+    "year": 1952,
+    "hudson_code": "J-97",
+    "car_code": "J-97",
+    "ditzler": "10813",
+    "paint_ref": "10813",
+    "rgb": [
+      95,
+      108,
+      119
+    ],
+    "hex": "#5F6C77",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      87
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Broadway Blue",
+    "year": 1952,
+    "hudson_code": "B-96",
+    "car_code": "B-96",
+    "ditzler": "10814",
+    "paint_ref": "10814",
+    "rgb": [
+      40,
+      49,
+      64
+    ],
+    "hex": "#283140",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      159
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Boston Ivory",
+    "year": 1952,
+    "hudson_code": "N-92",
+    "car_code": "N-92",
+    "ditzler": "80558",
+    "paint_ref": "80558",
+    "rgb": [
+      228,
+      205,
+      163
+    ],
+    "hex": "#E4CDA3",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      159
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Jupiter Gray Poly",
+    "year": 1952,
+    "hudson_code": "G-95",
+    "car_code": "G-95",
+    "ditzler": "30921",
+    "paint_ref": "30921",
+    "rgb": [
+      71,
+      71,
+      69
+    ],
+    "hex": "#474745",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      231
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Texas Tan Poly",
+    "year": 1952,
+    "hudson_code": "H-27",
+    "car_code": "H-27",
+    "ditzler": "20644",
+    "paint_ref": "20644",
+    "rgb": [
+      108,
+      83,
+      71
+    ],
+    "hex": "#6C5347",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      231
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Symphony Blue Green Light",
+    "year": 1952,
+    "hudson_code": "CC-93",
+    "car_code": "CC-93",
+    "ditzler": "41119",
+    "paint_ref": "41119",
+    "rgb": [
+      97,
+      129,
+      118
+    ],
+    "hex": "#618176",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      301
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Symphony Blue Green Dark",
+    "year": 1952,
+    "hudson_code": "P",
+    "car_code": "P",
+    "ditzler": "41238",
+    "paint_ref": "41238",
+    "rgb": [
+      46,
+      64,
+      59
+    ],
+    "hex": "#2E403B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",
+    "source_file": "sources/1952-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      301
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Honey Cream",
+    "year": 1953,
+    "hudson_code": "N-135",
+    "car_code": "N-135",
+    "ditzler": "80600",
+    "paint_ref": "80600",
+    "rgb": [
+      231,
+      220,
+      174
+    ],
+    "hex": "#E7DCAE",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      89
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Robin's Egg Green",
+    "year": 1953,
+    "hudson_code": "CC-134",
+    "car_code": "CC-134",
+    "ditzler": "41298",
+    "paint_ref": "41298",
+    "rgb": [
+      120,
+      163,
+      150
+    ],
+    "hex": "#78A396",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      464,
+      91
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Blue Grass Green",
+    "year": 1953,
+    "hudson_code": "P-136",
+    "car_code": "P-136",
+    "ditzler": "41297",
+    "paint_ref": "41297",
+    "rgb": [
+      49,
+      70,
+      67
+    ],
+    "hex": "#314643",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      179
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pearl Gray Poly",
+    "year": 1953,
+    "hudson_code": "G-128",
+    "car_code": "G-128",
+    "ditzler": "31056",
+    "paint_ref": "31056",
+    "rgb": [
+      110,
+      110,
+      108
+    ],
+    "hex": "#6E6E6C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      179
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Seal Gray",
+    "year": 1953,
+    "hudson_code": "RR-137",
+    "car_code": "RR-137",
+    "ditzler": "31051",
+    "paint_ref": "31051",
+    "rgb": [
+      156,
+      166,
+      155
+    ],
+    "hex": "#9CA69B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      267
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Surf Green",
+    "year": 1953,
+    "hudson_code": "Q-133",
+    "car_code": "Q-133",
+    "ditzler": "41300",
+    "paint_ref": "41300",
+    "rgb": [
+      136,
+      175,
+      130
+    ],
+    "hex": "#88AF82",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      267
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Meadow Green Poly",
+    "year": 1953,
+    "hudson_code": "S-132",
+    "car_code": "S-132",
+    "ditzler": "41303",
+    "paint_ref": "41303",
+    "rgb": [
+      40,
+      57,
+      39
+    ],
+    "hex": "#283927",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1953-hudson",
+    "source_file": "sources/1953-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      361
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Beret Blue Poly",
+    "year": 1954,
+    "hudson_code": "B-158",
+    "car_code": "B-158",
+    "ditzler": "11070",
+    "paint_ref": "11070",
+    "rgb": [
+      27,
+      44,
+      60
+    ],
+    "hex": "#1B2C3C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      80
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Palm Beach Green",
+    "year": 1954,
+    "hudson_code": "CC-163",
+    "car_code": "CC-163",
+    "ditzler": "41470",
+    "paint_ref": "41470",
+    "rgb": [
+      127,
+      180,
+      162
+    ],
+    "hex": "#7FB4A2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      80
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1954,
+    "hudson_code": "Q-161",
+    "car_code": "Q-161",
+    "ditzler": "41471",
+    "paint_ref": "41471",
+    "rgb": [
+      134,
+      176,
+      128
+    ],
+    "hex": "#86B080",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      160
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Red",
+    "year": 1954,
+    "hudson_code": "M-167",
+    "car_code": "M-167",
+    "ditzler": "70451",
+    "paint_ref": "70451",
+    "rgb": [
+      75,
+      19,
+      25
+    ],
+    "hex": "#4B1319",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      160
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "St. Clair Gray",
+    "year": 1954,
+    "hudson_code": "RR-160",
+    "car_code": "RR-160",
+    "ditzler": "31123",
+    "paint_ref": "31123",
+    "rgb": [
+      175,
+      170,
+      163
+    ],
+    "hex": "#AFAAA3",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      243
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pasture Green Poly",
+    "year": 1954,
+    "hudson_code": "S-164",
+    "car_code": "S-164",
+    "ditzler": "41469",
+    "paint_ref": "41469",
+    "rgb": [
+      39,
+      52,
+      39
+    ],
+    "hex": "#273427",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      243
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pacific Blue Green",
+    "year": 1954,
+    "hudson_code": "P-162",
+    "car_code": "P-162",
+    "ditzler": "41472",
+    "paint_ref": "41472",
+    "rgb": [
+      53,
+      75,
+      72
+    ],
+    "hex": "#354B48",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      323
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Algerian Blue Poly",
+    "year": 1954,
+    "hudson_code": "G-168",
+    "car_code": "G-168",
+    "ditzler": "11068",
+    "paint_ref": "11068",
+    "rgb": [
+      55,
+      88,
+      114
+    ],
+    "hex": "#375872",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      323
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Silver Blue",
+    "year": 1954,
+    "hudson_code": "J-159",
+    "car_code": "J-159",
+    "ditzler": "11069",
+    "paint_ref": "11069",
+    "rgb": [
+      103,
+      120,
+      131
+    ],
+    "hex": "#677883",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      408
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Coronation Cream",
+    "year": 1954,
+    "hudson_code": "N-166",
+    "car_code": "N-166",
+    "ditzler": "80639",
+    "paint_ref": "80639",
+    "rgb": [
+      236,
+      220,
+      182
+    ],
+    "hex": "#ECDCB6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      408
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Roman Bronze",
+    "year": 1954,
+    "hudson_code": "H-165",
+    "car_code": "H-165",
+    "ditzler": "70453",
+    "paint_ref": "70453",
+    "rgb": [
+      111,
+      38,
+      32
+    ],
+    "hex": "#6F2620",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
+    "source_file": "sources/1954-hudson-pg01.jpg",
+    "source_pos": [
+      184,
+      487
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Caribbean Blue Green",
+    "year": 1955,
+    "hudson_code": "P-44",
+    "car_code": "P-44",
+    "ditzler": "41161",
+    "paint_ref": "41161",
+    "rgb": [
+      32,
+      76,
+      89
+    ],
+    "hex": "#204C59",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      85
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Coral Red",
+    "year": 1955,
+    "hudson_code": "P-65",
+    "car_code": "P-65",
+    "ditzler": "60178",
+    "paint_ref": "60178",
+    "rgb": [
+      189,
+      82,
+      67
+    ],
+    "hex": "#BD5243",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      85
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Rio Red",
+    "year": 1955,
+    "hudson_code": "P-64",
+    "car_code": "P-64",
+    "ditzler": "70533",
+    "paint_ref": "70533",
+    "rgb": [
+      149,
+      31,
+      31
+    ],
+    "hex": "#951F1F",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      166
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Bermuda Green",
+    "year": 1955,
+    "hudson_code": "P-67",
+    "car_code": "P-67",
+    "ditzler": "41696",
+    "paint_ref": "41696",
+    "rgb": [
+      172,
+      228,
+      201
+    ],
+    "hex": "#ACE4C9",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      166
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sunburst Yellow",
+    "year": 1955,
+    "hudson_code": "P-66",
+    "car_code": "P-66",
+    "ditzler": "80725",
+    "paint_ref": "80725",
+    "rgb": [
+      221,
+      200,
+      92
+    ],
+    "hex": "#DDC85C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      248
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Mist Blue",
+    "year": 1955,
+    "hudson_code": "P-68",
+    "car_code": "P-68",
+    "ditzler": "11282",
+    "paint_ref": "11282",
+    "rgb": [
+      177,
+      202,
+      203
+    ],
+    "hex": "#B1CACB",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      248
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Island Green",
+    "year": 1955,
+    "hudson_code": "P-62",
+    "car_code": "P-62",
+    "ditzler": "41685",
+    "paint_ref": "41685",
+    "rgb": [
+      18,
+      32,
+      38
+    ],
+    "hex": "#122026",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      331
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Snowberry White",
+    "year": 1955,
+    "hudson_code": "P-69",
+    "car_code": "P-69",
+    "ditzler": "8017",
+    "paint_ref": "8017",
+    "rgb": [
+      233,
+      232,
+      204
+    ],
+    "hex": "#E9E8CC",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      331
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Midshipman Blue",
+    "year": 1955,
+    "hudson_code": "P-61",
+    "car_code": "P-61",
+    "ditzler": "11277",
+    "paint_ref": "11277",
+    "rgb": [
+      15,
+      21,
+      37
+    ],
+    "hex": "#0F1525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      412
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Palomino Brown",
+    "year": 1955,
+    "hudson_code": "P-71",
+    "car_code": "P-71",
+    "ditzler": "21139",
+    "paint_ref": "21139",
+    "rgb": [
+      160,
+      106,
+      69
+    ],
+    "hex": "#A06A45",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1955-hudson",
+    "source_file": "sources/1955-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      412
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Frost White",
+    "year": 1956,
+    "hudson_code": "P-72",
+    "car_code": "P-72",
+    "ditzler": "8108",
+    "paint_ref": "8108",
+    "rgb": [
+      242,
+      227,
+      194
+    ],
+    "hex": "#F2E3C2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      180,
+      91
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Grenadier Red",
+    "year": 1956,
+    "hudson_code": "P-78",
+    "car_code": "P-78",
+    "ditzler": "70642",
+    "paint_ref": "70642",
+    "rgb": [
+      181,
+      31,
+      18
+    ],
+    "hex": "#B51F12",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      463,
+      91
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Willow Green",
+    "year": 1956,
+    "hudson_code": "P-73",
+    "car_code": "P-73",
+    "ditzler": "41868",
+    "paint_ref": "41868",
+    "rgb": [
+      150,
+      177,
+      98
+    ],
+    "hex": "#96B162",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      174
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Boulevard Gray",
+    "year": 1956,
+    "hudson_code": "P-80",
+    "car_code": "P-80",
+    "ditzler": "31331",
+    "paint_ref": "31331",
+    "rgb": [
+      52,
+      60,
+      62
+    ],
+    "hex": "#343C3E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      174
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Crocus Yellow",
+    "year": 1956,
+    "hudson_code": "P-74",
+    "car_code": "P-74",
+    "ditzler": "80737",
+    "paint_ref": "80737",
+    "rgb": [
+      226,
+      222,
+      149
+    ],
+    "hex": "#E2DE95",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      255
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Solitaire Blue",
+    "year": 1956,
+    "hudson_code": "P-81",
+    "car_code": "P-81",
+    "ditzler": "11206",
+    "paint_ref": "11206",
+    "rgb": [
+      120,
+      174,
+      200
+    ],
+    "hex": "#78AEC8",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      255
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Polo Green",
+    "year": 1956,
+    "hudson_code": "P-75",
+    "car_code": "P-75",
+    "ditzler": "41867",
+    "paint_ref": "41867",
+    "rgb": [
+      29,
+      66,
+      59
+    ],
+    "hex": "#1D423B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      338
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pacific Blue",
+    "year": 1956,
+    "hudson_code": "P-82",
+    "car_code": "P-82",
+    "ditzler": "11462",
+    "paint_ref": "11462",
+    "rgb": [
+      24,
+      44,
+      79
+    ],
+    "hex": "#182C4F",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      338
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Golden Brown",
+    "year": 1956,
+    "hudson_code": "P-76",
+    "car_code": "P-76",
+    "ditzler": "21221",
+    "paint_ref": "21221",
+    "rgb": [
+      138,
+      72,
+      48
+    ],
+    "hex": "#8A4830",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      420
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Ballerina Red",
+    "year": 1956,
+    "hudson_code": "P-83",
+    "car_code": "P-83",
+    "ditzler": "70641",
+    "paint_ref": "70641",
+    "rgb": [
+      216,
+      73,
+      80
+    ],
+    "hex": "#D84950",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      467,
+      420
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Mint Green",
+    "year": 1956,
+    "hudson_code": "P-77",
+    "car_code": "P-77",
+    "ditzler": "41819",
+    "paint_ref": "41819",
+    "rgb": [
+      100,
+      171,
+      111
+    ],
+    "hex": "#64AB6F",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1956-hudson",
+    "source_file": "sources/1956-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      502
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Bermuda Green",
+    "year": 1957,
+    "hudson_code": "P-67",
+    "car_code": "P-67",
+    "ditzler": "41696",
+    "paint_ref": "41696",
+    "rgb": [
+      179,
+      225,
+      197
+    ],
+    "hex": "#B3E1C5",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      76
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Mardi Gras Red",
+    "year": 1957,
+    "hudson_code": "P-90",
+    "car_code": "P-90",
+    "ditzler": "70711",
+    "paint_ref": "70711",
+    "rgb": [
+      189,
+      33,
+      24
+    ],
+    "hex": "#BD2118",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      467,
+      84
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Glacier Blue",
+    "year": 1957,
+    "hudson_code": "P-84",
+    "car_code": "P-84",
+    "ditzler": "11548",
+    "paint_ref": "11548",
+    "rgb": [
+      161,
+      208,
+      218
+    ],
+    "hex": "#A1D0DA",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      165
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Mojave Yellow",
+    "year": 1957,
+    "hudson_code": "P-92",
+    "car_code": "P-92",
+    "ditzler": "80861",
+    "paint_ref": "80861",
+    "rgb": [
+      246,
+      226,
+      163
+    ],
+    "hex": "#F6E2A3",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      165
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Lagoon Blue",
+    "year": 1957,
+    "hudson_code": "P-85",
+    "car_code": "P-85",
+    "ditzler": "11549",
+    "paint_ref": "11549",
+    "rgb": [
+      63,
+      123,
+      173
+    ],
+    "hex": "#3F7BAD",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      247
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sierra Peach",
+    "year": 1957,
+    "hudson_code": "P-93",
+    "car_code": "P-93",
+    "ditzler": "70710",
+    "paint_ref": "70710",
+    "rgb": [
+      239,
+      179,
+      151
+    ],
+    "hex": "#EFB397",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      247
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Plum Poly",
+    "year": 1957,
+    "hudson_code": "P-86",
+    "car_code": "P-86",
+    "ditzler": "50462",
+    "paint_ref": "50462",
+    "rgb": [
+      58,
+      21,
+      32
+    ],
+    "hex": "#3A1520",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      327
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Cinnamon Bronze Poly",
+    "year": 1957,
+    "hudson_code": "P-94",
+    "car_code": "P-94",
+    "ditzler": "21303",
+    "paint_ref": "21303",
+    "rgb": [
+      114,
+      96,
+      84
+    ],
+    "hex": "#726054",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      327
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Berkshire Green",
+    "year": 1957,
+    "hudson_code": "P-87",
+    "car_code": "P-87",
+    "ditzler": "41986",
+    "paint_ref": "41986",
+    "rgb": [
+      59,
+      128,
+      141
+    ],
+    "hex": "#3B808D",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      411
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Gotham Gray Poly",
+    "year": 1957,
+    "hudson_code": "P-95",
+    "car_code": "P-95",
+    "ditzler": "31403",
+    "paint_ref": "31403",
+    "rgb": [
+      54,
+      58,
+      69
+    ],
+    "hex": "#363A45",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      411
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Oregon Green",
+    "year": 1957,
+    "hudson_code": "P-88",
+    "car_code": "P-88",
+    "ditzler": "41987",
+    "paint_ref": "41987",
+    "rgb": [
+      18,
+      45,
+      66
+    ],
+    "hex": "#122D42",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      493
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Rebel Silver Gray Poly",
+    "year": 1957,
+    "hudson_code": "P-96",
+    "car_code": "P-96",
+    "ditzler": "31588",
+    "paint_ref": "31588",
+    "rgb": [
+      115,
+      110,
+      113
+    ],
+    "hex": "#736E71",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      420,
+      493
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Avocado Poly",
+    "year": 1957,
+    "hudson_code": "P-89",
+    "car_code": "P-89",
+    "ditzler": "41985",
+    "paint_ref": "41985",
+    "rgb": [
+      110,
+      114,
+      79
+    ],
+    "hex": "#6E724F",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1957-hudson",
+    "source_file": "sources/1957-hudson-pg01.jpg",
+    "source_pos": [
+      185,
+      575
+    ],
+    "confidence": "measured_from_card"
+  }
+]

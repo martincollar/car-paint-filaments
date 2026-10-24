@@ -1,0 +1,141 @@
+{
+  "3dfox": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 202,
+    "records": 162,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 40
+    }
+  },
+  "3djake": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 86,
+    "records": 76,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 10
+    }
+  },
+  "aurapol": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 151,
+    "records": 132,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 19
+    }
+  },
+  "filament_pm": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 72,
+    "records": 61,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 11
+    }
+  },
+  "fillamentum": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 87,
+    "records": 58,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 21,
+      "title": 8
+    }
+  },
+  "hubacek3d": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 238,
+    "records": 213,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 25
+    }
+  },
+  "na3d": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 14,
+    "records": 13,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 1
+    }
+  },
+  "prusa3d": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 54,
+    "records": 51,
+    "new": [],
+    "gone": [],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 3
+    }
+  },
+  "smart3d": {
+    "status": "ok",
+    "date": "2026-10-24",
+    "candidates": 1103,
+    "records": 895,
+    "new": [],
+    "gone": [
+      "https://www.smart3d.cz/p/filament-spectrum-5-pack-pla-crystal-1-75-mm",
+      "https://www.smart3d.cz/p/filament-spectrum-5-pack-pla-pastello-1-75-mm"
+    ],
+    "not_found": [],
+    "stale": [],
+    "errors": [],
+    "deferred": 0,
+    "rejected": {
+      "finish": 208
+    }
+  }
+}

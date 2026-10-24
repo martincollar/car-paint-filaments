@@ -1,0 +1,375 @@
+# Aggregator — discovers every CZ filament/refill page in the product sitemap.
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: Smart3D
+platform: upgates
+base: https://www.smart3d.cz
+sitemap: https://www.smart3d.cz/sitemap.xml
+sitemap_filter: product
+include:
+- ^/p/(filament|refill)-
+pins:
+- url: https://www.smart3d.cz/p/filament-aurapol-petg-mint-cream-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PETG
+  color_name: Mint Cream
+  local_image: filament-aurapol-petg-mint-cream-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-petg-misty-forest-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PETG
+  color_name: Misty Forest
+  local_image: filament-aurapol-petg-misty-forest-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-petg-modra-baby-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PETG
+  color_name: Baby Modrá
+  local_image: filament-aurapol-petg-modra-baby-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-petg-pistachio-cream-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PETG
+  color_name: Pistachio Cream
+  local_image: filament-aurapol-petg-pistachio-cream-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-aqua-relic-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Aqua Relic
+  local_image: filament-aurapol-pla-aqua-relic-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-baby-blue-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Baby Blue
+  local_image: filament-aurapol-pla-baby-blue-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-cloud-nine-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Cloud Nine
+  local_image: filament-aurapol-pla-cloud-nine-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-evergreen-moss-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Evergreen Moss
+  local_image: filament-aurapol-pla-evergreen-moss-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-frosted-mint-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Frosted Mint
+  local_image: filament-aurapol-pla-frosted-mint-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-metalicka-tyrkysova-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Metalická Tyrkysová
+  local_image: filament-aurapol-pla-metalicka-tyrkysova-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-mint-breeze-castecne-transparentni-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Mint Breeze
+  local_image: filament-aurapol-pla-mint-breeze-castecne-transparentni-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-nordic-blue-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Nordic Blue
+  local_image: filament-aurapol-pla-nordic-blue-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-ocean-jade-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Ocean Jade
+  local_image: filament-aurapol-pla-ocean-jade-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-seafoam-blue-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Seafoam Blue
+  local_image: filament-aurapol-pla-seafoam-blue-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-summer-sky-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Summer Sky
+  local_image: filament-aurapol-pla-summer-sky-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-svetle-modra-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Světle modrá
+  local_image: filament-aurapol-pla-svetle-modra-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Teal Eclipse
+  local_image: filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-aurapol-pla-undercity-sky-1-75-mm-1-kg
+  brand: AURAPOL
+  material: PLA
+  color_name: Undercity Sky
+  local_image: filament-aurapol-pla-undercity-sky-1-75-mm-1-kg.png
+- url: https://www.smart3d.cz/p/filament-azurefilm-petg-pastel-mentolove-zelena-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PETG
+  color_name: Pastel Mentolová
+  local_image: filament-azurefilm-petg-pastel-mentolove-zelena-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-azurefilm-petg-pastel-modra-baby-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PETG
+  color_name: Baby Modrá Pastel
+  local_image: filament-azurefilm-petg-pastel-modra-baby-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-azurefilm-pla-zelena-caribbean-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PLA
+  color_name: Zelená Caribbean
+  local_image: filament-azurefilm-pla-zelena-caribbean-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-lake-blue-1-75-mm-1-kg
+  brand: Bambu Lab
+  material: PETG
+  color_name: HF Lake Blue
+  local_image: filament-bambu-lab-petg-hf-lake-blue-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-colorfil-pla-modrozelena-teal-1-75-mm-1-kg
+  brand: COLORFIL
+  material: PLA
+  color_name: Modrozelená Teal
+  local_image: filament-colorfil-pla-modrozelena-teal-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-colorfil-pla-svetle-modra-1-75-mm-1-kg
+  brand: COLORFIL
+  material: PLA
+  color_name: Světle modrá
+  local_image: filament-colorfil-pla-svetle-modra-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-devil-design-petg-smaragdove-zelena-1-75-mm-1-kg
+  brand: DEVIL DESIGN
+  material: PETG
+  color_name: Smaragdově zelená
+  local_image: filament-devil-design-petg-smaragdove-zelena-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-devil-design-pla-smaragdove-zelena-1-75-mm-1-kg
+  brand: DEVIL DESIGN
+  material: PLA
+  color_name: Smaragdově zelená
+  local_image: filament-devil-design-pla-smaragdove-zelena-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-lume-petg-bezova-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Beige
+  local_image: filament-lume-petg-bezova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-bila-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: White
+  local_image: filament-lume-petg-bila-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-cerna-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Black
+  local_image: filament-lume-petg-cerna-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-cervena-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Red
+  local_image: filament-lume-petg-cervena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-hneda-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Brown
+  local_image: filament-lume-petg-hneda-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-limetkova-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Limetková
+  local_image: filament-lume-petg-limetkova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-oranzova-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Orange
+  local_image: filament-lume-petg-oranzova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-smaragdova-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Smaragdová
+  local_image: filament-lume-petg-smaragdova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-svetle-modra-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Světle modrá
+  local_image: filament-lume-petg-svetle-modra-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-svetle-seda-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Light Gray
+  local_image: filament-lume-petg-svetle-seda-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-svetle-zelena-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Světle zelená
+  local_image: filament-lume-petg-svetle-zelena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-tmave-zelena-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Tmavě zelená
+  local_image: filament-lume-petg-tmave-zelena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-tyrkysova-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Tyrkysová
+  local_image: filament-lume-petg-tyrkysova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-petg-zluta-1-75-mm-1-kg
+  brand: LUME
+  material: PETG
+  color_name: Yellow
+  local_image: filament-lume-petg-zluta-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-bezova-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Beige
+  local_image: filament-lume-pla-bezova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-bila-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: White
+  local_image: filament-lume-pla-bila-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-cerna-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Black
+  local_image: filament-lume-pla-cerna-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-cervena-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Red
+  local_image: filament-lume-pla-cervena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-hneda-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Brown
+  local_image: filament-lume-pla-hneda-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-limetkova-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Limetková
+  local_image: filament-lume-pla-limetkova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-oranzova-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Orange
+  local_image: filament-lume-pla-oranzova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-smaragdova-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Smaragdová
+  local_image: filament-lume-pla-smaragdova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-svetle-modra-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Světle modrá
+  local_image: filament-lume-pla-svetle-modra-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-svetle-seda-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Light Gray
+  local_image: filament-lume-pla-svetle-seda-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-svetle-zelena-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Světle zelená
+  local_image: filament-lume-pla-svetle-zelena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-tmave-zelena-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Tmavě zelená
+  local_image: filament-lume-pla-tmave-zelena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-tyrkysova-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Tyrkysová
+  local_image: filament-lume-pla-tyrkysova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Vojenská zelená
+  local_image: filament-lume-pla-vojenska-zelena-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-lume-pla-zluta-1-75-mm-1-kg
+  brand: LUME
+  material: PLA+
+  color_name: Yellow
+  local_image: filament-lume-pla-zluta-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/filament-nebula-petg-nebesky-modra-1-75-mm-1-kg
+  brand: NEBULA
+  material: PETG
+  color_name: Nebesky modrá
+  local_image: filament-nebula-petg-nebesky-modra-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/filament-nebula-pla-nebesky-modra-1-75-mm-1-kg
+  brand: NEBULA
+  material: PLA
+  color_name: Nebesky modrá
+  local_image: filament-nebula-pla-nebesky-modra-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-azurefilm-petg-baby-blue-pastel-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PETG
+  color_name: Baby Blue Pastel (refill)
+  local_image: refill-azurefilm-petg-baby-blue-pastel-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-azurefilm-petg-tyrkysove-modra-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PETG
+  color_name: Tyrkysově modrá (refill)
+  local_image: refill-azurefilm-petg-tyrkysove-modra-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-azurefilm-pla-azurova-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PLA
+  color_name: Azurová (refill)
+  local_image: refill-azurefilm-pla-azurova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/refill-azurefilm-pla-silk-olivove-zelena-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PLA
+  color_name: Silk Olivově zelená (refill)
+  local_image: refill-azurefilm-pla-silk-olivove-zelena-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-azurefilm-pla-smaragdova-1-75-mm-1-kg
+  brand: AZUREFILM
+  material: PLA
+  color_name: Smaragdová (refill)
+  local_image: refill-azurefilm-pla-smaragdova-1-75-mm-1-kg.webp
+- url: https://www.smart3d.cz/p/refill-bambu-lab-pla-basic-turquoise-1-75-mm-1-kg
+  brand: Bambu Lab
+  material: PLA
+  color_name: Basic Turquoise (refill)
+  local_image: refill-bambu-lab-pla-basic-turquoise-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg
+  brand: ROSA3D
+  material: ASA
+  color_name: Tyrkysová RAL 5018 (refill)
+  local_image: refill-rosa3d-asa-tyrkysova-ral-5018-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-rosa3d-pla-pastel-matova-1-75-mm-1-kg
+  brand: ROSA3D
+  material: PLA
+  color_name: Pastel Mátová
+  local_image: refill-rosa3d-pla-pastel-matova-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-rosa3d-pla-speed-matt-bambusove-zelena-1-75-mm-1-kg
+  brand: ROSA3D
+  material: PLA
+  color_name: Speed Matt Bambusová (refill)
+  local_image: refill-rosa3d-pla-speed-matt-bambusove-zelena-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-rosa3d-pla-speed-matt-zelena-sage-1-75-mm-1-kg
+  brand: ROSA3D
+  material: PLA
+  color_name: Speed Matt Sage (refill)
+  local_image: refill-rosa3d-pla-speed-matt-zelena-sage-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-rosa3d-pla-starter-svetle-modra-1-75-mm-1-kg
+  brand: ROSA3D
+  material: PLA
+  color_name: Starter Světle modrá (refill)
+  local_image: refill-rosa3d-pla-starter-svetle-modra-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-spectrum-pla-pastello-atmospheric-blue-1-75-mm-1-kg
+  brand: SPECTRUM
+  material: PLA
+  color_name: Pastello Atmospheric Blue (refill)
+  local_image: refill-spectrum-pla-pastello-atmospheric-blue-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-spectrum-pla-pastello-water-blue-1-75-mm-1-kg
+  brand: SPECTRUM
+  material: PLA
+  color_name: Pastello Water Blue (refill)
+  local_image: refill-spectrum-pla-pastello-water-blue-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg
+  brand: TheFilament
+  material: HT-PLA
+  color_name: Tooling Green (refill)
+  local_image: refill-thefilament-ht-pla-tooling-green-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg
+  brand: TheFilament
+  material: HT-PLA
+  color_name: Tooling Turquoise (refill)
+  local_image: refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg.jpg
+- url: https://www.smart3d.cz/p/refill-thefilament-pla-nebesky-modra-1-75-mm-1-kg
+  brand: TheFilament
+  material: PLA
+  color_name: Nebesky modrá (refill)
+  local_image: refill-thefilament-pla-nebesky-modra-1-75-mm-1-kg.jpg

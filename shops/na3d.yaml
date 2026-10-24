@@ -1,0 +1,119 @@
+# One product page with many colour photos: each pin is one photo, all share the page URL.
+# pins: hand-curated items (legacy manifest); they bypass include/exclude but not the finish ban.
+name: Na3D
+platform: manual
+base: https://www.na3d.cz
+default_brand: FIBER3D
+pins:
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-black
+  brand: FIBER3D
+  material: PLA+
+  color_name: Black
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/prasata/black.jpg
+  local_image: na3d-fiber3d-black.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-green
+  brand: FIBER3D
+  material: PLA+
+  color_name: Green
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/nase-fotky/green-1.jpg
+  local_image: na3d-fiber3d-green.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-grey
+  brand: FIBER3D
+  material: PLA+
+  color_name: Grey
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/pla-grey-1.jpeg
+  local_image: na3d-fiber3d-grey.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-matt-blue
+  brand: FIBER3D
+  material: PLA+
+  color_name: Matt Blue
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/3-2023/pla---matt---blue.jpg
+  local_image: na3d-fiber3d-matt-blue.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-olive
+  brand: FIBER3D
+  material: PLA+
+  color_name: Olive
+  image_url: https://www.na3d.cz/resize/e/800/800/files/fiber3d/pla-olive.jpg
+  local_image: na3d-fiber3d-olive.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-olive-green
+  brand: FIBER3D
+  material: PLA+
+  color_name: Olive Green
+  image_url: https://www.na3d.cz/resize/e/800/800/files/fiber3d/pla-olive-green.jpg
+  local_image: na3d-fiber3d-olive-green.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-orange
+  brand: FIBER3D
+  material: PLA+
+  color_name: Orange
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/pla-new-orange-1.jpeg
+  local_image: na3d-fiber3d-orange.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-orange-(classic)
+  brand: FIBER3D
+  material: PLA+
+  color_name: Orange (classic)
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/orange-1.jpeg
+  local_image: na3d-fiber3d-orange-classic.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-rainbow
+  brand: FIBER3D
+  material: PLA+
+  color_name: Rainbow
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/pla-rainbow-1.jpeg
+  local_image: na3d-fiber3d-rainbow.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-red
+  brand: FIBER3D
+  material: PLA+
+  color_name: Red
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/pla-red-1.jpeg
+  local_image: na3d-fiber3d-red.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-transparent
+  brand: FIBER3D
+  material: PLA+
+  color_name: Transparent
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/pla-nove/pla-transparent-1.jpeg
+  local_image: na3d-fiber3d-transparent.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-white
+  brand: FIBER3D
+  material: PLA+
+  color_name: White
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/nase-fotky/white-1.jpg
+  local_image: na3d-fiber3d-white.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-white-(studio)
+  brand: FIBER3D
+  material: PLA+
+  color_name: White (studio)
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/filament/prasata/white.jpg
+  local_image: na3d-fiber3d-white-studio.jpg
+- url: https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg
+  availability_from_page: false
+  slug: fiber3d-pla-yellow
+  brand: FIBER3D
+  material: PLA+
+  color_name: Yellow
+  image_url: https://www.na3d.cz/resize/e/800/800/files/shop/4-2022/pla---yellow-mnova-2.jpg
+  local_image: na3d-fiber3d-yellow.jpg
