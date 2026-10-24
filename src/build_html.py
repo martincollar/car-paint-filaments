@@ -118,6 +118,8 @@ def filament_column(cands, kind, fil_thumbs):
 
 
 HERO_CSS = """
+/* the preview floats bottom-right: leave room under the footer so it never covers the last lines */
+body { padding-bottom: calc(min(340px, 52vw) * 0.62 + 70px); }
 .pick { cursor: pointer; }
 .pick:hover, .pick:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
 .pick.picked { outline: 2px solid var(--orange); outline-offset: 1px; }
