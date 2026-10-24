@@ -22,19 +22,18 @@ Usage:
 """
 import argparse, collections, html, json, random, sys, webbrowser
 from pathlib import Path
+import numpy as np
 from PIL import Image
 sys.path.insert(0, str(Path(__file__).parent))
 import config
-from color_tools import _load, delta_e_2000, kraft_share, kraft_like_rgb, kraft_like_name
+from color_tools import (_load, delta_e_2000, delta_e_2000_many, hex_to_rgb, kraft_share,
+                         kraft_like_rgb, kraft_like_name, rgb_to_lab)
 from prepare_thumbnails import to_b64_jpg
 
 KRAFT_FLAG = 0.12
 
 def kraft_like_hex(hx):
-    return kraft_like_rgb([int(hx[i:i + 2], 16) for i in (1, 3, 5)])
-
-def _hex_rgb(hx):
-    return [int(hx[i:i + 2], 16) for i in (1, 3, 5)]
+    return kraft_like_rgb(hex_to_rgb(hx))
 
 def cluster_flags(records):
     groups = collections.defaultdict(list)
@@ -43,8 +42,10 @@ def cluster_flags(records):
             groups[(r["shop"], r["brand"])].append(r)
     flagged = set()
     for members in groups.values():
-        for r in members:
-            near = {g["color_name"] for g in members if g is not r and delta_e_2000(r["rgb"], g["rgb"]) < 2.0}
+        lab = rgb_to_lab([g["rgb"] for g in members])
+        close = delta_e_2000_many(lab[:, None, :], lab[None, :, :]) < 2.0     # n × n, diagonal True
+        for i, r in enumerate(members):
+            near = {members[j]["color_name"] for j in np.flatnonzero(close[i])}
             if len(near | {r["color_name"]}) >= 3:
                 flagged.add(r["slug"])
     return flagged
@@ -94,7 +95,7 @@ def main():
             if r["slug"] in clusters:   why.append("cluster")
         (flagged if why else ok).append((r, why))
     changed = sorted((x for x in flagged + ok if x[0].get("previous_hex")),
-                     key=lambda x: -delta_e_2000(_hex_rgb(x[0]["previous_hex"]), x[0]["rgb"]))
+                     key=lambda x: -delta_e_2000(hex_to_rgb(x[0]["previous_hex"]), x[0]["rgb"]))
     if not args.all:
         random.seed(0)
         ok = random.sample(ok, min(args.ok_sample, len(ok)))

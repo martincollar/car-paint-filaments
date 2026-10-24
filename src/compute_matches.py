@@ -8,13 +8,20 @@ Usage:
 import argparse, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from color_tools import delta_e_2000
+import numpy as np
+from color_tools import delta_e_2000_many, rgb_to_lab
 import config
 
-def topk(target_rgb, pool, k=5):
-    scored = [(delta_e_2000(target_rgb, f["rgb"]), f) for f in pool]
-    scored.sort(key=lambda x: x[0])
-    return [{"delta_e": round(dE, 2), **f} for dE, f in scored[:k]]
+def topk(target_rgb, pool, k=5, pool_lab=None):
+    """The k filaments of `pool` closest to `target_rgb`; ties keep pool order.
+    Pass `pool_lab` (rgb_to_lab of every pool rgb) to convert the pool only once."""
+    if not pool:
+        return []
+    if pool_lab is None:
+        pool_lab = rgb_to_lab([f["rgb"] for f in pool])
+    dE = delta_e_2000_many(rgb_to_lab(target_rgb), pool_lab)
+    order = np.argsort(dE, kind="stable")[:k]
+    return [{"delta_e": round(float(dE[i]), 2), **pool[i]} for i in order]
 
 def main():
     ap = argparse.ArgumentParser()
@@ -28,19 +35,21 @@ def main():
     all_fil  = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8")) if f.get("rgb")]
     filaments = [f for f in all_fil if f.get("library", "cz") == args.library]
 
-    pla  = [f for f in filaments if f["material"] in ("PLA", "PLA+")]
-    petg = [f for f in filaments if f["material"] == "PETG"]
+    pla  = [f for f in filaments if f["material"] in config.PLA_MATERIALS]
+    petg = [f for f in filaments if f["material"] in config.PETG_MATERIALS]
     print(f"[{args.car}/{args.library}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG")
+    pla_lab  = rgb_to_lab([f["rgb"] for f in pla])  if pla  else None
+    petg_lab = rgb_to_lab([f["rgb"] for f in petg]) if petg else None
 
     matches = []
     for h in colors:
         rec = dict(h)
-        rec["pla"]   = topk(h["rgb"], pla, k=args.k)
-        rec["petg"]  = topk(h["rgb"], petg, k=args.k)
+        rec["pla"]   = topk(h["rgb"], pla,  k=args.k, pool_lab=pla_lab)
+        rec["petg"]  = topk(h["rgb"], petg, k=args.k, pool_lab=petg_lab)
         matches.append(rec)
 
     out = car_data / f"matches_{args.library}.json"
-    out.write_text(json.dumps(matches, indent=2, ensure_ascii=False), encoding="utf-8")
+    config.write_json(out, matches)
     print(f"→ {out}")
 
 if __name__ == "__main__":
