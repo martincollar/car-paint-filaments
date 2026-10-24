@@ -78,11 +78,13 @@ def filament_row(c, fil_thumbs, is_primary=False):
     # Swatch and name are both .pick: click recolours the preview, hover/focus opens the bubble (TIP_JS).
     attrs = (f'data-hex="{c["hex"]}" data-name="{esc(full)}" data-slug="{esc(c["slug"])}" '
              f'data-shop="{esc(c.get("shop") or "?")}" data-shop-cls="{slugify(c.get("shop") or "") or "unknown"}" '
-             f'data-url="{esc(clean_url(c))}"')
+             f'data-url="{esc(clean_url(c))}"' + (' data-neon="1"' if c.get("neon") else ""))
     # One <a> around swatch + name (display: contents keeps the row's grid): hover opens the bubble, a plain
     # click recolours the preview (HERO_JS), ctrl/middle click follows the shop link.
     link = f'<a class="pick" href="{esc(clean_url(c))}" target="_blank" rel="noopener" {attrs}>'
     name = f"<strong>{esc(c['brand'])}</strong> {esc(c['material'])} <span class=\"color\">{esc(c['color_name'])}</span>"
+    if c.get("neon"):
+        name += ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>'
     if is_primary:
         return f"""
       <div class="filament primary">{link}
@@ -268,6 +270,7 @@ HERO_JS = """
 """
 
 TIP_CSS = """
+.neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
 .fil-tip { position: fixed; z-index: 30; width: 220px; padding: 10px; display: none; font-size: 0.8rem; line-height: 1.3; }
 .fil-tip.show { display: block; }
 .fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; margin-bottom: 8px; }
@@ -287,7 +290,7 @@ TIP_JS = """
   // Name / HEX / shop / link block, shared with the hover bubble (TIP_JS).
   window.filInfo = function (d) {
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-    return '<div class="t-name">' + esc(d.name) + '</div>' +
+    return '<div class="t-name">' + esc(d.name) + (d.neon ? ' <span class="neon-tag">NEON</span>' : '') + '</div>' +
       '<div class="t-row"><span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex) + '</div>' +
       '<div class="t-row"><span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div>' +
       (d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');

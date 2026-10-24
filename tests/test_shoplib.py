@@ -8,6 +8,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 import shoplib
 
 
+class NeonDetection(unittest.TestCase):
+    def test_neon(self):
+        for name in ["Žlutá FLUO", "Neon Yellow", "Neonově Žlutá", "Super Žlutá", "Žlutá (Super Yellow)",
+                     "Zelená Fluorescenční", "Neon Green UV", "Highlight Yellow", "Magic Neon Mojito"]:
+            self.assertTrue(shoplib.is_neon(name), name)
+        self.assertTrue(shoplib.is_neon("Žlutá", "devil-design-pla-zluta-super-yellow-1kg"))
+
+    def test_not_neon(self):
+        for name in ["Signal Blue", "Lime Green", "Electric Indigo", "Pick Your Poison", "Lemon Yellow",
+                     "Červená (Super Red)", "Modrá (Super Blue)", "Žlutá", "Neutral Grey"]:
+            self.assertFalse(shoplib.is_neon(name), name)
+
+
 class FinishFilter(unittest.TestCase):
     def test_banned(self):
         for text, finish in [

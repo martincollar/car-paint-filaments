@@ -104,6 +104,7 @@ def main():
             r["regions"] = shop_regions.get(r["shop"])
             if not r["regions"]:
                 sys.exit(f"{Path(p).name}: shop {r['shop']!r} is in no shops/*.yaml, so it has no regions")
+            r["neon"] = shoplib.is_neon(r.get("color_name"), r.get("slug"))
             finish = shoplib.excluded_finish(r.get("slug"), r.get("color_name"), r.get("title"), r.get("url"))
             if finish:
                 banned[finish] = banned.get(finish, 0) + 1
