@@ -37,6 +37,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             230,
             221,
@@ -44,6 +45,34 @@
           ],
           "hex": "#E6DDC6",
           "pixel_count": 63836,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.63,
+          "slug": "bambu-lab-pla-matte-desert-tan",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Desert Tan",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/2ab2e16d82ac493f9bab6ec350a57dd9/d05a32c4b098422db92848e2b4d9c90e.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-desert-tan.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            232,
+            219,
+            183
+          ],
+          "hex": "#E8DBB7",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -63,6 +92,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             237,
             234,
@@ -89,6 +119,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             217,
             206,
@@ -115,6 +146,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             219,
             205,
@@ -122,32 +154,6 @@
           ],
           "hex": "#DBCDB2",
           "pixel_count": 132496,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.19,
-          "slug": "filament-bambu-lab-pla-matte-slonovinove-bila-refill-1-75-mm-1kg",
-          "brand": "Bambu Lab",
-          "material": "PLA",
-          "color_name": "Matte slonovinově bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-bambu-lab-pla-matte-slonovinove-bila-refill-1-75-mm-1kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/6529_cc302b27-4b6a-4af3-915b-3a11cd20337b.png?ff=1&x=1024&y=768&q=85&ts=685ba01f&sg=161563f2",
-          "local_image": "3dfox-filament-bambu-lab-pla-matte-slonovinove-bila-refill-1-75-mm-1kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Bambu Lab PLA matte slonovinově bílá refill 1,75 mm 1kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            230,
-            227,
-            215
-          ],
-          "hex": "#E6E3D7",
-          "pixel_count": 62744,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -169,6 +175,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             215,
             212,
@@ -195,6 +202,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             221,
             219,
@@ -221,6 +229,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             219,
             218,
@@ -228,6 +237,34 @@
           ],
           "hex": "#DBDAB0",
           "pixel_count": 158341,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.49,
+          "slug": "bambu-lab-petg-hf-cream",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Cream",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/74667b6e77ab41a48bcbbf0e5a7e962f/61202de96c7c49ccab34f0cc001157ee.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-cream.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            249,
+            223,
+            185
+          ],
+          "hex": "#F9DFB9",
+          "pixel_count": 640000,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -247,6 +284,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             234,
             235,
@@ -254,32 +292,6 @@
           ],
           "hex": "#EAEBE3",
           "pixel_count": 16993,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.6,
-          "slug": "filament-spectrum-petg-matt-bila-polar-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
-          "material": "PETG",
-          "color_name": "Matt Bílá Polar",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-spectrum-petg-matt-bila-polar-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/8/388fbb80e16052e368ddc26eacff0b3f-vyr-2866-pet-g-matt-polar-white-1.jpg",
-          "local_image": "smart3d-filament-spectrum-petg-matt-bila-polar-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament SPECTRUM / PETG MATT / BÍLÁ \"POLAR\" / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            232,
-            232,
-            225
-          ],
-          "hex": "#E8E8E1",
-          "pixel_count": 66912,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -305,6 +317,34 @@
       "confidence": "measured_from_card",
       "pla": [
         {
+          "delta_e": 1.09,
+          "slug": "bambu-lab-pla-matte-dark-blue",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Dark Blue",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/1ac27cb3f8584843b25a64cee769437f/353e1dc2aced4c808db0c85d394bbee6.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-dark-blue.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            4,
+            47,
+            86
+          ],
+          "hex": "#042F56",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
           "delta_e": 4.1,
           "slug": "aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -321,6 +361,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             0,
             52,
@@ -347,6 +388,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             0,
             52,
@@ -373,6 +415,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             50,
@@ -399,6 +442,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             11,
             55,
@@ -406,32 +450,6 @@
           ],
           "hex": "#0B3774",
           "pixel_count": 268426,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.51,
-          "slug": "pla-extrafill-noble-blue-1kg",
-          "brand": "Fillamentum",
-          "material": "PLA",
-          "color_name": "Noble Blue",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum__Noble_blue_1KG.jpg",
-          "local_image": "fillamentum-pla-pla-extrafill-noble-blue-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "PLA Extrafill \"Noble Blue\" | 1 KG | 1.75 mm",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            5,
-            48,
-            117
-          ],
-          "hex": "#053075",
-          "pixel_count": 439781,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -453,6 +471,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             50,
@@ -479,6 +498,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             3,
             42,
@@ -505,6 +525,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             30,
             46,
@@ -531,6 +552,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             41,
@@ -557,6 +579,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             5,
             54,
@@ -605,6 +628,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             174,
             88,
@@ -631,6 +655,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             189,
             97,
@@ -657,6 +682,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             172,
             101,
@@ -683,6 +709,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             175,
             109,
@@ -709,6 +736,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             161,
             106,
@@ -737,6 +765,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             179,
             97,
@@ -763,6 +792,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             174,
             95,
@@ -789,6 +819,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             172,
             105,
@@ -815,6 +846,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             195,
             99,
@@ -841,6 +873,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             178,
             93,
@@ -889,6 +922,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             126,
             138,
@@ -915,6 +949,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             124,
             132,
@@ -941,6 +976,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             129,
             133,
@@ -967,6 +1003,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             129,
             133,
@@ -993,6 +1030,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             126,
             129,
@@ -1021,6 +1059,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             129,
             134,
@@ -1047,6 +1086,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             128,
             133,
@@ -1073,6 +1113,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             135,
             141,
@@ -1099,6 +1140,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             128,
             140,
@@ -1125,6 +1167,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             131,
             136,
@@ -1173,6 +1216,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             19,
             20,
@@ -1199,6 +1243,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             19,
             20,
@@ -1209,86 +1254,175 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.46,
-          "slug": "refill-bambu-lab-pla-basic-black-1-75-mm-1-kg",
-          "brand": "BambuLab",
+          "delta_e": 4.92,
+          "slug": "bambu-lab-pla-absolute-black",
+          "brand": "Bambu Lab",
           "material": "PLA",
-          "color_name": "Basic BLACK",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-bambu-lab-pla-basic-black-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/8/e878c03e6260ac1b063d1d4b37452943-pla-basic-black.png",
-          "local_image": "smart3d-refill-bambu-lab-pla-basic-black-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill Bambu Lab / PLA Basic / BLACK / 1,75 mm / 1 kg",
+          "color_name": "Absolute Black",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-pure",
+          "image_url": "https://store.bblcdn.eu/s8/default/9f20ac0521274da7806a446f642a903f/Absolute_Black.jpg",
+          "local_image": "bambulab-bambu-lab-pla-absolute-black.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Pure",
           "last_ok": "2026-10-24",
           "regions": [
-            "eu"
+            "eu",
+            "int"
           ],
+          "neon": false,
           "rgb": [
-            22,
-            22,
-            22
+            0,
+            0,
+            0
           ],
-          "hex": "#161616",
-          "pixel_count": 275016,
+          "hex": "#000000",
+          "pixel_count": 2560000,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.79,
-          "slug": "refill-azurefilm-pla-matte-hs-cerna-1-75-mm-1-kg",
-          "brand": "AzureFilm",
+          "delta_e": 4.92,
+          "slug": "bambu-lab-pla-black",
+          "brand": "Bambu Lab",
           "material": "PLA",
-          "color_name": "Matte HS Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-matte-hs-cerna-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/c/fc77bc59a0a4912e93956097b17c594b-refill-pla-matte-black.webp",
-          "local_image": "smart3d-refill-azurefilm-pla-matte-hs-cerna-1-75-mm-1-kg.webp",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill AzureFilm / PLA MATTE HS / ČERNÁ / 1,75 mm / 1 kg.",
+          "color_name": "Black",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/3e8da2bfb48c44f5a65bf3f8f723f6ba/352e8e214fb4462ba7e6b1381c32fe9f.media",
+          "local_image": "bambulab-bambu-lab-pla-black.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
-            "eu"
+            "eu",
+            "int"
           ],
+          "neon": false,
           "rgb": [
-            24,
-            24,
-            24
+            0,
+            0,
+            0
           ],
-          "hex": "#181818",
-          "pixel_count": 455393,
+          "hex": "#000000",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.04,
-          "slug": "pla-extrafill-traffic-black-1kg",
-          "brand": "Fillamentum",
+          "delta_e": 4.92,
+          "slug": "bambu-lab-pla-matte-charcoal",
+          "brand": "Bambu Lab",
           "material": "PLA",
-          "color_name": "Traffic Black",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/pla-extrafill-traffic-black-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_Traffic_Black__1KG.jpg",
-          "local_image": "fillamentum-pla-pla-extrafill-traffic-black-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "PLA Extrafill \"Traffic Black\" | 1 KG | 1.75 mm",
+          "color_name": "Matte Charcoal",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/c0dc18dc3dc7497986cae565172fb258/9873c26227394682ab9270a8e0868f0f.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-charcoal.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
-            "eu"
+            "eu",
+            "int"
           ],
+          "neon": false,
           "rgb": [
-            23,
-            23,
-            24
+            0,
+            0,
+            0
           ],
-          "hex": "#171718",
-          "pixel_count": 151900,
-          "confidence": "manual_override",
-          "measured_hex": "#2A2A28"
+          "hex": "#000000",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
+        {
+          "delta_e": 4.92,
+          "slug": "bambu-lab-petg-black",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "Black",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-basic",
+          "image_url": "https://store.bblcdn.eu/s8/default/41287fdd7bbb42beb4a84be3f1c6e617/balck.jpg",
+          "local_image": "bambulab-bambu-lab-petg-black.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Basic",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000",
+          "pixel_count": 1376400,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.92,
+          "slug": "bambu-lab-petg-hf-black",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Black",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/1bb0282854794998a139f29d0d387a63/0cf39d0e4c6c43b38fef498561894508.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-black.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.92,
+          "slug": "bambu-lab-petg-matte-black",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "Matte Black",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/54274ad2177640cbbb65730a0eaccf32/Rectangle_160417.png",
+          "local_image": "bambulab-bambu-lab-petg-matte-black.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Matte",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "hex": "#000000",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        },
         {
           "delta_e": 5.98,
           "slug": "refill-azurefilm-petg-cerna-1-75-mm-1-kg",
@@ -1306,6 +1440,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             25,
             25,
@@ -1332,6 +1467,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             25,
             25,
@@ -1339,84 +1475,6 @@
           ],
           "hex": "#191919",
           "pixel_count": 278684,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.36,
-          "slug": "filament-nebula-petg-cerna-1-kg",
-          "brand": "NEBULA",
-          "material": "PETG",
-          "color_name": "Černá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-cerna-1-kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/48-3_filament-vaza-cerna.jpg?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
-          "local_image": "3dfox-filament-nebula-petg-cerna-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA PETG černá 1 kg 1,75 mm",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            32,
-            33,
-            33
-          ],
-          "hex": "#202121",
-          "pixel_count": 119881,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.57,
-          "slug": "filament-spectrum-petg-tech-fx120-cerna-obsidian-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
-          "material": "PETG",
-          "color_name": "Tech Fx120 Černá Obsidian",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-spectrum-petg-tech-fx120-cerna-obsidian-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/5/75ab4f451185d3e0e943cdb17fb68435-eng-pl-filament-spectrum-pet-g-fx120-1-75mm-obsidian-black-1kg-ral-9017-1525-1.jpg",
-          "local_image": "smart3d-filament-spectrum-petg-tech-fx120-cerna-obsidian-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament SPECTRUM / PETG TECH / FX120 ČERNÁ \"OBSIDIAN\" / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            32,
-            34,
-            35
-          ],
-          "hex": "#202223",
-          "pixel_count": 80584,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.83,
-          "slug": "filament-lume-petg-anthracitova-1-75-mm-1-kg",
-          "brand": "LUME Filaments",
-          "material": "PETG",
-          "color_name": "Lume Anthracitová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-lume-petg-anthracitova-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/c/bcabb2fd73ba5daf9d8b87c73215eff0-petg-antracyt-5903669509264-03.webp",
-          "local_image": "smart3d-filament-lume-petg-anthracitova-1-75-mm-1-kg.webp",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament LUME / PETG / ANTHRACITOVÁ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            33,
-            31,
-            28
-          ],
-          "hex": "#211F1C",
-          "pixel_count": 140884,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -1458,6 +1516,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             160,
             7,
@@ -1484,6 +1543,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             158,
             7,
@@ -1510,6 +1570,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             158,
             17,
@@ -1536,6 +1597,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             155,
             23,
@@ -1562,6 +1624,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             154,
             38,
@@ -1590,6 +1653,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             176,
             23,
@@ -1616,6 +1680,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             178,
             36,
@@ -1642,6 +1707,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             168,
             34,
@@ -1668,6 +1734,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             165,
             37,
@@ -1694,6 +1761,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             165,
             13,
@@ -1742,6 +1810,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             189,
             25,
@@ -1768,6 +1837,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             192,
             6,
@@ -1794,6 +1864,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             188,
             36,
@@ -1820,6 +1891,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             160,
             7,
@@ -1846,6 +1918,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             189,
             24,
@@ -1874,6 +1947,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             176,
             23,
@@ -1900,6 +1974,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             191,
             5,
@@ -1926,6 +2001,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             178,
             36,
@@ -1952,6 +2028,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             189,
             32,
@@ -1978,6 +2055,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             192,
             45,
@@ -2010,6 +2088,62 @@
       "confidence": "measured_from_card",
       "pla": [
         {
+          "delta_e": 3.6,
+          "slug": "bambu-lab-pla-matte-lemon-yellow",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Lemon Yellow",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/b9a35f57b62940239231925123ea510f/147b2c8c833e4625a552584ce4ac94e2.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-lemon-yellow.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            247,
+            217,
+            89
+          ],
+          "hex": "#F7D959",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.84,
+          "slug": "bambu-lab-pla-tough-yellow",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Tough+ Yellow",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-tough-upgrade",
+          "image_url": "https://store.bblcdn.eu/s8/default/6d1a64544c3a45cca6050b3ce186b7b4/Rectangle_4556.jpg",
+          "local_image": "bambulab-bambu-lab-pla-tough-yellow.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Tough+",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            244,
+            213,
+            63
+          ],
+          "hex": "#F4D53F",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        },
+        {
           "delta_e": 4.49,
           "slug": "refill-rosa3d-pla-speed-matt-zluta-ginger-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -2026,6 +2160,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             239,
             221,
@@ -2052,6 +2187,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             244,
             210,
@@ -2078,6 +2214,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             244,
             210,
@@ -2085,58 +2222,6 @@
           ],
           "hex": "#F4D22D",
           "pixel_count": 176818,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.62,
-          "slug": "filament-professional-lab-pla-zluta-1-75-mm-1-kg",
-          "brand": "Professional Lab",
-          "material": "PLA+",
-          "color_name": "Žlutá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-professional-lab-pla-zluta-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/7285331ff49dbf31823d66d07fcd1a04-fg-p52-e-1.png",
-          "local_image": "smart3d-filament-professional-lab-pla-zluta-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament PROFESSIONAL LAB / PLA+ / ŽLUTÁ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            239,
-            206,
-            29
-          ],
-          "hex": "#EFCE1D",
-          "pixel_count": 543072,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.78,
-          "slug": "3dpower-basic-pla-zluta-yellow-1kg",
-          "brand": "3DPower",
-          "material": "PLA",
-          "color_name": "Basic Žlutá (Yellow)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3dpower-basic-pla-zluta-yellow-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/c/5/c5d32def9af1125eabe93de52f416fed-32-1.jpg",
-          "local_image": "hubacek3d-3dpower-basic-pla-zluta-yellow-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "3DPower Basic PLA - Žlutá (Yellow) - 1kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            245,
-            218,
-            61
-          ],
-          "hex": "#F5DA3D",
-          "pixel_count": 218870,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -2158,6 +2243,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             233,
             203,
@@ -2184,6 +2270,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             233,
             203,
@@ -2210,6 +2297,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             233,
             203,
@@ -2236,6 +2324,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             242,
             211,
@@ -2262,6 +2351,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             241,
             213,
@@ -2310,6 +2400,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             160,
             7,
@@ -2336,6 +2427,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             158,
             7,
@@ -2362,6 +2454,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             158,
             17,
@@ -2388,6 +2481,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             155,
             23,
@@ -2414,6 +2508,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             189,
             25,
@@ -2442,6 +2537,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             176,
             23,
@@ -2468,6 +2564,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             178,
             36,
@@ -2494,6 +2591,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             191,
             5,
@@ -2520,6 +2618,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             168,
             34,
@@ -2546,6 +2645,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             165,
             37,
@@ -2578,133 +2678,139 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 4.44,
-          "slug": "filament-3dfox-pla-refill-zluta-fluo-1-kg-1-75-mm",
-          "brand": "3DFOX",
+          "delta_e": 4.69,
+          "slug": "bambu-lab-pla-bright-green",
+          "brand": "Bambu Lab",
           "material": "PLA",
-          "color_name": "Žlutá FLUO",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-3dfox-pla-refill-zluta-fluo-1-kg-1-75-mm/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7054-1_zluta-fluo.png?ff=1&x=1024&y=768&q=85&ts=6943e4f8&sg=161563f2",
-          "local_image": "3dfox-filament-3dfox-pla-refill-zluta-fluo-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DFOX PLA REFILL žlutá FLUO 1 kg 1,75 mm",
+          "color_name": "Bright Green",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/752c149f51c4444096a9d1ec68d98787/5578164bff51480a9c550ef390348ec1.png",
+          "local_image": "bambulab-bambu-lab-pla-bright-green.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
-            "eu"
+            "eu",
+            "int"
           ],
+          "neon": false,
           "rgb": [
-            197,
-            199,
+            189,
+            207,
             0
           ],
-          "hex": "#C5C700",
-          "pixel_count": 186718,
+          "hex": "#BDCF00",
+          "pixel_count": 84732,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.47,
-          "slug": "filament-devil-design-pla-super-zluta-1-75-mm-1-kg",
-          "brand": "DEVIL DESIGN",
+          "delta_e": 6.17,
+          "slug": "aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm",
+          "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Super Žlutá",
+          "color_name": "3D Lemon Yellow",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/8/f8621c920cf8e422d224cfaff6ce23b8-b45161ad188a849c8af2bb88ad493d89.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Lemon Yellow 1 kg 1,75 mm",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            208,
+            200,
+            0
+          ],
+          "hex": "#D0C800",
+          "pixel_count": 223666,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.2,
+          "slug": "refill-bambu-lab-pla-basic-bright-green-1-75-mm-1-kg",
+          "brand": "BambuLab",
+          "material": "PLA",
+          "color_name": "Basic BRIGHT GREEN",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-super-zluta-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/6/4691895f67a8d888fc840a57be668cc3-pla-1-75-super-yellow.jpg",
-          "local_image": "smart3d-filament-devil-design-pla-super-zluta-1-75-mm-1-kg.jpg",
+          "url": "https://www.smart3d.cz/p/refill-bambu-lab-pla-basic-bright-green-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/6/f64329da6173f82fe4d2dd57f682d426-brightgreen.jpg",
+          "local_image": "smart3d-refill-bambu-lab-pla-basic-bright-green-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament DEVIL DESIGN / PLA / SUPER ŽLUTÁ / 1,75 mm / 1 kg.",
+          "title": "ReFill Bambu Lab / PLA Basic / BRIGHT GREEN / 1,75 mm / 1 kg",
           "last_ok": "2026-10-24",
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
-            205,
-            211,
-            53
+            208,
+            222,
+            84
           ],
-          "hex": "#CDD335",
-          "pixel_count": 514855,
+          "hex": "#D0DE54",
+          "pixel_count": 304792,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.86,
-          "slug": "devil-design-pla-zluta-super-yellow-1kg",
-          "brand": "Devil Design",
+          "delta_e": 6.2,
+          "slug": "filament-bambu-lab-pla-basic-jasne-zelena-refill-1-75mm-1kg",
+          "brand": "Bambu Lab",
           "material": "PLA",
-          "color_name": "Žlutá (Super Yellow)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/devil-design-pla-zluta-super-yellow-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/b/8/b80806fd0790cdaacb6ee3bab3d7c3cc-pla-1-75-super-yellow.png",
-          "local_image": "hubacek3d-devil-design-pla-zluta-super-yellow-1kg.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Devil Design PLA - Žlutá (Super Yellow) - 1kg",
+          "color_name": "Basic Jasně Zelená",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-bambu-lab-pla-basic-jasne-zelena-refill-1-75mm-1kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7408_ef6981d4-4ae4-45dc-a084-a9406a9bdb3b.jpg?ff=1&x=1024&y=768&q=85&ts=69b15cff&sg=161563f2",
+          "local_image": "3dfox-filament-bambu-lab-pla-basic-jasne-zelena-refill-1-75mm-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Bambu Lab PLA Basic Jasně Zelená Refill 1,75mm 1kg",
           "last_ok": "2026-10-24",
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
-            206,
-            212,
-            49
+            207,
+            222,
+            83
           ],
-          "hex": "#CED431",
-          "pixel_count": 203552,
+          "hex": "#CFDE53",
+          "pixel_count": 175908,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.5,
-          "slug": "filamentree-pla-plus-zluta-neon-yellow-1kg",
-          "brand": "Filamentree",
-          "material": "PLA+",
-          "color_name": "Plus Žlutá (Neon Yellow)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-zluta-neon-yellow-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/f/1f6424313568a31362cf5f84d0074ec4-neon-plus.jpg",
-          "local_image": "hubacek3d-filamentree-pla-plus-zluta-neon-yellow-1kg.jpg",
+          "delta_e": 6.27,
+          "slug": "filament-aurapol-pla-zluty-mramor-1-75-mm-1-kg",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "Žlutý Mramor",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-zluty-mramor-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/6/06220bfbd7d99ce859ffaf942fd7dc2f-pla-yellow-marble-aurapol.png",
+          "local_image": "smart3d-filament-aurapol-pla-zluty-mramor-1-75-mm-1-kg.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filamentree PLA plus - Žlutá (Neon Yellow) - 1kg",
+          "title": "Filament AURAPOL / PLA / ŽLUTÝ MRAMOR / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-24",
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
-            211,
             209,
-            41
-          ],
-          "hex": "#D3D129",
-          "pixel_count": 237776,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.52,
-          "slug": "filament-nebula-pla-zluta-fluorescencni-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
-          "material": "PLA",
-          "color_name": "Žlutá Fluorescenční",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-pla-zluta-fluorescencni-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/f/4faaaf2009f960f529b88977e0ac1cdf-vyr-2271-nebula-pla-yellow-fluo.jpg",
-          "local_image": "smart3d-filament-nebula-pla-zluta-fluorescencni-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA / PLA / ŽLUTÁ FLUORESCENČNÍ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            205,
-            201,
+            211,
             3
           ],
-          "hex": "#CDC903",
-          "pixel_count": 386356,
+          "hex": "#D1D303",
+          "pixel_count": 262812,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -2726,6 +2832,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             199,
             207,
@@ -2752,6 +2859,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             200,
             208,
@@ -2778,6 +2886,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             185,
             217,
@@ -2804,6 +2913,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             192,
             178,
@@ -2830,6 +2940,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             188,
             176,
@@ -2878,6 +2989,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             62,
             75,
@@ -2904,6 +3016,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             79,
             87,
@@ -2930,6 +3043,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             53,
             77,
@@ -2956,6 +3070,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             65,
             78,
@@ -2982,6 +3097,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             65,
             78,
@@ -2993,6 +3109,34 @@
         }
       ],
       "petg": [
+        {
+          "delta_e": 5.5,
+          "slug": "bambu-lab-petg-hf-forest-green",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Forest Green",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/5f6969efa7f841939df281ae95b39aee/616eb09aec544622963c5f1a9fb6424a.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-forest-green.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            57,
+            84,
+            26
+          ],
+          "hex": "#39541A",
+          "pixel_count": 640000,
+          "confidence": "measured_dominant_hue"
+        },
         {
           "delta_e": 6.98,
           "slug": "filament-nebula-petg-armadni-zelena-1-kg",
@@ -3010,6 +3154,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             61,
             78,
@@ -3036,6 +3181,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             58,
             66,
@@ -3062,6 +3208,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             54,
             67,
@@ -3088,6 +3235,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             69,
             84,
@@ -3095,32 +3243,6 @@
           ],
           "hex": "#45543F",
           "pixel_count": 120918,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.75,
-          "slug": "aurapol-pet-g-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pet-g-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/6/46d1fb2f075299fe480692c673f7b25f-pet-g-park-side-aurapol-ral6005.png",
-          "local_image": "aurapol-aurapol-pet-g-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PET-G Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179844,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -3146,6 +3268,35 @@
       "confidence": "measured_from_card",
       "pla": [
         {
+          "delta_e": 4.82,
+          "slug": "prusament-pla-noctua-brown",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Noctua Brown",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/",
+          "image_url": "https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/12/60ddab82-noctua-brown-fan-transparent.png",
+          "local_image": "prusament-pla-noctua-brown.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PLA Noctua Brown 1kg",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            77,
+            37,
+            26
+          ],
+          "hex": "#4D251A",
+          "pixel_count": 2032054,
+          "confidence": "manual_override",
+          "measured_hex": "#54291D"
+        },
+        {
           "delta_e": 5.99,
           "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
           "brand": "3DLabPrint",
@@ -3162,6 +3313,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             68,
             8,
@@ -3188,6 +3340,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             60,
             31,
@@ -3214,6 +3367,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             89,
             48,
@@ -3240,6 +3394,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             82,
             40,
@@ -3247,32 +3402,6 @@
           ],
           "hex": "#522806",
           "pixel_count": 169609,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.13,
-          "slug": "filament-aurapol-pla-toffee-biscuit-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Toffee Biscuit",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-toffee-biscuit-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/5/b5bd237b8ed1bd4c924c8b9d999504d6-pla-3d-filament-toffee-biscuit.png",
-          "local_image": "smart3d-filament-aurapol-pla-toffee-biscuit-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / TOFFEE BISCUIT / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            82,
-            40,
-            6
-          ],
-          "hex": "#522806",
-          "pixel_count": 170722,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -3294,6 +3423,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             87,
             46,
@@ -3301,6 +3431,34 @@
           ],
           "hex": "#572E1F",
           "pixel_count": 258246,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.43,
+          "slug": "bambu-lab-petg-dark-brown",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "Dark Brown",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-basic",
+          "image_url": "https://store.bblcdn.eu/s8/default/09fe2696c08c4d8a81647cc1f036c1e3/Rectangle_4615.jpg",
+          "local_image": "bambulab-bambu-lab-petg-dark-brown.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Basic",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            80,
+            44,
+            30
+          ],
+          "hex": "#502C1E",
+          "pixel_count": 1377600,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -3320,6 +3478,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             71,
             42,
@@ -3346,6 +3505,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             72,
             43,
@@ -3372,6 +3532,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             85,
             50,
@@ -3379,32 +3540,6 @@
           ],
           "hex": "#55321E",
           "pixel_count": 76899,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.67,
-          "slug": "refill-azurefilm-petg-skin-cappuccino-1-75-mm-1-kg",
-          "brand": "AzureFilm",
-          "material": "PETG",
-          "color_name": "Skin Cappuccino",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-azurefilm-petg-skin-cappuccino-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/d/7dad1bb4c995a741315695dc6d8c2469-3d-filament-refill-petg-hyper-speed-skin-cappuccino-cappuccino-azurefilm.jpg",
-          "local_image": "smart3d-refill-azurefilm-petg-skin-cappuccino-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Refill AzureFilm / PETG / SKIN CAPPUCCINO / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            91,
-            49,
-            42
-          ],
-          "hex": "#5B312A",
-          "pixel_count": 476046,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -3446,6 +3581,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             5,
             48,
@@ -3453,6 +3589,34 @@
           ],
           "hex": "#053075",
           "pixel_count": 439781,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.37,
+          "slug": "bambu-lab-pla-matte-dark-blue",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Dark Blue",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/1ac27cb3f8584843b25a64cee769437f/353e1dc2aced4c808db0c85d394bbee6.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-dark-blue.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-24",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            4,
+            47,
+            86
+          ],
+          "hex": "#042F56",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -3472,6 +3636,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             35,
             47,
@@ -3498,6 +3663,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             25,
             32,
@@ -3524,6 +3690,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             50,
@@ -3531,32 +3698,6 @@
           ],
           "hex": "#213258",
           "pixel_count": 400173,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.19,
-          "slug": "aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Blue Sapphire",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/6/06e2f536ad8a4c599809c42d61bc2226-bluesapphire.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Blue Sapphire 1 kg 1,75 mm",
-          "last_ok": "2026-10-24",
-          "regions": [
-            "eu"
-          ],
-          "rgb": [
-            0,
-            52,
-            117
-          ],
-          "hex": "#003475",
-          "pixel_count": 188711,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -3578,6 +3719,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             3,
             42,
@@ -3604,6 +3746,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             41,
@@ -3630,6 +3773,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             30,
             46,
@@ -3656,6 +3800,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             33,
             50,
@@ -3682,6 +3827,7 @@
           "regions": [
             "eu"
           ],
+          "neon": false,
           "rgb": [
             41,
             49,
@@ -3732,6 +3878,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             230,
             217,
@@ -3756,8 +3903,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             232,
             219,
@@ -3784,6 +3933,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             224,
             211,
@@ -3810,6 +3960,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             232,
             218,
@@ -3836,6 +3987,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             227,
             212,
@@ -3862,8 +4014,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             249,
             223,
@@ -3890,6 +4044,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             232,
             231,
@@ -3914,8 +4069,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             219,
             200,
@@ -3942,6 +4099,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             234,
             234,
@@ -3968,6 +4126,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             232,
             233,
@@ -4014,8 +4173,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             4,
             47,
@@ -4042,6 +4203,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             20,
             54,
@@ -4068,6 +4230,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             26,
             53,
@@ -4094,6 +4257,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             31,
             48,
@@ -4120,6 +4284,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             36,
             63,
@@ -4148,6 +4313,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             20,
             44,
@@ -4174,6 +4340,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             32,
             48,
@@ -4200,6 +4367,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             23,
             47,
@@ -4226,6 +4394,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             13,
             56,
@@ -4252,6 +4421,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             28,
             73,
@@ -4300,6 +4470,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             166,
             89,
@@ -4326,6 +4497,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             146,
             106,
@@ -4352,6 +4524,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             182,
             122,
@@ -4376,8 +4549,10 @@
           "title": "PLA Metal",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             170,
             100,
@@ -4402,8 +4577,10 @@
           "title": "Prusament PLA Blend Viva La Bronze 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             175,
             121,
@@ -4432,6 +4609,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             201,
             113,
@@ -4456,8 +4634,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             135,
             87,
@@ -4484,6 +4664,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             225,
             109,
@@ -4508,8 +4689,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             247,
             84,
@@ -4534,8 +4717,10 @@
           "title": "Prusament PETG Prusa Orange 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             253,
             101,
@@ -4584,6 +4769,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             134,
             139,
@@ -4610,6 +4796,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             134,
             139,
@@ -4636,6 +4823,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             130,
             133,
@@ -4662,6 +4850,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             119,
             128,
@@ -4688,6 +4877,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             126,
             127,
@@ -4716,6 +4906,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             127,
             131,
@@ -4742,6 +4933,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             110,
             122,
@@ -4768,6 +4960,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             110,
             122,
@@ -4792,8 +4985,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             127,
             126,
@@ -4818,8 +5013,10 @@
           "title": "PETG Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             127,
             126,
@@ -4868,6 +5065,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             21,
             22,
@@ -4892,8 +5090,10 @@
           "title": "PLA Pure",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -4918,8 +5118,10 @@
           "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -4944,8 +5146,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -4970,8 +5174,10 @@
           "title": "PLA Tough+",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -4998,8 +5204,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -5024,8 +5232,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -5050,8 +5260,10 @@
           "title": "PETG Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             0,
@@ -5078,6 +5290,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             30,
             29,
@@ -5104,6 +5317,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             34,
             36,
@@ -5152,6 +5366,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             162,
             25,
@@ -5178,6 +5393,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             171,
             44,
@@ -5204,6 +5420,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             184,
             18,
@@ -5230,6 +5447,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             189,
             32,
@@ -5256,6 +5474,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             139,
             48,
@@ -5284,6 +5503,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             138,
             37,
@@ -5310,6 +5530,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             199,
             47,
@@ -5336,6 +5557,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             185,
             40,
@@ -5362,6 +5584,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             203,
             50,
@@ -5386,8 +5609,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             214,
             0,
@@ -5436,6 +5661,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             189,
             32,
@@ -5462,6 +5688,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             184,
             18,
@@ -5488,6 +5715,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             171,
             44,
@@ -5514,6 +5742,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             162,
             25,
@@ -5538,8 +5767,10 @@
           "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             193,
             46,
@@ -5568,6 +5799,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             199,
             47,
@@ -5592,8 +5824,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             214,
             0,
@@ -5620,6 +5854,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             203,
             50,
@@ -5644,8 +5879,10 @@
           "title": "Prusament PETG Lipstick Red 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             207,
             41,
@@ -5672,6 +5909,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             138,
             37,
@@ -5720,6 +5958,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             229,
             213,
@@ -5746,6 +5985,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             215,
             191,
@@ -5772,6 +6012,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             234,
             198,
@@ -5796,8 +6037,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             247,
             217,
@@ -5822,8 +6065,10 @@
           "title": "PLA Tough+",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             244,
             213,
@@ -5852,6 +6097,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             246,
             201,
@@ -5876,8 +6122,10 @@
           "title": "Prusament PETG Mango Yellow 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             239,
             193,
@@ -5902,8 +6150,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             255,
             208,
@@ -5930,6 +6180,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             255,
             232,
@@ -5954,8 +6205,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             252,
             227,
@@ -6004,6 +6257,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             162,
             25,
@@ -6030,6 +6284,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             171,
             44,
@@ -6056,6 +6311,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             184,
             18,
@@ -6082,6 +6338,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             189,
             32,
@@ -6106,8 +6363,10 @@
           "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             193,
             46,
@@ -6136,6 +6395,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             138,
             37,
@@ -6162,6 +6422,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             199,
             47,
@@ -6186,8 +6447,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             214,
             0,
@@ -6214,6 +6477,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             185,
             40,
@@ -6240,6 +6504,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             203,
             50,
@@ -6288,6 +6553,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             187,
             206,
@@ -6314,6 +6580,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             206,
             199,
@@ -6338,8 +6605,10 @@
           "title": "PLA Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             189,
             207,
@@ -6366,6 +6635,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             196,
             186,
@@ -6376,29 +6646,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.72,
-          "slug": "overture-pla-highlight-yellow",
-          "brand": "Overture 3D",
+          "delta_e": 6.56,
+          "slug": "filament-spectrum-pla-matt-1-75mm-lime-green-1kg",
+          "brand": "Spectrum",
           "material": "PLA",
-          "color_name": "Highlight Yellow",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-pla?variant=42105043124478",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/files/overture-pla-3d-printer-filament-175mm-9540022.jpg",
-          "local_image": "overture-overture-pla-highlight-yellow.jpg",
+          "color_name": "Matt Lime Green",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pla-matt-1-75mm-lime-green-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-matt-lime-green-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pla-matt-1-75mm-lime-green-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Highlight Yellow",
+          "title": "Filament Spectrum PLA MATT 1.75mm LIME GREEN 1kg",
           "last_ok": "2026-10-24",
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
-            214,
-            209,
-            49
+            184,
+            210,
+            103
           ],
-          "hex": "#D6D131",
-          "pixel_count": 1615856,
+          "hex": "#B8D267",
+          "pixel_count": 1632809,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -6420,6 +6691,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             194,
             220,
@@ -6444,8 +6716,10 @@
           "title": "PETG Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             192,
             223,
@@ -6472,6 +6746,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             145,
             205,
@@ -6498,6 +6773,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             255,
             232,
@@ -6522,8 +6798,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             252,
             227,
@@ -6572,6 +6850,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             22,
             85,
@@ -6596,8 +6875,10 @@
           "title": "Prusament Premium PLA Mystic Green 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             64,
             67,
@@ -6622,8 +6903,10 @@
           "title": "Prusament PLA Galaxy Green 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             37,
             72,
@@ -6650,6 +6933,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             58,
             75,
@@ -6676,6 +6960,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             91,
             89,
@@ -6702,8 +6987,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             57,
             84,
@@ -6730,6 +7017,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             84,
             88,
@@ -6756,6 +7044,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             84,
             88,
@@ -6782,6 +7071,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             58,
             80,
@@ -6808,6 +7098,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             39,
             63,
@@ -6854,8 +7145,10 @@
           "title": "Prusament PLA Noctua Brown 1kg",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             77,
             37,
@@ -6883,6 +7176,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             75,
             48,
@@ -6907,8 +7201,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             77,
             51,
@@ -6935,6 +7231,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             91,
             56,
@@ -6961,6 +7258,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             77,
             51,
@@ -6987,8 +7285,10 @@
           "title": "PETG Basic",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             80,
             44,
@@ -7015,6 +7315,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             78,
             51,
@@ -7041,6 +7342,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             138,
             37,
@@ -7067,6 +7369,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             152,
             52,
@@ -7093,6 +7396,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             54,
             53,
@@ -7141,6 +7445,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             31,
             48,
@@ -7165,8 +7470,10 @@
           "title": "PLA Matte",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             4,
             47,
@@ -7193,6 +7500,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             20,
             54,
@@ -7219,6 +7527,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             13,
             49,
@@ -7245,6 +7554,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             26,
             53,
@@ -7273,6 +7583,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             32,
             48,
@@ -7299,6 +7610,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             20,
             44,
@@ -7325,6 +7637,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             23,
             47,
@@ -7351,6 +7664,7 @@
           "regions": [
             "int"
           ],
+          "neon": false,
           "rgb": [
             13,
             56,
@@ -7375,8 +7689,10 @@
           "title": "PETG HF",
           "last_ok": "2026-10-24",
           "regions": [
+            "eu",
             "int"
           ],
+          "neon": false,
           "rgb": [
             0,
             46,
