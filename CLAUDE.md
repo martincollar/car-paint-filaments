@@ -51,6 +51,17 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
+**New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the live root page, not a green build.
+1. Work in a git worktree (`.worktrees/<branch>`, gitignored); symlink `.venv`, `filaments/sources` and `filaments/.cache` from the main checkout.
+2. `cars/<name>/car.json` (years newest-first, `pages_per_year`, URL patterns), then `scripts/fetch_car_cards.sh <name>` (ask the user before downloading).
+3. `card_layout.json`: pick only the chips that belong to the model; cards with smaller chips set `box_width`/`box_height` per card. Check the boxes on an overlay image before measuring.
+4. `scripts/rebuild.sh <name>` (both libraries), unit tests, and show the user the sampling preview and both HTML pages before pushing.
+5. **README.md "Current cars" table**: add or update the car's row (years, colour count, page link).
+6. **Publish**: `"publish": true` in `car.json` (only when the user wants it live). `build_site.sh` then adds it to the root index automatically; there is no hand-written list of cars on the site.
+7. Push to `main`, then confirm the `pages` workflow run succeeds (`https://api.github.com/repos/martincollar/car-paint-filaments/actions/runs`) and that **https://martincollar.github.io/car-paint-filaments/** links to `<name>/` and `<name>/intl.html` and both open. The deploy takes a few minutes; do not report "live" before checking.
+8. Update the car list in this file ("Current shops"-style docs) if it names cars, and say in the reply what was not done.
+9. The main checkout may be on another branch with someone else's uncommitted work: never commit there. Use a temporary worktree on `origin/main` to commit and push.
+
 **Adding a new shop** must not require code either, if its platform is known: write `shops/<key>.yaml` (`name`, `platform`, `base`, `sitemap`, `include` regex for product URLs), run `src/fetch_all.py --shop <key> --dry-run` to check the candidate list, then a real run. Add a `.shop-tag.shop-<slugified name>` CSS block in `build_html.py`. Platforms (`src/adapters/`): `upgates` / `shoptet` / `generic` = sitemap + one product page each (JSON-LD → microdata → `<h1>`/og); `shopify` = `/products.json`; `manual` = only `pins:`. A shop on a new platform that has a sitemap and schema.org markup works as `generic`. Record shape downstream: `{slug, brand, material, color_name, shop, url, image_url, local_image, availability, stock, title, last_ok, stale?}` (no `price`, see below).
 
 Current shops (`shops/*.yaml`): Smart3D, Aurapol, Hubacek3D (upgates); 3DFox (shoptet, **3dfoxshop.cz**, not 3dfox.cz); Fillamentum (shopify); FilamentPM, 3DJake (generic, 3DJake limited to Fiberlogy because of its 10 s Crawl-delay); Prusa3D, Na3D (manual — Prusa's sitemap only has parent pages, the colour is a variant).
