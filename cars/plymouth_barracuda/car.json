@@ -2,9 +2,21 @@
   "name": "plymouth_barracuda",
   "display": "Plymouth Barracuda",
   "script_tagline": "Hemi Orange & High Impact",
-  "subtitle_source": "Plymouth Ditzler color cards (1970-1971)",
-  "years": [1971, 1970],
-  "pages_per_year": {"1970": 2, "1971": 2},
+  "subtitle_source": "Plymouth Ditzler color cards (1970-1974)",
+  "years": [
+    1974,
+    1973,
+    1972,
+    1971,
+    1970
+  ],
+  "pages_per_year": {
+    "1970": 2,
+    "1971": 2,
+    "1972": 2,
+    "1973": 2,
+    "1974": 2
+  },
   "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-plymouth",
   "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-plymouth-pg{page:02d}.jpg",
   "notes": [

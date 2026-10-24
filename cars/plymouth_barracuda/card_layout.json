@@ -4,6 +4,666 @@
   "source_url_template": "https://www.autocolorlibrary.com/pages/{year}-plymouth",
   "cards": [
     {
+      "card_file": "1974-plymouth-pg01.jpg",
+      "box_width": 90,
+      "box_height": 28,
+      "swatches": [
+        {
+          "cx": 160,
+          "cy": 93,
+          "name": "Silver Frost Poly",
+          "year": 1974,
+          "car_code": "A-5",
+          "paint_ref": "2513",
+          "poly": true
+        },
+        {
+          "cx": 160,
+          "cy": 162,
+          "name": "Powder Blue",
+          "year": 1974,
+          "car_code": "B-1",
+          "paint_ref": "2626",
+          "poly": false
+        },
+        {
+          "cx": 160,
+          "cy": 230,
+          "name": "Lucerne Blue Poly",
+          "year": 1974,
+          "car_code": "B-5",
+          "paint_ref": "2627",
+          "poly": true
+        },
+        {
+          "cx": 160,
+          "cy": 296,
+          "name": "Starlight Blue Poly",
+          "year": 1974,
+          "car_code": "B-8",
+          "paint_ref": "2628",
+          "poly": true
+        },
+        {
+          "cx": 160,
+          "cy": 362,
+          "name": "Rallye Red",
+          "year": 1974,
+          "car_code": "E-5",
+          "paint_ref": "2136",
+          "poly": false
+        },
+        {
+          "cx": 290,
+          "cy": 95,
+          "name": "Burnished Red Poly",
+          "year": 1974,
+          "car_code": "E-7",
+          "paint_ref": "2321",
+          "poly": true
+        },
+        {
+          "cx": 290,
+          "cy": 162,
+          "name": "Frosty Green Poly",
+          "year": 1974,
+          "car_code": "G-2",
+          "paint_ref": "2629",
+          "poly": true
+        },
+        {
+          "cx": 290,
+          "cy": 231,
+          "name": "Deep Sherwood Poly",
+          "year": 1974,
+          "car_code": "G-8",
+          "paint_ref": "2631",
+          "poly": true
+        },
+        {
+          "cx": 290,
+          "cy": 295,
+          "name": "Avocado Gold Poly",
+          "year": 1974,
+          "car_code": "J-6",
+          "paint_ref": "2632",
+          "poly": true
+        },
+        {
+          "cx": 290,
+          "cy": 363,
+          "name": "Sahara Beige",
+          "year": 1974,
+          "car_code": "L-4",
+          "paint_ref": "2427",
+          "poly": false
+        },
+        {
+          "cx": 414,
+          "cy": 96,
+          "name": "Aztec Gold Poly",
+          "year": 1974,
+          "car_code": "L-6",
+          "paint_ref": "2591",
+          "poly": true
+        },
+        {
+          "cx": 414,
+          "cy": 162,
+          "name": "Dark Moonstone Poly",
+          "year": 1974,
+          "car_code": "L-8",
+          "paint_ref": "2633",
+          "poly": true
+        },
+        {
+          "cx": 414,
+          "cy": 232,
+          "name": "Sienna Poly",
+          "year": 1974,
+          "car_code": "T-5",
+          "paint_ref": "2634",
+          "poly": true
+        },
+        {
+          "cx": 414,
+          "cy": 298,
+          "name": "Dark Chestnut Poly",
+          "year": 1974,
+          "car_code": "T-9",
+          "paint_ref": "2590",
+          "poly": true
+        },
+        {
+          "cx": 414,
+          "cy": 364,
+          "name": "Spinnaker White",
+          "year": 1974,
+          "car_code": "W-1",
+          "paint_ref": "2033",
+          "poly": false
+        },
+        {
+          "cx": 542,
+          "cy": 96,
+          "name": "Sunfire Yellow",
+          "year": 1974,
+          "car_code": "Y-2",
+          "paint_ref": "81574",
+          "poly": false
+        },
+        {
+          "cx": 542,
+          "cy": 162,
+          "name": "Golden Fawn",
+          "year": 1974,
+          "car_code": "Y-4",
+          "paint_ref": "2635",
+          "poly": false
+        },
+        {
+          "cx": 542,
+          "cy": 232,
+          "name": "Yellow Blaze",
+          "year": 1974,
+          "car_code": "Y-5",
+          "paint_ref": "2636",
+          "poly": false
+        },
+        {
+          "cx": 542,
+          "cy": 298,
+          "name": "Golden Haze Poly",
+          "year": 1974,
+          "car_code": "Y-6",
+          "paint_ref": "2509",
+          "poly": true
+        },
+        {
+          "cx": 542,
+          "cy": 366,
+          "name": "Tahitian Gold Poly",
+          "year": 1974,
+          "car_code": "Y-9",
+          "paint_ref": "2510",
+          "poly": true
+        }
+      ]
+    },
+    {
+      "card_file": "1973-plymouth-pg01.jpg",
+      "box_width": 90,
+      "box_height": 28,
+      "swatches": [
+        {
+          "cx": 158,
+          "cy": 90,
+          "name": "Silver Frost Poly",
+          "year": 1973,
+          "car_code": "A-5",
+          "paint_ref": "2513",
+          "poly": true
+        },
+        {
+          "cx": 158,
+          "cy": 156,
+          "name": "Blue Sky",
+          "year": 1973,
+          "car_code": "B-1",
+          "paint_ref": "2424",
+          "poly": false
+        },
+        {
+          "cx": 158,
+          "cy": 225,
+          "name": "Basin Street Blue",
+          "year": 1973,
+          "car_code": "B-3",
+          "paint_ref": "2423",
+          "poly": false
+        },
+        {
+          "cx": 158,
+          "cy": 292,
+          "name": "True Blue Poly",
+          "year": 1973,
+          "car_code": "B-5",
+          "paint_ref": "2306",
+          "poly": true
+        },
+        {
+          "cx": 158,
+          "cy": 359,
+          "name": "Regal Blue",
+          "year": 1973,
+          "car_code": "B-9",
+          "paint_ref": "2508",
+          "poly": false
+        },
+        {
+          "cx": 158,
+          "cy": 429,
+          "name": "Bright Green",
+          "year": 1973,
+          "car_code": "DT-7596",
+          "paint_ref": "2224",
+          "poly": false
+        },
+        {
+          "cx": 285,
+          "cy": 90,
+          "name": "Rallye Red",
+          "year": 1973,
+          "car_code": "E-5",
+          "paint_ref": "2136",
+          "poly": false
+        },
+        {
+          "cx": 285,
+          "cy": 157,
+          "name": "Mist Green",
+          "year": 1973,
+          "car_code": "F-1",
+          "paint_ref": "2515",
+          "poly": false
+        },
+        {
+          "cx": 285,
+          "cy": 228,
+          "name": "Amber Sherwood Poly",
+          "year": 1973,
+          "car_code": "F-3",
+          "paint_ref": "2316",
+          "poly": true
+        },
+        {
+          "cx": 285,
+          "cy": 296,
+          "name": "Forest Green Poly",
+          "year": 1973,
+          "car_code": "F-8",
+          "paint_ref": "2514",
+          "poly": true
+        },
+        {
+          "cx": 285,
+          "cy": 363,
+          "name": "Meadow Green",
+          "year": 1973,
+          "car_code": "J-3",
+          "paint_ref": "2383",
+          "poly": false
+        },
+        {
+          "cx": 412,
+          "cy": 91,
+          "name": "Autumn Bronze Poly",
+          "year": 1973,
+          "car_code": "K-6",
+          "paint_ref": "2312",
+          "poly": true
+        },
+        {
+          "cx": 412,
+          "cy": 159,
+          "name": "Sahara Beige",
+          "year": 1973,
+          "car_code": "L-4",
+          "paint_ref": "2427",
+          "poly": false
+        },
+        {
+          "cx": 412,
+          "cy": 227,
+          "name": "Coral Turquoise Poly",
+          "year": 1973,
+          "car_code": "Q-5",
+          "paint_ref": "2301",
+          "poly": true
+        },
+        {
+          "cx": 412,
+          "cy": 295,
+          "name": "Chestnut Poly",
+          "year": 1973,
+          "car_code": "T-8",
+          "paint_ref": "2425",
+          "poly": true
+        },
+        {
+          "cx": 412,
+          "cy": 364,
+          "name": "Spinnaker White",
+          "year": 1973,
+          "car_code": "W-1",
+          "paint_ref": "2033",
+          "poly": false
+        },
+        {
+          "cx": 540,
+          "cy": 95,
+          "name": "Lemon Twist",
+          "year": 1973,
+          "car_code": "Y-1",
+          "paint_ref": "2211",
+          "poly": false
+        },
+        {
+          "cx": 540,
+          "cy": 163,
+          "name": "Sunfire Yellow",
+          "year": 1973,
+          "car_code": "Y-2",
+          "paint_ref": "81574",
+          "poly": false
+        },
+        {
+          "cx": 540,
+          "cy": 230,
+          "name": "Honey Gold",
+          "year": 1973,
+          "car_code": "Y-3",
+          "paint_ref": "2517",
+          "poly": false
+        },
+        {
+          "cx": 540,
+          "cy": 297,
+          "name": "Golden Haze Poly",
+          "year": 1973,
+          "car_code": "Y-6",
+          "paint_ref": "2509",
+          "poly": true
+        },
+        {
+          "cx": 540,
+          "cy": 367,
+          "name": "Tahitian Gold Poly",
+          "year": 1973,
+          "car_code": "JY-9",
+          "paint_ref": "2510",
+          "poly": true
+        }
+      ]
+    },
+    {
+      "card_file": "1972-plymouth-pg01.jpg",
+      "box_width": 60,
+      "box_height": 24,
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 95,
+          "name": "Winchester Gray Poly",
+          "year": 1972,
+          "car_code": "A-4",
+          "paint_ref": "2314",
+          "poly": true
+        },
+        {
+          "cx": 100,
+          "cy": 158,
+          "name": "Silver Frost Poly",
+          "year": 1972,
+          "car_code": "A-5",
+          "paint_ref": "2513",
+          "poly": true
+        },
+        {
+          "cx": 100,
+          "cy": 222,
+          "name": "Charcoal Poly",
+          "year": 1972,
+          "car_code": "A-9",
+          "paint_ref": "2017",
+          "poly": true
+        },
+        {
+          "cx": 100,
+          "cy": 286,
+          "name": "Blue Sky",
+          "year": 1972,
+          "car_code": "B-1",
+          "paint_ref": "2424",
+          "poly": false
+        },
+        {
+          "cx": 100,
+          "cy": 349,
+          "name": "Basin Street Blue",
+          "year": 1972,
+          "car_code": "B-3",
+          "paint_ref": "2423",
+          "poly": false
+        },
+        {
+          "cx": 100,
+          "cy": 412,
+          "name": "True Blue Poly",
+          "year": 1972,
+          "car_code": "B-5",
+          "paint_ref": "2306",
+          "poly": true
+        },
+        {
+          "cx": 211,
+          "cy": 95,
+          "name": "Evening Blue Poly",
+          "year": 1972,
+          "car_code": "B-7",
+          "paint_ref": "2302",
+          "poly": true
+        },
+        {
+          "cx": 211,
+          "cy": 158,
+          "name": "Regal Blue Poly",
+          "year": 1972,
+          "car_code": "B-9",
+          "paint_ref": "2508",
+          "poly": true
+        },
+        {
+          "cx": 211,
+          "cy": 222,
+          "name": "Bright Green",
+          "year": 1972,
+          "car_code": "DT-7596",
+          "paint_ref": "2224",
+          "poly": false
+        },
+        {
+          "cx": 211,
+          "cy": 286,
+          "name": "Red",
+          "year": 1972,
+          "car_code": "E-5",
+          "paint_ref": "2136",
+          "poly": false
+        },
+        {
+          "cx": 211,
+          "cy": 349,
+          "name": "Mist Green",
+          "year": 1972,
+          "car_code": "F-1",
+          "paint_ref": "2515",
+          "poly": false
+        },
+        {
+          "cx": 211,
+          "cy": 412,
+          "name": "Amber Sherwood Poly",
+          "year": 1972,
+          "car_code": "F-3",
+          "paint_ref": "2316",
+          "poly": true
+        },
+        {
+          "cx": 323,
+          "cy": 95,
+          "name": "Sherwood Green Poly",
+          "year": 1972,
+          "car_code": "F-7",
+          "paint_ref": "2317",
+          "poly": true
+        },
+        {
+          "cx": 323,
+          "cy": 158,
+          "name": "Forest Green Poly",
+          "year": 1972,
+          "car_code": "F-8",
+          "paint_ref": "2514",
+          "poly": true
+        },
+        {
+          "cx": 323,
+          "cy": 222,
+          "name": "Tawney Gold Poly",
+          "year": 1972,
+          "car_code": "HY-9",
+          "paint_ref": "2311",
+          "poly": true
+        },
+        {
+          "cx": 323,
+          "cy": 286,
+          "name": "Meadow Green",
+          "year": 1972,
+          "car_code": "J-3",
+          "paint_ref": "2383",
+          "poly": false
+        },
+        {
+          "cx": 323,
+          "cy": 349,
+          "name": "Tahitian Gold Poly",
+          "year": 1972,
+          "car_code": "JY-9",
+          "paint_ref": "2510",
+          "poly": true
+        },
+        {
+          "cx": 323,
+          "cy": 412,
+          "name": "Sahara Beige",
+          "year": 1972,
+          "car_code": "L-4",
+          "paint_ref": "2427",
+          "poly": false
+        },
+        {
+          "cx": 437,
+          "cy": 95,
+          "name": "Coral Turquoise Poly",
+          "year": 1972,
+          "car_code": "Q-5",
+          "paint_ref": "2301",
+          "poly": true
+        },
+        {
+          "cx": 437,
+          "cy": 158,
+          "name": "Mojave Tan Poly",
+          "year": 1972,
+          "car_code": "T-6",
+          "paint_ref": "2426",
+          "poly": true
+        },
+        {
+          "cx": 437,
+          "cy": 222,
+          "name": "Chestnut Poly",
+          "year": 1972,
+          "car_code": "T-8",
+          "paint_ref": "2425",
+          "poly": true
+        },
+        {
+          "cx": 437,
+          "cy": 286,
+          "name": "Tor-Red",
+          "year": 1972,
+          "car_code": "V-2",
+          "paint_ref": "2186",
+          "poly": false
+        },
+        {
+          "cx": 437,
+          "cy": 349,
+          "name": "Spinnaker White",
+          "year": 1972,
+          "car_code": "W-1",
+          "paint_ref": "2033",
+          "poly": false
+        },
+        {
+          "cx": 437,
+          "cy": 412,
+          "name": "Lemon Twist",
+          "year": 1972,
+          "car_code": "Y-1",
+          "paint_ref": "2211",
+          "poly": false
+        },
+        {
+          "cx": 550,
+          "cy": 95,
+          "name": "Sun Fire Yellow",
+          "year": 1972,
+          "car_code": "Y-2",
+          "paint_ref": "81574",
+          "poly": false
+        },
+        {
+          "cx": 550,
+          "cy": 158,
+          "name": "Honey Gold",
+          "year": 1972,
+          "car_code": "Y-3",
+          "paint_ref": "2517",
+          "poly": false
+        },
+        {
+          "cx": 550,
+          "cy": 222,
+          "name": "Honeydew",
+          "year": 1972,
+          "car_code": "Y-4",
+          "paint_ref": "2310",
+          "poly": false
+        },
+        {
+          "cx": 550,
+          "cy": 286,
+          "name": "Golden Haze Poly",
+          "year": 1972,
+          "car_code": "Y-6",
+          "paint_ref": "2509",
+          "poly": true
+        },
+        {
+          "cx": 550,
+          "cy": 349,
+          "name": "Gold Leaf Poly",
+          "year": 1972,
+          "car_code": "Y-8",
+          "paint_ref": "2307",
+          "poly": true
+        },
+        {
+          "cx": 550,
+          "cy": 412,
+          "name": "Tawny Gold Poly",
+          "year": 1972,
+          "car_code": "Y-9",
+          "paint_ref": "2311",
+          "poly": true
+        }
+      ]
+    },
+    {
       "card_file": "1971-plymouth-pg01.jpg",
       "swatches": [
         {

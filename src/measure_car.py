@@ -13,6 +13,7 @@ card_layout.json shape:
   "cards": [
     {
       "card_file": "1952-hudson-pg01.jpg",
+      "box_width": 60, "box_height": 24,      (optional per-card override)
       "swatches": [
         {"cx":185,"cy":87,"name":"Gulf Green","year":1952,"car_code":"Q-115","paint_ref":"41206","poly":false},
         ...
@@ -61,9 +62,12 @@ def main():
         for part in card_file.split("-"):
             if part.isdigit() and len(part) == 4:
                 year_hint = int(part); break
+        # A card with smaller chips can override the layout-wide box size.
+        cbw = card.get("box_width", bw)
+        cbh = card.get("box_height", bh)
         for sw in card["swatches"]:
             year = sw.get("year") or year_hint
-            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], bw, bh)
+            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], cbw, cbh)
             records.append({
                 "name":        sw["name"],
                 "year":        year,
