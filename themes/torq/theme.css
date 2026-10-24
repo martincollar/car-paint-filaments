@@ -146,6 +146,13 @@ h1 {
 }
 .year-nav a:hover { background: var(--red); }
 
+.region-switch button {
+  font: inherit; padding: 4px 18px; background: var(--blue); color: var(--white);
+  border: 0; font-weight: 700; letter-spacing: 0.06em;
+  clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%);
+}
+.region-switch button:hover, .region-switch button[aria-pressed="true"] { background: var(--red); }
+
 /* ===== Legend ===== */
 .legend {
   display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center;

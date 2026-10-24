@@ -139,6 +139,13 @@ h1 {
 }
 .year-nav a:hover { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
 
+.region-switch button {
+  font: inherit; padding: 3px 12px; background: var(--mustard); color: #2d2217;
+  font-weight: 600; border: 1px solid var(--mustard); border-radius: 999px;
+  box-shadow: 1px 1px 0 var(--orange-deep); text-transform: none;
+}
+.region-switch button:hover, .region-switch button[aria-pressed="true"] { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
+
 /* ===== Legend ===== */
 .legend {
   display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center;
@@ -366,14 +373,7 @@ html { scroll-behavior: smooth; }
 .js .to-top.show { opacity: 1; visibility: visible; }
 
 
-.region-switch { display: flex; gap: 8px; align-items: center; margin: 20px 0 0; flex-wrap: wrap; }
-.region-switch .nav-label { color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.68rem; font-family: var(--font-mono); }
-.region-switch button {
-  font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 6px 14px; background: var(--bg-raised); color: var(--fg); border: 1px solid var(--rule); cursor: pointer;
-}
-.region-switch button:hover { border-color: var(--orange-deep); }
-.region-switch button[aria-pressed="true"] { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
+.region-switch button { font: inherit; cursor: pointer; }
 
 [data-r] { display: none; }
 body[data-region="eu"] div[data-r="eu"] { display: block; }
@@ -453,7 +453,7 @@ body[data-region="int"] .rcols[data-r="int"] { display: contents; }
     <div data-r="eu"><strong>1097</strong><span>PLA candidates</span></div><div data-r="eu"><strong>506</strong><span>PETG candidates</span></div><div data-r="eu"><strong>8</strong><span>e-shops</span></div><div data-r="int"><strong>113</strong><span>PLA candidates</span></div><div data-r="int"><strong>51</strong><span>PETG candidates</span></div><div data-r="int"><strong>2</strong><span>e-shops</span></div>
     <div><strong>7</strong><span>model years</span></div>
   </div>
-  <div class="region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
+  <div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
   <nav class="year-nav">
     <span class="nav-label">Jump to year:</span>
     <a href="#y1957">1957</a><a href="#y1956">1956</a><a href="#y1955">1955</a><a href="#y1954">1954</a><a href="#y1953">1953</a><a href="#y1952">1952</a><a href="#y1951">1951</a>

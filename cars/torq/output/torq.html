@@ -154,6 +154,13 @@ h1 {
 }
 .year-nav a:hover { background: var(--red); }
 
+.region-switch button {
+  font: inherit; padding: 4px 18px; background: var(--blue); color: var(--white);
+  border: 0; font-weight: 700; letter-spacing: 0.06em;
+  clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%);
+}
+.region-switch button:hover, .region-switch button[aria-pressed="true"] { background: var(--red); }
+
 /* ===== Legend ===== */
 .legend {
   display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center;
@@ -365,14 +372,7 @@ html { scroll-behavior: smooth; }
 .js .to-top.show { opacity: 1; visibility: visible; }
 
 
-.region-switch { display: flex; gap: 8px; align-items: center; margin: 20px 0 0; flex-wrap: wrap; }
-.region-switch .nav-label { color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.68rem; font-family: var(--font-mono); }
-.region-switch button {
-  font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 6px 14px; background: var(--bg-raised); color: var(--fg); border: 1px solid var(--rule); cursor: pointer;
-}
-.region-switch button:hover { border-color: var(--orange-deep); }
-.region-switch button[aria-pressed="true"] { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
+.region-switch button { font: inherit; cursor: pointer; }
 
 [data-r] { display: none; }
 body[data-region="eu"] div[data-r="eu"] { display: block; }
@@ -455,7 +455,7 @@ body[data-region="int"] .rcols[data-r="int"] { display: contents; }
     <div data-r="eu"><strong>1097</strong><span>PLA candidates</span></div><div data-r="eu"><strong>506</strong><span>PETG candidates</span></div><div data-r="eu"><strong>8</strong><span>e-shops</span></div><div data-r="int"><strong>113</strong><span>PLA candidates</span></div><div data-r="int"><strong>51</strong><span>PETG candidates</span></div><div data-r="int"><strong>2</strong><span>e-shops</span></div>
     <div><strong>5</strong><span>model years</span></div>
   </div>
-  <div class="region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
+  <div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
   <nav class="year-nav">
     <span class="nav-label">Jump to year:</span>
     <a href="#y1974">1974</a><a href="#y1973">1973</a><a href="#y1972">1972</a><a href="#y1971">1971</a><a href="#y1970">1970</a>

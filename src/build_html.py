@@ -313,14 +313,7 @@ def region_css(regions):
     return "\n".join(out)
 
 REGION_SWITCH_CSS = """
-.region-switch { display: flex; gap: 8px; align-items: center; margin: 20px 0 0; flex-wrap: wrap; }
-.region-switch .nav-label { color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.68rem; font-family: var(--font-mono); }
-.region-switch button {
-  font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
-  padding: 6px 14px; background: var(--bg-raised); color: var(--fg); border: 1px solid var(--rule); cursor: pointer;
-}
-.region-switch button:hover { border-color: var(--orange-deep); }
-.region-switch button[aria-pressed="true"] { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
+.region-switch button { font: inherit; cursor: pointer; }
 """
 
 REGION_JS = """
@@ -392,7 +385,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
                    f'<div data-r="{r}"><strong>{len(shops)}</strong><span>e-shops</span></div>')
     switch = ""
     if len(regions) > 1:
-        switch = ('<div class="region-switch"><span class="nav-label">Shops in:</span>'
+        switch = ('<div class="year-nav region-switch"><span class="nav-label">Shops in:</span>'
                   + "".join(f'<button type="button" data-region-btn="{r}" aria-pressed="{"true" if r == regions[0] else "false"}">{esc(labels[r])}</button>'
                             for r in regions)
                   + '</div>')
