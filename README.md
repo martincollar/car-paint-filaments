@@ -11,7 +11,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 | 3D Sets Doppler (Hudson Hornet paints) | 1951-1957 | 65 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
 | Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
 | 3D Sets Torq (Plymouth Barracuda paints) | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
-| 3D Sets Sakura (Datsun 240Z paints) | 1971-1972 | 13 | not published yet |
+| 3D Sets Sakura (Datsun 240Z paints) | 1971-1972 | 13 | [sakura](https://martincollar.github.io/car-paint-filaments/sakura/) |
 
 ## Quick start
 
