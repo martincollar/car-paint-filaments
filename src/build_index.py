@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 import config
-from color_tools import delta_e_2000, hex_to_rgb
+from color_tools import delta_e_2000, hex_to_rgb, rgb_to_lab
+from compute_matches import NEON_PENALTY, NEON_PAINT_CHROMA
 
 SITE_DIR = config.ROOT / "site"
 THEMES_DIR = config.ROOT / "themes"
@@ -29,6 +30,19 @@ MIN_SPACING = 12.0      # ΔE2000 two colours of one tile must differ by, so no 
 MAX_MATCH_DE = 8.0      # a colour only counts as a "best" candidate below this ΔE to some paint
 
 
+def penalised(cand, colour):
+    """a neon filament for a paint that is not neon itself (same rule as compute_matches.py: such a filament only
+    looks right on a car when the paint is neon, and plain ΔE flatters it)"""
+    if not cand.get("neon"):
+        return False
+    lab = rgb_to_lab(colour["rgb"])
+    return float(np.hypot(lab[1], lab[2])) < NEON_PAINT_CHROMA
+
+
+def rank(cand, colour):
+    return cand["delta_e"] + (NEON_PENALTY if penalised(cand, colour) else 0.0)
+
+
 def best_per_hex(matches):
     """{hex: candidate} over every region, PLA and PETG; per hex the candidate closest to a paint."""
     best = {}
@@ -36,7 +50,7 @@ def best_per_hex(matches):
         for colour in colours:
             for cand in colour.get("pla", []) + colour.get("petg", []):
                 hx = (cand.get("hex") or "").upper()
-                if hex_to_rgb(hx) and (hx not in best or cand["delta_e"] < best[hx]["delta_e"]):
+                if hex_to_rgb(hx) and not penalised(cand, colour) and (hx not in best or cand["delta_e"] < best[hx]["delta_e"]):
                     best[hx] = cand
     return best
 
@@ -80,7 +94,7 @@ def named_palette(matches, paints):
                 if colour["name"].lower() != name or (year and str(colour.get("year")) != year):
                     continue
                 for cand in colour.get("pla", []):
-                    if best is None or cand["delta_e"] < best[0]["delta_e"]:
+                    if best is None or rank(cand, colour) < rank(best[0], best[1]):
                         best = (cand, colour)
         if best is None:
             known = sorted({c["name"] for cs in matches.values() for c in cs})

@@ -59,6 +59,14 @@ class Palette(unittest.TestCase):
         with self.assertRaises(ValueError):
             build_index.named_palette(matches, ["Nope"])
 
+    def test_neon_filament_loses_to_a_normal_one(self):
+        colour = {"name": "Dull Green", "year": 1970, "rgb": [90, 110, 80],
+                  "pla": [dict(cand("#00FF00", 1.0, "neon"), neon=True), cand("#5A6E50", 3.0, "plain")]}
+        pal = build_index.named_palette({"eu": [colour]}, ["Dull Green"])
+        self.assertEqual(pal[0]["hex"], "#5A6E50")                              # penalised although its ΔE is lower
+        colour["rgb"] = [0, 255, 0]                                              # a neon paint: no penalty
+        self.assertEqual(build_index.named_palette({"eu": [colour]}, ["Dull Green"])[0]["hex"], "#00FF00")
+
     def test_year_span(self):
         self.assertEqual(build_index.year_span([1974, 1970]), "1970–74")
         self.assertEqual(build_index.year_span([1999, 2001]), "1999–2001")
