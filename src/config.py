@@ -34,6 +34,10 @@ SHOP_DEFAULTS     = SHOPS_DIR / "_defaults.yaml"            # rules shared by ev
 
 CARS_DIR = ROOT / "cars"
 
+# Material labels (shops/_defaults.yaml `materials`) grouped into the two page columns.
+PLA_MATERIALS  = ("PLA", "PLA+")
+PETG_MATERIALS = ("PETG",)
+
 def car_dir(car: str) -> Path:    return CARS_DIR / car
 def car_sources(car: str) -> Path: return car_dir(car) / "sources"
 def car_data(car: str) -> Path:    return car_dir(car) / "data"
@@ -41,6 +45,20 @@ def car_output(car: str) -> Path:  return car_dir(car) / "output"
 def car_meta(car: str) -> dict:
     p = car_dir(car) / "car.json"
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+def write_json(p: Path, data, *, indent=2):
+    """Write JSON atomically (temp file + rename): a crash never leaves half a file."""
+    p = Path(p)
+    tmp = p.with_suffix(p.suffix + ".tmp")
+    tmp.write_text(json.dumps(data, indent=indent, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp, p)
+
+def write_text(p: Path, text: str):
+    """Write a text file atomically (temp file + rename)."""
+    p = Path(p)
+    tmp = p.with_suffix(p.suffix + ".tmp")
+    tmp.write_text(text, encoding="utf-8")
+    os.replace(tmp, p)
 
 def list_cars():
     return sorted(d.name for d in CARS_DIR.iterdir() if d.is_dir() and (d / "car.json").exists())

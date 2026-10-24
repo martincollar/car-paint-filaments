@@ -193,7 +193,7 @@ def filament_rgb(path, *,
         valid = ~(is_bg_white | is_shadow)
         valid_count = int(valid.sum())
         if valid_count == 0:
-            return (0,0,0), 0
+            return None, 0          # nothing measurable; (0,0,0) would match black paints
 
     valid_rgb = rgb[valid]
     valid_s = s[valid]
@@ -271,8 +271,8 @@ def filament_rgb(path, *,
                                 verbose=verbose)
         # Only when a real non-cardboard object is left (>= 5 % of the foreground) and it isn't
         # just the black spool: a tan filament with an unknown name ("Mukha") has nothing else.
-        spool_like = max(again) < 0.30 * 255 and max(again) - min(again) < 0.035 * 255
-        if n >= max(min_valid_pixels, 0.05 * int(fg.sum())) and not (
+        spool_like = again is not None and max(again) < 0.30 * 255 and max(again) - min(again) < 0.035 * 255
+        if again is not None and n >= max(min_valid_pixels, 0.05 * int(fg.sum())) and not (
                 spool_like and neutral_class(name) not in ("black", "dark")):
             if verbose: print(f"kraft won ({rgb_to_hex(out)}), re-measured without kraft → {rgb_to_hex(again)}")
             return again, n

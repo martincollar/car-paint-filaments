@@ -1,62 +1,48 @@
 """Build HTML page — all car colors × filament matches, retro styling.
 
+Writes `cars/<car>/output/<car>.html` (cz library) or `<car>-intl.html`.
+
 Usage:
-    python build_html.py [--car <name>]
+    python build_html.py [--car <name>] [--library cz|intl]
 """
 import argparse, json, re, sys, html as html_mod
+from datetime import date
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import config
+from shoplib import slugify
 
-_ap = argparse.ArgumentParser()
-_ap.add_argument("--car", default=config.DEFAULT_CAR)
-_ap.add_argument("--library", default="cz", choices=["cz", "intl"])
-_args = _ap.parse_args()
-
-CAR = _args.car
-LIBRARY = _args.library
-LIBRARY_LABEL = {"cz": "Czech e-shops", "intl": "FilamentColors.xyz library"}[LIBRARY]
-CAR_META = config.car_meta(CAR)
-DISPLAY       = CAR_META.get("display", CAR.title())
-SCRIPT_TAG    = CAR_META.get("script_tagline", "")
-BADGE_TOP     = CAR_META.get("badge_label", DISPLAY.upper())
-
-CAR_DATA = config.car_data(CAR)
-OUT_NAME = f"{CAR}.html" if LIBRARY == "cz" else f"{CAR}-{LIBRARY}.html"
-OUT      = config.car_output(CAR) / OUT_NAME
-
-matches  = json.loads((CAR_DATA / f"matches_{LIBRARY}.json").read_text(encoding="utf-8"))
-thumbs   = json.loads((CAR_DATA / f"thumbnails_{LIBRARY}.json").read_text(encoding="utf-8"))
-all_filaments = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
-                 if f.get("library", "cz") == LIBRARY]
-car_thumbs    = thumbs.get("car") or thumbs.get("hudson", {})
-fil_thumbs    = thumbs["filaments"]
+NO_MATCH_DE = 12.0      # primary at or above this gets the "no close match" banner
 
 def de_class(dE):
     if dE < 2: return "exc"
     if dE < 4: return "vg"
     if dE < 7: return "ok"
-    if dE < 12: return "weak"
+    if dE < NO_MATCH_DE: return "weak"
     return "bad"
-
-by_year = {}
-for m in matches:
-    by_year.setdefault(m["year"], []).append(m)
-
-total_count = sum(len(v) for v in by_year.values())
 
 def esc(s): return html_mod.escape(str(s))
 
+def source_host(url):
+    """'https://www.autocolorlibrary.com/pages/…' → 'autocolorlibrary.com'."""
+    host = urlsplit(url or "").hostname or ""
+    return host[4:] if host.startswith("www.") else host
+
 def paint_block(h):
     poly = ' <span class="chip">metallic</span>' if h.get("poly") else ""
+    year = esc(h['year'])
+    if safe_url(h.get("source_url")):
+        year = f'<a class="year" href="{esc(h["source_url"])}" target="_blank" rel="noopener" title="original colour card">{year}</a>'
+    else:
+        year = f'<span class="year">{year}</span>'
     return f"""
       <div class="paint">
         <div class="swatch big" style="background:{h['hex']}"></div>
         <div class="meta">
           <div class="name">{esc(h['name'])}{poly}</div>
           <div class="sub">
-            <span class="year">{h['year']}</span>
+            {year}
             · {esc(h['car_code'])}
             · ref. {esc(h['paint_ref'])}
           </div>
@@ -66,7 +52,7 @@ def paint_block(h):
     """
 
 def shop_tag(shop):
-    sl = (shop or "?").lower()
+    sl = slugify(shop or "") or "unknown"
     return f'<span class="shop-tag shop-{sl}">{esc(shop or "?")}</span>'
 
 # Shop links in the published page must not carry anyone's affiliate or tracking
@@ -76,17 +62,21 @@ SHORTENERS = {"amzn.to", "collabs.shop", "bit.ly", "geni.us", "shrsl.com", "tiny
 TRACKING_PARAMS = re.compile(r"^(utm_.*|aff.*|a_aid|a_bid|ref|ref_|tag|ascsubtag|linkcode|linkid|camp|creative|creativeasin|ie"
                              r"|sca_ref|srsltid|gclid|fbclid|mc_.*|_pos|_psq|_ss|_v|_sid|variant_tracking)$", re.I)
 
+def safe_url(url):
+    """Only http(s) links reach the page (third-party data could carry javascript: etc.)."""
+    return urlsplit(url or "").scheme in ("http", "https")
+
 def clean_url(c):
     url = c.get("url") or ""
     parts = urlsplit(url)
-    if parts.hostname in SHORTENERS:
+    if not safe_url(url) or parts.hostname in SHORTENERS:
         return f"https://filamentcolors.xyz/swatch/{c['slug']}/"
     path = re.sub(r"/ref=[^/]*", "", parts.path)          # amazon /ref=… path segments
     query = urlencode([(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
                        if not TRACKING_PARAMS.match(k)])
     return urlunsplit((parts.scheme, parts.netloc, path, query, ""))
 
-def filament_row(c, is_primary=False):
+def filament_row(c, fil_thumbs, is_primary=False):
     cls = de_class(c["delta_e"])
     tsrc = fil_thumbs.get(c["slug"], "")
     sw_cls = "mini" if is_primary else "tiny"
@@ -119,41 +109,20 @@ def filament_row(c, is_primary=False):
       </div>
     """
 
-def filament_column(cands, kind):
+def filament_column(cands, kind, fil_thumbs):
     if not cands:
         return f'<div class="col-label">{kind}</div><div class="filament empty">no {kind} candidate</div>'
     out = [f'<div class="col-label">{kind}</div>']
     primary = cands[0]
-    out.append(filament_row(primary, is_primary=True))
-    # Alt kandidáti: jen ti, co mají "dobrou" shodu (< 10) nebo jsou blízko primary
+    if primary["delta_e"] >= NO_MATCH_DE:
+        out.append(f'<div class="no-match">No close match: the best {kind} is ΔE {primary["delta_e"]:.1f} away</div>')
+    out.append(filament_row(primary, fil_thumbs, is_primary=True))
+    # Alternatives: up to 4 more, only good matches (ΔE < 10) or ones close to the primary
     threshold = max(10.0, primary["delta_e"] + 2.0)
     alts = [c for c in cands[1:5] if c["delta_e"] < threshold]
     for c in alts:
-        out.append(filament_row(c, is_primary=False))
+        out.append(filament_row(c, fil_thumbs, is_primary=False))
     return "".join(out)
-
-rows = []
-for year in sorted(by_year.keys(), reverse=True):
-    rows.append(f"""
-      <h2 class="year-head" id="y{year}">
-        <span class="year-badge">
-          <span class="year-badge-top">{BADGE_TOP}</span>
-          <span class="year-badge-num">{year}</span>
-        </span>
-        <span class="year-tagline">Model Year</span>
-      </h2>""")
-    for m in by_year[year]:
-        rows.append(f"""
-        <article class="row">
-          <div class="col paint-col">{paint_block(m)}</div>
-          <div class="col pla-col">{filament_column(m['pla'], 'PLA')}</div>
-          <div class="col petg-col">{filament_column(m['petg'], 'PETG')}</div>
-        </article>
-        """)
-
-pla_n  = sum(1 for f in all_filaments if f["material"] in ("PLA","PLA+") and f.get("rgb"))
-petg_n = sum(1 for f in all_filaments if f["material"] == "PETG" and f.get("rgb"))
-shops  = sorted({f.get("shop","?") for f in all_filaments if f.get("rgb")})
 
 # SVG starburst — mid-century atomic motif
 STARBURST = '''<svg class="starburst" viewBox="-50 -50 100 100" aria-hidden="true">
@@ -164,12 +133,58 @@ STARBURST = '''<svg class="starburst" viewBox="-50 -50 100 100" aria-hidden="tru
   <circle cx="0" cy="0" r="4" fill="currentColor"/>
 </svg>'''
 
-_years = sorted(by_year.keys())
-_year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
-_year_links = sorted(by_year.keys(), reverse=True)
-_title_suffix = " color card" if LIBRARY == "cz" else " · intl library"
-html_doc = f"""<title>{esc(DISPLAY)} · {_year_range}{_title_suffix}</title>
+def render(car, library, matches, fil_thumbs, all_filaments, meta):
+    """The whole self-contained page as a string."""
+    DISPLAY    = meta.get("display", car.title())
+    SCRIPT_TAG = meta.get("script_tagline", "")
+    BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
+    card_url   = meta.get("card_source_url", "")
+    card_host  = source_host(card_url)
+    credit_link = (f'<a href="https://{esc(urlsplit(card_url).hostname)}/" target="_blank" rel="noopener">{esc(card_host)}</a>'
+                   if card_host and safe_url(card_url) else "")
+
+    by_year = {}
+    for m in matches:
+        if m.get("year") is None:
+            print(f"! {m['name']}: no year, left out of the page")
+            continue
+        by_year.setdefault(m["year"], []).append(m)
+    total_count = sum(len(v) for v in by_year.values())
+
+    rows = []
+    for year in sorted(by_year.keys(), reverse=True):
+        rows.append(f"""
+      <h2 class="year-head" id="y{year}">
+        <span class="year-badge">
+          <span class="year-badge-top">{BADGE_TOP}</span>
+          <span class="year-badge-num">{year}</span>
+        </span>
+        <span class="year-tagline">Model Year</span>
+      </h2>""")
+        for m in by_year[year]:
+            rows.append(f"""
+        <article class="row">
+          <div class="col paint-col">{paint_block(m)}</div>
+          <div class="col pla-col">{filament_column(m['pla'], 'PLA', fil_thumbs)}</div>
+          <div class="col petg-col">{filament_column(m['petg'], 'PETG', fil_thumbs)}</div>
+        </article>
+        """)
+
+    pla_n  = sum(1 for f in all_filaments if f["material"] in config.PLA_MATERIALS and f.get("rgb"))
+    petg_n = sum(1 for f in all_filaments if f["material"] in config.PETG_MATERIALS and f.get("rgb"))
+    shops  = sorted({f.get("shop","?") for f in all_filaments if f.get("rgb")})
+
+    _years = sorted(by_year.keys())
+    _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
+    _year_links = sorted(by_year.keys(), reverse=True)
+    _title_suffix = " color card" if library == "cz" else " · intl library"
+    _hero_credit = f" · cards: {credit_link}" if credit_link else ""
+    _foot_credit = f"Colour cards courtesy of {credit_link} · " if credit_link else ""
+    return f"""<!doctype html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
+<title>{esc(DISPLAY)} · {_year_range}{_title_suffix}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
@@ -399,6 +414,16 @@ h2.year-head {{
   color: var(--muted); margin-top: 3px; letter-spacing: 0.02em;
 }}
 .paint .year {{ color: var(--orange-deep); font-weight: 600; }}
+.paint a.year {{ text-decoration: none; border-bottom: 1px dotted var(--orange-deep); }}
+.paint a.year:hover {{ border-bottom-style: solid; }}
+
+.no-match {{
+  margin: 0 0 6px; padding: 5px 10px;
+  background: color-mix(in srgb, var(--cherry) 12%, transparent);
+  border: 1px solid var(--cherry); border-left: 4px solid var(--cherry);
+  color: var(--bad); font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
+  border-radius: 2px;
+}}
 .paint .hex {{ font-family: var(--font-mono); font-size: 0.78rem; margin-top: 4px; }}
 .paint .rgb {{ color: var(--muted); font-size: 0.7rem; margin-left: 4px; }}
 
@@ -504,12 +529,14 @@ img {{ max-width: 100%; }}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yesteryear&family=Pacifico&family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+</head>
+<body>
 
 <div class="paper">
 
 <header class="page-head">
   {STARBURST}
-  <div class="hero-top"><span>Factory Paint Archive · {_year_range}</span></div>
+  <div class="hero-top"><span>Factory Paint Archive · {_year_range}{_hero_credit}</span></div>
   <h1>{esc(DISPLAY)}</h1>
   <span class="script">{esc(SCRIPT_TAG)}</span>
   <div class="meta-grid">
@@ -540,13 +567,32 @@ img {{ max-width: 100%; }}
 
 <footer class="card-footer">
   <div class="brand">{esc(DISPLAY)} factory colors · 3D-print filament matches</div>
-  <div class="sub">Generated by car-paint-filaments · {_year_range} color cards · 2026</div>
+  <div class="sub">{_foot_credit}Generated by car-paint-filaments · {_year_range} color cards · {date.today().year}</div>
 </footer>
 
 </div>
+</body>
+</html>
 """
 
-with open(OUT, "w", encoding="utf-8") as f:
-    f.write(html_doc)
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--car", default=config.DEFAULT_CAR)
+    ap.add_argument("--library", default="cz", choices=["cz", "intl"])
+    args = ap.parse_args()
 
-print(f"HTML: {OUT} ({OUT.stat().st_size/1024:.1f} KB)")
+    car_data = config.car_data(args.car)
+    matches  = json.loads((car_data / f"matches_{args.library}.json").read_text(encoding="utf-8"))
+    thumbs   = json.loads((car_data / f"thumbnails_{args.library}.json").read_text(encoding="utf-8"))
+    all_filaments = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
+                     if f.get("library", "cz") == args.library]
+    page = render(args.car, args.library, matches, thumbs["filaments"], all_filaments,
+                  config.car_meta(args.car))
+
+    out = config.car_output(args.car) / (f"{args.car}.html" if args.library == "cz" else f"{args.car}-{args.library}.html")
+    out.parent.mkdir(parents=True, exist_ok=True)
+    config.write_text(out, page)
+    print(f"HTML: {out} ({out.stat().st_size/1024:.1f} KB)")
+
+if __name__ == "__main__":
+    main()

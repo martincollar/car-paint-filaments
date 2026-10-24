@@ -26,12 +26,11 @@ import argparse, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import numpy as np
-from PIL import Image
-from color_tools import rgb_to_hex
+from color_tools import _load, rgb_to_hex
 import config
 
 def measure_region(path, cx, cy, w, h):
-    im = np.asarray(Image.open(path).convert("RGB"))
+    im = _load(path)
     H, W, _ = im.shape
     l = max(0, cx - w//2); r = min(W, cx + w//2)
     t = max(0, cy - h//2); b = min(H, cy + h//2)

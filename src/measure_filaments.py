@@ -83,6 +83,9 @@ def measure_record(r):
     path = config.FILAMENTS_SOURCES / r["local_image"]
     try:
         rgb, npx = filament_rgb(path, name=r.get("color_name"), **measure_hints(r.get("brand")))
+        if rgb is None:
+            rec["error"] = "no measurable pixels"
+            return rec
         rec["rgb"] = list(rgb)
         rec["hex"] = rgb_to_hex(rgb)
         rec["pixel_count"] = npx

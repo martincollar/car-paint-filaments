@@ -35,10 +35,7 @@ def raw_path(key):
 def load_json(p, default):
     return json.loads(p.read_text(encoding="utf-8")) if p.exists() else default
 
-def write_json(p, data):
-    tmp = p.with_suffix(p.suffix + ".tmp")
-    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    os.replace(tmp, p)
+write_json = config.write_json
 
 
 def candidates(rules, adapter):
@@ -90,7 +87,8 @@ def fetch_shop(rules, args, lock, report):
     print(f"\n=== {rules.name} ({rules.platform}) ===")
     try:
         cands = candidates(rules, adapter)
-    except shoplib.FetchError as e:
+    except Exception as e:          # FetchError, or a shop answering garbage: keep the old records
+        e = e if isinstance(e, shoplib.FetchError) else f"{type(e).__name__}: {e}"
         rep.update(status="fail", errors=[f"discovery: {e}"])
         print(f"  FAIL discovery: {e} — keeping previous {len(prev_records)} records")
         return
@@ -132,7 +130,8 @@ def fetch_shop(rules, args, lock, report):
             facts = adapter.product(rules, url, c, max_age)
         except shoplib.NotFound as e:
             rep["not_found"].append(url); print(f"  404  {url}"); continue
-        except shoplib.FetchError as e:
+        except Exception as e:      # FetchError, or a page the extractor chokes on
+            e = e if isinstance(e, shoplib.FetchError) else f"{type(e).__name__}: {e} ({url})"
             if slug in prev_records:
                 records[slug] = {**prev_records[slug], "stale": True}
                 rep["stale"].append(url)
@@ -203,7 +202,11 @@ def main():
     lock = load_json(config.CATALOG_LOCK, {})
     report = load_json(config.FETCH_REPORT, {})
     for key in keys:
-        fetch_shop(shoplib.load_shop(key), args, lock, report)
+        try:
+            fetch_shop(shoplib.load_shop(key), args, lock, report)
+        except Exception as e:      # one broken shop must not cost the others their run
+            print(f"  FAIL {key}: {type(e).__name__}: {e}")
+            report[key] = {"status": "fail", "date": TODAY, "errors": [f"{type(e).__name__}: {e}"]}
         if not args.dry_run:          # persist after every shop: a crash keeps finished work
             write_json(config.CATALOG_LOCK, {k: lock[k] for k in sorted(lock)})
             write_json(config.FETCH_REPORT, {k: report[k] for k in sorted(report)})

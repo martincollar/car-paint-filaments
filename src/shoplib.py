@@ -12,7 +12,7 @@ Nothing in here knows about a particular shop; per-shop behaviour lives in
 `shops/*.yaml` and the small platform adapters in `src/adapters/`.
 """
 from __future__ import annotations
-import gzip, hashlib, html as html_mod, json, re, time, unicodedata
+import gzip, hashlib, html as html_mod, http.client, json, re, ssl, time, unicodedata
 import urllib.error, urllib.parse, urllib.request, urllib.robotparser
 from pathlib import Path
 import yaml
@@ -143,7 +143,8 @@ def http_get(url: str, *, binary=False, referer=None, retries=3, use_cache=True,
                 raise last_err
             retry_after = e.headers.get("Retry-After", "")
             delay = float(retry_after) if retry_after.isdigit() else 2 ** (attempt + 1)
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, TimeoutError, ConnectionError,
+                http.client.HTTPException, ssl.SSLError) as e:      # IncompleteRead, RemoteDisconnected, …
             last_err = FetchError(url, f"{type(e).__name__}: {getattr(e, 'reason', e)}")
             delay = 2 ** (attempt + 1)
         if attempt < retries:
