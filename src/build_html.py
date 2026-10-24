@@ -124,14 +124,16 @@ a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--te
 a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
-  width: min(340px, 52vw); background: var(--bg-raised);
+  width: min(270px, 52vw); background: var(--bg-raised);
   border: 1px solid var(--rule); box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.22);
-  padding: 8px 8px 6px;
+  padding: 10px; font-size: 0.8rem; line-height: 1.3; color: var(--navy);
 }
 .hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; }
 .hero-preview canvas.swap { opacity: .55; }
-.hero-preview .hp-name { font-size: 0.74rem; margin-top: 5px; min-height: 1.1em; }
-.hero-preview .hp-credit { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
+.hero-preview canvas { margin-bottom: 8px; }
+.hero-preview .hp-info:empty { display: none; }
+.hero-preview .t-link { display: inline-block; margin-bottom: 6px; }
+.hero-preview .hp-credit { margin-top: 2px; font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
 /* Retro push buttons: cream face, navy rim, hard offset shadow like the year badge */
 .hero-preview .hp-close, .hero-preview .hp-zoom {
@@ -155,15 +157,15 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
 }
 .hero-preview.big canvas { cursor: zoom-out; }
 .hero-preview.big { padding: 14px 16px 10px; outline: 1px solid var(--rule); outline-offset: -7px; }
-.hero-preview.big .hp-name {
+.hero-preview.big .t-name {
   font-family: var(--font-display); font-size: 1.15rem; line-height: 1.2; letter-spacing: 0.02em;
-  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak); margin-top: 10px;
+  color: var(--teal-deep); text-shadow: 1px 1px 0 var(--orange-weak);
 }
 .hero-preview.big .hp-credit {
   font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px;
 }
 .hero-preview.closed .hp-zoom { display: none; }
-.hero-preview.closed canvas, .hero-preview.closed .hp-name { display: none; }
+.hero-preview.closed canvas, .hero-preview.closed .hp-info { display: none; }
 .hero-preview.closed { width: auto; padding: 10px 44px 8px 12px; min-height: 28px; }
 .hero-preview.closed .hp-close { top: 8px; right: 8px; }
 """
@@ -173,7 +175,7 @@ HERO_HTML = """
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">✕</button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview">⤢</button>
   <canvas id="hero-canvas"></canvas>
-  <div class="hp-name" id="hero-name"></div>
+  <div class="hp-info" id="hero-info"></div>
   <div class="hp-credit">Photo: <a href="__CREDIT_URL__" target="_blank" rel="noopener">__CREDIT__</a></div>
 </aside>
 """
@@ -183,7 +185,7 @@ HERO_JS = """
 (function () {
   var H = __HERO__;
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
-      label = document.getElementById('hero-name'), ctx = cv.getContext('2d');
+      info = document.getElementById('hero-info'), ctx = cv.getContext('2d');
   box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.toggle('closed'); };
   function zoom() { box.classList.toggle('big'); }
   box.querySelector('.hp-zoom').onclick = zoom; cv.onclick = zoom;
@@ -265,7 +267,7 @@ HERO_JS = """
 
   var picked = null;
   function pick(el) {
-    cur = el.dataset.hex; label.textContent = el.dataset.name + ' · ' + cur;
+    cur = el.dataset.hex; info.innerHTML = window.filInfo(el.dataset);
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
     box.classList.remove('closed');
@@ -295,11 +297,11 @@ TIP_CSS = """
 .fil-tip.show { display: block; }
 .fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; border: 1px solid var(--rule); margin-bottom: 8px; }
 .fil-tip img.t-car { height: auto; object-fit: contain; background: #f8f8f8; }
-.fil-tip .t-name { font-weight: 600; margin-bottom: 6px; }
-.fil-tip .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
-.fil-tip .t-sw { width: 16px; height: 16px; border: 1px solid var(--rule); flex: none; }
-.fil-tip .t-link { font-family: var(--font-mono); font-weight: 600; color: var(--orange-deep, var(--navy)); text-decoration: none; }
-.fil-tip .t-link:hover { text-decoration: underline; }
+.fil-tip .t-name, .hero-preview .t-name { font-weight: 600; margin-bottom: 6px; }
+.fil-tip .t-row, .hero-preview .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
+.fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; border: 1px solid var(--rule); flex: none; }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); font-weight: 600; color: var(--orange-deep, var(--navy)); text-decoration: none; }
+.fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
 """
 
 TIP_JS = """
@@ -307,15 +309,19 @@ TIP_JS = """
 (function () {
   var T = __THUMBS__, tip = document.createElement('div'), cur = null, timer = null;
   tip.className = 'fil-tip'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip);
-  function esc(s) { return s.replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  // Name / HEX / shop / link block, shared with the hover bubble (TIP_JS).
+  window.filInfo = function (d) {
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+    return '<div class="t-name">' + esc(d.name) + '</div>' +
+      '<div class="t-row"><span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex) + '</div>' +
+      '<div class="t-row"><span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div>' +
+      (d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');
+  };
   function show(el) {
     clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
     var d = el.dataset, car = window.heroRender ? window.heroRender(d.hex) : '', src = car || T[d.slug],
-        img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '',
-        link = d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '';
-    tip.innerHTML = img + '<div class="t-name">' + esc(d.name) + '</div>' +
-      '<div class="t-row"><span class="t-sw" style="background:' + d.hex + '"></span>' + d.hex + '</div>' +
-      '<div class="t-row"><span class="shop-tag shop-' + d.shopCls + '">' + esc(d.shop) + '</span></div>' + link;
+        img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '';
+    tip.innerHTML = img + window.filInfo(d);
     tip.classList.add('show');
     var r = (el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight,
         x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
