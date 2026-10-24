@@ -146,5 +146,29 @@
   "bambu-lab-pla-tough-white": {
     "hex": "#FFFFFF",
     "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "filament-lume-petg-bezova-1-75-mm-1-kg": {
+    "hex": "#C2A171",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "filament-lume-petg-burgundy-1-75-mm-1-kg": {
+    "hex": "#7C324C",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "filament-lume-petg-oranzova-1-75-mm-1-kg": {
+    "hex": "#D2581C",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "filament-lume-pla-bezova-1-75-mm-1-kg": {
+    "hex": "#C4A272",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "filament-lume-pla-bezovy-mramor-1-75-mm-1-kg": {
+    "hex": "#D3C7AC",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "filament-lume-pla-zlata-1-75-mm-1-kg": {
+    "hex": "#94733A",
+    "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
   }
 }

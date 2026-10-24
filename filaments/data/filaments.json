@@ -38390,13 +38390,15 @@
     ],
     "neon": false,
     "rgb": [
-      84,
-      54,
-      25
+      194,
+      161,
+      113
     ],
-    "hex": "#543619",
+    "hex": "#C2A171",
     "pixel_count": 138746,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#543619",
+    "previous_hex": "#543619"
   },
   {
     "slug": "filament-lume-petg-bila-1-75-mm-1-kg",
@@ -38443,13 +38445,15 @@
     ],
     "neon": false,
     "rgb": [
-      99,
-      62,
-      33
+      124,
+      50,
+      76
     ],
-    "hex": "#633E21",
+    "hex": "#7C324C",
     "pixel_count": 236854,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#633E21",
+    "previous_hex": "#633E21"
   },
   {
     "slug": "filament-lume-petg-cerna-1-75-mm-1-kg",
@@ -38600,13 +38604,15 @@
     ],
     "neon": false,
     "rgb": [
-      162,
-      71,
-      23
+      210,
+      88,
+      28
     ],
-    "hex": "#A24717",
+    "hex": "#D2581C",
     "pixel_count": 271495,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#A24717",
+    "previous_hex": "#A24717"
   },
   {
     "slug": "filament-lume-petg-perletove-modra-1-75-mm-1-kg",
@@ -39068,13 +39074,15 @@
     ],
     "neon": false,
     "rgb": [
-      88,
-      56,
-      26
+      196,
+      162,
+      114
     ],
-    "hex": "#58381A",
+    "hex": "#C4A272",
     "pixel_count": 173181,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#58381A",
+    "previous_hex": "#58381A"
   },
   {
     "slug": "filament-lume-pla-bezovy-mramor-1-75-mm-1-kg",
@@ -39094,13 +39102,15 @@
     ],
     "neon": false,
     "rgb": [
-      86,
-      57,
-      27
+      211,
+      199,
+      172
     ],
-    "hex": "#56391B",
+    "hex": "#D3C7AC",
     "pixel_count": 146754,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#56391B",
+    "previous_hex": "#56391B"
   },
   {
     "slug": "filament-lume-pla-bila-1-75-mm-1-kg",
@@ -39694,13 +39704,15 @@
     ],
     "neon": false,
     "rgb": [
-      79,
-      53,
-      25
+      148,
+      115,
+      58
     ],
-    "hex": "#4F3519",
+    "hex": "#94733A",
     "pixel_count": 180803,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#4F3519",
+    "previous_hex": "#4F3519"
   },
   {
     "slug": "filament-lume-pla-zluta-1-75-mm-1-kg",
