@@ -118,5 +118,33 @@
   "filament-azurefilm-pla-pastelove-ruzova-ice-cream-1-75-mm-1-kg": {
     "hex": "#D7ABA5",
     "note": "Photo has a saturated flat backdrop that filament_rgb() measured instead of the filament; hex = median of a crop of the lit winding."
+  },
+  "bambu-lab-petg-hf-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-petg-matte-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-petg-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-pla-jade-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-pla-matte-ivory-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-pla-pure-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "bambu-lab-pla-tough-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
   }
 }

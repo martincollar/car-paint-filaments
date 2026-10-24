@@ -2,7 +2,7 @@
 # Assemble the GitHub Pages site in _site/ from committed car outputs (no rebuild).
 # Every cars/<car>/car.json with "publish": true contributes
 #   output/<car>.html       → _site/<car>/index.html
-#   output/<car>-intl.html  → _site/<car>/intl.html   (if built)
+#   _site/<car>/intl.html   redirects to <car>/?region=int (old link of the former separate intl page)
 # A car may list old folder names in "redirect_from": each gets _site/<old>/{index,intl}.html that forward to the new URL.
 # plus _site/index.html linking to each car by its `display` name.
 # Used by .github/workflows/pages.yml and as a local check in scripts/publish.sh.
@@ -24,20 +24,22 @@ for META in "$HERE"/cars/*/car.json; do
   [ -f "$SRC/$CAR.html" ] || { echo "✗ $CAR is published but $SRC/$CAR.html is missing — build it first" >&2; exit 1; }
   mkdir -p "$OUT/$CAR"
   cp "$SRC/$CAR.html" "$OUT/$CAR/index.html"
-  intl=""
-  if [ -f "$SRC/$CAR-intl.html" ]; then
-    cp "$SRC/$CAR-intl.html" "$OUT/$CAR/intl.html"
-    intl=" <a class=\"intl\" href=\"$CAR/intl.html\">international shops</a>"
-  fi
+  cat > "$OUT/$CAR/intl.html" <<REDIR
+<!doctype html>
+<meta charset="utf-8">
+<title>Moved</title>
+<meta http-equiv="refresh" content="0; url=./?region=int">
+<script>location.replace("./?region=int")</script>
+<p>This page moved to <a href="./?region=int">the international shops view</a>.</p>
+REDIR
   DISPLAY="$(jq -r '.display // .name' "$META")"
   TAGLINE="$(jq -r '.script_tagline // ""' "$META")"
-  links+="<li><a href=\"$CAR/\">$DISPLAY</a> <span>$TAGLINE</span>$intl</li>"$'\n'
+  links+="<li><a href=\"$CAR/\">$DISPLAY</a> <span>$TAGLINE</span></li>"$'\n'
   echo "✓ $CAR → $CAR/"
   for OLD in $(jq -r '.redirect_from[]? // empty' "$META"); do
     mkdir -p "$OUT/$OLD"
     for PAGE in index intl; do
-      [ "$PAGE" = "index" ] && TARGET="../$CAR/" || TARGET="../$CAR/intl.html"
-      [ "$PAGE" = "intl" ] && [ ! -f "$OUT/$CAR/intl.html" ] && continue
+      [ "$PAGE" = "index" ] && TARGET="../$CAR/" || TARGET="../$CAR/?region=int"
       cat > "$OUT/$OLD/$PAGE.html" <<REDIR
 <!doctype html>
 <meta charset="utf-8">
@@ -63,7 +65,7 @@ cat > "$OUT/index.html" <<HTML
 <style>
   body { font: 18px/1.5 Georgia, serif; max-width: 36rem; margin: 3rem auto; padding: 0 16px; background: #f6efe2; color: #2b2118; }
   a { color: #8a2c1c; } span { color: #7a6a58; font-style: italic; margin-left: .4em; }
-  .intl { font-size: .8em; margin-left: .6em; } li { margin: .5em 0; }
+  li { margin: .5em 0; }
 </style>
 <h1>Car paint filaments</h1>
 <p>Vintage paint colours matched to PLA / PETG filaments you can buy today.</p>

@@ -3,6 +3,7 @@
 # and filament ones start with "filament-".
 name: 3DFox
 platform: shoptet
+regions: [eu]
 base: https://www.3dfoxshop.cz
 sitemap: https://www.3dfoxshop.cz/sitemap.xml
 include:

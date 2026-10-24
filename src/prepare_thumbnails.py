@@ -1,9 +1,9 @@
 """Build inline base64 filament thumbnails for the HTML.
 
-Produces `cars/<car>/data/thumbnails_<library>.json` ({"filaments": {slug: data-URI}}).
+Produces `cars/<car>/data/thumbnails.json` ({"filaments": {slug: data-URI}}).
 
 Usage:
-    python prepare_thumbnails.py [--car <name>] [--library cz|intl]
+    python prepare_thumbnails.py [--car <name>]
 """
 import argparse, json, sys, base64, io
 from pathlib import Path
@@ -27,12 +27,10 @@ def to_b64_jpg(img, max_dim=120, quality=72):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--car", default=config.DEFAULT_CAR)
-    ap.add_argument("--library", default="cz", choices=["cz", "intl"])
     args = ap.parse_args()
 
     car_data  = config.car_data(args.car)
-    all_fil   = json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
-    filaments = [f for f in all_fil if f.get("library", "cz") == args.library]
+    filaments = json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
 
     fil_thumb = {}
     for f in filaments:
@@ -43,10 +41,10 @@ def main():
         except Exception as e:
             print(f"thumb fail {f['slug']}: {e}")
 
-    out = car_data / f"thumbnails_{args.library}.json"
+    out = car_data / "thumbnails.json"
     config.write_json(out, {"filaments": fil_thumb}, indent=None)
     total_kb = sum(len(v) for v in fil_thumb.values()) / 1024
-    print(f"[{args.car}/{args.library}] {len(fil_thumb)} filament thumbs → {out} ({total_kb:.1f} KB)")
+    print(f"[{args.car}] {len(fil_thumb)} filament thumbs → {out} ({total_kb:.1f} KB)")
 
 if __name__ == "__main__":
     main()

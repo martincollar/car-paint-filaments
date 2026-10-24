@@ -48,13 +48,12 @@ car-paint-filaments/
 │   ├── color_tools.py                # _load, median_rgb, filament_rgb, delta_e_2000
 │   ├── measure_car.py                # car colors from scanned cards → car_colors.json
 │   ├── measure_filaments.py          # one filaments.json from every filaments_raw*.json
-│   ├── compute_matches.py            # top-K PLA/PETG per car color → matches_<lib>.json
-│   ├── prepare_thumbnails.py         # base64 product photos → thumbnails_<lib>.json
+│   ├── compute_matches.py            # top-K PLA/PETG per car color and region → matches.json
+│   ├── prepare_thumbnails.py         # base64 product photos → thumbnails.json
 │   ├── build_html.py                 # final HTML page → cars/<car>/output/<car>.html
 │   ├── fetch_all.py                  # every shop: sitemap → rules → product pages → raw JSON
 │   ├── shoplib.py                    # polite HTTP, robots.txt, cache, sitemap, JSON-LD/microdata, rules
-│   ├── adapters/                     # upgates/shoptet/generic (sitemap+HTML), shopify, manual (pins)
-│   └── fetch_filamentcolors.py       # intl library (FilamentColors.xyz API)
+│   └── adapters/                     # upgates/shoptet/generic (sitemap+HTML), shopify, manual (pins)
 ├── filaments/                # SHARED across all cars
 │   ├── sources/              # product photos (png/jpg/webp) downloaded from shop CDNs
 │   └── data/
@@ -69,8 +68,8 @@ car-paint-filaments/
         ├── sources/                     # scanned color cards (jpg/png)
         ├── data/
         │   ├── car_colors.json          # measured car swatches
-        │   ├── matches_{cz,intl}.json   # top-K PLA/PETG per color
-        │   └── thumbnails_{cz,intl}.json # inline base64 JPEGs for the HTML
+        │   ├── matches.json   # top-K PLA/PETG per color, per region
+        │   └── thumbnails.json # inline base64 JPEGs for the HTML
         └── output/
             └── <car_name>.html          # final self-contained HTML page
 ```
@@ -83,8 +82,7 @@ Every script takes `--car <name>` and defaults to `doppler` (overridable with `C
 
 Pages are built locally (the filament photos are gitignored, so CI can't rebuild) and committed in `cars/<car>/output/`. On push to `main`, `.github/workflows/pages.yml` runs `scripts/build_site.sh` and deploys to GitHub Pages:
 
-- `https://martincollar.github.io/car-paint-filaments/<car>/`: `<car>.html` (CZ shops)
-- `https://martincollar.github.io/car-paint-filaments/<car>/intl.html`: `<car>-intl.html`
+- `https://martincollar.github.io/car-paint-filaments/<car>/`: `<car>.html`, with an EU / CZ ↔ INT switch (`?region=int` opens INT; `<car>/intl.html` redirects there)
 - root: index of all cars with `"publish": true` in `car.json`
 
 ```bash
@@ -95,7 +93,7 @@ scripts/rebuild_html_only.sh doppler && scripts/publish.sh doppler
 
 1. **`measure_car.py --car <name>`** — reads `cars/<name>/card_layout.json` (card images + per-swatch cx/cy coordinates) and writes `cars/<name>/data/car_colors.json`.
 2. **`fetch_all.py`** — for each `shops/<shop>.yaml`: discover products from the sitemap (or Shopify JSON / pins), filter them by rules, read each product page, download photos into `filaments/sources/` and write `filaments/data/filaments_raw_<shop>.json`. Transparent, natural and silk filaments are never included.
-3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, deduplicates by (library, URL, slug), writes the single `filaments/data/filaments.json`.
+3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, stamps each record's `regions` from its shop YAML, deduplicates by (URL, slug), writes the single `filaments/data/filaments.json`.
 4. **`compute_matches.py --car <name>`** — top-5 PLA + top-5 PETG per car color via ΔE2000.
 5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (product photos resized to 100px, white-composited over transparency).
 5b. **`prepare_hero.py --car <name>`** — optional recolor preview: embeds the `hero` photo and paint mask from `car.json` (skipped when absent).

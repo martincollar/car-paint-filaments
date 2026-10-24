@@ -1,9 +1,9 @@
 """Build HTML page — all car colors × filament matches, retro styling.
 
-Writes `cars/<car>/output/<car>.html` (cz library) or `<car>-intl.html`.
+Writes `cars/<car>/output/<car>.html`, one page with a switch between regions.
 
 Usage:
-    python build_html.py [--car <name>] [--library cz|intl]
+    python build_html.py [--car <name>]
 """
 import argparse, json, re, sys, html as html_mod
 from datetime import date
@@ -11,7 +11,7 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import config
-from shoplib import slugify
+from shoplib import slugify, region_labels
 
 NO_MATCH_DE = 12.0      # primary at or above this gets the "no close match" banner
 
@@ -48,8 +48,8 @@ def shop_tag(shop):
     return f'<span class="shop-tag shop-{sl}">{esc(shop or "?")}</span>'
 
 # Shop links in the published page must not carry anyone's affiliate or tracking
-# codes (FilamentColors.xyz buy links do). Shortener links hide the code in the
-# redirect, so they fall back to the swatch page on FilamentColors.xyz.
+# codes. Shortener links hide the code in the redirect, so they (and unsafe links)
+# become a dead "#" rather than a tracked link.
 SHORTENERS = {"amzn.to", "collabs.shop", "bit.ly", "geni.us", "shrsl.com", "tinyurl.com"}
 TRACKING_PARAMS = re.compile(r"^(utm_.*|aff.*|a_aid|a_bid|ref|ref_|tag|ascsubtag|linkcode|linkid|camp|creative|creativeasin|ie"
                              r"|sca_ref|srsltid|gclid|fbclid|mc_.*|_pos|_psq|_ss|_v|_sid|variant_tracking)$", re.I)
@@ -62,7 +62,7 @@ def clean_url(c):
     url = c.get("url") or ""
     parts = urlsplit(url)
     if not safe_url(url) or parts.hostname in SHORTENERS:
-        return f"https://filamentcolors.xyz/swatch/{c['slug']}/"
+        return "#"
     path = re.sub(r"/ref=[^/]*", "", parts.path)          # amazon /ref=… path segments
     query = urlencode([(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
                        if not TRACKING_PARAMS.match(k)])
@@ -304,13 +304,53 @@ def load_theme(name):
         return fp.read_text().strip() if fp.is_file() else ""
     return part("theme.css"), part("fonts.txt"), part("motif.html")
 
-def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
-    """The whole self-contained page as a string."""
+def region_css(regions):
+    """Show only the active region's candidates and counts (body[data-region])."""
+    out = ["[data-r] { display: none; }"]
+    for r in regions:
+        out.append(f'body[data-region="{r}"] div[data-r="{r}"] {{ display: block; }}')
+        out.append(f'body[data-region="{r}"] .rcols[data-r="{r}"] {{ display: contents; }}')
+    return "\n".join(out)
+
+REGION_SWITCH_CSS = """
+.region-switch { display: flex; gap: 8px; align-items: center; margin: 20px 0 0; flex-wrap: wrap; }
+.region-switch .nav-label { color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.68rem; font-family: var(--font-mono); }
+.region-switch button {
+  font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 6px 14px; background: var(--bg-raised); color: var(--fg); border: 1px solid var(--rule); cursor: pointer;
+}
+.region-switch button:hover { border-color: var(--orange-deep); }
+.region-switch button[aria-pressed="true"] { background: var(--orange); color: #fff; border-color: var(--orange-deep); }
+"""
+
+REGION_JS = """
+<script>
+(function () {
+  var btns = document.querySelectorAll('[data-region-btn]');
+  function show(r, keep) {
+    document.body.dataset.region = r;
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.regionBtn === r ? 'true' : 'false'); });
+    if (!keep) { try { var u = new URL(location.href); u.searchParams.set('region', r); history.replaceState(null, '', u); } catch (e) {} }
+  }
+  btns.forEach(function (b) { b.onclick = function () { show(b.dataset.regionBtn); }; });
+  var want = null;
+  try { want = new URL(location.href).searchParams.get('region'); } catch (e) {}
+  if (want && document.querySelector('[data-region-btn="' + want + '"]')) show(want, true);
+})();
+</script>
+"""
+
+def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
+    """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""
+    labels  = region_labels()
+    regions = [r for r in labels if r in matches_by_region]
+    matches = matches_by_region[regions[0]]          # same colours in every region
     DISPLAY    = meta.get("display", car.title())
     SCRIPT_TAG = meta.get("script_tagline", "")
     BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
     theme_css, fonts_q, motif_html = load_theme(meta.get("theme", "doppler"))
 
+    by_name = {r: {m["name"]: m for m in matches_by_region[r]} for r in regions}
     by_year = {}
     for m in matches:
         if m.get("year") is None:
@@ -330,39 +370,55 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
         <span class="year-tagline">Model Year</span>
       </h2>""")
         for m in by_year[year]:
+            cols = "".join(f"""
+          <div class="rcols" data-r="{r}">
+            <div class="col pla-col">{filament_column(by_name[r][m['name']]['pla'], 'PLA', fil_thumbs)}</div>
+            <div class="col petg-col">{filament_column(by_name[r][m['name']]['petg'], 'PETG', fil_thumbs)}</div>
+          </div>""" for r in regions)
             rows.append(f"""
         <article class="row">
-          <div class="col paint-col">{paint_block(m)}</div>
-          <div class="col pla-col">{filament_column(m['pla'], 'PLA', fil_thumbs)}</div>
-          <div class="col petg-col">{filament_column(m['petg'], 'PETG', fil_thumbs)}</div>
+          <div class="col paint-col">{paint_block(m)}</div>{cols}
         </article>
         """)
 
-    pla_n  = sum(1 for f in all_filaments if f["material"] in config.PLA_MATERIALS and f.get("rgb"))
-    petg_n = sum(1 for f in all_filaments if f["material"] in config.PETG_MATERIALS and f.get("rgb"))
-    shops  = sorted({f.get("shop","?") for f in all_filaments if f.get("rgb")})
+    counts = ""
+    for r in regions:
+        fr = [f for f in all_filaments if r in (f.get("regions") or []) and f.get("rgb")]
+        pla_n  = sum(1 for f in fr if f["material"] in config.PLA_MATERIALS)
+        petg_n = sum(1 for f in fr if f["material"] in config.PETG_MATERIALS)
+        shops  = {f.get("shop", "?") for f in fr}
+        counts += (f'<div data-r="{r}"><strong>{pla_n}</strong><span>PLA candidates</span></div>'
+                   f'<div data-r="{r}"><strong>{petg_n}</strong><span>PETG candidates</span></div>'
+                   f'<div data-r="{r}"><strong>{len(shops)}</strong><span>e-shops</span></div>')
+    switch = ""
+    if len(regions) > 1:
+        switch = ('<div class="region-switch"><span class="nav-label">Shops in:</span>'
+                  + "".join(f'<button type="button" data-region-btn="{r}" aria-pressed="{"true" if r == regions[0] else "false"}">{esc(labels[r])}</button>'
+                            for r in regions)
+                  + '</div>')
 
     _years = sorted(by_year.keys())
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
-    _title_suffix = " color card" if library == "cz" else " · intl library"
     hero_css, hero_html, hero_js = hero_parts(hero)
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>{esc(DISPLAY)} · {_year_range}{_title_suffix}</title>
+<title>{esc(DISPLAY)} · {_year_range} color card</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 {theme_css}
 {TOP_CSS}
+{REGION_SWITCH_CSS}
+{region_css(regions)}
 {hero_css}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts_q)}&display=swap">
 </head>
-<body id="top">
+<body id="top" data-region="{regions[0]}">
 
 <div class="paper">
 
@@ -373,11 +429,10 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
   <span class="script">{esc(SCRIPT_TAG)}</span>
   <div class="meta-grid">
     <div><strong>{total_count}</strong><span>factory colors</span></div>
-    <div><strong>{pla_n}</strong><span>PLA candidates</span></div>
-    <div><strong>{petg_n}</strong><span>PETG candidates</span></div>
-    <div><strong>{len(shops)}</strong><span>e-shops</span></div>
+    {counts}
     <div><strong>{len(by_year)}</strong><span>model years</span></div>
   </div>
+  {switch}
   <nav class="year-nav">
     <span class="nav-label">Jump to year:</span>
     {''.join(f'<a href="#y{y}">{y}</a>' for y in _year_links)}
@@ -407,6 +462,7 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
 <script>{TOP_JS}</script>
 {hero_html}
 {hero_js}
+{REGION_JS if len(regions) > 1 else ""}
 </body>
 </html>
 """
@@ -414,20 +470,17 @@ def render(car, library, matches, fil_thumbs, all_filaments, meta, hero=None):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--car", default=config.DEFAULT_CAR)
-    ap.add_argument("--library", default="cz", choices=["cz", "intl"])
     args = ap.parse_args()
 
     car_data = config.car_data(args.car)
-    matches  = json.loads((car_data / f"matches_{args.library}.json").read_text(encoding="utf-8"))
-    thumbs   = json.loads((car_data / f"thumbnails_{args.library}.json").read_text(encoding="utf-8"))
-    all_filaments = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
-                     if f.get("library", "cz") == args.library]
+    matches  = json.loads((car_data / "matches.json").read_text(encoding="utf-8"))
+    thumbs   = json.loads((car_data / "thumbnails.json").read_text(encoding="utf-8"))
+    all_filaments = json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
     hero_path = car_data / "hero.json"
     hero = json.loads(hero_path.read_text(encoding="utf-8")) if hero_path.exists() else None
-    page = render(args.car, args.library, matches, thumbs["filaments"], all_filaments,
-                  config.car_meta(args.car), hero)
+    page = render(args.car, matches, thumbs["filaments"], all_filaments, config.car_meta(args.car), hero)
 
-    out = config.car_output(args.car) / (f"{args.car}.html" if args.library == "cz" else f"{args.car}-{args.library}.html")
+    out = config.car_output(args.car) / f"{args.car}.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     config.write_text(out, page)
     print(f"HTML: {out} ({out.stat().st_size/1024:.1f} KB)")

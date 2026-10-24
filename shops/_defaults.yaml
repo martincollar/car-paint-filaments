@@ -2,8 +2,15 @@
 # `materials` and the numeric limits can be overridden per shop.
 # All regexes match diacritics-folded, lowercased text ("průhledná" → "pruhledna").
 
+# Regions a filament can be sold in, in page order (key: label shown on the toggle).
+# Every shop lists its own in `regions:` (one or more); a filament belongs to its shop's regions.
+# To add one (e.g. us: "US"), add it here and tag the shops.
+regions:
+  eu: "EU / CZ"
+  int: "INT"
+
 # Finishes we never print with. Applied to slug, URL, product title and colour name
-# of EVERY record — discovered, pinned, legacy, and the intl library too
+# of EVERY record — discovered, pinned, and legacy
 # (measure_filaments.py drops them again as a safety net).
 exclude_finishes:
   transparent: '\btransparent\w*|\btranslucent\w*|\bpruhledn\w*|\bpruhled\w*|\bcir(a|e|y|i|ou)\b|\bclear\b'

@@ -182,6 +182,7 @@ h1 {
 .shop-tag.shop-na3d { background: color-mix(in srgb, #0066a3 15%, transparent); color: #0066a3; }
 .shop-tag.shop-hubacek3d { background: color-mix(in srgb, #8a5a2b 15%, transparent); color: #8a5a2b; }
 .shop-tag.shop-3dfox { background: color-mix(in srgb, #c4561a 15%, transparent); color: #c4561a; }
+.shop-tag.shop-bambu-lab { background: color-mix(in srgb, #00ae42 15%, transparent); color: #007a2e; }
 
 /* ===== Year section header: number plate with a little flag ===== */
 h2.year-head {
