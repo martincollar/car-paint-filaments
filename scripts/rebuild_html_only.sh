@@ -9,4 +9,5 @@ PY="${PY:-$HERE/.venv/bin/python}"
 "$PY" "$HERE/src/compute_matches.py"    --car "$CAR"
 "$PY" "$HERE/src/prepare_thumbnails.py" --car "$CAR"
 "$PY" "$HERE/src/build_html.py"         --car "$CAR"
+"$PY" "$HERE/src/build_index.py"                       # site/index.html (root page tiles)
 echo "✓ cars/$CAR/output/$CAR.html"

@@ -17,6 +17,13 @@ exclude_finishes:
   natural:     '\bnatur\w*|\bprirodn\w*'
   silk:        '\bsilk\w*|\bhedvab\w*'
 
+# Neon / fluorescent colours. Not banned, but flagged `neon: true` on the record
+# (measure_filaments.py) and ranked behind normal filaments in compute_matches.py:
+# on a car they only look right when the paint itself is neon. Diacritics-folded
+# regex on colour name and slug (hyphens read as spaces). Their photos also measure
+# too dark (shaded sides pull the median down), so plain ΔE flatters them.
+neon_names: '\bfluo\w*|\bneon\w*|\buv\b|\bhighlight\b|\bsuper (yellow|zluta)\b'
+
 # URL-path excludes: things that are not a single-colour 1.75 mm ~1 kg spool.
 exclude:
   - 'vzor|sample|probe|tester|(^|-)\d+-?pack(-|$)'

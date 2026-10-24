@@ -10,6 +10,7 @@ on:
       - "cars/*/output/**"
       - "cars/*/car.json"
       - "scripts/build_site.sh"
+      - "site/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 

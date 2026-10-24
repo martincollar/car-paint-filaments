@@ -2,3 +2,6 @@ pillow>=10
 numpy>=1.24
 colour-science>=0.4
 pyyaml>=6
+
+# optional, only for src/cut_car.py (neural cut-out of the hero photo; downloads a ~180 MB model on first use):
+# rembg[cpu]
