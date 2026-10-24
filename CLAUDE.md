@@ -47,7 +47,8 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 3. `measure_car.py --car <name>` reads `cars/<name>/card_layout.json` (per-swatch cx/cy coordinates), crops each sample from its card scan, writes `cars/<name>/data/car_colors.json`
 4. `compute_matches.py --car <name>` → top-K PLA + top-K PETG per color via ΔE2000
 5. `prepare_thumbnails.py --car <name>` → inline base64 JPEGs of the filament photos (self-contained HTML)
-6. `build_html.py --car <name>` → `cars/<name>/output/<name>.html`
+6. `prepare_hero.py --car <name>` → `cars/<name>/data/hero.json` (optional, only when `car.json` has `hero`; see below)
+7. `build_html.py --car <name>` → `cars/<name>/output/<name>.html`
 
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
@@ -58,6 +59,10 @@ Current shops (`shops/*.yaml`): Smart3D, Aurapol, Hubacek3D (upgates); 3DFox (sh
 **No prices, anywhere.** The pipeline deliberately does not scrape, store, hard-code, or display filament prices. That covers no `extract_price()` in fetchers, no `price` key in any record or JSON, no price columns in fetcher logs, and no prices or currency in the HTML. Prices change constantly, discounts make them wrong within days, and the old hard-coded "749 Kč" for Prusament was already stale. The shop link on each candidate is the source of truth. Don't add prices back when writing a new fetcher or touching `build_html.py`.
 
 **Two libraries, side by side.** Every filament record carries a `library` field — `"cz"` for the Czech shop pool (`shops/*.yaml`), `"intl"` for FilamentColors.xyz. `compute_matches.py`, `prepare_thumbnails.py` and `build_html.py` all take `--library cz|intl` and write side-by-side artifacts: `cars/<car>/data/matches_<lib>.json`, `thumbnails_<lib>.json`, and `output/<car>.html` (cz, kept legacy name) vs `output/<car>-intl.html`. `scripts/rebuild.sh` runs both. The intl library (`fetch_filamentcolors.py`) is special — it hits a REST API (`/api/swatch/`) and keeps the hex that the API already carries, skipping `filament_rgb()` measurement entirely. `measure_filaments.py` recognises records that already have `rgb+hex` and leaves them untouched. The two libraries never mix in a single HTML; the eventual plan is one JS-driven page with a filter, which is why they share the same `filaments.json` but stay partitioned downstream.
+
+## Recolor preview (optional per car)
+
+A car with a `hero` block in `car.json` (`photo`, `mask`, optional `roof` hex, `credit`, `credit_url`) gets a floating car preview: greyed out with a "?" until the user clicks a filament swatch, then recoloured live in the browser (canvas, CIELAB: the photo's lightness variation around the body mean is kept, a/b come from the filament hex). `mask` is an RGB PNG the same size as the photo: R = body paint, G = roof paint (soft edges); everything else (chrome, tyres, glass) is never touched. One photo + one mask per car; no `src/` change to add one. `roof` fixes the roof colour (two-tone cars); without it the roof follows the body. `prepare_hero.py` embeds both at 1000 px. The Hudson hero is a 3D Sets photo (`cars/hudson/sources/hero.jpg`, gitignored via `cars/*/sources/hero.*`): the built HTML and `hero.json` embed it, so **don't publish them without permission from 3D Sets**.
 
 ## Non-obvious details
 

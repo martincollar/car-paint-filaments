@@ -5,7 +5,7 @@
 import sys, unittest
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-import build_html, compute_matches
+import build_html, compute_matches, prepare_hero
 from color_tools import delta_e_2000
 
 
@@ -56,6 +56,49 @@ class PageBits(unittest.TestCase):
         self.assertIn("</head>", page); self.assertIn("<body>", page)
         self.assertIn('href="https://www.autocolorlibrary.com/"', page)
         self.assertIn('href="https://www.autocolorlibrary.com/pages/1952-hudson"', page)
+
+
+class HeroPreview(unittest.TestCase):
+    HERO = {"photo": "data:image/jpeg;base64,AA==", "mask": "data:image/png;base64,AA==",
+            "roof": "#ffffff", "credit": "Maker <b>", "credit_url": "https://maker.example/p"}
+
+    def test_no_hero_adds_nothing(self):
+        self.assertEqual(build_html.hero_parts(None), ("", "", ""))
+
+    def test_hero_page_has_canvas_and_escaped_credit(self):
+        css, html, js = build_html.hero_parts(self.HERO)
+        self.assertIn('id="hero-canvas"', html)
+        self.assertIn("Maker &lt;b&gt;", html)
+        self.assertIn('href="https://maker.example/p"', html)
+        self.assertNotIn("__HERO__", js)
+
+    def test_unsafe_credit_url_is_neutralised(self):
+        _, html, _ = build_html.hero_parts(dict(self.HERO, credit_url="javascript:alert(1)"))
+        self.assertNotIn("javascript:", html)
+
+    def test_script_cannot_be_closed_by_data(self):
+        _, _, js = build_html.hero_parts(dict(self.HERO, photo="</script><script>x"))
+        self.assertNotIn("</script><script>x", js)
+
+    def test_filament_swatches_are_pickable(self):
+        c = {"delta_e": 1.0, "slug": "s", "brand": "B", "material": "PLA", "color_name": "C",
+             "hex": "#112233", "shop": "Smart3D", "url": "https://x.example/"}
+        row = build_html.filament_column([c], "PLA", {})
+        self.assertIn('data-hex="#112233"', row)
+        self.assertIn('tabindex="0"', row)
+
+
+class HeroPrepare(unittest.TestCase):
+    def test_resize_keeps_aspect(self):
+        from PIL import Image
+        out = prepare_hero._resize(Image.new("RGB", (1900, 1217)), 1000)
+        self.assertEqual(out.size, (1000, 641))
+
+    def test_uris_are_data_uris(self):
+        from PIL import Image
+        im = Image.new("RGB", (4, 4), "#336699")
+        self.assertTrue(prepare_hero.photo_uri(im).startswith("data:image/jpeg;base64,"))
+        self.assertTrue(prepare_hero.mask_uri(im).startswith("data:image/png;base64,"))
 
 
 class TopK(unittest.TestCase):

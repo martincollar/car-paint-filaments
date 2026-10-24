@@ -85,7 +85,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     if is_primary:
         return f"""
       <div class="filament primary">
-        <div class="swatch {sw_cls} pick" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></div>
+        <div class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></div>
         <div class="finfo">
           <div class="fname">{name}</div>
           <div class="fsub">
@@ -100,7 +100,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     """
     return f"""
       <div class="filament alt">
-        <span class="swatch {sw_cls} pick" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></span>
+        <span class="swatch {sw_cls} pick" role="button" tabindex="0" data-hex="{c['hex']}" data-name="{esc(c['brand'])} {esc(c['material'])} {esc(c['color_name'])}" style="background:{c['hex']}"></span>
         <span class="fname-inline">{name}</span>
         <span class="hex">{c['hex']}</span>
         <span class="de {cls}">ΔE {c['delta_e']:.1f}</span>
@@ -127,31 +127,46 @@ def filament_column(cands, kind, fil_thumbs):
 
 HERO_CSS = """
 .pick { cursor: pointer; }
-.pick:hover { outline: 2px solid var(--teal); outline-offset: 1px; }
+.pick:hover, .pick:focus-visible { outline: 2px solid var(--teal); outline-offset: 1px; }
+.pick.picked { outline: 2px solid var(--orange); outline-offset: 1px; }
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
   width: min(340px, 52vw); background: var(--bg-raised);
   border: 1px solid var(--rule); box-shadow: 0 2px 0 var(--rule), 0 8px 24px rgba(45,34,23,0.22);
   padding: 8px 8px 6px;
 }
-.hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; }
+.hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; }
+.hero-preview canvas.swap { opacity: .55; }
 .hero-preview .hp-name { font-size: 0.74rem; margin-top: 5px; min-height: 1.1em; }
-.hero-preview .hp-hint, .hero-preview .hp-credit { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
+.hero-preview .hp-credit { font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
 .hero-preview .hp-close {
   position: absolute; top: 2px; right: 4px; border: 0; background: none; cursor: pointer;
   color: var(--muted); font-size: 1rem; line-height: 1;
 }
-.hero-preview.closed canvas, .hero-preview.closed .hp-name, .hero-preview.closed .hp-hint { display: none; }
+.hero-preview canvas { cursor: zoom-in; }
+.hero-preview.big {
+  width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%);
+  box-shadow: 0 0 0 100vmax rgba(45,34,23,0.45), 0 8px 24px rgba(45,34,23,0.3);
+}
+.hero-preview.big canvas { cursor: zoom-out; }
+.hero-preview.big .hp-name { font-size: 0.95rem; }
+.hero-preview.big .hp-credit { font-size: 0.74rem; }
+.hero-preview .hp-zoom {
+  position: absolute; top: 2px; right: 24px; border: 0; background: none; cursor: pointer;
+  color: var(--muted); font-size: 0.95rem; line-height: 1;
+}
+.hero-preview.closed .hp-zoom { display: none; }
+.hero-preview.closed canvas, .hero-preview.closed .hp-name { display: none; }
 .hero-preview.closed { width: auto; padding: 4px 28px 4px 8px; }
 """
 
 HERO_HTML = """
 <aside class="hero-preview" id="hero-preview" aria-label="Recolored car preview">
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview">×</button>
+  <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview">⤢</button>
   <canvas id="hero-canvas"></canvas>
   <div class="hp-name" id="hero-name"></div>
-  <div class="hp-hint">Click any filament swatch to preview it on the car (rough idea).</div>
   <div class="hp-credit">Photo: <a href="__CREDIT_URL__" target="_blank" rel="noopener">__CREDIT__</a></div>
 </aside>
 """
@@ -162,7 +177,10 @@ HERO_JS = """
   var H = __HERO__;
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
       label = document.getElementById('hero-name'), ctx = cv.getContext('2d');
-  box.querySelector('.hp-close').onclick = function () { box.classList.toggle('closed'); };
+  box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.toggle('closed'); };
+  function zoom() { box.classList.toggle('big'); }
+  box.querySelector('.hp-zoom').onclick = zoom; cv.onclick = zoom;
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.classList.remove('big'); });
   var M = [[0.4124564,0.3575761,0.1804375],[0.2126729,0.7151522,0.0721750],[0.0193339,0.1191920,0.9503041]];
   var Mi = [[3.2404542,-1.5371385,-0.4985314],[-0.9692660,1.8760108,0.0415560],[0.0556434,-0.2040259,1.0572252]];
   var WP = [0.95047, 1, 1.08883];
@@ -190,10 +208,22 @@ HERO_JS = """
       for (var k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; sum[k] += a * c[0]; wt[k] += a; }
     }
     L = lab; Lm = [sum[0] / wt[0], sum[1] / wt[1]];
-    ctx.putImageData(base, 0, 0);
-    if (cur) paint(cur);
+    if (cur) paint(cur); else greyed();
   }
   photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
+
+  function greyed() {
+    var g = ctx.createImageData(W, Hh), o = g.data, d = base.data;
+    for (var i = 0; i < W * Hh * 4; i += 4) {
+      var y = 0.3 * d[i] + 0.59 * d[i+1] + 0.11 * d[i+2];
+      o[i] = o[i+1] = o[i+2] = 255 - (255 - y) * 0.7; o[i+3] = 255;
+    }
+    ctx.putImageData(g, 0, 0);
+    var r = Hh * 0.2, x = W / 2, y0 = Hh / 2;
+    ctx.fillStyle = 'rgba(45,34,23,0.72)'; ctx.beginPath(); ctx.arc(x, y0, r, 0, 6.2832); ctx.fill();
+    ctx.fillStyle = '#fffdf4'; ctx.font = '700 ' + Math.round(r * 1.5) + 'px Georgia, serif';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
+  }
 
   function paint(hex) {
     var tb = toLab.apply(null, hexRgb(hex)), tr = H.roof ? toLab.apply(null, hexRgb(H.roof)) : tb,
@@ -214,12 +244,23 @@ HERO_JS = """
     ctx.putImageData(out, 0, 0);
   }
 
+  var picked = null;
+  function pick(el) {
+    cur = el.dataset.hex; label.textContent = el.dataset.name + ' · ' + cur;
+    if (picked) picked.classList.remove('picked');
+    (picked = el).classList.add('picked');
+    box.classList.remove('closed');
+    if (loaded < 2) return;
+    cv.classList.add('swap');
+    setTimeout(function () { paint(cur); cv.classList.remove('swap'); }, 60);
+  }
   document.addEventListener('click', function (e) {
     var el = e.target.closest && e.target.closest('.pick');
-    if (!el) return;
-    cur = el.dataset.hex; label.textContent = el.dataset.name + ' · ' + cur;
-    box.classList.remove('closed');
-    if (loaded >= 2) paint(cur);
+    if (el) pick(el);
+  });
+  document.addEventListener('keydown', function (e) {
+    var el = e.target.classList && e.target.classList.contains('pick') ? e.target : null;
+    if (el && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pick(el); }
   });
 })();
 </script>

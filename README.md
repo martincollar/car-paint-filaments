@@ -98,6 +98,7 @@ scripts/rebuild_html_only.sh hudson && scripts/publish.sh hudson
 3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, deduplicates by (library, URL, slug), writes the single `filaments/data/filaments.json`.
 4. **`compute_matches.py --car <name>`** — top-5 PLA + top-5 PETG per car color via ΔE2000.
 5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (product photos resized to 100px, white-composited over transparency).
+5b. **`prepare_hero.py --car <name>`** — optional recolor preview: embeds the `hero` photo and paint mask from `car.json` (skipped when absent).
 6. **`build_html.py --car <name>`** — final HTML. Reads `car.json` for title, tagline, subtitle etc., so the same code works for any car.
 
 ## Adding a new car

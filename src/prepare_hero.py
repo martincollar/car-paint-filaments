@@ -19,7 +19,7 @@ from PIL import Image
 from color_tools import _load
 import config
 
-MAX_W = 600
+MAX_W = 1000
 
 def _resize(img, w):
     h = round(img.height * w / img.width)
