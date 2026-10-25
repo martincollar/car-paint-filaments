@@ -1,0 +1,4 @@
+.tile--torq.head-card .t-shield { translate: -6px 9px; scale: 1.22; transform-origin: center; }
+.tile--torq.head-card .tile-meta { translate: 0px 8px; }
+.tile--torq.head-card .tile-name { translate: 1px -5px; scale: 1.16; transform-origin: left center; }
+.tile--torq.head-card .tile-tag { translate: 0px 0px; scale: 1.63; transform-origin: left center; }

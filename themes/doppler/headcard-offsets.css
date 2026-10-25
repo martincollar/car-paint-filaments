@@ -1,0 +1,4 @@
+.tile--doppler.head-card .t-star-1 { translate: 40px 15px; scale: 1.28; transform-origin: center; }
+.tile--doppler.head-card .tile-meta { translate: -53px -1px; }
+.tile--doppler.head-card .tile-name { translate: -67px -51px; scale: 1.28; transform-origin: left center; }
+.tile--doppler.head-card .tile-tag { translate: -30px -28px; scale: 1.41; transform-origin: left center; }
