@@ -66,25 +66,25 @@ body {
 .paper {
   background: var(--bg-paper); border-radius: 22px; overflow: hidden;
   box-shadow: 0 1px 0 var(--rule), var(--dl-card-shadow);
-  padding: 0 var(--pad) 32px; position: relative;
+  padding: 22px var(--pad) 32px; position: relative;
 }
 
 /* ===== Nav (inside the header card) ===== */
-.year-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; align-items: center; font-family: var(--font-mono); font-size: .92rem; }
-.year-nav .nav-label { letter-spacing: .16em; text-transform: uppercase; font-size: .74rem; font-weight: 600; margin-right: 4px; color: var(--muted); }
+.year-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; align-items: center; font-family: var(--font-mono); font-size: .78rem; }
+.year-nav .nav-label { letter-spacing: .12em; text-transform: uppercase; font-size: .68rem; font-weight: 500; margin-right: 4px; color: var(--muted); }
 .year-nav a, .region-switch button {
-  padding: 4px 18px; border-radius: 999px; background: transparent; color: var(--indigo);
-  border: 1px solid var(--indigo); text-decoration: none; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;
+  padding: 4px 16px; border-radius: 999px; background: transparent; color: var(--indigo);
+  border: 1px solid var(--indigo); text-decoration: none; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
 }
-.region-switch button { font: inherit; font-size: .92rem; font-weight: 700; line-height: inherit; letter-spacing: .08em; text-transform: uppercase; }
+.region-switch button { font: inherit; font-size: .85rem; font-weight: 600; line-height: inherit; letter-spacing: .06em; text-transform: uppercase; }
 .year-nav a:hover, .region-switch button:hover { background: var(--dl-sakura-weak); }
 .region-switch button[aria-pressed="true"] { background: var(--indigo); color: #fff; border-color: var(--indigo); }
 
 /* ===== Legend ===== */
-.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 4px 2px; margin: 4px 0 8px; font-size: .82rem; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 4px 2px; margin: 4px 0 8px; font-size: .78rem; color: var(--muted); }
 .legend .lblock { display: inline-flex; gap: 5px; align-items: center; }
-.legend .legend-head { font: 700 .85rem var(--font-mono); color: var(--fg); text-transform: uppercase; letter-spacing: .1em; }
-.pill, .de { padding: 0; font-weight: 700; letter-spacing: .03em; font-family: var(--font-mono); font-size: .86rem; }
+.legend .legend-head { font: 500 .8rem var(--font-mono); color: var(--fg); text-transform: uppercase; letter-spacing: .08em; }
+.pill, .de { padding: 0; font-weight: 600; font-family: var(--font-mono); font-size: .78rem; }
 .pill.exc, .de.exc { color: var(--good); }
 .pill.vg, .de.vg { color: var(--indigo); }
 .pill.ok, .de.ok { color: var(--warn); }
@@ -92,48 +92,48 @@ body {
 .pill.bad, .de.bad { color: var(--red-deep); }
 
 /* ===== Shop tags: plain text ===== */
-.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: .78rem; letter-spacing: .05em; font-weight: 700; text-transform: uppercase; color: var(--muted); }
+.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
 
 /* ===== Year header: plain number, hairline ===== */
 h2.year-head { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6px; padding: 0 0 8px; font-weight: 400; border: none; border-bottom: 1px solid var(--rule); scroll-margin-top: 10px; position: relative; }
 h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 64px; height: 3px; background: var(--red); border-radius: 3px; }
 .year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--indigo); line-height: 1; }
-.year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); order: 2; }
+.year-badge-top { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); order: 2; }
 .year-badge-num { font-family: var(--font-display); font-size: 2.4rem; line-height: 1; letter-spacing: .02em; color: var(--indigo); }
-.year-tagline { font-family: var(--font-mono); font-weight: 700; font-size: .85rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); line-height: 1; }
+.year-tagline { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); line-height: 1; }
 
 /* ===== Rows: flat, hairlines only ===== */
 .row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start; }
 .row:last-of-type { border-bottom: none; }
 @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
-.col-label { font-family: var(--font-mono); font-size: .82rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px 2px; }
+.col-label { font-family: var(--font-mono); font-size: .72rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px 2px; }
 
 .row > .paint-col { grid-column: 1 / -1; }
 .paint { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
 .paint .swatch.big { width: 56px; height: 56px; flex-shrink: 0; border-radius: 8px; border: 1px solid var(--rule); }
 .paint .meta { min-width: 0; flex: 1; }
-.paint .name { font-weight: 700; font-size: 1.05rem; line-height: 1.2; color: var(--fg); }
-.paint .sub { font-family: var(--font-mono); font-size: .86rem; font-weight: 500; color: var(--muted); margin-top: 3px; letter-spacing: .03em; }
-.paint .year { color: var(--indigo); font-weight: 700; }
+.paint .name { font-weight: 600; font-size: 1.05rem; line-height: 1.2; color: var(--fg); }
+.paint .sub { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); margin-top: 3px; }
+.paint .year { color: var(--indigo); font-weight: 600; }
 .paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
 .paint a.year:hover { background: var(--red-weak); }
-.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--red-deep); font-family: var(--font-mono); font-size: .86rem; font-weight: 700; letter-spacing: .04em; }
-.paint .hex { font-family: var(--font-mono); font-size: .95rem; font-weight: 600; margin-top: 4px; }
-.paint .rgb { color: var(--muted); font-size: .82rem; margin-left: 4px; font-weight: 500; }
-.chip { display: inline-block; padding: 0 8px; border-radius: 999px; font-family: var(--font-mono); font-size: .74rem; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); margin-left: 6px; vertical-align: middle; }
+.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--red-deep); font-family: var(--font-mono); font-size: .78rem; font-weight: 600; }
+.paint .hex { font-family: var(--font-mono); font-size: .85rem; margin-top: 4px; }
+.paint .rgb { color: var(--muted); font-size: .75rem; margin-left: 4px; }
+.chip { display: inline-block; padding: 0 8px; border-radius: 999px; font-family: var(--font-mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); margin-left: 6px; vertical-align: middle; }
 
 .filament.primary { display: grid; grid-template-columns: 36px 1fr; gap: 10px; padding: 4px 0; margin-bottom: 4px; }
 .filament.primary .swatch.mini { width: 36px; height: 36px; border-radius: 6px; border: 1px solid var(--rule); }
-.filament.primary .fname { font-size: .92rem; line-height: 1.3; }
-.filament.primary .fname strong { font-weight: 700; font-size: .95rem; }
-.filament.primary .fname .color { color: var(--muted); font-size: .86rem; }
-.filament.primary .fsub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 4px; font-size: .86rem; font-family: var(--font-mono); font-weight: 600; }
-.filament.alt { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 5px 7px; align-items: center; padding: 5px 10px; font-size: .8rem; border-bottom: 1px solid var(--rule-soft); }
+.filament.primary .fname { font-size: .9rem; line-height: 1.3; }
+.filament.primary .fname strong { font-weight: 600; font-size: .95rem; }
+.filament.primary .fname .color { color: var(--muted); font-size: .82rem; }
+.filament.primary .fsub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 4px; font-size: .78rem; font-family: var(--font-mono); }
+.filament.alt { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 5px 7px; align-items: center; padding: 5px 10px; font-size: .76rem; border-bottom: 1px solid var(--rule-soft); }
 .filament.alt:hover { background: var(--bg-soft); }
 .filament.alt:last-child { border-bottom: none; }
 .filament.alt .swatch.tiny { width: 18px; height: 18px; border-radius: 4px; border: 1px solid var(--rule); }
-.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .84rem; }
-.filament.alt .fname-inline .color { color: var(--muted); font-size: .78rem; }
+.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .8rem; }
+.filament.alt .fname-inline .color { color: var(--muted); font-size: .74rem; }
 .filament.empty { color: var(--muted); font-style: italic; padding: 8px 10px; }
 
 @media (max-width: 600px) {
@@ -146,7 +146,7 @@ h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; wi
 
 /* ===== Footer, back to top ===== */
 footer.card-footer { margin-top: 30px; padding-top: 22px; text-align: center; border-top: 1px solid var(--rule); }
-footer.card-footer .brand { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--indigo-deep); letter-spacing: .1em; }
+footer.card-footer .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; color: var(--indigo-deep); letter-spacing: .1em; }
 footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font-weight: 600; color: var(--muted); letter-spacing: .18em; text-transform: uppercase; margin-top: 4px; }
 .to-top { width: 46px; height: 46px; border-radius: 50%; background: var(--indigo); text-decoration: none; box-shadow: 0 8px 18px -8px rgba(0,0,0,.5); }
 .to-top svg { width: 22px; height: 22px; fill: #fff; }
@@ -174,8 +174,13 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
 .fil-tip .t-sw, .hero-preview .t-sw { border: 2px solid var(--bg-paper); box-shadow: 0 0 0 1px var(--rule); border-radius: 50%; }
 .fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 700; }
 .fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; }
-.paint .name, .filament.primary .fname strong, footer.card-footer .brand, .hero-preview .t-name, .hero-preview.big .t-name, .fil-tip .t-name { font-family: var(--font-body); font-weight: 700; }
-.paint .name { font-size: 1.15rem; }/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
+.paint .name, .filament.primary .fname strong, footer.card-footer .brand, .hero-preview .t-name, .hero-preview.big .t-name, .fil-tip .t-name { font-family: var(--font-body); font-weight: 600; }
+.paint .name { font-size: 1.15rem; }
+
+/* ===== Collapse controls ("Show all filaments", per-row "Filaments") ===== */
+html .rows-bar button, html .row-toggle { font: 600 .74rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--indigo);
+  border: 1px solid var(--indigo); border-radius: 999px; padding: 4px 14px; background: transparent; }
+html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visible { background: var(--dl-sakura-weak); }/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
    are clipped by the card, the car spills over the frame). Indigo title, thin rules, soft shadow, no hard offsets. */
 .tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --sun: 140px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
 .tile--sakura .tile-frame { background: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow); }
@@ -188,13 +193,13 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
 .tile--sakura .tile-text { padding-top: 6px; max-width: none; }
 .tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 2.2rem; line-height: 1.05; letter-spacing: .01em; color: var(--dl-primary); }
 .tile--sakura .tile-name::after { content: ""; display: block; width: 46px; height: 4px; margin-top: 10px; border-radius: 2px; background: var(--dl-accent); }
-.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .22em; text-transform: uppercase; color: var(--dl-muted); }
-.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
-.tile--sakura .tile-label { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
-.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .12em; text-transform: uppercase; color: #fff;
+.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-meta { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
+.tile--sakura .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: #fff;
   background: var(--dl-primary); border: 1px solid var(--dl-primary); border-radius: 999px; box-shadow: var(--dl-shadow); }
 .tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent); color: #fff; }
-.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--dl-primary);
+.tile--sakura .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary);
   background: transparent; border: 1px solid var(--dl-primary); border-radius: 999px; }
 .tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-sakura-weak); color: var(--dl-primary-deep); }
 @media (max-width: 520px) {
@@ -211,10 +216,10 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
 .theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
   margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--dl-rule); }
 .theme-sakura .head-filters .year-nav { margin: 0; }
-.theme-sakura .head-filters .nav-label { font: 600 .8rem var(--dl-font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--dl-muted); }
+.theme-sakura .head-filters .nav-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-muted); }
 @media (max-width: 600px) {
-  .theme-sakura .head-card { padding: 22px 18px 18px; --sun: 140px; }
-  .theme-sakura .head-card .tile-name { font-size: 2.4rem; }
+  .theme-sakura .head-card { padding: 22px 18px 18px; --sun: 110px; }
+  .theme-sakura .head-card .tile-name { font-size: 2.1rem; }
   .theme-sakura .head-card .tile-tag { font-size: .85rem; }
 }
 .sg { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
@@ -244,12 +249,12 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
         </div>
       </div>
     </div><div class="col pla-col"><div class="col-label">PLA</div>
-      <div class="filament primary"><a class="pick" href="https://shop.example/p" target="_blank" rel="noopener" data-hex="#3B6A4D" data-name="Brand PLA Forest" data-slug="x" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://shop.example/p">
+      <div class="filament primary"><a class="pick" href="https://shop.example/p" target="_blank" rel="noopener" data-hex="#3B6A4D" data-name="Brand PLA Forest" data-slug="x" data-brand="Brand" data-material="PLA" data-color="Forest" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://shop.example/p">
         <div class="swatch mini" style="background:#3B6A4D"></div>
         <div class="finfo">
           <div class="fname"><strong>Brand</strong><span class="fline">PLA <span class="color">Forest</span></span></div>
         </div></a>
-        <div class="fsub"><span class="de vg">ΔE 2.4</span><span class="fhex">#3B6A4D</span><a class="shop-link" href="https://shop.example/p" target="_blank" rel="noopener">open shop</a></div>
+        <div class="fsub"><span class="de vg">ΔE 2.4</span><span class="fhex">#3B6A4D</span></div>
       </div>
     </div></article></div>
 </div></body></html>
