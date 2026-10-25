@@ -444,6 +444,8 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
 .cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
 .combos-f { margin-left: 6px; color: var(--muted); }
+.combos-ref { margin-left: 6px; color: var(--muted); }
+.combos-ref a { color: inherit; margin-right: 8px; }
 article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); margin-left: -16px; padding-left: 16px; }   /* the line sits in the margin, the content stays where it was */
 article.row.combo-out { display: none; }
 .t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
@@ -487,7 +489,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Silver Frost Poly" data-year="1974">
+        <article class="row" id="c1974-silver-frost-poly" data-paint="Silver Frost Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#48494C"></div>
@@ -688,7 +690,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Powder Blue" data-year="1974">
+        <article class="row" id="c1974-powder-blue" data-paint="Powder Blue" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#7A9EBC"></div>
@@ -853,7 +855,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Lucerne Blue Poly" data-year="1974">
+        <article class="row" id="c1974-lucerne-blue-poly" data-paint="Lucerne Blue Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#264061"></div>
@@ -1066,7 +1068,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Starlight Blue Poly" data-year="1974">
+        <article class="row" id="c1974-starlight-blue-poly" data-paint="Starlight Blue Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#121C37"></div>
@@ -1225,7 +1227,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Rallye Red" data-year="1974">
+        <article class="row" id="c1974-rallye-red" data-paint="Rallye Red" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9E150D"></div>
@@ -1390,7 +1392,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Burnished Red Poly" data-year="1974">
+        <article class="row" id="c1974-burnished-red-poly" data-paint="Burnished Red Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#481B18"></div>
@@ -1543,7 +1545,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Frosty Green Poly" data-year="1974">
+        <article class="row" id="c1974-frosty-green-poly" data-paint="Frosty Green Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4D6251"></div>
@@ -1744,7 +1746,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Deep Sherwood Poly" data-year="1974">
+        <article class="row" id="c1974-deep-sherwood-poly" data-paint="Deep Sherwood Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#17201A"></div>
@@ -1957,7 +1959,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Avocado Gold Poly" data-year="1974">
+        <article class="row" id="c1974-avocado-gold-poly" data-paint="Avocado Gold Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#403C20"></div>
@@ -2110,7 +2112,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sahara Beige" data-year="1974">
+        <article class="row" id="c1974-sahara-beige" data-paint="Sahara Beige" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#A89877"></div>
@@ -2275,7 +2277,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Aztec Gold Poly" data-year="1974">
+        <article class="row" id="c1974-aztec-gold-poly" data-paint="Aztec Gold Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#5B3A1B"></div>
@@ -2428,7 +2430,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Dark Moonstone Poly" data-year="1974">
+        <article class="row" id="c1974-dark-moonstone-poly" data-paint="Dark Moonstone Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#2A2119"></div>
@@ -2647,7 +2649,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sienna Poly" data-year="1974">
+        <article class="row" id="c1974-sienna-poly" data-paint="Sienna Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#592911"></div>
@@ -2794,7 +2796,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Dark Chestnut Poly" data-year="1974">
+        <article class="row" id="c1974-dark-chestnut-poly" data-paint="Dark Chestnut Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#241612"></div>
@@ -3013,7 +3015,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Spinnaker White" data-year="1974">
+        <article class="row" id="c1974-spinnaker-white" data-paint="Spinnaker White" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DFD9BA"></div>
@@ -3226,7 +3228,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sunfire Yellow" data-year="1974">
+        <article class="row" id="c1974-sunfire-yellow" data-paint="Sunfire Yellow" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#E5D277"></div>
@@ -3391,7 +3393,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Golden Fawn" data-year="1974">
+        <article class="row" id="c1974-golden-fawn" data-paint="Golden Fawn" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#967F49"></div>
@@ -3550,7 +3552,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Yellow Blaze" data-year="1974">
+        <article class="row" id="c1974-yellow-blaze" data-paint="Yellow Blaze" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DAC053"></div>
@@ -3751,7 +3753,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Golden Haze Poly" data-year="1974">
+        <article class="row" id="c1974-golden-haze-poly" data-paint="Golden Haze Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#7E5C35"></div>
@@ -3892,7 +3894,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tahitian Gold Poly" data-year="1974">
+        <article class="row" id="c1974-tahitian-gold-poly" data-paint="Tahitian Gold Poly" data-year="1974">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#332318"></div>
@@ -4034,7 +4036,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Silver Frost Poly" data-year="1973">
+        <article class="row" id="c1973-silver-frost-poly" data-paint="Silver Frost Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4A4F53"></div>
@@ -4235,7 +4237,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Blue Sky" data-year="1973">
+        <article class="row" id="c1973-blue-sky" data-paint="Blue Sky" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#89A3BC"></div>
@@ -4418,7 +4420,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Basin Street Blue" data-year="1973">
+        <article class="row" id="c1973-basin-street-blue" data-paint="Basin Street Blue" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#285A9B"></div>
@@ -4607,7 +4609,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="True Blue Poly" data-year="1973">
+        <article class="row" id="c1973-true-blue-poly" data-paint="True Blue Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1C325E"></div>
@@ -4820,7 +4822,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Regal Blue" data-year="1973">
+        <article class="row" id="c1973-regal-blue" data-paint="Regal Blue" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#111A26"></div>
@@ -5039,7 +5041,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Bright Green" data-year="1973">
+        <article class="row" id="c1973-bright-green" data-paint="Bright Green" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#2E4D27"></div>
@@ -5186,7 +5188,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Rallye Red" data-year="1973">
+        <article class="row" id="c1973-rallye-red" data-paint="Rallye Red" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#951812"></div>
@@ -5351,7 +5353,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Mist Green" data-year="1973">
+        <article class="row" id="c1973-mist-green" data-paint="Mist Green" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#8FA462"></div>
@@ -5492,7 +5494,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Amber Sherwood Poly" data-year="1973">
+        <article class="row" id="c1973-amber-sherwood-poly" data-paint="Amber Sherwood Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4F5B38"></div>
@@ -5687,7 +5689,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Forest Green Poly" data-year="1973">
+        <article class="row" id="c1973-forest-green-poly" data-paint="Forest Green Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1A2517"></div>
@@ -5846,7 +5848,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Meadow Green" data-year="1973">
+        <article class="row" id="c1973-meadow-green" data-paint="Meadow Green" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#88AD4D"></div>
@@ -6017,7 +6019,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Autumn Bronze Poly" data-year="1973">
+        <article class="row" id="c1973-autumn-bronze-poly" data-paint="Autumn Bronze Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3A1E12"></div>
@@ -6194,7 +6196,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sahara Beige" data-year="1973">
+        <article class="row" id="c1973-sahara-beige" data-paint="Sahara Beige" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#AA9779"></div>
@@ -6359,7 +6361,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Coral Turquoise Poly" data-year="1973">
+        <article class="row" id="c1973-coral-turquoise-poly" data-paint="Coral Turquoise Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1E3F57"></div>
@@ -6566,7 +6568,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Chestnut Poly" data-year="1973">
+        <article class="row" id="c1973-chestnut-poly" data-paint="Chestnut Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#422919"></div>
@@ -6719,7 +6721,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Spinnaker White" data-year="1973">
+        <article class="row" id="c1973-spinnaker-white" data-paint="Spinnaker White" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DDD3B9"></div>
@@ -6932,7 +6934,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Lemon Twist" data-year="1973">
+        <article class="row" id="c1973-lemon-twist" data-paint="Lemon Twist" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#EFD341"></div>
@@ -7139,7 +7141,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sunfire Yellow" data-year="1973">
+        <article class="row" id="c1973-sunfire-yellow" data-paint="Sunfire Yellow" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DBD47A"></div>
@@ -7304,7 +7306,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Honey Gold" data-year="1973">
+        <article class="row" id="c1973-honey-gold" data-paint="Honey Gold" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#AC965B"></div>
@@ -7481,7 +7483,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Golden Haze Poly" data-year="1973">
+        <article class="row" id="c1973-golden-haze-poly" data-paint="Golden Haze Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#685130"></div>
@@ -7622,7 +7624,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tahitian Gold Poly" data-year="1973">
+        <article class="row" id="c1973-tahitian-gold-poly" data-paint="Tahitian Gold Poly" data-year="1973">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#352818"></div>
@@ -7764,7 +7766,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Winchester Gray Poly" data-year="1972">
+        <article class="row" id="c1972-winchester-gray-poly" data-paint="Winchester Gray Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4D5E65"></div>
@@ -7965,7 +7967,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Silver Frost Poly" data-year="1972">
+        <article class="row" id="c1972-silver-frost-poly" data-paint="Silver Frost Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#575C64"></div>
@@ -8166,7 +8168,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Charcoal Poly" data-year="1972">
+        <article class="row" id="c1972-charcoal-poly" data-paint="Charcoal Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3B3F48"></div>
@@ -8385,7 +8387,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Blue Sky" data-year="1972">
+        <article class="row" id="c1972-blue-sky" data-paint="Blue Sky" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#98ADC3"></div>
@@ -8568,7 +8570,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Basin Street Blue" data-year="1972">
+        <article class="row" id="c1972-basin-street-blue" data-paint="Basin Street Blue" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#2C68A9"></div>
@@ -8757,7 +8759,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="True Blue Poly" data-year="1972">
+        <article class="row" id="c1972-true-blue-poly" data-paint="True Blue Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1B3C74"></div>
@@ -8970,7 +8972,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Evening Blue Poly" data-year="1972">
+        <article class="row" id="c1972-evening-blue-poly" data-paint="Evening Blue Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#071D40"></div>
@@ -9147,7 +9149,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Regal Blue Poly" data-year="1972">
+        <article class="row" id="c1972-regal-blue-poly" data-paint="Regal Blue Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#010A23"></div>
@@ -9276,7 +9278,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Bright Green" data-year="1972">
+        <article class="row" id="c1972-bright-green" data-paint="Bright Green" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#216320"></div>
@@ -9423,7 +9425,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Red" data-year="1972">
+        <article class="row" id="c1972-red" data-paint="Red" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9E0A02"></div>
@@ -9594,7 +9596,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Mist Green" data-year="1972">
+        <article class="row" id="c1972-mist-green" data-paint="Mist Green" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9DAF73"></div>
@@ -9735,7 +9737,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Amber Sherwood Poly" data-year="1972">
+        <article class="row" id="c1972-amber-sherwood-poly" data-paint="Amber Sherwood Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#576935"></div>
@@ -9930,7 +9932,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sherwood Green Poly" data-year="1972">
+        <article class="row" id="c1972-sherwood-green-poly" data-paint="Sherwood Green Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#26321A"></div>
@@ -10089,7 +10091,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Forest Green Poly" data-year="1972">
+        <article class="row" id="c1972-forest-green-poly" data-paint="Forest Green Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#13200E"></div>
@@ -10248,7 +10250,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tawney Gold Poly" data-year="1972">
+        <article class="row" id="c1972-tawney-gold-poly" data-paint="Tawney Gold Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#38301C"></div>
@@ -10431,7 +10433,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Meadow Green" data-year="1972">
+        <article class="row" id="c1972-meadow-green" data-paint="Meadow Green" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#96B75E"></div>
@@ -10602,7 +10604,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tahitian Gold Poly" data-year="1972">
+        <article class="row" id="c1972-tahitian-gold-poly" data-paint="Tahitian Gold Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#38240C"></div>
@@ -10737,7 +10739,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sahara Beige" data-year="1972">
+        <article class="row" id="c1972-sahara-beige" data-paint="Sahara Beige" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#B2A289"></div>
@@ -10902,7 +10904,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Coral Turquoise Poly" data-year="1972">
+        <article class="row" id="c1972-coral-turquoise-poly" data-paint="Coral Turquoise Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#114665"></div>
@@ -11109,7 +11111,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Mojave Tan Poly" data-year="1972">
+        <article class="row" id="c1972-mojave-tan-poly" data-paint="Mojave Tan Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#80592E"></div>
@@ -11250,7 +11252,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Chestnut Poly" data-year="1972">
+        <article class="row" id="c1972-chestnut-poly" data-paint="Chestnut Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4F2D11"></div>
@@ -11403,7 +11405,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tor-Red" data-year="1972">
+        <article class="row" id="c1972-tor-red" data-paint="Tor-Red" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#BF2C08"></div>
@@ -11622,7 +11624,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Spinnaker White" data-year="1972">
+        <article class="row" id="c1972-spinnaker-white" data-paint="Spinnaker White" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DDD7C7"></div>
@@ -11835,7 +11837,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Lemon Twist" data-year="1972">
+        <article class="row" id="c1972-lemon-twist" data-paint="Lemon Twist" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#EFD141"></div>
@@ -12042,7 +12044,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sun Fire Yellow" data-year="1972">
+        <article class="row" id="c1972-sun-fire-yellow" data-paint="Sun Fire Yellow" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DAD583"></div>
@@ -12201,7 +12203,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Honey Gold" data-year="1972">
+        <article class="row" id="c1972-honey-gold" data-paint="Honey Gold" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#B7A36B"></div>
@@ -12378,7 +12380,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Honeydew" data-year="1972">
+        <article class="row" id="c1972-honeydew" data-paint="Honeydew" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#AB9D6B"></div>
@@ -12537,7 +12539,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Golden Haze Poly" data-year="1972">
+        <article class="row" id="c1972-golden-haze-poly" data-paint="Golden Haze Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#745D34"></div>
@@ -12678,7 +12680,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Gold Leaf Poly" data-year="1972">
+        <article class="row" id="c1972-gold-leaf-poly" data-paint="Gold Leaf Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#786A41"></div>
@@ -12867,7 +12869,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tawny Gold Poly" data-year="1972">
+        <article class="row" id="c1972-tawny-gold-poly" data-paint="Tawny Gold Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#322B0E"></div>
@@ -13075,7 +13077,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Winchester Gray Poly" data-year="1971">
+        <article class="row" id="c1971-winchester-gray-poly" data-paint="Winchester Gray Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#47545B"></div>
@@ -13276,7 +13278,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Slate Gray Poly" data-year="1971">
+        <article class="row" id="c1971-slate-gray-poly" data-paint="Slate Gray Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#303940"></div>
@@ -13495,7 +13497,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Glacial Blue Poly" data-year="1971">
+        <article class="row" id="c1971-glacial-blue-poly" data-paint="Glacial Blue Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#395573"></div>
@@ -13702,7 +13704,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="True Blue Poly" data-year="1971">
+        <article class="row" id="c1971-true-blue-poly" data-paint="True Blue Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#233764"></div>
@@ -13915,7 +13917,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Evening Blue Poly" data-year="1971">
+        <article class="row" id="c1971-evening-blue-poly" data-paint="Evening Blue Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#18243C"></div>
@@ -14092,7 +14094,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="In-Violet Poly" data-year="1971">
+        <article class="row" id="c1971-in-violet-poly" data-paint="In-Violet Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#363156"></div>
@@ -14257,7 +14259,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Mood Indigo Poly" data-year="1971">
+        <article class="row" id="c1971-mood-indigo-poly" data-paint="Mood Indigo Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#151A37"></div>
@@ -14416,7 +14418,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Rallye Red" data-year="1971">
+        <article class="row" id="c1971-rallye-red" data-paint="Rallye Red" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#8A1514"></div>
@@ -14581,7 +14583,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Burnished Red Poly" data-year="1971">
+        <article class="row" id="c1971-burnished-red-poly" data-paint="Burnished Red Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#411C16"></div>
@@ -14734,7 +14736,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Amber Sherwood Poly" data-year="1971">
+        <article class="row" id="c1971-amber-sherwood-poly" data-paint="Amber Sherwood Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4D5E34"></div>
@@ -14929,7 +14931,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sherwood Green Poly" data-year="1971">
+        <article class="row" id="c1971-sherwood-green-poly" data-paint="Sherwood Green Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#293121"></div>
@@ -15088,7 +15090,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="April Green Poly" data-year="1971">
+        <article class="row" id="c1971-april-green-poly" data-paint="April Green Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#6C6A39"></div>
@@ -15271,7 +15273,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sassy Grass Green" data-year="1971">
+        <article class="row" id="c1971-sassy-grass-green" data-paint="Sassy Grass Green" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4D7B22"></div>
@@ -15424,7 +15426,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Autumn Bronze Poly" data-year="1971">
+        <article class="row" id="c1971-autumn-bronze-poly" data-paint="Autumn Bronze Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#321914"></div>
@@ -15601,7 +15603,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sandalwood Beige" data-year="1971">
+        <article class="row" id="c1971-sandalwood-beige" data-paint="Sandalwood Beige" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#A89D81"></div>
@@ -15778,7 +15780,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Bahama Yellow" data-year="1971">
+        <article class="row" id="c1971-bahama-yellow" data-paint="Bahama Yellow" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9A6927"></div>
@@ -15919,7 +15921,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Coral Turquoise Poly" data-year="1971">
+        <article class="row" id="c1971-coral-turquoise-poly" data-paint="Coral Turquoise Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1B3E57"></div>
@@ -16126,7 +16128,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tunisian Tan Poly" data-year="1971">
+        <article class="row" id="c1971-tunisian-tan-poly" data-paint="Tunisian Tan Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#7B6444"></div>
@@ -16285,7 +16287,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tahitian Walnut Poly" data-year="1971">
+        <article class="row" id="c1971-tahitian-walnut-poly" data-paint="Tahitian Walnut Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#463325"></div>
@@ -16444,7 +16446,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tor-Red" data-year="1971">
+        <article class="row" id="c1971-tor-red" data-paint="Tor-Red" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#B32815"></div>
@@ -16663,7 +16665,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Spinnaker White" data-year="1971">
+        <article class="row" id="c1971-spinnaker-white" data-paint="Spinnaker White" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DED8C2"></div>
@@ -16876,7 +16878,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sno-White" data-year="1971">
+        <article class="row" id="c1971-sno-white" data-paint="Sno-White" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#E8E9DD"></div>
@@ -17095,7 +17097,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Curious Yellow" data-year="1971">
+        <article class="row" id="c1971-curious-yellow" data-paint="Curious Yellow" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#B4C42C"></div>
@@ -17272,7 +17274,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Light Gold" data-year="1971">
+        <article class="row" id="c1971-light-gold" data-paint="Light Gold" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9F8F5C"></div>
@@ -17431,7 +17433,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Gold Leaf Poly" data-year="1971">
+        <article class="row" id="c1971-gold-leaf-poly" data-paint="Gold Leaf Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#6C5D3A"></div>
@@ -17620,7 +17622,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tawny Gold Poly" data-year="1971">
+        <article class="row" id="c1971-tawny-gold-poly" data-paint="Tawny Gold Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3A3324"></div>
@@ -17828,7 +17830,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Silver Poly" data-year="1970">
+        <article class="row" id="c1970-silver-poly" data-paint="Silver Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#797C74"></div>
@@ -18029,7 +18031,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Ice Blue Poly" data-year="1970">
+        <article class="row" id="c1970-ice-blue-poly" data-paint="Ice Blue Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3B576E"></div>
@@ -18230,7 +18232,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Blue Fire Poly" data-year="1970">
+        <article class="row" id="c1970-blue-fire-poly" data-paint="Blue Fire Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1D426D"></div>
@@ -18443,7 +18445,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Jamaica Blue Poly" data-year="1970">
+        <article class="row" id="c1970-jamaica-blue-poly" data-paint="Jamaica Blue Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#17273C"></div>
@@ -18650,7 +18652,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="In Violet" data-year="1970">
+        <article class="row" id="c1970-in-violet" data-paint="In Violet" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#343053"></div>
@@ -18815,7 +18817,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Rallye Red" data-year="1970">
+        <article class="row" id="c1970-rallye-red" data-paint="Rallye Red" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#8A1414"></div>
@@ -18980,7 +18982,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Lime Green Poly" data-year="1970">
+        <article class="row" id="c1970-lime-green-poly" data-paint="Lime Green Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4B5033"></div>
@@ -19163,7 +19165,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Ivy Green Poly" data-year="1970">
+        <article class="row" id="c1970-ivy-green-poly" data-paint="Ivy Green Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#23281C"></div>
@@ -19364,7 +19366,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Limelight Poly" data-year="1970">
+        <article class="row" id="c1970-limelight-poly" data-paint="Limelight Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#86B93B"></div>
@@ -19541,7 +19543,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sassy Grass Green" data-year="1970">
+        <article class="row" id="c1970-sassy-grass-green" data-paint="Sassy Grass Green" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#4D7B22"></div>
@@ -19694,7 +19696,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Vitamin &quot;C&quot;" data-year="1970">
+        <article class="row" id="c1970-vitamin-c" data-paint="Vitamin &quot;C&quot;" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#C04018"></div>
@@ -19907,7 +19909,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Burnt Orange Poly" data-year="1970">
+        <article class="row" id="c1970-burnt-orange-poly" data-paint="Burnt Orange Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#713427"></div>
@@ -20066,7 +20068,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Deep Burnt Orange Poly" data-year="1970">
+        <article class="row" id="c1970-deep-burnt-orange-poly" data-paint="Deep Burnt Orange Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#632A1E"></div>
@@ -20237,7 +20239,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sandpebble Beige" data-year="1970">
+        <article class="row" id="c1970-sandpebble-beige" data-paint="Sandpebble Beige" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#A79C80"></div>
@@ -20414,7 +20416,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Moulin Rouge" data-year="1970">
+        <article class="row" id="c1970-moulin-rouge" data-paint="Moulin Rouge" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#79263F"></div>
@@ -20567,7 +20569,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Frosted Teal Poly" data-year="1970">
+        <article class="row" id="c1970-frosted-teal-poly" data-paint="Frosted Teal Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#2D4A52"></div>
@@ -20780,7 +20782,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Scorch Red" data-year="1970">
+        <article class="row" id="c1970-scorch-red" data-paint="Scorch Red" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#5E1214"></div>
@@ -20927,7 +20929,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sahara Tan Poly" data-year="1970">
+        <article class="row" id="c1970-sahara-tan-poly" data-paint="Sahara Tan Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#6C5840"></div>
@@ -21080,7 +21082,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Burnt Tan Poly" data-year="1970">
+        <article class="row" id="c1970-burnt-tan-poly" data-paint="Burnt Tan Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#593D29"></div>
@@ -21245,7 +21247,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Walnut Poly" data-year="1970">
+        <article class="row" id="c1970-walnut-poly" data-paint="Walnut Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3F2E23"></div>
@@ -21410,7 +21412,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Tor-Red" data-year="1970">
+        <article class="row" id="c1970-tor-red" data-paint="Tor-Red" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#B42816"></div>
@@ -21629,7 +21631,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Alpine White" data-year="1970">
+        <article class="row" id="c1970-alpine-white" data-paint="Alpine White" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#DED7C1"></div>
@@ -21842,7 +21844,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Lemon Twist" data-year="1970">
+        <article class="row" id="c1970-lemon-twist" data-paint="Lemon Twist" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#F6CE32"></div>
@@ -22049,7 +22051,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sunfire Yellow" data-year="1970">
+        <article class="row" id="c1970-sunfire-yellow" data-paint="Sunfire Yellow" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#D7D371"></div>
@@ -22214,7 +22216,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Yellow Gold" data-year="1970">
+        <article class="row" id="c1970-yellow-gold" data-paint="Yellow Gold" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#C8B87C"></div>
@@ -22367,7 +22369,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Citron Mist Poly" data-year="1970">
+        <article class="row" id="c1970-citron-mist-poly" data-paint="Citron Mist Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#7A7458"></div>
@@ -22532,7 +22534,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Citron Gold Poly" data-year="1970">
+        <article class="row" id="c1970-citron-gold-poly" data-paint="Citron Gold Poly" data-year="1970">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#605A37"></div>
@@ -22893,15 +22895,18 @@ article.row.combo-out { display: none; }
     var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\"') + '"][data-year="' + year + '"]');
     return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
   }
+  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are
+  // marked wherever they are, "only these colours" hides every other row of the page, and a link names the other years.
   function marks(strip) {
     var on = strip.querySelector('.combo.on'), only = strip.querySelector('input').checked, y = strip.dataset.year,
-        rows = document.querySelectorAll('article.row[data-year="' + y + '"]');
-    rows.forEach(function (r) {
+        ref = strip.querySelector('.combos-ref'), far = [];
+    document.querySelectorAll('article.row').forEach(function (r) {
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
-      if (hit && window.openRow) window.openRow(r);
+      if (hit) { if (window.openRow) window.openRow(r); if (r.dataset.year !== y) far.push(r); }
     });
+    ref.innerHTML = far.map(function (r) { return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
   }
   document.addEventListener('click', function (e) {
     var cb = e.target.closest && e.target.closest('.combo');
@@ -22917,7 +22922,8 @@ article.row.combo-out { display: none; }
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
-      var strip = cb.closest('.combos'); strip.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
       cb.classList.add('on'); marks(strip);
     }
   });

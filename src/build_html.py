@@ -315,15 +315,18 @@ HERO_JS = """
     var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\\"') + '"][data-year="' + year + '"]');
     return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
   }
+  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are
+  // marked wherever they are, "only these colours" hides every other row of the page, and a link names the other years.
   function marks(strip) {
     var on = strip.querySelector('.combo.on'), only = strip.querySelector('input').checked, y = strip.dataset.year,
-        rows = document.querySelectorAll('article.row[data-year="' + y + '"]');
-    rows.forEach(function (r) {
+        ref = strip.querySelector('.combos-ref'), far = [];
+    document.querySelectorAll('article.row').forEach(function (r) {
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
-      if (hit && window.openRow) window.openRow(r);
+      if (hit) { if (window.openRow) window.openRow(r); if (r.dataset.year !== y) far.push(r); }
     });
+    ref.innerHTML = far.map(function (r) { return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
   }
   document.addEventListener('click', function (e) {
     var cb = e.target.closest && e.target.closest('.combo');
@@ -339,7 +342,8 @@ HERO_JS = """
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
-      var strip = cb.closest('.combos'); strip.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
       cb.classList.add('on'); marks(strip);
     }
   });
@@ -381,6 +385,8 @@ TIP_CSS = """
 .cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
 .cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
 .combos-f { margin-left: 6px; color: var(--muted); }
+.combos-ref { margin-left: 6px; color: var(--muted); }
+.combos-ref a { color: inherit; margin-right: 8px; }
 article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); margin-left: -16px; padding-left: 16px; }   /* the line sits in the margin, the content stays where it was */
 article.row.combo-out { display: none; }
 .t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
@@ -613,13 +619,15 @@ def combos_html(year, combos, matches):
         if len(cols) < 2 or not all(cols.values()):
             continue
         attrs = " ".join(f'data-{z}="{esc(m["name"])}" data-{z}-year="{m["year"]}"' for z, m in cols.items())
-        sw = "".join(f'<i class="cb-sw" style="background:{cols[z]["hex"]}" title="{esc(cols[z]["name"])}"></i>' for z in ("upper", "lower"))
+        def tip(m):
+            return m["name"] + ("" if m["year"] == year else f" ({m['year']} card)")
+        sw = "".join(f'<i class="cb-sw" style="background:{cols[z]["hex"]}" title="{esc(tip(cols[z]))}"></i>' for z in ("upper", "lower"))
         btns.append(f'<button type="button" class="combo" {attrs} title="{esc(cols["upper"]["name"])} over {esc(cols["lower"]["name"])}">'
                     f'<span class="cb-code">{esc(c["code"])}</span>{sw}</button>')
     if not btns:
         return ""
     return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
-            '<label class="combos-f"><input type="checkbox"> only these colours</label></div>')
+            '<label class="combos-f"><input type="checkbox"> only these colours</label><span class="combos-ref"></span></div>')
 
 def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""
@@ -668,7 +676,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
             <div class="col asa-col">{filament_column(by_name[r][m['name']].get('asa', []), 'ASA', fil_thumbs)}</div>
           </div>""" for r in regions)
             rows.append(f"""
-        <article class="row" data-paint="{esc(m['name'])}" data-year="{m['year']}">
+        <article class="row" id="c{m['year']}-{slugify(m['name'])}" data-paint="{esc(m['name'])}" data-year="{m['year']}">
           <div class="col paint-col">{paint_block(m)}<button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>{cols}
         </article>
         """)

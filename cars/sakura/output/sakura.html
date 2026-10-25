@@ -312,6 +312,8 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
 .cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
 .combos-f { margin-left: 6px; color: var(--muted); }
+.combos-ref { margin-left: 6px; color: var(--muted); }
+.combos-ref a { color: inherit; margin-right: 8px; }
 article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); margin-left: -16px; padding-left: 16px; }   /* the line sits in the margin, the content stays where it was */
 article.row.combo-out { display: none; }
 .t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
@@ -358,7 +360,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Kilimanjaro White" data-year="1972">
+        <article class="row" id="c1972-kilimanjaro-white" data-paint="Kilimanjaro White" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#D0D3CE"></div>
@@ -571,7 +573,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Silver Gray Poly" data-year="1972">
+        <article class="row" id="c1972-silver-gray-poly" data-paint="Silver Gray Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9FADB1"></div>
@@ -772,7 +774,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="New Sight Orange" data-year="1972">
+        <article class="row" id="c1972-new-sight-orange" data-paint="New Sight Orange" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#D56938"></div>
@@ -985,7 +987,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Red (Persimmon)" data-year="1972">
+        <article class="row" id="c1972-red-persimmon" data-paint="Red (Persimmon)" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#EF4422"></div>
@@ -1192,7 +1194,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Yellow (Lime)" data-year="1972">
+        <article class="row" id="c1972-yellow-lime" data-paint="Yellow (Lime)" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#A6B767"></div>
@@ -1369,7 +1371,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Avocado Green Poly" data-year="1972">
+        <article class="row" id="c1972-avocado-green-poly" data-paint="Avocado Green Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#62864E"></div>
@@ -1528,7 +1530,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Bronze Poly" data-year="1972">
+        <article class="row" id="c1972-bronze-poly" data-paint="Bronze Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#312623"></div>
@@ -1747,7 +1749,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Blue Poly" data-year="1972">
+        <article class="row" id="c1972-blue-poly" data-paint="Blue Poly" data-year="1972">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1C4875"></div>
@@ -1973,7 +1975,7 @@ article.row.combo-out { display: none; }
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>
-        <article class="row" data-paint="Kilimanjaro White" data-year="1971">
+        <article class="row" id="c1971-kilimanjaro-white" data-paint="Kilimanjaro White" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#D0D3CE"></div>
@@ -2186,7 +2188,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Universal Blue Poly" data-year="1971">
+        <article class="row" id="c1971-universal-blue-poly" data-paint="Universal Blue Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#2072A8"></div>
@@ -2381,7 +2383,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Safari Gold Poly" data-year="1971">
+        <article class="row" id="c1971-safari-gold-poly" data-paint="Safari Gold Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#C6902C"></div>
@@ -2564,7 +2566,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Silver Gray Poly" data-year="1971">
+        <article class="row" id="c1971-silver-gray-poly" data-paint="Silver Gray Poly" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#9FADB1"></div>
@@ -2765,7 +2767,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Racing Green" data-year="1971">
+        <article class="row" id="c1971-racing-green" data-paint="Racing Green" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#1F4A31"></div>
@@ -2942,7 +2944,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="New Sight Orange" data-year="1971">
+        <article class="row" id="c1971-new-sight-orange" data-paint="New Sight Orange" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#D56938"></div>
@@ -3155,7 +3157,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Monte Carlo Red" data-year="1971">
+        <article class="row" id="c1971-monte-carlo-red" data-paint="Monte Carlo Red" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#F64445"></div>
@@ -3344,7 +3346,7 @@ article.row.combo-out { display: none; }
           </div>
         </article>
         
-        <article class="row" data-paint="Sunshine Yellow" data-year="1971">
+        <article class="row" id="c1971-sunshine-yellow" data-paint="Sunshine Yellow" data-year="1971">
           <div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#EEEB82"></div>
@@ -3705,15 +3707,18 @@ article.row.combo-out { display: none; }
     var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\"') + '"][data-year="' + year + '"]');
     return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
   }
+  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are
+  // marked wherever they are, "only these colours" hides every other row of the page, and a link names the other years.
   function marks(strip) {
     var on = strip.querySelector('.combo.on'), only = strip.querySelector('input').checked, y = strip.dataset.year,
-        rows = document.querySelectorAll('article.row[data-year="' + y + '"]');
-    rows.forEach(function (r) {
+        ref = strip.querySelector('.combos-ref'), far = [];
+    document.querySelectorAll('article.row').forEach(function (r) {
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
-      if (hit && window.openRow) window.openRow(r);
+      if (hit) { if (window.openRow) window.openRow(r); if (r.dataset.year !== y) far.push(r); }
     });
+    ref.innerHTML = far.map(function (r) { return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
   }
   document.addEventListener('click', function (e) {
     var cb = e.target.closest && e.target.closest('.combo');
@@ -3729,7 +3734,8 @@ article.row.combo-out { display: none; }
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
-      var strip = cb.closest('.combos'); strip.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
       cb.classList.add('on'); marks(strip);
     }
   });
