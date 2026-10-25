@@ -19,7 +19,7 @@ chip can be checked against photos of the real paint. Per car, the manifest
 }
 
 Usage:
-    python calibrate_car.py --car <name> [--fetch] [--apply] [--pdf FILE]
+    python calibrate_car.py --car <name> [--fetch] [--apply [--only CODE,CODE]] [--pdf FILE]
 
   (default)  sample the photos, write data/calibration.json and the
              self-contained report data/calibration_report.html
@@ -27,6 +27,7 @@ Usage:
   --apply    write the suggested colour (mean of the photo medians) as
              `hex` + `hex_note` on the matching swatches of card_layout.json;
              measure_car.py then uses it and keeps the scan value as measured_hex
+  --only     with --apply: comma-separated car_codes, write only those (the rest stay as scanned)
   --pdf FILE print the report to a PDF with headless Chrome
 """
 import argparse, base64, io, json, subprocess, sys, urllib.request
@@ -101,6 +102,7 @@ def main():
     ap.add_argument("--car", default=config.DEFAULT_CAR)
     ap.add_argument("--fetch", action="store_true")
     ap.add_argument("--apply", action="store_true")
+    ap.add_argument("--only", help="with --apply: comma-separated car_codes to write")
     ap.add_argument("--pdf")
     args = ap.parse_args()
 
@@ -189,7 +191,8 @@ def main():
     if args.apply:
         lp = cdir / "card_layout.json"
         layout = json.loads(lp.read_text(encoding="utf-8"))
-        sug = {r["car_code"]: r for r in results}
+        only = set(args.only.split(",")) if args.only else None
+        sug = {r["car_code"]: r for r in results if only is None or r["car_code"] in only}
         n = 0
         for card in layout["cards"]:
             for sw in card["swatches"]:

@@ -2,8 +2,8 @@
   "name": "bamboo",
   "display": "3D Sets Bamboo",
   "script_tagline": "Mud, Teak & Chrome",
-  "subtitle_source": "Factory paint sheets (1964-1977)",
-  "years": [1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977],
+  "subtitle_source": "Factory paint sheets (1966-1977)",
+  "years": [1977, 1976, 1975, 1974, 1973, 1972, 1971, 1970, 1969, 1968, 1967, 1966],
   "pages_per_year": {
     "1964": 2, "1965": 2, "1966": 3, "1967": 3, "1968": 5,
     "1969": 17, "1970": 17, "1971": 17, "1972": 19, "1973": 18,
@@ -11,9 +11,11 @@
   },
   "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-Toyota.html",
   "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-toyota-pg{page:02d}.jpg",
+  "card_file_pattern": "{year}-bamboo-pg{page:02d}.jpg",
   "notes": [
-    "Source sheets cover each year's full line; only the chips that belong to the 4x4 utility model are picked by hand when card_layout.json is written.",
-    "The 1970 page markup does not link pg05, but the file exists on the CDN, so all 17 pages are fetched.",
-    "Many sheets are byte-identical across neighbouring years (the source reuses them); pick each chip once from its earliest year."
+    "Cards cover each year's full line; only the chips of the 4x4 utility model are picked by hand in card_layout.json. Several sheets are byte-identical across years, so a chip is sampled once from the clearest sheet and repeated for every year it was offered (carried_over_from).",
+    "1966-72 colours and years come from the card's own 'LANDCRUISER 1966-72' table (sources/1966-bamboo-pg03.jpg); card spellings are used for names (the table misspells Cygnus, Muleta, Appenino).",
+    "1973-77 years and the colours 304, 541, 031, 632, 637, 854, 1654 come from a community chart (importarchive.com, IH8MUD), not from Toyota: treat as less certain until checked against real-car photos.",
+    "1964-65 cards are used only as chip sources (T-451, T-452, T-1028, T-1208); no Land Cruiser year table exists for 1964-65."
   ]
 }

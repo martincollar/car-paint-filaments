@@ -1,0 +1,416 @@
+{
+ "photos_dir": "sources/photos",
+ "entries": [
+  {
+   "car_code": "012",
+   "note": "1972 FJ40 in aged original white (seller's colour name, no code) and the Cygnus White (T-12) hardtop of a 1976 truck; aged white reads cooler than the yellowed scan",
+   "photos": [
+    {
+     "file": "012_2.webp",
+     "url": "https://forum.ih8mud.com/attachments/img_1149-webp.4043514/",
+     "bbox": [
+      290,
+      290,
+      800,
+      430
+     ],
+     "mode": [
+      "neutral",
+      0.22,
+      0.55
+     ]
+    },
+    {
+     "file": "012_1.webp",
+     "url": "https://cdn.rmsothebys.com/c/f/7/0/c/d/cf70cd66da99afec2585cf4fa131f465876973df.webp",
+     "bbox": [
+      420,
+      62,
+      800,
+      90
+     ],
+     "mode": [
+      "neutral",
+      0.22,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "303",
+   "note": "two photos of a 1970 FJ40 in Fashion Green, restored 2013 (dealer claim, no code)",
+   "photos": [
+    {
+     "file": "303_1.webp",
+     "url": "https://images.squarespace-cdn.com/content/v1/5acced225b409b3ac7b67b84/1595536312596-3FC0MBDTT75URQ6D5ZM0/DSC_8277.jpg",
+     "bbox": [
+      420,
+      800,
+      1460,
+      1070
+     ],
+     "mode": [
+      "hue",
+      0.205,
+      0.285,
+      0.1,
+      0.29,
+      0.75
+     ]
+    },
+    {
+     "file": "303_2.webp",
+     "url": "https://images.squarespace-cdn.com/content/v1/5acced225b409b3ac7b67b84/1595536313412-0VUCNZU0KQ4ZFCSBHCUM/DSC_8292.jpg",
+     "bbox": [
+      1230,
+      620,
+      1640,
+      940
+     ],
+     "mode": [
+      "hue",
+      0.215,
+      0.295,
+      0.1,
+      0.31,
+      0.86
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "304",
+   "note": "1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree",
+   "photos": [
+    {
+     "file": "304_1.webp",
+     "url": "https://forum.ih8mud.com/attachments/img_0223-webp.1409236/",
+     "bbox": [
+      380,
+      45,
+      630,
+      170
+     ],
+     "mode": [
+      "hue",
+      0.025,
+      0.105,
+      0.34,
+      0.25,
+      0.96
+     ]
+    },
+    {
+     "file": "304_3.jpg",
+     "url": "https://www.motorcarclassics.com/galleria_images/1081/1081_main_l.jpg",
+     "bbox": [
+      300,
+      480,
+      805,
+      640
+     ],
+     "mode": [
+      "hue",
+      0.055,
+      0.135,
+      0.43,
+      0.57,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "309",
+   "note": "1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot",
+   "photos": [
+    {
+     "file": "309_1.jpg",
+     "url": "https://photos.classiccars.com/cc-temp/listing/160/7885/32484664-1979-toyota-fj-cruiser-thumb.jpg",
+     "bbox": [
+      440,
+      158,
+      600,
+      285
+     ],
+     "mode": [
+      "hue",
+      0.005,
+      0.085,
+      0.36,
+      0.47,
+      0.98
+     ]
+    },
+    {
+     "file": "309_2.webp",
+     "url": "https://cdn.rmsothebys.com/2/9/7/6/8/7/297687fd862b435f9162ac03245d12825019613b.webp",
+     "bbox": [
+      465,
+      240,
+      685,
+      340
+     ],
+     "mode": [
+      "hue",
+      -0.055,
+      0.025,
+      0.51,
+      0.45,
+      0.9
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "310",
+   "note": "1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky",
+   "photos": [
+    {
+     "file": "310_1.jpg",
+     "url": "https://barnfinds.com/wp-content/uploads/2024/02/1970-Toyota-Land-Cruiser-FJ40-Photo-06.jpg",
+     "bbox": [
+      0,
+      100,
+      2048,
+      1000
+     ],
+     "mode": [
+      "hue",
+      0.505,
+      0.585,
+      0.21,
+      0.22,
+      1.0
+     ]
+    },
+    {
+     "file": "310_2.jpg",
+     "url": "https://barnfinds.com/wp-content/uploads/2024/02/1970-Toyota-Land-Cruiser-FJ40-Photo-07.jpg",
+     "bbox": [
+      0,
+      1250,
+      2048,
+      2040
+     ],
+     "mode": [
+      "hue",
+      0.505,
+      0.585,
+      0.2,
+      0.78,
+      0.97
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "416",
+   "note": "1976 truck repainted in Dune Beige, plate code 416 quoted",
+   "photos": [
+    {
+     "file": "416_1.webp",
+     "url": "https://cdn.rmsothebys.com/c/f/7/0/c/d/cf70cd66da99afec2585cf4fa131f465876973df.webp",
+     "bbox": [
+      610,
+      215,
+      880,
+      350
+     ],
+     "mode": [
+      "hue",
+      0.055,
+      0.135,
+      0.14,
+      0.12,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "541",
+   "note": "1976 FJ40 in original-looking mustard paint (owner claim); a plate-verified post gives code 532, not 541",
+   "photos": [
+    {
+     "file": "541_2.webp",
+     "url": "https://forum.ih8mud.com/attachments/img_2752-webp.4098664/",
+     "bbox": [
+      30,
+      670,
+      1230,
+      900
+     ],
+     "mode": [
+      "hue",
+      0.075,
+      0.155,
+      0.39,
+      0.39,
+      0.66
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "621",
+   "note": "1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)",
+   "photos": [
+    {
+     "file": "621_1.webp",
+     "url": "https://forum.ih8mud.com/attachments/img_4263-webp.3824370/",
+     "bbox": [
+      600,
+      545,
+      1245,
+      680
+     ],
+     "mode": [
+      "hue",
+      0.465,
+      0.545,
+      0.29,
+      0.22,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "622",
+   "note": "1973 FJ40 restored in Nebula Green (listing), studio cut-out",
+   "photos": [
+    {
+     "file": "622_1.jpg",
+     "url": "https://photos.classiccars.com/cc-temp/listing/105/982/10543426-1973-toyota-land-cruiser-fj-thumb.jpg",
+     "bbox": [
+      420,
+      172,
+      495,
+      255
+     ],
+     "mode": [
+      "hue",
+      0.365,
+      0.445,
+      0.11,
+      0.4,
+      0.58
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "637",
+   "note": "1977 FJ40 repainted 'Olive Green' (article); brownish under low sun",
+   "photos": [
+    {
+     "file": "637_1.jpg",
+     "url": "https://cdn.motor1.com/images/mgl/J7EYK/s4/take-a-cruise-in-this-olive-green-1977-toyota-fj40.jpg",
+     "bbox": [
+      280,
+      255,
+      605,
+      320
+     ],
+     "mode": [
+      "hue",
+      0.055,
+      0.135,
+      0.41,
+      0.2,
+      0.78
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "854",
+   "note": "1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs",
+   "photos": [
+    {
+     "file": "854_1.jpg",
+     "url": "https://barnfinds.com/wp-content/uploads/2023/10/1977-Toyota-Landcruiser-FJ40_20231018-001-630x390.jpeg",
+     "bbox": [
+      90,
+      135,
+      385,
+      232
+     ],
+     "mode": [
+      "hue",
+      0.495,
+      0.575,
+      0.26,
+      0.3,
+      1.0
+     ]
+    },
+    {
+     "file": "854_2.webp",
+     "url": "https://assets.basta.app/accounts/005fe31d-e133-4f0b-ac58-2c2cd5f3301c/images/07f555aa-b615-4606-8795-42573d8d9d66?width=1000&quality=75&format=webp",
+     "bbox": [
+      600,
+      230,
+      885,
+      355
+     ],
+     "mode": [
+      "hue",
+      0.525,
+      0.605,
+      0.43,
+      0.33,
+      0.99
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "1028",
+   "note": "1966 FJ40 restored in Spring Green (listing), no code quoted",
+   "photos": [
+    {
+     "file": "1028_1.webp",
+     "url": "https://cdn.rmsothebys.com/d/9/6/5/7/d/d9657d31f7a3ffded541f5171e058441fd253b08.webp",
+     "bbox": [
+      535,
+      212,
+      830,
+      318
+     ],
+     "mode": [
+      "hue",
+      0.325,
+      0.405,
+      0.13,
+      0.49,
+      0.76
+     ]
+    }
+   ]
+  },
+  {
+   "car_code": "1453",
+   "note": "1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo",
+   "photos": [
+    {
+     "file": "1453_1.jpg",
+     "url": "https://forum.ih8mud.com/data/attachments/3966/3966749-a2609f3d287f760cbf3b039e4172a3ab.jpg?hash=tE7GcK3k1G",
+     "bbox": [
+      113,
+      150,
+      372,
+      195
+     ],
+     "mode": [
+      "neutral",
+      0.22,
+      0.55
+     ]
+    }
+   ]
+  }
+ ]
+}

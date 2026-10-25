@@ -1,6 +1,1179 @@
 {
-  "box_width": 120,
-  "box_height": 35,
+  "box_width": 40,
+  "box_height": 18,
   "source_url_template": "https://www.autocolorlibrary.com/pages/{year}-Toyota.html",
-  "cards": []
+  "cards": [
+    {
+      "card_file": "1964-bamboo-pg01.jpg",
+      "box_width": 56,
+      "box_height": 26,
+      "swatches": [
+        {
+          "cx": 365,
+          "cy": 138,
+          "name": "Colorado Beige",
+          "year": 1968,
+          "car_code": "451",
+          "paint_ref": "22924",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 365,
+          "cy": 138,
+          "name": "Colorado Beige",
+          "year": 1969,
+          "car_code": "451",
+          "paint_ref": "22924",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 365,
+          "cy": 138,
+          "name": "Colorado Beige",
+          "year": 1970,
+          "car_code": "451",
+          "paint_ref": "22924",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 365,
+          "cy": 138,
+          "name": "Colorado Beige",
+          "year": 1971,
+          "car_code": "451",
+          "paint_ref": "22924",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1967,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1968,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1969,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1972,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1973,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 363,
+          "cy": 215,
+          "name": "Royal Blue",
+          "year": 1974,
+          "car_code": "452/822",
+          "paint_ref": "13498",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1966,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1967,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1968,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1969,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1970,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 361,
+          "cy": 525,
+          "name": "Spring Green",
+          "year": 1971,
+          "car_code": "1028",
+          "paint_ref": "43550",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1966,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1967,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1968,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1969,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1970,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1971,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        },
+        {
+          "cx": 655,
+          "cy": 142,
+          "name": "Horizon Blue",
+          "year": 1972,
+          "car_code": "1208",
+          "paint_ref": "13211",
+          "poly": false,
+          "carried_over_from": 1964
+        }
+      ]
+    },
+    {
+      "card_file": "1968-bamboo-pg01.jpg",
+      "box_width": 56,
+      "box_height": 26,
+      "swatches": [
+        {
+          "cx": 138,
+          "cy": 145,
+          "name": "Capri Blue",
+          "year": 1969,
+          "car_code": "310",
+          "paint_ref": "12168",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#85CBE1",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+        },
+        {
+          "cx": 138,
+          "cy": 145,
+          "name": "Capri Blue",
+          "year": 1970,
+          "car_code": "310",
+          "paint_ref": "12168",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#85CBE1",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+        },
+        {
+          "cx": 138,
+          "cy": 145,
+          "name": "Capri Blue",
+          "year": 1971,
+          "car_code": "310",
+          "paint_ref": "12168",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#85CBE1",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1968,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1969,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1970,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1971,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1972,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1973,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 427,
+          "cy": 300,
+          "name": "Pluto Beige",
+          "year": 1974,
+          "car_code": "1352",
+          "paint_ref": "23122",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 572,
+          "cy": 380,
+          "name": "Olympus White",
+          "year": 1968,
+          "car_code": "1453",
+          "paint_ref": "8863",
+          "poly": false,
+          "hex": "#D8D9CE",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 572,
+          "cy": 380,
+          "name": "Olympus White",
+          "year": 1969,
+          "car_code": "1453",
+          "paint_ref": "8863",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#D8D9CE",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 572,
+          "cy": 380,
+          "name": "Olympus White",
+          "year": 1970,
+          "car_code": "1453",
+          "paint_ref": "8863",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#D8D9CE",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 572,
+          "cy": 380,
+          "name": "Olympus White",
+          "year": 1971,
+          "car_code": "1453",
+          "paint_ref": "8863",
+          "poly": false,
+          "carried_over_from": 1968,
+          "hex": "#D8D9CE",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 571,
+          "cy": 455,
+          "name": "Muleta Red",
+          "year": 1968,
+          "car_code": "1454",
+          "paint_ref": "71897",
+          "poly": false
+        },
+        {
+          "cx": 571,
+          "cy": 455,
+          "name": "Muleta Red",
+          "year": 1969,
+          "car_code": "1454",
+          "paint_ref": "71897",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 571,
+          "cy": 455,
+          "name": "Muleta Red",
+          "year": 1970,
+          "car_code": "1454",
+          "paint_ref": "71897",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 571,
+          "cy": 455,
+          "name": "Muleta Red",
+          "year": 1971,
+          "car_code": "1454",
+          "paint_ref": "71897",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 572,
+          "cy": 534,
+          "name": "Appenino Brown",
+          "year": 1968,
+          "car_code": "1455",
+          "paint_ref": "23534",
+          "poly": false
+        },
+        {
+          "cx": 572,
+          "cy": 534,
+          "name": "Appenino Brown",
+          "year": 1969,
+          "car_code": "1455",
+          "paint_ref": "23534",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 572,
+          "cy": 534,
+          "name": "Appenino Brown",
+          "year": 1970,
+          "car_code": "1455",
+          "paint_ref": "23534",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 572,
+          "cy": 534,
+          "name": "Appenino Brown",
+          "year": 1971,
+          "car_code": "1455",
+          "paint_ref": "23534",
+          "poly": false,
+          "carried_over_from": 1968
+        },
+        {
+          "cx": 572,
+          "cy": 534,
+          "name": "Appenino Brown",
+          "year": 1972,
+          "car_code": "1455",
+          "paint_ref": "23534",
+          "poly": false,
+          "carried_over_from": 1968
+        }
+      ]
+    },
+    {
+      "card_file": "1969-bamboo-pg04.jpg",
+      "swatches": [
+        {
+          "cx": 355,
+          "cy": 229,
+          "name": "Pollux Orange",
+          "year": 1971,
+          "car_code": "304",
+          "paint_ref": "9164",
+          "poly": false,
+          "carried_over_from": 1969,
+          "hex": "#B57F29",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+        },
+        {
+          "cx": 355,
+          "cy": 229,
+          "name": "Pollux Orange",
+          "year": 1972,
+          "car_code": "304",
+          "paint_ref": "9164",
+          "poly": false,
+          "carried_over_from": 1969,
+          "hex": "#B57F29",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+        },
+        {
+          "cx": 355,
+          "cy": 229,
+          "name": "Pollux Orange",
+          "year": 1973,
+          "car_code": "304",
+          "paint_ref": "9164",
+          "poly": false,
+          "carried_over_from": 1969,
+          "hex": "#B57F29",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+        },
+        {
+          "cx": 355,
+          "cy": 229,
+          "name": "Pollux Orange",
+          "year": 1974,
+          "car_code": "304",
+          "paint_ref": "9164",
+          "poly": false,
+          "carried_over_from": 1969,
+          "hex": "#B57F29",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+        },
+        {
+          "cx": 355,
+          "cy": 229,
+          "name": "Pollux Orange",
+          "year": 1975,
+          "car_code": "304",
+          "paint_ref": "9164",
+          "poly": false,
+          "carried_over_from": 1969,
+          "hex": "#B57F29",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+        }
+      ]
+    },
+    {
+      "card_file": "1971-bamboo-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 436,
+          "cy": 496,
+          "name": "Fashion Green #2",
+          "year": 1970,
+          "car_code": "303",
+          "paint_ref": "44402",
+          "poly": false,
+          "carried_over_from": 1971,
+          "hex": "#AAB79C",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #4B5C4C. two photos of a 1970 FJ40 in Fashion Green, restored 2013 (dealer claim, no code)"
+        },
+        {
+          "cx": 436,
+          "cy": 496,
+          "name": "Fashion Green #2",
+          "year": 1971,
+          "car_code": "303",
+          "paint_ref": "44402",
+          "poly": false,
+          "hex": "#AAB79C",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #4B5C4C. two photos of a 1970 FJ40 in Fashion Green, restored 2013 (dealer claim, no code)"
+        },
+        {
+          "cx": 439,
+          "cy": 682,
+          "name": "Vesuvius Red",
+          "year": 1970,
+          "car_code": "1708",
+          "paint_ref": "71906",
+          "poly": false,
+          "carried_over_from": 1971
+        },
+        {
+          "cx": 439,
+          "cy": 682,
+          "name": "Vesuvius Red",
+          "year": 1971,
+          "car_code": "1708",
+          "paint_ref": "71906",
+          "poly": false
+        },
+        {
+          "cx": 436,
+          "cy": 305,
+          "name": "Breathe Green",
+          "year": 1972,
+          "car_code": "1654",
+          "paint_ref": "44399",
+          "poly": false,
+          "carried_over_from": 1971
+        },
+        {
+          "cx": 436,
+          "cy": 305,
+          "name": "Breathe Green",
+          "year": 1973,
+          "car_code": "1654",
+          "paint_ref": "44399",
+          "poly": false,
+          "carried_over_from": 1971
+        }
+      ]
+    },
+    {
+      "card_file": "1972-bamboo-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 548,
+          "cy": 434,
+          "name": "Cygnus White",
+          "year": 1972,
+          "car_code": "012",
+          "paint_ref": "0833",
+          "poly": false
+        },
+        {
+          "cx": 548,
+          "cy": 434,
+          "name": "Cygnus White",
+          "year": 1973,
+          "car_code": "012",
+          "paint_ref": "0833",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 548,
+          "cy": 434,
+          "name": "Cygnus White",
+          "year": 1974,
+          "car_code": "012",
+          "paint_ref": "0833",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 548,
+          "cy": 434,
+          "name": "Cygnus White",
+          "year": 1975,
+          "car_code": "012",
+          "paint_ref": "0833",
+          "poly": false,
+          "carried_over_from": 1972
+        }
+      ]
+    },
+    {
+      "card_file": "1972-bamboo-pg03.jpg",
+      "swatches": [
+        {
+          "cx": 336,
+          "cy": 564,
+          "name": "Heath Gray",
+          "year": 1972,
+          "car_code": "113",
+          "paint_ref": "33024",
+          "poly": false
+        },
+        {
+          "cx": 336,
+          "cy": 564,
+          "name": "Heath Gray",
+          "year": 1973,
+          "car_code": "113",
+          "paint_ref": "33024",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 336,
+          "cy": 564,
+          "name": "Heath Gray",
+          "year": 1974,
+          "car_code": "113",
+          "paint_ref": "33024",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1972,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1973,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1974,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1975,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1976,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 555,
+          "cy": 309,
+          "name": "Freeborn Red",
+          "year": 1977,
+          "car_code": "309",
+          "paint_ref": "71999",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#A50D1E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+        },
+        {
+          "cx": 224,
+          "cy": 687,
+          "name": "Buffalo Brown",
+          "year": 1972,
+          "car_code": "414",
+          "paint_ref": "23753",
+          "poly": false
+        },
+        {
+          "cx": 225,
+          "cy": 565,
+          "name": "Pueblo Brown",
+          "year": 1972,
+          "car_code": "415",
+          "paint_ref": "23748",
+          "poly": false
+        },
+        {
+          "cx": 225,
+          "cy": 565,
+          "name": "Pueblo Brown",
+          "year": 1973,
+          "car_code": "415",
+          "paint_ref": "23748",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 225,
+          "cy": 565,
+          "name": "Pueblo Brown",
+          "year": 1974,
+          "car_code": "415",
+          "paint_ref": "23748",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 225,
+          "cy": 565,
+          "name": "Pueblo Brown",
+          "year": 1975,
+          "car_code": "415",
+          "paint_ref": "23748",
+          "poly": false,
+          "carried_over_from": 1972
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1972,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1973,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1974,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1975,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1976,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 334,
+          "cy": 113,
+          "name": "Dune Beige",
+          "year": 1977,
+          "car_code": "416",
+          "paint_ref": "23754",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#B5A588",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1972,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1973,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1974,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1975,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1976,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 445,
+          "cy": 563,
+          "name": "Rustic Green",
+          "year": 1977,
+          "car_code": "621",
+          "paint_ref": "44682",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#275255",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+        },
+        {
+          "cx": 444,
+          "cy": 501,
+          "name": "Nebula Green",
+          "year": 1972,
+          "car_code": "622",
+          "paint_ref": "44678",
+          "poly": false,
+          "hex": "#60786A",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #435E4D. 1973 FJ40 restored in Nebula Green (listing), studio cut-out"
+        },
+        {
+          "cx": 444,
+          "cy": 501,
+          "name": "Nebula Green",
+          "year": 1974,
+          "car_code": "622",
+          "paint_ref": "44678",
+          "poly": false,
+          "carried_over_from": 1972,
+          "hex": "#60786A",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #435E4D. 1973 FJ40 restored in Nebula Green (listing), studio cut-out"
+        }
+      ]
+    },
+    {
+      "card_file": "1974-bamboo-pg07.jpg",
+      "swatches": [
+        {
+          "cx": 356,
+          "cy": 149,
+          "name": "Shadow Green",
+          "year": 1973,
+          "car_code": "632",
+          "paint_ref": "AE11",
+          "poly": false,
+          "carried_over_from": 1974
+        },
+        {
+          "cx": 356,
+          "cy": 149,
+          "name": "Shadow Green",
+          "year": 1974,
+          "car_code": "632",
+          "paint_ref": "AE11",
+          "poly": false
+        },
+        {
+          "cx": 356,
+          "cy": 149,
+          "name": "Shadow Green",
+          "year": 1975,
+          "car_code": "632",
+          "paint_ref": "AE11",
+          "poly": false,
+          "carried_over_from": 1974
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1972,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1973,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1974,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1975,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1976,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 356,
+          "cy": 222,
+          "name": "Olive Green",
+          "year": 1977,
+          "car_code": "637",
+          "paint_ref": "CC31",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#8F6525",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+        },
+        {
+          "cx": 36,
+          "cy": 462,
+          "name": "Blue",
+          "year": 1975,
+          "car_code": "854",
+          "paint_ref": "CC34",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#46BAE2",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+        },
+        {
+          "cx": 36,
+          "cy": 462,
+          "name": "Blue",
+          "year": 1976,
+          "car_code": "854",
+          "paint_ref": "CC34",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#46BAE2",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+        },
+        {
+          "cx": 36,
+          "cy": 462,
+          "name": "Blue",
+          "year": 1977,
+          "car_code": "854",
+          "paint_ref": "CC34",
+          "poly": false,
+          "carried_over_from": 1974,
+          "hex": "#46BAE2",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+        }
+      ]
+    },
+    {
+      "card_file": "1977-bamboo-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 444,
+          "cy": 237,
+          "name": "Yellow",
+          "year": 1975,
+          "car_code": "541",
+          "paint_ref": "82384",
+          "poly": false,
+          "carried_over_from": 1977
+        },
+        {
+          "cx": 444,
+          "cy": 237,
+          "name": "Yellow",
+          "year": 1976,
+          "car_code": "541",
+          "paint_ref": "82384",
+          "poly": false,
+          "carried_over_from": 1977
+        },
+        {
+          "cx": 444,
+          "cy": 237,
+          "name": "Yellow",
+          "year": 1977,
+          "car_code": "541",
+          "paint_ref": "82384",
+          "poly": false
+        },
+        {
+          "cx": 340,
+          "cy": 503,
+          "name": "White",
+          "year": 1976,
+          "car_code": "031",
+          "paint_ref": "90100",
+          "poly": false,
+          "carried_over_from": 1977
+        },
+        {
+          "cx": 340,
+          "cy": 503,
+          "name": "White",
+          "year": 1977,
+          "car_code": "031",
+          "paint_ref": "90100",
+          "poly": false
+        }
+      ]
+    }
+  ]
 }

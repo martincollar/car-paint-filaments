@@ -1,0 +1,2208 @@
+[
+  {
+    "name": "Colorado Beige",
+    "year": 1968,
+    "car_code": "451",
+    "paint_ref": "22924",
+    "rgb": [
+      149,
+      131,
+      107
+    ],
+    "hex": "#95836B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      365,
+      138
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Colorado Beige",
+    "year": 1969,
+    "car_code": "451",
+    "paint_ref": "22924",
+    "rgb": [
+      149,
+      131,
+      107
+    ],
+    "hex": "#95836B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      365,
+      138
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Colorado Beige",
+    "year": 1970,
+    "car_code": "451",
+    "paint_ref": "22924",
+    "rgb": [
+      149,
+      131,
+      107
+    ],
+    "hex": "#95836B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      365,
+      138
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Colorado Beige",
+    "year": 1971,
+    "car_code": "451",
+    "paint_ref": "22924",
+    "rgb": [
+      149,
+      131,
+      107
+    ],
+    "hex": "#95836B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      365,
+      138
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1967,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1967-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1968,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1969,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1972,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1973,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Royal Blue",
+    "year": 1974,
+    "car_code": "452/822",
+    "paint_ref": "13498",
+    "rgb": [
+      23,
+      73,
+      108
+    ],
+    "hex": "#17496C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      363,
+      215
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1966,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1966-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1967,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1967-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1968,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1969,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1970,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Spring Green",
+    "year": 1971,
+    "car_code": "1028",
+    "paint_ref": "43550",
+    "rgb": [
+      167,
+      195,
+      155
+    ],
+    "hex": "#A7C39B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      361,
+      525
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1966,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1966-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1967,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1967-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1968,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1969,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1970,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1971,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Horizon Blue",
+    "year": 1972,
+    "car_code": "1208",
+    "paint_ref": "13211",
+    "rgb": [
+      102,
+      136,
+      137
+    ],
+    "hex": "#668889",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1964-bamboo-pg01.jpg",
+    "source_pos": [
+      655,
+      142
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Capri Blue",
+    "year": 1969,
+    "car_code": "310",
+    "paint_ref": "12168",
+    "rgb": [
+      133,
+      203,
+      225
+    ],
+    "hex": "#85CBE1",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      138,
+      145
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#5E7587",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+  },
+  {
+    "name": "Capri Blue",
+    "year": 1970,
+    "car_code": "310",
+    "paint_ref": "12168",
+    "rgb": [
+      133,
+      203,
+      225
+    ],
+    "hex": "#85CBE1",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      138,
+      145
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#5E7587",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+  },
+  {
+    "name": "Capri Blue",
+    "year": 1971,
+    "car_code": "310",
+    "paint_ref": "12168",
+    "rgb": [
+      133,
+      203,
+      225
+    ],
+    "hex": "#85CBE1",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      138,
+      145
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#5E7587",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #5E7587. 1970 project truck in Capri Blue (listing), weathered paint; the hood top reflects the sky"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1968,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1969,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1970,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1971,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1972,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1973,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pluto Beige",
+    "year": 1974,
+    "car_code": "1352",
+    "paint_ref": "23122",
+    "rgb": [
+      170,
+      149,
+      118
+    ],
+    "hex": "#AA9576",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      427,
+      300
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Olympus White",
+    "year": 1968,
+    "car_code": "1453",
+    "paint_ref": "8863",
+    "rgb": [
+      216,
+      217,
+      206
+    ],
+    "hex": "#D8D9CE",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      380
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#C8C1A5",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Olympus White",
+    "year": 1969,
+    "car_code": "1453",
+    "paint_ref": "8863",
+    "rgb": [
+      216,
+      217,
+      206
+    ],
+    "hex": "#D8D9CE",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      380
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#C8C1A5",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Olympus White",
+    "year": 1970,
+    "car_code": "1453",
+    "paint_ref": "8863",
+    "rgb": [
+      216,
+      217,
+      206
+    ],
+    "hex": "#D8D9CE",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      380
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#C8C1A5",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Olympus White",
+    "year": 1971,
+    "car_code": "1453",
+    "paint_ref": "8863",
+    "rgb": [
+      216,
+      217,
+      206
+    ],
+    "hex": "#D8D9CE",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      380
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#C8C1A5",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #C8C1A5. 1969 survivor sold as original 'Olympus white 1453' (seller claim); warm brick paving tints the photo. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Muleta Red",
+    "year": 1968,
+    "car_code": "1454",
+    "paint_ref": "71897",
+    "rgb": [
+      160,
+      10,
+      19
+    ],
+    "hex": "#A00A13",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      571,
+      455
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Muleta Red",
+    "year": 1969,
+    "car_code": "1454",
+    "paint_ref": "71897",
+    "rgb": [
+      160,
+      10,
+      19
+    ],
+    "hex": "#A00A13",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      571,
+      455
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Muleta Red",
+    "year": 1970,
+    "car_code": "1454",
+    "paint_ref": "71897",
+    "rgb": [
+      160,
+      10,
+      19
+    ],
+    "hex": "#A00A13",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      571,
+      455
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Muleta Red",
+    "year": 1971,
+    "car_code": "1454",
+    "paint_ref": "71897",
+    "rgb": [
+      160,
+      10,
+      19
+    ],
+    "hex": "#A00A13",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      571,
+      455
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Appenino Brown",
+    "year": 1968,
+    "car_code": "1455",
+    "paint_ref": "23534",
+    "rgb": [
+      116,
+      86,
+      62
+    ],
+    "hex": "#74563E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1968-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Appenino Brown",
+    "year": 1969,
+    "car_code": "1455",
+    "paint_ref": "23534",
+    "rgb": [
+      116,
+      86,
+      62
+    ],
+    "hex": "#74563E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1969-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Appenino Brown",
+    "year": 1970,
+    "car_code": "1455",
+    "paint_ref": "23534",
+    "rgb": [
+      116,
+      86,
+      62
+    ],
+    "hex": "#74563E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Appenino Brown",
+    "year": 1971,
+    "car_code": "1455",
+    "paint_ref": "23534",
+    "rgb": [
+      116,
+      86,
+      62
+    ],
+    "hex": "#74563E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Appenino Brown",
+    "year": 1972,
+    "car_code": "1455",
+    "paint_ref": "23534",
+    "rgb": [
+      116,
+      86,
+      62
+    ],
+    "hex": "#74563E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1968-bamboo-pg01.jpg",
+    "source_pos": [
+      572,
+      534
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pollux Orange",
+    "year": 1971,
+    "car_code": "304",
+    "paint_ref": "9164",
+    "rgb": [
+      181,
+      127,
+      41
+    ],
+    "hex": "#B57F29",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1969-bamboo-pg04.jpg",
+    "source_pos": [
+      355,
+      229
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#AC571A",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+  },
+  {
+    "name": "Pollux Orange",
+    "year": 1972,
+    "car_code": "304",
+    "paint_ref": "9164",
+    "rgb": [
+      181,
+      127,
+      41
+    ],
+    "hex": "#B57F29",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1969-bamboo-pg04.jpg",
+    "source_pos": [
+      355,
+      229
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#AC571A",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+  },
+  {
+    "name": "Pollux Orange",
+    "year": 1973,
+    "car_code": "304",
+    "paint_ref": "9164",
+    "rgb": [
+      181,
+      127,
+      41
+    ],
+    "hex": "#B57F29",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1969-bamboo-pg04.jpg",
+    "source_pos": [
+      355,
+      229
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#AC571A",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+  },
+  {
+    "name": "Pollux Orange",
+    "year": 1974,
+    "car_code": "304",
+    "paint_ref": "9164",
+    "rgb": [
+      181,
+      127,
+      41
+    ],
+    "hex": "#B57F29",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1969-bamboo-pg04.jpg",
+    "source_pos": [
+      355,
+      229
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#AC571A",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+  },
+  {
+    "name": "Pollux Orange",
+    "year": 1975,
+    "car_code": "304",
+    "paint_ref": "9164",
+    "rgb": [
+      181,
+      127,
+      41
+    ],
+    "hex": "#B57F29",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1969-bamboo-pg04.jpg",
+    "source_pos": [
+      355,
+      229
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#AC571A",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AC571A. 1974 painted interior door panel (owner claim) and a 1973 restored truck in Pollux Orange; the two photos disagree. Picked the photo 2 median"
+  },
+  {
+    "name": "Fashion Green #2",
+    "year": 1970,
+    "car_code": "303",
+    "paint_ref": "44402",
+    "rgb": [
+      170,
+      183,
+      156
+    ],
+    "hex": "#AAB79C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      436,
+      496
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#4B5C4C",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #4B5C4C. two photos of a 1970 FJ40 in Fashion Green, restored 2013 (dealer claim, no code)"
+  },
+  {
+    "name": "Fashion Green #2",
+    "year": 1971,
+    "car_code": "303",
+    "paint_ref": "44402",
+    "rgb": [
+      170,
+      183,
+      156
+    ],
+    "hex": "#AAB79C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      436,
+      496
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#4B5C4C",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #4B5C4C. two photos of a 1970 FJ40 in Fashion Green, restored 2013 (dealer claim, no code)"
+  },
+  {
+    "name": "Vesuvius Red",
+    "year": 1970,
+    "car_code": "1708",
+    "paint_ref": "71906",
+    "rgb": [
+      170,
+      0,
+      3
+    ],
+    "hex": "#AA0003",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1970-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      439,
+      682
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Vesuvius Red",
+    "year": 1971,
+    "car_code": "1708",
+    "paint_ref": "71906",
+    "rgb": [
+      170,
+      0,
+      3
+    ],
+    "hex": "#AA0003",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      439,
+      682
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Breathe Green",
+    "year": 1972,
+    "car_code": "1654",
+    "paint_ref": "44399",
+    "rgb": [
+      87,
+      120,
+      89
+    ],
+    "hex": "#577859",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      436,
+      305
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Breathe Green",
+    "year": 1973,
+    "car_code": "1654",
+    "paint_ref": "44399",
+    "rgb": [
+      87,
+      120,
+      89
+    ],
+    "hex": "#577859",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1971-bamboo-pg01.jpg",
+    "source_pos": [
+      436,
+      305
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Cygnus White",
+    "year": 1972,
+    "car_code": "012",
+    "paint_ref": "0833",
+    "rgb": [
+      199,
+      195,
+      166
+    ],
+    "hex": "#C7C3A6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg01.jpg",
+    "source_pos": [
+      548,
+      434
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Cygnus White",
+    "year": 1973,
+    "car_code": "012",
+    "paint_ref": "0833",
+    "rgb": [
+      199,
+      195,
+      166
+    ],
+    "hex": "#C7C3A6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg01.jpg",
+    "source_pos": [
+      548,
+      434
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Cygnus White",
+    "year": 1974,
+    "car_code": "012",
+    "paint_ref": "0833",
+    "rgb": [
+      199,
+      195,
+      166
+    ],
+    "hex": "#C7C3A6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg01.jpg",
+    "source_pos": [
+      548,
+      434
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Cygnus White",
+    "year": 1975,
+    "car_code": "012",
+    "paint_ref": "0833",
+    "rgb": [
+      199,
+      195,
+      166
+    ],
+    "hex": "#C7C3A6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg01.jpg",
+    "source_pos": [
+      548,
+      434
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Heath Gray",
+    "year": 1972,
+    "car_code": "113",
+    "paint_ref": "33024",
+    "rgb": [
+      93,
+      101,
+      104
+    ],
+    "hex": "#5D6568",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      336,
+      564
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Heath Gray",
+    "year": 1973,
+    "car_code": "113",
+    "paint_ref": "33024",
+    "rgb": [
+      93,
+      101,
+      104
+    ],
+    "hex": "#5D6568",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      336,
+      564
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Heath Gray",
+    "year": 1974,
+    "car_code": "113",
+    "paint_ref": "33024",
+    "rgb": [
+      93,
+      101,
+      104
+    ],
+    "hex": "#5D6568",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      336,
+      564
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1972,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1973,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1974,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1975,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1976,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Freeborn Red",
+    "year": 1977,
+    "car_code": "309",
+    "paint_ref": "71999",
+    "rgb": [
+      165,
+      13,
+      30
+    ],
+    "hex": "#A50D1E",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      555,
+      309
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#820101",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #820101. 1979 car with original paint (outside the years) and a 1978 truck in Freeborn Red; the photos disagree, the 1978 one is the better shot. Picked the photo 2 lit half"
+  },
+  {
+    "name": "Buffalo Brown",
+    "year": 1972,
+    "car_code": "414",
+    "paint_ref": "23753",
+    "rgb": [
+      6,
+      0,
+      0
+    ],
+    "hex": "#060000",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      224,
+      687
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pueblo Brown",
+    "year": 1972,
+    "car_code": "415",
+    "paint_ref": "23748",
+    "rgb": [
+      144,
+      71,
+      20
+    ],
+    "hex": "#904714",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      225,
+      565
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pueblo Brown",
+    "year": 1973,
+    "car_code": "415",
+    "paint_ref": "23748",
+    "rgb": [
+      144,
+      71,
+      20
+    ],
+    "hex": "#904714",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      225,
+      565
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pueblo Brown",
+    "year": 1974,
+    "car_code": "415",
+    "paint_ref": "23748",
+    "rgb": [
+      144,
+      71,
+      20
+    ],
+    "hex": "#904714",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      225,
+      565
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pueblo Brown",
+    "year": 1975,
+    "car_code": "415",
+    "paint_ref": "23748",
+    "rgb": [
+      144,
+      71,
+      20
+    ],
+    "hex": "#904714",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      225,
+      565
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1972,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1973,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1974,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1975,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1976,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Dune Beige",
+    "year": 1977,
+    "car_code": "416",
+    "paint_ref": "23754",
+    "rgb": [
+      181,
+      165,
+      136
+    ],
+    "hex": "#B5A588",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      334,
+      113
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#837866",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #837866. 1976 truck repainted in Dune Beige, plate code 416 quoted. Picked the photo 1 lit half"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1972,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1973,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1974,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1975,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1976,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Rustic Green",
+    "year": 1977,
+    "car_code": "621",
+    "paint_ref": "44682",
+    "rgb": [
+      39,
+      82,
+      85
+    ],
+    "hex": "#275255",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      445,
+      563
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#13392E",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #13392E. 1976 FJ40 repainted in Rustic Green, code 621 quoted (indoor light)"
+  },
+  {
+    "name": "Nebula Green",
+    "year": 1972,
+    "car_code": "622",
+    "paint_ref": "44678",
+    "rgb": [
+      96,
+      120,
+      106
+    ],
+    "hex": "#60786A",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      444,
+      501
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#435E4D",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #435E4D. 1973 FJ40 restored in Nebula Green (listing), studio cut-out"
+  },
+  {
+    "name": "Nebula Green",
+    "year": 1974,
+    "car_code": "622",
+    "paint_ref": "44678",
+    "rgb": [
+      96,
+      120,
+      106
+    ],
+    "hex": "#60786A",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1972-bamboo-pg03.jpg",
+    "source_pos": [
+      444,
+      501
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#435E4D",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #435E4D. 1973 FJ40 restored in Nebula Green (listing), studio cut-out"
+  },
+  {
+    "name": "Shadow Green",
+    "year": 1973,
+    "car_code": "632",
+    "paint_ref": "AE11",
+    "rgb": [
+      40,
+      74,
+      60
+    ],
+    "hex": "#284A3C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      149
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Shadow Green",
+    "year": 1974,
+    "car_code": "632",
+    "paint_ref": "AE11",
+    "rgb": [
+      40,
+      74,
+      60
+    ],
+    "hex": "#284A3C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      149
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Shadow Green",
+    "year": 1975,
+    "car_code": "632",
+    "paint_ref": "AE11",
+    "rgb": [
+      40,
+      74,
+      60
+    ],
+    "hex": "#284A3C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      149
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1972,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1973,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1973-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1974,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1974-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1975,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1976,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Olive Green",
+    "year": 1977,
+    "car_code": "637",
+    "paint_ref": "CC31",
+    "rgb": [
+      143,
+      101,
+      37
+    ],
+    "hex": "#8F6525",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      356,
+      222
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#42481B",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #42481B. 1977 FJ40 repainted 'Olive Green' (article); brownish under low sun"
+  },
+  {
+    "name": "Blue",
+    "year": 1975,
+    "car_code": "854",
+    "paint_ref": "CC34",
+    "rgb": [
+      70,
+      186,
+      226
+    ],
+    "hex": "#46BAE2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      36,
+      462
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#265078",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+  },
+  {
+    "name": "Blue",
+    "year": 1976,
+    "car_code": "854",
+    "paint_ref": "CC34",
+    "rgb": [
+      70,
+      186,
+      226
+    ],
+    "hex": "#46BAE2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      36,
+      462
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#265078",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+  },
+  {
+    "name": "Blue",
+    "year": 1977,
+    "car_code": "854",
+    "paint_ref": "CC34",
+    "rgb": [
+      70,
+      186,
+      226
+    ],
+    "hex": "#46BAE2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1974-bamboo-pg07.jpg",
+    "source_pos": [
+      36,
+      462
+    ],
+    "confidence": "manual_override",
+    "measured_hex": "#265078",
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #265078. 1977 faded original (code 854 Sky Blue quoted) and a 1976 repaint (code 854); hue agrees, lightness differs"
+  },
+  {
+    "name": "Yellow",
+    "year": 1975,
+    "car_code": "541",
+    "paint_ref": "82384",
+    "rgb": [
+      239,
+      192,
+      60
+    ],
+    "hex": "#EFC03C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1975-Toyota.html",
+    "source_file": "sources/1977-bamboo-pg01.jpg",
+    "source_pos": [
+      444,
+      237
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Yellow",
+    "year": 1976,
+    "car_code": "541",
+    "paint_ref": "82384",
+    "rgb": [
+      239,
+      192,
+      60
+    ],
+    "hex": "#EFC03C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1977-bamboo-pg01.jpg",
+    "source_pos": [
+      444,
+      237
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Yellow",
+    "year": 1977,
+    "car_code": "541",
+    "paint_ref": "82384",
+    "rgb": [
+      239,
+      192,
+      60
+    ],
+    "hex": "#EFC03C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1977-bamboo-pg01.jpg",
+    "source_pos": [
+      444,
+      237
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "White",
+    "year": 1976,
+    "car_code": "031",
+    "paint_ref": "90100",
+    "rgb": [
+      229,
+      219,
+      194
+    ],
+    "hex": "#E5DBC2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1976-Toyota.html",
+    "source_file": "sources/1977-bamboo-pg01.jpg",
+    "source_pos": [
+      340,
+      503
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "White",
+    "year": 1977,
+    "car_code": "031",
+    "paint_ref": "90100",
+    "rgb": [
+      229,
+      219,
+      194
+    ],
+    "hex": "#E5DBC2",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1977-Toyota.html",
+    "source_file": "sources/1977-bamboo-pg01.jpg",
+    "source_pos": [
+      340,
+      503
+    ],
+    "confidence": "measured_from_card"
+  }
+]
