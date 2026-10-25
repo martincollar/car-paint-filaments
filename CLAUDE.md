@@ -11,6 +11,8 @@ Before starting anything new (a shop, a car, a fix, a refactor), first make the 
 - **Always ask first, every time, before anything lands on `main`**: `git push origin <branch>:main`, merging into `main`, or any push to `main`. Pushing to `main` publishes the live GitHub Pages site (CI deploys on push), so it is outward-facing. An earlier "yes, push" does not cover a later change, and a request like "add X to the page" is not a request to publish it. Build, commit on the branch, show the result (local preview), then ask.
 - **Every feature, fix or doc change gets its own worktree**, no exceptions for small edits (CLAUDE.md edits included). Never commit in the main checkout.
 
+**Colours are shown as images, never as hex alone.** Whenever you give the user a colour code (a measured chip, a filament, an override, a before/after, a palette), show it as a rendered swatch the user can look at: a local preview page in a Terminal panel tab (swatch + name + year/code + hex, next to the source chip or photo where there is one), or an inline widget/image. A bare `#1E4A30` in the reply is not enough. When a colour was overridden, show the old and new swatch side by side.
+
 ## Commands
 
 Always use the in-project venv (`./.venv/bin/python`), never the system Python or `~/.venvs/hudson/` from the project's earlier life.
