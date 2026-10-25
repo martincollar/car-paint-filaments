@@ -139,7 +139,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
   font: 700 italic 2.7rem/1.1 var(--dl-font-title); letter-spacing: -.02em; color: var(--dl-paper); text-shadow: 3px 3px 0 var(--dl-outline); }
   .tile--doppler .tile-tag { font-size: 1.15rem; margin: -26px 0 0 26px; }
   .tile--doppler .tile-meta { margin-left: 46px; }
-  .tile--doppler .t-star-1 { width: 100px; right: -18px; top: -40px; }
+  .tile--doppler .t-star-1 { display: none; }
 }
 .tile--doppler .tile-label { opacity: .6; }
 .tile--doppler .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary-deep);
@@ -201,11 +201,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile--doppler .tile-name { translate: -60px -44px; scale: 1.05; transform-origin: left center; }
 .tile--doppler .tile-tag { translate: -67px -25px; scale: 1.28; transform-origin: left center; }
 @media (max-width: 520px) {
-.tile--doppler .t-star-1 { translate: -12px -14px; }
-.tile--doppler .tile-label { translate: 4px -5px; }
 .tile--doppler .tile-meta { translate: -35px -46px; }
 .tile--doppler .tile-name { translate: -51px -47px; }
-.tile--doppler .tile-open { translate: -8px -13px; }
 .tile--doppler .tile-tag { translate: -20px -47px; }
 }
 .tile--torq .tile-name { translate: 0px 0px; scale: 0.95; transform-origin: left center; }

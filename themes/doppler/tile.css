@@ -34,7 +34,7 @@
   font: 700 italic 2.7rem/1.1 var(--dl-font-title); letter-spacing: -.02em; color: var(--dl-paper); text-shadow: 3px 3px 0 var(--dl-outline); }
   .tile--doppler .tile-tag { font-size: 1.15rem; margin: -26px 0 0 26px; }
   .tile--doppler .tile-meta { margin-left: 46px; }
-  .tile--doppler .t-star-1 { width: 100px; right: -18px; top: -40px; }
+  .tile--doppler .t-star-1 { display: none; }
 }
 .tile--doppler .tile-label { opacity: .6; }
 .tile--doppler .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary-deep);

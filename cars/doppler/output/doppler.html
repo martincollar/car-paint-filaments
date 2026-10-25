@@ -324,7 +324,7 @@ img { max-width: 100%; }
   font: 700 italic 2.7rem/1.1 var(--dl-font-title); letter-spacing: -.02em; color: var(--dl-paper); text-shadow: 3px 3px 0 var(--dl-outline); }
   .tile--doppler .tile-tag { font-size: 1.15rem; margin: -26px 0 0 26px; }
   .tile--doppler .tile-meta { margin-left: 46px; }
-  .tile--doppler .t-star-1 { width: 100px; right: -18px; top: -40px; }
+  .tile--doppler .t-star-1 { display: none; }
 }
 .tile--doppler .tile-label { opacity: .6; }
 .tile--doppler .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary-deep);
@@ -346,7 +346,8 @@ img { max-width: 100%; }
   .theme-doppler .head-card .tile-name { font-size: 2.3rem; margin-left: 4px; }
   .theme-doppler .head-card .tile-tag { font-size: 1.1rem; margin: -26px 0 0 18px; }
   .theme-doppler .head-card .tile-meta { margin: 20px 0 0 12px; }
-  .theme-doppler .head-card .t-star-1 { right: 6px; top: -26px; width: 90px; }
+  .theme-doppler .head-card .t-star-1 { display: none; }
+  .theme-doppler .tile--doppler.head-card .tile-name, .theme-doppler .tile--doppler.head-card .tile-tag, .theme-doppler .tile--doppler.head-card .tile-meta { translate: none; scale: none; }
   .theme-doppler .head-filters { margin-left: 0; }
 }.tile--doppler.head-card .t-star-1 { translate: 40px 15px; scale: 1.28; transform-origin: center; }
 .tile--doppler.head-card .tile-meta { translate: -53px -1px; }
