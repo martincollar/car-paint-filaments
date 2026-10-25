@@ -351,6 +351,8 @@ __BASE__
   .tile { padding: 18px 18px 16px; --stage-w: 108%; --stage-left: -4%; }
   .tile-name { font-size: 1.45rem; }
   .tile-foot { padding-top: 175px; }
+  /* phone: lift the car clear of the label and buttons row (themes set --stage-bottom for the wide tile) */
+  .tile.tile { --stage-bottom: 88px; }
 }
 """
 

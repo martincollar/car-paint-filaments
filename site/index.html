@@ -77,6 +77,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
   .tile { padding: 18px 18px 16px; --stage-w: 108%; --stage-left: -4%; }
   .tile-name { font-size: 1.45rem; }
   .tile-foot { padding-top: 175px; }
+  /* phone: lift the car clear of the label and buttons row (themes set --stage-bottom for the wide tile) */
+  .tile.tile { --stage-bottom: 88px; }
 }
 /* Doppler design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
    Roles: primary = main shape/button colour, accent = second colour (ribbon, hover), accent2 = trim. */
