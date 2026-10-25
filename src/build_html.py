@@ -322,6 +322,7 @@ HERO_JS = """
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
+      if (hit && window.openRow) window.openRow(r);
     });
   }
   document.addEventListener('click', function (e) {
@@ -453,6 +454,34 @@ def hero_parts(hero):
     return HERO_CSS, html, js
 
 # The floating back-to-top button: position and show/hide are shared, the look is each theme's `.to-top` rule.
+# Filament columns of a colour start collapsed (only with JS: html.js is set by TOP_JS, without it everything shows).
+ROWS_CSS = """
+.rows-bar, .row-toggle { display: none; }
+html.js .rows-bar { display: flex; gap: 6px; margin: 0 0 8px; }
+.rows-bar button, .row-toggle { font: inherit; font-size: 0.72rem; color: inherit; background: transparent; border: 1px solid var(--rule); padding: 2px 8px; cursor: pointer; }
+.rows-bar button:hover, .row-toggle:hover, .row-toggle:focus-visible { background: var(--rule); }
+html.js .row-toggle { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; }
+.row-toggle::after { content: "▾"; font-size: 0.8em; transition: transform .15s; }
+article.row.open .row-toggle::after { transform: rotate(180deg); }
+html.js article.row:not(.open) .rcols { display: none !important; }
+html.js article.row:not(.open) .paint-col { margin-bottom: 0; }
+"""
+ROWS_JS = """
+(function () {
+  function set(row, open) {
+    row.classList.toggle('open', open);
+    var b = row.querySelector('.row-toggle'); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('.row-toggle');
+    if (t) { var row = t.closest('article.row'); set(row, !row.classList.contains('open')); return; }
+    var all = e.target.closest && e.target.closest('[data-rows]');
+    if (all) document.querySelectorAll('article.row').forEach(function (r) { set(r, all.dataset.rows === 'open'); });
+  });
+  window.openRow = function (row) { set(row, true); };
+})();
+"""
+
 TOP_CSS = """
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
@@ -619,7 +648,8 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 
     USED_THUMBS.clear()
     combos = load_combinations(car, hero)
-    rows = []
+    rows = ['<div class="rows-bar"><button type="button" data-rows="open">Show all filaments</button>'
+            '<button type="button" data-rows="close">Hide all</button></div>']
     for year in sorted(by_year.keys(), reverse=True):
         rows.append(f"""
       <h2 class="year-head" id="y{year}">
@@ -639,7 +669,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
           </div>""" for r in regions)
             rows.append(f"""
         <article class="row" data-paint="{esc(m['name'])}" data-year="{m['year']}">
-          <div class="col paint-col">{paint_block(m)}</div>{cols}
+          <div class="col paint-col">{paint_block(m)}<button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>{cols}
         </article>
         """)
 
@@ -697,6 +727,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 <style>
 {theme_css}
 {TOP_CSS}
+{ROWS_CSS}
 {REGION_SWITCH_CSS}
 {region_css(regions)}
 {hero_css}
@@ -737,6 +768,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 </div>
 <a class="to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg><span>Back to top</span></a>
 <script>{TOP_JS}</script>
+<script>{ROWS_JS}</script>
 {hero_html}
 {hero_js}
 {tip_js}

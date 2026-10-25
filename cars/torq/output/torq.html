@@ -358,6 +358,17 @@ html { scroll-behavior: smooth; }
 .js .to-top.show { opacity: 1; visibility: visible; }
 
 
+.rows-bar, .row-toggle { display: none; }
+html.js .rows-bar { display: flex; gap: 6px; margin: 0 0 8px; }
+.rows-bar button, .row-toggle { font: inherit; font-size: 0.72rem; color: inherit; background: transparent; border: 1px solid var(--rule); padding: 2px 8px; cursor: pointer; }
+.rows-bar button:hover, .row-toggle:hover, .row-toggle:focus-visible { background: var(--rule); }
+html.js .row-toggle { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; }
+.row-toggle::after { content: "▾"; font-size: 0.8em; transition: transform .15s; }
+article.row.open .row-toggle::after { transform: rotate(180deg); }
+html.js article.row:not(.open) .rcols { display: none !important; }
+html.js article.row:not(.open) .paint-col { margin-bottom: 0; }
+
+
 .region-switch button { font: inherit; cursor: pointer; }
 
 [data-r] { display: none; }
@@ -468,7 +479,7 @@ article.row.combo-out { display: none; }
 
 
 <main>
-  
+  <div class="rows-bar"><button type="button" data-rows="open">Show all filaments</button><button type="button" data-rows="close">Hide all</button></div>
       <h2 class="year-head" id="y1974">
         <span class="year-badge">
           <span class="year-badge-top">3D SETS TORQ</span>
@@ -490,7 +501,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#48494C <span class="rgb">RGB 72,73,76</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#5F6369" data-name="NEBULA + COLORFIL PLA Šedá Fancy" data-slug="filament-nebula-pla-seda-fancy-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg">
@@ -691,7 +702,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#7A9EBC <span class="rgb">RGB 122,158,188</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg" target="_blank" rel="noopener" data-hex="#8AB0C8" data-name="Prusament PLA Chalky Blue" data-slug="prusament-pla-chalky-blue-1kg" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg">
@@ -856,7 +867,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#264061 <span class="rgb">RGB 38,64,97</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#154379" data-name="Spectrum + The Filament PLA Matte Night Blue" data-slug="refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg">
@@ -1069,7 +1080,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#121C37 <span class="rgb">RGB 18,28,55</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#121F34" data-name="Professional Lab PLA Matte Modrá" data-slug="filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg">
@@ -1228,7 +1239,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#9E150D <span class="rgb">RGB 158,21,13</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#830A13" data-name="NEBULA + COLORFIL PLA Bordó" data-slug="filament-colorfil-pla-bordo-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg">
@@ -1393,7 +1404,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#481B18 <span class="rgb">RGB 72,27,24</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener" data-hex="#4D251A" data-name="Prusament PLA Noctua Brown" data-slug="prusament-pla-noctua-brown" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/">
@@ -1546,7 +1557,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4D6251 <span class="rgb">RGB 77,98,81</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg" target="_blank" rel="noopener" data-hex="#495744" data-name="FIBER3D PLA+ Olive" data-slug="fiber3d-pla-olive" data-shop="Na3D" data-shop-cls="na3d" data-url="https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg">
@@ -1747,7 +1758,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#17201A <span class="rgb">RGB 23,32,26</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-recycled-filament-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#282D2C" data-name="AURAPOL PLA 3D Recycled" data-slug="aurapol-pla-3d-recycled-filament-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-recycled-filament-1-kg-1-75-mm">
@@ -1960,7 +1971,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#403C20 <span class="rgb">RGB 64,60,32</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-premium-pla-mystic-green-1kg-2/" target="_blank" rel="noopener" data-hex="#404331" data-name="Prusament PLA Mystic Green" data-slug="prusament-premium-pla-mystic-green-1kg-2" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-premium-pla-mystic-green-1kg-2/">
@@ -2113,7 +2124,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#A89877 <span class="rgb">RGB 168,152,119</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#AE9D85" data-name="ROSA3D PLA Starter ZELENÁ HUNTER" data-slug="refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg">
@@ -2278,7 +2289,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#5B3A1B <span class="rgb">RGB 91,58,27</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-olivova-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#5C3B15" data-name="NEBULA + COLORFIL PLA Olivová" data-slug="filament-colorfil-pla-olivova-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-olivova-1-75-mm-1-kg">
@@ -2431,7 +2442,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#2A2119 <span class="rgb">RGB 42,33,25</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-pla-cerna-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#2A2016" data-name="LUME PLA+ Black" data-slug="filament-lume-pla-cerna-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-pla-cerna-1-75-mm-1-kg">
@@ -2650,7 +2661,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#592911 <span class="rgb">RGB 89,41,17</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-mocha-mousse-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#59301E" data-name="ROSA3D PLA Starter MOCHA MOUSSE" data-slug="refill-rosa3d-pla-starter-mocha-mousse-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-mocha-mousse-1-75-mm-1-kg">
@@ -2797,7 +2808,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#241612 <span class="rgb">RGB 36,22,18</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-pla-cerna-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#2A2016" data-name="LUME PLA+ Black" data-slug="filament-lume-pla-cerna-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-pla-cerna-1-75-mm-1-kg">
@@ -3016,7 +3027,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DFD9BA <span class="rgb">RGB 223,217,186</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
@@ -3229,7 +3240,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#E5D277 <span class="rgb">RGB 229,210,119</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E1D963" data-name="Professional Lab PLA Pastel ŽLUTÁ" data-slug="filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg">
@@ -3394,7 +3405,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#967F49 <span class="rgb">RGB 150,127,73</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-pla-zlata-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#94733A" data-name="LUME Filaments PLA+ Lume Zlatá" data-slug="filament-lume-pla-zlata-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-pla-zlata-1-75-mm-1-kg">
@@ -3553,7 +3564,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DAC053 <span class="rgb">RGB 218,192,83</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-pastelova-edice-banana-yellow-1-75-mm-1-kg/p245" target="_blank" rel="noopener" data-hex="#C4B24B" data-name="Filament PM PLA+ Pastelová edice Banana Yellow" data-slug="p245" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-pastelova-edice-banana-yellow-1-75-mm-1-kg/p245">
@@ -3754,7 +3765,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#7E5C35 <span class="rgb">RGB 126,92,53</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -3895,7 +3906,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#332318 <span class="rgb">RGB 51,35,24</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308" target="_blank" rel="noopener" data-hex="#372618" data-name="Filament PM PLA Skin 477C" data-slug="p308" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308">
@@ -4037,7 +4048,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4A4F53 <span class="rgb">RGB 74,79,83</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#5F6369" data-name="NEBULA + COLORFIL PLA Šedá Fancy" data-slug="filament-nebula-pla-seda-fancy-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg">
@@ -4238,7 +4249,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#89A3BC <span class="rgb">RGB 137,163,188</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg" target="_blank" rel="noopener" data-hex="#8AB0C8" data-name="Prusament PLA Chalky Blue" data-slug="prusament-pla-chalky-blue-1kg" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg">
@@ -4421,7 +4432,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#285A9B <span class="rgb">RGB 40,90,155</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-metal" target="_blank" rel="noopener" data-hex="#39699E" data-name="Bambu Lab PLA Cobalt Blue Metallic" data-slug="bambu-lab-pla-cobalt-blue-metallic" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-metal">
@@ -4610,7 +4621,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1C325E <span class="rgb">RGB 28,50,94</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg" target="_blank" rel="noopener" data-hex="#213258" data-name="3DPower PLA Basic Tmavě Modrá (Dark Blue)" data-slug="3dpower-basic-pla-tmave-modra-dark-blue-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg">
@@ -4823,7 +4834,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#111A26 <span class="rgb">RGB 17,26,38</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#121F34" data-name="Professional Lab PLA Matte Modrá" data-slug="filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg">
@@ -5042,7 +5053,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#2E4D27 <span class="rgb">RGB 46,77,39</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/pla-extrafill-green-grass-1kg" target="_blank" rel="noopener" data-hex="#266127" data-name="Fillamentum PLA Green Grass" data-slug="pla-extrafill-green-grass-1kg" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/pla-extrafill-green-grass-1kg">
@@ -5189,7 +5200,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#951812 <span class="rgb">RGB 149,24,18</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#830A13" data-name="NEBULA + COLORFIL PLA Bordó" data-slug="filament-colorfil-pla-bordo-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg">
@@ -5354,7 +5365,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#8FA462 <span class="rgb">RGB 143,164,98</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-pistachio-green-1kg" target="_blank" rel="noopener" data-hex="#90AA81" data-name="Prusament PLA Pistachio Green" data-slug="prusament-pla-pistachio-green-1kg" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-pistachio-green-1kg">
@@ -5495,7 +5506,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4F5B38 <span class="rgb">RGB 79,91,56</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F572D" data-name="ROSA3D PLA Magic Army" data-slug="refill-rosa3d-pla-magic-army-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg">
@@ -5690,7 +5701,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1A2517 <span class="rgb">RGB 26,37,23</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#27371D" data-name="LUME PLA+ Vojenská zelená" data-slug="filament-lume-pla-vojenska-zelena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg">
@@ -5849,7 +5860,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#88AD4D <span class="rgb">RGB 136,173,77</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396" target="_blank" rel="noopener" data-hex="#83B433" data-name="Filament PM PLA Žlutozelená" data-slug="p396" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396">
@@ -6020,7 +6031,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#3A1E12 <span class="rgb">RGB 58,30,18</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#3C1F14" data-name="NEBULA + COLORFIL PLA Hnědá" data-slug="filament-colorfil-pla-hneda-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg">
@@ -6197,7 +6208,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#AA9779 <span class="rgb">RGB 170,151,121</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#AE9D85" data-name="ROSA3D PLA Starter ZELENÁ HUNTER" data-slug="refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg">
@@ -6362,7 +6373,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1E3F57 <span class="rgb">RGB 30,63,87</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154" target="_blank" rel="noopener" data-hex="#203D54" data-name="Filament PM PLA Perlová Modrá" data-slug="p154" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154">
@@ -6569,7 +6580,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#422919 <span class="rgb">RGB 66,41,25</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F2F1A" data-name="DEVIL DESIGN PLA Tmavě Hnědá" data-slug="filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg">
@@ -6722,7 +6733,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DDD3B9 <span class="rgb">RGB 221,211,185</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
@@ -6935,7 +6946,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#EFD341 <span class="rgb">RGB 239,211,65</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#F7CD07" data-name="Spectrum + The Filament PLA High Speed ŽLUTÁ TRUE" data-slug="refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg">
@@ -7142,7 +7153,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DBD47A <span class="rgb">RGB 219,212,122</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E1D963" data-name="Professional Lab PLA Pastel ŽLUTÁ" data-slug="filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg">
@@ -7307,7 +7318,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#AC965B <span class="rgb">RGB 172,150,91</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-sandstone" target="_blank" rel="noopener" data-hex="#C2A877" data-name="Fiberlogy PLA Easy Sandstone" data-slug="easy-pla-sandstone" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-sandstone">
@@ -7484,7 +7495,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#685130 <span class="rgb">RGB 104,81,48</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -7625,7 +7636,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#352818 <span class="rgb">RGB 53,40,24</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308" target="_blank" rel="noopener" data-hex="#372618" data-name="Filament PM PLA Skin 477C" data-slug="p308" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308">
@@ -7767,7 +7778,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4D5E65 <span class="rgb">RGB 77,94,101</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm/" target="_blank" rel="noopener" data-hex="#54585A" data-name="3DFOX PLA Antracit RAL7016" data-slug="filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm/">
@@ -7968,7 +7979,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#575C64 <span class="rgb">RGB 87,92,100</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#5F6369" data-name="NEBULA + COLORFIL PLA Šedá Fancy" data-slug="filament-nebula-pla-seda-fancy-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-seda-fancy-1-75-mm-1-kg">
@@ -8169,7 +8180,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#3B3F48 <span class="rgb">RGB 59,63,72</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#3C3F4A" data-name="AURAPOL PLA 3D Black Grey" data-slug="aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm">
@@ -8388,7 +8399,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#98ADC3 <span class="rgb">RGB 152,173,195</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg" target="_blank" rel="noopener" data-hex="#8AB0C8" data-name="Prusament PLA Chalky Blue" data-slug="prusament-pla-chalky-blue-1kg" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-chalky-blue-1kg">
@@ -8571,7 +8582,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#2C68A9 <span class="rgb">RGB 44,104,169</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-metal" target="_blank" rel="noopener" data-hex="#39699E" data-name="Bambu Lab PLA Cobalt Blue Metallic" data-slug="bambu-lab-pla-cobalt-blue-metallic" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-metal">
@@ -8760,7 +8771,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1B3C74 <span class="rgb">RGB 27,60,116</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg" target="_blank" rel="noopener" data-hex="#213258" data-name="3DPower PLA Basic Tmavě Modrá (Dark Blue)" data-slug="3dpower-basic-pla-tmave-modra-dark-blue-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg">
@@ -8973,7 +8984,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#071D40 <span class="rgb">RGB 7,29,64</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-aurora" target="_blank" rel="noopener" data-hex="#1F273C" data-name="Fiberlogy PLA Easy Aurora" data-slug="easy-pla-aurora" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-aurora">
@@ -9150,7 +9161,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#010A23 <span class="rgb">RGB 1,10,35</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#121F34" data-name="Professional Lab PLA Matte Modrá" data-slug="filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg">
@@ -9279,7 +9290,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#216320 <span class="rgb">RGB 33,99,32</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/pla-extrafill-green-grass-1kg" target="_blank" rel="noopener" data-hex="#266127" data-name="Fillamentum PLA Green Grass" data-slug="pla-extrafill-green-grass-1kg" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/pla-extrafill-green-grass-1kg">
@@ -9426,7 +9437,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#9E0A02 <span class="rgb">RGB 158,10,2</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#9E0705" data-name="Professional Lab PLA Matte Červená" data-slug="filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg">
@@ -9597,7 +9608,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#9DAF73 <span class="rgb">RGB 157,175,115</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-pistachio-green-1kg" target="_blank" rel="noopener" data-hex="#90AA81" data-name="Prusament PLA Pistachio Green" data-slug="prusament-pla-pistachio-green-1kg" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-pistachio-green-1kg">
@@ -9738,7 +9749,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#576935 <span class="rgb">RGB 87,105,53</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F572D" data-name="ROSA3D PLA Magic Army" data-slug="refill-rosa3d-pla-magic-army-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg">
@@ -9933,7 +9944,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#26321A <span class="rgb">RGB 38,50,26</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#2D372A" data-name="NEBULA PLA Mystická zelená" data-slug="filament-nebula-pla-mysticka-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/">
@@ -10092,7 +10103,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#13200E <span class="rgb">RGB 19,32,14</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#27371D" data-name="LUME PLA+ Vojenská zelená" data-slug="filament-lume-pla-vojenska-zelena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg">
@@ -10251,7 +10262,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#38301C <span class="rgb">RGB 56,48,28</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/" target="_blank" rel="noopener" data-hex="#3B3224" data-name="NEBULA PLA Čokoládově hnědá" data-slug="filament-nebula-pla-cokoladove-hneda-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/">
@@ -10434,7 +10445,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#96B75E <span class="rgb">RGB 150,183,94</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396" target="_blank" rel="noopener" data-hex="#83B433" data-name="Filament PM PLA Žlutozelená" data-slug="p396" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396">
@@ -10605,7 +10616,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#38240C <span class="rgb">RGB 56,36,12</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308" target="_blank" rel="noopener" data-hex="#372618" data-name="Filament PM PLA Skin 477C" data-slug="p308" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308">
@@ -10740,7 +10751,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#B2A289 <span class="rgb">RGB 178,162,137</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#AE9D85" data-name="ROSA3D PLA Starter ZELENÁ HUNTER" data-slug="refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-hunter-1-75-mm-1-kg">
@@ -10905,7 +10916,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#114665 <span class="rgb">RGB 17,70,101</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154" target="_blank" rel="noopener" data-hex="#203D54" data-name="Filament PM PLA Perlová Modrá" data-slug="p154" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154">
@@ -11112,7 +11123,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#80592E <span class="rgb">RGB 128,89,46</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#7F5533" data-name="3DLabPrint PLA Poly Light 1.0 LW Pla Balsa" data-slug="filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg">
@@ -11253,7 +11264,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4F2D11 <span class="rgb">RGB 79,45,17</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F2F1A" data-name="DEVIL DESIGN PLA Tmavě Hnědá" data-slug="filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg">
@@ -11406,7 +11417,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#BF2C08 <span class="rgb">RGB 191,44,8</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#BD1910" data-name="NEBULA PLA Zářivě červená" data-slug="filament-nebula-pla-zarive-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/">
@@ -11625,7 +11636,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DDD7C7 <span class="rgb">RGB 221,215,199</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
@@ -11838,7 +11849,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#EFD141 <span class="rgb">RGB 239,209,65</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#F7CD07" data-name="Spectrum + The Filament PLA High Speed ŽLUTÁ TRUE" data-slug="refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg">
@@ -12045,7 +12056,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DAD583 <span class="rgb">RGB 218,213,131</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-pastel-yellow" target="_blank" rel="noopener" data-hex="#EADD8B" data-name="Fiberlogy PLA Easy Pastel Yellow" data-slug="easy-pla-pastel-yellow" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-pastel-yellow">
@@ -12204,7 +12215,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#B7A36B <span class="rgb">RGB 183,163,107</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-sandstone" target="_blank" rel="noopener" data-hex="#C2A877" data-name="Fiberlogy PLA Easy Sandstone" data-slug="easy-pla-sandstone" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-sandstone">
@@ -12381,7 +12392,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#AB9D6B <span class="rgb">RGB 171,157,107</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-body-color-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#AB9B71" data-name="Aurapol PLA Body Color" data-slug="aurapol-pla-3d-filament-body-color-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-body-color-1-kg-1-75-mm">
@@ -12540,7 +12551,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#745D34 <span class="rgb">RGB 116,93,52</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -12681,7 +12692,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#786A41 <span class="rgb">RGB 120,106,65</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -12870,7 +12881,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#322B0E <span class="rgb">RGB 50,43,14</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/" target="_blank" rel="noopener" data-hex="#3B3224" data-name="NEBULA PLA Čokoládově hnědá" data-slug="filament-nebula-pla-cokoladove-hneda-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/">
@@ -13078,7 +13089,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#47545B <span class="rgb">RGB 71,84,91</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm/" target="_blank" rel="noopener" data-hex="#54585A" data-name="3DFOX PLA Antracit RAL7016" data-slug="filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-3dfox-pla-refill-antracit-ral7016-1-kg-1-75-mm/">
@@ -13279,7 +13290,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#303940 <span class="rgb">RGB 48,57,64</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#373A42" data-name="AURAPOL PLA 3D Black" data-slug="aurapol-pla-3d-filament-black-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm">
@@ -13498,7 +13509,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#395573 <span class="rgb">RGB 57,85,115</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-galaxy-namornicka-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#394F6B" data-name="ROSA3D PLA Galaxy Námořnická Modrá" data-slug="refill-rosa3d-pla-galaxy-namornicka-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-galaxy-namornicka-modra-1-75-mm-1-kg">
@@ -13705,7 +13716,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#233764 <span class="rgb">RGB 35,55,100</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg" target="_blank" rel="noopener" data-hex="#213258" data-name="3DPower PLA Basic Tmavě Modrá (Dark Blue)" data-slug="3dpower-basic-pla-tmave-modra-dark-blue-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg">
@@ -13918,7 +13929,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#18243C <span class="rgb">RGB 24,36,60</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-aurora" target="_blank" rel="noopener" data-hex="#1F273C" data-name="Fiberlogy PLA Easy Aurora" data-slug="easy-pla-aurora" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-aurora">
@@ -14095,7 +14106,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#363156 <span class="rgb">RGB 54,49,86</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#353460" data-name="NEBULA + COLORFIL PLA Galaxy Kobaltová" data-slug="filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg">
@@ -14260,7 +14271,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#151A37 <span class="rgb">RGB 21,26,55</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/pla-extrafill-pearl-night-blue-1kg" target="_blank" rel="noopener" data-hex="#182049" data-name="Fillamentum PLA Pearl Night Blue" data-slug="pla-extrafill-pearl-night-blue-1kg" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/pla-extrafill-pearl-night-blue-1kg">
@@ -14419,7 +14430,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#8A1514 <span class="rgb">RGB 138,21,20</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#830A13" data-name="NEBULA + COLORFIL PLA Bordó" data-slug="filament-colorfil-pla-bordo-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg">
@@ -14584,7 +14595,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#411C16 <span class="rgb">RGB 65,28,22</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener" data-hex="#4D251A" data-name="Prusament PLA Noctua Brown" data-slug="prusament-pla-noctua-brown" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/">
@@ -14737,7 +14748,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4D5E34 <span class="rgb">RGB 77,94,52</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F572D" data-name="ROSA3D PLA Magic Army" data-slug="refill-rosa3d-pla-magic-army-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg">
@@ -14932,7 +14943,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#293121 <span class="rgb">RGB 41,49,33</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#2D372A" data-name="NEBULA PLA Mystická zelená" data-slug="filament-nebula-pla-mysticka-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/">
@@ -15091,7 +15102,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#6C6A39 <span class="rgb">RGB 108,106,57</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-stare-zlato-1-kg/" target="_blank" rel="noopener" data-hex="#69633B" data-name="NEBULA PLA Staré zlato" data-slug="filament-nebula-pla-stare-zlato-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-stare-zlato-1-kg/">
@@ -15274,7 +15285,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4D7B22 <span class="rgb">RGB 77,123,34</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-svetle-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#638224" data-name="NEBULA PLA Světle zelená" data-slug="filament-nebula-pla-svetle-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-svetle-zelena-1-kg/">
@@ -15427,7 +15438,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#321914 <span class="rgb">RGB 50,25,20</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#3C1F14" data-name="NEBULA + COLORFIL PLA Hnědá" data-slug="filament-colorfil-pla-hneda-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg">
@@ -15604,7 +15615,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#A89D81 <span class="rgb">RGB 168,157,129</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#ACA07E" data-name="AURAPOL PLA 3D Antique Pink" data-slug="aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm">
@@ -15781,7 +15792,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#9A6927 <span class="rgb">RGB 154,105,39</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-pla-zlata-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#A16A2A" data-name="DEVIL DESIGN PLA Zlatá" data-slug="filament-devil-design-pla-zlata-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-pla-zlata-1-75-mm-1-kg">
@@ -15922,7 +15933,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1B3E57 <span class="rgb">RGB 27,62,87</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154" target="_blank" rel="noopener" data-hex="#203D54" data-name="Filament PM PLA Perlová Modrá" data-slug="p154" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-perlova-modra-1-75-mm-1-kg/p154">
@@ -16129,7 +16140,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#7B6444 <span class="rgb">RGB 123,100,68</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -16288,7 +16299,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#463325 <span class="rgb">RGB 70,51,37</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#4D3324" data-name="Bambu Lab PLA Matte Dark Chocolate" data-slug="bambu-lab-pla-matte-dark-chocolate" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
@@ -16447,7 +16458,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#B32815 <span class="rgb">RGB 179,40,21</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#BD1910" data-name="NEBULA PLA Zářivě červená" data-slug="filament-nebula-pla-zarive-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/">
@@ -16666,7 +16677,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DED8C2 <span class="rgb">RGB 222,216,194</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
@@ -16879,7 +16890,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#E8E9DD <span class="rgb">RGB 232,233,221</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg" target="_blank" rel="noopener" data-hex="#E8EADE" data-name="ROSA3D PLA LW Pla Aero Bílá" data-slug="refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg">
@@ -17098,7 +17109,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#B4C42C <span class="rgb">RGB 180,196,44</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#BDD03F" data-name="AURAPOL PLA 3D Pick Your Poison" data-slug="aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm">
@@ -17275,7 +17286,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#9F8F5C <span class="rgb">RGB 159,143,92</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-bondi-beach-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#99955D" data-name="AURAPOL PLA 3D Bondi Beach" data-slug="aurapol-pla-3d-filament-bondi-beach-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-bondi-beach-1-kg-1-75-mm">
@@ -17434,7 +17445,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#6C5D3A <span class="rgb">RGB 108,93,58</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -17623,7 +17634,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#3A3324 <span class="rgb">RGB 58,51,36</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/" target="_blank" rel="noopener" data-hex="#3B3224" data-name="NEBULA PLA Čokoládově hnědá" data-slug="filament-nebula-pla-cokoladove-hneda-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-cokoladove-hneda-1-kg/">
@@ -17831,7 +17842,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#797C74 <span class="rgb">RGB 121,124,116</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/pla-extrafill-electric-grey-1kg" target="_blank" rel="noopener" data-hex="#7A7D76" data-name="Fillamentum PLA Electric Grey" data-slug="pla-extrafill-electric-grey-1kg" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/pla-extrafill-electric-grey-1kg">
@@ -18032,7 +18043,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#3B576E <span class="rgb">RGB 59,87,110</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-modra-storm-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#34576E" data-name="NEBULA + COLORFIL PLA Modrá Storm" data-slug="filament-nebula-pla-modra-storm-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-modra-storm-1-75-mm-1-kg">
@@ -18233,7 +18244,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#1D426D <span class="rgb">RGB 29,66,109</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#154379" data-name="Spectrum + The Filament PLA Matte Night Blue" data-slug="refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-thefilament-pla-matte-night-blue-1-75-mm-1-kg">
@@ -18446,7 +18457,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#17273C <span class="rgb">RGB 23,39,60</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#121F34" data-name="Professional Lab PLA Matte Modrá" data-slug="filament-professional-lab-pla-matte-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg">
@@ -18653,7 +18664,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#343053 <span class="rgb">RGB 52,48,83</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#353460" data-name="NEBULA + COLORFIL PLA Galaxy Kobaltová" data-slug="filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-nebula-pla-galaxy-kobaltova-1-75-mm-1-kg">
@@ -18818,7 +18829,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#8A1414 <span class="rgb">RGB 138,20,20</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#830A13" data-name="NEBULA + COLORFIL PLA Bordó" data-slug="filament-colorfil-pla-bordo-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-bordo-1-75-mm-1-kg">
@@ -18983,7 +18994,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4B5033 <span class="rgb">RGB 75,80,51</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-olive-green-1kg" target="_blank" rel="noopener" data-hex="#494E3A" data-name="Filamentree PLA+ Plus Zelená (Olive Green)" data-slug="filamentree-pla-plus-zelena-olive-green-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-olive-green-1kg">
@@ -19166,7 +19177,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#23281C <span class="rgb">RGB 35,40,28</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#2D372A" data-name="NEBULA PLA Mystická zelená" data-slug="filament-nebula-pla-mysticka-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-mysticka-zelena-1-kg/">
@@ -19367,7 +19378,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#86B93B <span class="rgb">RGB 134,185,59</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396" target="_blank" rel="noopener" data-hex="#83B433" data-name="Filament PM PLA Žlutozelená" data-slug="p396" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlutozelena-1-75-mm-1-kg/p396">
@@ -19544,7 +19555,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#4D7B22 <span class="rgb">RGB 77,123,34</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-svetle-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#638224" data-name="NEBULA PLA Světle zelená" data-slug="filament-nebula-pla-svetle-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-svetle-zelena-1-kg/">
@@ -19697,7 +19708,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#C04018 <span class="rgb">RGB 192,64,24</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-brick-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#C8410F" data-name="AURAPOL PLA 3D Metallic Brick" data-slug="aurapol-pla-3d-filament-metallic-brick-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-brick-1-kg-1-75-mm">
@@ -19910,7 +19921,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#713427 <span class="rgb">RGB 113,52,39</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/devil-design-pla-med-dark-copper-1kg" target="_blank" rel="noopener" data-hex="#7B3D2D" data-name="Devil Design PLA Měď (Dark Copper)" data-slug="devil-design-pla-med-dark-copper-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/devil-design-pla-med-dark-copper-1kg">
@@ -20069,7 +20080,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#632A1E <span class="rgb">RGB 99,42,30</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#602322" data-name="DEVIL DESIGN PLA Vínově Červená" data-slug="filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg">
@@ -20240,7 +20251,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#A79C80 <span class="rgb">RGB 167,156,128</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#ACA07E" data-name="AURAPOL PLA 3D Antique Pink" data-slug="aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm">
@@ -20417,7 +20428,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#79263F <span class="rgb">RGB 121,38,63</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-fialova-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#75273A" data-name="DEVIL DESIGN PLA Tmavě Fialová" data-slug="filament-devil-design-pla-tmave-fialova-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-pla-tmave-fialova-1-75-mm-1-kg">
@@ -20570,7 +20581,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#2D4A52 <span class="rgb">RGB 45,74,82</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-alien-green" target="_blank" rel="noopener" data-hex="#23494F" data-name="Fiberlogy PLA Easy Alien Green" data-slug="easy-pla-alien-green" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-alien-green">
@@ -20783,7 +20794,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#5E1214 <span class="rgb">RGB 94,18,20</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/filamentree-pla-plus-cervena-wine-red-1kg" target="_blank" rel="noopener" data-hex="#681F22" data-name="Filamentree PLA+ Plus Červená (Wine Red)" data-slug="filamentree-pla-plus-cervena-wine-red-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/filamentree-pla-plus-cervena-wine-red-1kg">
@@ -20930,7 +20941,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#6C5840 <span class="rgb">RGB 108,88,64</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64" target="_blank" rel="noopener" data-hex="#775D39" data-name="Filament PM PLA Zlatá" data-slug="p64" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-zlata-1-75-mm-1-kg/p64">
@@ -21083,7 +21094,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#593D29 <span class="rgb">RGB 89,61,41</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg" target="_blank" rel="noopener" data-hex="#5C3D24" data-name="Devil Design PLA Tmavě Hnědá (Dark Brown)" data-slug="devil-design-pla-tmave-hneda-dark-brown-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg">
@@ -21248,7 +21259,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#3F2E23 <span class="rgb">RGB 63,46,35</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308" target="_blank" rel="noopener" data-hex="#372618" data-name="Filament PM PLA Skin 477C" data-slug="p308" data-shop="FilamentPM" data-shop-cls="filamentpm" data-url="https://www.filament-pm.cz/pla-skin-edice-skin-477c-1-75-mm-1-kg/p308">
@@ -21413,7 +21424,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#B42816 <span class="rgb">RGB 180,40,22</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#BD1910" data-name="NEBULA PLA Zářivě červená" data-slug="filament-nebula-pla-zarive-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/">
@@ -21632,7 +21643,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#DED7C1 <span class="rgb">RGB 222,215,193</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
@@ -21845,7 +21856,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#F6CE32 <span class="rgb">RGB 246,206,50</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#F7CD07" data-name="Spectrum + The Filament PLA High Speed ŽLUTÁ TRUE" data-slug="refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-spectrum-pla-high-speed-zluta-true-1-75-mm-1-kg">
@@ -22052,7 +22063,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#D7D371 <span class="rgb">RGB 215,211,113</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E1D963" data-name="Professional Lab PLA Pastel ŽLUTÁ" data-slug="filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-pastel-zluta-1-75-mm-1-kg">
@@ -22217,7 +22228,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#C8B87C <span class="rgb">RGB 200,184,124</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/easy-pla-sahara-beige" target="_blank" rel="noopener" data-hex="#CAB980" data-name="Fiberlogy PLA Easy Sahara Beige" data-slug="easy-pla-sahara-beige" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/easy-pla-sahara-beige">
@@ -22370,7 +22381,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#7A7458 <span class="rgb">RGB 122,116,88</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#7D7A5F" data-name="3DLabPrint PLA Poly Light 1.0 LW Pla Army Green" data-slug="filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg">
@@ -22535,7 +22546,7 @@ article.row.combo-out { display: none; }
           <div class="hex">#605A37 <span class="rgb">RGB 96,90,55</span></div>
         </div>
       </div>
-    </div>
+    <button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>
           <div class="rcols" data-r="eu">
             <div class="col pla-col"><div class="col-label">PLA</div>
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-stare-zlato-1-kg/" target="_blank" rel="noopener" data-hex="#69633B" data-name="NEBULA PLA Staré zlato" data-slug="filament-nebula-pla-stare-zlato-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-stare-zlato-1-kg/">
@@ -22717,6 +22728,21 @@ article.row.combo-out { display: none; }
 </div>
 <a class="to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg><span>Back to top</span></a>
 <script>(function(){var b=document.querySelector('.to-top');if(!b)return;document.documentElement.classList.add('js');function f(){b.classList.toggle('show',window.scrollY>600)}addEventListener('scroll',f,{passive:true});f();})();</script>
+<script>
+(function () {
+  function set(row, open) {
+    row.classList.toggle('open', open);
+    var b = row.querySelector('.row-toggle'); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('.row-toggle');
+    if (t) { var row = t.closest('article.row'); set(row, !row.classList.contains('open')); return; }
+    var all = e.target.closest && e.target.closest('[data-rows]');
+    if (all) document.querySelectorAll('article.row').forEach(function (r) { set(r, all.dataset.rows === 'open'); });
+  });
+  window.openRow = function (row) { set(row, true); };
+})();
+</script>
 
 <aside class="hero-preview empty" id="hero-preview" aria-label="Recolored car preview">
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
@@ -22874,6 +22900,7 @@ article.row.combo-out { display: none; }
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
+      if (hit && window.openRow) window.openRow(r);
     });
   }
   document.addEventListener('click', function (e) {
