@@ -3108,60 +3108,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.99,
-          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.99,
-          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "HT110 3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.02,
           "slug": "filamentree-pla-plus-modra-steel-blue-1kg",
           "brand": "Filamentree",
@@ -3186,6 +3132,60 @@
           ],
           "hex": "#173148",
           "pixel_count": 241505,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.11,
+          "slug": "pla-extrafill-vertigo-starlight-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Vertigo Starlight",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-starlight-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_Vertigo_Starlight_1KG__1.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-vertigo-starlight-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Vertigo Starlight\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            40,
+            43,
+            63
+          ],
+          "hex": "#282B3F",
+          "pixel_count": 358036,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.27,
+          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Námořnická Modrá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            44,
+            70
+          ],
+          "hex": "#202C46",
+          "pixel_count": 392860,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -16958,6 +16958,62 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 7.12,
+          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Black",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            23,
+            27
+          ],
+          "hex": "#18171B",
+          "pixel_count": 130144,
+          "confidence": "manual_override",
+          "measured_hex": "#373A42"
+        },
+        {
+          "delta_e": 7.12,
+          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "HT110 3D Black",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
+          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            23,
+            27
+          ],
+          "hex": "#18171B",
+          "pixel_count": 130144,
+          "confidence": "manual_override",
+          "measured_hex": "#373A42"
+        },
+        {
           "delta_e": 7.43,
           "slug": "pla-extrafill-vertigo-starlight-1kg",
           "brand": "Fillamentum",
@@ -16982,60 +17038,6 @@
           ],
           "hex": "#282B3F",
           "pixel_count": 358036,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.59,
-          "slug": "aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Undercity Sky",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/f/0f63c962c1e6cabe1c8a01c145ff94ed-undercitysky.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Undercity Sky 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            40,
-            45,
-            60
-          ],
-          "hex": "#282D3C",
-          "pixel_count": 145349,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.07,
-          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
-          "brand": "DEVIL DESIGN",
-          "material": "PLA",
-          "color_name": "Námořnická Modrá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
-          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            32,
-            44,
-            70
-          ],
-          "hex": "#202C46",
-          "pixel_count": 392860,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26428,60 +26430,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 1.6,
-          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 1.6,
-          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "HT110 3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 1.79,
           "slug": "aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -26560,6 +26508,60 @@
           ],
           "hex": "#36373C",
           "pixel_count": 179763,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.5,
+          "slug": "filament-nebula-pla-zelena-mystic-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Zelená Mystic",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-zelena-mystic-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/5/b5ffe69c21a590d7a9070ee9f98c6de8-vyr-2591-pla-mystic-green.jpg",
+          "local_image": "smart3d-filament-nebula-pla-zelena-mystic-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA / ZELENÁ \"MYSTIC\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            52,
+            51,
+            59
+          ],
+          "hex": "#34333B",
+          "pixel_count": 288639,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.46,
+          "slug": "filament-nebula-pla-607-cerna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "607 Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-607-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/b/8b1b3c5092fbd1001f432ef1886cd5e7-nebula-pla-607-black.png",
+          "local_image": "smart3d-filament-nebula-pla-607-cerna-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA 607 / ČERNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            50,
+            51,
+            55
+          ],
+          "hex": "#323337",
+          "pixel_count": 283286,
           "confidence": "measured_dominant_hue"
         }
       ],
