@@ -59,7 +59,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 }
 .tile-foot { position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto;
              padding-top: 202px; }
-.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0; }
+.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0;
+              white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* one line always, or the tile jumps */
 .tile-open { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
              border: 2px solid var(--ink); border-radius: 999px; background: var(--tile); white-space: nowrap; }
 .tile-open:hover, .tile-open:focus-visible { background: var(--ink); color: var(--tile); }
@@ -120,7 +121,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile--doppler .tile-tag::before { inset: -4px -5px; background: var(--dl-paper); }
 .tile--doppler .tile-tag::after { inset: 0; background: var(--dl-accent); }
 .tile--doppler .tile-meta { margin: 24px 0 0 58px; font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
-.tile--doppler .tile-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
+.tile--doppler .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
 .tile--doppler .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-paper);
   background: var(--dl-primary); border: 2px solid var(--dl-primary-deep); border-radius: 999px; box-shadow: 0 3px 0 var(--dl-primary-deep); }
 .tile--doppler .tile-open:hover, .tile--doppler .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent-deep); box-shadow: 0 3px 0 var(--dl-accent-deep); color: var(--dl-paper); }

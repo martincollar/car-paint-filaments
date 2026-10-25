@@ -355,7 +355,8 @@ __BASE__
 }
 .tile-foot { position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto;
              padding-top: 202px; }
-.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0; }
+.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0;
+              white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }   /* one line always, or the tile jumps */
 .tile-open { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
              border: 2px solid var(--ink); border-radius: 999px; background: var(--tile); white-space: nowrap; }
 .tile-open:hover, .tile-open:focus-visible { background: var(--ink); color: var(--tile); }
