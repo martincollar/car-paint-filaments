@@ -1,0 +1,18 @@
+/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-torq .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 22px 40px 24px;
+  --tile: var(--dl-bg); --muted: #444; }
+.theme-torq .head-card .tile-frame { box-shadow: var(--dl-card-shadow); }
+.theme-torq .head-card .tile-name { font-size: 4.4rem; -webkit-text-stroke-width: 3px; text-shadow: 4px 4px 0 var(--dl-outline); }
+.theme-torq .head-card .tile-tag { font-size: 1.5rem; margin-top: 14px; }
+.theme-torq .head-card .tile-meta { margin-top: 14px; font-size: 1.05rem; line-height: 1.5; }
+.theme-torq .head-card .t-shield { right: 34px; top: -30px; width: 150px; }
+.theme-torq .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-outline); }
+.theme-torq .head-filters .year-nav { margin: 0; }
+.theme-torq .head-filters .nav-label { font: 700 .95rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 600px) {
+  .theme-torq .head-card { padding: 18px 16px 18px; }
+  .theme-torq .head-card .tile-name { font-size: 2.4rem; }
+  .theme-torq .head-card .tile-tag { font-size: 1.05rem; }
+  .theme-torq .head-card .t-shield { right: 8px; top: -26px; width: 78px; }
+}

@@ -1,0 +1,20 @@
+/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-doppler .head-card { display: block; position: relative; margin: 14px 0 30px; padding: 34px 40px 22px;
+  --tile: var(--dl-bg); --muted: var(--dl-ink); }
+.theme-doppler .head-card .tile-text { padding-top: 0; }
+.theme-doppler .head-card .tile-name { font-size: 3.7rem; white-space: normal; max-width: 100%; }
+.theme-doppler .head-card .tile-tag { font-size: 1.6rem; margin: -34px 0 0 56px; }
+.theme-doppler .head-card .tile-meta { margin: 26px 0 0 70px; line-height: 1.7; }
+.theme-doppler .head-card .t-star-1 { right: 34px; top: -34px; width: 170px; }
+.theme-doppler .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin: 26px 0 0 14px; padding-top: 16px; border-top: 2px dashed color-mix(in srgb, var(--dl-primary-deep) 45%, transparent); }
+.theme-doppler .head-filters .year-nav { margin: 0; }
+.theme-doppler .head-filters .nav-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 600px) {
+  .theme-doppler .head-card { padding: 26px 16px 18px; }
+  .theme-doppler .head-card .tile-name { font-size: 2.3rem; margin-left: 4px; }
+  .theme-doppler .head-card .tile-tag { font-size: 1.1rem; margin: -26px 0 0 18px; }
+  .theme-doppler .head-card .tile-meta { margin: 20px 0 0 12px; }
+  .theme-doppler .head-card .t-star-1 { right: 6px; top: -26px; width: 90px; }
+  .theme-doppler .head-filters { margin-left: 0; }
+}

@@ -65,74 +65,6 @@ body {
 .paper::before { border-bottom: 3px solid var(--ink); }
 .paper::after  { margin-top: 28px; margin-bottom: -28px; border-top: 3px solid var(--ink); }
 
-/* ===== Hero ===== */
-header.page-head {
-  position: relative; overflow: hidden; isolation: isolate;
-  margin: 0 calc(-1 * var(--pad)) 28px; padding: 28px var(--pad) 46px;
-  background: var(--red); color: var(--white);
-  border-bottom: 3px solid var(--ink);
-}
-/* vent slats fading in from the left */
-header.page-head::before {
-  content: ""; position: absolute; inset: 0 auto 0 0; width: 46%; z-index: -1;
-  background: repeating-linear-gradient(90deg, rgba(0,0,0,0.32) 0 5px, transparent 5px 15px);
-  -webkit-mask: linear-gradient(90deg, #000, transparent); mask: linear-gradient(90deg, #000, transparent);
-}
-/* hood stripes: wide, thin, wide */
-header.page-head::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: -1;
-  background: linear-gradient(var(--ink) 0 6px, var(--white) 6px 12px, var(--ink) 12px 15px, var(--white) 15px 19px, var(--ink) 19px 22px);
-}
-.shield {
-  position: absolute; z-index: 1; right: var(--pad); top: 50%;
-  width: clamp(64px, 11vw, 124px); transform: translateY(-58%) rotate(4deg);
-  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.35));
-}
-.hero-top {
-  display: flex; gap: 12px; align-items: center;
-  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 600;
-  letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--white); margin-bottom: 8px; padding-right: clamp(80px, 14vw, 160px);
-}
-.hero-top::before { content: ""; width: 34px; height: 3px; background: var(--white); }
-.hero-top::after  { content: ""; flex: 1; height: 3px; background: rgba(255,255,255,0.35); }
-
-h1 {
-  font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
-  font-size: clamp(2.4rem, 6.4vw + 0.6rem, 5rem);
-  margin: 0; line-height: 1; letter-spacing: 0.02em;
-  /* white decal lettering with a black outline, like the fender badge */
-  color: var(--white); -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill;
-  text-shadow: 4px 4px 0 var(--ink); text-wrap: balance;
-}
-.script {
-  display: inline-block; margin-top: 18px; padding: 5px 18px 5px 14px;
-  font-family: var(--font-mono); font-style: italic; font-weight: 700;
-  font-size: clamp(1.1rem, 1.8vw + 0.4rem, 1.7rem); letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--white); background: var(--ink); line-height: 1.1;
-  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
-}
-
-/* ===== Stats strip ===== */
-.meta-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 14px; margin: 24px 0 0;
-}
-.meta-grid > div {
-  background: var(--white); border: 2px solid var(--ink);
-  border-top: 7px solid var(--blue);
-  padding: 8px 12px 10px; text-align: center;
-  box-shadow: 4px 4px 0 var(--ink);
-}
-.meta-grid > div strong {
-  display: block; font-family: var(--font-display); font-weight: 400;
-  font-size: 2rem; line-height: 1.1; color: var(--blue-deep);
-}
-.meta-grid > div span {
-  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--muted);
-}
-
 /* ===== Year nav ===== */
 .year-nav {
   display: flex; flex-wrap: wrap; gap: 8px 6px; margin: 22px 0 0;
@@ -313,8 +245,6 @@ h2.year-head {
     flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip;
     font-size: 0.9rem; line-height: 1.25;
   }
-    .hero-top { padding-right: 0; }
-  .shield { top: 14px; transform: rotate(4deg); width: 56px; }
   .year-badge { padding-right: 50px; }
 }
 

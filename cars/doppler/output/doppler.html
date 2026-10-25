@@ -1,32 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="theme-doppler">
 <head>
 <meta charset="utf-8">
 <title>3D Sets Doppler · 1951-1957 color card</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
-/* Doppler theme: mid-century reproduction of a factory color-chip card.
+
+.tile-frame { position: absolute; inset: 0; background: var(--tile); border: 2px solid var(--ink); border-radius: 14px;
+              box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
+.tile-deco { position: absolute; inset: 0; pointer-events: none; }
+.tile-text { position: relative; z-index: 3; }
+.tile-name { margin: 0; font-size: 1.7rem; line-height: 1.1; }
+.tile-name a { text-decoration: none; }
+.tile-name .w { white-space: nowrap; }
+.tile-name .ch { display: inline-block; }
+.tile-tag { margin: 6px 0 0; color: var(--muted); }
+.tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+/* Doppler design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = main shape/button colour, accent = second colour (ribbon, hover), accent2 = trim. */
+.theme-doppler, .tile--doppler {
+  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner */
+  --dl-card: #fffffb;          /* raised surface */
+  --dl-paper: #fffdf4;         /* text on colour, outlines */
+  --dl-ink: #1d4a52;
+  --dl-outline: #111;          /* hard black shadows */
+  --dl-primary: #2f8f8a;
+  --dl-primary-deep: #0a6361;
+  --dl-accent: #d2452f;
+  --dl-accent-deep: #8e2a1a;
+  --dl-accent2: #e9a73a;
+  --dl-radius: 22px;
+  --dl-border: 3px solid #0a6361;
+  --dl-shadow: 0 3px 0 #0a6361;     /* button foot */
+  --dl-font-title: "Lobster Two", cursive;
+  --dl-font-tag: "Barlow Condensed", sans-serif;
+  --dl-font-ui: "Oswald", sans-serif;
+  --dl-font-body: "Fraunces", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}/* Doppler theme: mid-century reproduction of a factory color-chip card.
    Cream paper ground, bottle-teal + sunburst-orange + mustard accents, slab serif display. */
 :root {
-  --bg: #fefaeb;
+  --bg: var(--dl-bg);
   --bg-paper: #fffdf4;
-  --bg-raised: #fffffb;
+  --bg-raised: var(--dl-card);
   --fg: #2d2217;
   --muted: #7a6a53;
   --rule: #d7c7a3;
   --rule-soft: #e7d8b4;
 
-  --teal: #0f8f8a;         /* tortoise / bottle teal (hero sign) */
-  --teal-deep: #0a6361;
+  --teal: var(--dl-primary);         /* tortoise / bottle teal (hero sign) */
+  --teal-deep: var(--dl-primary-deep);
   --teal-weak: #c7e7e5;
-  --orange: #e36b2a;       /* sunburst orange */
-  --orange-deep: #b24a12;
+  --orange: var(--dl-accent);       /* sunburst orange */
+  --orange-deep: var(--dl-accent-deep);
   --orange-weak: #ffd6b5;
-  --mustard: #e9a73a;      /* banana-split mustard */
+  --mustard: var(--dl-accent2);      /* banana-split mustard */
   --mustard-weak: #f6dca2;
   --cherry: #c73932;       /* '53 lipstick red */
-  --navy: #27394e;         /* 1952 Broadway Blue */
+  --navy: var(--dl-ink);         /* 1952 Broadway Blue */
 
   --good: #2b7a4b;
   --warn: #a56114;
@@ -36,7 +67,7 @@
   --font-script:  "Yesteryear", "Pacifico", cursive;
   --font-mono:    "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
   color-scheme: light;
-  --font-body:    "Fraunces", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    var(--dl-font-body);
 }
 body {
   background: var(--bg);
@@ -65,65 +96,6 @@ body {
 }
 .paper::before { left: -5px; box-shadow: 0 110px 0 var(--bg), 0 110px 0 1px var(--rule), 0 220px 0 var(--bg), 0 220px 0 1px var(--rule); }
 .paper::after { right: -5px; box-shadow: 0 110px 0 var(--bg), 0 110px 0 1px var(--rule), 0 220px 0 var(--bg), 0 220px 0 1px var(--rule); }
-
-/* ===== Hero ===== */
-header.page-head { position: relative; padding-bottom: 24px; margin-bottom: 24px;
-  border-bottom: 3px double var(--rule); }
-.hero-top {
-  display: flex; gap: 10px; align-items: center;
-  font-family: var(--font-mono); font-size: 0.72rem;
-  letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 6px;
-}
-.hero-top::before, .hero-top::after {
-  content: ""; flex: 1; height: 1px;
-  background: repeating-linear-gradient(90deg, var(--rule) 0 6px, transparent 6px 10px);
-}
-
-h1 {
-  font-family: var(--font-display); font-weight: 400;
-  font-size: clamp(2rem, 4.6vw + 0.6rem, 3.8rem);
-  margin: 2px 0 0; line-height: 1.02; letter-spacing: 0.01em;
-  color: var(--teal-deep); text-wrap: balance;
-  text-shadow: 2px 2px 0 var(--orange-weak), 4px 4px 0 var(--mustard);
-}
-
-.script {
-  display: inline-block; margin-top: 22px;
-  font-family: var(--font-script); font-size: clamp(1.4rem, 2.6vw + 0.3rem, 2.2rem);
-  color: var(--orange); line-height: 1; transform: rotate(-3deg);
-}
-.script::after {
-  content: ""; display: block; width: 80%; height: 6px; margin: 2px 0 0 10%;
-  background: var(--orange); border-radius: 50%;
-  mask: radial-gradient(ellipse at center, black 55%, transparent 60%);
-  -webkit-mask: radial-gradient(ellipse at center, black 55%, transparent 60%);
-}
-
-.starburst {
-  width: 72px; height: 72px; color: var(--orange);
-  position: absolute; top: 6px; right: 8px;
-  filter: drop-shadow(2px 2px 0 var(--mustard));
-}
-
-/* ===== Stats strip ===== */
-.meta-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 12px; margin: 22px 0 0;
-}
-.meta-grid > div {
-  background: var(--bg-raised); border: 1px solid var(--rule);
-  padding: 10px 12px; text-align: center;
-  box-shadow: 2px 2px 0 var(--rule-soft);
-}
-.meta-grid > div strong {
-  display: block; font-family: var(--font-display); font-weight: 400;
-  font-size: 1.9rem; line-height: 1; color: var(--teal-deep);
-}
-.meta-grid > div span {
-  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--muted);
-}
 
 /* ===== Year nav ===== */
 .year-nav {
@@ -387,7 +359,67 @@ img { max-width: 100%; }
 }
 .fil-tip img { border: 1px solid var(--rule); }
 .fil-tip .t-sw, .hero-preview .t-sw { border: 1px solid var(--rule); }
-.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--orange-deep, var(--navy)); }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--orange-deep, var(--navy)); }/* Index tile: warm cream card like the 3D Sets promo banner. Title in a teal bubble, tagline on a red arrow
+   ribbon (both with a white outline and a hard black shadow), 8-point sparkle stars. Car and stars spill over the frame. */
+.tile--doppler { --stage-w: 121%; --stage-left: -10.5%; --stage-bottom: 16px; --cream: var(--dl-bg); --ink: var(--dl-ink); }
+.tile--doppler .tile-frame { background: var(--cream); border: 3px solid var(--dl-primary-deep); border-radius: 22px;
+  box-shadow: inset 0 0 0 6px var(--cream), inset 0 0 0 8px var(--dl-accent2), 0 10px 24px -14px rgba(10,60,58,.45); }
+.tile--doppler .tile-text { padding-top: 0; max-width: none; }
+/* title: teal bubble with a raised top-left corner; letters bent into an arch and tilted up to the right */
+.tile--doppler .tile-name { position: relative; display: inline-block; margin: 0 0 0 10px; padding: .5em .95em .95em 1.05em; white-space: nowrap;
+  font: 700 italic 2.7rem/1.1 var(--dl-font-title); letter-spacing: -.02em; color: var(--dl-paper); text-shadow: 3px 3px 0 var(--dl-outline); }
+.tile--doppler .tile-name::before { content: ""; position: absolute; inset: 0; z-index: -1; transform: rotate(-5deg);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 350 100' preserveAspectRatio='none'%3E%3Cpath d='M22 34C22 14 44 4 80 3C150 -2 250 6 318 18C340 22 346 34 346 48C346 72 330 90 300 94C240 100 120 100 50 96C22 94 4 82 4 62C4 50 12 40 22 34Z' fill='%232f8f8a' stroke='%23fffdf4' stroke-width='5' stroke-linejoin='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") center / 100% 100% no-repeat; filter: drop-shadow(3px 4px 0 var(--dl-outline)); }
+.tile--doppler .tile-name a { color: inherit; }
+.tile--doppler .tile-name .ch { --d: calc(var(--i) - (var(--n) - 1) / 2);
+  transform: translateY(calc(var(--d) * var(--d) * .04px - var(--d) * 1.1px)) rotate(calc(var(--d) * .35deg - 4deg)); }
+.tile--doppler .tile-name .w:first-child .ch:nth-child(1) { margin-right: -.16em; }
+/* tagline: red arrow ribbon, white outline, black shadow */
+.tile--doppler .tile-tag { position: relative; display: block; width: fit-content; margin: -32px 0 0 44px; padding: 6px 42px 6px 24px;
+  color: var(--dl-paper); font: 800 italic 1.4rem/1.2 var(--dl-font-tag); text-transform: uppercase; letter-spacing: .05em;
+  text-shadow: 2px 2px 0 var(--dl-outline); transform: rotate(-2deg); filter: drop-shadow(3px 3px 0 var(--dl-outline)); }
+.tile--doppler .tile-tag::before, .tile--doppler .tile-tag::after { content: ""; position: absolute; z-index: -1;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%); }
+.tile--doppler .tile-tag::before { inset: -4px -5px; background: var(--dl-paper); }
+.tile--doppler .tile-tag::after { inset: 0; background: var(--dl-accent); }
+.tile--doppler .tile-meta { margin: 24px 0 0 58px; font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--ink); }
+.tile--doppler .tile-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--ink); }
+.tile--doppler .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-paper);
+  background: var(--dl-primary); border: 2px solid var(--dl-primary-deep); border-radius: 999px; box-shadow: 0 3px 0 var(--dl-primary-deep); }
+.tile--doppler .tile-open:hover, .tile--doppler .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent-deep); box-shadow: 0 3px 0 var(--dl-accent-deep); color: var(--dl-paper); }
+.tile--doppler .t-star { position: absolute; display: block; filter: drop-shadow(2px 3px 0 rgba(0,0,0,.28)); }
+.tile--doppler .t-star-1 { right: -36px; top: -56px; width: 150px; }
+@media (max-width: 520px) {
+  .tile--doppler .tile-foot { padding-top: 150px; }
+  .tile--doppler .tile-name { position: relative; display: inline-block; margin: 0 0 0 10px; padding: .5em .95em .95em 1.05em; white-space: nowrap;
+  font: 700 italic 2.7rem/1.1 var(--dl-font-title); letter-spacing: -.02em; color: var(--dl-paper); text-shadow: 3px 3px 0 var(--dl-outline); }
+  .tile--doppler .tile-tag { font-size: 1.15rem; margin: -26px 0 0 26px; }
+  .tile--doppler .tile-meta { margin-left: 46px; }
+  .tile--doppler .t-star-1 { width: 100px; right: -18px; top: -40px; }
+}
+.tile--doppler .tile-label { opacity: .6; }
+.tile--doppler .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary-deep);
+  background: var(--dl-paper); border: 2px solid var(--dl-primary-deep); border-radius: 999px; box-shadow: 0 3px 0 var(--dl-primary-deep); }
+.tile--doppler .tile-buy:hover, .tile--doppler .tile-buy:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent-deep); box-shadow: 0 3px 0 var(--dl-accent-deep); color: var(--dl-paper); }/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-doppler .head-card { display: block; position: relative; margin: 14px 0 30px; padding: 34px 40px 22px;
+  --tile: var(--dl-bg); --muted: var(--dl-ink); }
+.theme-doppler .head-card .tile-text { padding-top: 0; }
+.theme-doppler .head-card .tile-name { font-size: 3.7rem; white-space: normal; max-width: 100%; }
+.theme-doppler .head-card .tile-tag { font-size: 1.6rem; margin: -34px 0 0 56px; }
+.theme-doppler .head-card .tile-meta { margin: 26px 0 0 70px; line-height: 1.7; }
+.theme-doppler .head-card .t-star-1 { right: 34px; top: -34px; width: 170px; }
+.theme-doppler .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin: 26px 0 0 14px; padding-top: 16px; border-top: 2px dashed color-mix(in srgb, var(--dl-primary-deep) 45%, transparent); }
+.theme-doppler .head-filters .year-nav { margin: 0; }
+.theme-doppler .head-filters .nav-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 600px) {
+  .theme-doppler .head-card { padding: 26px 16px 18px; }
+  .theme-doppler .head-card .tile-name { font-size: 2.3rem; margin-left: 4px; }
+  .theme-doppler .head-card .tile-tag { font-size: 1.1rem; margin: -26px 0 0 18px; }
+  .theme-doppler .head-card .tile-meta { margin: 20px 0 0 12px; }
+  .theme-doppler .head-card .t-star-1 { right: 6px; top: -26px; width: 90px; }
+  .theme-doppler .head-filters { margin-left: 0; }
+}
 
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
@@ -402,8 +434,10 @@ html { scroll-behavior: smooth; }
 
 [data-r] { display: none; }
 body[data-region="eu"] div[data-r="eu"] { display: block; }
+body[data-region="eu"] span[data-r="eu"] { display: inline; }
 body[data-region="eu"] .rcols[data-r="eu"] { display: contents; }
 body[data-region="int"] div[data-r="int"] { display: block; }
+body[data-region="int"] span[data-r="int"] { display: inline; }
 body[data-region="int"] .rcols[data-r="int"] { display: contents; }
 
 .pick { cursor: pointer; color: inherit; text-decoration: none; }
@@ -458,34 +492,13 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 
 </style>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Yesteryear&amp;family=Pacifico&amp;family=Space+Mono:wght@400;700&amp;family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Yesteryear&amp;family=Pacifico&amp;family=Space+Mono:wght@400;700&amp;family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&amp;family=Lobster+Two:ital,wght@1,700&amp;family=Barlow+Condensed:ital,wght@1,800&amp;family=Oswald:wght@500;600&display=swap">
 </head>
 <body id="top" data-region="eu">
 
 <div class="paper">
 
-<header class="page-head">
-  <svg class="starburst" viewBox="-50 -50 100 100" aria-hidden="true">
-  <g fill="currentColor">
-    <polygon points="0,-46 3,-10 46,0 3,10 0,46 -3,10 -46,0 -3,-10"/>
-    <polygon points="32,-32 7,-7 32,32 -7,7 -32,32 -7,-7 -32,-32 7,7" opacity="0.7"/>
-  </g>
-  <circle cx="0" cy="0" r="4" fill="currentColor"/>
-</svg>
-  <div class="hero-top"><span>Factory Paint Archive · 1951-1957</span></div>
-  <h1>3D Sets Doppler</h1>
-  <span class="script">Fins, Chrome &amp; Flakes</span>
-  <div class="meta-grid">
-    <div><strong>65</strong><span>factory colors</span></div>
-    <div data-r="eu"><strong>1120</strong><span>PLA candidates</span></div><div data-r="eu"><strong>526</strong><span>PETG candidates</span></div><div data-r="eu"><strong>150</strong><span>ASA candidates</span></div><div data-r="eu"><strong>10</strong><span>e-shops</span></div><div data-r="int"><strong>484</strong><span>PLA candidates</span></div><div data-r="int"><strong>131</strong><span>PETG candidates</span></div><div data-r="int"><strong>57</strong><span>ASA candidates</span></div><div data-r="int"><strong>5</strong><span>e-shops</span></div>
-    <div><strong>7</strong><span>model years</span></div>
-  </div>
-  <div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
-  <nav class="year-nav">
-    <span class="nav-label">Jump to year:</span>
-    <a href="#y1957">1957</a><a href="#y1956">1956</a><a href="#y1955">1955</a><a href="#y1954">1954</a><a href="#y1953">1953</a><a href="#y1952">1952</a><a href="#y1951">1951</a>
-  </nav>
-</header>
+<header class="page-head tile tile--doppler head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-star t-star-1" viewBox="-76 -76 152 152" aria-hidden="true"><path d="M0.0 -68.0Q0.6 -1.5 24.0 -24.0Q1.5 -0.6 56.0 -0.0Q1.5 0.6 24.0 24.0Q0.6 1.5 0.0 68.0Q-0.6 1.5 -24.0 24.0Q-1.5 0.6 -56.0 0.0Q-1.5 -0.6 -24.0 -24.0Q-0.6 -1.5 0.0 -68.0Z" fill="#fffdf4" stroke="#fffdf4" stroke-width="9" stroke-linejoin="round"/><path d="M0.0 -68.0Q0.6 -1.5 24.0 -24.0Q1.5 -0.6 56.0 -0.0Q1.5 0.6 24.0 24.0Q0.6 1.5 0.0 68.0Q-0.6 1.5 -24.0 24.0Q-1.5 0.6 -56.0 0.0Q-1.5 -0.6 -24.0 -24.0Q-0.6 -1.5 0.0 -68.0Z" fill="#d2452f"/><circle r="2.6" fill="#fffdf4"/></svg></div><div class="tile-text"><h1 class="tile-name" style="--n:15"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">D</span><span class="ch" style="--i:9" aria-hidden="true">o</span><span class="ch" style="--i:10" aria-hidden="true">p</span><span class="ch" style="--i:11" aria-hidden="true">p</span><span class="ch" style="--i:12" aria-hidden="true">l</span><span class="ch" style="--i:13" aria-hidden="true">e</span><span class="ch" style="--i:14" aria-hidden="true">r</span></span></h1><p class="tile-tag">Fins, Chrome &amp; Flakes</p><p class="tile-meta">1951-1957 · 65 paint colours<br><span data-r="eu">1120 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1957">1957</a><a href="#y1956">1956</a><a href="#y1955">1955</a><a href="#y1954">1954</a><a href="#y1953">1953</a><a href="#y1952">1952</a><a href="#y1951">1951</a></nav></div></header>
 
 <div class="legend">
   <span class="legend-head">ΔE2000 scale</span>

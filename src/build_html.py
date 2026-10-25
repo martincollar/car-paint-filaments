@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import config
 from shoplib import slugify, region_labels
+from tile_parts import head_card_html, TILE_BASE_CSS
 
 NO_MATCH_DE = 12.0      # primary at or above this gets the "no close match" banner
 
@@ -377,21 +378,34 @@ def counter_html():
             f"fetch('{host}/counter/TOTAL.json').then(function(r){{return r.json()}})"
             ".then(function(d){v.textContent='Visitor no. '+d.count;v.hidden=false}).catch(function(){});})();</script>")
 
+def merge_fonts(*queries):
+    """Google Fonts `family=...` queries joined, each family once"""
+    fams = []
+    for q in queries:
+        for fam in re.findall(r"family=[^&\s]+", q):
+            if fam not in fams:
+                fams.append(fam)
+    return "&".join(fams)
+
+
 def load_theme(name):
-    """(css, fonts query, header motif html) from themes/<name>/. Each car picks one in car.json."""
+    """dict of css, fonts query, header motif html and, for a theme with tile-style header (tokens.css), tokens,
+    headcard css and tile decoration, read from themes/<name>/. Each car picks one in car.json."""
     d = config.THEMES / name
     if not (d / "theme.css").is_file():
         sys.exit(f"theme '{name}' not found: expected {d}/theme.css")
     def part(f):
         fp = d / f
         return fp.read_text().strip() if fp.is_file() else ""
-    return part("theme.css"), part("fonts.txt"), part("motif.html")
+    return {"css": part("theme.css"), "fonts": part("fonts.txt"), "motif": part("motif.html"), "tokens": part("tokens.css"),
+            "headcard": part("headcard.css"), "deco": part("tile.html"), "tile": part("tile.css"), "tile_fonts": part("tile-fonts.txt")}
 
 def region_css(regions):
     """Show only the active region's candidates and counts (body[data-region])."""
     out = ["[data-r] { display: none; }"]
     for r in regions:
         out.append(f'body[data-region="{r}"] div[data-r="{r}"] {{ display: block; }}')
+        out.append(f'body[data-region="{r}"] span[data-r="{r}"] {{ display: inline; }}')
         out.append(f'body[data-region="{r}"] .rcols[data-r="{r}"] {{ display: contents; }}')
     return "\n".join(out)
 
@@ -424,7 +438,13 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     DISPLAY    = meta.get("display", car.title())
     SCRIPT_TAG = meta.get("script_tagline", "")
     BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
-    theme_css, fonts_q, motif_html = load_theme(meta.get("theme", "doppler"))
+    theme_name = meta.get("theme", "doppler")
+    theme = load_theme(theme_name)
+    fonts_q, motif_html = theme["fonts"], theme["motif"]
+    use_card = bool(theme["tokens"])
+    if use_card:
+        fonts_q = merge_fonts(fonts_q, theme["tile_fonts"])
+    theme_css = (TILE_BASE_CSS + theme["tokens"] + theme["css"] + theme["tile"] + theme["headcard"]) if use_card else theme["css"]
 
     by_name = {r: {m["name"]: m for m in matches_by_region[r]} for r in regions}
     by_year = {}
@@ -459,7 +479,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         </article>
         """)
 
-    counts = ""
+    counts, card_counts = "", ""
     for r in regions:
         fr = [f for f in all_filaments if r in (f.get("regions") or []) and f.get("rgb")]
         pla_n  = sum(1 for f in fr if f["material"] in config.PLA_MATERIALS)
@@ -470,6 +490,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
                    f'<div data-r="{r}"><strong>{petg_n}</strong><span>PETG candidates</span></div>'
                    f'<div data-r="{r}"><strong>{asa_n}</strong><span>ASA candidates</span></div>'
                    f'<div data-r="{r}"><strong>{len(shops)}</strong><span>e-shops</span></div>')
+        card_counts += (f'<span data-r="{r}">{pla_n} PLA · {petg_n} PETG · {asa_n} ASA · {len(shops)} e-shops</span>')
     switch = ""
     if len(regions) > 1:
         switch = ('<div class="year-nav region-switch"><span class="nav-label">Shops in:</span>'
@@ -481,9 +502,29 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     hero_css, hero_html, hero_js = hero_parts(hero)
+    year_nav = ('<nav class="year-nav"><span class="nav-label">Jump to year:</span>'
+                + "".join(f'<a href="#y{y}">{y}</a>' for y in _year_links) + '</nav>')
+    if use_card:
+        header_html = head_card_html(theme_name, DISPLAY, SCRIPT_TAG,
+                                     f'{_year_range} · {total_count} paint colours<br>{card_counts}',
+                                     theme["deco"], switch + year_nav)
+    else:
+        header_html = f"""<header class="page-head">
+  {motif_html}
+  <div class="hero-top"><span>Factory Paint Archive · {_year_range}</span></div>
+  <h1>{esc(DISPLAY)}</h1>
+  <span class="script">{esc(SCRIPT_TAG)}</span>
+  <div class="meta-grid">
+    <div><strong>{total_count}</strong><span>factory colors</span></div>
+    {counts}
+    <div><strong>{len(by_year)}</strong><span>model years</span></div>
+  </div>
+  {switch}
+  {year_nav}
+</header>"""
     tip_js = TIP_JS.replace("__THUMBS__", json.dumps({k: fil_thumbs[k] for k in sorted(USED_THUMBS)}).replace("</", "<\\/"))
     return f"""<!doctype html>
-<html lang="en">
+<html lang="en" class="theme-{esc(theme_name)}">
 <head>
 <meta charset="utf-8">
 <title>{esc(DISPLAY)} · {_year_range} color card</title>
@@ -504,22 +545,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 
 <div class="paper">
 
-<header class="page-head">
-  {motif_html}
-  <div class="hero-top"><span>Factory Paint Archive · {_year_range}</span></div>
-  <h1>{esc(DISPLAY)}</h1>
-  <span class="script">{esc(SCRIPT_TAG)}</span>
-  <div class="meta-grid">
-    <div><strong>{total_count}</strong><span>factory colors</span></div>
-    {counts}
-    <div><strong>{len(by_year)}</strong><span>model years</span></div>
-  </div>
-  {switch}
-  <nav class="year-nav">
-    <span class="nav-label">Jump to year:</span>
-    {''.join(f'<a href="#y{y}">{y}</a>' for y in _year_links)}
-  </nav>
-</header>
+{header_html}
 
 <div class="legend">
   <span class="legend-head">ΔE2000 scale</span>

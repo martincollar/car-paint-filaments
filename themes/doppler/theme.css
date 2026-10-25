@@ -58,65 +58,6 @@ body {
 .paper::before { left: -5px; box-shadow: 0 110px 0 var(--bg), 0 110px 0 1px var(--rule), 0 220px 0 var(--bg), 0 220px 0 1px var(--rule); }
 .paper::after { right: -5px; box-shadow: 0 110px 0 var(--bg), 0 110px 0 1px var(--rule), 0 220px 0 var(--bg), 0 220px 0 1px var(--rule); }
 
-/* ===== Hero ===== */
-header.page-head { position: relative; padding-bottom: 24px; margin-bottom: 24px;
-  border-bottom: 3px double var(--rule); }
-.hero-top {
-  display: flex; gap: 10px; align-items: center;
-  font-family: var(--font-mono); font-size: 0.72rem;
-  letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--muted); margin-bottom: 6px;
-}
-.hero-top::before, .hero-top::after {
-  content: ""; flex: 1; height: 1px;
-  background: repeating-linear-gradient(90deg, var(--rule) 0 6px, transparent 6px 10px);
-}
-
-h1 {
-  font-family: var(--font-display); font-weight: 400;
-  font-size: clamp(2rem, 4.6vw + 0.6rem, 3.8rem);
-  margin: 2px 0 0; line-height: 1.02; letter-spacing: 0.01em;
-  color: var(--teal-deep); text-wrap: balance;
-  text-shadow: 2px 2px 0 var(--orange-weak), 4px 4px 0 var(--mustard);
-}
-
-.script {
-  display: inline-block; margin-top: 22px;
-  font-family: var(--font-script); font-size: clamp(1.4rem, 2.6vw + 0.3rem, 2.2rem);
-  color: var(--orange); line-height: 1; transform: rotate(-3deg);
-}
-.script::after {
-  content: ""; display: block; width: 80%; height: 6px; margin: 2px 0 0 10%;
-  background: var(--orange); border-radius: 50%;
-  mask: radial-gradient(ellipse at center, black 55%, transparent 60%);
-  -webkit-mask: radial-gradient(ellipse at center, black 55%, transparent 60%);
-}
-
-.starburst {
-  width: 72px; height: 72px; color: var(--orange);
-  position: absolute; top: 6px; right: 8px;
-  filter: drop-shadow(2px 2px 0 var(--mustard));
-}
-
-/* ===== Stats strip ===== */
-.meta-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 12px; margin: 22px 0 0;
-}
-.meta-grid > div {
-  background: var(--bg-raised); border: 1px solid var(--rule);
-  padding: 10px 12px; text-align: center;
-  box-shadow: 2px 2px 0 var(--rule-soft);
-}
-.meta-grid > div strong {
-  display: block; font-family: var(--font-display); font-weight: 400;
-  font-size: 1.9rem; line-height: 1; color: var(--teal-deep);
-}
-.meta-grid > div span {
-  font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--muted);
-}
-
 /* ===== Year nav ===== */
 .year-nav {
   display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 20px 0 0;

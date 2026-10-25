@@ -1,21 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="theme-torq">
 <head>
 <meta charset="utf-8">
 <title>3D Sets Torq · 1970-1974 color card</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
-/* Torq theme: 1970s muscle car. Red-orange body, white lettering with a black outline,
+
+.tile-frame { position: absolute; inset: 0; background: var(--tile); border: 2px solid var(--ink); border-radius: 14px;
+              box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
+.tile-deco { position: absolute; inset: 0; pointer-events: none; }
+.tile-text { position: relative; z-index: 3; }
+.tile-name { margin: 0; font-size: 1.7rem; line-height: 1.1; }
+.tile-name a { text-decoration: none; }
+.tile-name .w { white-space: nowrap; }
+.tile-name .ch { display: inline-block; }
+.tile-tag { margin: 6px 0 0; color: var(--muted); }
+.tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+/* Torq design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
+.theme-torq, .tile--torq {
+  --dl-bg: #dedede;
+  --dl-card: #ffffff;
+  --dl-paper: #ffffff;
+  --dl-ink: #111111;
+  --dl-outline: #111;
+  --dl-primary: #d9432b;
+  --dl-primary-deep: #a82c17;
+  --dl-accent: #27407a;
+  --dl-accent-deep: #172a58;
+  --dl-accent2: #f0b429;
+  --dl-radius: 0;
+  --dl-border: 4px solid #111;
+  --dl-shadow: 3px 3px 0 #111;      /* button / small shadow */
+  --dl-card-shadow: 8px 8px 0 #111; /* big card shadow */
+  --dl-font-title: "Russo One", sans-serif;
+  --dl-font-tag: "Barlow Condensed", sans-serif;
+  --dl-font-ui: "Barlow Condensed", sans-serif;
+  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}/* Torq theme: 1970s muscle car. Red-orange body, white lettering with a black outline,
    the stars-and-stripes shield from the fender, hood stripes and vent slats.
    Same markup as every theme; the --teal/--orange/--mustard aliases at the bottom of :root
    exist only because the shared recolor-preview CSS reads those names. */
 :root {
-  --red: #d9432b;
-  --red-deep: #a82c17;
+  --red: var(--dl-primary);
+  --red-deep: var(--dl-primary-deep);
   --red-weak: #f7cfc6;
-  --blue: #27407a;
-  --blue-deep: #172a58;
+  --blue: var(--dl-accent);
+  --blue-deep: var(--dl-accent-deep);
   --blue-weak: #d3dbf0;
   --ink: #111111;
   --white: #ffffff;
@@ -31,11 +63,11 @@
   --good: #1f7a45;
   --warn: #8a5a00;
   --bad: #a82c17;
-  --gold: #f0b429;
+  --gold: var(--dl-accent2);
 
   --font-display: "Russo One", "Arial Black", Impact, sans-serif;
   --font-mono:    "Barlow Condensed", "Arial Narrow", sans-serif;
-  --font-body:    "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    var(--dl-font-body);
   --pad: clamp(18px, 3vw, 36px);
   color-scheme: light;
 
@@ -72,74 +104,6 @@ body {
 }
 .paper::before { border-bottom: 3px solid var(--ink); }
 .paper::after  { margin-top: 28px; margin-bottom: -28px; border-top: 3px solid var(--ink); }
-
-/* ===== Hero ===== */
-header.page-head {
-  position: relative; overflow: hidden; isolation: isolate;
-  margin: 0 calc(-1 * var(--pad)) 28px; padding: 28px var(--pad) 46px;
-  background: var(--red); color: var(--white);
-  border-bottom: 3px solid var(--ink);
-}
-/* vent slats fading in from the left */
-header.page-head::before {
-  content: ""; position: absolute; inset: 0 auto 0 0; width: 46%; z-index: -1;
-  background: repeating-linear-gradient(90deg, rgba(0,0,0,0.32) 0 5px, transparent 5px 15px);
-  -webkit-mask: linear-gradient(90deg, #000, transparent); mask: linear-gradient(90deg, #000, transparent);
-}
-/* hood stripes: wide, thin, wide */
-header.page-head::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 22px; z-index: -1;
-  background: linear-gradient(var(--ink) 0 6px, var(--white) 6px 12px, var(--ink) 12px 15px, var(--white) 15px 19px, var(--ink) 19px 22px);
-}
-.shield {
-  position: absolute; z-index: 1; right: var(--pad); top: 50%;
-  width: clamp(64px, 11vw, 124px); transform: translateY(-58%) rotate(4deg);
-  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.35));
-}
-.hero-top {
-  display: flex; gap: 12px; align-items: center;
-  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 600;
-  letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--white); margin-bottom: 8px; padding-right: clamp(80px, 14vw, 160px);
-}
-.hero-top::before { content: ""; width: 34px; height: 3px; background: var(--white); }
-.hero-top::after  { content: ""; flex: 1; height: 3px; background: rgba(255,255,255,0.35); }
-
-h1 {
-  font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
-  font-size: clamp(2.4rem, 6.4vw + 0.6rem, 5rem);
-  margin: 0; line-height: 1; letter-spacing: 0.02em;
-  /* white decal lettering with a black outline, like the fender badge */
-  color: var(--white); -webkit-text-stroke: 3px var(--ink); paint-order: stroke fill;
-  text-shadow: 4px 4px 0 var(--ink); text-wrap: balance;
-}
-.script {
-  display: inline-block; margin-top: 18px; padding: 5px 18px 5px 14px;
-  font-family: var(--font-mono); font-style: italic; font-weight: 700;
-  font-size: clamp(1.1rem, 1.8vw + 0.4rem, 1.7rem); letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--white); background: var(--ink); line-height: 1.1;
-  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
-}
-
-/* ===== Stats strip ===== */
-.meta-grid {
-  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 14px; margin: 24px 0 0;
-}
-.meta-grid > div {
-  background: var(--white); border: 2px solid var(--ink);
-  border-top: 7px solid var(--blue);
-  padding: 8px 12px 10px; text-align: center;
-  box-shadow: 4px 4px 0 var(--ink);
-}
-.meta-grid > div strong {
-  display: block; font-family: var(--font-display); font-weight: 400;
-  font-size: 2rem; line-height: 1.1; color: var(--blue-deep);
-}
-.meta-grid > div span {
-  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--muted);
-}
 
 /* ===== Year nav ===== */
 .year-nav {
@@ -321,8 +285,6 @@ h2.year-head {
     flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip;
     font-size: 0.9rem; line-height: 1.25;
   }
-    .hero-top { padding-right: 0; }
-  .shield { top: 14px; transform: rotate(4deg); width: 56px; }
   .year-badge { padding-right: 50px; }
 }
 
@@ -400,7 +362,51 @@ footer.card-footer .visit-count {
 .fil-tip img { border: 2px solid var(--ink); }
 .fil-tip .t-sw, .hero-preview .t-sw { border: 2px solid var(--ink); }
 .fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 400; }
-.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--blue); text-transform: uppercase; letter-spacing: 0.06em; }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--blue); text-transform: uppercase; letter-spacing: 0.06em; }/* Index tile: 1970s shield-and-stripes. Frame hard-edged, shield and car spill over it. */
+.tile--torq { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 20px; font-family: "Barlow", sans-serif; }
+.tile--torq .tile-frame { border: 4px solid var(--dl-outline); border-radius: 0; box-shadow: 8px 8px 0 var(--dl-outline);
+  background: var(--dl-bg); }
+.tile--torq .tile-frame::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 22px;
+  background: repeating-linear-gradient(90deg, var(--dl-primary) 0 28px, var(--dl-paper) 28px 56px); border-bottom: 4px solid var(--dl-outline); }
+.tile--torq .tile-text { padding-top: 26px; max-width: none; }
+.tile--torq .tile-name { font-family: var(--dl-font-title); text-transform: uppercase; font-size: 3rem; line-height: 1;
+  letter-spacing: .01em; color: var(--dl-paper); -webkit-text-stroke: 2px var(--dl-outline); paint-order: stroke fill; text-shadow: 3px 3px 0 var(--dl-outline); }
+.tile--torq .tile-tag { display: inline-block; margin-top: 12px; padding: 4px 22px 4px 14px; background: var(--dl-outline); color: var(--dl-paper);
+  font: italic 700 1.2rem var(--dl-font-tag); text-transform: uppercase; letter-spacing: .05em;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%); }
+.tile--torq .tile-meta { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .06em; color: #444; }
+.tile--torq .tile-label { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .04em; color: #333; }
+.tile--torq .tile-open { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-primary); color: var(--dl-paper); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-open:hover, .tile--torq .tile-open:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
+.tile--torq .t-shield { position: absolute; right: -26px; top: -34px; width: 118px; transform: rotate(7deg);
+  filter: drop-shadow(4px 4px 0 rgba(17,17,17,.35)); }
+@media (max-width: 520px) {
+  .tile--torq .tile-name { font-size: 2.25rem; }
+  .tile--torq .tile-tag { font-size: 1rem; }
+  .tile--torq .t-shield { width: 88px; right: -14px; top: -28px; }
+  }
+.tile--torq .tile-label { opacity: .6; }
+.tile--torq .tile-buy { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-paper); color: var(--dl-outline); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-buy:hover, .tile--torq .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-torq .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 22px 40px 24px;
+  --tile: var(--dl-bg); --muted: #444; }
+.theme-torq .head-card .tile-frame { box-shadow: var(--dl-card-shadow); }
+.theme-torq .head-card .tile-name { font-size: 4.4rem; -webkit-text-stroke-width: 3px; text-shadow: 4px 4px 0 var(--dl-outline); }
+.theme-torq .head-card .tile-tag { font-size: 1.5rem; margin-top: 14px; }
+.theme-torq .head-card .tile-meta { margin-top: 14px; font-size: 1.05rem; line-height: 1.5; }
+.theme-torq .head-card .t-shield { right: 34px; top: -30px; width: 150px; }
+.theme-torq .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-outline); }
+.theme-torq .head-filters .year-nav { margin: 0; }
+.theme-torq .head-filters .nav-label { font: 700 .95rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 600px) {
+  .theme-torq .head-card { padding: 18px 16px 18px; }
+  .theme-torq .head-card .tile-name { font-size: 2.4rem; }
+  .theme-torq .head-card .tile-tag { font-size: 1.05rem; }
+  .theme-torq .head-card .t-shield { right: 8px; top: -26px; width: 78px; }
+}
 
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
@@ -415,8 +421,10 @@ html { scroll-behavior: smooth; }
 
 [data-r] { display: none; }
 body[data-region="eu"] div[data-r="eu"] { display: block; }
+body[data-region="eu"] span[data-r="eu"] { display: inline; }
 body[data-region="eu"] .rcols[data-r="eu"] { display: contents; }
 body[data-region="int"] div[data-r="int"] { display: block; }
+body[data-region="int"] span[data-r="int"] { display: inline; }
 body[data-region="int"] .rcols[data-r="int"] { display: contents; }
 
 .pick { cursor: pointer; color: inherit; text-decoration: none; }
@@ -477,31 +485,16 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 
 <div class="paper">
 
-<header class="page-head">
-  <svg class="shield" viewBox="0 0 100 122" aria-hidden="true">
-  <defs><clipPath id="shield-clip"><path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z"/></clipPath></defs>
+<header class="page-head tile tile--torq head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-shield" viewBox="0 0 100 122" aria-hidden="true">
+  <defs><clipPath id="tile-shield-clip"><path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z"/></clipPath></defs>
   <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
-  <g clip-path="url(#shield-clip)">
+  <g clip-path="url(#tile-shield-clip)">
     <rect x="5.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="15.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="25.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="35.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="45.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="55.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="65.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="75.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="85.0" y="0" width="10.0" height="120" fill="#d9432b"/>
     <rect x="0" y="0" width="100" height="46" fill="#27407a"/>
     <polygon points="24.0,19.0 25.7,23.6 30.7,23.8 26.8,26.9 28.1,31.7 24.0,28.9 19.9,31.7 21.2,26.9 17.3,23.8 22.3,23.6" fill="#fff"/><polygon points="42.0,17.0 43.7,21.6 48.7,21.8 44.8,24.9 46.1,29.7 42.0,26.9 37.9,29.7 39.2,24.9 35.3,21.8 40.3,21.6" fill="#fff"/><polygon points="58.0,17.0 59.7,21.6 64.7,21.8 60.8,24.9 62.1,29.7 58.0,26.9 53.9,29.7 55.2,24.9 51.3,21.8 56.3,21.6" fill="#fff"/><polygon points="76.0,19.0 77.7,23.6 82.7,23.8 78.8,26.9 80.1,31.7 76.0,28.9 71.9,31.7 73.2,26.9 69.3,23.8 74.3,23.6" fill="#fff"/>
   </g>
   <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
-</svg>
-  <div class="hero-top"><span>Factory Paint Archive · 1970-1974</span></div>
-  <h1>3D Sets Torq</h1>
-  <span class="script">Vitamin C &amp; Bad Decisions</span>
-  <div class="meta-grid">
-    <div><strong>124</strong><span>factory colors</span></div>
-    <div data-r="eu"><strong>1120</strong><span>PLA candidates</span></div><div data-r="eu"><strong>526</strong><span>PETG candidates</span></div><div data-r="eu"><strong>150</strong><span>ASA candidates</span></div><div data-r="eu"><strong>10</strong><span>e-shops</span></div><div data-r="int"><strong>484</strong><span>PLA candidates</span></div><div data-r="int"><strong>131</strong><span>PETG candidates</span></div><div data-r="int"><strong>57</strong><span>ASA candidates</span></div><div data-r="int"><strong>5</strong><span>e-shops</span></div>
-    <div><strong>5</strong><span>model years</span></div>
-  </div>
-  <div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div>
-  <nav class="year-nav">
-    <span class="nav-label">Jump to year:</span>
-    <a href="#y1974">1974</a><a href="#y1973">1973</a><a href="#y1972">1972</a><a href="#y1971">1971</a><a href="#y1970">1970</a>
-  </nav>
-</header>
+</svg></div><div class="tile-text"><h1 class="tile-name" style="--n:12"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">T</span><span class="ch" style="--i:9" aria-hidden="true">o</span><span class="ch" style="--i:10" aria-hidden="true">r</span><span class="ch" style="--i:11" aria-hidden="true">q</span></span></h1><p class="tile-tag">Vitamin C &amp; Bad Decisions</p><p class="tile-meta">1970-1974 · 124 paint colours<br><span data-r="eu">1120 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1974">1974</a><a href="#y1973">1973</a><a href="#y1972">1972</a><a href="#y1971">1971</a><a href="#y1970">1970</a></nav></div></header>
 
 <div class="legend">
   <span class="legend-head">ΔE2000 scale</span>
