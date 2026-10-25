@@ -4,13 +4,16 @@
 .theme-sakura .head-card .tile-name { font-size: 3.6rem; text-shadow: 4px 4px 0 var(--dl-accent2); }
 .theme-sakura .head-card .tile-tag { font-size: 1.4rem; margin-top: 16px; padding: 4px 24px 4px 16px; }
 .theme-sakura .head-card .tile-meta { margin-top: 14px; line-height: 1.6; }
-.theme-sakura .head-card .t-sign { top: 26%; white-space: nowrap; right: 28px; padding: 14px 9px; font-size: 1.7rem; border-width: 3px; box-shadow: 3px 3px 0 var(--dl-accent2); }
-.theme-sakura .head-card .t-sign2 { top: 40%; white-space: nowrap; right: 118px; padding: 12px 8px; font-size: 1.35rem; }
+.theme-sakura .head-card .t-sign { top: 26%; white-space: nowrap; right: clamp(108px, calc(100% - 661px), 508px); padding: 14px 9px; font-size: 1.7rem; border-width: 3px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.theme-sakura .head-card .t-sign2 { top: 26%; white-space: nowrap; right: clamp(28px, calc(100% - 741px), 428px); }
 .theme-sakura .head-card .t-vert { display: none; }
 .theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
   margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-ink); }
 .theme-sakura .head-filters .year-nav { margin: 0; }
 .theme-sakura .head-filters .nav-label { font: 700 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 860px) {
+  .theme-sakura .head-card .t-sign, .theme-sakura .head-card .t-sign2 { display: none; }
+}
 @media (max-width: 600px) {
   .theme-sakura .head-card { padding: 22px 18px 18px; --art: 200px; }
   .theme-sakura .head-card .tile-name { font-size: 1.9rem; max-width: 66%; }
