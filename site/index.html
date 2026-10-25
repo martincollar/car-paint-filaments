@@ -197,6 +197,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 <footer class="site-foot">
   <span>Car photos: <a href="https://3dsets.com" target="_blank" rel="noopener">3D Sets</a></span>
   <span>Created by Martin Kolář</span>
+  <span class="visit-count" id="vc" hidden></span>
 </footer>
 <script>
 (function () {
@@ -320,5 +321,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
   });
 })();
 </script>
+<script data-goatcounter="https://mkolar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>(function(){var v=document.getElementById('vc');if(!v)return;fetch('https://mkolar.goatcounter.com/counter/TOTAL.json').then(function(r){return r.json()}).then(function(d){v.textContent='Visitor no. '+d.count;v.hidden=false}).catch(function(){});})();</script>
 </body>
 </html>

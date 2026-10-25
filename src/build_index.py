@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 import config
+from build_html import counter_html
 from color_tools import delta_e_2000, hex_to_rgb, rgb_to_lab
 from compute_matches import NEON_PENALTY, NEON_PAINT_CHROMA
 
@@ -509,8 +510,10 @@ def page(cars):
 <footer class="site-foot">
   <span>Car photos{": " + credit_html if credit_html else ""}</span>
   <span>Created by {html.escape(AUTHOR)}</span>
+  {'<span class="visit-count" id="vc" hidden></span>' if config.GOATCOUNTER else ''}
 </footer>
 <script>{js}</script>
+{counter_html()}
 </body>
 </html>
 """
