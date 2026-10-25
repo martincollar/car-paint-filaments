@@ -258,5 +258,13 @@
   "refill-rosa3d-asa-bila-1-75-mm-1-kg": {
     "hex": "#F8F9F4",
     "note": "Hex = median of a box sampled by hand on the review page. Red box on the photo for ROSA3D ASA"
+  },
+  "filament-aurapol-asa-signalni-bila-1-75-mm-850g": {
+    "hex": "#F0F0EC",
+    "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request."
+  },
+  "aurapol-asa-3d-filament-signal-white-850g-1-75-mm": {
+    "hex": "#F0F0EC",
+    "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request."
   }
 }

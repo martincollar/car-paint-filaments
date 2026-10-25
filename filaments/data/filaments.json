@@ -4419,8 +4419,7 @@
     "hex": "#9CA0A6",
     "pixel_count": 10051,
     "confidence": "manual_override",
-    "measured_hex": "#D3D3D4",
-    "previous_hex": "#D3D3D4"
+    "measured_hex": "#D3D3D4"
   },
   {
     "slug": "asa-light-green-1",
@@ -4577,8 +4576,7 @@
     "hex": "#28282A",
     "pixel_count": 9180,
     "confidence": "manual_override",
-    "measured_hex": "#DBDBDB",
-    "previous_hex": "#353538"
+    "measured_hex": "#DBDBDB"
   },
   {
     "slug": "asa-onyx",
@@ -7146,13 +7144,15 @@
     ],
     "neon": false,
     "rgb": [
-      219,
-      224,
-      205
+      240,
+      240,
+      236
     ],
-    "hex": "#DBE0CD",
+    "hex": "#F0F0EC",
     "pixel_count": 41599,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#DBE0CD",
+    "previous_hex": "#DBE0CD"
   },
   {
     "slug": "aurapol-asa-3d-filament-sky-blue-850g-1-75-mm",
@@ -14272,8 +14272,7 @@
     "hex": "#737475",
     "pixel_count": 106460,
     "confidence": "manual_override",
-    "measured_hex": "#3C3C3B",
-    "previous_hex": "#8A8A88"
+    "measured_hex": "#3C3C3B"
   },
   {
     "slug": "p196",
@@ -15601,8 +15600,7 @@
     "hex": "#5E8C47",
     "pixel_count": 369947,
     "confidence": "manual_override",
-    "measured_hex": "#537D3F",
-    "previous_hex": "#6C9757"
+    "measured_hex": "#537D3F"
   },
   {
     "slug": "asa-extrafill-grey-blue",
@@ -15629,8 +15627,7 @@
     "hex": "#253846",
     "pixel_count": 318565,
     "confidence": "manual_override",
-    "measured_hex": "#7B796A",
-    "previous_hex": "#34464D"
+    "measured_hex": "#7B796A"
   },
   {
     "slug": "asa-extrafill-metallic-grey",
@@ -15657,8 +15654,7 @@
     "hex": "#797571",
     "pixel_count": 125489,
     "confidence": "manual_override",
-    "measured_hex": "#77746D",
-    "previous_hex": "#85827C"
+    "measured_hex": "#77746D"
   },
   {
     "slug": "asa-extrafill-sky-blue",
@@ -15789,8 +15785,7 @@
     "hex": "#CAC5B8",
     "pixel_count": 118063,
     "confidence": "manual_override",
-    "measured_hex": "#E8E4E0",
-    "previous_hex": "#E8E4E0"
+    "measured_hex": "#E8E4E0"
   },
   {
     "slug": "asa-extrafill-traffic-yellow",
@@ -17409,8 +17404,7 @@
     "hex": "#F9F8F3",
     "pixel_count": 26128,
     "confidence": "manual_override",
-    "measured_hex": "#E7E4DD",
-    "previous_hex": "#E7E4DD"
+    "measured_hex": "#E7E4DD"
   },
   {
     "slug": "3dpower-asa-cerna-black-1kg",
@@ -19647,8 +19641,7 @@
     "hex": "#C9C7C0",
     "pixel_count": 176675,
     "confidence": "manual_override",
-    "measured_hex": "#A9A79E",
-    "previous_hex": "#DCDAD5"
+    "measured_hex": "#A9A79E"
   },
   {
     "slug": "devil-design-asa-tmave-hneda-dark-brown-800g",
@@ -23939,8 +23932,7 @@
     "hex": "#81634E",
     "pixel_count": 1782481,
     "confidence": "manual_override",
-    "measured_hex": "#C6A771",
-    "previous_hex": "#8E735E"
+    "measured_hex": "#C6A771"
   },
   {
     "slug": "overture-asa-filament-1-75mm-diamond-blue",
@@ -34717,8 +34709,7 @@
     "hex": "#8A8B64",
     "pixel_count": 134697,
     "confidence": "manual_override",
-    "measured_hex": "#969A91",
-    "previous_hex": "#93956B"
+    "measured_hex": "#969A91"
   },
   {
     "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
@@ -34920,13 +34911,15 @@
     ],
     "neon": false,
     "rgb": [
-      218,
-      223,
-      204
+      240,
+      240,
+      236
     ],
-    "hex": "#DADFCC",
+    "hex": "#F0F0EC",
     "pixel_count": 16898,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#DADFCC",
+    "previous_hex": "#DADFCC"
   },
   {
     "slug": "filament-aurapol-asa-signalni-oranzova-1-75-mm-850g",
@@ -52883,8 +52876,7 @@
     "hex": "#F8F9F4",
     "pixel_count": 14106,
     "confidence": "manual_override",
-    "measured_hex": "#E8E8E2",
-    "previous_hex": "#E8E8E2"
+    "measured_hex": "#E8E8E2"
   },
   {
     "slug": "refill-rosa3d-asa-cerna-1-75-mm-1-kg",
@@ -52937,8 +52929,7 @@
     "hex": "#EB3335",
     "pixel_count": 227793,
     "confidence": "manual_override",
-    "measured_hex": "#C7292A",
-    "previous_hex": "#FD4B4D"
+    "measured_hex": "#C7292A"
   },
   {
     "slug": "refill-rosa3d-asa-modra-1-75-mm-1-kg",
@@ -52965,8 +52956,7 @@
     "hex": "#303C55",
     "pixel_count": 213868,
     "confidence": "manual_override",
-    "measured_hex": "#C12728",
-    "previous_hex": "#3C4A68"
+    "measured_hex": "#C12728"
   },
   {
     "slug": "refill-rosa3d-asa-oranzova-juicy-1-75-mm-1-kg",
@@ -53098,8 +53088,7 @@
     "hex": "#77C35F",
     "pixel_count": 223070,
     "confidence": "manual_override",
-    "measured_hex": "#C02726",
-    "previous_hex": "#84D36A"
+    "measured_hex": "#C02726"
   },
   {
     "slug": "refill-rosa3d-asa-zluta-1-75-mm-1-kg",

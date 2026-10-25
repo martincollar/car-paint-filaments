@@ -20,7 +20,8 @@ Usage:
     python review_sheet.py --shop Smart3D --all    # every Smart3D card
     python review_sheet.py --out /tmp/sheet.html --no-open
     python review_sheet.py --material ASA          # every ASA card, grouped by shop
-    python review_sheet.py --brand lume --serve    # click wrong cards + reason, saved to filaments/.cache/review_marks_<brand>.json
+    python review_sheet.py --brand lume            # served by default: click wrong cards + reason, saved to filaments/.cache/review_marks_<brand>.json
+    python review_sheet.py --no-serve              # static page only (no reason boxes, opens the file)
 """
 import argparse, collections, html, io, json, random, re, sys, urllib.parse, webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -253,7 +254,8 @@ def main():
     ap.add_argument("--material", help="only this material (PLA, PLA+, PETG, ASA), shows every card")
     ap.add_argument("--unsampled", action="store_true",
                     help="hide cards you already fixed with the sample square (override note says 'sampled by hand on the review page'); marks go to their own file")
-    ap.add_argument("--serve", action="store_true", help="serve the sheet locally; clicking a card marks it wrong, marks are saved to a file")
+    ap.add_argument("--serve", action=argparse.BooleanOptionalAction, default=True,
+                    help="serve the sheet locally (default; --no-serve writes a static page): clicking a card marks it wrong, marks are saved to a file")
     ap.add_argument("--port", type=int, default=8765)
     ap.add_argument("--overlay", action=argparse.BooleanOptionalAction, default=None,
                     help="draw the pixels filament_rgb() measured next to each photo (default: on up to 400 cards)")
