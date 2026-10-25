@@ -50,6 +50,39 @@
           "car_code": "P-63",
           "paint_ref": "41060",
           "poly": true
+        },
+        {
+          "cx": 514,
+          "cy": 441,
+          "name": "Toro Red",
+          "year": 1951,
+          "car_code": "M-64",
+          "paint_ref": "50216",
+          "poly": false,
+          "box_width": 70,
+          "box_height": 24
+        },
+        {
+          "cx": 514,
+          "cy": 574,
+          "name": "French Gray",
+          "year": 1951,
+          "car_code": "RR-72",
+          "paint_ref": "30862",
+          "poly": false,
+          "box_width": 70,
+          "box_height": 24
+        },
+        {
+          "cx": 332,
+          "cy": 369,
+          "name": "Bali Blue",
+          "year": 1951,
+          "car_code": "J-45",
+          "paint_ref": "10742",
+          "poly": false,
+          "box_width": 70,
+          "box_height": 24
         }
       ]
     },
@@ -622,6 +655,22 @@
           "car_code": "P-89",
           "paint_ref": "41985",
           "poly": true
+        }
+      ]
+    },
+    {
+      "card_file": "1951-hudson-pg03.jpg",
+      "box_width": 200,
+      "box_height": 60,
+      "swatches": [
+        {
+          "cx": 1095,
+          "cy": 1382,
+          "name": "Admiral Blue",
+          "year": 1951,
+          "car_code": "7105-G",
+          "paint_ref": "10435",
+          "poly": false
         }
       ]
     }

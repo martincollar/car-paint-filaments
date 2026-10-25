@@ -18,6 +18,8 @@ card_layout.json shape:
         {"cx":185,"cy":87,"name":"Gulf Green","year":1952,"car_code":"Q-115","paint_ref":"41206","poly":false},
         {"cx":100,"cy":624,"name":"Racing Green",...,"hex":"#1E4A30","hex_note":"why"},   (optional manual colour,
          for a chip the scan reproduces badly; the measured value is kept as measured_hex)
+        {"cx":514,"cy":441,"box_width":70,"box_height":24,"name":"Toro Red",...},   (optional per-swatch box size,
+         for a chip smaller than the card's others)
         ...
       ]
     },
@@ -69,7 +71,7 @@ def main():
         cbh = card.get("box_height", bh)
         for sw in card["swatches"]:
             year = sw.get("year") or year_hint
-            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], cbw, cbh)
+            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], sw.get("box_width", cbw), sw.get("box_height", cbh))
             rec = {
                 "name":        sw["name"],
                 "year":        year,

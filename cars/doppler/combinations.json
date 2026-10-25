@@ -1,0 +1,817 @@
+{
+ "zones": [
+  "upper",
+  "intermediate",
+  "lower"
+ ],
+ "years": {
+  "1951": {
+   "source": "1951-hudson-pg02.jpg",
+   "note": "Supplemental bulletin 3-16-51 and 7-20-51 only; the main 1951 combination list is not on our scans",
+   "combinations": [
+    {
+     "code": "RD-84",
+     "upper": "Burgundy Maroon",
+     "lower": "French Gray",
+     "unresolved": [
+      "Burgundy Maroon"
+     ]
+    },
+    {
+     "code": "RJ-86",
+     "upper": "Jefferson Green Poly",
+     "lower": "Corinthian Cream",
+     "unresolved": [
+      "Corinthian Cream"
+     ]
+    },
+    {
+     "code": "J-45",
+     "upper": "Bali Blue",
+     "lower": "Admiral Blue"
+    },
+    {
+     "code": "N-85",
+     "upper": "Admiral Blue",
+     "lower": "Corinthian Cream",
+     "unresolved": [
+      "Corinthian Cream"
+     ]
+    }
+   ]
+  },
+  "1952": {
+   "source": "1952-hudson-pg01.jpg",
+   "note": "",
+   "combinations": [
+    {
+     "code": "RA",
+     "upper": "Boston Ivory",
+     "lower": "Ebony Black",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RB",
+     "upper": "French Gray",
+     "lower": "Broadway Blue"
+    },
+    {
+     "code": "RC",
+     "upper": "Boston Ivory",
+     "lower": "Southern Blue"
+    },
+    {
+     "code": "RD",
+     "upper": "Boston Ivory",
+     "lower": "Jefferson Green Poly"
+    },
+    {
+     "code": "RE",
+     "upper": "Naples Green Poly",
+     "lower": "Jefferson Green Poly"
+    },
+    {
+     "code": "RF",
+     "upper": "Boston Ivory",
+     "lower": "Texas Tan Poly"
+    },
+    {
+     "code": "RH",
+     "upper": "French Gray",
+     "lower": "Toro Red"
+    },
+    {
+     "code": "RI",
+     "upper": "Ebony Black",
+     "lower": "French Gray",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RJ",
+     "upper": "Toro Red",
+     "lower": "French Gray"
+    },
+    {
+     "code": "RK",
+     "upper": "Southern Blue",
+     "lower": "French Gray"
+    },
+    {
+     "code": "RL",
+     "upper": "Jefferson Green Poly",
+     "lower": "French Gray"
+    },
+    {
+     "code": "RM",
+     "upper": "Boston Ivory",
+     "lower": "Symphony Blue Green Light"
+    },
+    {
+     "code": "RN",
+     "upper": "Symphony Blue Green Light",
+     "lower": "Boston Ivory"
+    },
+    {
+     "code": "RO",
+     "upper": "Texas Tan Poly",
+     "lower": "Boston Ivory"
+    },
+    {
+     "code": "RP",
+     "upper": "Jefferson Green Poly",
+     "lower": "Boston Ivory"
+    },
+    {
+     "code": "RQ",
+     "upper": "Symphony Blue Green Light",
+     "lower": "Symphony Blue Green Dark"
+    },
+    {
+     "code": "RS",
+     "upper": "Gulf Green",
+     "lower": "Jefferson Green Poly"
+    },
+    {
+     "code": "RT",
+     "upper": "Symphony Blue Green Dark",
+     "lower": "Symphony Blue Green Light"
+    },
+    {
+     "code": "RU",
+     "upper": "Jefferson Green Poly",
+     "lower": "Gulf Green"
+    }
+   ]
+  },
+  "1953": {
+   "source": "1953-hudson-pg01.jpg",
+   "note": "",
+   "combinations": [
+    {
+     "code": "RM-138",
+     "upper": "Honey Cream",
+     "lower": "Robin's Egg Green"
+    },
+    {
+     "code": "RJ-139",
+     "upper": "Toro Red",
+     "lower": "Seal Gray"
+    },
+    {
+     "code": "RF-140",
+     "upper": "Honey Cream",
+     "lower": "Texas Tan Poly"
+    },
+    {
+     "code": "RA-141",
+     "upper": "Honey Cream",
+     "lower": "Ebony Black",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RC-142",
+     "upper": "Honey Cream",
+     "lower": "Southern Blue"
+    },
+    {
+     "code": "RO-143",
+     "upper": "Texas Tan Poly",
+     "lower": "Honey Cream"
+    },
+    {
+     "code": "RQ-144",
+     "upper": "Robin's Egg Green",
+     "lower": "Blue Grass Green"
+    },
+    {
+     "code": "RU-145",
+     "upper": "Meadow Green Poly",
+     "lower": "Surf Green"
+    },
+    {
+     "code": "RP-146",
+     "upper": "Broadway Blue",
+     "lower": "Pearl Gray Poly"
+    },
+    {
+     "code": "RI-147",
+     "upper": "Ebony Black",
+     "lower": "Seal Gray",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RE-148",
+     "upper": "Southern Blue",
+     "lower": "Seal Gray"
+    },
+    {
+     "code": "RN-149",
+     "upper": "Honey Cream",
+     "lower": "Broadway Blue"
+    },
+    {
+     "code": "RD-150",
+     "upper": "Honey Cream",
+     "lower": "Meadow Green Poly"
+    },
+    {
+     "code": "RT-151",
+     "upper": "Meadow Green Poly",
+     "lower": "Honey Cream"
+    },
+    {
+     "code": "RW-152",
+     "upper": "Ebony Black",
+     "lower": "Robin's Egg Green",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RV-153",
+     "upper": "Honey Cream",
+     "lower": "Surf Green"
+    },
+    {
+     "code": "RH-154",
+     "upper": "Ebony Black",
+     "lower": "Toro Red",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RS-155",
+     "upper": "Surf Green",
+     "lower": "Meadow Green Poly"
+    },
+    {
+     "code": "RP-156",
+     "upper": "Ebony Black",
+     "lower": "Pearl Gray Poly",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    }
+   ]
+  },
+  "1954": {
+   "source": "1954-hudson-pg01.jpg",
+   "note": "Second list (RJ-183 to RA-192) is the supplemental bulletin 8-2-54 on 1954-hudson-pg02.jpg",
+   "combinations": [
+    {
+     "code": "RX-169",
+     "upper": "Beret Blue Poly",
+     "lower": "Silver Blue"
+    },
+    {
+     "code": "RC-170",
+     "upper": "Coronation Cream",
+     "lower": "Silver Blue"
+    },
+    {
+     "code": "RP-171",
+     "upper": "Beret Blue Poly",
+     "lower": "Algerian Blue Poly"
+    },
+    {
+     "code": "RM-172",
+     "upper": "Coronation Cream",
+     "lower": "Palm Beach Green"
+    },
+    {
+     "code": "RW-173",
+     "upper": "Ebony Black",
+     "lower": "Palm Beach Green",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RQ-174",
+     "upper": "Pacific Blue Green",
+     "lower": "Palm Beach Green"
+    },
+    {
+     "code": "RH-175",
+     "upper": "Ebony Black",
+     "lower": "Royal Red",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RJ-176",
+     "upper": "Royal Red",
+     "lower": "St. Clair Gray"
+    },
+    {
+     "code": "RT-177",
+     "upper": "Pasture Green Poly",
+     "lower": "Coronation Cream"
+    },
+    {
+     "code": "RU-178",
+     "upper": "Pasture Green Poly",
+     "lower": "Spring Green"
+    },
+    {
+     "code": "RF-179",
+     "upper": "Coronation Cream",
+     "lower": "Roman Bronze"
+    },
+    {
+     "code": "RO-180",
+     "upper": "Ebony Black",
+     "lower": "Roman Bronze",
+     "unresolved": [
+      "Ebony Black"
+     ]
+    },
+    {
+     "code": "RJ-183",
+     "upper": "Lipstick",
+     "lower": "St. Clair Gray",
+     "unresolved": [
+      "Lipstick"
+     ]
+    },
+    {
+     "code": "RH-184",
+     "upper": "Ebony Black",
+     "lower": "Lipstick",
+     "unresolved": [
+      "Ebony Black",
+      "Lipstick"
+     ]
+    },
+    {
+     "code": "RC-185",
+     "upper": "Coronation Cream",
+     "lower": "Lipstick",
+     "unresolved": [
+      "Lipstick"
+     ]
+    },
+    {
+     "code": "RT-186",
+     "upper": "Green Gold",
+     "lower": "Coronation Cream",
+     "unresolved": [
+      "Green Gold"
+     ]
+    },
+    {
+     "code": "RX-187",
+     "upper": "Green Gold",
+     "lower": "Roman Bronze",
+     "unresolved": [
+      "Green Gold"
+     ]
+    },
+    {
+     "code": "RQ-188",
+     "upper": "Green Gold",
+     "lower": "Pasture Green Poly",
+     "unresolved": [
+      "Green Gold"
+     ]
+    },
+    {
+     "code": "RM-189",
+     "upper": "St. Clair Gray",
+     "lower": "Green Gold",
+     "unresolved": [
+      "Green Gold"
+     ]
+    },
+    {
+     "code": "RQ-190",
+     "upper": "Ebony Black",
+     "lower": "Green Gold",
+     "unresolved": [
+      "Ebony Black",
+      "Green Gold"
+     ]
+    },
+    {
+     "code": "RX-191",
+     "upper": "Lipstick",
+     "lower": "Coronation Cream",
+     "unresolved": [
+      "Lipstick"
+     ]
+    },
+    {
+     "code": "RA-192",
+     "upper": "Coronation Cream",
+     "lower": "Beret Blue Poly"
+    }
+   ]
+  },
+  "1955": {
+   "source": "1955-hudson-pg02.jpg",
+   "note": "",
+   "combinations": [
+    {
+     "code": "P66A1",
+     "upper": "Black",
+     "lower": "Sunburst Yellow",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P67A62",
+     "upper": "Island Green",
+     "lower": "Bermuda Green"
+    },
+    {
+     "code": "P68A61",
+     "upper": "Midshipman Blue",
+     "lower": "Mist Blue"
+    },
+    {
+     "code": "P66A69",
+     "upper": "Snowberry White",
+     "lower": "Sunburst Yellow"
+    },
+    {
+     "code": "P64A69",
+     "upper": "Snowberry White",
+     "lower": "Rio Red"
+    },
+    {
+     "code": "P67A69",
+     "upper": "Snowberry White",
+     "lower": "Bermuda Green"
+    },
+    {
+     "code": "P65A69",
+     "upper": "Snowberry White",
+     "lower": "Coral Red"
+    },
+    {
+     "code": "P44A69",
+     "upper": "Snowberry White",
+     "lower": "Caribbean Blue Green"
+    },
+    {
+     "code": "P69A64",
+     "upper": "Rio Red",
+     "lower": "Snowberry White"
+    },
+    {
+     "code": "P1A69",
+     "upper": "Snowberry White",
+     "lower": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P71A69",
+     "upper": "Snowberry White",
+     "lower": "Palomino Brown"
+    }
+   ]
+  },
+  "1956": {
+   "source": "1956-hudson-pg02.jpg",
+   "note": "Hudson list. Two-tones paint upper and lower alike with an intermediate colour between; P81-82-81 prints Willow Green for its intermediate, probably a misprint for Pacific Blue",
+   "combinations": [
+    {
+     "code": "P76-72-76",
+     "upper": "Golden Brown",
+     "lower": "Golden Brown",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P78-72-78",
+     "upper": "Grenadier Red",
+     "lower": "Grenadier Red",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P78-1-78",
+     "upper": "Grenadier Red",
+     "lower": "Grenadier Red",
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P83-72-83",
+     "upper": "Ballerina Red",
+     "lower": "Ballerina Red",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P83-80-83",
+     "upper": "Ballerina Red",
+     "lower": "Ballerina Red",
+     "intermediate": "Boulevard Gray"
+    },
+    {
+     "code": "P77-1-77",
+     "upper": "Mint Green",
+     "lower": "Mint Green",
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P66-72-66",
+     "upper": "Sunburst Yellow",
+     "lower": "Sunburst Yellow",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P67-75-67",
+     "upper": "Bermuda Green",
+     "lower": "Bermuda Green",
+     "intermediate": "Polo Green"
+    },
+    {
+     "code": "P75-72-75",
+     "upper": "Polo Green",
+     "lower": "Polo Green",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P67-72-67",
+     "upper": "Bermuda Green",
+     "lower": "Bermuda Green",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P74-73-74",
+     "upper": "Crocus Yellow",
+     "lower": "Crocus Yellow",
+     "intermediate": "Willow Green"
+    },
+    {
+     "code": "P81-82-81",
+     "upper": "Solitaire Blue",
+     "lower": "Solitaire Blue",
+     "intermediate": "Willow Green"
+    },
+    {
+     "code": "P82-72-82",
+     "upper": "Pacific Blue",
+     "lower": "Pacific Blue",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P81-72-81",
+     "upper": "Solitaire Blue",
+     "lower": "Solitaire Blue",
+     "intermediate": "Frost White"
+    },
+    {
+     "code": "P1-72-1",
+     "upper": "Black",
+     "lower": "Black",
+     "intermediate": "Frost White",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P78-1-72",
+     "upper": "Frost White",
+     "lower": "Grenadier Red",
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P83-80-72",
+     "upper": "Frost White",
+     "lower": "Ballerina Red",
+     "intermediate": "Boulevard Gray"
+    },
+    {
+     "code": "P77-1-72",
+     "upper": "Frost White",
+     "lower": "Mint Green",
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    },
+    {
+     "code": "P81-72-82",
+     "upper": "Frost White",
+     "lower": "Solitaire Blue",
+     "intermediate": "Pacific Blue"
+    },
+    {
+     "code": "P67-75-72",
+     "upper": "Frost White",
+     "lower": "Bermuda Green",
+     "intermediate": "Polo Green"
+    },
+    {
+     "code": "P66-1-72",
+     "upper": "Frost White",
+     "lower": "Sunburst Yellow",
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
+    }
+   ]
+  },
+  "1957": {
+   "source": "1957-hudson-pg03.jpg",
+   "note": "Shared Nash-Hudson list; the first code number is the lower colour. Wood-grain (Dinoc) three-tones are on 1957-hudson-pg06.jpg and have an intermediate that is no paint colour",
+   "combinations": [
+    {
+     "code": "P1-72",
+     "upper": "Frost White",
+     "lower": "Classic Black",
+     "unresolved": [
+      "Classic Black"
+     ]
+    },
+    {
+     "code": "P72-1",
+     "upper": "Classic Black",
+     "lower": "Frost White",
+     "unresolved": [
+      "Classic Black"
+     ]
+    },
+    {
+     "code": "P87-67",
+     "upper": "Bermuda Green",
+     "lower": "Berkshire Green"
+    },
+    {
+     "code": "P67-87",
+     "upper": "Berkshire Green",
+     "lower": "Bermuda Green"
+    },
+    {
+     "code": "P87-72",
+     "upper": "Frost White",
+     "lower": "Berkshire Green"
+    },
+    {
+     "code": "P95-84",
+     "upper": "Glacier Blue",
+     "lower": "Gotham Gray Poly"
+    },
+    {
+     "code": "P85-84",
+     "upper": "Glacier Blue",
+     "lower": "Lagoon Blue"
+    },
+    {
+     "code": "P84-85",
+     "upper": "Lagoon Blue",
+     "lower": "Glacier Blue"
+    },
+    {
+     "code": "P85-72",
+     "upper": "Frost White",
+     "lower": "Lagoon Blue"
+    },
+    {
+     "code": "P90-72",
+     "upper": "Frost White",
+     "lower": "Mardi Gras Red"
+    },
+    {
+     "code": "P93-94",
+     "upper": "Cinnamon Bronze Poly",
+     "lower": "Sierra Peach"
+    },
+    {
+     "code": "P95-93",
+     "upper": "Sierra Peach",
+     "lower": "Gotham Gray Poly"
+    },
+    {
+     "code": "P86-72",
+     "upper": "Frost White",
+     "lower": "Plum Poly"
+    },
+    {
+     "code": "P92-89",
+     "upper": "Avocado Poly",
+     "lower": "Mojave Yellow"
+    },
+    {
+     "code": "P89-72",
+     "upper": "Frost White",
+     "lower": "Avocado Poly"
+    },
+    {
+     "code": "P88-67-72",
+     "upper": "Frost White",
+     "lower": "Oregon Green",
+     "intermediate": "Bermuda Green"
+    },
+    {
+     "code": "P82-84-72",
+     "upper": "Frost White",
+     "lower": "Pacific Blue",
+     "intermediate": "Glacier Blue"
+    },
+    {
+     "code": "P89-1-92",
+     "upper": "Mojave Yellow",
+     "lower": "Avocado Poly",
+     "intermediate": "Classic Black",
+     "unresolved": [
+      "Classic Black"
+     ]
+    },
+    {
+     "code": "P94-93-72",
+     "upper": "Frost White",
+     "lower": "Cinnamon Bronze Poly",
+     "intermediate": "Sierra Peach"
+    },
+    {
+     "code": "P1-90-72",
+     "upper": "Frost White",
+     "lower": "Classic Black",
+     "intermediate": "Mardi Gras Red",
+     "unresolved": [
+      "Classic Black"
+     ]
+    },
+    {
+     "code": "P67-D-72",
+     "upper": "Frost White",
+     "lower": "Bermuda Green",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
+    },
+    {
+     "code": "P84-D-72",
+     "upper": "Frost White",
+     "lower": "Glacier Blue",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
+    },
+    {
+     "code": "P90-D-72",
+     "upper": "Frost White",
+     "lower": "Mardi Gras Red",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
+    },
+    {
+     "code": "P94-D-92",
+     "upper": "Mojave Yellow",
+     "lower": "Cinnamon Bronze Poly",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
+    },
+    {
+     "code": "P1-D-92",
+     "upper": "Mojave Yellow",
+     "lower": "Classic Black",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Classic Black",
+      "Dinoc"
+     ]
+    },
+    {
+     "code": "P89-D-92",
+     "upper": "Mojave Yellow",
+     "lower": "Avocado Poly",
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
+    }
+   ]
+  }
+ },
+ "note": "Combinations whose colours are all on a chip of our scans are published. Those with a colour that has no chip (see `unresolved`) are kept here for future work and are NOT published: the builder skips every entry that has `unresolved`."
+}

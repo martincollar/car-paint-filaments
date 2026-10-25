@@ -2167,6 +2167,1306 @@
       ]
     },
     {
+      "name": "Toro Red",
+      "year": 1951,
+      "car_code": "M-64",
+      "paint_ref": "50216",
+      "rgb": [
+        55,
+        15,
+        18
+      ],
+      "hex": "#370F12",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        514,
+        441
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 6.16,
+          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
+          "brand": "3DLabPrint",
+          "material": "PLA",
+          "color_name": "Poly Light 1.0 LW Pla Orange",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/d/8d95dd27453bb1580561120fc1ee1a85-vyr-2897-lw-orange-1.jpg",
+          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ORANGE 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            68,
+            8,
+            3
+          ],
+          "hex": "#440803",
+          "pixel_count": 170815,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.45,
+          "slug": "aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PLA",
+          "color_name": "Cherry Gleam",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/5/05382796242879726919441c1c6a750d-cherrygleam.png",
+          "local_image": "aurapol-pla-cherry-gleam-pla.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Cherry Gleam 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            83,
+            28,
+            33
+          ],
+          "hex": "#531C21",
+          "pixel_count": 151492,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.31,
+          "slug": "filament-colorfil-pla-hneda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Hnědá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/72cc86a952829176e03097dc46ab22ff-brown.jpg",
+          "local_image": "smart3d-filament-colorfil-pla-hneda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament COLORFIL / PLA / HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            60,
+            31,
+            20
+          ],
+          "hex": "#3C1F14",
+          "pixel_count": 79485,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.35,
+          "slug": "filament-nebula-pla-607-hneda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "607 Hnědá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-607-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/d/9dbe97fd083342414095a5dc5f39506b-nebula-pla-607-brown.png",
+          "local_image": "smart3d-filament-nebula-pla-607-hneda-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA 607 / HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            64,
+            38,
+            32
+          ],
+          "hex": "#402620",
+          "pixel_count": 330567,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.35,
+          "slug": "filament-nebula-pla-609hd-hneda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "609hd Hnědá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-609hd-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/5/f5d4347348789ebf731daae280febbda-nebula-pla-609-hd-brown.png",
+          "local_image": "smart3d-filament-nebula-pla-609hd-hneda-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA 609HD / HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            64,
+            38,
+            32
+          ],
+          "hex": "#402620",
+          "pixel_count": 330567,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 9.06,
+          "slug": "filament-professional-lab-petg-medena-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "PETG",
+          "color_name": "Měděná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-petg-medena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/1/3/1343ebbfdc8e1d38257c9246033b789b-fg-p204-e1fg-p204-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-petg-medena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Professional LAB / PETG / MĚDĚNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            69,
+            42,
+            36
+          ],
+          "hex": "#452A24",
+          "pixel_count": 433206,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.82,
+          "slug": "refill-bambu-lab-petg-basic-tmave-hneda-1-75-mm-1-kg",
+          "brand": "BambuLab",
+          "material": "PETG",
+          "color_name": "Basic TMAVĚ HNĚDÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-bambu-lab-petg-basic-tmave-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/3/830f8fbf05f7c993ea6265e42644df87-petg-basic-brown.png",
+          "local_image": "smart3d-refill-bambu-lab-petg-basic-tmave-hneda-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill Bambu Lab / PETG Basic / TMAVĚ HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            61,
+            40,
+            35
+          ],
+          "hex": "#3D2823",
+          "pixel_count": 238597,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.18,
+          "slug": "refill-azurefilm-petg-skin-espresso-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "PETG",
+          "color_name": "Skin Espresso",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-azurefilm-petg-skin-espresso-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/f/6f321cefaa7d9b975cd401ca8ef8bc8d-3d-filament-refill-petg-hyper-speed-skin-espresso-espresso-azurefilm.jpg",
+          "local_image": "smart3d-refill-azurefilm-petg-skin-espresso-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Refill AzureFilm / PETG / SKIN ESPRESSO / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            71,
+            42,
+            31
+          ],
+          "hex": "#472A1F",
+          "pixel_count": 267247,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.29,
+          "slug": "filament-devil-design-petg-vinove-cervena-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PETG",
+          "color_name": "Vínově Červená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-petg-vinove-cervena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/7/b75a93be85d404e95336e6e83c3ae4c9-petg-1-75-wine-red.png",
+          "local_image": "smart3d-filament-devil-design-petg-vinove-cervena-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PETG / VÍNOVĚ ČERVENÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            98,
+            40,
+            39
+          ],
+          "hex": "#622827",
+          "pixel_count": 361723,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.39,
+          "slug": "filament-devil-design-petg-tmave-fialova-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PETG",
+          "color_name": "Tmavě Fialová",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-petg-tmave-fialova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/7/b754ac722c73dc370209af28061f335e-petg-1-75-dark-violet.jpg",
+          "local_image": "smart3d-filament-devil-design-petg-tmave-fialova-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PETG / TMAVĚ FIALOVÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            95,
+            37,
+            52
+          ],
+          "hex": "#5F2534",
+          "pixel_count": 446453,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 16.76,
+          "slug": "devil-design-asa-tmave-hneda-dark-brown-800g",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-tmave-hneda-dark-brown-800g",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/2/62b71c7a8f2698f9fd0d589bdd3e2543-asa-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-asa-tmave-hneda-dark-brown-800g.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Tmavě Hnědá (Dark Brown) - 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            88,
+            58,
+            37
+          ],
+          "hex": "#583A25",
+          "pixel_count": 105214,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.27,
+          "slug": "p196",
+          "brand": "Filament PM",
+          "material": "ASA",
+          "color_name": "Černá",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/asa-cerna-1-75-mm-0-75-kg/p196",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4686-asa-black-0-75kg-1-75-1-product-og.jpg?v=1882433039",
+          "local_image": "filament_pm-p196.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA - Černá",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            33,
+            33,
+            33
+          ],
+          "hex": "#212121",
+          "pixel_count": 182646,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.36,
+          "slug": "prusament-asa-jet-black",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Jet Black",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/90a28488-7fa4-447c-a665-de362d227435.jpg",
+          "local_image": "prusament-asa-jet-black.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Jet Black 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            47,
+            46,
+            48
+          ],
+          "hex": "#2F2E30",
+          "pixel_count": 694740,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.37,
+          "slug": "asa-matte-black",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Matte Black",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-matte-black",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118789_17921437256ad1f16d47e5c.128x128.jpg",
+          "local_image": "3djake-asa-matte-black.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Matte Black, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            21,
+            21,
+            21
+          ],
+          "hex": "#151515",
+          "pixel_count": 2600,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.44,
+          "slug": "asa-olive-green",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Olive Green",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-olive-green",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33549_ac7709c4.128x128.jpg",
+          "local_image": "3djake-asa-olive-green.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Olive Green, 1,75 mm / 750 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            40,
+            40,
+            42
+          ],
+          "hex": "#28282A",
+          "pixel_count": 9180,
+          "confidence": "manual_override",
+          "measured_hex": "#DBDBDB"
+        }
+      ]
+    },
+    {
+      "name": "French Gray",
+      "year": 1951,
+      "car_code": "RR-72",
+      "paint_ref": "30862",
+      "rgb": [
+        151,
+        155,
+        140
+      ],
+      "hex": "#979B8C",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        514,
+        574
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 3.9,
+          "slug": "aurapol-pla-3d-filament-grandma-gray-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Grandma Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-grandma-gray-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/8/b8295975c0eed1dd3d5012daccaa552d-pla-aurapol-grandma-gray.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-grandma-gray-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Grandma Grey 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            144,
+            150,
+            143
+          ],
+          "hex": "#90968F",
+          "pixel_count": 202589,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.61,
+          "slug": "aurapol-pla-3d-filament-grey-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-grey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/7/d/7dc0916264a3c316887e3e27fbdd2a44-gray-pla.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-grey-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Grey 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            151,
+            155,
+            150
+          ],
+          "hex": "#979B96",
+          "pixel_count": 201189,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.66,
+          "slug": "refill-azurefilm-pla-matte-hs-salvej-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "PLA",
+          "color_name": "Matte HS Šalvěj",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-matte-hs-salvej-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/2/620c5e5ca0696646ed4007cdc4a2c964-refill-pla-matte-sage.webp",
+          "local_image": "smart3d-refill-azurefilm-pla-matte-hs-salvej-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill AzureFilm / PLA MATTE HS / ŠALVĚJ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            139,
+            141,
+            128
+          ],
+          "hex": "#8B8D80",
+          "pixel_count": 474078,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.07,
+          "slug": "bambu-lab-pla-gray",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/b8bb9d54dbfc4d4da37326cc026315ef/d870efeaced648c6a3f390db1f55f725.media",
+          "local_image": "bambulab-bambu-lab-pla-gray.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Basic",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            142,
+            144,
+            137
+          ],
+          "hex": "#8E9089",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.07,
+          "slug": "bambu-lab-pla-slate-gray-sparkle",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Slate Gray Sparkle",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+          "image_url": "https://store.bblcdn.eu/s8/default/080598cf79e74874bbbcceaf61a48c3c/fa9db10ecf7a4587a7e242b069b41cda.media",
+          "local_image": "bambulab-bambu-lab-pla-slate-gray-sparkle.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Sparkle",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            142,
+            144,
+            137
+          ],
+          "hex": "#8E9089",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 6.38,
+          "slug": "aurapol-pet-g-filament-signal-grey-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PETG",
+          "color_name": "Signal Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pet-g-filament-signal-grey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/a/3a2d5a618aadd4a1e7074308090d8b71-grey-signal-petg-ral7004.png",
+          "local_image": "aurapol-aurapol-pet-g-filament-signal-grey-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PET-G Filament Signal Grey 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            167,
+            169,
+            163
+          ],
+          "hex": "#A7A9A3",
+          "pixel_count": 183432,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.03,
+          "slug": "filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PETG",
+          "color_name": "Arctic Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/5/95d8fd13cc84dddf3b2c348a99abd011-arctic-silver-2.jpg",
+          "local_image": "smart3d-filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PETG / ARCTIC STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            144,
+            148,
+            147
+          ],
+          "hex": "#909493",
+          "pixel_count": 87162,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.61,
+          "slug": "aurapol-pet-g-filament-silver-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PETG",
+          "color_name": "Silver",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pet-g-filament-silver-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/5/4/543f65101fb574915d9692e1ae78903b-silver-petg-ral9006.png",
+          "local_image": "aurapol-aurapol-pet-g-filament-silver-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PET-G Filament Silver 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            138,
+            141,
+            139
+          ],
+          "hex": "#8A8D8B",
+          "pixel_count": 171454,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.83,
+          "slug": "refill-azurefilm-petg-stribrna-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "PETG",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-azurefilm-petg-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/b/bbce58856ea8c4330415bb4458e1a1a6-3d-printing-high-quality-filament-refill-silver.jpg",
+          "local_image": "smart3d-refill-azurefilm-petg-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Refill AzureFilm / PETG / STŘÍBRNÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            141,
+            143,
+            142
+          ],
+          "hex": "#8D8F8E",
+          "pixel_count": 402609,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.03,
+          "slug": "filamentree-petg-seda-window-grey-1kg",
+          "brand": "Filamentree",
+          "material": "PETG",
+          "color_name": "Šedá (Window Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-petg-seda-window-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/0/2/020e3cfe2f12ef9500095f49b39b2214-pla-plus-window-grey-1-kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-petg-seda-window-grey-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PETG - Šedá (Window Grey) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            153,
+            161,
+            162
+          ],
+          "hex": "#99A1A2",
+          "pixel_count": 216900,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 1.78,
+          "slug": "aurapol-asa-3d-filament-light-grey-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Light Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-light-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/6/a6334d66d54199ca7af5f16212f7e244-asa-light-grey-aurapol.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-light-grey-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Light Grey 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            146,
+            150,
+            137
+          ],
+          "hex": "#929689",
+          "pixel_count": 260965,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.17,
+          "slug": "aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D ARMY Urban Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/2/b20041c61ea0a62797b013f127fddd38-2b27a0fa9ecef0004665bfcd8c2bfe2d.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament ARMY Urban Grey 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            134,
+            151,
+            131
+          ],
+          "hex": "#869783",
+          "pixel_count": 189499,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.16,
+          "slug": "aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Aluminium Gray",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/d/3d0192f6170fecacc3dc0253b55617b8-asa-aluminium-gray-aurapol.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Aluminium Gray 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            132,
+            137,
+            131
+          ],
+          "hex": "#848983",
+          "pixel_count": 254884,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.02,
+          "slug": "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D ARMY Supply Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/c/3caf295c984ff5e199dfa82ac526049e-6ef7f3c212a90a159011ce832770ab9b.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament ARMY Supply Grey 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            138,
+            139,
+            100
+          ],
+          "hex": "#8A8B64",
+          "pixel_count": 135086,
+          "confidence": "manual_override",
+          "measured_hex": "#969A91"
+        },
+        {
+          "delta_e": 10.52,
+          "slug": "aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D ARMY Desert Dust",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/9/19a6f37a0501836addc107590a19999f-f401782a3b72a8b3564415904175bf27.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament ARMY Desert Dust 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            144,
+            138,
+            99
+          ],
+          "hex": "#908A63",
+          "pixel_count": 274355,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "Bali Blue",
+      "year": 1951,
+      "car_code": "J-45",
+      "paint_ref": "10742",
+      "rgb": [
+        94,
+        110,
+        123
+      ],
+      "hex": "#5E6E7B",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        332,
+        369
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 4.62,
+          "slug": "devil-design-pla-stribrna-silver-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Stříbrná (Silver)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-stribrna-silver-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/0/a/0a794f854aa46cc0f4a48b6874e9cad1-pla-1-75-silver.png",
+          "local_image": "hubacek3d-devil-design-pla-stribrna-silver-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Stříbrná (Silver) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            106,
+            115,
+            120
+          ],
+          "hex": "#6A7378",
+          "pixel_count": 142240,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.67,
+          "slug": "prusament-pla-gentlemans-grey",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Gentleman's Grey",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-pla-gentleman-s-grey-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2022/10/gentlemans_grey_update_2-1-256x236.png",
+          "local_image": "prusament-pla-gentlemans-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PLA Gentleman's Grey 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            99,
+            113,
+            117
+          ],
+          "hex": "#637175",
+          "pixel_count": 1918,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.01,
+          "slug": "refill-thefilament-pla-seda-basalt-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PLA",
+          "color_name": "Šedá Basalt",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-pla-seda-basalt-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/2/82c74f6d9250fbb334be2a73d0bdd513-the-filament-basalt-grey-pla-0.jpg",
+          "local_image": "smart3d-refill-thefilament-pla-seda-basalt-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill TheFilament / PLA / ŠEDÁ \"BASALT\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            102,
+            112,
+            115
+          ],
+          "hex": "#667073",
+          "pixel_count": 156520,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.21,
+          "slug": "filament-azurefilm-pla-seda-shark-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "PLA",
+          "color_name": "Šedá Shark",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-pla-seda-shark-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/1/e1cc807955506ae54677b1b3b131c9c7-3d-printing-filament-azurefilm-pla-shark-grey.webp",
+          "local_image": "smart3d-filament-azurefilm-pla-seda-shark-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament AzureFilm / PLA / ŠEDÁ \"SHARK\" / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            109,
+            122,
+            131
+          ],
+          "hex": "#6D7A83",
+          "pixel_count": 95495,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.3,
+          "slug": "3dpower-refill-pla-seda-grey-1kg",
+          "brand": "3DPower",
+          "material": "PLA",
+          "color_name": "Šedá (Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-refill-pla-seda-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/0/10697156218a787c5f4bc9b3053f56e1-3dpower-pet-g-grey-1.jpg",
+          "local_image": "hubacek3d-3dpower-refill-pla-seda-grey-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower Refill PLA - Šedá (Grey) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            102,
+            107,
+            111
+          ],
+          "hex": "#666B6F",
+          "pixel_count": 151416,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 2.38,
+          "slug": "aurapol-pet-g-filament-dusty-brown-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PETG",
+          "color_name": "Dusty Brown",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pet-g-filament-dusty-brown-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/d/e/de330d7beedcca47ea7768ab044142ce-pet-g-dusty-brown-contrast.png",
+          "local_image": "aurapol-pet-g-dusty-brown-petg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PET-G Filament Dusty Brown 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            96,
+            110,
+            118
+          ],
+          "hex": "#606E76",
+          "pixel_count": 161046,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.51,
+          "slug": "refill-thefilament-petg-seda-basalt-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PETG",
+          "color_name": "Šedá Basalt",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-petg-seda-basalt-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/2/324d554eff982709912608520c28ca5f-the-filament-basalt-grey-petg-0.jpg",
+          "local_image": "smart3d-refill-thefilament-petg-seda-basalt-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill TheFilament / PETG / ŠEDÁ \"BASALT\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            97,
+            107,
+            111
+          ],
+          "hex": "#616B6F",
+          "pixel_count": 150353,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.75,
+          "slug": "refill-rosa3d-petg-standard-hs-seda-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PETG",
+          "color_name": "Standard HS ŠEDÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-petg-standard-hs-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/d/3d9a2a9bdfbe5c32491eee687f964000-refill-pet-g-standard-gray-1kg-box-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-petg-standard-hs-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PETG Standard HS / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            104,
+            114,
+            118
+          ],
+          "hex": "#687276",
+          "pixel_count": 210192,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.44,
+          "slug": "devil-design-petg-strbrna-silver-1kg",
+          "brand": "Devil Design",
+          "material": "PETG",
+          "color_name": "Stříbrná (Silver)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-petg-strbrna-silver-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/8/8/8843120ac37df3867093607c2cefabd0-petg-1-75-silver.png",
+          "local_image": "hubacek3d-devil-design-petg-strbrna-silver-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PETG - Stříbrná (Silver) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            109,
+            119,
+            124
+          ],
+          "hex": "#6D777C",
+          "pixel_count": 137850,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.92,
+          "slug": "refill-thefilament-petg-lite-seda-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PETG",
+          "color_name": "Lite ŠEDÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-petg-lite-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/e/7e7730833ccbc9e54fd6d94d0a2c0727-eng-pl-the-filament-refill-petg-lite-1-75mm-grey-1kg-3402-1.jpg",
+          "local_image": "smart3d-refill-thefilament-petg-lite-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill TheFilament / PETG Lite / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            103,
+            107,
+            110
+          ],
+          "hex": "#676B6E",
+          "pixel_count": 80859,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 6.68,
+          "slug": "3dpower-asa-seda-grey-1kg",
+          "brand": "3DPower",
+          "material": "ASA",
+          "color_name": "Šedá (Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-seda-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/f/2/f2d57467da42dc1bb6ba487fc21d2931-15-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-seda-grey-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower ASA - Šedá (Grey) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            111,
+            116,
+            118
+          ],
+          "hex": "#6F7476",
+          "pixel_count": 147297,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.91,
+          "slug": "refill-rosa3d-asa-seda-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/2/023b5f91206c6dc62c7b828a535c6717-refill-asa-gray-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-seda-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            115,
+            124,
+            130
+          ],
+          "hex": "#737C82",
+          "pixel_count": 75351,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.76,
+          "slug": "aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Slate Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f915a237bdb78137d0e97c99b9332970-asa-grey.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-slate-grey-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Slate Grey 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            116,
+            121,
+            123
+          ],
+          "hex": "#74797B",
+          "pixel_count": 145559,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.85,
+          "slug": "filament-nebula-asa-301-seda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "ASA",
+          "color_name": "301 Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/8/984ddc58faf66d3f43694093d4441ed4-gray.jpg",
+          "local_image": "smart3d-filament-nebula-asa-301-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / ASA 301 / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            115,
+            125,
+            128
+          ],
+          "hex": "#737D80",
+          "pixel_count": 114300,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.18,
+          "slug": "p195",
+          "brand": "Filament PM",
+          "material": "ASA",
+          "color_name": "Stříbrná",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/asa-stribrna-1-75-mm-0-75-kg/p195",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4441-asa-silver-1kg-1-75-1-product-og.jpg?v=1769430376",
+          "local_image": "filament_pm-p195.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA - Stříbrná",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            115,
+            116,
+            117
+          ],
+          "hex": "#737475",
+          "pixel_count": 106460,
+          "confidence": "manual_override",
+          "measured_hex": "#3C3C3B"
+        }
+      ]
+    },
+    {
       "name": "Gulf Green",
       "year": 1952,
       "car_code": "Q-115",
@@ -3108,60 +4408,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.99,
-          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.99,
-          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "HT110 3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.02,
           "slug": "filamentree-pla-plus-modra-steel-blue-1kg",
           "brand": "Filamentree",
@@ -3186,6 +4432,60 @@
           ],
           "hex": "#173148",
           "pixel_count": 241505,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.11,
+          "slug": "pla-extrafill-vertigo-starlight-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Vertigo Starlight",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-starlight-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_Vertigo_Starlight_1KG__1.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-vertigo-starlight-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Vertigo Starlight\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            40,
+            43,
+            63
+          ],
+          "hex": "#282B3F",
+          "pixel_count": 358036,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.27,
+          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Námořnická Modrá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            44,
+            70
+          ],
+          "hex": "#202C46",
+          "pixel_count": 392860,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -16958,6 +18258,62 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 7.12,
+          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Black",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            23,
+            27
+          ],
+          "hex": "#18171B",
+          "pixel_count": 130144,
+          "confidence": "manual_override",
+          "measured_hex": "#373A42"
+        },
+        {
+          "delta_e": 7.12,
+          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "HT110 3D Black",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
+          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            23,
+            27
+          ],
+          "hex": "#18171B",
+          "pixel_count": 130144,
+          "confidence": "manual_override",
+          "measured_hex": "#373A42"
+        },
+        {
           "delta_e": 7.43,
           "slug": "pla-extrafill-vertigo-starlight-1kg",
           "brand": "Fillamentum",
@@ -16982,60 +18338,6 @@
           ],
           "hex": "#282B3F",
           "pixel_count": 358036,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.59,
-          "slug": "aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Undercity Sky",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/f/0f63c962c1e6cabe1c8a01c145ff94ed-undercitysky.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Undercity Sky 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            40,
-            45,
-            60
-          ],
-          "hex": "#282D3C",
-          "pixel_count": 145349,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.07,
-          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
-          "brand": "DEVIL DESIGN",
-          "material": "PLA",
-          "color_name": "Námořnická Modrá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
-          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            32,
-            44,
-            70
-          ],
-          "hex": "#202C46",
-          "pixel_count": 392860,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26428,60 +27730,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 1.6,
-          "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 1.6,
-          "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "HT110 3D Black",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/4/04e6ea3bb237cb701209849d91c6f8b1-black-pla.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 130144,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 1.79,
           "slug": "aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -26560,6 +27808,60 @@
           ],
           "hex": "#36373C",
           "pixel_count": 179763,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.5,
+          "slug": "filament-nebula-pla-zelena-mystic-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Zelená Mystic",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-zelena-mystic-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/5/b5ffe69c21a590d7a9070ee9f98c6de8-vyr-2591-pla-mystic-green.jpg",
+          "local_image": "smart3d-filament-nebula-pla-zelena-mystic-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA / ZELENÁ \"MYSTIC\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            52,
+            51,
+            59
+          ],
+          "hex": "#34333B",
+          "pixel_count": 288639,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.46,
+          "slug": "filament-nebula-pla-607-cerna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "607 Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-607-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/b/8b1b3c5092fbd1001f432ef1886cd5e7-nebula-pla-607-black.png",
+          "local_image": "smart3d-filament-nebula-pla-607-cerna-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA 607 / ČERNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            50,
+            51,
+            55
+          ],
+          "hex": "#323337",
+          "pixel_count": 283286,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -28137,6 +29439,440 @@
           ],
           "hex": "#686759",
           "pixel_count": 294921,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "Admiral Blue",
+      "year": 1951,
+      "car_code": "7105-G",
+      "paint_ref": "10435",
+      "rgb": [
+        13,
+        29,
+        54
+      ],
+      "hex": "#0D1D36",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg03.jpg",
+      "source_pos": [
+        1095,
+        1382
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 1.85,
+          "slug": "filament-professional-lab-pla-matte-modra-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "PLA",
+          "color_name": "Matte Modrá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-pla-matte-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/d/2db581b092a93a697430fa6690babeb0-fg-p24-e1fg-p24-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-pla-matte-modra-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Professional LAB / PLA MATTE / MODRÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            18,
+            31,
+            52
+          ],
+          "hex": "#121F34",
+          "pixel_count": 345535,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.06,
+          "slug": "easy-pla-aurora",
+          "brand": "Fiberlogy",
+          "material": "PLA",
+          "color_name": "Easy Aurora",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-pla-aurora",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/27722_6291981c.128x128.jpg",
+          "local_image": "3djake-easy-pla-aurora.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy Easy PLA Aurora, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            31,
+            39,
+            60
+          ],
+          "hex": "#1F273C",
+          "pixel_count": 9507,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.85,
+          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Námořnická Modrá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            44,
+            70
+          ],
+          "hex": "#202C46",
+          "pixel_count": 392860,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.39,
+          "slug": "devil-design-pla-modra-navy-blue-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Modrá (Navy Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-modra-navy-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/7/2/72cd1e2193795396d8e80aa94184ef1b-pla-1-75-navy-blue.png",
+          "local_image": "hubacek3d-devil-design-pla-modra-navy-blue-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Modrá (Navy Blue) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            30,
+            46,
+            74
+          ],
+          "hex": "#1E2E4A",
+          "pixel_count": 154671,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.93,
+          "slug": "pla-extrafill-pearl-night-blue-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Pearl Night Blue",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-pearl-night-blue-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_Pearl_night_blue_1KG.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-pearl-night-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Pearl Night Blue\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            32,
+            73
+          ],
+          "hex": "#182049",
+          "pixel_count": 409841,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 6.32,
+          "slug": "filament-nebula-petg-tmave-modra-1-kg",
+          "brand": "NEBULA",
+          "material": "PETG",
+          "color_name": "Tmavě modrá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-tmave-modra-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/81_filament-vaza-navy-blue.png?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-petg-tmave-modra-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PETG tmavě modrá 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            24,
+            29,
+            70
+          ],
+          "hex": "#181D46",
+          "pixel_count": 124498,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.49,
+          "slug": "devil-design-petg-modra-ultra-blue-1kg",
+          "brand": "Devil Design",
+          "material": "PETG",
+          "color_name": "Modrá (Ultra Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-petg-modra-ultra-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/4/641951bb7dd44e1683163eabbda2cca6-petg-1-75-ultra-blue.png",
+          "local_image": "hubacek3d-devil-design-petg-modra-ultra-blue-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PETG - Modrá (Ultra Blue) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            39,
+            42,
+            59
+          ],
+          "hex": "#272A3B",
+          "pixel_count": 157153,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.69,
+          "slug": "3dpower-basic-petg-tmave-modra-dark-blue-1kg",
+          "brand": "3DPower",
+          "material": "PETG",
+          "color_name": "Basic Tmavě Modrá (Dark Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-basic-petg-tmave-modra-dark-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/f/5/f5159b5da52f593a6cc3ca8171d9361d-3dpower-basic-pet-g-dark-green-1.jpg",
+          "local_image": "hubacek3d-3dpower-basic-petg-tmave-modra-dark-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "3DPower Basic PETG - Tmavě Modrá (Dark Blue) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            33,
+            50,
+            88
+          ],
+          "hex": "#213258",
+          "pixel_count": 400317,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.62,
+          "slug": "filament-nebula-petg-pulnocni-modra-1-kg",
+          "brand": "NEBULA",
+          "material": "PETG",
+          "color_name": "Půlnoční modrá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-pulnocni-modra-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/120_filament-vaza-mighnight-blue--new.png?ff=1&x=1024&y=768&q=85&ts=60b28688&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-petg-pulnocni-modra-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PETG půlnoční modrá 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            33,
+            41,
+            94
+          ],
+          "hex": "#21295E",
+          "pixel_count": 132176,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.32,
+          "slug": "filament-devil-design-petg-ultra-blue-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PETG",
+          "color_name": "Ultra Blue",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-petg-ultra-blue-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/9/69515c2585b5ce3105b9c835a3fa00d0-petg-1-75-ultra-blue.jpg",
+          "local_image": "smart3d-filament-devil-design-petg-ultra-blue-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PETG / ULTRA BLUE / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            53,
+            59,
+            87
+          ],
+          "hex": "#353B57",
+          "pixel_count": 437137,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 4.8,
+          "slug": "prusament-asa-sapphire-blue",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Sapphire Blue",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/f1389555-31ac-492d-af45-8d9a32656f70.jpg",
+          "local_image": "prusament-asa-sapphire-blue.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Sapphire Blue 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            17,
+            31,
+            70
+          ],
+          "hex": "#111F46",
+          "pixel_count": 672227,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.91,
+          "slug": "refill-rosa3d-asa-modra-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Modrá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/c/ecfb9cd0a282ded86a583fee42bc7952-refill-asa-blue-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-modra-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / MODRÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            48,
+            60,
+            85
+          ],
+          "hex": "#303C55",
+          "pixel_count": 213868,
+          "confidence": "manual_override",
+          "measured_hex": "#C12728"
+        },
+        {
+          "delta_e": 11.46,
+          "slug": "asa-extrafill-grey-blue",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Grey Blue",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-grey-blue",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Grey_bluie.jpg",
+          "local_image": "fillamentum-asa-extrafill-grey-blue.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Grey Blue\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            37,
+            56,
+            70
+          ],
+          "hex": "#253846",
+          "pixel_count": 318565,
+          "confidence": "manual_override",
+          "measured_hex": "#7B796A"
+        },
+        {
+          "delta_e": 11.98,
+          "slug": "filament-professional-lab-asa-cerna-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "ASA",
+          "color_name": "Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/f/dfa2453623efdaf45f1b4fca74e319c6-fg-p132-e1fg-p132-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-cerna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament PROFESSIONAL LAB / ASA / ČERNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            43,
+            48,
+            53
+          ],
+          "hex": "#2B3035",
+          "pixel_count": 109161,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.03,
+          "slug": "filament-nebula-asa-301-cerna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "ASA",
+          "color_name": "301 Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/9/b9b5b231df2fd907a714d8298d6acc4f-black.jpg",
+          "local_image": "smart3d-filament-nebula-asa-301-cerna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / ASA 301 / ČERNÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            30,
+            32,
+            34
+          ],
+          "hex": "#1E2022",
+          "pixel_count": 77922,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -30309,6 +32045,1317 @@
           ],
           "hex": "#2F2E30",
           "pixel_count": 694740,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "Toro Red",
+      "year": 1951,
+      "car_code": "M-64",
+      "paint_ref": "50216",
+      "rgb": [
+        55,
+        15,
+        18
+      ],
+      "hex": "#370F12",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        514,
+        441
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 8.77,
+          "slug": "prusament-pla-noctua-brown",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Noctua Brown",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/",
+          "image_url": "https://storage.googleapis.com/prusa3d-content-prod-14e8-wordpress-prusament-prod/2025/12/60ddab82-noctua-brown-fan-transparent.png",
+          "local_image": "prusament-pla-noctua-brown.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PLA Noctua Brown 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            77,
+            37,
+            26
+          ],
+          "hex": "#4D251A",
+          "pixel_count": 2032054,
+          "confidence": "manual_override",
+          "measured_hex": "#54291D"
+        },
+        {
+          "delta_e": 10.77,
+          "slug": "filament-spectrum-premium-pla-high-speed-1-75mm-walnut-brown-1kg",
+          "brand": "Spectrum",
+          "material": "PLA",
+          "color_name": "Walnut Brown",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-premium-pla-high-speed-1-75mm-walnut-brown-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-high-speed-walnut-brown-1.jpg",
+          "local_image": "spectrum-filament-spectrum-premium-pla-high-speed-1-75mm-walnut-brown-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum Premium PLA High Speed 1.75mm WALNUT BROWN 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            75,
+            48,
+            41
+          ],
+          "hex": "#4B3029",
+          "pixel_count": 388348,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.5,
+          "slug": "filament-spectrum-pla-premium-1-75mm-chocolate-brown-1kg",
+          "brand": "Spectrum",
+          "material": "PLA",
+          "color_name": "Chocolate Brown",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pla-premium-1-75mm-chocolate-brown-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-premium-chocolate-brown-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pla-premium-1-75mm-chocolate-brown-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum PLA Premium 1.75mm CHOCOLATE BROWN 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            77,
+            51,
+            45
+          ],
+          "hex": "#4D332D",
+          "pixel_count": 229796,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.34,
+          "slug": "prusament-pla-mystic-brown",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Mystic Brown",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-premium-pla-mystic-brown-1kg-2/",
+          "image_url": "https://prusament.com/wp-content/uploads/2018/09/mystic_brown_split-256x236.png",
+          "local_image": "prusament-pla-mystic-brown.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament Premium PLA Mystic Brown 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            81,
+            55,
+            51
+          ],
+          "hex": "#513733",
+          "pixel_count": 15415,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.9,
+          "slug": "bambu-lab-pla-matte-dark-chocolate",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Dark Chocolate",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/c242d340094d4275baae53041edb0ed3/Rectangle_4536.png",
+          "local_image": "bambulab-bambu-lab-pla-matte-dark-chocolate.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            77,
+            51,
+            36
+          ],
+          "hex": "#4D3324",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 11.08,
+          "slug": "bambu-lab-petg-dark-brown",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "Dark Brown",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-basic",
+          "image_url": "https://store.bblcdn.eu/s8/default/09fe2696c08c4d8a81647cc1f036c1e3/Rectangle_4615.jpg",
+          "local_image": "bambulab-bambu-lab-petg-dark-brown.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Basic",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            80,
+            44,
+            30
+          ],
+          "hex": "#502C1E",
+          "pixel_count": 1377600,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.22,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-chocolate-brown-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Chocolate Brown",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-chocolate-brown-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-chocolate-brown-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-chocolate-brown-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PET-G Premium 1.75mm CHOCOLATE BROWN 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            78,
+            51,
+            46
+          ],
+          "hex": "#4E332E",
+          "pixel_count": 230073,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.51,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Deep Black",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-deep-black-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PET-G Premium 1.75mm DEEP BLACK 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            30,
+            29,
+            30
+          ],
+          "hex": "#1E1D1E",
+          "pixel_count": 214941,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.93,
+          "slug": "prusament-petg-jet-black",
+          "brand": "Prusament",
+          "material": "PETG",
+          "color_name": "Jet Black",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2018/11/jet_black-256x236.png",
+          "local_image": "prusament-petg-jet-black.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PETG Jet Black 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            54,
+            50,
+            63
+          ],
+          "hex": "#36323F",
+          "pixel_count": 11664,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.92,
+          "slug": "petg-galaxy-black",
+          "brand": "Polymaker",
+          "material": "PETG",
+          "color_name": "Galaxy Black",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/petg?variant=45588258553913",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05021_Isometric_Top.png",
+          "local_image": "polymaker-petg-galaxy-black.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PETG Galaxy Black",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            36,
+            36,
+            35
+          ],
+          "hex": "#242423",
+          "pixel_count": 569654,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 13.73,
+          "slug": "asa-army-brown",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Army Brown",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=40627010109497",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/brown_4c09579a-7a33-4e28-bedd-88ab168a8d08.png",
+          "local_image": "polymaker-asa-army-brown.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Army Brown",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            83,
+            46,
+            25
+          ],
+          "hex": "#532E19",
+          "pixel_count": 3832034,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.47,
+          "slug": "asa-jet-black",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Jet Black",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41297658314809",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/jet_black.png",
+          "local_image": "polymaker-asa-jet-black.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Jet Black",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            42,
+            40,
+            40
+          ],
+          "hex": "#2A2828",
+          "pixel_count": 948407,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.33,
+          "slug": "filament-spectrum-asa-275-1-75mm-deep-black-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Deep Black",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-deep-black-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-deep-black-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-deep-black-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum ASA 275 1.75mm DEEP BLACK 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            39,
+            39,
+            42
+          ],
+          "hex": "#27272A",
+          "pixel_count": 238441,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.36,
+          "slug": "prusament-asa-jet-black",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Jet Black",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/90a28488-7fa4-447c-a665-de362d227435.jpg",
+          "local_image": "prusament-asa-jet-black.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Jet Black 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            47,
+            46,
+            48
+          ],
+          "hex": "#2F2E30",
+          "pixel_count": 694740,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.53,
+          "slug": "asa-black",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Black",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343254073",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/black.png",
+          "local_image": "polymaker-asa-black.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Black",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            54,
+            52,
+            56
+          ],
+          "hex": "#363438",
+          "pixel_count": 821724,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "French Gray",
+      "year": 1951,
+      "car_code": "RR-72",
+      "paint_ref": "30862",
+      "rgb": [
+        151,
+        155,
+        140
+      ],
+      "hex": "#979B8C",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        514,
+        574
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 5.07,
+          "slug": "bambu-lab-pla-gray",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/b8bb9d54dbfc4d4da37326cc026315ef/d870efeaced648c6a3f390db1f55f725.media",
+          "local_image": "bambulab-bambu-lab-pla-gray.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Basic",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            142,
+            144,
+            137
+          ],
+          "hex": "#8E9089",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.07,
+          "slug": "bambu-lab-pla-slate-gray-sparkle",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Slate Gray Sparkle",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-sparkle",
+          "image_url": "https://store.bblcdn.eu/s8/default/080598cf79e74874bbbcceaf61a48c3c/fa9db10ecf7a4587a7e242b069b41cda.media",
+          "local_image": "bambulab-bambu-lab-pla-slate-gray-sparkle.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Sparkle",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            142,
+            144,
+            137
+          ],
+          "hex": "#8E9089",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.97,
+          "slug": "filament-spectrum-pla-premium-1-75mm-silver-star-1kg",
+          "brand": "Spectrum",
+          "material": "PLA",
+          "color_name": "Silver Star",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pla-premium-1-75mm-silver-star-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-premium-silver-star-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pla-premium-1-75mm-silver-star-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum PLA Premium 1.75mm SILVER STAR 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            150,
+            150,
+            148
+          ],
+          "hex": "#969694",
+          "pixel_count": 220796,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.97,
+          "slug": "filament-spectrum-pla-pro-1-75mm-silver-star-1kg",
+          "brand": "Spectrum",
+          "material": "PLA",
+          "color_name": "Silver Star",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pla-pro-1-75mm-silver-star-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-pro-silver-star-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pla-pro-1-75mm-silver-star-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PLA Pro 1.75mm SILVER STAR 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            150,
+            150,
+            148
+          ],
+          "hex": "#969694",
+          "pixel_count": 220858,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.65,
+          "slug": "polymaker-pla-pro-grey",
+          "brand": "Polymaker",
+          "material": "PLA",
+          "color_name": "Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/polymaker-pla-pro?variant=42901840396345",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pa13003_isometric_top_ec2a7534-117e-4e8b-b8b7-5b2bb57d7062.png",
+          "local_image": "polymaker-polymaker-pla-pro-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PLA Pro Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            147,
+            151,
+            153
+          ],
+          "hex": "#939799",
+          "pixel_count": 804377,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 9.05,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-silver-star-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Silver Star",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-silver-star-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-silver-star-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-silver-star-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PET-G Premium 1.75mm SILVER STAR 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            153,
+            152,
+            153
+          ],
+          "hex": "#999899",
+          "pixel_count": 283724,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.66,
+          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-silver-star-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Silver Star",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-silver-star-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Silver_Star_1.jpg",
+          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-silver-star-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PETG Premium High Speed 1.75mm SILVER STAR 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            150,
+            151,
+            154
+          ],
+          "hex": "#96979A",
+          "pixel_count": 318708,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.06,
+          "slug": "petg-grey",
+          "brand": "Polymaker",
+          "material": "PETG",
+          "color_name": "Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/petg?variant=45079221174329",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05003_Isometric_Top_04d62874-d23d-4220-a3f1-a3d424ed40ec.png",
+          "local_image": "polymaker-petg-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PETG Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            157,
+            165,
+            169
+          ],
+          "hex": "#9DA5A9",
+          "pixel_count": 625873,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.47,
+          "slug": "prusament-petg-urban-grey",
+          "brand": "Prusament",
+          "material": "PETG",
+          "color_name": "Urban Grey",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-petg-urban-grey-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2019/02/urban_grey-256x236.png",
+          "local_image": "prusament-petg-urban-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PETG Urban Grey 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            178,
+            179,
+            178
+          ],
+          "hex": "#B2B3B2",
+          "pixel_count": 20643,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.52,
+          "slug": "bambu-lab-petg-hf-gray",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/b2509840152946cdab0a00a33d547a89/9a7dade47ad44a37a39325b7363a0370.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-gray.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            173,
+            177,
+            178
+          ],
+          "hex": "#ADB1B2",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 9.59,
+          "slug": "filament-spectrum-asa-275-1-75mm-silver-star-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Silver Star",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-silver-star-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-silver-star-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-silver-star-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum ASA 275 1.75mm SILVER STAR 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            140,
+            139,
+            139
+          ],
+          "hex": "#8C8B8B",
+          "pixel_count": 302850,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.61,
+          "slug": "overture-asa-filament-1-75mm-gray",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "Gray",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475873022",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-925527.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-gray.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm Gray",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            164,
+            174,
+            177
+          ],
+          "hex": "#A4AEB1",
+          "pixel_count": 582356,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.02,
+          "slug": "bambu-lab-asa-gray",
+          "brand": "Bambu Lab",
+          "material": "ASA",
+          "color_name": "Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/bf06ff5739d24cd9a821873f88630e2a/7e5829465d8a48b39c5ad1d103db0b5e.media",
+          "local_image": "bambulab-bambu-lab-asa-gray.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            138,
+            148,
+            158
+          ],
+          "hex": "#8A949E",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.93,
+          "slug": "asa-olive-brown",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Olive Brown",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41590536667193",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01045_pdt_isometric_top.png",
+          "local_image": "polymaker-asa-olive-brown.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Olive Brown",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            175,
+            153,
+            104
+          ],
+          "hex": "#AF9968",
+          "pixel_count": 306178,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.98,
+          "slug": "asa-grey",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343188537",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/grey_cdffe279-bbb1-49af-8033-73294aac3e89.png",
+          "local_image": "polymaker-asa-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            122,
+            125,
+            131
+          ],
+          "hex": "#7A7D83",
+          "pixel_count": 1304391,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "Bali Blue",
+      "year": 1951,
+      "car_code": "J-45",
+      "paint_ref": "10742",
+      "rgb": [
+        94,
+        110,
+        123
+      ],
+      "hex": "#5E6E7B",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg01.jpg",
+      "source_pos": [
+        332,
+        369
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 4.67,
+          "slug": "prusament-pla-gentlemans-grey",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Gentleman's Grey",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-pla-gentleman-s-grey-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2022/10/gentlemans_grey_update_2-1-256x236.png",
+          "local_image": "prusament-pla-gentlemans-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PLA Gentleman's Grey 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            99,
+            113,
+            117
+          ],
+          "hex": "#637175",
+          "pixel_count": 1918,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.34,
+          "slug": "matte-pla-matte-ash-grey",
+          "brand": "Polymaker",
+          "material": "PLA",
+          "color_name": "Matte Ash Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/matte-pla?variant=43631459205177",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PA04033_Isometric_Top.png",
+          "local_image": "polymaker-matte-pla-matte-ash-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Panchroma™ Matte PLA Matte Ash Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            94,
+            102,
+            106
+          ],
+          "hex": "#5E666A",
+          "pixel_count": 61593,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.02,
+          "slug": "bambu-lab-pla-blue-grey",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Blue Grey",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-basic-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/adb9eb251460438498b46618a1784f0b/4e3637d99a73483bab1ce84fd7628a36.media",
+          "local_image": "bambulab-bambu-lab-pla-blue-grey.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Basic",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            91,
+            101,
+            121
+          ],
+          "hex": "#5B6579",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.08,
+          "slug": "filament-spectrum-premium-pla-high-speed-1-75mm-dark-grey-1kg",
+          "brand": "Spectrum",
+          "material": "PLA",
+          "color_name": "Dark Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-premium-pla-high-speed-1-75mm-dark-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-high-speed-dark-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-premium-pla-high-speed-1-75mm-dark-grey-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum Premium PLA High Speed 1.75mm DARK GREY 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            86,
+            96,
+            99
+          ],
+          "hex": "#566063",
+          "pixel_count": 201406,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.25,
+          "slug": "prusament-pla-galaxy-silver",
+          "brand": "Prusament",
+          "material": "PLA",
+          "color_name": "Galaxy Silver",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-pla-galaxy-silver-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2018/07/prusament_web_silver-256x236.png",
+          "local_image": "prusament-pla-galaxy-silver.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PLA Galaxy Silver 900g Refill",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            106,
+            107,
+            109
+          ],
+          "hex": "#6A6B6D",
+          "pixel_count": 16252,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 5.89,
+          "slug": "overture-high-speed-petg-refill-3d-printer-filament-1-75mm-light-gray",
+          "brand": "Overture 3D",
+          "material": "PETG",
+          "color_name": "Light Gray",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076463603966",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/files/overture-petg-refill-3d-printer-filament-175mm-3084166.webp",
+          "local_image": "overture-overture-high-speed-petg-refill-3d-printer-filament-1-75mm-light-gray.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Light Gray",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            110,
+            122,
+            128
+          ],
+          "hex": "#6E7A80",
+          "pixel_count": 1145099,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.89,
+          "slug": "overture-high-speed-petg-refill-3d-printer-filament-1-75mm-space-gray",
+          "brand": "Overture 3D",
+          "material": "PETG",
+          "color_name": "Space Gray",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=47753934274814",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/files/overture-petg-refill-3d-printer-filament-175mm-3084166.webp",
+          "local_image": "overture-overture-high-speed-petg-refill-3d-printer-filament-1-75mm-space-gray.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Space Gray",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            110,
+            122,
+            128
+          ],
+          "hex": "#6E7A80",
+          "pixel_count": 1145099,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.85,
+          "slug": "prusament-petg-anthracite-grey",
+          "brand": "Prusament",
+          "material": "PETG",
+          "color_name": "Anthracite Grey",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-petg-anthracite-grey-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2022/09/antracit_grey_new-256x236.png",
+          "local_image": "prusament-petg-anthracite-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PETG Anthracite Grey 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            86,
+            93,
+            101
+          ],
+          "hex": "#565D65",
+          "pixel_count": 11669,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.06,
+          "slug": "bambu-lab-petg-misty-blue",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "Misty Blue",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-basic",
+          "image_url": "https://store.bblcdn.eu/s8/default/c5d86162b09c4e34842a18bada5f48af/Misty_Blue.jpg",
+          "local_image": "bambulab-bambu-lab-petg-misty-blue.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Basic",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            104,
+            129,
+            151
+          ],
+          "hex": "#688197",
+          "pixel_count": 366324,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.71,
+          "slug": "filament-spectrum-pet-g-matt-1-75mm-dark-grey-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Matt Dark Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-matt-1-75mm-dark-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-matt-dark-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-matt-1-75mm-dark-grey-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PET-G MATT 1.75mm DARK GREY 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            83,
+            88,
+            90
+          ],
+          "hex": "#53585A",
+          "pixel_count": 121994,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 7.84,
+          "slug": "filament-spectrum-asa-275-1-75mm-dark-grey-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Dark Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-dark-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-dark-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-dark-grey-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm DARK GREY 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            92,
+            97,
+            98
+          ],
+          "hex": "#5C6162",
+          "pixel_count": 211053,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.77,
+          "slug": "asa-grey",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343188537",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/grey_cdffe279-bbb1-49af-8033-73294aac3e89.png",
+          "local_image": "polymaker-asa-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            122,
+            125,
+            131
+          ],
+          "hex": "#7A7D83",
+          "pixel_count": 1304391,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.61,
+          "slug": "filament-spectrum-asa-275-1-75mm-navy-blue-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Navy Blue",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-navy-blue-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-navy-blue-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-navy-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm NAVY BLUE 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            56,
+            88,
+            143
+          ],
+          "hex": "#38588F",
+          "pixel_count": 479203,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.13,
+          "slug": "asa-dark-grey",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Dark Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41170857918521",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/dark_grey.png",
+          "local_image": "polymaker-asa-dark-grey.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Dark Grey",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            76,
+            75,
+            79
+          ],
+          "hex": "#4C4B4F",
+          "pixel_count": 1360954,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 15.04,
+          "slug": "bambu-lab-asa-gray",
+          "brand": "Bambu Lab",
+          "material": "ASA",
+          "color_name": "Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/bf06ff5739d24cd9a821873f88630e2a/7e5829465d8a48b39c5ad1d103db0b5e.media",
+          "local_image": "bambulab-bambu-lab-asa-gray.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            138,
+            148,
+            158
+          ],
+          "hex": "#8A949E",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -56428,6 +59475,441 @@
           ],
           "hex": "#5C6162",
           "pixel_count": 211053,
+          "confidence": "measured_dominant_hue"
+        }
+      ]
+    },
+    {
+      "name": "Admiral Blue",
+      "year": 1951,
+      "car_code": "7105-G",
+      "paint_ref": "10435",
+      "rgb": [
+        13,
+        29,
+        54
+      ],
+      "hex": "#0D1D36",
+      "poly": false,
+      "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+      "source_file": "sources/1951-hudson-pg03.jpg",
+      "source_pos": [
+        1095,
+        1382
+      ],
+      "confidence": "measured_from_card",
+      "pla": [
+        {
+          "delta_e": 7.61,
+          "slug": "bambu-lab-pla-matte-dark-blue",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Dark Blue",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/1ac27cb3f8584843b25a64cee769437f/353e1dc2aced4c808db0c85d394bbee6.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-dark-blue.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            4,
+            47,
+            86
+          ],
+          "hex": "#042F56",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.95,
+          "slug": "polymaker-pla-pro-metallic-blue",
+          "brand": "Polymaker",
+          "material": "PLA",
+          "color_name": "Metallic Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/polymaker-pla-pro?variant=45421122682937",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pa13028_isometric_top_b9178daf-99db-4c10-aa3a-7d5affd305c8.png",
+          "local_image": "polymaker-polymaker-pla-pro-metallic-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PLA Pro Metallic Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            43,
+            52,
+            71
+          ],
+          "hex": "#2B3447",
+          "pixel_count": 696936,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.16,
+          "slug": "matte-pla-matte-army-blue",
+          "brand": "Polymaker",
+          "material": "PLA",
+          "color_name": "Matte Army Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/matte-pla?variant=43631458811961",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pm70956_pdt_isometric_top.png",
+          "local_image": "polymaker-matte-pla-matte-army-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Panchroma™ Matte PLA Matte Army Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            26,
+            53,
+            86
+          ],
+          "hex": "#1A3556",
+          "pixel_count": 375839,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.11,
+          "slug": "polymaker-pla-pro-blue",
+          "brand": "Polymaker",
+          "material": "PLA",
+          "color_name": "Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/polymaker-pla-pro?variant=42901840363577",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pa13004_isometric_top_87618149-d47d-4edc-abeb-bba294864ec1.png",
+          "local_image": "polymaker-polymaker-pla-pro-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PLA Pro Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            31,
+            48,
+            99
+          ],
+          "hex": "#1F3063",
+          "pixel_count": 930758,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.32,
+          "slug": "overture-matte-pla-navy-blue",
+          "brand": "Overture 3D",
+          "material": "PLA",
+          "color_name": "Navy Blue",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-matte-pla?variant=43982524809470",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/files/overture-matte-pla-3d-printer-filament-175mm-217512.jpg",
+          "local_image": "overture-overture-matte-pla-navy-blue.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture Matte PLA 3D Printer Filament 1.75mm Navy Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            20,
+            54,
+            95
+          ],
+          "hex": "#14365F",
+          "pixel_count": 1932191,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "petg": [
+        {
+          "delta_e": 5.46,
+          "slug": "petg-dark-blue",
+          "brand": "Polymaker",
+          "material": "PETG",
+          "color_name": "Dark Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/petg?variant=45079221534777",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05014_Isometric_Top_2ccd0ffa-d669-4cb1-84ef-5e5c9c3075ac.png",
+          "local_image": "polymaker-petg-dark-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PETG Dark Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            20,
+            44,
+            70
+          ],
+          "hex": "#142C46",
+          "pixel_count": 878127,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.82,
+          "slug": "petg-galaxy-blue",
+          "brand": "Polymaker",
+          "material": "PETG",
+          "color_name": "Galaxy Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/petg?variant=45588259176505",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05023_Isometric_Top.png",
+          "local_image": "polymaker-petg-galaxy-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PETG Galaxy Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            48,
+            104
+          ],
+          "hex": "#203068",
+          "pixel_count": 540734,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.17,
+          "slug": "prusament-petg-jet-black",
+          "brand": "Prusament",
+          "material": "PETG",
+          "color_name": "Jet Black",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2018/11/jet_black-256x236.png",
+          "local_image": "prusament-petg-jet-black.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament PETG Jet Black 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            54,
+            50,
+            63
+          ],
+          "hex": "#36323F",
+          "pixel_count": 11664,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.1,
+          "slug": "prusament-petg-matte-black",
+          "brand": "Prusament",
+          "material": "PETG",
+          "color_name": "Matte Black",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-petg-matte-black-1kg/",
+          "image_url": "https://prusament.com/wp-content/uploads/2022/12/matte_black_tr-256x236.png",
+          "local_image": "prusament-petg-matte-black.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Prusament PETG Matte Black 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            48,
+            48,
+            53
+          ],
+          "hex": "#303035",
+          "pixel_count": 19186,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.79,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Deep Black",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-deep-black-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-deep-black-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum PET-G Premium 1.75mm DEEP BLACK 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            30,
+            29,
+            30
+          ],
+          "hex": "#1E1D1E",
+          "pixel_count": 214941,
+          "confidence": "measured_dominant_hue"
+        }
+      ],
+      "asa": [
+        {
+          "delta_e": 4.8,
+          "slug": "prusament-asa-sapphire-blue",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Sapphire Blue",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/f1389555-31ac-492d-af45-8d9a32656f70.jpg",
+          "local_image": "prusament-asa-sapphire-blue.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Sapphire Blue 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            17,
+            31,
+            70
+          ],
+          "hex": "#111F46",
+          "pixel_count": 672227,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.72,
+          "slug": "asa-dark-purple",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Dark Purple",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41590534897721",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01047_pdt_isometric_top.png",
+          "local_image": "polymaker-asa-dark-purple.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Dark Purple",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            52,
+            51,
+            69
+          ],
+          "hex": "#343345",
+          "pixel_count": 120774,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.69,
+          "slug": "overture-asa-filament-1-75mm-diamond-blue",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "Diamond Blue",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-997791.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-diamond-blue.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm Diamond Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            12,
+            47,
+            113
+          ],
+          "hex": "#0C2F71",
+          "pixel_count": 2140819,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.56,
+          "slug": "asa-blue",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Blue",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343123001",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/blue_4e235a69-57fa-4037-abe0-6570c660921c.png",
+          "local_image": "polymaker-asa-blue.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA Blue",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            1,
+            47,
+            120
+          ],
+          "hex": "#012F78",
+          "pixel_count": 4159201,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.92,
+          "slug": "filament-spectrum-asa-275-1-75mm-deep-black-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Deep Black",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-deep-black-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-deep-black-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-deep-black-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum ASA 275 1.75mm DEEP BLACK 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            39,
+            39,
+            42
+          ],
+          "hex": "#27272A",
+          "pixel_count": 238441,
           "confidence": "measured_dominant_hue"
         }
       ]

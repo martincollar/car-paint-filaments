@@ -87,6 +87,14 @@
     "hex": "#282D2C",
     "note": "Aurapol photo: the winding is near-black; the brand's min_chroma hint picks the multicoloured recycled flakes in the jar instead. Hex = median of the lit half of a crop of the winding."
   },
+  "aurapol-pla-3d-filament-black-1-kg-1-75-mm": {
+    "hex": "#18171B",
+    "note": "Aurapol photo: the winding is black but the studio light and the dark-grey spool flange pull the measurement to #373A42. Hex = median of the darker half of a crop of the winding (a pure black filament; the dark grey one is 3D Black Grey)."
+  },
+  "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm": {
+    "hex": "#18171B",
+    "note": "Same photo as the Aurapol 3D Black PLA (identical image, measured #373A42): the winding is black. Hex = median of the darker half of a crop of the winding."
+  },
   "aurapol-pla-3d-filament-light-blush-1-kg-1-75-mm": {
     "hex": "#DBCDCB",
     "note": "Aurapol photo: pastel winding (saturation ~0.09) loses to the black spool and labels even with the brand's min_chroma hint. Hex = median of the lit half of a crop of the winding."

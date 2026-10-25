@@ -78,6 +78,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     full = f"{c['brand']} {c['material']} {c['color_name']}"
     # Swatch and name are both .pick: click recolours the preview, hover/focus opens the bubble (TIP_JS).
     attrs = (f'data-hex="{c["hex"]}" data-name="{esc(full)}" data-slug="{esc(c["slug"])}" '
+             f'data-brand="{esc(c["brand"])}" data-material="{esc(c["material"])}" data-color="{esc(c["color_name"])}" '
              f'data-shop="{esc(c.get("shop") or "?")}" data-shop-cls="{slugify(c.get("shop") or "") or "unknown"}" '
              f'data-url="{esc(clean_url(c))}"' + (' data-neon="1"' if c.get("neon") else ""))
     # One <a> around swatch + name (display: contents keeps the row's grid): hover opens the bubble, a plain
@@ -87,17 +88,14 @@ def filament_row(c, fil_thumbs, is_primary=False):
     neon = ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>' if c.get("neon") else ""
     name += neon
     if is_primary:
-        # Three lines: brand / filament / match (ΔE, HEX, shop link). The shop link must stay outside the
-        # .pick anchor (no nested <a>), so .fsub is its own grid child under .finfo.
-        shop = (f'<a class="shop-link" href="{esc(clean_url(c))}" target="_blank" rel="noopener">open shop</a>'
-                if safe_url(c.get("url")) else "")
+        # Three lines: brand / filament / match (ΔE, HEX). The shop opens from the swatch/name of the hover bubble and the preview.
         return f"""
       <div class="filament primary">{link}
         <div class="swatch mini" style="background:{c['hex']}"></div>
         <div class="finfo">
           <div class="fname"><strong>{esc(c['brand'])}</strong><span class="fline">{esc(c['material'])} <span class="color">{esc(c['color_name'])}</span>{neon}</span></div>
         </div></a>
-        <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span><span class="fhex">{c['hex'].upper()}</span>{shop}</div>
+        <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span><span class="fhex">{c['hex'].upper()}</span></div>
       </div>
     """
     return f"""
@@ -135,8 +133,6 @@ div.filament.primary .finfo { grid-column: 2; grid-row: 1; }
 div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .filament.primary .fname strong, .filament.primary .fline { display: block; }
 .filament.primary .fhex { color: var(--muted); }
-.filament.primary .shop-link { color: var(--muted); text-decoration: underline; font-weight: 400; }
-.filament.primary .shop-link:hover { color: var(--teal); }
 /* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
@@ -177,7 +173,7 @@ HERO_HTML = """
 HERO_JS = """
 <script>
 (function () {
-  var H = __HERO__, TN = H.tone || {}, DL = TN.dl || 0, CS = TN.contrast == null ? 1 : TN.contrast;  // per-car calibration (review_hero.py /calibrate)
+  var H = __HERO__, Z = H.zones, TN = H.tone || {}, DL = TN.dl || 0, CS = TN.contrast == null ? 1 : TN.contrast;  // per-car calibration (review_hero.py /calibrate)
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
       info = document.getElementById('hero-info'), ctx = cv.getContext('2d');
   box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.add('closed'); };
@@ -199,23 +195,26 @@ HERO_JS = """
   }
   function hexRgb(h) { return [1, 3, 5].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
 
-  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [0, 0], Sc = [1, 1], cur = null;
+  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [], Sc = [], sel = null, picks = [], last = null;
+  function za(i, z) { var a = 0; Z[z].channels.forEach(function (c) { a += mk[4*i+c]; }); return Math.min(1, a / 255); }
   function ready() {
     if (++loaded < 2) return;
     W = cv.width = photo.width; Hh = cv.height = photo.height;
     ctx.drawImage(photo, 0, 0); base = ctx.getImageData(0, 0, W, Hh);
     ctx.clearRect(0, 0, W, Hh); ctx.drawImage(mask, 0, 0); mk = ctx.getImageData(0, 0, W, Hh).data;
-    var n = W * Hh, lab = new Float32Array(n * 3), sum = [0, 0], wt = [0, 0], d = base.data;
+    var n = W * Hh, nz = Z.length, lab = new Float32Array(n * 3), sum = [], wt = [], d = base.data;
+    for (var k0 = 0; k0 < nz; k0++) { sum.push(0); wt.push(0); }
     for (var i = 0; i < n; i++) {
       var c = toLab(d[4*i], d[4*i+1], d[4*i+2]); lab[3*i] = c[0]; lab[3*i+1] = c[1]; lab[3*i+2] = c[2];
-      for (var k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; sum[k] += a * c[0]; wt[k] += a; }
+      if (mk[4*i] | mk[4*i+1] | mk[4*i+2]) for (var k = 0; k < nz; k++) { var a = za(i, k); sum[k] += a * c[0]; wt[k] += a; }
     }
-    L = lab; Lm = [sum[0] / wt[0], sum[1] / wt[1]];
+    L = lab; Lm = sum.map(function (v, k) { return wt[k] > 0 ? v / wt[k] : 50; });
     // Contrast of the body shading differs a lot between photos (flat pastel Doppler vs. hard-lit Torq). Cap it at the
     // same level for every car, otherwise one filament colour looks darker or flatter on some cars than on others.
-    var vr = [0, 0]; for (var j = 0; j < n; j++) for (var q = 0; q < 2; q++) { var aq = mk[4*j+q] / 255, dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
-    Sc = [0, 1].map(function (q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
-    if (cur) paint(cur); else greyed();
+    var vr = Z.map(function () { return 0; });
+    for (var j = 0; j < n; j++) if (mk[4*j] | mk[4*j+1] | mk[4*j+2]) for (var q = 0; q < nz; q++) { var aq = za(j, q), dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
+    Sc = Z.map(function (_, q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
+    if (sel) paint(sel); else greyed();
   }
   photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
 
@@ -233,47 +232,150 @@ HERO_JS = """
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
   }
 
-  function render(hex) {
-    var tb = toLab.apply(null, hexRgb(hex)), tr = H.roof ? toLab.apply(null, hexRgb(H.roof)) : tb,
-        out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh;
+  // hx = one hex per zone. A pixel takes the mix of the colours of the zones whose mask covers it, so soft edges
+  // between two zones (upper / lower body) leave no seam of the old paint.
+  function render(hx) {
+    var T = hx.map(function (h) { return h ? toLab.apply(null, hexRgb(h)) : null; }), nz = Z.length,
+        out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh, acc = [0, 0, 0];
     for (var i = 0; i < n; i++) {
-      var ab = mk[4*i] / 255, ar = mk[4*i+1] / 255, r = d[4*i], g = d[4*i+1], b = d[4*i+2];
-      if (ab > 0 || ar > 0) {
-        var kk = ab >= ar ? 0 : 1, t = kk ? tr : tb, a = kk ? ar : ab, t0 = Math.max(0, Math.min(100, t[0] + DL)), dev = (L[3*i] - Lm[kk]) * Sc[kk] * CS;
-        dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[kk])) : Math.min(1, t0 / Lm[kk]);
-        var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
-            X = finv(fx) * WP[0], Y = finv(ly), Z = finv(fz) * WP[2];
-        r = r * (1 - a) + gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z) * a;
-        g = g * (1 - a) + gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z) * a;
-        b = b * (1 - a) + gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z) * a;
+      var r = d[4*i], g = d[4*i+1], b = d[4*i+2];
+      if (mk[4*i] | mk[4*i+1] | mk[4*i+2]) {
+        var sa = 0; acc[0] = acc[1] = acc[2] = 0;
+        for (var z = 0; z < nz; z++) {
+          var a = za(i, z); if (a <= 0 || !T[z]) continue;
+          var t = T[z], zc = Z[z], t0 = Math.max(0, Math.min(100, t[0] + DL + (zc.dl || 0))), dev = (L[3*i] - Lm[z]) * Sc[z] * CS * (zc.contrast == null ? 1 : zc.contrast);
+          dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[z])) : Math.min(1, t0 / Lm[z]);
+          var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
+              X = finv(fx) * WP[0], Y = finv(ly), Z3 = finv(fz) * WP[2];
+          acc[0] += a * gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z3);
+          acc[1] += a * gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z3);
+          acc[2] += a * gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z3);
+          sa += a;
+        }
+        if (sa > 0) { var A = Math.min(1, sa); r = r * (1 - A) + acc[0] / sa * A; g = g * (1 - A) + acc[1] / sa * A; b = b * (1 - A) + acc[2] / sa * A; }
       }
       o[4*i] = r; o[4*i+1] = g; o[4*i+2] = b; o[4*i+3] = 255;
     }
     return out;
   }
-  function paint(hex) { ctx.putImageData(render(hex), 0, 0); }
+  function paint(hx) { ctx.putImageData(render(hx), 0, 0); }
+
+  // One colour per zone (slot). A pick without a slot button goes to every zone; zones with `fixed` (Doppler's roof) go back to
+  // their own colour then and only take a filament when its slot button is used.
+  function allHex(hex) { return Z.map(function (z) { return z.fixed ? H.roof : hex; }); }
+  var slots = Z.filter(function (z) { return z.label; });
 
   // Small recoloured copy for the hover bubble: a JPEG data URL per colour, '' until the photo has loaded.
   var small = {}, off = document.createElement('canvas'), tmp = document.createElement('canvas');
   window.heroRender = function (hex) {
     if (loaded < 2) return '';
     if (small[hex]) return small[hex];
-    tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(hex), 0, 0);
+    tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(allHex(hex)), 0, 0);
     off.width = 440; off.height = Math.round(440 * Hh / W);
     off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
     return (small[hex] = off.toDataURL('image/jpeg', 0.85));
   };
+  // "Put on:" buttons for the hover bubble, only for cars with more than one slot.
+  window.heroSlots = function () {
+    if (slots.length < 2) return '';
+    return '<div class="t-slots"><span class="t-slots-l">Put on</span>' + slots.map(function (z) {
+      return '<button type="button" class="t-slot" data-zone="' + z.id + '">' + z.label + '</button>'; }).join('') + '</div>';
+  };
+  // What the preview names: one filament block per slot (a roof only once it was set by hand), each a link to the shop;
+  // a car with a single colour shows just the filament.
+  function infoHtml() {
+    if (slots.length < 2) return last ? window.filInfo(last, true) : '';
+    return slots.map(function (z) {
+      var k = Z.indexOf(z); return picks[k] ? '<div class="hp-slotblock"><div class="t-slotname">' + z.label + '</div>' + window.filInfo(picks[k], true) + '</div>' : '';
+    }).join('');
+  }
+  function snap(d) { var c = {}; for (var key in d) c[key] = d[key]; return c; }
 
   var picked = null;
-  function pick(el) {
-    cur = el.dataset.hex; info.innerHTML = window.filInfo(el.dataset);
+  function pick(el, zid) {
+    var d = el.dataset;
+    if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
+    Z.forEach(function (z, k) {
+      if (zid ? z.id === zid : true) {
+        if (!zid && z.fixed) { sel[k] = H.roof; picks[k] = null; } else { sel[k] = d.hex; picks[k] = snap(d); }
+      }
+    });
+    last = snap(d); info.innerHTML = infoHtml();
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
     box.classList.remove('closed', 'empty');
     if (loaded < 2) return;
     cv.classList.add('swap');
-    setTimeout(function () { paint(cur); cv.classList.remove('swap'); }, 60);
+    setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
+  // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
+  // keeps its colour), the rows of its colours are marked and every other row is hidden.
+  function bestPick(name, year) {
+    var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\\"') + '"][data-year="' + year + '"]');
+    return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
+  }
+  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are marked
+  // wherever they are and every other row of the page is hidden, so the page shows just the colours of the clicked two-tone.
+  // Hiding or showing rows above the clicked strip would move it, so the scroll position is corrected (keepPos).
+  function marks() {
+    var on = document.querySelector('.combo.on');
+    document.querySelectorAll('article.row').forEach(function (r) {
+      var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
+        return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
+      r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(on && !hit));
+      if (hit && window.openRow) window.openRow(r);
+    });
+  }
+  function zl(id) { var z = Z.filter(function (x) { return x.id === id; })[0]; return z && z.label || id; }
+  function comboSel(up, lo) {
+    return Z.map(function (z, k) {       // slots other than upper / lower (the roof) keep what they have: white until set by hand
+      var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;
+      return el ? el.dataset.hex : ((sel && sel[k]) || (z.fixed ? H.roof : null));
+    });
+  }
+  // For the hover bubble of a two-tone: both filaments and the car painted with them.
+  window.comboInfo = function (btn) {
+    var up = bestPick(btn.dataset.upper, btn.dataset.upperYear), lo = bestPick(btn.dataset.lower, btn.dataset.lowerYear);
+    if (!up || !lo) return null;
+    var key = 'c' + up.dataset.hex + lo.dataset.hex, src = '';
+    if (loaded >= 2) {
+      if (!small[key]) {
+        tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(comboSel(up, lo)), 0, 0);
+        off.width = 480; off.height = Math.round(480 * Hh / W);
+        off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
+        small[key] = off.toDataURL('image/jpeg', 0.85);
+      }
+      src = small[key];
+    }
+    return { up: up, lo: lo, src: src, upLabel: zl('upper'), loLabel: zl('lower') };
+  };
+  function keepPos(strip, fn) {
+    var t = strip.getBoundingClientRect().top; fn();
+    var d = strip.getBoundingClientRect().top - t; if (d) window.scrollBy({ top: d, behavior: 'instant' });
+  }
+  document.addEventListener('click', function (e) {
+    var cb = e.target.closest && e.target.closest('.combo');
+    if (cb && cb.classList.contains('on')) { cb.classList.remove('on'); keepPos(cb.closest('.combos'), marks); return; }   // again = all colours
+    if (cb) {
+      var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
+      if (up && lo) {
+        if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
+        Z.forEach(function (z, k) {
+          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
+          if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); }
+        });
+        last = snap(up.dataset); info.innerHTML = infoHtml();
+        box.classList.remove('closed', 'empty');
+        if (loaded >= 2) paint(sel);
+      }
+      var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      cb.classList.add('on'); keepPos(strip, marks);
+    }
+  });
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.t-slot');
+    if (b) { var el0 = window.tipEl && window.tipEl(); if (el0) pick(el0, b.dataset.zone); }
+  });
   document.addEventListener('click', function (e) {
     var el = e.target.closest && e.target.closest('.pick');
     if (el && !(e.ctrlKey || e.metaKey || e.shiftKey || e.button)) { e.preventDefault(); pick(el); }
@@ -288,15 +390,39 @@ HERO_JS = """
 
 TIP_CSS = """
 .neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
-.fil-tip { position: fixed; z-index: 30; width: 220px; padding: 10px; display: none; font-size: 0.8rem; line-height: 1.3; }
+.fil-tip { position: fixed; z-index: 30; width: min(340px, calc(100vw - 16px)); padding: 12px; display: none; font-size: 0.8rem; line-height: 1.3; }
 .fil-tip.show { display: block; }
-.fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; margin-bottom: 8px; }
+.fil-tip img { display: block; width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px; }
 .fil-tip img.t-car { height: auto; object-fit: contain; background: #f8f8f8; }
+a.t-shop { display: contents; color: inherit; text-decoration: none; }
+a.t-shop:hover .fname { text-decoration: underline; }
+.fil-tip .filament.primary, .hero-preview .filament.primary { margin-bottom: 0; }
+.t-combo { margin-bottom: 4px; }
+.t-slotname { margin: 10px 0 2px; font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
 .fil-tip .t-name, .hero-preview .t-name { font-weight: 600; margin-bottom: 6px; }
 .fil-tip .t-row, .hero-preview .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
 .fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
 .fil-tip .t-link, .hero-preview .t-link { font-weight: 600; text-decoration: none; }
 .fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
+.hero-preview .t-row .t-shop { display: inline-flex; align-items: center; gap: 8px; }
+.combos { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 4px 0 14px; font-size: 0.72rem; }
+.combos-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 4px; }
+.combo { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; font: inherit; color: inherit; background: transparent; border: 1px solid var(--rule); cursor: pointer; }
+.combo:hover, .combo:focus-visible, .combo.on { background: var(--rule); }
+.cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
+.cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
+.combos-hint { display: none; margin-left: 6px; font-size: 0.66rem; color: var(--muted); }
+.combos:has(.combo.on) .combos-hint { display: inline; }
+article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); margin-left: -16px; padding-left: 16px; }   /* the line sits in the margin, the content stays where it was */
+article.row.combo-out { display: none; }
+.t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
+.t-slots-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 2px; }
+.t-slot { font: inherit; font-size: 0.72rem; padding: 2px 7px; border: 1px solid var(--rule); background: transparent; color: inherit; cursor: pointer; }
+.t-slot:hover, .t-slot:focus-visible { background: var(--rule); }
+.hero-preview .t-slotname { margin: 8px 0 2px; }
+.hero-preview .hp-slotblock:first-child .t-slotname { margin-top: 0; }
+.hero-preview.big .hp-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0 16px; }   /* enlarged: the slots side by side */
+.hero-preview.big .t-slotname { margin-top: 0; }
 """
 
 TIP_JS = """
@@ -304,33 +430,51 @@ TIP_JS = """
 (function () {
   var T = __THUMBS__, tip = document.createElement('div'), cur = null, timer = null;
   tip.className = 'fil-tip'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip);
-  // Name / HEX / shop / link block, shared with the hover bubble (TIP_JS).
-  window.filInfo = function (d) {
+  // Brand / material / colour block, built from the same markup as a filament on the page so every theme styles it alike.
+  // The swatch and the name are the link to the shop (hover bubble, combination bubble and preview alike).
+  window.filInfo = function (d, linked) {
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-    return '<div class="t-name">' + esc(d.name) + (d.neon ? ' <span class="neon-tag">NEON</span>' : '') + '</div>' +
-      '<div class="t-row"><span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex) + '</div>' +
-      '<div class="t-row"><span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div>' +
-      (d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');
+    var url = d.url && d.url !== '#' ? d.url : '', neon = d.neon ? ' <span class="neon-tag">NEON</span>' : '',
+        inner = '<div class="swatch mini" style="background:' + esc(d.hex) + '"></div><div class="finfo"><div class="fname"><strong>' + esc(d.brand) +
+          '</strong><span class="fline">' + esc(d.material) + ' <span class="color">' + esc(d.color) + '</span>' + neon + '</span></div></div>';
+    if (url) inner = '<a class="t-shop" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>';
+    return '<div class="filament primary">' + inner + '<div class="fsub"><span class="fhex">' + esc(d.hex).toUpperCase() + '</span>' +
+      '<span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div></div>';
   };
+  function place(r) {
+    var w = tip.offsetWidth, h = tip.offsetHeight, x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
+        y = r.bottom + 6;
+    if (y + h > innerHeight - 8) { y = r.top - h - 6; if (y < 8) y = Math.max(8, innerHeight - h - 8); }
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    tip.querySelectorAll('img').forEach(function (i) { if (!i.complete) i.onload = function () { place(r); }; });   // the photo changes the height
+  }
+  // Hovering a factory two-tone: the car in that combination and the filament chosen for each of its two colours.
+  function showCombo(btn) {
+    clearTimeout(timer); var c = window.comboInfo && window.comboInfo(btn); if (!c) return; cur = btn;
+    tip.innerHTML = (c.src ? '<img class="t-car" alt="" src="' + c.src + '">' : '') +
+      '<div class="t-combo"><strong>' + btn.querySelector('.cb-code').textContent + '</strong> ' + btn.title + '</div>' +
+      '<div class="t-slotname">' + c.upLabel + '</div>' + window.filInfo(c.up.dataset) +
+      '<div class="t-slotname">' + c.loLabel + '</div>' + window.filInfo(c.lo.dataset);
+    tip.classList.add('show'); place(btn.getBoundingClientRect());
+  }
   function show(el) {
     clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
     var d = el.dataset, car = window.heroRender ? window.heroRender(d.hex) : '', src = car || T[d.slug],
         img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '';
-    tip.innerHTML = img + window.filInfo(d);
-    tip.classList.add('show');
-    var r = (el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight,
-        x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
-        y = r.bottom + 6; if (y + h > innerHeight - 8) y = Math.max(8, r.top - h - 6);
-    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    tip.innerHTML = img + window.filInfo(d) + (window.heroSlots ? window.heroSlots() : '');
+    tip.classList.add('show'); place((el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect());
   }
+  window.tipEl = function () { return cur; };
   function hide() { timer = setTimeout(function () { tip.classList.remove('show'); cur = null; }, 180); }
   document.addEventListener('mouseover', function (e) {
     var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) show(el);
+    var cb = e.target.closest && e.target.closest('.combo'); if (cb) showCombo(cb);
   });
   document.addEventListener('mouseout', function (e) {
     var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) hide();
+    if (e.target.closest && e.target.closest('.combo')) hide();
   });
-  document.addEventListener('focusin', function (e) { if (e.target.dataset && e.target.dataset.slug) show(e.target); });
+  document.addEventListener('focusin', function (e) { if (e.target.dataset && e.target.dataset.slug) show(e.target); else if (e.target.classList && e.target.classList.contains('combo')) showCombo(e.target); });
   document.addEventListener('focusout', hide);
   tip.addEventListener('mouseenter', function () { clearTimeout(timer); });
   tip.addEventListener('mouseleave', hide);
@@ -350,10 +494,38 @@ def hero_parts(hero):
         return "", "", ""
     html = (HERO_HTML.replace("__CREDIT__", esc(hero.get("credit") or "source"))
                      .replace("__CREDIT_URL__", esc(hero["credit_url"]) if safe_url(hero.get("credit_url", "")) else "#"))
-    js = HERO_JS.replace("__HERO__", json.dumps({k: hero.get(k) for k in ("photo", "mask", "roof")}).replace("</", "<\\/"))
+    js = HERO_JS.replace("__HERO__", json.dumps({k: hero.get(k) for k in ("photo", "mask", "roof", "zones")}).replace("</", "<\\/"))
     return HERO_CSS, html, js
 
 # The floating back-to-top button: position and show/hide are shared, the look is each theme's `.to-top` rule.
+# Filament columns of a colour start collapsed (only with JS: html.js is set by TOP_JS, without it everything shows).
+ROWS_CSS = """
+.rows-bar, .row-toggle { display: none; }
+html.js .rows-bar { display: flex; gap: 6px; margin: 0 0 8px; }
+.rows-bar button, .row-toggle { font: inherit; font-size: 0.72rem; color: inherit; background: transparent; border: 1px solid var(--rule); padding: 2px 8px; cursor: pointer; }
+.rows-bar button:hover, .row-toggle:hover, .row-toggle:focus-visible { background: var(--rule); }
+html.js .row-toggle { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; }
+.row-toggle::after { content: "▾"; font-size: 0.8em; transition: transform .15s; }
+article.row.open .row-toggle::after { transform: rotate(180deg); }
+html.js article.row:not(.open) .rcols { display: none !important; }
+html.js article.row:not(.open) .paint-col { margin-bottom: 0; }
+"""
+ROWS_JS = """
+(function () {
+  function set(row, open) {
+    row.classList.toggle('open', open);
+    var b = row.querySelector('.row-toggle'); if (b) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('.row-toggle');
+    if (t) { var row = t.closest('article.row'); set(row, !row.classList.contains('open')); return; }
+    var all = e.target.closest && e.target.closest('[data-rows]');
+    if (all) document.querySelectorAll('article.row').forEach(function (r) { set(r, all.dataset.rows === 'open'); });
+  });
+  window.openRow = function (row) { set(row, true); };
+})();
+"""
+
 TOP_CSS = """
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
@@ -452,6 +624,49 @@ REGION_JS = """
 </script>
 """
 
+def _norm(n):
+    return n.replace(" Poly", "").lower()
+
+def load_combinations(car, hero):
+    """Factory two-tone combinations that can be shown: the car has a preview with slots, every colour of the
+    combination is a paint of the car (an entry with `unresolved` has a colour without chip and is kept in the file,
+    not published) and the slots it names exist on the car (Doppler has no intermediate slot)."""
+    path = config.car_dir(car) / "combinations.json"
+    if not (hero and path.exists()):
+        return {}
+    ids = {z["id"] for z in hero.get("zones") or [] if z.get("label")}
+    out = {}
+    for year, v in json.loads(path.read_text(encoding="utf-8")).get("years", {}).items():
+        ok = [c for c in v["combinations"] if "unresolved" not in c and {z for z in ("upper", "intermediate", "lower") if c.get(z)} <= ids]
+        if ok:
+            out[int(year)] = ok
+    return out
+
+def combos_html(year, combos, matches):
+    """The 'Factory two-tones' strip under a year heading: one button per combination, upper colour over lower."""
+    items = combos.get(year)
+    if not items:
+        return ""
+    def find(name):
+        c = [m for m in matches if _norm(m["name"]) == _norm(name)]
+        c.sort(key=lambda m: abs(m["year"] - year))
+        return c[0] if c else None
+    btns = []
+    for c in items:
+        cols = {z: find(c[z]) for z in ("upper", "lower") if c.get(z)}
+        if len(cols) < 2 or not all(cols.values()):
+            continue
+        attrs = " ".join(f'data-{z}="{esc(m["name"])}" data-{z}-year="{m["year"]}"' for z, m in cols.items())
+        def tip(m):
+            return m["name"] + ("" if m["year"] == year else f" ({m['year']} card)")
+        sw = "".join(f'<i class="cb-sw" style="background:{cols[z]["hex"]}" title="{esc(tip(cols[z]))}"></i>' for z in ("upper", "lower"))
+        btns.append(f'<button type="button" class="combo" {attrs} title="{esc(cols["upper"]["name"])} over {esc(cols["lower"]["name"])}">'
+                    f'<span class="cb-code">{esc(c["code"])}</span>{sw}</button>')
+    if not btns:
+        return ""
+    return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
+            '<span class="combos-hint">click the active one again to show all colours</span></div>')
+
 def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""
     labels  = region_labels()
@@ -478,7 +693,9 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     total_count = sum(len(v) for v in by_year.values())
 
     USED_THUMBS.clear()
-    rows = []
+    combos = load_combinations(car, hero)
+    rows = ['<div class="rows-bar"><button type="button" data-rows="open">Show all filaments</button>'
+            '<button type="button" data-rows="close">Hide all</button></div>']
     for year in sorted(by_year.keys(), reverse=True):
         rows.append(f"""
       <h2 class="year-head" id="y{year}">
@@ -488,6 +705,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>""")
+        rows.append(combos_html(year, combos, matches))
         for m in by_year[year]:
             cols = "".join(f"""
           <div class="rcols" data-r="{r}">
@@ -496,8 +714,8 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
             <div class="col asa-col">{filament_column(by_name[r][m['name']].get('asa', []), 'ASA', fil_thumbs)}</div>
           </div>""" for r in regions)
             rows.append(f"""
-        <article class="row">
-          <div class="col paint-col">{paint_block(m)}</div>{cols}
+        <article class="row" id="c{m['year']}-{slugify(m['name'])}" data-paint="{esc(m['name'])}" data-year="{m['year']}">
+          <div class="col paint-col">{paint_block(m)}<button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>{cols}
         </article>
         """)
 
@@ -555,6 +773,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 <style>
 {theme_css}
 {TOP_CSS}
+{ROWS_CSS}
 {REGION_SWITCH_CSS}
 {region_css(regions)}
 {hero_css}
@@ -595,6 +814,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 </div>
 <a class="to-top" href="#top" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg><span>Back to top</span></a>
 <script>{TOP_JS}</script>
+<script>{ROWS_JS}</script>
 {hero_html}
 {hero_js}
 {tip_js}

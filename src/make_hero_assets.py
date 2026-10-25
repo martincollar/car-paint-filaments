@@ -25,6 +25,11 @@ re-download of the same picture):
                 roof part of the alpha goes to the mask's G channel instead of R. Only a hint: its largest blob is
                 kept and grown by `roof_grow` px (default 6, must stay below the chrome gap
                 to the body); `roof_extra` (shapes dict) adds parts the outline misses, e.g. the tip
+  zones         optional extra paint areas of the car beyond body (R) and roof (G): {"<id>": {"channel": 2,
+                "shape": <shapes dict>}}. The part of the body alpha inside the shape moves to that mask channel
+                (B for channel 2), so the page can colour that area on its own (Doppler: "lower" = the body below the
+                chrome line). Slots shown on the page come from `hero.zones` in car.json. Marks of that id
+                (review_hero.py) force an area into the zone.
   grow          px (ref scale) around the existing mask in which "keep" mode neutralises (default 10), or
                 "all" for the whole photo (right when nothing but paint and glass tint has that hue)
   keep_color    rects that stay in their colour (turn-signal lenses)
@@ -37,6 +42,7 @@ a wand mark = the connected area of similar colour around the clicked pixel) is 
   never      never repainted (alpha 0, wins over everything)
   paint      always repainted as body (alpha 1)
   roof       always repainted as roof (alpha 1, G channel)
+  <zone id>  always repainted as that zone (alpha 1, its channel) for every id in `zones`
   neutralise old paint colour removed here even where the chroma rule missed it
   keep       keeps its colour (neutralising and painting both off)
 """
@@ -90,13 +96,13 @@ def wand_region(rgb, seed, tol):
     lab_, _ = ndimage.label(((rgb - rgb[y, x]) ** 2).sum(axis=2) <= tol * tol)
     return lab_ == lab_[y, x] if lab_[y, x] else np.zeros(rgb.shape[:2], bool)
 
-def load_marks(car, size):
+def load_marks(car, size, zone_ids=()):
     """{kind: soft 0..1 mask} from hero_marks.json (polygons or wand clicks in photo pixels); empty masks without a file."""
     path = config.car_dir(car) / "hero_marks.json"
     marks = json.loads(path.read_text(encoding="utf-8")).get("marks", []) if path.exists() else []
     rgb = None
     out = {}
-    for kind in ("never", "paint", "roof", "neutralise", "keep"):
+    for kind in ("never", "paint", "roof", "neutralise", "keep") + tuple(zone_ids):
         m = Image.new("L", size, 0)
         d = ImageDraw.Draw(m)
         region = np.zeros(size[::-1], bool)
@@ -132,7 +138,8 @@ def main():
     keep = shape_mask(src.size, {"rects": cfg.get("keep_color", [])}, k, 1.2)
     glass = shape_mask(src.size, cfg.get("glass"), k, 1.2)
     never = shape_mask(src.size, cfg.get("never_paint"), k, 1.2)
-    marks = load_marks(args.car, src.size)
+    zones = cfg.get("zones") or {}
+    marks = load_marks(args.car, src.size, tuple(zones))
     keep = np.maximum(keep, marks["keep"])
 
     weight = smooth(chroma, c_lo, c_hi) * band
@@ -177,6 +184,14 @@ def main():
         body_a = np.maximum(body_a * (1 - marks["roof"]), marks["paint"]) * (1 - marks["keep"]) * (1 - marks["never"])
         roof_a = np.maximum(roof_a * (1 - marks["paint"]), marks["roof"]) * (1 - marks["keep"]) * (1 - marks["never"])
         out = np.zeros(a.shape + (3,), "uint8")
+        for zid, z in zones.items():
+            # an extra zone takes its share of the body alpha (the shape is only a hint, soft edge), marks of that id force it;
+            # what it takes is removed from the body channel, so a pixel is never half body, half zone
+            hint = shape_mask(src.size, z.get("shape"), k, 1.2)
+            forced = marks[zid] * (1 - marks["keep"]) * (1 - marks["never"])
+            zone_a = np.maximum(body_a * hint, forced)
+            body_a = body_a * (1 - hint) * (1 - forced)
+            out[..., z["channel"]] = (zone_a * 255).astype("uint8")
         out[..., 0] = (body_a * 255).astype("uint8")
         out[..., 1] = (roof_a * 255).astype("uint8")
         Image.fromarray(out).save(src_dir / "hero_mask.png")
