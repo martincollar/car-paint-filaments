@@ -4733,30 +4733,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 13.45,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 14.73,
+          "slug": "devil-design-asa-zelena-olive-green-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
+          "color_name": "Zelená (Olive Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-zelena-olive-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/a/4/a4f9f91008414fde6e9edd083ae0ba6d-asa-1-75-olive-green.png",
+          "local_image": "hubacek3d-devil-design-asa-zelena-olive-green-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Zelená (Olive Green) - 1kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            93,
-            75,
-            31
+            103,
+            104,
+            71
           ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
+          "hex": "#676847",
+          "pixel_count": 196196,
           "confidence": "measured_dominant_hue"
         }
       ]

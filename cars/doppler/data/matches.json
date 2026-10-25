@@ -15040,34 +15040,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 13.41,
-          "slug": "3d-sphynx-asa-bila-white-800g",
-          "brand": "3D Sphynx",
-          "material": "ASA",
-          "color_name": "Bílá (White)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-bila-white-800g",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/5/15c3ddb6b8c12e87056e212c4ca047dc-asa-white-photoroom.png",
-          "local_image": "hubacek3d-3d-sphynx-asa-bila-white-800g.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3D Sphynx - ASA - Bílá (White) - 800g",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            215,
-            240,
-            240
-          ],
-          "hex": "#D7F0F0",
-          "pixel_count": 45395,
-          "confidence": "manual_override",
-          "measured_hex": "#D9F1F1"
-        },
-        {
           "delta_e": 17.4,
           "slug": "filament-smart-print-asa-bila-1-kg-1-75-mm",
           "brand": "Smart Print",
@@ -15148,6 +15120,34 @@
           "hex": "#EDECE0",
           "pixel_count": 3674,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.53,
+          "slug": "refill-rosa3d-asa-zelena-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/a/ba8523682e3968b1f10e1dde05493b13-refill-asa-green-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-zelena-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            119,
+            195,
+            95
+          ],
+          "hex": "#77C35F",
+          "pixel_count": 223070,
+          "confidence": "manual_override",
+          "measured_hex": "#C02726"
         }
       ]
     },
@@ -15880,34 +15880,6 @@
       ],
       "asa": [
         {
-          "delta_e": 8.77,
-          "slug": "3d-sphynx-asa-bila-white-800g",
-          "brand": "3D Sphynx",
-          "material": "ASA",
-          "color_name": "Bílá (White)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-bila-white-800g",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/5/15c3ddb6b8c12e87056e212c4ca047dc-asa-white-photoroom.png",
-          "local_image": "hubacek3d-3d-sphynx-asa-bila-white-800g.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3D Sphynx - ASA - Bílá (White) - 800g",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            215,
-            240,
-            240
-          ],
-          "hex": "#D7F0F0",
-          "pixel_count": 45395,
-          "confidence": "manual_override",
-          "measured_hex": "#D9F1F1"
-        },
-        {
           "delta_e": 9.05,
           "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
           "brand": "Professional Lab",
@@ -16013,6 +15985,33 @@
           ],
           "hex": "#B8B9BA",
           "pixel_count": 254793,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.34,
+          "slug": "asa-matte-gray",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Matte Gray",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-matte-gray",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118783_17921436826ad1f142d5bc2.128x128.jpg",
+          "local_image": "3djake-asa-matte-gray.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Matte Gray, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            198,
+            197,
+            196
+          ],
+          "hex": "#C6C5C4",
+          "pixel_count": 4762,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -22802,34 +22801,6 @@
       ],
       "asa": [
         {
-          "delta_e": 12.93,
-          "slug": "3d-sphynx-asa-bila-white-800g",
-          "brand": "3D Sphynx",
-          "material": "ASA",
-          "color_name": "Bílá (White)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-bila-white-800g",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/5/15c3ddb6b8c12e87056e212c4ca047dc-asa-white-photoroom.png",
-          "local_image": "hubacek3d-3d-sphynx-asa-bila-white-800g.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3D Sphynx - ASA - Bílá (White) - 800g",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            215,
-            240,
-            240
-          ],
-          "hex": "#D7F0F0",
-          "pixel_count": 45395,
-          "confidence": "manual_override",
-          "measured_hex": "#D9F1F1"
-        },
-        {
           "delta_e": 13.53,
           "slug": "prusament-asa-prusa-pro-green",
           "brand": "Prusament",
@@ -22937,6 +22908,33 @@
           ],
           "hex": "#EDECE0",
           "pixel_count": 3674,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.4,
+          "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "ASA",
+          "color_name": "Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5047052fb83662a0a8bed9b5b7ee0a85-fg-p135-e1fg-p135-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament PROFESSIONAL LAB / ASA / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            204,
+            206,
+            205
+          ],
+          "hex": "#CCCECD",
+          "pixel_count": 421488,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -23671,34 +23669,6 @@
       ],
       "asa": [
         {
-          "delta_e": 10.13,
-          "slug": "3d-sphynx-asa-bila-white-800g",
-          "brand": "3D Sphynx",
-          "material": "ASA",
-          "color_name": "Bílá (White)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-bila-white-800g",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/5/15c3ddb6b8c12e87056e212c4ca047dc-asa-white-photoroom.png",
-          "local_image": "hubacek3d-3d-sphynx-asa-bila-white-800g.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3D Sphynx - ASA - Bílá (White) - 800g",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            215,
-            240,
-            240
-          ],
-          "hex": "#D7F0F0",
-          "pixel_count": 45395,
-          "confidence": "manual_override",
-          "measured_hex": "#D9F1F1"
-        },
-        {
           "delta_e": 13.52,
           "slug": "filament-azurefilm-asa-seda-1-75-mm-1-kg",
           "brand": "AzureFilm",
@@ -23804,6 +23774,33 @@
           ],
           "hex": "#B8B9BA",
           "pixel_count": 254793,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.87,
+          "slug": "refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/9/995244d39654ce979312c9fa187f80f8-refill-asa-silver-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-stribrna-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            184,
+            185,
+            183
+          ],
+          "hex": "#B8B9B7",
+          "pixel_count": 74609,
           "confidence": "measured_dominant_hue"
         }
       ]

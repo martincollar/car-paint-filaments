@@ -78,6 +78,7 @@ def drop_duplicate_listings(rows):
     d = shoplib.load_defaults()
     rules = [(re.compile(rx, re.I), shop) for rx, shop in (d.get("preferred_shop") or {}).items()]
     limit = float(d.get("dedupe_delta_e", 2))
+    exclusive = set(d.get("preferred_shop_exclusive") or [])
     pairs, dropped = [], {}
     for rx, shop in rules:
         grp = [r for r in rows if r.get("rgb") and rx.search(r.get("brand") or "")]
@@ -88,6 +89,10 @@ def drop_duplicate_listings(rows):
                     de = delta_e_2000(p["rgb"], o["rgb"])
                     if de <= limit: pairs.append((de, id(o), id(p), o, p))
     taken = set()
+    for rx, shop in rules:
+        for o in rows:
+            if o["shop"] != shop and o.get("material") in exclusive and rx.search(o.get("brand") or ""):
+                dropped[id(o)] = (o, next((p for p in rows if p["shop"] == shop and p["material"] == o["material"]), o))
     for de, _, _, o, p in sorted(pairs, key=lambda x: x[:3]):
         if id(o) in dropped or id(p) in taken: continue
         dropped[id(o)] = (o, p); taken.add(id(p))

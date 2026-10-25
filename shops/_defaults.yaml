@@ -65,3 +65,6 @@ measure_hints:
 preferred_shop:
   '^aurapol$': Aurapol
 dedupe_delta_e: 2
+# Materials where the preferred shop is the only source: every other shop's listing of that brand is
+# dropped, twin or not (the other shops just resell it). Aurapol ASA: only the Aurapol store.
+preferred_shop_exclusive: [ASA]

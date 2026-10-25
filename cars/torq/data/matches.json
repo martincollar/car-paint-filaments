@@ -3812,33 +3812,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.36,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 9.63,
           "slug": "aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -3890,6 +3863,33 @@
           ],
           "hex": "#35352F",
           "pixel_count": 154339,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.11,
+          "slug": "aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Brown Khaki",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/7/0/7022819665851d589f229498d8a2bd68-asa-khaki-brown.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Brown Khaki 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            92,
+            69,
+            30
+          ],
+          "hex": "#5C451E",
+          "pixel_count": 163189,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -4269,8 +4269,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.81,
@@ -4704,33 +4703,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.55,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 13.89,
           "slug": "p192",
           "brand": "Filament PM",
@@ -4755,6 +4727,33 @@
           ],
           "hex": "#574C48",
           "pixel_count": 83743,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.05,
+          "slug": "fiber3d-asa-red",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "Red",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-red.jpg",
+          "local_image": "na3d-fiber3d-asa-red.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            146,
+            44,
+            31
+          ],
+          "hex": "#922C1F",
+          "pixel_count": 116771,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -7274,8 +7273,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 12.81,
@@ -8117,33 +8115,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.82,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 12.46,
           "slug": "aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -8222,6 +8193,33 @@
           ],
           "hex": "#583A25",
           "pixel_count": 105214,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.23,
+          "slug": "asa-extrafill-anthracite-grey",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Anthracite Grey",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-anthracite-grey",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_ANTHRACITE_GREY_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-anthracite-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Anthracite Grey\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            100,
+            97,
+            81
+          ],
+          "hex": "#646151",
+          "pixel_count": 330312,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -12069,8 +12067,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.42,
@@ -14235,8 +14232,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 11.54,
@@ -16808,8 +16804,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.53,
@@ -17218,33 +17213,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.98,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.09,
           "slug": "aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -17323,6 +17291,33 @@
           ],
           "hex": "#6D684A",
           "pixel_count": 282591,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.62,
+          "slug": "asa-extrafill-anthracite-grey",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Anthracite Grey",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-anthracite-grey",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_ANTHRACITE_GREY_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-anthracite-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Anthracite Grey\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            100,
+            97,
+            81
+          ],
+          "hex": "#646151",
+          "pixel_count": 330312,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -22494,8 +22489,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 12.04,
@@ -25093,30 +25087,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 14.19,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 14.51,
+          "slug": "p196",
+          "brand": "Filament PM",
           "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
+          "color_name": "Černá",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/asa-cerna-1-75-mm-0-75-kg/p196",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4686-asa-black-0-75kg-1-75-1-product-og.jpg?v=1882433039",
+          "local_image": "filament_pm-p196.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
+          "title": "ASA - Černá",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            93,
-            75,
-            31
+            33,
+            33,
+            33
           ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
+          "hex": "#212121",
+          "pixel_count": 182646,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -26311,33 +26305,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 10.2,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 12.58,
           "slug": "aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -26416,6 +26383,33 @@
           ],
           "hex": "#6D684A",
           "pixel_count": 282591,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.92,
+          "slug": "fiber3d-asa-orange",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "Orange",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-orange.jpg",
+          "local_image": "na3d-fiber3d-asa-orange.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            186,
+            84,
+            24
+          ],
+          "hex": "#BA5418",
+          "pixel_count": 127864,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -26797,33 +26791,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.97,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 15.6,
           "slug": "p192",
           "brand": "Filament PM",
@@ -26848,6 +26815,33 @@
           ],
           "hex": "#574C48",
           "pixel_count": 83743,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.29,
+          "slug": "fiber3d-asa-red",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "Red",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-red.jpg",
+          "local_image": "na3d-fiber3d-asa-red.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            146,
+            44,
+            31
+          ],
+          "hex": "#922C1F",
+          "pixel_count": 116771,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -28984,8 +28978,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 13.7,
@@ -29364,8 +29357,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 9.75,
@@ -29747,33 +29739,6 @@
       ],
       "asa": [
         {
-          "delta_e": 7.06,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.34,
           "slug": "aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -29879,6 +29844,33 @@
           ],
           "hex": "#6D6B51",
           "pixel_count": 397072,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.0,
+          "slug": "devil-design-asa-zelena-olive-green-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Zelená (Olive Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-zelena-olive-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/a/4/a4f9f91008414fde6e9edd083ae0ba6d-asa-1-75-olive-green.png",
+          "local_image": "hubacek3d-devil-design-asa-zelena-olive-green-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Zelená (Olive Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            103,
+            104,
+            71
+          ],
+          "hex": "#676847",
+          "pixel_count": 196196,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -30722,30 +30714,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.3,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 13.42,
+          "slug": "devil-design-asa-cerna-black-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
+          "color_name": "Černá (Black)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-cerna-black-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/c/6/c67ecf705cd9d197ac5abbc52c58fac5-asa-1-75-black.png",
+          "local_image": "hubacek3d-devil-design-asa-cerna-black-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Černá (Black) - 1kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            93,
-            75,
-            31
+            37,
+            39,
+            38
           ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
+          "hex": "#252726",
+          "pixel_count": 106897,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -37214,8 +37206,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 12.48,
@@ -37597,33 +37588,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 16.53,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 17.05,
           "slug": "aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -37675,6 +37639,33 @@
           ],
           "hex": "#908A63",
           "pixel_count": 274355,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.78,
+          "slug": "asa-extrafill-traffic-yellow",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Traffic Yellow",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-yellow",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_TRAFFIC_YELLOW_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-traffic-yellow.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Traffic Yellow\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            109,
+            107,
+            81
+          ],
+          "hex": "#6D6B51",
+          "pixel_count": 397072,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -38464,33 +38455,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 10.48,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 10.49,
           "slug": "asa-extrafill-anthracite-grey",
           "brand": "Fillamentum",
@@ -38542,6 +38506,33 @@
           ],
           "hex": "#5C451E",
           "pixel_count": 163189,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.47,
+          "slug": "asa-extrafill-vertigo-grey",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Vertigo Grey",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-vertigo-grey",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_VERTIGO_GREY_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-vertigo-grey.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"Vertigo Grey\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            104,
+            103,
+            89
+          ],
+          "hex": "#686759",
+          "pixel_count": 294921,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -41055,8 +41046,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.86,
@@ -41463,33 +41453,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.81,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.05,
           "slug": "asa-extrafill-traffic-yellow",
           "brand": "Fillamentum",
@@ -41568,6 +41531,33 @@
           ],
           "hex": "#646151",
           "pixel_count": 330312,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.71,
+          "slug": "aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Brown Khaki",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/7/0/7022819665851d589f229498d8a2bd68-asa-khaki-brown.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Brown Khaki 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            92,
+            69,
+            30
+          ],
+          "hex": "#5C451E",
+          "pixel_count": 163189,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -48029,8 +48019,7 @@
           "hex": "#8A8B64",
           "pixel_count": 135086,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#969A91"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 12.56,
@@ -49684,33 +49673,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.4,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            93,
-            75,
-            31
-          ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 9.19,
           "slug": "asa-extrafill-anthracite-grey",
           "brand": "Fillamentum",
@@ -49789,6 +49751,33 @@
           ],
           "hex": "#574C48",
           "pixel_count": 83743,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.44,
+          "slug": "aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Dark Bronze",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/9/190780be065186217f484b9a570415e0-asa-dark-bronze-aurapol.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Dark Bronze 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            82,
+            64,
+            23
+          ],
+          "hex": "#524017",
+          "pixel_count": 229381,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -50197,30 +50186,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.17,
-          "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 15.49,
+          "slug": "asa-extrafill-traffic-black",
+          "brand": "Fillamentum",
           "material": "ASA",
-          "color_name": "Tmavě Bronzová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
+          "color_name": "Extrafill Traffic Black",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-black",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_TRAFFIC_BLACK_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-traffic-black.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
+          "title": "ASA Extrafill \"Traffic Black\" ",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            93,
-            75,
-            31
+            53,
+            53,
+            47
           ],
-          "hex": "#5D4B1F",
-          "pixel_count": 229632,
+          "hex": "#35352F",
+          "pixel_count": 154339,
           "confidence": "measured_dominant_hue"
         }
       ]

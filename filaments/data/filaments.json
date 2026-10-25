@@ -6839,8 +6839,7 @@
     "hex": "#8A8B64",
     "pixel_count": 135086,
     "confidence": "manual_override",
-    "measured_hex": "#969A91",
-    "previous_hex": "#969A91"
+    "measured_hex": "#969A91"
   },
   {
     "slug": "aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm",
@@ -17298,33 +17297,6 @@
     "hex": "#613E68",
     "pixel_count": 488633,
     "confidence": "measured_dominant_hue"
-  },
-  {
-    "slug": "3d-sphynx-asa-bila-white-800g",
-    "brand": "3D Sphynx",
-    "material": "ASA",
-    "color_name": "Bílá (White)",
-    "shop": "Hubacek3D",
-    "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-bila-white-800g",
-    "image_url": "https://printbase.s36.cdn-upgates.com/_cache/1/5/15c3ddb6b8c12e87056e212c4ca047dc-asa-white-photoroom.png",
-    "local_image": "hubacek3d-3d-sphynx-asa-bila-white-800g.png",
-    "availability": "OutOfStock",
-    "stock": "Vyprodáno",
-    "title": "3D Sphynx - ASA - Bílá (White) - 800g",
-    "last_ok": "2026-10-25",
-    "regions": [
-      "eu"
-    ],
-    "neon": false,
-    "rgb": [
-      215,
-      240,
-      240
-    ],
-    "hex": "#D7F0F0",
-    "pixel_count": 45395,
-    "confidence": "manual_override",
-    "measured_hex": "#D9F1F1"
   },
   {
     "slug": "3d-sphynx-asa-cerna-black-800g",
@@ -34605,32 +34577,6 @@
     ],
     "hex": "#20689D",
     "pixel_count": 285623,
-    "confidence": "measured_dominant_hue"
-  },
-  {
-    "slug": "filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-    "brand": "AURAPOL",
-    "material": "ASA",
-    "color_name": "Tmavě Bronzová",
-    "shop": "Smart3D",
-    "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-bronzova-1-75-mm-850g",
-    "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/1/c1966acc9614b28f8873fbd475d31801-asa-dark-bronze-aurapol.png",
-    "local_image": "smart3d-filament-aurapol-asa-tmave-bronzova-1-75-mm-850g.png",
-    "availability": "InStock",
-    "stock": "Skladem",
-    "title": "Filament AURAPOL / ASA / TMAVĚ BRONZOVÁ / 1,75 mm / 850g.",
-    "last_ok": "2026-10-25",
-    "regions": [
-      "eu"
-    ],
-    "neon": false,
-    "rgb": [
-      93,
-      75,
-      31
-    ],
-    "hex": "#5D4B1F",
-    "pixel_count": 229632,
     "confidence": "measured_dominant_hue"
   },
   {
