@@ -14,6 +14,7 @@
   var css = document.createElement('style');
   css.textContent =
     '.tile-name a::after{display:none!important}' +
+    '.tile-car{display:none!important}' +   // the car link would sit over the decorations and swallow their clicks
     '.tile-deco *{pointer-events:auto!important}' +
     '.le-hover{outline:2px dashed #2563eb;outline-offset:3px;cursor:move}' +
     '.le-sel{outline:2px solid #e11d48!important;outline-offset:3px;cursor:move}' +
