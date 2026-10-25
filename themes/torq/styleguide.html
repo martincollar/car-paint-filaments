@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en" class="theme-torq"><head><meta charset="utf-8"><title>torq design language</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+.tile-frame { position: absolute; inset: 0; background: var(--tile); border: 2px solid var(--ink); border-radius: 14px;
+              box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
+.tile-deco { position: absolute; inset: 0; pointer-events: none; }
+.tile-text { position: relative; z-index: 3; }
+.tile-name { margin: 0; font-size: 1.7rem; line-height: 1.1; }
+.tile-name a { text-decoration: none; }
+.tile-name .w { white-space: nowrap; }
+.tile-name .ch { display: inline-block; }
+.tile-tag { margin: 6px 0 0; color: var(--muted); }
+.tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+/* Torq design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
+.theme-torq, .tile--torq {
+  --dl-bg: #dedede;
+  --dl-card: #ffffff;
+  --dl-paper: #ffffff;
+  --dl-ink: #111111;
+  --dl-outline: #111;
+  --dl-primary: #d9432b;
+  --dl-primary-deep: #a82c17;
+  --dl-accent: #27407a;
+  --dl-accent-deep: #172a58;
+  --dl-accent2: #f0b429;
+  --dl-radius: 0;
+  --dl-border: 4px solid #111;
+  --dl-shadow: 3px 3px 0 #111;      /* button / small shadow */
+  --dl-card-shadow: 8px 8px 0 #111; /* big card shadow */
+  --dl-font-title: "Russo One", sans-serif;
+  --dl-font-tag: "Barlow Condensed", sans-serif;
+  --dl-font-ui: "Barlow Condensed", sans-serif;
+  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}/* Torq theme: 1970s muscle car. Red-orange body, white lettering with a black outline,
+   the stars-and-stripes shield from the fender, hood stripes and vent slats.
+   Same markup as every theme; the --teal/--orange/--mustard aliases at the bottom of :root
+   exist only because the shared recolor-preview CSS reads those names. */
+:root {
+  --red: var(--dl-primary);
+  --red-deep: var(--dl-primary-deep);
+  --red-weak: #f7cfc6;
+  --blue: var(--dl-accent);
+  --blue-deep: var(--dl-accent-deep);
+  --blue-weak: #d3dbf0;
+  --ink: #111111;
+  --white: #ffffff;
+
+  --bg: #e8e4dc;
+  --bg-paper: #ffffff;
+  --bg-raised: #ffffff;
+  --fg: #16161a;
+  --muted: #666a73;
+  --rule: #cfcac0;
+  --rule-soft: #e7e3da;
+
+  --good: #1f7a45;
+  --warn: #8a5a00;
+  --bad: #a82c17;
+  --gold: var(--dl-accent2);
+
+  --font-display: "Russo One", "Arial Black", Impact, sans-serif;
+  --font-mono:    "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body:    var(--dl-font-body);
+  --pad: clamp(18px, 3vw, 36px);
+  color-scheme: light;
+
+  /* names read by the shared recolor-preview CSS */
+  --teal: var(--blue);  --teal-deep: var(--blue-deep);  --teal-weak: var(--blue-weak);
+  --orange: var(--red); --orange-deep: var(--red-deep); --orange-weak: var(--red-weak);
+  --mustard: var(--gold); --mustard-weak: #fbe7a8;
+  --cherry: var(--red); --navy: var(--ink);
+}
+body {
+  background-color: var(--bg);
+  /* the vertical vent slats on the fender */
+  background-image: repeating-linear-gradient(90deg, rgba(0,0,0,0.05) 0 3px, transparent 3px 14px);
+  color: var(--fg); font-family: var(--font-body);
+  line-height: 1.45; max-width: 1360px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px;
+  font-variant-numeric: tabular-nums;
+}
+
+.paper {
+  --pad: clamp(18px, 3vw, 36px);
+  background: var(--bg-paper);
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  padding: 0 var(--pad) 28px;
+  position: relative;
+}
+/* shield stripes along the top and bottom edge */
+.paper::before, .paper::after {
+  content: ""; display: block; height: 14px; margin: 0 calc(-1 * var(--pad));
+  background: repeating-linear-gradient(90deg, var(--red) 0 28px, var(--white) 28px 56px);
+}
+.paper::before { border-bottom: 3px solid var(--ink); }
+.paper::after  { margin-top: 28px; margin-bottom: -28px; border-top: 3px solid var(--ink); }
+
+/* ===== Year nav ===== */
+.year-nav {
+  display: flex; flex-wrap: wrap; gap: 8px 6px; margin: 22px 0 0;
+  align-items: center; font-family: var(--font-mono); font-size: 0.95rem;
+}
+.year-nav .nav-label { color: var(--dl-ink); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; margin-right: 6px; }
+.year-nav a {
+  font: 400 .8rem var(--dl-font-title); letter-spacing: .03em; text-transform: uppercase; text-decoration: none;
+  padding: 5px 14px; color: var(--dl-paper); background: var(--dl-primary); border: 3px solid var(--dl-outline);
+  border-radius: 0; box-shadow: var(--dl-shadow); cursor: pointer;
+}
+.year-nav a:hover { background: var(--dl-accent); color: var(--dl-paper); }
+
+.region-switch button {
+  font: 400 .8rem var(--dl-font-title); letter-spacing: .03em; text-transform: uppercase; text-decoration: none;
+  padding: 5px 14px; color: var(--dl-paper); background: var(--dl-primary); border: 3px solid var(--dl-outline);
+  border-radius: 0; box-shadow: var(--dl-shadow); cursor: pointer;
+}
+.region-switch button[aria-pressed="true"] { background: var(--dl-accent); }
+.region-switch button:hover { background: var(--dl-accent); color: var(--dl-paper); }
+
+/* ===== Legend ===== */
+.legend {
+  display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+  padding: 4px 2px; margin: 4px 0 8px; font-size: 0.82rem; color: var(--muted);
+}
+.legend .lblock { display: inline-flex; gap: 5px; align-items: center; }
+.legend .legend-head { font: 700 .85rem var(--dl-font-ui); color: var(--ink); text-transform: uppercase; letter-spacing: 0.1em; }
+.pill, .de { padding: 0; font-weight: 700; letter-spacing: 0.03em; font-family: var(--font-mono); font-size: 0.86rem; }
+.pill.exc, .de.exc { color: var(--good); }
+.pill.vg, .de.vg { color: var(--blue); }
+.pill.ok, .de.ok { color: var(--warn); }
+.pill.weak, .de.weak { color: var(--muted); }
+.pill.bad, .de.bad { color: var(--red-deep); }
+
+/* ===== Shop tags ===== */
+.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase; color: var(--muted); }
+
+/* ===== Year section header: number plate with a little flag ===== */
+h2.year-head {
+  display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6px; padding: 0 0 6px;
+  border: none; border-bottom: 3px solid var(--ink); scroll-margin-top: 10px; font-weight: 400;
+}
+.year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--ink); line-height: 1; }
+/* the fender shield again, same as the header one */
+.year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); order: 2; }
+.year-badge-num { font-family: var(--dl-font-title); font-size: 2.4rem; line-height: 1; letter-spacing: 0.03em; color: var(--red); }
+.year-tagline { font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); line-height: 1; }
+
+/* ===== Table rows ===== */
+.row {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+  padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start;
+}
+.row:last-of-type { border-bottom: none; }
+@media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
+
+.col-label {
+  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 700; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 6px 2px;
+}
+
+/* ===== Paint block ===== */
+.row > .paint-col { grid-column: 1 / -1; }
+.paint { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
+.paint .swatch.big { width: 56px; height: 56px; flex-shrink: 0; border: 2px solid var(--ink); }
+.paint .meta { min-width: 0; flex: 1; }
+.paint .name { font-weight: 700; font-size: 1.05rem; line-height: 1.2; color: var(--ink); }
+.paint .sub {
+  font-family: var(--font-mono); font-size: 0.86rem; font-weight: 500;
+  color: var(--muted); margin-top: 3px; letter-spacing: 0.03em;
+}
+.paint .year { color: var(--red-deep); font-weight: 700; }
+.paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
+.paint a.year:hover { background: var(--red-weak); }
+
+.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--red-deep); font-family: var(--font-mono); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.04em; }
+.paint .hex { font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-top: 4px; }
+.paint .rgb { color: var(--muted); font-size: 0.82rem; margin-left: 4px; font-weight: 500; }
+
+.chip { display: inline-block; padding: 0 7px; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; font-weight: 700; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); margin-left: 6px; vertical-align: middle; }
+
+/* ===== Primary filament card ===== */
+.filament.primary { display: grid; grid-template-columns: 36px 1fr; gap: 10px; padding: 4px 0; margin-bottom: 4px; }
+.filament.primary .swatch.mini { width: 36px; height: 36px; border: 1px solid var(--ink); }
+.filament.primary .fname { font-size: 0.92rem; line-height: 1.3; }
+.filament.primary .fname strong { font-weight: 700; font-size: 0.95rem; }
+.filament.primary .fname .color { color: var(--muted); font-size: 0.86rem; }
+.filament.primary .fsub {
+  display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center;
+  margin-top: 4px; font-size: 0.86rem; font-family: var(--font-mono); font-weight: 600;
+}
+
+/* Alt row, compact */
+.filament.alt {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr) auto;
+  gap: 5px 7px; align-items: center;
+  padding: 5px 10px; font-size: 0.8rem;
+  border-bottom: 1px solid var(--rule-soft);
+}
+.filament.alt:hover { background: #f5f2ea; }
+.filament.alt:last-child { border-bottom: none; }
+.filament.alt .swatch.tiny { width: 18px; height: 18px; border: 1px solid var(--ink); }
+.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.84rem; }
+.filament.alt .fname-inline .color { color: var(--muted); font-size: 0.78rem; }
+.filament.empty { color: var(--muted); font-style: italic; padding: 8px 10px; }
+
+/* ===== Phones ===== */
+@media (max-width: 600px) {
+  .paint .swatch.big { width: 64px; height: 64px; }
+  .filament.primary { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .filament.primary .swatch.mini { width: 40px; height: 40px; }
+  .filament.alt { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; }
+  .filament.alt .fname-inline {
+    flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip;
+    font-size: 0.9rem; line-height: 1.25;
+  }
+}
+
+/* ===== Footer ===== */
+footer.card-footer .legend { margin: 0 0 18px; justify-content: center; }
+footer.card-footer {
+  margin-top: 28px; padding-top: 22px; text-align: center;
+  border-top: 4px solid var(--ink);
+}
+footer.card-footer .brand {
+  font-family: var(--font-display); font-size: 1.1rem; text-transform: uppercase;
+  color: var(--ink); letter-spacing: 0.12em;
+}
+footer.card-footer .sub {
+  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 600;
+  color: var(--muted); letter-spacing: 0.18em;
+  text-transform: uppercase; margin-top: 4px;
+}
+footer.card-footer .visit-count {
+  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.2em;
+  color: var(--ink); text-transform: uppercase; margin-top: 10px;
+}
+
+/* ===== Back to top (floating, bottom left) ===== */
+.to-top {
+  width: 56px; height: 44px; text-decoration: none; display: grid; place-items: center;
+  background: var(--dl-primary); border: 3px solid var(--dl-outline); box-shadow: var(--dl-shadow);
+}
+.to-top svg { width: 24px; height: 24px; fill: var(--white); }
+.to-top:hover { background: var(--dl-accent); }
+.to-top:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+/* ===== Recolor preview + hover bubble (shared CSS holds layout only; this theme owns the look) ===== */
+:root { --hero-q-bg: #111111; --hero-q-fg: #ffffff; --hero-q-font: "Russo One", "Arial Black", Impact, sans-serif; }
+.hero-preview {
+  background: var(--white); color: var(--ink); border: 3px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.hero-preview::before {
+  content: ""; display: block; height: 6px; margin: -10px -10px 8px;
+  background: repeating-linear-gradient(90deg, var(--red) 0 14px, var(--white) 14px 28px);
+  border-bottom: 2px solid var(--ink);
+}
+/* Slanted keys like the back-to-top button: flat face, darker foot, white icon */
+.hero-preview .hp-close, .hero-preview .hp-zoom {
+  top: 20px; width: 34px; height: 26px; border: 2px solid var(--dl-outline); box-shadow: 2px 2px 0 var(--dl-outline);
+  background: var(--dl-accent); color: var(--white); clip-path: none;
+}
+.hero-preview .hp-close { right: 12px; background-color: var(--dl-primary); }
+.hero-preview .hp-zoom  { right: 52px; }
+.hero-preview .hp-close::before, .hero-preview .hp-zoom::before {
+  content: ""; width: 14px; height: 14px; margin-top: -2px; background: center / contain no-repeat;
+}
+.hero-preview .hp-close::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='square'%3E%3Cpath d='M3 3 13 13M13 3 3 13'/%3E%3C/svg%3E"); }
+.hero-preview .hp-zoom::before  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='square'%3E%3Cpath d='M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9'/%3E%3C/svg%3E"); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background-color: var(--dl-outline); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(2px, 2px); box-shadow: none; }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 0; box-shadow: inset 0 0 0 3px var(--gold); }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 30px; width: 42px; height: 32px; }
+.hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 74px; }
+.hero-preview.big::before { height: 8px; margin: -14px -16px 12px; }
+.hero-preview.big { box-shadow: 0 0 0 100vmax rgba(0,0,0,0.55), 8px 8px 0 var(--ink); }
+.hero-preview.big .t-name {
+  font-family: var(--font-display); font-size: 1.2rem; line-height: 1.2; letter-spacing: 0.02em;
+  text-transform: uppercase; color: var(--ink);
+}
+.hero-preview.big .hp-credit { font-size: 0.78rem; font-weight: 600; }
+.hero-preview.closed::before { display: none; }
+.hero-preview.closed .hp-close { top: 7px; right: 8px; }
+.fil-tip {
+  background: var(--white); color: var(--ink); border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.fil-tip img { border: 2px solid var(--ink); }
+.fil-tip .t-sw, .hero-preview .t-sw { border: 2px solid var(--ink); }
+.fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 400; }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--blue); text-transform: uppercase; letter-spacing: 0.06em; }/* Index tile: 1970s shield-and-stripes. Frame hard-edged, shield and car spill over it. */
+.tile--torq { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 20px; font-family: "Barlow", sans-serif; }
+.tile--torq .tile-frame { border: 4px solid var(--dl-outline); border-radius: 0; box-shadow: 8px 8px 0 var(--dl-outline);
+  background: var(--dl-bg); }
+.tile--torq .tile-frame::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 22px;
+  background: repeating-linear-gradient(90deg, var(--dl-primary) 0 28px, var(--dl-paper) 28px 56px); border-bottom: 4px solid var(--dl-outline); }
+.tile--torq .tile-text { padding-top: 26px; max-width: none; }
+.tile--torq .tile-name { font-family: var(--dl-font-title); text-transform: uppercase; font-size: 3rem; line-height: 1;
+  letter-spacing: .01em; color: var(--dl-paper); -webkit-text-stroke: 2px var(--dl-outline); paint-order: stroke fill; text-shadow: 3px 3px 0 var(--dl-outline); }
+.tile--torq .tile-tag { display: inline-block; margin-top: 12px; padding: 4px 22px 4px 14px; background: var(--dl-outline); color: var(--dl-paper);
+  font: italic 700 1.2rem var(--dl-font-tag); text-transform: uppercase; letter-spacing: .05em;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%); }
+.tile--torq .tile-meta { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .06em; color: #444; }
+.tile--torq .tile-label { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .04em; color: #333; }
+.tile--torq .tile-open { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-primary); color: var(--dl-paper); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-open:hover, .tile--torq .tile-open:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
+.tile--torq .t-shield { position: absolute; right: -26px; top: -34px; width: 118px; transform: rotate(7deg);
+  filter: drop-shadow(4px 4px 0 rgba(17,17,17,.35)); }
+@media (max-width: 520px) {
+  .tile--torq .tile-name { font-size: 2.25rem; }
+  .tile--torq .tile-tag { font-size: 1rem; }
+  .tile--torq .t-shield { width: 88px; right: -14px; top: -28px; }
+  }
+.tile--torq .tile-label { opacity: .6; }
+.tile--torq .tile-buy { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-paper); color: var(--dl-outline); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-buy:hover, .tile--torq .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-torq .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 22px 40px 24px;
+  --tile: var(--dl-bg); --muted: #444; }
+.theme-torq .head-card .tile-frame { box-shadow: var(--dl-card-shadow); }
+.theme-torq .head-card .tile-name { font-size: 4.4rem; -webkit-text-stroke-width: 3px; text-shadow: 4px 4px 0 var(--dl-outline); }
+.theme-torq .head-card .tile-tag { font-size: 1.5rem; margin-top: 14px; }
+.theme-torq .head-card .tile-meta { margin-top: 14px; font-size: 1.05rem; line-height: 1.5; }
+.theme-torq .head-card .t-shield { right: 34px; top: -30px; width: 150px; }
+.theme-torq .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-outline); }
+.theme-torq .head-filters .year-nav { margin: 0; }
+.theme-torq .head-filters .nav-label { font: 700 .95rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+@media (max-width: 600px) {
+  .theme-torq .head-card { padding: 18px 16px 18px; }
+  .theme-torq .head-card .tile-name { font-size: 2.4rem; }
+  .theme-torq .head-card .tile-tag { font-size: 1.05rem; }
+  .theme-torq .head-card .t-shield { right: 8px; top: -26px; width: 78px; }
+}
+.sg { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+.sg h2 { margin: 36px 0 12px; font: 700 1.1rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+.sg-tokens { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.sg-token { display: flex; gap: 10px; align-items: center; font: .8rem monospace; color: #222; }
+.sg-chip { width: 44px; height: 44px; flex: none; border: 1px solid #0003; display: grid; place-items: center; font-size: .6rem; overflow: hidden; background: var(--v); }
+.sg-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&family=Barlow:wght@400;500;600&display=swap"></head>
+<body><div class="sg"><h1>torq: design language</h1>
+<h2>Tokens</h2><div class="sg-tokens"><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-bg)"></span><span><b>--dl-bg</b><br>#dedede</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card)"></span><span><b>--dl-card</b><br>#ffffff</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-paper)"></span><span><b>--dl-paper</b><br>#ffffff</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-ink)"></span><span><b>--dl-ink</b><br>#111111</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-outline)"></span><span><b>--dl-outline</b><br>#111</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary)"></span><span><b>--dl-primary</b><br>#d9432b</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary-deep)"></span><span><b>--dl-primary-deep</b><br>#a82c17</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent)"></span><span><b>--dl-accent</b><br>#27407a</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent-deep)"></span><span><b>--dl-accent-deep</b><br>#172a58</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent2)"></span><span><b>--dl-accent2</b><br>#f0b429</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-radius)"></span><span><b>--dl-radius</b><br>0</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-border)"></span><span><b>--dl-border</b><br>4px solid #111</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-shadow)"></span><span><b>--dl-shadow</b><br>3px 3px 0 #111</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card-shadow)"></span><span><b>--dl-card-shadow</b><br>8px 8px 0 #111</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-title)">Aa</span><span><b>--dl-font-title</b><br>&quot;Russo One&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-tag)">Aa</span><span><b>--dl-font-tag</b><br>&quot;Barlow Condensed&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-ui)">Aa</span><span><b>--dl-font-ui</b><br>&quot;Barlow Condensed&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-body)">Aa</span><span><b>--dl-font-body</b><br>&quot;Barlow&quot;, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Arial, sans-serif</span></div></div>
+<h2>Fonts</h2><p style="font:700 1.6rem var(--dl-font-title)">--dl-font-title: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-tag)">--dl-font-tag: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-ui)">--dl-font-ui: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-body)">--dl-font-body: Gulf Green 1952 — Fins, chrome &amp; flakes</p>
+<h2>Buttons</h2><div class="sg-row"><nav class="year-nav"><a href="#">1957</a><a href="#">1956</a></nav><div class="year-nav region-switch"><button type="button" aria-pressed="true">EU / CZ</button><button type="button" aria-pressed="false">INT</button></div><a class="to-top" href="#" style="position:static"><svg viewBox="0 0 24 24"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg></a></div>
+<h2>Header card</h2><header class="page-head tile tile--torq head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-shield" viewBox="0 0 100 122" aria-hidden="true">
+  <defs><clipPath id="tile-shield-clip"><path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z"/></clipPath></defs>
+  <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+  <g clip-path="url(#tile-shield-clip)">
+    <rect x="5.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="15.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="25.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="35.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="45.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="55.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="65.0" y="0" width="10.0" height="120" fill="#d9432b"/><rect x="75.0" y="0" width="10.0" height="120" fill="#fff"/><rect x="85.0" y="0" width="10.0" height="120" fill="#d9432b"/>
+    <rect x="0" y="0" width="100" height="46" fill="#27407a"/>
+    <polygon points="24.0,19.0 25.7,23.6 30.7,23.8 26.8,26.9 28.1,31.7 24.0,28.9 19.9,31.7 21.2,26.9 17.3,23.8 22.3,23.6" fill="#fff"/><polygon points="42.0,17.0 43.7,21.6 48.7,21.8 44.8,24.9 46.1,29.7 42.0,26.9 37.9,29.7 39.2,24.9 35.3,21.8 40.3,21.6" fill="#fff"/><polygon points="58.0,17.0 59.7,21.6 64.7,21.8 60.8,24.9 62.1,29.7 58.0,26.9 53.9,29.7 55.2,24.9 51.3,21.8 56.3,21.6" fill="#fff"/><polygon points="76.0,19.0 77.7,23.6 82.7,23.8 78.8,26.9 80.1,31.7 76.0,28.9 71.9,31.7 73.2,26.9 69.3,23.8 74.3,23.6" fill="#fff"/>
+  </g>
+  <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+</svg></div><div class="tile-text"><h1 class="tile-name" style="--n:11"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">S</span><span class="ch" style="--i:1" aria-hidden="true">a</span><span class="ch" style="--i:2" aria-hidden="true">m</span><span class="ch" style="--i:3" aria-hidden="true">p</span><span class="ch" style="--i:4" aria-hidden="true">l</span><span class="ch" style="--i:5" aria-hidden="true">e</span></span> <span class="w"><span class="ch" style="--i:7" aria-hidden="true">N</span><span class="ch" style="--i:8" aria-hidden="true">a</span><span class="ch" style="--i:9" aria-hidden="true">m</span><span class="ch" style="--i:10" aria-hidden="true">e</span></span></h1><p class="tile-tag">Tagline goes here</p><p class="tile-meta">1951-1957 · 65 paint colours</p></div><div class="head-filters"><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#">1957</a></nav></div></header>
+<h2>Table row</h2><div class="paper"><article class="row"><div class="col paint-col">
+      <div class="paint">
+        <div class="swatch big" style="background:#3A5F4B"></div>
+        <div class="meta">
+          <div class="name">Gulf Green</div>
+          <div class="sub">
+            <span class="year">1952</span>
+            · Q-115
+            · ref. 41206
+          </div>
+          <div class="hex">#3A5F4B <span class="rgb">RGB 58,95,75</span></div>
+        </div>
+      </div>
+    </div><div class="col pla-col"><div class="col-label">PLA</div>
+      <div class="filament primary"><a class="pick" href="https://shop.example/p" target="_blank" rel="noopener" data-hex="#3B6A4D" data-name="Brand PLA Forest" data-slug="x" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://shop.example/p">
+        <div class="swatch mini" style="background:#3B6A4D"></div>
+        <div class="finfo">
+          <div class="fname"><strong>Brand</strong><span class="fline">PLA <span class="color">Forest</span></span></div>
+        </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.4</span><span class="fhex">#3B6A4D</span><a class="shop-link" href="https://shop.example/p" target="_blank" rel="noopener">open shop</a></div>
+      </div>
+    </div></article></div>
+</div></body></html>

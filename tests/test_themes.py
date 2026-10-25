@@ -16,5 +16,16 @@ class Tokens(unittest.TestCase):
                 self.assertRegex(css, rf"--dl-{name}:", f"{car} lacks --dl-{name}")
 
 
+class Styleguide(unittest.TestCase):
+    def test_lists_every_token_and_section(self):
+        import build_styleguide
+        for car in CARS:
+            page = build_styleguide.build(car)
+            for name in build_styleguide.tokens_of(car):
+                self.assertIn(name, page)
+            for word in ("Buttons", "Header card", "Table row"):
+                self.assertIn(word, page)
+
+
 if __name__ == "__main__":
     unittest.main()
