@@ -3,7 +3,14 @@
 Reads `hero` from `cars/<car>/car.json`:
     {"photo": "sources/hero.jpg", "mask": "sources/hero_mask.png", "roof": "#ffffff",
      "credit": "...", "credit_url": "..."}
-The mask is an RGB PNG: R = body paint, G = roof paint (0-255 coverage, soft edges).
+The mask is an RGB PNG, one paint area per channel (0-255 coverage, soft edges): R = body, G = roof, B = a third area.
+`zones` (optional) names the areas the page lets the user colour on their own ("slots"):
+    "zones": [{"id": "upper", "label": "Upper body", "channels": [0]},
+              {"id": "lower", "label": "Lower body", "channels": [2]},
+              {"id": "roof",  "label": "Roof",       "channels": [1], "fixed": true}]
+`channels` index the mask's R/G/B; `fixed` keeps the area in the colour `roof` until the user colours it by hand.
+A zone without `label` is never offered as a slot of its own and just follows every pick. Without `zones` the
+car has body (R) and roof (G): the roof is `roof` when set, otherwise it follows the body, and the page offers one colour.
 `roof` is the fixed roof colour; omit it to give the roof the body colour.
 
 `tone` ({"dl": L* shift of the target lightness, "contrast": factor on the body shading}) is taken from
@@ -58,10 +65,15 @@ def main():
 
     assets = base / "hero_assets.json"
     tone = json.loads(assets.read_text(encoding="utf-8")).get("tone") if assets.exists() else None
+    zones = hero.get("zones") or ([{"id": "body", "channels": [0]},
+                                   {"id": "roof", "channels": [1], **({"fixed": True} if hero.get("roof") else {})}])
+    for z in zones:
+        z.setdefault("label", "")
     w = min(MAX_W, photo.width)
     data = {"photo": photo_uri(_resize(photo, w)),
             "mask": mask_uri(_resize(mask, w)),
             "roof": hero.get("roof"),
+            "zones": zones,
             "tone": tone,
             "credit": hero.get("credit", ""),
             "credit_url": hero.get("credit_url", "")}

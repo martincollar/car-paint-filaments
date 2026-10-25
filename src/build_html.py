@@ -177,7 +177,7 @@ HERO_HTML = """
 HERO_JS = """
 <script>
 (function () {
-  var H = __HERO__, TN = H.tone || {}, DL = TN.dl || 0, CS = TN.contrast == null ? 1 : TN.contrast;  // per-car calibration (review_hero.py /calibrate)
+  var H = __HERO__, Z = H.zones, TN = H.tone || {}, DL = TN.dl || 0, CS = TN.contrast == null ? 1 : TN.contrast;  // per-car calibration (review_hero.py /calibrate)
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
       info = document.getElementById('hero-info'), ctx = cv.getContext('2d');
   box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.add('closed'); };
@@ -199,23 +199,26 @@ HERO_JS = """
   }
   function hexRgb(h) { return [1, 3, 5].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
 
-  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [0, 0], Sc = [1, 1], cur = null;
+  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [], Sc = [], sel = null, names = [];
+  function za(i, z) { var a = 0; Z[z].channels.forEach(function (c) { a += mk[4*i+c]; }); return Math.min(1, a / 255); }
   function ready() {
     if (++loaded < 2) return;
     W = cv.width = photo.width; Hh = cv.height = photo.height;
     ctx.drawImage(photo, 0, 0); base = ctx.getImageData(0, 0, W, Hh);
     ctx.clearRect(0, 0, W, Hh); ctx.drawImage(mask, 0, 0); mk = ctx.getImageData(0, 0, W, Hh).data;
-    var n = W * Hh, lab = new Float32Array(n * 3), sum = [0, 0], wt = [0, 0], d = base.data;
+    var n = W * Hh, nz = Z.length, lab = new Float32Array(n * 3), sum = [], wt = [], d = base.data;
+    for (var k0 = 0; k0 < nz; k0++) { sum.push(0); wt.push(0); }
     for (var i = 0; i < n; i++) {
       var c = toLab(d[4*i], d[4*i+1], d[4*i+2]); lab[3*i] = c[0]; lab[3*i+1] = c[1]; lab[3*i+2] = c[2];
-      for (var k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; sum[k] += a * c[0]; wt[k] += a; }
+      if (mk[4*i] | mk[4*i+1] | mk[4*i+2]) for (var k = 0; k < nz; k++) { var a = za(i, k); sum[k] += a * c[0]; wt[k] += a; }
     }
-    L = lab; Lm = [sum[0] / wt[0], sum[1] / wt[1]];
+    L = lab; Lm = sum.map(function (v, k) { return wt[k] > 0 ? v / wt[k] : 50; });
     // Contrast of the body shading differs a lot between photos (flat pastel Doppler vs. hard-lit Torq). Cap it at the
     // same level for every car, otherwise one filament colour looks darker or flatter on some cars than on others.
-    var vr = [0, 0]; for (var j = 0; j < n; j++) for (var q = 0; q < 2; q++) { var aq = mk[4*j+q] / 255, dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
-    Sc = [0, 1].map(function (q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
-    if (cur) paint(cur); else greyed();
+    var vr = Z.map(function () { return 0; });
+    for (var j = 0; j < n; j++) if (mk[4*j] | mk[4*j+1] | mk[4*j+2]) for (var q = 0; q < nz; q++) { var aq = za(j, q), dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
+    Sc = Z.map(function (_, q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
+    if (sel) paint(sel); else greyed();
   }
   photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
 
@@ -233,47 +236,83 @@ HERO_JS = """
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.fillText('?', x, y0 + r * 0.06);
   }
 
-  function render(hex) {
-    var tb = toLab.apply(null, hexRgb(hex)), tr = H.roof ? toLab.apply(null, hexRgb(H.roof)) : tb,
-        out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh;
+  // hx = one hex per zone. A pixel takes the mix of the colours of the zones whose mask covers it, so soft edges
+  // between two zones (upper / lower body) leave no seam of the old paint.
+  function render(hx) {
+    var T = hx.map(function (h) { return h ? toLab.apply(null, hexRgb(h)) : null; }), nz = Z.length,
+        out = ctx.createImageData(W, Hh), o = out.data, d = base.data, n = W * Hh, acc = [0, 0, 0];
     for (var i = 0; i < n; i++) {
-      var ab = mk[4*i] / 255, ar = mk[4*i+1] / 255, r = d[4*i], g = d[4*i+1], b = d[4*i+2];
-      if (ab > 0 || ar > 0) {
-        var kk = ab >= ar ? 0 : 1, t = kk ? tr : tb, a = kk ? ar : ab, t0 = Math.max(0, Math.min(100, t[0] + DL)), dev = (L[3*i] - Lm[kk]) * Sc[kk] * CS;
-        dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[kk])) : Math.min(1, t0 / Lm[kk]);
-        var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
-            X = finv(fx) * WP[0], Y = finv(ly), Z = finv(fz) * WP[2];
-        r = r * (1 - a) + gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z) * a;
-        g = g * (1 - a) + gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z) * a;
-        b = b * (1 - a) + gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z) * a;
+      var r = d[4*i], g = d[4*i+1], b = d[4*i+2];
+      if (mk[4*i] | mk[4*i+1] | mk[4*i+2]) {
+        var sa = 0; acc[0] = acc[1] = acc[2] = 0;
+        for (var z = 0; z < nz; z++) {
+          var a = za(i, z); if (a <= 0 || !T[z]) continue;
+          var t = T[z], t0 = Math.max(0, Math.min(100, t[0] + DL)), dev = (L[3*i] - Lm[z]) * Sc[z] * CS;
+          dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[z])) : Math.min(1, t0 / Lm[z]);
+          var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
+              X = finv(fx) * WP[0], Y = finv(ly), Z3 = finv(fz) * WP[2];
+          acc[0] += a * gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z3);
+          acc[1] += a * gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z3);
+          acc[2] += a * gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z3);
+          sa += a;
+        }
+        if (sa > 0) { var A = Math.min(1, sa); r = r * (1 - A) + acc[0] / sa * A; g = g * (1 - A) + acc[1] / sa * A; b = b * (1 - A) + acc[2] / sa * A; }
       }
       o[4*i] = r; o[4*i+1] = g; o[4*i+2] = b; o[4*i+3] = 255;
     }
     return out;
   }
-  function paint(hex) { ctx.putImageData(render(hex), 0, 0); }
+  function paint(hx) { ctx.putImageData(render(hx), 0, 0); }
+
+  // One colour per zone (slot). A pick without a slot button goes to every zone; zones with `fixed` (Doppler's roof) go back to
+  // their own colour then and only take a filament when its slot button is used.
+  function allHex(hex) { return Z.map(function (z) { return z.fixed ? H.roof : hex; }); }
+  var slots = Z.filter(function (z) { return z.label; });
 
   // Small recoloured copy for the hover bubble: a JPEG data URL per colour, '' until the photo has loaded.
   var small = {}, off = document.createElement('canvas'), tmp = document.createElement('canvas');
   window.heroRender = function (hex) {
     if (loaded < 2) return '';
     if (small[hex]) return small[hex];
-    tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(hex), 0, 0);
+    tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(allHex(hex)), 0, 0);
     off.width = 440; off.height = Math.round(440 * Hh / W);
     off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
     return (small[hex] = off.toDataURL('image/jpeg', 0.85));
   };
+  // "Put on:" buttons for the hover bubble, only for cars with more than one slot.
+  window.heroSlots = function () {
+    if (slots.length < 2) return '';
+    return '<div class="t-slots"><span class="t-slots-l">Put on</span>' + slots.map(function (z) {
+      return '<button type="button" class="t-slot" data-zone="' + z.id + '">' + z.label + '</button>'; }).join('') + '</div>';
+  };
+  function slotsHtml() {
+    if (slots.length < 2 || !sel) return '';
+    return '<div class="hp-slots">' + Z.map(function (z, k) {
+      return z.label ? '<span class="hp-slot"><i style="background:' + (sel[k] || 'transparent') + '"></i>' + z.label +
+        '<small>' + (names[k] || (sel[k] ? 'default' : 'not set')) + '</small></span>' : ''; }).join('') + '</div>';
+  }
 
   var picked = null;
-  function pick(el) {
-    cur = el.dataset.hex; info.innerHTML = window.filInfo(el.dataset);
+  function pick(el, zid) {
+    var d = el.dataset;
+    if (!sel) { sel = allHex(null).map(function (h, k) { return Z[k].fixed ? H.roof : null; }); names = Z.map(function () { return ''; }); }
+    Z.forEach(function (z, k) {
+      if (zid ? z.id === zid : true) {
+        if (!zid && z.fixed) { sel[k] = H.roof; names[k] = ''; } else { sel[k] = d.hex; names[k] = d.name; }
+      }
+    });
+    info.innerHTML = window.filInfo(d) + slotsHtml();
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
     box.classList.remove('closed', 'empty');
     if (loaded < 2) return;
     cv.classList.add('swap');
-    setTimeout(function () { paint(cur); cv.classList.remove('swap'); }, 60);
+    setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.t-slot');
+    if (b) { var el0 = window.tipEl && window.tipEl(); if (el0) pick(el0, b.dataset.zone); }
+  });
   document.addEventListener('click', function (e) {
     var el = e.target.closest && e.target.closest('.pick');
     if (el && !(e.ctrlKey || e.metaKey || e.shiftKey || e.button)) { e.preventDefault(); pick(el); }
@@ -297,6 +336,14 @@ TIP_CSS = """
 .fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
 .fil-tip .t-link, .hero-preview .t-link { font-weight: 600; text-decoration: none; }
 .fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
+.t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
+.t-slots-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 2px; }
+.t-slot { font: inherit; font-size: 0.72rem; padding: 2px 7px; border: 1px solid var(--rule); background: transparent; color: inherit; cursor: pointer; }
+.t-slot:hover, .t-slot:focus-visible { background: var(--rule); }
+.hp-slots { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 6px 0 2px; font-size: 0.7rem; }
+.hp-slot { display: inline-flex; align-items: center; gap: 4px; }
+.hp-slot i { width: 12px; height: 12px; border: 1px solid var(--rule); }
+.hp-slot small { color: var(--muted); font-size: 0.64rem; max-width: 9em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 """
 
 TIP_JS = """
@@ -316,13 +363,14 @@ TIP_JS = """
     clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
     var d = el.dataset, car = window.heroRender ? window.heroRender(d.hex) : '', src = car || T[d.slug],
         img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '';
-    tip.innerHTML = img + window.filInfo(d);
+    tip.innerHTML = img + window.filInfo(d) + (window.heroSlots ? window.heroSlots() : '');
     tip.classList.add('show');
     var r = (el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight,
         x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
         y = r.bottom + 6; if (y + h > innerHeight - 8) y = Math.max(8, r.top - h - 6);
     tip.style.left = x + 'px'; tip.style.top = y + 'px';
   }
+  window.tipEl = function () { return cur; };
   function hide() { timer = setTimeout(function () { tip.classList.remove('show'); cur = null; }, 180); }
   document.addEventListener('mouseover', function (e) {
     var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) show(el);
@@ -350,7 +398,7 @@ def hero_parts(hero):
         return "", "", ""
     html = (HERO_HTML.replace("__CREDIT__", esc(hero.get("credit") or "source"))
                      .replace("__CREDIT_URL__", esc(hero["credit_url"]) if safe_url(hero.get("credit_url", "")) else "#"))
-    js = HERO_JS.replace("__HERO__", json.dumps({k: hero.get(k) for k in ("photo", "mask", "roof")}).replace("</", "<\\/"))
+    js = HERO_JS.replace("__HERO__", json.dumps({k: hero.get(k) for k in ("photo", "mask", "roof", "zones")}).replace("</", "<\\/"))
     return HERO_CSS, html, js
 
 # The floating back-to-top button: position and show/hide are shared, the look is each theme's `.to-top` rule.

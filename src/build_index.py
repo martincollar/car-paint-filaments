@@ -399,12 +399,12 @@ PAGE_JS = """
     }
     t.sh.width = W; t.sh.height = H; t.sh.getContext('2d').putImageData(shade, 0, 0);
     var idx = [], sum = [0, 0], wt = [0, 0], i;
-    for (i = 0; i < n; i++) if (mk[4*i] || mk[4*i+1]) idx.push(i);
+    for (i = 0; i < n; i++) if (mk[4*i] || mk[4*i+1] || mk[4*i+2]) idx.push(i);   // R + B = body (a car may split it into two zones)
     t.idx = Int32Array.from(idx); t.mk = new Float32Array(idx.length * 2); t.lab = new Float32Array(idx.length * 3);
     for (var q = 0; q < idx.length; q++) {
       i = idx[q]; var l = toLab(px[4*i], px[4*i+1], px[4*i+2]);
       t.lab[3*q] = l[0]; t.lab[3*q+1] = l[1]; t.lab[3*q+2] = l[2];
-      for (k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; t.mk[2*q+k] = a; sum[k] += a * l[0]; wt[k] += a; }
+      for (k = 0; k < 2; k++) { var a = (k ? mk[4*i+1] : Math.min(255, mk[4*i] + mk[4*i+2])) / 255; t.mk[2*q+k] = a; sum[k] += a * l[0]; wt[k] += a; }
     }
     t.Lm = [sum[0] / wt[0], sum[1] / wt[1]];
     t.cv.width = W; t.cv.height = H; t.ctx = t.cv.getContext('2d');
