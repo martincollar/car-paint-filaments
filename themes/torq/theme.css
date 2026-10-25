@@ -3,11 +3,11 @@
    Same markup as every theme; the --teal/--orange/--mustard aliases at the bottom of :root
    exist only because the shared recolor-preview CSS reads those names. */
 :root {
-  --red: #d9432b;
-  --red-deep: #a82c17;
+  --red: var(--dl-primary);
+  --red-deep: var(--dl-primary-deep);
   --red-weak: #f7cfc6;
-  --blue: #27407a;
-  --blue-deep: #172a58;
+  --blue: var(--dl-accent);
+  --blue-deep: var(--dl-accent-deep);
   --blue-weak: #d3dbf0;
   --ink: #111111;
   --white: #ffffff;
@@ -23,11 +23,11 @@
   --good: #1f7a45;
   --warn: #8a5a00;
   --bad: #a82c17;
-  --gold: #f0b429;
+  --gold: var(--dl-accent2);
 
   --font-display: "Russo One", "Arial Black", Impact, sans-serif;
   --font-mono:    "Barlow Condensed", "Arial Narrow", sans-serif;
-  --font-body:    "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    var(--dl-font-body);
   --pad: clamp(18px, 3vw, 36px);
   color-scheme: light;
 

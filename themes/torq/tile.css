@@ -1,20 +1,20 @@
 /* Index tile: 1970s shield-and-stripes. Frame hard-edged, shield and car spill over it. */
 .tile--torq { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 20px; font-family: "Barlow", sans-serif; }
-.tile--torq .tile-frame { border: 4px solid #111; border-radius: 0; box-shadow: 8px 8px 0 #111;
-  background: #eeeeef; }   /* light grey */
+.tile--torq .tile-frame { border: 4px solid var(--dl-outline); border-radius: 0; box-shadow: 8px 8px 0 var(--dl-outline);
+  background: var(--dl-bg); }
 .tile--torq .tile-frame::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 22px;
-  background: repeating-linear-gradient(90deg, #d9432b 0 28px, #fff 28px 56px); border-bottom: 4px solid #111; }
+  background: repeating-linear-gradient(90deg, var(--dl-primary) 0 28px, var(--dl-paper) 28px 56px); border-bottom: 4px solid var(--dl-outline); }
 .tile--torq .tile-text { padding-top: 26px; max-width: none; }
-.tile--torq .tile-name { font-family: "Russo One", sans-serif; text-transform: uppercase; font-size: 3rem; line-height: 1;
-  letter-spacing: .01em; color: #fff; -webkit-text-stroke: 2px #111; paint-order: stroke fill; text-shadow: 3px 3px 0 #111; }
-.tile--torq .tile-tag { display: inline-block; margin-top: 12px; padding: 4px 22px 4px 14px; background: #111; color: #fff;
-  font: italic 700 1.2rem "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .05em;
+.tile--torq .tile-name { font-family: var(--dl-font-title); text-transform: uppercase; font-size: 3rem; line-height: 1;
+  letter-spacing: .01em; color: var(--dl-paper); -webkit-text-stroke: 2px var(--dl-outline); paint-order: stroke fill; text-shadow: 3px 3px 0 var(--dl-outline); }
+.tile--torq .tile-tag { display: inline-block; margin-top: 12px; padding: 4px 22px 4px 14px; background: var(--dl-outline); color: var(--dl-paper);
+  font: italic 700 1.2rem var(--dl-font-tag); text-transform: uppercase; letter-spacing: .05em;
   clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%); }
-.tile--torq .tile-meta { font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #444; }
-.tile--torq .tile-label { font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .04em; color: #333; }
-.tile--torq .tile-open { font-family: "Russo One", sans-serif; text-transform: uppercase; font-size: .8rem; border-radius: 0;
-  border: 3px solid #111; background: #d9432b; color: #fff; box-shadow: 3px 3px 0 #111; letter-spacing: .03em; }
-.tile--torq .tile-open:hover, .tile--torq .tile-open:focus-visible { background: #27407a; color: #fff; }
+.tile--torq .tile-meta { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .06em; color: #444; }
+.tile--torq .tile-label { font-family: var(--dl-font-tag); text-transform: uppercase; letter-spacing: .04em; color: #333; }
+.tile--torq .tile-open { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-primary); color: var(--dl-paper); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-open:hover, .tile--torq .tile-open:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
 .tile--torq .t-shield { position: absolute; right: -26px; top: -34px; width: 118px; transform: rotate(7deg);
   filter: drop-shadow(4px 4px 0 rgba(17,17,17,.35)); }
 @media (max-width: 520px) {
@@ -23,6 +23,6 @@
   .tile--torq .t-shield { width: 88px; right: -14px; top: -28px; }
   }
 .tile--torq .tile-label { opacity: .6; }
-.tile--torq .tile-buy { font-family: "Russo One", sans-serif; text-transform: uppercase; font-size: .8rem; border-radius: 0;
-  border: 3px solid #111; background: #fff; color: #111; box-shadow: 3px 3px 0 #111; letter-spacing: .03em; }
-.tile--torq .tile-buy:hover, .tile--torq .tile-buy:focus-visible { background: #27407a; color: #fff; }
+.tile--torq .tile-buy { font-family: var(--dl-font-title); text-transform: uppercase; font-size: .8rem; border-radius: 0;
+  border: 3px solid var(--dl-outline); background: var(--dl-paper); color: var(--dl-outline); box-shadow: 3px 3px 0 var(--dl-outline); letter-spacing: .03em; }
+.tile--torq .tile-buy:hover, .tile--torq .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }

@@ -1,0 +1,22 @@
+/* Torq design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
+.theme-torq, .tile--torq {
+  --dl-bg: #dedede;
+  --dl-card: #ffffff;
+  --dl-paper: #ffffff;
+  --dl-ink: #111111;
+  --dl-outline: #111;
+  --dl-primary: #d9432b;
+  --dl-primary-deep: #a82c17;
+  --dl-accent: #27407a;
+  --dl-accent-deep: #172a58;
+  --dl-accent2: #f0b429;
+  --dl-radius: 0;
+  --dl-border: 4px solid #111;
+  --dl-shadow: 3px 3px 0 #111;      /* button / small shadow */
+  --dl-card-shadow: 8px 8px 0 #111; /* big card shadow */
+  --dl-font-title: "Russo One", sans-serif;
+  --dl-font-tag: "Barlow Condensed", sans-serif;
+  --dl-font-ui: "Barlow Condensed", sans-serif;
+  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}

@@ -477,7 +477,7 @@ PAGE_JS = """
 def page(cars):
     themes = sorted({c["theme"] for c in cars})
     fonts = fonts_href(themes)
-    css = PAGE_CSS.replace("__BASE__", TILE_BASE_CSS) +"".join(theme_file(t, "tile.css") for t in themes) + offsets_css(themes)
+    css = PAGE_CSS.replace("__BASE__", TILE_BASE_CSS) + "".join(theme_file(t, "tokens.css") + theme_file(t, "tile.css") for t in themes) + offsets_css(themes)
     # the footer names the photographer/brand once ("3D Sets"), not every model ("3D Sets Model 19 Torq")
     def brand(c):
         url = urlsplit(c["hero"].get("credit_url") or "")

@@ -1,24 +1,24 @@
 /* Doppler theme: mid-century reproduction of a factory color-chip card.
    Cream paper ground, bottle-teal + sunburst-orange + mustard accents, slab serif display. */
 :root {
-  --bg: #fefaeb;
+  --bg: var(--dl-bg);
   --bg-paper: #fffdf4;
-  --bg-raised: #fffffb;
+  --bg-raised: var(--dl-card);
   --fg: #2d2217;
   --muted: #7a6a53;
   --rule: #d7c7a3;
   --rule-soft: #e7d8b4;
 
-  --teal: #0f8f8a;         /* tortoise / bottle teal (hero sign) */
-  --teal-deep: #0a6361;
+  --teal: var(--dl-primary);         /* tortoise / bottle teal (hero sign) */
+  --teal-deep: var(--dl-primary-deep);
   --teal-weak: #c7e7e5;
-  --orange: #e36b2a;       /* sunburst orange */
-  --orange-deep: #b24a12;
+  --orange: var(--dl-accent);       /* sunburst orange */
+  --orange-deep: var(--dl-accent-deep);
   --orange-weak: #ffd6b5;
-  --mustard: #e9a73a;      /* banana-split mustard */
+  --mustard: var(--dl-accent2);      /* banana-split mustard */
   --mustard-weak: #f6dca2;
   --cherry: #c73932;       /* '53 lipstick red */
-  --navy: #27394e;         /* 1952 Broadway Blue */
+  --navy: var(--dl-ink);         /* 1952 Broadway Blue */
 
   --good: #2b7a4b;
   --warn: #a56114;
@@ -28,7 +28,7 @@
   --font-script:  "Yesteryear", "Pacifico", cursive;
   --font-mono:    "Space Mono", ui-monospace, "SF Mono", Menlo, monospace;
   color-scheme: light;
-  --font-body:    "Fraunces", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-body:    var(--dl-font-body);
 }
 body {
   background: var(--bg);

@@ -1,0 +1,21 @@
+/* Doppler design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = main shape/button colour, accent = second colour (ribbon, hover), accent2 = trim. */
+.theme-doppler, .tile--doppler {
+  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner */
+  --dl-card: #fffffb;          /* raised surface */
+  --dl-paper: #fffdf4;         /* text on colour, outlines */
+  --dl-ink: #1d4a52;
+  --dl-outline: #111;          /* hard black shadows */
+  --dl-primary: #2f8f8a;
+  --dl-primary-deep: #0a6361;
+  --dl-accent: #d2452f;
+  --dl-accent-deep: #8e2a1a;
+  --dl-accent2: #e9a73a;
+  --dl-radius: 22px;
+  --dl-border: 3px solid #0a6361;
+  --dl-shadow: 0 3px 0 #0a6361;     /* button foot */
+  --dl-font-title: "Lobster Two", cursive;
+  --dl-font-tag: "Barlow Condensed", sans-serif;
+  --dl-font-ui: "Oswald", sans-serif;
+  --dl-font-body: "Fraunces", "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
