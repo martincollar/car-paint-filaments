@@ -2,8 +2,8 @@
   "name": "bamboo",
   "display": "3D Sets Bamboo",
   "script_tagline": "Mud, Teak & Chrome",
-  "subtitle_source": "Factory paint sheets (1966-1977)",
-  "years": [1977, 1976, 1975, 1974, 1973, 1972, 1971, 1970, 1969, 1968, 1967, 1966],
+  "subtitle_source": "Factory paint sheets and colour chart (1966-1983)",
+  "years": [1983, 1982, 1981, 1980, 1979, 1978, 1977, 1976, 1975, 1974, 1973, 1972, 1971, 1970, 1969, 1968, 1967, 1966],
   "pages_per_year": {
     "1964": 2, "1965": 2, "1966": 3, "1967": 3, "1968": 5,
     "1969": 17, "1970": 17, "1971": 17, "1972": 19, "1973": 18,
@@ -15,7 +15,9 @@
   "notes": [
     "Cards cover each year's full line; only the chips of the 4x4 utility model are picked by hand in card_layout.json. Several sheets are byte-identical across years, so a chip is sampled once from the clearest sheet and repeated for every year it was offered (carried_over_from).",
     "1966-72 colours and years come from the card's own model table for these years (sources/1966-bamboo-pg03.jpg); card spellings are used for names (the table misspells Cygnus, Muleta, Appenino).",
-    "1973-77 years and the colours 304, 541, 031, 632, 637, 854, 1654 come from a community chart (importarchive.com, IH8MUD), not from the maker: treat as less certain until checked against real-car photos.",
-    "1964-65 cards are used only as chip sources (T-451, T-452, T-1028, T-1208); the card has no model year table for 1964-65."
+    "1973-77 years and the colours 304, 541, 031, 632, 637, 854, 1654 come from a community chart (importarchive.com, IH8MUD), not from the maker. chart.json holds that chart (colours, years, example-photo links) in full.",
+    "The colours were reviewed one by one against the chart, the card chips and real-car photos (colour_decisions.json holds the picks). Most picks are the chart's own flat colour; where a swatch has a chip, the card scan is kept as measured_hex.",
+    "The card library ends in 1977: the 1978-83 years and the colours 033, 464, 532, 653, 681, 6L4, 857 come from the chart alone (no chip on any card), so their swatches are hex-only rows in card_layout.json (card_file empty).",
+    "1964-65 cards are used only as chip sources (T-451, T-452, T-453, T-1028, T-1208); the card has no model year table for 1964-65."
   ]
 }
