@@ -113,7 +113,9 @@ def named_palette(matches, paints, combinations=None):
             if combo is None:
                 raise ValueError(f"combination {entry['combo']!r} not in combinations.json")
             (up, upc), (lo, loc) = best_pla(matches, combo["upper"]), best_pla(matches, combo["lower"])
-            out.append({"hex": up["hex"].upper(), "lower": lo["hex"].upper(), "code": combo["code"],
+            upx, lox = up["hex"].upper(), lo["hex"].upper()
+            roof = {"upper": upx, "lower": lox, "white": "#F2F2F2"}.get(entry.get("roof"), entry.get("roof"))
+            out.append({"hex": upx, "lower": lox, "roof": roof, "code": combo["code"],
                         "label": f'{up["brand"]} {up["color_name"]} / {lo["brand"]} {lo["color_name"]}',
                         "paint": f'{upc["name"]} over {loc["name"]}', "year": upc.get("year")})
             continue
@@ -434,16 +436,16 @@ PAGE_JS = """
     t.Lm = [0, 1, 2].map(function (z) { return wt[z] ? sum[z] / wt[z] : 50; });
     t.cv.width = W; t.cv.height = H; t.ctx = t.cv.getContext('2d');
     t.show(0, true); t.el.classList.add('ready');
-    var q2 = 1, step = function () { if (q2 < car_n(t)) { t.render(t.car.palette[q2].hex, t.car.palette[q2++].lower); setTimeout(step, 30); } };
+    var q2 = 1, step = function () { if (q2 < car_n(t)) { t.render(t.car.palette[q2].hex, t.car.palette[q2].lower, t.car.palette[q2++].roof); setTimeout(step, 30); } };
     setTimeout(step, 60);
     t.bind();
   };
   function car_n(t) { return t.car.palette.length; }
-  Tile.prototype.render = function (hex, lower) {
-    var t = this, key = hex + '/' + (lower || ''), c = t.cache[key]; if (c) return c;
+  Tile.prototype.render = function (hex, lower, roof) {
+    var t = this, key = hex + '/' + (lower || '') + '/' + (roof || ''), c = t.cache[key]; if (c) return c;
     var o = new ImageData(new Uint8ClampedArray(t.base.data), t.W, t.H), px = o.data, src = t.base.data,
         tu = toLab.apply(null, hexRgb(hex)), tl = lower ? toLab.apply(null, hexRgb(lower)) : tu,
-        tr = t.car.roofUpper || !t.car.hero.roof ? tu : toLab.apply(null, hexRgb(t.car.hero.roof)), tz = [tu, tr, tl];
+        tr = roof ? toLab.apply(null, hexRgb(roof)) : t.car.roofUpper || !t.car.hero.roof ? tu : toLab.apply(null, hexRgb(t.car.hero.roof)), tz = [tu, tr, tl];
     for (var q = 0; q < t.idx.length; q++) {
       var i = t.idx[q], m = t.mk, kk = m[3*q+1] > m[3*q] ? 1 : 0;      // the zone that covers the pixel most
       if (m[3*q+2] > m[3*q+kk]) kk = 2;
@@ -459,7 +461,7 @@ PAGE_JS = """
     return (t.cache[key] = c);
   };
   Tile.prototype.show = function (i, now) {
-    var t = this, p = t.car.palette[i], to = t.render(p.hex, p.lower), from = t.cur;
+    var t = this, p = t.car.palette[i], to = t.render(p.hex, p.lower, p.roof), from = t.cur;
     t.i = i; t.el.style.setProperty('--tile-colour', p.hex); t.label.textContent = p.label; t.cur = to;
     cancelAnimationFrame(t.anim);
     if (now || !from || calm) { t.ctx.clearRect(0, 0, t.W, t.H); t.ctx.globalAlpha = 1; t.ctx.drawImage(to, 0, 0); return; }
