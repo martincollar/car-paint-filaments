@@ -82,26 +82,42 @@ def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, 
     return out
 
 
-def named_palette(matches, paints):
+def best_pla(matches, entry):
+    """(candidate, colour) of the best PLA filament for a paint name; a trailing year ("Lemon Twist 1973") picks one
+    chip when the same name was used in several years, without a year the chip whose PLA match is closest wins."""
+    m = re.match(r"^(.*?)(?:\s+(\d{4}))?$", entry.strip())
+    name, year = m.group(1).lower(), m.group(2)
+    best = None
+    for colours in matches.values():
+        for colour in colours:
+            if colour["name"].lower() != name or (year and str(colour.get("year")) != year):
+                continue
+            for cand in colour.get("pla", []):
+                if best is None or rank(cand, colour) < rank(best[0], best[1]):
+                    best = (cand, colour)
+    if best is None:
+        known = sorted({c["name"] for cs in matches.values() for c in cs})
+        raise ValueError(f"paint {entry!r} has no PLA match in the car's data (names: {', '.join(known)})")
+    return best
+
+
+def named_palette(matches, paints, combinations=None):
     """[{hex, label, paint, year}] in the order of `paints`: for every paint name its best PLA filament.
-    A name may carry a year ("Lemon Twist 1973") to pick one chip when the same name was used in several years;
-    without a year the chip whose PLA match is closest wins."""
+    An entry {"combo": "RQ-144"} is a factory two-tone from the car's combinations.json: `hex` is the upper colour's
+    filament, `lower` the lower one's."""
     out = []
     for entry in paints:
-        m = re.match(r"^(.*?)(?:\s+(\d{4}))?$", entry.strip())
-        name, year = m.group(1).lower(), m.group(2)
-        best = None
-        for colours in matches.values():
-            for colour in colours:
-                if colour["name"].lower() != name or (year and str(colour.get("year")) != year):
-                    continue
-                for cand in colour.get("pla", []):
-                    if best is None or rank(cand, colour) < rank(best[0], best[1]):
-                        best = (cand, colour)
-        if best is None:
-            known = sorted({c["name"] for cs in matches.values() for c in cs})
-            raise ValueError(f"paint {entry!r} has no PLA match in the car's data (names: {', '.join(known)})")
-        cand, colour = best
+        if isinstance(entry, dict):
+            combo = next((c for y in (combinations or {}).get("years", {}).values() for c in y["combinations"]
+                          if c["code"] == entry["combo"]), None)
+            if combo is None:
+                raise ValueError(f"combination {entry['combo']!r} not in combinations.json")
+            (up, upc), (lo, loc) = best_pla(matches, combo["upper"]), best_pla(matches, combo["lower"])
+            out.append({"hex": up["hex"].upper(), "lower": lo["hex"].upper(), "code": combo["code"],
+                        "label": f'{up["brand"]} {up["color_name"]} / {lo["brand"]} {lo["color_name"]}',
+                        "paint": f'{upc["name"]} over {loc["name"]}', "year": upc.get("year")})
+            continue
+        cand, colour = best_pla(matches, entry)
         out.append({"hex": cand["hex"].upper(), "label": f'{cand["brand"]} {cand["color_name"]}',
                     "paint": colour["name"], "year": colour.get("year")})
     return out
@@ -219,6 +235,8 @@ def collect_car(car):
     manual_path = config.car_sources(car) / "hero_cut.png"     # optional hand-made mask, white = car
     cut, fg = silhouette(hero["photo"], Image.open(manual_path) if manual_path.exists() else None)
     primary = (meta.get("index") or {}).get("color")
+    comb_path = config.car_dir(car) / "combinations.json"
+    combinations = json.loads(comb_path.read_text(encoding="utf-8")) if comb_path.exists() else None
     theme = meta.get("theme") or "doppler"
     return {
         "slug": car,
@@ -227,11 +245,12 @@ def collect_car(car):
         "years": year_span(meta.get("years") or []),
         "colours": len(next(iter(matches.values()), [])),
         "theme": theme,
-        "palette": (named_palette(matches, meta["index"]["paints"]) if (meta.get("index") or {}).get("paints")
+        "palette": (named_palette(matches, meta["index"]["paints"], combinations) if (meta.get("index") or {}).get("paints")
                     else pick_palette(matches, primary)),
         "hero": hero,
         "cut": cut,
         "fg": fg,
+        "shuffle": bool((meta.get("index") or {}).get("shuffle")),
         "order": meta.get("index", {}).get("order", 100),
         "buy_url": (meta.get("index") or {}).get("buy_url") or "",
     }
@@ -376,6 +395,11 @@ PAGE_JS = """
 
   function Tile(el, car) {
     var t = this; t.el = el; t.car = car; t.i = 0; t.cache = {}; t.timer = 0; t.anim = 0; t.cur = null;
+    if (car.shuffle) {       // new hover order on every visit; the resting colour (first) stays
+      var pal = car.palette.slice(1), j, r, tmp;
+      for (j = pal.length - 1; j > 0; j--) { r = Math.floor(Math.random() * (j + 1)); tmp = pal[j]; pal[j] = pal[r]; pal[r] = tmp; }
+      car.palette = [car.palette[0]].concat(pal);
+    }
     t.cv = el.querySelector('.tile-canvas'); t.sh = el.querySelector('.tile-shade'); 
     t.label = el.querySelector('.tile-label');
     t.photo = el.querySelector('.tile-photo');
@@ -398,29 +422,31 @@ PAGE_JS = """
       sp[j + 3] = 255;
     }
     t.sh.width = W; t.sh.height = H; t.sh.getContext('2d').putImageData(shade, 0, 0);
-    var idx = [], sum = [0, 0], wt = [0, 0], i;
-    for (i = 0; i < n; i++) if (mk[4*i] || mk[4*i+1] || mk[4*i+2]) idx.push(i);   // R + B = body (a car may split it into two zones)
-    t.idx = Int32Array.from(idx); t.mk = new Float32Array(idx.length * 2); t.lab = new Float32Array(idx.length * 3);
+    var idx = [], sum = [0, 0, 0], wt = [0, 0, 0], i;
+    for (i = 0; i < n; i++) if (mk[4*i] || mk[4*i+1] || mk[4*i+2]) idx.push(i);   // R = upper body, G = roof, B = lower body
+    t.idx = Int32Array.from(idx); t.mk = new Float32Array(idx.length * 3); t.lab = new Float32Array(idx.length * 3);
     for (var q = 0; q < idx.length; q++) {
       i = idx[q]; var l = toLab(px[4*i], px[4*i+1], px[4*i+2]);
       t.lab[3*q] = l[0]; t.lab[3*q+1] = l[1]; t.lab[3*q+2] = l[2];
-      for (k = 0; k < 2; k++) { var a = (k ? mk[4*i+1] : Math.min(255, mk[4*i] + mk[4*i+2])) / 255; t.mk[2*q+k] = a; sum[k] += a * l[0]; wt[k] += a; }
+      for (k = 0; k < 3; k++) { var a = mk[4*i+k] / 255; t.mk[3*q+k] = a; sum[k] += a * l[0]; wt[k] += a; }
     }
-    t.Lm = [sum[0] / wt[0], sum[1] / wt[1]];
+    t.Lm = [0, 1, 2].map(function (z) { return wt[z] ? sum[z] / wt[z] : 50; });
     t.cv.width = W; t.cv.height = H; t.ctx = t.cv.getContext('2d');
     t.show(0, true); t.el.classList.add('ready');
-    var q2 = 1, step = function () { if (q2 < car_n(t)) { t.render(t.car.palette[q2++].hex); setTimeout(step, 30); } };
+    var q2 = 1, step = function () { if (q2 < car_n(t)) { t.render(t.car.palette[q2].hex, t.car.palette[q2++].lower); setTimeout(step, 30); } };
     setTimeout(step, 60);
     t.bind();
   };
   function car_n(t) { return t.car.palette.length; }
-  Tile.prototype.render = function (hex) {
-    var t = this, c = t.cache[hex]; if (c) return c;
+  Tile.prototype.render = function (hex, lower) {
+    var t = this, key = hex + '/' + (lower || ''), c = t.cache[key]; if (c) return c;
     var o = new ImageData(new Uint8ClampedArray(t.base.data), t.W, t.H), px = o.data, src = t.base.data,
-        tb = toLab.apply(null, hexRgb(hex)), tr = t.car.hero.roof ? toLab.apply(null, hexRgb(t.car.hero.roof)) : tb;
+        tu = toLab.apply(null, hexRgb(hex)), tl = lower ? toLab.apply(null, hexRgb(lower)) : tu,
+        tr = t.car.hero.roof ? toLab.apply(null, hexRgb(t.car.hero.roof)) : tu, tz = [tu, tr, tl];
     for (var q = 0; q < t.idx.length; q++) {
-      var i = t.idx[q], ab = t.mk[2*q], ar = t.mk[2*q+1], kk = ab >= ar ? 0 : 1, tg = kk ? tr : tb, a = kk ? ar : ab,
-          dev = t.lab[3*q] - t.Lm[kk];
+      var i = t.idx[q], m = t.mk, kk = m[3*q+1] > m[3*q] ? 1 : 0;      // the zone that covers the pixel most
+      if (m[3*q+2] > m[3*q+kk]) kk = 2;
+      var tg = tz[kk], a = m[3*q+kk], dev = t.lab[3*q] - t.Lm[kk];
       dev *= dev > 0 ? Math.min(1, (100 - tg[0]) / (100 - t.Lm[kk])) : Math.min(1, tg[0] / t.Lm[kk]);
       var ly = (Math.max(0, Math.min(100, tg[0] + dev)) + 16) / 116, fx = ly + tg[1] / 500, fz = ly - tg[2] / 200,
           X = finv(fx) * WP[0], Y = finv(ly), Z = finv(fz) * WP[2];
@@ -429,10 +455,10 @@ PAGE_JS = """
       px[4*i+2] = src[4*i+2] * (1 - a) + gam(Mi[2][0]*X + Mi[2][1]*Y + Mi[2][2]*Z) * a;
     }
     c = document.createElement('canvas'); c.width = t.W; c.height = t.H; c.getContext('2d').putImageData(o, 0, 0);
-    return (t.cache[hex] = c);
+    return (t.cache[key] = c);
   };
   Tile.prototype.show = function (i, now) {
-    var t = this, p = t.car.palette[i], to = t.render(p.hex), from = t.cur;
+    var t = this, p = t.car.palette[i], to = t.render(p.hex, p.lower), from = t.cur;
     t.i = i; t.el.style.setProperty('--tile-colour', p.hex); t.label.textContent = p.label; t.cur = to;
     cancelAnimationFrame(t.anim);
     if (now || !from || calm) { t.ctx.clearRect(0, 0, t.W, t.H); t.ctx.globalAlpha = 1; t.ctx.drawImage(to, 0, 0); return; }
@@ -485,7 +511,7 @@ def page(cars):
     credits = sorted({brand(c) for c in cars})
     credit_html = ", ".join(
         f'<a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n)}</a>' for n, u in credits if n and u)
-    js_cars = {c["slug"]: {"slug": c["slug"], "palette": c["palette"],
+    js_cars = {c["slug"]: {"slug": c["slug"], "palette": c["palette"], "shuffle": c["shuffle"],
                            "hero": {"mask": c["hero"]["mask"], "roof": c["hero"].get("roof"), "cut": c["cut"], "fg": c["fg"]}} for c in cars}
     js = PAGE_JS.replace("__CARS__", json.dumps(js_cars, separators=(",", ":")).replace("</", "<\\/"))
     font_link = f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{fonts}">' if fonts else ""
