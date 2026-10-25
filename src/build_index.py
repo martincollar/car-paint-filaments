@@ -311,7 +311,7 @@ a { color: inherit; }
 .wm-slab::after { content: ""; position: absolute; left: 0; right: .07em; bottom: 0; height: 10px;
                   background: linear-gradient(var(--ink) 0 5px, transparent 5px 7px, var(--ink) 7px 9px); }
 .site-head p { margin: 0 0 0 auto; color: var(--muted); max-width: 46ch; }
-main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 112px 76px;
+main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 64px 76px;
        grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); }
 .site-foot { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
              display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }
@@ -347,7 +347,7 @@ __BASE__
 .tile-name a:focus-visible { outline: 3px solid #2563eb; outline-offset: 6px; }
 @media (max-width: 520px) {
   .site-head, .site-foot { padding-left: 26px; padding-right: 26px; }
-  main { padding-left: 26px; padding-right: 26px; gap: 96px; }
+  main { padding-left: 26px; padding-right: 26px; gap: 54px; }
   .tile { padding: 18px 18px 16px; --stage-w: 108%; --stage-left: -4%; }
   .tile-name { font-size: 1.45rem; }
   .tile-foot { padding-top: 175px; }
