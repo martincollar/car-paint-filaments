@@ -523,7 +523,7 @@ def page(cars):
 </head>
 <body>
 <header class="site-head">
-  {WORDMARK_HTML if SHOW_WORDMARK else "<h1>Car paint filaments</h1>"}
+  {WORDMARK_HTML if SHOW_WORDMARK else ""}
   <p>Original paint colours of classic cars, matched to the closest PLA, PETG and ASA filaments. Pick a car, then a filament.</p>
 </header>
 <main>{"".join(tile_html(c) for c in cars)}
