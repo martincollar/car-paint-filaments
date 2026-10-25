@@ -232,6 +232,7 @@ def collect_car(car):
         "cut": cut,
         "fg": fg,
         "order": meta.get("index", {}).get("order", 100),
+        "buy_url": (meta.get("index") or {}).get("buy_url") or "",
     }
 
 
@@ -272,6 +273,8 @@ def tile_html(c):
     meta = " · ".join(x for x in (c["years"], f'{c["colours"]} paint colours') if x)
     name_html, name_len = split_name(c["display"])
     tagline = f'<p class="tile-tag">{esc(c["tagline"])}</p>' if c["tagline"] else ""
+    buy = (f'\n    <a class="tile-buy" href="{esc(c["buy_url"])}" target="_blank" rel="noopener">Buy files</a>'
+           if c["buy_url"] else "")
     return f"""
 <article class="tile tile--{esc(c['theme'])}" data-car="{esc(c['slug'])}" style="--tile-colour:{first['hex']}">
   <div class="tile-frame"></div>
@@ -288,7 +291,7 @@ def tile_html(c):
   </div>
   <div class="tile-foot">
     <span class="tile-label">{esc(first['label'])}</span>
-    <a class="tile-open" href="{esc(c['slug'])}/">Pick a filament &rarr;</a>
+    <a class="tile-open" href="{esc(c['slug'])}/">Pick a filament &rarr;</a>{buy}
   </div>
 </article>"""
 
@@ -336,10 +339,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
 .tile-foot { position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto;
              padding-top: 202px; }
-.tile-label { font-size: .85rem; color: var(--muted); min-height: 1.3em; flex: 1 1 8ch; min-width: 0; }
+.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0; }
 .tile-open { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
              border: 2px solid var(--ink); border-radius: 999px; background: var(--tile); white-space: nowrap; }
 .tile-open:hover, .tile-open:focus-visible { background: var(--ink); color: var(--tile); }
+.tile-buy { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
+            border: 2px solid var(--ink); border-radius: 999px; background: transparent; white-space: nowrap; }
+.tile-buy:hover, .tile-buy:focus-visible { background: var(--ink); color: var(--tile); }
 .tile-name a:focus-visible { outline: 3px solid #2563eb; outline-offset: 6px; }
 @media (max-width: 520px) {
   .site-head, .site-foot { padding-left: 26px; padding-right: 26px; }

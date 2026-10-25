@@ -36,3 +36,7 @@
   .tile--doppler .tile-meta { margin-left: 46px; }
   .tile--doppler .t-star-1 { width: 100px; right: -18px; top: -40px; }
 }
+.tile--doppler .tile-label { opacity: .6; }
+.tile--doppler .tile-buy { font: 600 .9rem "Oswald", sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #0a6361;
+  background: #fffdf4; border: 2px solid #0a6361; border-radius: 999px; box-shadow: 0 3px 0 #0a6361; }
+.tile--doppler .tile-buy:hover, .tile--doppler .tile-buy:focus-visible { background: #d2452f; border-color: #8e2a1a; box-shadow: 0 3px 0 #8e2a1a; color: #fffdf4; }
