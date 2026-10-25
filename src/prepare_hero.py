@@ -9,6 +9,8 @@ The mask is an RGB PNG, one paint area per channel (0-255 coverage, soft edges):
               {"id": "lower", "label": "Lower body", "channels": [2]},
               {"id": "roof",  "label": "Roof",       "channels": [1], "fixed": true}]
 `channels` index the mask's R/G/B; `fixed` keeps the area in the colour `roof` until the user colours it by hand.
+Optional per zone: `dl` (shift of the painted lightness, L* points) and `contrast` (factor on the photo's shading inside the zone,
+1 = as photographed), for an area that reads too dark or too flat (Doppler's roof).
 A zone without `label` is never offered as a slot of its own and just follows every pick. Without `zones` the
 car has body (R) and roof (G): the roof is `roof` when set, otherwise it follows the body, and the page offers one colour.
 `roof` is the fixed roof colour; omit it to give the roof the body colour.

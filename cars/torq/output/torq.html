@@ -22829,7 +22829,7 @@ article.row.combo-out { display: none; }
         var sa = 0; acc[0] = acc[1] = acc[2] = 0;
         for (var z = 0; z < nz; z++) {
           var a = za(i, z); if (a <= 0 || !T[z]) continue;
-          var t = T[z], t0 = Math.max(0, Math.min(100, t[0] + DL)), dev = (L[3*i] - Lm[z]) * Sc[z] * CS;
+          var t = T[z], zc = Z[z], t0 = Math.max(0, Math.min(100, t[0] + DL + (zc.dl || 0))), dev = (L[3*i] - Lm[z]) * Sc[z] * CS * (zc.contrast == null ? 1 : zc.contrast);
           dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[z])) : Math.min(1, t0 / Lm[z]);
           var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
               X = finv(fx) * WP[0], Y = finv(ly), Z3 = finv(fz) * WP[2];
