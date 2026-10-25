@@ -67,10 +67,6 @@
     "hex": "#E4BF7A",
     "note": "Aurapol photo: the honeycomb 'A' stand and black spool pull the measurement darker (#B4A57B). Hex = median of the lit half of a crop of the winding (photo is labelled RAL 1001)."
   },
-  "filament-aurapol-pla-soft-linen-1-75-mm-1-kg": {
-    "hex": "#E4BF7A",
-    "note": "Aurapol photo: the honeycomb 'A' stand and black spool pull the measurement darker (#B4A57B). Hex = median of the lit half of a crop of the winding (photo is labelled RAL 1001)."
-  },
   "prusament-pla-noctua-beige": {
     "hex": "#D2B79D",
     "note": "Product photo shows a Noctua fan in the same colours next to the spool (Prusa's page has no other photo), so the measurement mixed in the fan. Hex = median of the lit half of a crop of the winding."
@@ -80,10 +76,6 @@
     "note": "Product photo shows a Noctua fan in the same colours next to the spool (Prusa's page has no other photo), so the measurement mixed in the fan. Hex = median of the lit half of a crop of the winding."
   },
   "aurapol-pla-3d-filament-marble-1-kg-1-75-mm": {
-    "hex": "#B2B6AB",
-    "note": "Aurapol photo: black spool + grey 'A' stand dominate, and the brand's min_chroma hint lands on the blue label sticker instead. Hex = median of the lit half of a crop of the winding (the render shows it light grey)."
-  },
-  "filament-aurapol-pla-mramor-1-75-mm-1-kg": {
     "hex": "#B2B6AB",
     "note": "Aurapol photo: black spool + grey 'A' stand dominate, and the brand's min_chroma hint lands on the blue label sticker instead. Hex = median of the lit half of a crop of the winding (the render shows it light grey)."
   },
@@ -99,15 +91,7 @@
     "hex": "#DBCDCB",
     "note": "Aurapol photo: pastel winding (saturation ~0.09) loses to the black spool and labels even with the brand's min_chroma hint. Hex = median of the lit half of a crop of the winding."
   },
-  "filament-aurapol-pla-light-blush-1-75-mm-1-kg": {
-    "hex": "#DBCDCB",
-    "note": "Aurapol photo: pastel winding (saturation ~0.09) loses to the black spool and labels even with the brand's min_chroma hint. Hex = median of the lit half of a crop of the winding."
-  },
   "aurapol-pla-3d-filament-lilac-lily-1-kg-1-75-mm": {
-    "hex": "#C0B7C1",
-    "note": "Aurapol photo: pastel winding (saturation ~0.09) loses to the black spool and labels even with the brand's min_chroma hint. Hex = median of the lit half of a crop of the winding."
-  },
-  "filament-aurapol-pla-lilac-lily-1-75-mm-1-kg": {
     "hex": "#C0B7C1",
     "note": "Aurapol photo: pastel winding (saturation ~0.09) loses to the black spool and labels even with the brand's min_chroma hint. Hex = median of the lit half of a crop of the winding."
   },
@@ -223,10 +207,6 @@
     "hex": "#81634E",
     "note": "Hex = median of a box sampled by hand on the review page. this is too light"
   },
-  "filament-aurapol-asa-army-supply-grey-1-75-mm-850g": {
-    "hex": "#8A8B64",
-    "note": "Hex = median of a box sampled by hand on the review page. wrong colour, filament is green colour, there is grey aurapol stand"
-  },
   "filament-smart-print-asa-bila-1-kg-1-75-mm": {
     "hex": "#DEE1DD",
     "note": "Hex = median of a box sampled by hand on the review page."
@@ -259,12 +239,12 @@
     "hex": "#F8F9F4",
     "note": "Hex = median of a box sampled by hand on the review page. Red box on the photo for ROSA3D ASA"
   },
-  "filament-aurapol-asa-signalni-bila-1-75-mm-850g": {
-    "hex": "#F0F0EC",
-    "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request."
-  },
   "aurapol-asa-3d-filament-signal-white-850g-1-75-mm": {
     "hex": "#F0F0EC",
     "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request."
+  },
+  "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm": {
+    "hex": "#8A8B64",
+    "note": "Hex = median of a box sampled by hand on the review page. wrong colour, filament is green colour, there is grey aurapol stand"
   }
 }

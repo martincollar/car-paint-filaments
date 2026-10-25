@@ -129,30 +129,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.02,
-          "slug": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Teal Eclipse",
+          "delta_e": 6.43,
+          "slug": "filament-lume-pla-smaragdova-1-75-mm-1-kg",
+          "brand": "LUME",
+          "material": "PLA+",
+          "color_name": "Smaragdová",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5059ce7e3819bfe58d3ea00b61748b3d-pla-3d-filament-teal-eclipse.png",
-          "local_image": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg.png",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-smaragdova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/e/9eb6196d9b9ff680ea94507772843338-pla-szmaragdowy-5903669509073-03.webp",
+          "local_image": "filament-lume-pla-smaragdova-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / TEAL ECLIPSE / 1,75 mm / 1 kg.",
+          "title": "Filament LUME / PLA+ / SMARAGDOVÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            19,
-            76,
-            85
+            10,
+            70,
+            88
           ],
-          "hex": "#134C55",
-          "pixel_count": 197379,
+          "hex": "#0A4658",
+          "pixel_count": 388359,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -536,33 +536,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.89,
-          "slug": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Teal Eclipse",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5059ce7e3819bfe58d3ea00b61748b3d-pla-3d-filament-teal-eclipse.png",
-          "local_image": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / TEAL ECLIPSE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            19,
-            76,
-            85
-          ],
-          "hex": "#134C55",
-          "pixel_count": 197379,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.0,
           "slug": "easy-pla-alien-green",
           "brand": "Fiberlogy",
@@ -587,6 +560,33 @@
           ],
           "hex": "#23494F",
           "pixel_count": 9735,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.36,
+          "slug": "pla-extrafill-vertigo-jade-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Vertigo Jade",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-jade-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/Fillamentum_Vertigo_Jade_1KG.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-vertigo-jade-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Vertigo Jade\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            26,
+            75,
+            73
+          ],
+          "hex": "#1A4B49",
+          "pixel_count": 395305,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -1678,33 +1678,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.65,
-          "slug": "filament-aurapol-asa-army-armor-brown-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Armor Brown",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-armor-brown-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/7/e766afe9a01f1d0695488d62d1c913af-aurapol-asa-3d-army-armor-brown.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-armor-brown-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY ARMOR BROWN / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            85,
-            87,
-            65
-          ],
-          "hex": "#555741",
-          "pixel_count": 208542,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 12.12,
           "slug": "aurapol-asa-3d-filament-green-grass-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -1729,6 +1702,33 @@
           ],
           "hex": "#1E5A17",
           "pixel_count": 248735,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.78,
+          "slug": "devil-design-asa-zelena-olive-green-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Zelená (Olive Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-zelena-olive-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/a/4/a4f9f91008414fde6e9edd083ae0ba6d-asa-1-75-olive-green.png",
+          "local_image": "hubacek3d-devil-design-asa-zelena-olive-green-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Zelená (Olive Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            103,
+            104,
+            71
+          ],
+          "hex": "#676847",
+          "pixel_count": 196196,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -1808,33 +1808,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.15,
-          "slug": "filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Park Side",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-pla-park-side-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / PARK-SIDE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179784,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.17,
           "slug": "p276",
           "brand": "Filament PM",
@@ -1887,6 +1860,34 @@
           "hex": "#2F3330",
           "pixel_count": 151223,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.31,
+          "slug": "aurapol-pla-3d-recycled-filament-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Recycled",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-recycled-filament-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/a/9ae097cfdf0224e1f70fb11f738bee88-rpla-aurapol-recycled-1-kg.png",
+          "local_image": "aurapol-aurapol-pla-3d-recycled-filament-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Recycled Filament 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            40,
+            45,
+            44
+          ],
+          "hex": "#282D2C",
+          "pixel_count": 615412,
+          "confidence": "manual_override",
+          "measured_hex": "#D07263"
         }
       ],
       "petg": [
@@ -1999,30 +2000,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.15,
-          "slug": "filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 7.67,
+          "slug": "filament-lume-petg-tmave-zelena-1-75-mm-1-kg",
+          "brand": "LUME",
           "material": "PETG",
-          "color_name": "Park Side",
+          "color_name": "Tmavě zelená",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-petg-park-side-1-75-mm-1-kg.png",
+          "url": "https://www.smart3d.cz/p/filament-lume-petg-tmave-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/1/3/13d567c99239aa8ba41794ed9302f08c-petg-zielony-ciemny-5903669509387-03.webp",
+          "local_image": "filament-lume-petg-tmave-zelena-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / PARK-SIDE / 1,75 mm / 1 kg.",
+          "title": "Filament LUME / PETG / TMAVĚ ZELENÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            35,
-            56,
-            36
+            8,
+            45,
+            44
           ],
-          "hex": "#233824",
-          "pixel_count": 179784,
+          "hex": "#082D2C",
+          "pixel_count": 99957,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -2240,33 +2241,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.46,
-          "slug": "filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Wild Sage",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/9/d9d368ea315299aa8420dff206fbff1f-pla-wild-sage-aurapol-simiu.png",
-          "local_image": "smart3d-filament-aurapol-pla-wild-sage-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / WILD SAGE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            130,
-            159,
-            115
-          ],
-          "hex": "#829F73",
-          "pixel_count": 278727,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.49,
           "slug": "pla-extrafill-mint-1kg",
           "brand": "Fillamentum",
@@ -2318,6 +2292,33 @@
           ],
           "hex": "#9EAA90",
           "pixel_count": 150808,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.41,
+          "slug": "devil-design-pla-zelena-mint-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Zelená (Mint)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-zelena-mint-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/3/2/32b89b7a06ab0c598fc723938b4d5cc7-pla-1-75-mint.png",
+          "local_image": "hubacek3d-devil-design-pla-zelena-mint-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Zelená (Mint) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            143,
+            193,
+            169
+          ],
+          "hex": "#8FC1A9",
+          "pixel_count": 178135,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -2516,33 +2517,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.94,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 12.45,
           "slug": "aurapol-asa-3d-filament-garden-green-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -2570,30 +2544,57 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.45,
-          "slug": "filament-aurapol-asa-zelena-garden-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 12.56,
+          "slug": "filament-spectrum-asa-275-zelena-lime-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
           "material": "ASA",
-          "color_name": "Zelená Garden",
+          "color_name": "275 Zelená Lime",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-zelena-garden-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/5/05c33f34264045aae7523be4f2a90c88-asa-garden-green.png",
-          "local_image": "smart3d-filament-aurapol-asa-zelena-garden-1-75-mm-850g.png",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-zelena-lime-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/f/5f521ce6f87a26ed2fd59b6acfa72515-vyr-1199-14-1.jpg",
+          "local_image": "smart3d-filament-spectrum-asa-275-zelena-lime-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ZELENÁ \"GARDEN\" / 1,75 mm / 850g.",
+          "title": "Filament SPECTRUM / ASA 275 / ZELENÁ \"LIME\" / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            104,
-            180,
-            58
+            96,
+            161,
+            62
           ],
-          "hex": "#68B43A",
-          "pixel_count": 298498,
+          "hex": "#60A13E",
+          "pixel_count": 208241,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.36,
+          "slug": "filament-azurefilm-asa-svetle-zelena-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "ASA",
+          "color_name": "Světle Zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-svetle-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/3/a34c56e69d7a3e212308871f29efb12a-3d-filament-asa-light-green-azurefilm.webp",
+          "local_image": "smart3d-filament-azurefilm-asa-svetle-zelena-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament AzureFilm / ASA / SVĚTLE ZELENÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            148,
+            186,
+            54
+          ],
+          "hex": "#94BA36",
+          "pixel_count": 293433,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -3079,33 +3080,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 2.37,
-          "slug": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Undercity Sky",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/f/ef5756a5066d11f098b94ef560dc73ed-pla-3d-filament-undercity-sky.png",
-          "local_image": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / UNDERCITY SKY / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            40,
-            45,
-            60
-          ],
-          "hex": "#282D3C",
-          "pixel_count": 145936,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.79,
           "slug": "easy-pla-aurora",
           "brand": "Fiberlogy",
@@ -3184,6 +3158,33 @@
           ],
           "hex": "#373A42",
           "pixel_count": 130144,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.02,
+          "slug": "filamentree-pla-plus-modra-steel-blue-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Modrá (Steel Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-modra-steel-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/e/7/e78d3ff06d2116251330a19c5d7f3f43-pla-plus-steel-blue-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-modra-steel-blue-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filamentree PLA plus - Modrá (Steel Blue) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            23,
+            49,
+            72
+          ],
+          "hex": "#173148",
+          "pixel_count": 241505,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -3271,33 +3272,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.36,
-          "slug": "filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Grafitová Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/f/cf87a2f2ec20555dd7bb5c74ff38f878-petg-grafitova-cerna.png",
-          "local_image": "smart3d-filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / GRAFITOVÁ ČERNÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            43,
-            47
-          ],
-          "hex": "#2A2B2F",
-          "pixel_count": 45711,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.42,
           "slug": "aurapol-pet-g-filament-army-panzer-grau-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -3322,6 +3296,33 @@
           ],
           "hex": "#37414A",
           "pixel_count": 268093,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.45,
+          "slug": "refill-onefil3d-petg-cerna-1-75mm-10-x-1-kg",
+          "brand": "ROSA3D",
+          "material": "PETG",
+          "color_name": "OneFil3D ČERNÁ 10 x",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-onefil3d-petg-cerna-1-75mm-10-x-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/4/e4fbaab193bdd2997a545763599cc8fc-filament-3d-onefil3d-petg-black-10-x-refill-1-kg.jpg",
+          "local_image": "smart3d-refill-onefil3d-petg-cerna-1-75mm-10-x-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Refill OneFil3D / PETG / ČERNÁ / 1,75mm / 10 x 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            53,
+            54,
+            58
+          ],
+          "hex": "#35363A",
+          "pixel_count": 67453,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -4709,33 +4710,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.6,
-          "slug": "filament-aurapol-asa-hneda-khaki-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Hnědá Khaki",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-hneda-khaki-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/4/4413f6c7cadc8efd7da873b7a02135eb-asa-hneda-khaki.png",
-          "local_image": "smart3d-filament-aurapol-asa-hneda-khaki-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / HNĚDÁ KHAKI / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            94,
-            71,
-            30
-          ],
-          "hex": "#5E471E",
-          "pixel_count": 63566,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 13.11,
           "slug": "asa-matte-graphite",
           "brand": "Fiberlogy",
@@ -4760,6 +4734,33 @@
           ],
           "hex": "#595A5C",
           "pixel_count": 3518,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.28,
+          "slug": "asa-extrafill-anthracite-grey",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Anthracite Grey",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-anthracite-grey",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_ANTHRACITE_GREY_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-anthracite-grey.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Anthracite Grey\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            100,
+            97,
+            81
+          ],
+          "hex": "#646151",
+          "pixel_count": 330312,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -4839,33 +4840,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.43,
-          "slug": "filament-aurapol-pla-seafoam-blue-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Seafoam Blue",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-seafoam-blue-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/4/24ba59f56987064f301625d012e8f41c-pla-3d-filament-seafoam-blue.png",
-          "local_image": "filament-aurapol-pla-seafoam-blue-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / SEAFOAM BLUE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            92,
-            123,
-            97
-          ],
-          "hex": "#5C7B61",
-          "pixel_count": 208495,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.28,
           "slug": "refill-rosa3d-pla-speed-matt-zelena-sage-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -4918,6 +4892,33 @@
           "hex": "#6C7670",
           "pixel_count": 99592,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.92,
+          "slug": "pla-extrafill-turquoise-blue-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Turquoise Blue",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-blue-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_TurquoiseBlue_1KG.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-turquoise-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Turquoise Blue\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            45,
+            128,
+            121
+          ],
+          "hex": "#2D8079",
+          "pixel_count": 425799,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
@@ -4946,33 +4947,6 @@
           ],
           "hex": "#618B78",
           "pixel_count": 157728,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.92,
-          "slug": "filament-aurapol-petg-mint-cream-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Mint Cream",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-mint-cream-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/e/eefd0c20d0d82fc2505417be140e63af-pet-g-filament-mint-cream.png",
-          "local_image": "filament-aurapol-petg-mint-cream-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / MINT CREAM / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            97,
-            139,
-            120
-          ],
-          "hex": "#618B78",
-          "pixel_count": 159176,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -5055,6 +5029,33 @@
           "hex": "#40815D",
           "pixel_count": 122752,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.54,
+          "slug": "filament-nebula-petg-smaragdove-zelena-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PETG",
+          "color_name": "Smaragdově Zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-petg-smaragdove-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/0/c0df179a139495786e71f897ff68d57e-emerald-green.jpg",
+          "local_image": "smart3d-filament-nebula-petg-smaragdove-zelena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PETG / SMARAGDOVĚ ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            54,
+            111,
+            92
+          ],
+          "hex": "#366F5C",
+          "pixel_count": 115086,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
@@ -5083,33 +5084,6 @@
           ],
           "hex": "#869783",
           "pixel_count": 189499,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.54,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -5167,30 +5141,57 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.52,
-          "slug": "filament-aurapol-asa-sede-aluminum-1-75-mm-850g",
+          "delta_e": 12.77,
+          "slug": "aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
           "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "Šedé Aluminum",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-sede-aluminum-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/1/0/10cfe79cc7eab28c2115de59a1f6b8ba-asa-aluminium-gray-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-sede-aluminum-1-75-mm-850g.png",
+          "color_name": "3D Slate Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f915a237bdb78137d0e97c99b9332970-asa-grey.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-slate-grey-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ŠEDÉ ALUMINUM / 1,75 mm / 850g.",
+          "title": "AURAPOL ASA 3D Filament Slate Grey 850g 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            132,
-            137,
-            131
+            116,
+            121,
+            123
           ],
-          "hex": "#848983",
-          "pixel_count": 253946,
+          "hex": "#74797B",
+          "pixel_count": 145559,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.05,
+          "slug": "3dpower-asa-seda-grey-1kg",
+          "brand": "3DPower",
+          "material": "ASA",
+          "color_name": "Šedá (Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-seda-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/f/2/f2d57467da42dc1bb6ba487fc21d2931-15-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-seda-grey-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower ASA - Šedá (Grey) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            111,
+            116,
+            118
+          ],
+          "hex": "#6F7476",
+          "pixel_count": 147297,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -5324,30 +5325,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.85,
-          "slug": "filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 6.55,
+          "slug": "refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
           "material": "PLA",
-          "color_name": "Zelená Metalíza",
+          "color_name": "High speed ZELENÁ MOSS",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/9/5911182cbc64c21d8d7f90e84e68fcd7-pla-metalic-green-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg.png",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/f/7fa1a190d393ebcd62f382469fbada9d-the-filament-moss-green-pla-hs-0.jpg",
+          "local_image": "smart3d-refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ZELENÁ METALÍZA / 1,75 mm / 1 kg.",
+          "title": "ReFill TheFilament / PLA High speed / ZELENÁ \"MOSS\" / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            42,
-            76,
-            69
+            29,
+            62,
+            49
           ],
-          "hex": "#2A4C45",
-          "pixel_count": 230096,
+          "hex": "#1D3E31",
+          "pixel_count": 384090,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -6161,33 +6162,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.91,
-          "slug": "filament-aurapol-pla-aqua-relic-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Aqua Relic",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-aqua-relic-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/9/f9eab33dba53cee054ee175f38fa4cae-pla-3d-filament-aqua-relic.png",
-          "local_image": "filament-aurapol-pla-aqua-relic-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / AQUA RELIC / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            89,
-            173,
-            164
-          ],
-          "hex": "#59ADA4",
-          "pixel_count": 210114,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.04,
           "slug": "p242",
           "brand": "Filament PM",
@@ -6212,6 +6186,33 @@
           ],
           "hex": "#89BAB2",
           "pixel_count": 128472,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.73,
+          "slug": "filament-devil-design-pla-mentolova-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Mentolová",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-mentolova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/1/8/18abe0a45015fa9bedee3f451e4bae55-pla-1-75-mint.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-mentolova-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / MENTOLOVÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            144,
+            192,
+            169
+          ],
+          "hex": "#90C0A9",
+          "pixel_count": 449926,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -6241,33 +6242,6 @@
           ],
           "hex": "#618B78",
           "pixel_count": 157728,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.63,
-          "slug": "filament-aurapol-petg-mint-cream-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Mint Cream",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-mint-cream-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/e/eefd0c20d0d82fc2505417be140e63af-pet-g-filament-mint-cream.png",
-          "local_image": "filament-aurapol-petg-mint-cream-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / MINT CREAM / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            97,
-            139,
-            120
-          ],
-          "hex": "#618B78",
-          "pixel_count": 159176,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -6350,6 +6324,33 @@
           "hex": "#2C9B93",
           "pixel_count": 173871,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.38,
+          "slug": "devil-design-petg-zelena-mint-1kg",
+          "brand": "Devil Design",
+          "material": "PETG",
+          "color_name": "Zelená (Mint)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-petg-zelena-mint-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/7/9/79e0dfd4aa80d25370cfcbc45f13a361-petg-1-75-mint.png",
+          "local_image": "hubacek3d-devil-design-petg-zelena-mint-1kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Devil Design PETG - Zelená (Mint) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            135,
+            200,
+            185
+          ],
+          "hex": "#87C8B9",
+          "pixel_count": 171800,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
@@ -6378,33 +6379,6 @@
           ],
           "hex": "#869783",
           "pixel_count": 189499,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.27,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -6463,30 +6437,57 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.74,
-          "slug": "filament-aurapol-asa-svetle-seda-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 13.99,
+          "slug": "filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
           "material": "ASA",
-          "color_name": "Světle Šedá",
+          "color_name": "275 Zelená Forest",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-svetle-seda-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/7/97444e68415a006b3ea75e0d89228e46-asa-light-grey-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-svetle-seda-1-75-mm-850g.png",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/3/63c740acd27cf4b8056581e636d112e1-vyr-2792-eng-pl-filament-asa-275-1-75-mm-forest-green-ral-6024-1kg-1336-1.jpg",
+          "local_image": "smart3d-filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SVĚTLE ŠEDÁ / 1,75 mm / 850g.",
+          "title": "Filament SPECTRUM / ASA 275 / ZELENÁ \"FOREST\" / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
+            48,
             146,
-            150,
-            138
+            104
           ],
-          "hex": "#92968A",
-          "pixel_count": 259952,
+          "hex": "#309268",
+          "pixel_count": 164848,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.21,
+          "slug": "aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Aluminium Gray",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/d/3d0192f6170fecacc3dc0253b55617b8-asa-aluminium-gray-aurapol.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Aluminium Gray 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            132,
+            137,
+            131
+          ],
+          "hex": "#848983",
+          "pixel_count": 254884,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -6593,33 +6594,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.74,
-          "slug": "filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Zelená Metalíza",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/9/5911182cbc64c21d8d7f90e84e68fcd7-pla-metalic-green-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ZELENÁ METALÍZA / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 230096,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.63,
           "slug": "easy-pla-alien-green",
           "brand": "Fiberlogy",
@@ -6644,6 +6618,33 @@
           ],
           "hex": "#23494F",
           "pixel_count": 9735,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.44,
+          "slug": "pla-extrafill-vertigo-jade-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Vertigo Jade",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-jade-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/Fillamentum_Vertigo_Jade_1KG.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-vertigo-jade-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Vertigo Jade\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            26,
+            75,
+            73
+          ],
+          "hex": "#1A4B49",
+          "pixel_count": 395305,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -7330,30 +7331,30 @@
           "measured_hex": "#77746D"
         },
         {
-          "delta_e": 5.01,
-          "slug": "filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
+          "delta_e": 5.12,
+          "slug": "aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
           "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "Břidlicově Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/9/895430669e356c3be92a5c0433f86c18-asa-bridlicove-seda.png",
-          "local_image": "smart3d-filament-aurapol-asa-bridlicove-seda-1-75-mm-850g.png",
+          "color_name": "3D Slate Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f915a237bdb78137d0e97c99b9332970-asa-grey.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-slate-grey-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / BŘIDLICOVĚ ŠEDÁ / 1,75 mm / 850g.",
+          "title": "AURAPOL ASA 3D Filament Slate Grey 850g 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            117,
+            116,
             121,
             123
           ],
-          "hex": "#75797B",
-          "pixel_count": 145410,
+          "hex": "#74797B",
+          "pixel_count": 145559,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -7406,33 +7407,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.04,
-          "slug": "filament-aurapol-pla-seda-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-seda-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/5/d588be2335b0a5db76d68222a005758d-vyr-2479-aurapol-pla-3d-filament-seda-1-kg-1-75-mm.png",
-          "local_image": "smart3d-filament-aurapol-pla-seda-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ŠEDÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            151,
-            155,
-            150
-          ],
-          "hex": "#979B96",
-          "pixel_count": 201119,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.36,
           "slug": "aurapol-pla-3d-filament-grandma-gray-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -7457,33 +7431,6 @@
           ],
           "hex": "#90968F",
           "pixel_count": 202589,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.36,
-          "slug": "filament-aurapol-pla-grandma-gray-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Grandma Gray",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-grandma-gray-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c3305274685482bed46507f716c5046d-pla-aurapol-grandma-gray.png",
-          "local_image": "smart3d-filament-aurapol-pla-grandma-gray-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / GRANDMA GRAY / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            144,
-            150,
-            143
-          ],
-          "hex": "#90968F",
-          "pixel_count": 202660,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -7513,6 +7460,60 @@
           "pixel_count": 221385,
           "confidence": "manual_override",
           "measured_hex": "#5685BA"
+        },
+        {
+          "delta_e": 5.83,
+          "slug": "refill-rosa3d-pla-starter-zelena-reseda-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Starter ZELENÁ RESEDA",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-zelena-reseda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/f/4fe5550ae6d0cb60c5be0359b323073d-filament-3d-refill-pla-starter-reseda-green-175mm-1kg-600.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-zelena-reseda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA Starter / ZELENÁ \"RESEDA\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            158,
+            170,
+            144
+          ],
+          "hex": "#9EAA90",
+          "pixel_count": 150808,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.93,
+          "slug": "refill-rosa3d-pla-starter-satenove-seda-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Starter SATÉNOVĚ ŠEDÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-satenove-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/6/4692d0e10ed76b53335974edcf8032ef-4269-refill-pla-starter-satin-gray-1kg-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-satenove-seda-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA Starter / SATÉNOVĚ ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            171,
+            172,
+            167
+          ],
+          "hex": "#ABACA7",
+          "pixel_count": 98672,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
@@ -7541,33 +7542,6 @@
           ],
           "hex": "#A7A9A3",
           "pixel_count": 183432,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 4.96,
-          "slug": "filament-aurapol-petg-signalni-seda-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Signální Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-signalni-seda-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/a/aa370b0f10e7f858ea352e9982f43916-petg-signalni-seda.png",
-          "local_image": "smart3d-filament-aurapol-petg-signalni-seda-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / SIGNÁLNÍ ŠEDÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            168,
-            170,
-            164
-          ],
-          "hex": "#A8AAA4",
-          "pixel_count": 71272,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -7650,63 +7624,36 @@
           "hex": "#B1B0AC",
           "pixel_count": 146550,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.83,
+          "slug": "filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PETG",
+          "color_name": "Arctic Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/5/95d8fd13cc84dddf3b2c348a99abd011-arctic-silver-2.jpg",
+          "local_image": "smart3d-filament-nebula-petg-arctic-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PETG / ARCTIC STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            144,
+            148,
+            147
+          ],
+          "hex": "#909493",
+          "pixel_count": 87162,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
-        {
-          "delta_e": 4.38,
-          "slug": "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D ARMY Supply Grey",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/c/3caf295c984ff5e199dfa82ac526049e-6ef7f3c212a90a159011ce832770ab9b.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament ARMY Supply Grey 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            150,
-            154,
-            145
-          ],
-          "hex": "#969A91",
-          "pixel_count": 135086,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.34,
-          "slug": "filament-aurapol-asa-svetle-seda-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Světle Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-svetle-seda-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/7/97444e68415a006b3ea75e0d89228e46-asa-light-grey-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-svetle-seda-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SVĚTLE ŠEDÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            146,
-            150,
-            138
-          ],
-          "hex": "#92968A",
-          "pixel_count": 259952,
-          "confidence": "measured_dominant_hue"
-        },
         {
           "delta_e": 5.39,
           "slug": "aurapol-asa-3d-filament-light-grey-850g-1-75-mm",
@@ -7762,30 +7709,84 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.17,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 8.09,
+          "slug": "filament-azurefilm-asa-stribrna-1-75-mm-1-kg",
+          "brand": "AzureFilm",
           "material": "ASA",
-          "color_name": "Army Urban Grey",
+          "color_name": "Stříbrná",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/1/b16648287568b8be515fa79f9aa5e463-vyr-3196-asa-technical-strong-3d-filament-silver.jpg",
+          "local_image": "smart3d-filament-azurefilm-asa-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament AzureFilm / ASA / STŘÍBRNÁ / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            134,
-            151,
+            162,
+            171,
+            175
+          ],
+          "hex": "#A2ABAF",
+          "pixel_count": 160374,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.98,
+          "slug": "refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/9/995244d39654ce979312c9fa187f80f8-refill-asa-silver-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-stribrna-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            184,
+            185,
+            183
+          ],
+          "hex": "#B8B9B7",
+          "pixel_count": 74609,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.62,
+          "slug": "aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Aluminium Gray",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/d/3d0192f6170fecacc3dc0253b55617b8-asa-aluminium-gray-aurapol.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Aluminium Gray 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            132,
+            137,
             131
           ],
-          "hex": "#869783",
-          "pixel_count": 189029,
+          "hex": "#848983",
+          "pixel_count": 254884,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -7866,33 +7867,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.9,
-          "slug": "filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Wild Sage",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/9/d9d368ea315299aa8420dff206fbff1f-pla-wild-sage-aurapol-simiu.png",
-          "local_image": "smart3d-filament-aurapol-pla-wild-sage-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / WILD SAGE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            130,
-            159,
-            115
-          ],
-          "hex": "#829F73",
-          "pixel_count": 278727,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.24,
           "slug": "pla-extrafill-mint-1kg",
           "brand": "Fillamentum",
@@ -7944,6 +7918,33 @@
           ],
           "hex": "#9EAA90",
           "pixel_count": 150808,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.72,
+          "slug": "devil-design-pla-zelena-mint-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Zelená (Mint)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-zelena-mint-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/3/2/32b89b7a06ab0c598fc723938b4d5cc7-pla-1-75-mint.png",
+          "local_image": "hubacek3d-devil-design-pla-zelena-mint-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Zelená (Mint) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            143,
+            193,
+            169
+          ],
+          "hex": "#8FC1A9",
+          "pixel_count": 178135,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -8114,33 +8115,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 10.51,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 11.04,
           "slug": "refill-rosa3d-asa-zelena-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -8221,6 +8195,33 @@
           "hex": "#0FB66B",
           "pixel_count": 184176,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.83,
+          "slug": "aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D ARMY Field Olive",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/c/0/c029d254c3e319f3067ed45ef29a1d37-445520fc4bc8d9037d520eb1e2ab544f.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament ARMY Field Olive 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            125,
+            137,
+            93
+          ],
+          "hex": "#7D895D",
+          "pixel_count": 289653,
+          "confidence": "measured_dominant_hue"
         }
       ]
     },
@@ -8269,33 +8270,6 @@
           ],
           "hex": "#233824",
           "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 1.74,
-          "slug": "filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Park Side",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-pla-park-side-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / PARK-SIDE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179784,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -8378,6 +8352,33 @@
           "hex": "#1D3E31",
           "pixel_count": 384090,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.19,
+          "slug": "filament-spectrum-pla-glitter-zelena-emerald-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PLA",
+          "color_name": "Glitter Zelená Emerald",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-pla-glitter-zelena-emerald-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/f/af3f5ff39039e0b978c6d3cf588f12e1-vyr-640-18-1.jpg",
+          "local_image": "smart3d-filament-spectrum-pla-glitter-zelena-emerald-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament SPECTRUM / PLA GLITTER / ZELENÁ \"EMERALD\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            50,
+            74,
+            47
+          ],
+          "hex": "#324A2F",
+          "pixel_count": 207770,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
@@ -8406,33 +8407,6 @@
           ],
           "hex": "#233824",
           "pixel_count": 179844,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 1.74,
-          "slug": "filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Park Side",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-petg-park-side-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / PARK-SIDE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179784,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -8514,6 +8488,33 @@
           ],
           "hex": "#364330",
           "pixel_count": 286870,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.62,
+          "slug": "refill-rosa3d-petg-standard-hs-vojenska-zelena-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PETG",
+          "color_name": "Standard HS VOJENSKÁ ZELENÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-petg-standard-hs-vojenska-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/a/3abf82aaa0d9022d8b7e4796f330199a-refill-pet-g-standard-army-green-1kg-box-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-petg-standard-hs-vojenska-zelena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PETG Standard HS / VOJENSKÁ ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            58,
+            66,
+            42
+          ],
+          "hex": "#3A422A",
+          "pixel_count": 217750,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -8627,18 +8628,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.91,
-          "slug": "filament-aurapol-asa-army-armor-brown-1-75-mm-850g",
+          "delta_e": 12.92,
+          "slug": "aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm",
           "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "Army Armor Brown",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-armor-brown-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/7/e766afe9a01f1d0695488d62d1c913af-aurapol-asa-3d-army-armor-brown.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-armor-brown-1-75-mm-850g.png",
+          "color_name": "3D ARMY Armor Brown",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/d/1d7b4ce028ccd461b95cba606e358642-1de5b3f5fdb1c8dc783a7306bcc20e00.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY ARMOR BROWN / 1,75 mm / 850g.",
+          "title": "AURAPOL ASA 3D Filament ARMY Armor Brown 850g 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
@@ -8647,10 +8648,10 @@
           "rgb": [
             85,
             87,
-            65
+            64
           ],
-          "hex": "#555741",
-          "pixel_count": 208542,
+          "hex": "#555740",
+          "pixel_count": 208373,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -8730,33 +8731,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.25,
-          "slug": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Undercity Sky",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/f/ef5756a5066d11f098b94ef560dc73ed-pla-3d-filament-undercity-sky.png",
-          "local_image": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / UNDERCITY SKY / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            40,
-            45,
-            60
-          ],
-          "hex": "#282D3C",
-          "pixel_count": 145936,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.03,
           "slug": "p154",
           "brand": "Filament PM",
@@ -8808,6 +8782,33 @@
           ],
           "hex": "#121F34",
           "pixel_count": 345535,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.1,
+          "slug": "easy-pla-aurora",
+          "brand": "Fiberlogy",
+          "material": "PLA",
+          "color_name": "Easy Aurora",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-pla-aurora",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/27722_6291981c.128x128.jpg",
+          "local_image": "3djake-easy-pla-aurora.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy Easy PLA Aurora, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            31,
+            39,
+            60
+          ],
+          "hex": "#1F273C",
+          "pixel_count": 9507,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -8894,33 +8895,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.75,
-          "slug": "filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Grafitová Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/f/cf87a2f2ec20555dd7bb5c74ff38f878-petg-grafitova-cerna.png",
-          "local_image": "smart3d-filament-aurapol-petg-grafitova-cerna-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / GRAFITOVÁ ČERNÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            43,
-            47
-          ],
-          "hex": "#2A2B2F",
-          "pixel_count": 45711,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.89,
           "slug": "aurapol-pet-g-filament-army-panzer-grau-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -8945,6 +8919,33 @@
           ],
           "hex": "#37414A",
           "pixel_count": 268093,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.04,
+          "slug": "easy-petg-refill-black",
+          "brand": "Fiberlogy",
+          "material": "PETG",
+          "color_name": "Easy Black",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-petg-refill-black",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/20489_f7b50d96.128x128.jpg",
+          "local_image": "3djake-easy-petg-refill-black.jpg",
+          "availability": "PreOrder",
+          "stock": "Na objednávku",
+          "title": "Fiberlogy Easy PETG Refill Black, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            34,
+            35,
+            39
+          ],
+          "hex": "#222327",
+          "pixel_count": 7638,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -9410,33 +9411,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.68,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 11.75,
           "slug": "bambu-lab-asa-green",
           "brand": "Bambu Lab",
@@ -9518,6 +9492,33 @@
           "hex": "#0FB66B",
           "pixel_count": 184176,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 15.7,
+          "slug": "filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "ASA",
+          "color_name": "275 Zelená Forest",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/3/63c740acd27cf4b8056581e636d112e1-vyr-2792-eng-pl-filament-asa-275-1-75-mm-forest-green-ral-6024-1kg-1336-1.jpg",
+          "local_image": "smart3d-filament-spectrum-asa-275-zelena-forest-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament SPECTRUM / ASA 275 / ZELENÁ \"FOREST\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            48,
+            146,
+            104
+          ],
+          "hex": "#309268",
+          "pixel_count": 164848,
+          "confidence": "measured_dominant_hue"
         }
       ]
     },
@@ -9597,33 +9598,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.25,
-          "slug": "filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Wild Sage",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-wild-sage-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/9/d9d368ea315299aa8420dff206fbff1f-pla-wild-sage-aurapol-simiu.png",
-          "local_image": "smart3d-filament-aurapol-pla-wild-sage-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / WILD SAGE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            130,
-            159,
-            115
-          ],
-          "hex": "#829F73",
-          "pixel_count": 278727,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.65,
           "slug": "pla-extrafill-mint-1kg",
           "brand": "Fillamentum",
@@ -9675,6 +9649,33 @@
           ],
           "hex": "#58A25D",
           "pixel_count": 460647,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.86,
+          "slug": "devil-design-pla-svetle-zelena-light-green-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Světle Zelená (Light Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-svetle-zelena-light-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/0/9/09e542dd44d140aebeda5c8c24d0db31-pla-1-75-light-green.png",
+          "local_image": "hubacek3d-devil-design-pla-svetle-zelena-light-green-1kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Devil Design PLA - Světle Zelená (Light Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            86,
+            164,
+            91
+          ],
+          "hex": "#56A45B",
+          "pixel_count": 183425,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -9873,33 +9874,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.23,
-          "slug": "filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Army Urban Grey",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-army-urban-grey-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/6/360b0841acf2efde41325c4154733eb0-aurapol-asa-3d-army-urban-grey.png",
-          "local_image": "smart3d-filament-aurapol-asa-army-urban-grey-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ARMY URBAN GREY / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            134,
-            151,
-            131
-          ],
-          "hex": "#869783",
-          "pixel_count": 189029,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 11.61,
           "slug": "filament-spectrum-asa-275-zelena-lime-1-75-mm-1-kg",
           "brand": "Spectrum + The Filament",
@@ -9952,6 +9926,33 @@
           "hex": "#0FB66B",
           "pixel_count": 184176,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.34,
+          "slug": "aurapol-asa-3d-filament-garden-green-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Garden Green",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-garden-green-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/0/90053428d4d063bb44c0c8be1903d947-asa-garden-green.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-garden-green-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Garden Green 850g 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            104,
+            180,
+            58
+          ],
+          "hex": "#68B43A",
+          "pixel_count": 298474,
+          "confidence": "measured_dominant_hue"
         }
       ]
     },
@@ -10000,33 +10001,6 @@
           ],
           "hex": "#531C21",
           "pixel_count": 151492,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 2.4,
-          "slug": "filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Cherry Gleam",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/4/6477c161824c46282b9c9e91da44a5bc-pla-3d-cherry-gleam.png",
-          "local_image": "smart3d-filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / CHERRY GLEAM / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            83,
-            28,
-            33
-          ],
-          "hex": "#531C21",
-          "pixel_count": 152336,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -10108,6 +10082,33 @@
           ],
           "hex": "#440803",
           "pixel_count": 170815,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.69,
+          "slug": "filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Vínově Červená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/9/79dc410c4ef1a05e7237760f90b15261-pla-1-75-wine-red.png",
+          "local_image": "smart3d-filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / VÍNOVĚ ČERVENÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            96,
+            35,
+            34
+          ],
+          "hex": "#602322",
+          "pixel_count": 360151,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -10599,33 +10600,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.63,
-          "slug": "filament-aurapol-petg-signalni-seda-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Signální Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-signalni-seda-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/a/aa370b0f10e7f858ea352e9982f43916-petg-signalni-seda.png",
-          "local_image": "smart3d-filament-aurapol-petg-signalni-seda-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / SIGNÁLNÍ ŠEDÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            168,
-            170,
-            164
-          ],
-          "hex": "#A8AAA4",
-          "pixel_count": 71272,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.68,
           "slug": "aurapol-pet-g-filament-signal-grey-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -10678,6 +10652,33 @@
           ],
           "hex": "#B2B3B2",
           "pixel_count": 20643,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.93,
+          "slug": "filament-azurefilm-petg-svetle-seda-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "PETG",
+          "color_name": "Světle Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-petg-svetle-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/a/7a8d01d84d9c886f1449913f5632185c-petg-light-grey-3d-filament-azurefilm.jpg",
+          "local_image": "smart3d-filament-azurefilm-petg-svetle-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament AzureFilm / PETG / SVĚTLE ŠEDÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            172,
+            174,
+            175
+          ],
+          "hex": "#ACAEAF",
+          "pixel_count": 280301,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -10791,31 +10792,32 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.47,
-          "slug": "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
-          "brand": "AURAPOL",
+          "delta_e": 7.66,
+          "slug": "asa-extrafill-traffic-white",
+          "brand": "Fillamentum",
           "material": "ASA",
-          "color_name": "3D ARMY Supply Grey",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/c/3caf295c984ff5e199dfa82ac526049e-6ef7f3c212a90a159011ce832770ab9b.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm.png",
+          "color_name": "Extrafill Traffic White",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
+          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament ARMY Supply Grey 850g 1,75 mm",
+          "title": "ASA Extrafill \"Traffic White\"",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            150,
-            154,
-            145
+            202,
+            197,
+            184
           ],
-          "hex": "#969A91",
-          "pixel_count": 135086,
-          "confidence": "measured_dominant_hue"
+          "hex": "#CAC5B8",
+          "pixel_count": 118063,
+          "confidence": "manual_override",
+          "measured_hex": "#E8E4E0"
         }
       ]
     },
@@ -10894,33 +10896,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.31,
-          "slug": "filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Park Side",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-pla-park-side-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / PARK-SIDE / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179784,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.45,
           "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
           "brand": "LUME",
@@ -10972,6 +10947,33 @@
           ],
           "hex": "#363930",
           "pixel_count": 98727,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.65,
+          "slug": "filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Zelená Galaxy",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9bf254ee1772d426fccb0cec18e8b9a5-pla-1-75-galaxy-green.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / ZELENÁ GALAXY / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            41,
+            67,
+            59
+          ],
+          "hex": "#29433B",
+          "pixel_count": 354624,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -11085,30 +11087,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.31,
-          "slug": "filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 5.29,
+          "slug": "filament-bambu-lab-petg-hf-zelena-forest-1-75-mm-1-kg",
+          "brand": "BambuLab",
           "material": "PETG",
-          "color_name": "Park Side",
+          "color_name": "HF Zelená Forest",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-park-side-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/9292bd1b0141557c19c474fc6b54044f-pla-parkside.png",
-          "local_image": "smart3d-filament-aurapol-petg-park-side-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / PARK-SIDE / 1,75 mm / 1 kg.",
+          "url": "https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-zelena-forest-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/f/2fbeed72976257a7160e2c04b200f6be-forestgreen.jpg",
+          "local_image": "smart3d-filament-bambu-lab-petg-hf-zelena-forest-1-75-mm-1-kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Bambu Lab / PETG HF / ZELENÁ \"FOREST\" / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            35,
-            56,
-            36
+            54,
+            67,
+            48
           ],
-          "hex": "#233824",
-          "pixel_count": 179784,
+          "hex": "#364330",
+          "pixel_count": 286870,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -11298,33 +11300,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.34,
-          "slug": "filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Zelená Metalíza",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/9/5911182cbc64c21d8d7f90e84e68fcd7-pla-metalic-green-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ZELENÁ METALÍZA / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 230096,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.4,
           "slug": "filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
           "brand": "DEVIL DESIGN",
@@ -11403,6 +11378,33 @@
           ],
           "hex": "#23494F",
           "pixel_count": 9735,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.22,
+          "slug": "pla-extrafill-vertigo-jade-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Vertigo Jade",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-vertigo-jade-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/Fillamentum_Vertigo_Jade_1KG.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-vertigo-jade-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Vertigo Jade\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            26,
+            75,
+            73
+          ],
+          "hex": "#1A4B49",
+          "pixel_count": 395305,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -12005,33 +12007,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.36,
-          "slug": "filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Tyrkysová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/7/878347dea75947bf167a92f22095c2a4-asa-dark-turquoise-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ TYRKYSOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            33,
-            66,
-            92
-          ],
-          "hex": "#21425C",
-          "pixel_count": 280541,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.86,
           "slug": "3d-sphynx-asa-seda-graphite-800g",
           "brand": "3D Sphynx",
@@ -12112,6 +12087,34 @@
           "hex": "#2A5CAF",
           "pixel_count": 226882,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.03,
+          "slug": "3d-sphynx-asa-cerna-black-800g",
+          "brand": "3D Sphynx",
+          "material": "ASA",
+          "color_name": "Černá (Black)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-cerna-black-800g",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/5/2/5235870a95321bad39ca032fb61f54eb-asa-graphite-gray-photoroom.png",
+          "local_image": "hubacek3d-3d-sphynx-asa-cerna-black-800g.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3D Sphynx - ASA - Černá (Black) - 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            61,
+            73,
+            84
+          ],
+          "hex": "#3D4954",
+          "pixel_count": 169821,
+          "confidence": "manual_override",
+          "measured_hex": "#42494F"
         }
       ]
     },
@@ -12520,30 +12523,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.06,
-          "slug": "filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 6.18,
+          "slug": "3dpower-asa-stribrna-silver-1kg",
+          "brand": "3DPower",
           "material": "ASA",
-          "color_name": "Břidlicově Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/9/895430669e356c3be92a5c0433f86c18-asa-bridlicove-seda.png",
-          "local_image": "smart3d-filament-aurapol-asa-bridlicove-seda-1-75-mm-850g.png",
+          "color_name": "Stříbrná (Silver)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-stribrna-silver-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/e/6e2d47c4a92e732bc0ef31c783cd17cb-13-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-stribrna-silver-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / BŘIDLICOVĚ ŠEDÁ / 1,75 mm / 850g.",
+          "title": "3DPower ASA - Stříbrná (Silver) - 1kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            117,
-            121,
-            123
+            123,
+            129,
+            134
           ],
-          "hex": "#75797B",
-          "pixel_count": 145410,
+          "hex": "#7B8186",
+          "pixel_count": 156934,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -13542,30 +13545,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.56,
-          "slug": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
+          "delta_e": 4.27,
+          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Teal Eclipse",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5059ce7e3819bfe58d3ea00b61748b3d-pla-3d-filament-teal-eclipse.png",
-          "local_image": "filament-aurapol-pla-teal-eclipse-1-75-mm-1-kg.png",
+          "color_name": "3D Metallic Turquoise",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / TEAL ECLIPSE / 1,75 mm / 1 kg.",
+          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            19,
-            76,
-            85
+            15,
+            74,
+            97
           ],
-          "hex": "#134C55",
-          "pixel_count": 197379,
+          "hex": "#0F4A61",
+          "pixel_count": 195349,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -13736,33 +13739,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.85,
-          "slug": "filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Tyrkysová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/7/878347dea75947bf167a92f22095c2a4-asa-dark-turquoise-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ TYRKYSOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            33,
-            66,
-            92
-          ],
-          "hex": "#21425C",
-          "pixel_count": 280541,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.89,
           "slug": "3d-sphynx-asa-cerna-black-800g",
           "brand": "3D Sphynx",
@@ -13845,6 +13821,33 @@
           "pixel_count": 318565,
           "confidence": "manual_override",
           "measured_hex": "#7B796A"
+        },
+        {
+          "delta_e": 11.33,
+          "slug": "filament-spectrum-asa-275-tmave-seda-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "ASA",
+          "color_name": "275 Tmavě Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-tmave-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/e/3e7fee4b4e5a49d227dd914d3bbcc317-vyr-1197-7-1.jpg",
+          "local_image": "smart3d-filament-spectrum-asa-275-tmave-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament SPECTRUM / ASA 275 / TMAVĚ ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            71,
+            76,
+            80
+          ],
+          "hex": "#474C50",
+          "pixel_count": 116474,
+          "confidence": "measured_dominant_hue"
         }
       ]
     },
@@ -14381,33 +14384,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 1.65,
-          "slug": "filament-aurapol-pla-bright-blush-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Bright Blush",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-bright-blush-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/7281c2267656c912cd19877adbbd58fc-pla-3d-filament-bright-blush.png",
-          "local_image": "smart3d-filament-aurapol-pla-bright-blush-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / BRIGHT BLUSH / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            150,
-            41,
-            35
-          ],
-          "hex": "#962923",
-          "pixel_count": 208669,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 2.29,
           "slug": "filament-devil-design-pla-cervena-1-75-mm-1-kg",
           "brand": "DEVIL DESIGN",
@@ -14432,6 +14408,33 @@
           ],
           "hex": "#982829",
           "pixel_count": 481965,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 2.97,
+          "slug": "refill-rosa3d-pla-starter-satenove-cervena-jasper-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Starter SATÉNOVĚ ČERVENÁ JASPER",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-satenove-cervena-jasper-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/f/9f1474162650f3bab6953fd0fb57c0eb-refill-pla-red-jasper-satin-box-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-satenove-cervena-jasper-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA Starter / SATÉNOVĚ ČERVENÁ \"JASPER\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            154,
+            38,
+            27
+          ],
+          "hex": "#9A261B",
+          "pixel_count": 440100,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -14682,30 +14685,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.99,
-          "slug": "filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 9.75,
+          "slug": "filament-professional-lab-asa-cervena-1-75-mm-1-kg",
+          "brand": "Professional Lab",
           "material": "ASA",
-          "color_name": "Červená Tool",
+          "color_name": "Červená",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/9/492cfe205df34a6d950c7e649806d3ab-asa-tool-red.png",
-          "local_image": "smart3d-filament-aurapol-asa-cervena-tool-1-75-mm-850g.png",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-cervena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9b51adf4b3775c259d09a00fe48fa951-fg-p138-e1fg-p138-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-cervena-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ČERVENÁ \"TOOL\" / 1,75 mm / 850g.",
+          "title": "Filament PROFESSIONAL LAB / ASA / ČERVENÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            183,
-            30,
-            29
+            200,
+            14,
+            45
           ],
-          "hex": "#B71E1D",
-          "pixel_count": 283009,
+          "hex": "#C80E2D",
+          "pixel_count": 488701,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -15525,33 +15528,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.59,
-          "slug": "filament-aurapol-asa-zluta-construction-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Žlutá Construction",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-zluta-construction-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/7/3740af9c646a9d48745cbf9bd5a2d028-asa-construction-yellow.png",
-          "local_image": "smart3d-filament-aurapol-asa-zluta-construction-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ŽLUTÁ \"CONSTRUCTION\" / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            217,
-            180,
-            13
-          ],
-          "hex": "#D9B40D",
-          "pixel_count": 284952,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.73,
           "slug": "aurapol-asa-3d-filament-construction-yellow-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -15576,6 +15552,33 @@
           ],
           "hex": "#D8B30C",
           "pixel_count": 284705,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.78,
+          "slug": "filament-nebula-asa-301-zluta-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "ASA",
+          "color_name": "301 Žlutá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-zluta-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/8/286e380bfba9aa0c9ea7ad9968b5efd7-yellow.jpg",
+          "local_image": "smart3d-filament-nebula-asa-301-zluta-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / ASA 301 / ŽLUTÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            248,
+            220,
+            9
+          ],
+          "hex": "#F8DC09",
+          "pixel_count": 158272,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -15820,33 +15823,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.68,
-          "slug": "filament-aurapol-petg-bila-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/7/97c9625156548e9ce9c21c48356f4709-petg-bila.png",
-          "local_image": "smart3d-filament-aurapol-petg-bila-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / BÍLÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            211,
-            216,
-            211
-          ],
-          "hex": "#D3D8D3",
-          "pixel_count": 20855,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.78,
           "slug": "aurapol-pet-g-filament-white-1-kg-1-75-mm",
           "brand": "Aurapol",
@@ -15873,6 +15849,33 @@
           "pixel_count": 55422,
           "confidence": "manual_override",
           "measured_hex": "#D3D8D3"
+        },
+        {
+          "delta_e": 9.07,
+          "slug": "filament-fox-refill-petg-bila-1-kg",
+          "brand": "3DFOX",
+          "material": "PETG",
+          "color_name": "Bílá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-fox-refill-petg-bila-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/5910_petg.png?ff=1&x=1024&y=768&q=85&ts=683d3f3a&sg=161563f2",
+          "local_image": "3dfox-filament-fox-refill-petg-bila-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DFOX PETG REFILL bílá 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            213,
+            221,
+            226
+          ],
+          "hex": "#D5DDE2",
+          "pixel_count": 33910,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
@@ -16253,33 +16256,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.46,
-          "slug": "filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Černá Galaxy",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/4/04e6504e35231eeed1772b23622b03e4-petg-galaxy-black.png",
-          "local_image": "smart3d-filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / ČERNÁ \"GALAXY\" / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            34,
-            35,
-            38
-          ],
-          "hex": "#222326",
-          "pixel_count": 197292,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.51,
           "slug": "aurapol-pet-g-filament-graphite-black-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -16304,6 +16280,33 @@
           ],
           "hex": "#26282C",
           "pixel_count": 121741,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.57,
+          "slug": "filament-nebula-petg-cerna-1-kg",
+          "brand": "NEBULA",
+          "material": "PETG",
+          "color_name": "Černá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-cerna-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/48-3_filament-vaza-cerna.jpg?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-petg-cerna-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PETG černá 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            33,
+            33
+          ],
+          "hex": "#202121",
+          "pixel_count": 119881,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -17007,30 +17010,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.59,
-          "slug": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 8.07,
+          "slug": "filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
           "material": "PLA",
-          "color_name": "Undercity Sky",
+          "color_name": "Námořnická Modrá",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-undercity-sky-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/f/ef5756a5066d11f098b94ef560dc73ed-pla-3d-filament-undercity-sky.png",
-          "local_image": "filament-aurapol-pla-undercity-sky-1-75-mm-1-kg.png",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/c/6c2bcd825b5396a7e6169123a3f8df03-pla-1-75-navy-blue.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-namornicka-modra-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / UNDERCITY SKY / 1,75 mm / 1 kg.",
+          "title": "Filament DEVIL DESIGN / PLA / NÁMOŘNICKÁ MODRÁ / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            40,
-            45,
-            60
+            32,
+            44,
+            70
           ],
-          "hex": "#282D3C",
-          "pixel_count": 145936,
+          "hex": "#202C46",
+          "pixel_count": 392860,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -17117,33 +17120,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.85,
-          "slug": "filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Černá Galaxy",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/4/04e6504e35231eeed1772b23622b03e4-petg-galaxy-black.png",
-          "local_image": "smart3d-filament-aurapol-petg-cerna-galaxy-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / ČERNÁ \"GALAXY\" / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            34,
-            35,
-            38
-          ],
-          "hex": "#222326",
-          "pixel_count": 197292,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 9.28,
           "slug": "aurapol-pet-g-filament-graphite-black-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -17168,6 +17144,33 @@
           ],
           "hex": "#26282C",
           "pixel_count": 121741,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.66,
+          "slug": "filament-prof--lab-petg-cerna-1-kg-1-75-mm",
+          "brand": "Prof. Lab",
+          "material": "PETG",
+          "color_name": "Černá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-prof--lab-petg-cerna-1-kg-1-75-mm/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7995_fg-p26-e1fg-p26-e1-1.jpg?ff=1&x=1024&y=768&q=85&ts=6a8c1331&sg=161563f2",
+          "local_image": "3dfox-filament-prof-lab-petg-cerna-1-kg-1-75-mm.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Prof. Lab PETG černá 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            32,
+            32,
+            33
+          ],
+          "hex": "#202021",
+          "pixel_count": 162081,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -17523,33 +17526,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.79,
-          "slug": "filament-aurapol-petg-light-terracotta-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Light Terracotta",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-light-terracotta-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/9/299e5a23382e6fbb746219e9f3a7526d-petg-light-terracotta.png",
-          "local_image": "smart3d-filament-aurapol-petg-light-terracotta-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / LIGHT TERRACOTTA / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            167,
-            104,
-            74
-          ],
-          "hex": "#A7684A",
-          "pixel_count": 285927,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.91,
           "slug": "filamentree-petg-2-trida-jakosti-prebeh-1kg",
           "brand": "Filamentree",
@@ -17602,6 +17578,33 @@
           "hex": "#AE5F24",
           "pixel_count": 349938,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.87,
+          "slug": "filament-bambu-lab-petg-hf-hneda-peanut-1-75-mm-1-kg",
+          "brand": "BambuLab",
+          "material": "PETG",
+          "color_name": "HF Hnědá Peanut",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-hneda-peanut-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/8/781384af7b3910f485b90b23740690bd-peanut-brown.jpg",
+          "local_image": "smart3d-filament-bambu-lab-petg-hf-hneda-peanut-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Bambu Lab / PETG HF / HNĚDÁ \"PEANUT \"/ 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            178,
+            93,
+            42
+          ],
+          "hex": "#B25D2A",
+          "pixel_count": 289058,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
@@ -17630,33 +17633,6 @@
           ],
           "hex": "#BA5418",
           "pixel_count": 127864,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 14.7,
-          "slug": "filament-aurapol-asa-signalni-oranzova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Oranžová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-oranzova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/e/fe6ba3d6dfa12a12fedcd5c9c97248d9-asa-zelena-trava.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-oranzova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ ORANŽOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            223,
-            84,
-            3
-          ],
-          "hex": "#DF5403",
-          "pixel_count": 100960,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -17738,6 +17714,33 @@
           ],
           "hex": "#E95A34",
           "pixel_count": 9864,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.3,
+          "slug": "devil-design-asa-oranzova-bright-orange-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Oranžová (Bright Orange)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-oranzova-bright-orange-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/a/b/ab14e19bd42fafc82df6037307a0cbb5-asa-1-75-bright-orange.png",
+          "local_image": "hubacek3d-devil-design-asa-oranzova-bright-orange-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Oranžová (Bright Orange) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            234,
+            119,
+            1
+          ],
+          "hex": "#EA7701",
+          "pixel_count": 184652,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -18499,33 +18502,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 2.55,
-          "slug": "filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Červená Tool",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/9/492cfe205df34a6d950c7e649806d3ab-asa-tool-red.png",
-          "local_image": "smart3d-filament-aurapol-asa-cervena-tool-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ČERVENÁ \"TOOL\" / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            183,
-            30,
-            29
-          ],
-          "hex": "#B71E1D",
-          "pixel_count": 283009,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.99,
           "slug": "asa-extrafill-traffic-red",
           "brand": "Fillamentum",
@@ -18604,6 +18580,33 @@
           ],
           "hex": "#922C1F",
           "pixel_count": 116771,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.64,
+          "slug": "filament-professional-lab-asa-cervena-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "ASA",
+          "color_name": "Červená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-cervena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9b51adf4b3775c259d09a00fe48fa951-fg-p138-e1fg-p138-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-cervena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament PROFESSIONAL LAB / ASA / ČERVENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            200,
+            14,
+            45
+          ],
+          "hex": "#C80E2D",
+          "pixel_count": 488701,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -18988,33 +18991,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.67,
-          "slug": "filament-aurapol-asa-zelena-garden-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Zelená Garden",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-zelena-garden-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/5/05c33f34264045aae7523be4f2a90c88-asa-garden-green.png",
-          "local_image": "smart3d-filament-aurapol-asa-zelena-garden-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ZELENÁ \"GARDEN\" / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            104,
-            180,
-            58
-          ],
-          "hex": "#68B43A",
-          "pixel_count": 298498,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 9.66,
           "slug": "filament-spectrum-asa-275-zelena-lime-1-75-mm-1-kg",
           "brand": "Spectrum + The Filament",
@@ -19039,6 +19015,33 @@
           ],
           "hex": "#60A13E",
           "pixel_count": 208241,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.11,
+          "slug": "asa-light-green-1",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Light Green",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-light-green-1",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33528_dd104b62.128x128.jpg",
+          "local_image": "3djake-asa-light-green-1.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Light Green, 1,75 mm / 750 g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            168,
+            202,
+            59
+          ],
+          "hex": "#A8CA3B",
+          "pixel_count": 10055,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -20036,30 +20039,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.34,
-          "slug": "filament-aurapol-pla-svetle-modra-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 5.59,
+          "slug": "refill-azurefilm-pla-matte-hs-modra-1-75-mm-1-kg",
+          "brand": "AzureFilm",
           "material": "PLA",
-          "color_name": "Světle modrá",
+          "color_name": "Matte HS Modrá",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-svetle-modra-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/0/c03229a449b192451592f49da5f36db1-light-blue.png",
-          "local_image": "filament-aurapol-pla-svetle-modra-1-75-mm-1-kg.png",
+          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-matte-hs-modra-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/5/c585d3c111e35086d3f9fccf05764054-refill-pla-matte-blue.webp",
+          "local_image": "smart3d-refill-azurefilm-pla-matte-hs-modra-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / SVĚTLE MODRÁ / 1,75 mm / 1 kg.",
+          "title": "ReFill AzureFilm / PLA MATTE HS / MODRÁ / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            84,
-            168,
-            211
+            92,
+            175,
+            196
           ],
-          "hex": "#54A8D3",
-          "pixel_count": 223545,
+          "hex": "#5CAFC4",
+          "pixel_count": 548788,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -20469,30 +20472,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.42,
-          "slug": "filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 3.68,
+          "slug": "filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm",
+          "brand": "3DFOX",
           "material": "PLA",
-          "color_name": "Zelená Metalíza",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/9/5911182cbc64c21d8d7f90e84e68fcd7-pla-metalic-green-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-pla-zelena-metaliza-1-75-mm-1-kg.png",
+          "color_name": "Emerald green ŠA",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/8034_emerald-green.png?ff=1&x=1024&y=768&q=85&ts=6abe4d0f&sg=161563f2",
+          "local_image": "3dfox-filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ZELENÁ METALÍZA / 1,75 mm / 1 kg.",
+          "title": "Filament 3DFOX PLA REFILL emerald green ŠA 1 kg 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            42,
-            76,
-            69
+            17,
+            66,
+            53
           ],
-          "hex": "#2A4C45",
-          "pixel_count": 230096,
+          "hex": "#114235",
+          "pixel_count": 124392,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -21177,30 +21180,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.4,
-          "slug": "filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "brand": "AURAPOL",
+          "delta_e": 9.63,
+          "slug": "3dpower-asa-modra-blue-1kg",
+          "brand": "3DPower",
           "material": "ASA",
-          "color_name": "Tmavě Tyrkysová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/7/878347dea75947bf167a92f22095c2a4-asa-dark-turquoise-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g.png",
+          "color_name": "Modrá (Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-modra-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/0/1/01f6058c1b1618e82b8d458b9a63a10e-22-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-modra-blue-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ TYRKYSOVÁ / 1,75 mm / 850g.",
+          "title": "3DPower ASA - Modrá (Blue) - 1kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            33,
-            66,
-            92
+            13,
+            68,
+            119
           ],
-          "hex": "#21425C",
-          "pixel_count": 280541,
+          "hex": "#0D4477",
+          "pixel_count": 218833,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -21444,33 +21447,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.5,
-          "slug": "filament-aurapol-petg-hneda-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Hnědá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-hneda-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/0/a0e2cf8640fb449e3ac23aeb0f43f8bc-petg-copper-brown.png",
-          "local_image": "smart3d-filament-aurapol-petg-hneda-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / HNĚDÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            122,
-            46,
-            20
-          ],
-          "hex": "#7A2E14",
-          "pixel_count": 212126,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.97,
           "slug": "filament-prof--lab-petg-cihlova-1-kg-1-75-mm",
           "brand": "Prof. Lab",
@@ -21495,6 +21471,33 @@
           ],
           "hex": "#9E362E",
           "pixel_count": 240153,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.56,
+          "slug": "3dpower-basic-petg-med-copper-1kg",
+          "brand": "3DPower",
+          "material": "PETG",
+          "color_name": "Basic Měď (Copper)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-basic-petg-med-copper-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/d/9/d93149e8f38d29076c1aa992c3d64f91-16-1.jpg",
+          "local_image": "hubacek3d-3dpower-basic-petg-med-copper-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower Basic PETG - Měď (Copper) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            113,
+            53,
+            44
+          ],
+          "hex": "#71352C",
+          "pixel_count": 207023,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -22308,33 +22311,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.01,
-          "slug": "filament-aurapol-petg-zelena-mata-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Zelená Máta",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-zelena-mata-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/a/5afb282ba50fc165c0984f8b7b38a60c-petg-zelena-mata.png",
-          "local_image": "smart3d-filament-aurapol-petg-zelena-mata-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / ZELENÁ MÁTA / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            8,
-            165,
-            93
-          ],
-          "hex": "#08A55D",
-          "pixel_count": 97245,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.03,
           "slug": "aurapol-pet-g-filament-green-mint-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -22359,6 +22335,33 @@
           ],
           "hex": "#03A65C",
           "pixel_count": 251197,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.08,
+          "slug": "filament-bambu-lab-petg-hf-zelena-s-civkou-1-75mm-1kg",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Zelená s cívkou",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-bambu-lab-petg-hf-zelena-s-civkou-1-75mm-1kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7330_40673d2d-13ae-4063-ab4c-899e4244ffe5.jpg?ff=1&x=1024&y=768&q=85&ts=69b08c2f&sg=161563f2",
+          "local_image": "3dfox-filament-bambu-lab-petg-hf-zelena-s-civkou-1-75mm-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Bambu Lab PETG HF Zelená s cívkou 1,75mm 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            15,
+            173,
+            86
+          ],
+          "hex": "#0FAD56",
+          "pixel_count": 165892,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -23261,33 +23264,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 2.18,
-          "slug": "filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Červená Tool",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/9/492cfe205df34a6d950c7e649806d3ab-asa-tool-red.png",
-          "local_image": "smart3d-filament-aurapol-asa-cervena-tool-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / ČERVENÁ \"TOOL\" / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            183,
-            30,
-            29
-          ],
-          "hex": "#B71E1D",
-          "pixel_count": 283009,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.32,
           "slug": "asa-extrafill-traffic-red",
           "brand": "Fillamentum",
@@ -23366,6 +23342,33 @@
           ],
           "hex": "#C80E2D",
           "pixel_count": 488701,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.16,
+          "slug": "asa-extrafill-vivid-pink",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Vivid Pink",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-vivid-pink",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Vivid_Piink.jpg",
+          "local_image": "fillamentum-asa-extrafill-vivid-pink.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Vivid Pink\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            214,
+            24,
+            48
+          ],
+          "hex": "#D61830",
+          "pixel_count": 373148,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -24747,33 +24750,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.96,
-          "slug": "filament-aurapol-pla-nude-color-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Nude Color",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-nude-color-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/4/e40cf7b5a81cd4de6426ddf1120e4650-pla-aurapol-nude-color-lego.png",
-          "local_image": "smart3d-filament-aurapol-pla-nude-color-1-75-mm-1-kg.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Filament AURAPOL / PLA / NUDE COLOR / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            234,
-            184,
-            150
-          ],
-          "hex": "#EAB896",
-          "pixel_count": 293295,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.09,
           "slug": "filament-azurefilm-pla-skin-latte-1-75-mm-1-kg",
           "brand": "AzureFilm",
@@ -24825,6 +24801,33 @@
           ],
           "hex": "#DDB296",
           "pixel_count": 189796,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.46,
+          "slug": "refill-rosa3d-pla-pastel-broskvova-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Pastel Broskvová",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-pastel-broskvova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/2/e2935957ebe498fb21228d10be8703d7-refill-pla-pastel-peach-1kg-box-print-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-pastel-broskvova-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA PASTEL / BROSKVOVÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            243,
+            161,
+            129
+          ],
+          "hex": "#F3A181",
+          "pixel_count": 545499,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -25153,33 +25156,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.56,
-          "slug": "filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Cherry Gleam",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/4/6477c161824c46282b9c9e91da44a5bc-pla-3d-cherry-gleam.png",
-          "local_image": "smart3d-filament-aurapol-pla-cherry-gleam-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / CHERRY GLEAM / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            83,
-            28,
-            33
-          ],
-          "hex": "#531C21",
-          "pixel_count": 152336,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.75,
           "slug": "filament-nebula-pla-svestkova-1-kg",
           "brand": "NEBULA",
@@ -25246,6 +25222,33 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA / PLA 607 / HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            64,
+            38,
+            32
+          ],
+          "hex": "#402620",
+          "pixel_count": 330567,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.59,
+          "slug": "filament-nebula-pla-609hd-hneda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "609hd Hnědá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-609hd-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/5/f5d4347348789ebf731daae280febbda-nebula-pla-609-hd-brown.png",
+          "local_image": "smart3d-filament-nebula-pla-609hd-hneda-1-75-mm-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA 609HD / HNĚDÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
@@ -26238,30 +26241,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.16,
-          "slug": "filament-aurapol-petg-machine-modra-1-75-mm-1-kg",
-          "brand": "AURAPOL",
+          "delta_e": 10.05,
+          "slug": "petg-sea-wave",
+          "brand": "Fillamentum",
           "material": "PETG",
-          "color_name": "Machine Modrá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-machine-modra-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/4/94d2047e6c251a91b2379ca07dabc55d-petg-machine-blue.png",
-          "local_image": "smart3d-filament-aurapol-petg-machine-modra-1-75-mm-1-kg.png",
+          "color_name": "Sea Wave",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/petg-sea-wave",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/Sea_Wave_750G.png",
+          "local_image": "fillamentum-petg-petg-sea-wave.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / MACHINE MODRÁ / 1,75 mm / 1 kg.",
+          "title": "PETG \"Sea Wave\"",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            19,
-            125,
-            132
+            2,
+            102,
+            117
           ],
-          "hex": "#137D84",
-          "pixel_count": 236043,
+          "hex": "#026675",
+          "pixel_count": 436241,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26478,60 +26481,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 1.6,
-          "slug": "filament-aurapol-pla-cerna-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-cerna-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/1/61d048ff6f2866a9136172d45e13fc50-vyr-2475-aurapol-pla-3d-filament-cerna-1-kg-1-75-mm.png",
-          "local_image": "smart3d-filament-aurapol-pla-cerna-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PLA / ČERNÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 129986,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 1.6,
-          "slug": "filament-aurapol-pla-ht110-cerna-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "Ht110 Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-pla-ht110-cerna-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/5/3542e2265ee86260eced5a6deac3a90c-vyr-3047-6f43916ad2ff83d872f3d57e3b56145c.png",
-          "local_image": "smart3d-filament-aurapol-pla-ht110-cerna-1-75-mm-1-kg.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Filament AURAPOL / PLA HT110 / ČERNÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            55,
-            58,
-            66
-          ],
-          "hex": "#373A42",
-          "pixel_count": 129986,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 1.79,
           "slug": "aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -26556,6 +26505,60 @@
           ],
           "hex": "#3C3F4A",
           "pixel_count": 164273,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 2.34,
+          "slug": "filament-nebula-pla-metalicka-cerna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Metalická Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-metalicka-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/d/fd5f0967072431f07c9320252e1ac674-vyr-2443-pla-black-metalic.jpg",
+          "local_image": "smart3d-filament-nebula-pla-metalicka-cerna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA / METALICKÁ ČERNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            56,
+            57,
+            64
+          ],
+          "hex": "#383940",
+          "pixel_count": 261553,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.44,
+          "slug": "refill-rosa3d-pla-starter-cerna-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Starter ČERNÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/b/bb5b21e24ef32da84c63cd240c4e8ecc-refill-pla-starter-black-1kg-box-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-cerna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA Starter / ČERNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            54,
+            55,
+            60
+          ],
+          "hex": "#36373C",
+          "pixel_count": 179763,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26779,33 +26782,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.42,
-          "slug": "filament-aurapol-asa-grafitove-cerna-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Grafitově Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-grafitove-cerna-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/d/2dbe95c7d4aa835b21d7c87227f063fc-asa-grafitova-cerna.png",
-          "local_image": "smart3d-filament-aurapol-asa-grafitove-cerna-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / GRAFITOVĚ ČERNÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            45,
-            46,
-            50
-          ],
-          "hex": "#2D2E32",
-          "pixel_count": 70804,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.74,
           "slug": "asa-vertigo",
           "brand": "Fiberlogy",
@@ -26831,6 +26807,34 @@
           "hex": "#484B56",
           "pixel_count": 9908,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.1,
+          "slug": "3d-sphynx-asa-cerna-black-800g",
+          "brand": "3D Sphynx",
+          "material": "ASA",
+          "color_name": "Černá (Black)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3d-sphynx-asa-cerna-black-800g",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/5/2/5235870a95321bad39ca032fb61f54eb-asa-graphite-gray-photoroom.png",
+          "local_image": "hubacek3d-3d-sphynx-asa-cerna-black-800g.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3D Sphynx - ASA - Černá (Black) - 800g",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            61,
+            73,
+            84
+          ],
+          "hex": "#3D4954",
+          "pixel_count": 169821,
+          "confidence": "manual_override",
+          "measured_hex": "#42494F"
         }
       ]
     },
@@ -27185,33 +27189,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.78,
-          "slug": "filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Tyrkysová",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/7/878347dea75947bf167a92f22095c2a4-asa-dark-turquoise-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-tyrkysova-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ TYRKYSOVÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            33,
-            66,
-            92
-          ],
-          "hex": "#21425C",
-          "pixel_count": 280541,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.86,
           "slug": "refill-rosa3d-asa-modra-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -27264,6 +27241,33 @@
           ],
           "hex": "#2B3035",
           "pixel_count": 109161,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.53,
+          "slug": "filament-azurefilm-asa-cerna-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "ASA",
+          "color_name": "Černá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-cerna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/4/2478d79f70c099c998673e5d1b8ffe80-vyr-3195-asa-technical-strong-3d-filament-black.jpg",
+          "local_image": "smart3d-filament-azurefilm-asa-cerna-1-75-mm-1-kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament AzureFilm / ASA / ČERNÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            49,
+            52,
+            57
+          ],
+          "hex": "#313439",
+          "pixel_count": 106585,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -27675,30 +27679,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.41,
-          "slug": "filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
+          "delta_e": 6.84,
+          "slug": "aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
           "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "Břidlicově Šedá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-bridlicove-seda-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/9/895430669e356c3be92a5c0433f86c18-asa-bridlicove-seda.png",
-          "local_image": "smart3d-filament-aurapol-asa-bridlicove-seda-1-75-mm-850g.png",
+          "color_name": "3D Slate Grey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f915a237bdb78137d0e97c99b9332970-asa-grey.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-slate-grey-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / BŘIDLICOVĚ ŠEDÁ / 1,75 mm / 850g.",
+          "title": "AURAPOL ASA 3D Filament Slate Grey 850g 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            117,
+            116,
             121,
             123
           ],
-          "hex": "#75797B",
-          "pixel_count": 145410,
+          "hex": "#74797B",
+          "pixel_count": 145559,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -27862,33 +27866,6 @@
       ],
       "petg": [
         {
-          "delta_e": 2.87,
-          "slug": "filament-aurapol-petg-army-piskova-storm-1-75-mm-1-kg",
-          "brand": "AURAPOL",
-          "material": "PETG",
-          "color_name": "Army Písková Storm",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-petg-army-piskova-storm-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/8/988af2dfb4fbe6152727fdd17548fd47-petg-army-sandstorm.png",
-          "local_image": "smart3d-filament-aurapol-petg-army-piskova-storm-1-75-mm-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / PETG / ARMY PÍSKOVÁ \"STORM\" / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            106,
-            108,
-            68
-          ],
-          "hex": "#6A6C44",
-          "pixel_count": 220945,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.26,
           "slug": "aurapol-pet-g-filament-army-sand-storm-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -27995,6 +27972,33 @@
           "hex": "#656D5A",
           "pixel_count": 153119,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.66,
+          "slug": "filament-devil-design-petg-olivove-zelena-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PETG",
+          "color_name": "Olivově Zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-petg-olivove-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92ec422322121d45256ab67249a50462-petg-1-75-olive-green.jpg",
+          "local_image": "smart3d-filament-devil-design-petg-olivove-zelena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PETG / OLIVOVĚ ZELENÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            93,
+            97,
+            70
+          ],
+          "hex": "#5D6146",
+          "pixel_count": 416105,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
@@ -28081,33 +28085,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.15,
-          "slug": "filament-aurapol-asa-tmave-mosazna-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Tmavě Mosazná",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-tmave-mosazna-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/b/dbf2c49c7608714eb9926b6493f59ca3-asa-dark-brass-aurapol.png",
-          "local_image": "smart3d-filament-aurapol-asa-tmave-mosazna-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / TMAVĚ MOSAZNÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            110,
-            105,
-            75
-          ],
-          "hex": "#6E694B",
-          "pixel_count": 282635,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.35,
           "slug": "aurapol-asa-3d-filament-dark-brass-850g-1-75-mm",
           "brand": "AURAPOL",
@@ -28132,6 +28109,33 @@
           ],
           "hex": "#6D684A",
           "pixel_count": 282591,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.69,
+          "slug": "asa-extrafill-vertigo-grey",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Vertigo Grey",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-vertigo-grey",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_VERTIGO_GREY_1.jpg",
+          "local_image": "fillamentum-asa-extrafill-vertigo-grey.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"Vertigo Grey\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            104,
+            103,
+            89
+          ],
+          "hex": "#686759",
+          "pixel_count": 294921,
           "confidence": "measured_dominant_hue"
         }
       ]

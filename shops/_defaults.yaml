@@ -57,3 +57,11 @@ measure_hints:
   # Blue-grey (lavender-looking) SUNLU spool with a navy hub, hue ~220°, next to pale
   # marble windings: drop that band or every SUNLU colour measures as the spool (#767C93).
   'sunlu': {drop_hue_band: [205, 240, 0.05, 1.0]}
+
+# One brand sold by several shops under different (often translated) names: keep the preferred
+# shop's record and drop the other shops' twins (same brand + material, measured colour within
+# `dedupe_delta_e`, matched one-to-one nearest first). brand regex -> shop name. Other brands keep
+# every shop, because each shop link is a real choice for the buyer.
+preferred_shop:
+  '^aurapol$': Aurapol
+dedupe_delta_e: 2
