@@ -1,14 +1,14 @@
-# Crawl-delay 10 s, so discovery is limited to Fiberlogy Easy PLA/PETG. Widen `include` to add brands.
+# Crawl-delay 10 s, so discovery is limited to Fiberlogy Easy PLA/PETG and ASA. Widen `include` to add brands.
 # pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
 # keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
-# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg …).
 name: 3DJake
 platform: generic
 regions: [eu]
 base: https://www.3djake.cz
 sitemap: https://www.3djake.cz/sitemap-p.xml
 include:
-- ^/fiberlogy/easy-(pla|petg)-
+- ^/fiberlogy/(easy-(pla|petg)|asa)-
 default_brand: Fiberlogy
 pins:
 - url: https://www.3djake.cz/fiberlogy/easy-petg-pastel-blue

@@ -1,7 +1,7 @@
 # Bambu Lab EU store (international shop). The store is a Next.js app: each material is one parent page
 # and the colours are variants, so every colour is a pin. image_url is the store's flat colour swatch
 # (its official colour square), the page is fetched for nothing but robots/liveness (availability_from_page: false).
-# Single-colour lines only: PLA Basic / Matte / Tough+ / Pure / Metal / Sparkle, PETG Basic / HF / Matte.
+# Single-colour lines only: PLA Basic / Matte / Tough+ / Pure / Metal / Sparkle, PETG Basic / HF / Matte, ASA.
 # Left out: Marble, Galaxy (multi-tone), Aero (foamed), Gradient / Silk Multi Color, Silk+, Translucent, CF, Glow, Wood.
 # Regenerate the pins when Bambu adds a colour: open the parent page and copy the Color selector entries.
 name: Bambu Lab
@@ -800,4 +800,46 @@ pins:
   material: PLA
   color_name: "Classic Gold Sparkle"
   image_url: https://store.bblcdn.eu/s8/default/af54eca37af046ae9bebe5429e2aa079/fa6f82dee4bb4abaa5d35ba0336e8cc2.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-green
+  brand: Bambu Lab
+  material: ASA
+  color_name: "Green"
+  image_url: https://store.bblcdn.eu/s8/default/74d99fbb500d4e56b170eb33d53e8e64/cb784d59ca1d48cea42f9c2e545854b7.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-red
+  brand: Bambu Lab
+  material: ASA
+  color_name: "Red"
+  image_url: https://store.bblcdn.eu/s8/default/a0641e0a35554c19817d6c30fac1297c/1e6d5f24fcc14949a25332fbbd52f7f2.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-blue
+  brand: Bambu Lab
+  material: ASA
+  color_name: "Blue"
+  image_url: https://store.bblcdn.eu/s8/default/2bbd63b7ac6041be82120f46a22693a7/08592504ef0c4ed4a3054fac903bf20f.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-white
+  brand: Bambu Lab
+  material: ASA
+  color_name: "White"
+  image_url: https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-gray
+  brand: Bambu Lab
+  material: ASA
+  color_name: "Gray"
+  image_url: https://store.bblcdn.eu/s8/default/bf06ff5739d24cd9a821873f88630e2a/7e5829465d8a48b39c5ad1d103db0b5e.media
+  availability_from_page: false
+- url: https://eu.store.bambulab.com/products/asa-filament
+  slug: bambu-lab-asa-black
+  brand: Bambu Lab
+  material: ASA
+  color_name: "Black"
+  image_url: https://store.bblcdn.eu/s8/default/e84878a0e381455ab6ff4b90ce7860b6/11d6469b590e4b8080ca5bd3f2385e22.media
   availability_from_page: false

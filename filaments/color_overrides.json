@@ -170,5 +170,93 @@
   "filament-lume-pla-zlata-1-75-mm-1-kg": {
     "hex": "#94733A",
     "note": "Paper spool/cardboard flange and shaded winding pulled the measurement brown/dark. Hex = lit part of the winding on the Smart3D photo, checked by eye (user flagged it)."
+  },
+  "bambu-lab-asa-white": {
+    "hex": "#FFFFFF",
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+  },
+  "asa-olive-green": {
+    "hex": "#28282A",
+    "note": "Hex = median of a box sampled by hand on the review page. white spool, filament is very dark olive colour"
+  },
+  "refill-rosa3d-asa-modra-1-75-mm-1-kg": {
+    "hex": "#303C55",
+    "note": "Hex = median of a box sampled by hand on the review page. ROSA 3D ASAs have red box, we need to fix it"
+  },
+  "refill-rosa3d-asa-oranzova-juicy-1-75-mm-1-kg": {
+    "hex": "#FF893A",
+    "note": "Hex = median of a box sampled by hand on the review page. ROSA 3D ASAs have red box, we need to fix it"
+  },
+  "refill-rosa3d-asa-zelena-1-75-mm-1-kg": {
+    "hex": "#77C35F",
+    "note": "Hex = median of a box sampled by hand on the review page. ROSA 3D ASAs have red box, we need to fix it"
+  },
+  "refill-rosa3d-asa-cervena-1-75-mm-1-kg": {
+    "hex": "#EB3335",
+    "note": "Hex = median of a box sampled by hand on the review page. ROSA 3D ASAs have red box, we need to fix it"
+  },
+  "refill-rosa3d-asa-zluta-1-75-mm-1-kg": {
+    "hex": "#FFF75F",
+    "note": "Hex = median of a box sampled by hand on the review page. ROSA 3D ASAs have red box, we need to fix it"
+  },
+  "p195": {
+    "hex": "#737475",
+    "note": "Hex = median of a box sampled by hand on the review page. thats very dark for silver"
+  },
+  "asa-extrafill-green-grass": {
+    "hex": "#5E8C47",
+    "note": "Hex = median of a box sampled by hand on the review page. seems like Fillamentum ASA has some greenish/grey spool, i think it influences the color"
+  },
+  "asa-extrafill-grey-blue": {
+    "hex": "#253846",
+    "note": "Hex = median of a box sampled by hand on the review page. seems like Fillamentum ASA has some greenish/grey spool, i think it influences the color"
+  },
+  "asa-extrafill-metallic-grey": {
+    "hex": "#797571",
+    "note": "Hex = median of a box sampled by hand on the review page. seems like Fillamentum ASA has some greenish/grey spool, i think it influences the color"
+  },
+  "devil-design-asa-svetle-seda-light-grey-1kg": {
+    "hex": "#C9C7C0",
+    "note": "Hex = median of a box sampled by hand on the review page. too dark, Devil Deisn ASAs have transparent spools, but on product photo they make darker filament colour on sides"
+  },
+  "overture-asa-filament-1-75mm-brown": {
+    "hex": "#81634E",
+    "note": "Hex = median of a box sampled by hand on the review page. this is too light"
+  },
+  "filament-aurapol-asa-army-supply-grey-1-75-mm-850g": {
+    "hex": "#8A8B64",
+    "note": "Hex = median of a box sampled by hand on the review page. wrong colour, filament is green colour, there is grey aurapol stand"
+  },
+  "filament-smart-print-asa-bila-1-kg-1-75-mm": {
+    "hex": "#DEE1DD",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "asa-inox": {
+    "hex": "#9CA0A6",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "asa-extrafill-traffic-white": {
+    "hex": "#CAC5B8",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "3d-sphynx-asa-bila-white-800g": {
+    "hex": "#D7F0F0",
+    "note": "Hex = median of a box sampled by hand on the review page. there is brown/beige stand that needs to be taken out"
+  },
+  "3d-sphynx-asa-cerna-black-800g": {
+    "hex": "#3D4954",
+    "note": "Hex = median of a box sampled by hand on the review page. there is brown/beige stand that needs to be taken out"
+  },
+  "3d-sphynx-asa-seda-graphite-800g": {
+    "hex": "#3E4A55",
+    "note": "Hex = median of a box sampled by hand on the review page. there is brown/beige stand that needs to be taken out"
+  },
+  "3dpower-asa-bila-white-1kg": {
+    "hex": "#F9F8F3",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "refill-rosa3d-asa-bila-1-75-mm-1-kg": {
+    "hex": "#F8F9F4",
+    "note": "Hex = median of a box sampled by hand on the review page. Red box on the photo for ROSA3D ASA"
   }
 }

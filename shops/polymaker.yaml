@@ -6,7 +6,7 @@ platform: shopify
 regions: [int]
 base: https://us.polymaker.com
 include:
-- ^/products/(panchroma-pla|matte-pla|polymaker-pla-pro|polylite-pla|satin-pla|metallic-pla|neon-pla|petg)$
+- ^/products/(panchroma-pla|matte-pla|polymaker-pla-pro|polylite-pla|satin-pla|metallic-pla|neon-pla|petg|asa)$
 default_brand: Polymaker
 split_variants:
   option: Color

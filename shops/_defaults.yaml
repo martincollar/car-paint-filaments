@@ -30,17 +30,20 @@ exclude:
   - 'bundle|balicek|multipack|multi-pack|\bbox\b|-box-|(^|[-/])sada([-/]|$)|(^|[-/])set([-/]|$)|-kopie|/akce-|/akcia-'
   - '2-85|2[.,]85|285-?mm'
   - '(^|[-/])(2|3|4|5|8|10)-?kg'
+  - '(^|[-/])(2|3|4|5)000-?g([-/]|$)'
+  - '(^|[-/_])(c|g)f\d*([-/_]|$)|kevlar|flameguard|safeguard|(^|[-/])asa-x([-/]|$)'
   - '(^|[-/])(cf|carbon|karbon|wood|drevo|woodjet|glow|svitici|tungsten|magnetite?)([-/]|$)'
   - 'rainbow|duhov|multicolou?r|tricolou?r|dual-colou?r|gradient|dvoubarev|dvojbarev|tribarev|trojbarev|termo|thermo|chameleon|kameleon'
-  - '(^|[-/])(asa|abs|tpu|tpe|pc|pa|nylon|pva|hips|pp)([-/]|$)'
+  - '(^|[-/])(abs|tpu|tpe|pc|pa|nylon|pva|hips|pp)([-/]|$)'
 
 # First match wins (on URL path + product title).
 materials:
   PETG: '(^|[^a-z])pet-?g([^a-z]|$)'
   PLA+: '(^|[^a-z])pla(\+|-?plus)'
   PLA:  '(^|[^a-z])pla([^a-z]|$)'
+  ASA:  '(^|[^a-z])asa([^a-z]|$)'
 
-material_in_url: true   # URL must already name PLA/PETG (cheap pre-filter before any page fetch)
+material_in_url: true   # URL must already name PLA/PETG/ASA (cheap pre-filter before any page fetch)
 max_new_per_run: 300   # cap on never-seen product pages fetched in one run (first crawl spreads over runs)
 refresh_days: 7        # re-fetch a known product page (stock) when the cached copy is older
 min_keep_ratio: 0.8    # refuse to overwrite a shop's raw JSON if it would shrink below 80 %

@@ -1,7 +1,7 @@
 # Own e-shop; only the Czech (/cz/p/) variant of each product.
 # pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
 # keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
-# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg …).
 name: Aurapol
 platform: upgates
 regions: [eu]

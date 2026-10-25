@@ -1,5 +1,243 @@
 [
   {
+    "slug": "asa-black-3",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Black",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-black-3",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33540_406bb365.128x128.jpg",
+    "local_image": "3djake-asa-black-3.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Black, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-blue",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Blue",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-blue",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33519_c239ab73.128x128.jpg",
+    "local_image": "3djake-asa-blue.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Blue, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-graphit",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Graphit",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-graphit",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33522_629dbf1e.128x128.jpg",
+    "local_image": "3djake-asa-graphit.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Graphit, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-grey",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Grey",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-grey",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33525_85c3112e.128x128.jpg",
+    "local_image": "3djake-asa-grey.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Grey, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-inox",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Inox",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-inox",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33546_980c5c76.128x128.jpg",
+    "local_image": "3djake-asa-inox.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Inox, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-light-green-1",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Light Green",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-light-green-1",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33528_dd104b62.128x128.jpg",
+    "local_image": "3djake-asa-light-green-1.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Light Green, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-matte-black",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Matte Black",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-matte-black",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118789_17921437256ad1f16d47e5c.128x128.jpg",
+    "local_image": "3djake-asa-matte-black.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Matte Black, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-matte-graphite",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Matte Graphite",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-matte-graphite",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/67669_6f563fd5.128x128.jpg",
+    "local_image": "3djake-asa-matte-graphite.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Matte Graphite, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-matte-gray",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Matte Gray",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-matte-gray",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118783_17921436826ad1f142d5bc2.128x128.jpg",
+    "local_image": "3djake-asa-matte-gray.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Matte Gray, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-matte-olive-green",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Matte Olive Green",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-matte-olive-green",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118777_17921436326ad1f1100c534.128x128.jpg",
+    "local_image": "3djake-asa-matte-olive-green.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Matte Olive Green, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-olive-green",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Olive Green",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-olive-green",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33549_ac7709c4.128x128.jpg",
+    "local_image": "3djake-asa-olive-green.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Olive Green, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-onyx",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Onyx",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-onyx",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33553_f3f221c8.128x128.jpg",
+    "local_image": "3djake-asa-onyx.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Onyx, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-orange-1",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Orange",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-orange-1",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33531_37e11243.128x128.jpg",
+    "local_image": "3djake-asa-orange-1.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Orange, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-red-2",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Red",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-red-2",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33555_be9fb888.128x128.jpg",
+    "local_image": "3djake-asa-red-2.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Red, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-vertigo",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Vertigo",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-vertigo",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33558_29ea0b2f.128x128.jpg",
+    "local_image": "3djake-asa-vertigo.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Vertigo, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-white-1",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "White",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-white-1",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33534_d99e5e21.128x128.jpg",
+    "local_image": "3djake-asa-white-1.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA White, 1,75 mm / 1000 g",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-yellow",
+    "brand": "Fiberlogy",
+    "material": "ASA",
+    "color_name": "Yellow",
+    "shop": "3DJake",
+    "url": "https://www.3djake.cz/fiberlogy/asa-yellow",
+    "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33543_166538b2.128x128.jpg",
+    "local_image": "3djake-asa-yellow.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Fiberlogy ASA Yellow, 1,75 mm / 750 g",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "easy-petg-black",
     "brand": "Fiberlogy",
     "material": "PETG",
@@ -11,7 +249,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Black, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-blue",
@@ -25,7 +263,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Blue, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-graphite",
@@ -39,7 +277,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Graphite, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-gray",
@@ -53,7 +291,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Gray, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-onyx",
@@ -67,7 +305,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Onyx, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-orange",
@@ -81,7 +319,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Orange, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-pastel-blue",
@@ -95,7 +333,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Pastel Blue, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-pastel-lilac",
@@ -109,7 +347,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Pastel Lilac, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-pastel-mint",
@@ -123,7 +361,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Pastel Mint, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-pastel-yellow",
@@ -137,7 +375,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Pastel Yellow, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-red",
@@ -151,7 +389,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Red, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-black",
@@ -165,7 +403,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PETG Refill Black, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-graphite",
@@ -179,7 +417,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Refill Graphite, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-gray",
@@ -193,7 +431,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Refill Gray, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-silver",
@@ -207,7 +445,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Refill Silver, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-vertigo",
@@ -221,7 +459,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Refill Vertigo, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-refill-white",
@@ -235,7 +473,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Refill White, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-scarlet",
@@ -249,7 +487,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Scarlet, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-silver",
@@ -263,7 +501,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Silver, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-vertigo",
@@ -277,7 +515,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Vertigo, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-white",
@@ -291,7 +529,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG White, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-petg-yellow",
@@ -305,7 +543,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PETG Yellow, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-alien-green",
@@ -319,7 +557,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Alien Green, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-aurora",
@@ -333,7 +571,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Aurora, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-beige",
@@ -347,7 +585,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Beige, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-black",
@@ -361,7 +599,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Black, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-blue",
@@ -375,7 +613,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PLA Blue, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-brick",
@@ -389,7 +627,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Brick, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-brown",
@@ -403,7 +641,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-burgundy",
@@ -417,7 +655,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Burgundy, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-candy",
@@ -431,7 +669,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Candy, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-granite",
@@ -445,7 +683,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Granite, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-graphite",
@@ -459,7 +697,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Graphite, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-green",
@@ -473,7 +711,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-grey",
@@ -487,7 +725,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Grey, 1,75 mm / 2500 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-inox",
@@ -501,7 +739,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Inox",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-irish-green",
@@ -515,7 +753,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PLA Irish Green, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-light-green",
@@ -529,7 +767,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Light Green, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-lithophane-white",
@@ -543,7 +781,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Lithophane White, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-midnight-sky",
@@ -557,7 +795,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Midnight Sky, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-neon-green",
@@ -571,7 +809,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Neon Green, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-neon-orange",
@@ -585,7 +823,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Neon Orange, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-neon-yellow",
@@ -599,7 +837,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Neon Yellow, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-onyx",
@@ -613,7 +851,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Onyx",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-onyx-gold",
@@ -627,7 +865,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Onyx Gold, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-orange",
@@ -641,7 +879,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Orange, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pastel-blue",
@@ -655,7 +893,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Pastel Blue, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pastel-lilac",
@@ -669,7 +907,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Pastel Lilac, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pastel-mint",
@@ -683,7 +921,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Pastel Mint, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pastel-pink",
@@ -697,7 +935,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Pastel Pink, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pastel-yellow",
@@ -711,7 +949,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Pastel Yellow, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-pink",
@@ -725,7 +963,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PLA Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-purple",
@@ -739,7 +977,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Purple, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-red",
@@ -753,7 +991,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Red, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-red-orange",
@@ -767,7 +1005,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Red Orange, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-black",
@@ -781,7 +1019,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Black, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-blue",
@@ -795,7 +1033,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Blue, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-graphite",
@@ -809,7 +1047,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Graphite, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-gray",
@@ -823,7 +1061,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Gray, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-inox",
@@ -837,7 +1075,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Inox, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-light-green",
@@ -851,7 +1089,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Light Green, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-orange",
@@ -865,7 +1103,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PLA Refill Orange, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-vertigo",
@@ -879,7 +1117,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill Vertigo, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-refill-white",
@@ -893,7 +1131,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Refill White, 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-ruby-red",
@@ -907,7 +1145,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Ruby Red, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-sahara-beige",
@@ -921,7 +1159,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Sahara Beige, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-sandstone",
@@ -935,7 +1173,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Sandstone, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-skin1",
@@ -949,7 +1187,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Skin1, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-skin2",
@@ -963,7 +1201,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Skin2, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-skin3",
@@ -977,7 +1215,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Skin3, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-spectra-blue",
@@ -991,7 +1229,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Spectra Blue, 1,75 mm / 850 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-true-blue",
@@ -1005,7 +1243,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA True Blue, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-true-gold",
@@ -1019,7 +1257,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA True Gold, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-vertigo",
@@ -1033,7 +1271,7 @@
     "availability": "PreOrder",
     "stock": "Na objednávku",
     "title": "Fiberlogy Easy PLA Vertigo",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-white",
@@ -1047,7 +1285,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA White, 1,75 mm / 2500 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "easy-pla-yellow",
@@ -1061,6 +1299,6 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Fiberlogy Easy PLA Yellow, 1,75 mm / 1000 g",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

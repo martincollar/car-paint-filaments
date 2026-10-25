@@ -106,7 +106,8 @@ def filament_rgb(path, *,
                   drop_dark_v=0.15,
                   drop_yellow_watermark=True,
                   min_valid_pixels=200,
-                  verbose=False):
+                  verbose=False,
+                  trace=None):
     """Measured colour of a filament product photo → ((r, g, b) | None, pixel count).
 
     Steps (thresholds and their reasons: CLAUDE.md, "filament_rgb() branches…"):
@@ -121,6 +122,9 @@ def filament_rgb(path, *,
          flanges when enough remains without them.
       5. Kraft second pass when the result looks like cardboard but the name doesn't.
     Returns (None, 0) when no pixel survives step 1.
+
+    `trace`: pass a dict to get `trace["mask"]`, an (H, W) bool array of the pixels the
+    final median was taken from (review_sheet.py draws it). Costs nothing otherwise.
 
     `name` (colour name) helps neutral filaments: when it says black / white /
     grey, the median is taken from dark / light / mid-grey low-saturation pixels
@@ -180,6 +184,7 @@ def filament_rgb(path, *,
         if int(pick.sum()) >= min_valid_pixels:
             med = np.median(rgb[pick], axis=0)
             if verbose: print(f"neutral[{cls}]: picked={int(pick.sum())}")
+            if trace is not None: trace["mask"] = pick.reshape(H, W)
             return tuple((med * 255).round().astype(int).tolist()), int(pick.sum())
 
     # exclude_kraft (second pass, see the end): drop the whole cardboard-brown hue band,
@@ -235,8 +240,11 @@ def filament_rgb(path, *,
                 sel = strong
         if sel.sum() < 50:
             med = np.median(colorful_rgb, axis=0)
+            used = colorful_mask
         else:
             med = np.median(colorful_rgb[sel], axis=0)
+            used = np.zeros(len(valid_rgb), dtype=bool)
+            used[np.flatnonzero(colorful_mask)[sel]] = True
         if verbose: print(f"colored: peak={peak}°, mean_sat={colorful_mean_sat:.2f}, in-window={int(sel.sum())}, colorful={len(colorful_h)}")
     else:
         # Neutral filament (white/beige/grey/pastel): median of everything that passed; leave out
@@ -256,25 +264,32 @@ def filament_rgb(path, *,
             if tinted.sum() >= max(min_valid_pixels, 0.3 * keep.sum()):
                 keep = tinted
         med = np.median(valid_rgb[keep], axis=0)
+        used = keep
         if verbose: print(f"neutral: mean_sat={mean_sat:.2f}, colorful_mean={colorful_mean_sat:.2f}, valid={valid_count}, colorful={len(colorful_h)}")
 
     out = (med * 255).round().astype(int).tolist()
+    if trace is not None:
+        full = np.zeros(H * W, dtype=bool)
+        full[np.flatnonzero(valid)[used]] = True
+        trace["mask"] = full.reshape(H, W)
     # Cardboard won: the photo is mostly kraft (refill box, LUME's cardboard spool, Aurapol's
     # beige stand), the result is kraft-coloured, and the name says it isn't a beige/brown
     # filament. Measure again without kraft pixels.
     if (name and not exclude_kraft and kraft_like_rgb(out) and not kraft_like_name(name)
             and is_kraft.sum() > 0.12 * max(int(fg.sum()), 1)):
+        again_trace = {} if trace is not None else None
         again, n = filament_rgb(path, name=name, min_chroma=min_chroma, drop_hue_band=drop_hue_band,
                                 exclude_kraft=True,
                                 drop_white_v=drop_white_v, drop_white_s=drop_white_s, drop_dark_v=drop_dark_v,
                                 drop_yellow_watermark=drop_yellow_watermark, min_valid_pixels=min_valid_pixels,
-                                verbose=verbose)
+                                verbose=verbose, trace=again_trace)
         # Only when a real non-cardboard object is left (>= 5 % of the foreground) and it isn't
         # just the black spool: a tan filament with an unknown name ("Mukha") has nothing else.
         spool_like = again is not None and max(again) < 0.30 * 255 and max(again) - min(again) < 0.035 * 255
         if again is not None and n >= max(min_valid_pixels, 0.05 * int(fg.sum())) and not (
                 spool_like and neutral_class(name) not in ("black", "dark")):
             if verbose: print(f"kraft won ({rgb_to_hex(out)}), re-measured without kraft → {rgb_to_hex(again)}")
+            if trace is not None: trace["mask"] = again_trace["mask"]
             return again, n
     return tuple(out), valid_count
 

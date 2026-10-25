@@ -11,7 +11,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Šedá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p153",
@@ -25,7 +25,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Perlová Zelená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p154",
@@ -39,7 +39,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Perlová Modrá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p155",
@@ -53,7 +53,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Perlová Červená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p157",
@@ -67,7 +67,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Modrá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p158",
@@ -81,7 +81,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Červená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p159",
@@ -95,7 +95,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Khaki",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p160",
@@ -109,7 +109,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Modrá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p163",
@@ -123,7 +123,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Orange 2018",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p179",
@@ -137,7 +137,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Tmavá Purpurová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p180",
@@ -151,7 +151,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Tyrkysová Modrá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p189",
@@ -165,7 +165,63 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Oranžová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "p192",
+    "brand": "Filament PM",
+    "material": "ASA",
+    "color_name": "Hnědá",
+    "shop": "FilamentPM",
+    "url": "https://www.filament-pm.cz/asa-hneda-1-75-mm-0-75-kg/p192",
+    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4839-ASA-BROWN2-product-og.jpg?v=1570780880",
+    "local_image": "filament_pm-p192.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA - Hnědá",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "p194",
+    "brand": "Filament PM",
+    "material": "ASA",
+    "color_name": "Modrá",
+    "shop": "FilamentPM",
+    "url": "https://www.filament-pm.cz/asa-modra-1-75-mm-0-75-kg/p194",
+    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4871-ASA-BLUE-2-product-og.jpg?v=2868409027",
+    "local_image": "filament_pm-p194.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA - Modrá",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "p195",
+    "brand": "Filament PM",
+    "material": "ASA",
+    "color_name": "Stříbrná",
+    "shop": "FilamentPM",
+    "url": "https://www.filament-pm.cz/asa-stribrna-1-75-mm-0-75-kg/p195",
+    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4441-asa-silver-1kg-1-75-1-product-og.jpg?v=1769430376",
+    "local_image": "filament_pm-p195.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA - Stříbrná",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "p196",
+    "brand": "Filament PM",
+    "material": "ASA",
+    "color_name": "Černá",
+    "shop": "FilamentPM",
+    "url": "https://www.filament-pm.cz/asa-cerna-1-75-mm-0-75-kg/p196",
+    "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4686-asa-black-0-75kg-1-75-1-product-og.jpg?v=1882433039",
+    "local_image": "filament_pm-p196.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA - Černá",
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p242",
@@ -179,7 +235,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ pastelová edice - Sweet Mint",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p244",
@@ -193,7 +249,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ pastelová edice - Bubblegum Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p245",
@@ -207,7 +263,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ pastelová edice - Banana Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p248",
@@ -221,7 +277,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ pastelová edice - Baby Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p250",
@@ -235,7 +291,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Černá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p251",
@@ -249,7 +305,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Bílá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p273",
@@ -263,7 +319,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Army edice - Ranger Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p274",
@@ -277,7 +333,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Army edice - Dusty Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p275",
@@ -291,7 +347,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Army edice - Desert Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p276",
@@ -305,7 +361,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Army edice - Woodland Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p281",
@@ -319,7 +375,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Šedá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p295",
@@ -333,7 +389,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Summer edice - Fresh lime",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p296",
@@ -347,7 +403,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Summer edice - Fresh Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p299",
@@ -361,7 +417,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Graphite black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p308",
@@ -375,7 +431,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Skin edice - Skin 477C",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p309",
@@ -389,7 +445,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Skin edice - Skin 478C",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p310",
@@ -403,7 +459,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Skin edice - Skin 479C",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p311",
@@ -417,7 +473,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Skin edice - Skin 480C",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p320",
@@ -431,7 +487,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Lithophane",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p322",
@@ -445,7 +501,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Viva Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p325",
@@ -459,7 +515,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Envy Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p327",
@@ -473,7 +529,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Zelená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p345",
@@ -487,7 +543,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG metalická edice - Žabí Zlato",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p346",
@@ -501,7 +557,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG metalická edice - Kávová Bronzová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p347",
@@ -515,7 +571,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG metalická edice - Břidlicová Stříbrná",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p363",
@@ -529,7 +585,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Iron Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p390",
@@ -543,7 +599,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Bílá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p396",
@@ -557,7 +613,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Žlutozelená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p397",
@@ -571,7 +627,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Navy Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p399",
@@ -585,7 +641,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA+ Race Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p49",
@@ -599,7 +655,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Žlutá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p51",
@@ -613,7 +669,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Oranžová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p58",
@@ -627,7 +683,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG - Černá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p61",
@@ -641,7 +697,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Bílá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p62",
@@ -655,7 +711,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Béžová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p63",
@@ -669,7 +725,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Žlutá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p64",
@@ -683,7 +739,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Zlatá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p65",
@@ -697,7 +753,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Měděná",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p69",
@@ -711,7 +767,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Růžová",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p70",
@@ -725,7 +781,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Červená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p71",
@@ -739,7 +795,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Metallic Violet",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p72",
@@ -753,7 +809,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Lila",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p74",
@@ -767,7 +823,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Zelená",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p75",
@@ -781,7 +837,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Metallic Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p78",
@@ -795,7 +851,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Stříbrná",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p79",
@@ -809,7 +865,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Hnědá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "p85",
@@ -823,6 +879,6 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA - Černá",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]
