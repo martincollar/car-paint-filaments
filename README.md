@@ -8,7 +8,7 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 
 | Car | Years | Colors | Page |
 |---|---|---|---|
-| 3D Sets Doppler | 1951-1957 | 65 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
+| 3D Sets Doppler | 1951-1957 | 69 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
 | 3D Sets Torq | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
 | 3D Sets Sakura (Datsun 240Z paints) | 1971-1972 | 13 | not published yet |
 

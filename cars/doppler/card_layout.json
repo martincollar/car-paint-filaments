@@ -59,7 +59,6 @@
           "car_code": "M-64",
           "paint_ref": "50216",
           "poly": false,
-          "combo_only": true,
           "box_width": 70,
           "box_height": 24
         },
@@ -71,7 +70,6 @@
           "car_code": "RR-72",
           "paint_ref": "30862",
           "poly": false,
-          "combo_only": true,
           "box_width": 70,
           "box_height": 24
         },
@@ -83,7 +81,6 @@
           "car_code": "J-45",
           "paint_ref": "10742",
           "poly": false,
-          "combo_only": true,
           "box_width": 70,
           "box_height": 24
         }
@@ -673,8 +670,7 @@
           "year": 1951,
           "car_code": "7105-G",
           "paint_ref": "10435",
-          "poly": false,
-          "combo_only": true
+          "poly": false
         }
       ]
     }
