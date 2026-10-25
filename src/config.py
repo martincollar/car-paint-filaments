@@ -38,9 +38,10 @@ CARS_DIR = ROOT / "cars"
 # GoatCounter site code (https://<code>.goatcounter.com). Set GOATCOUNTER= (empty) for no visit counter.
 GOATCOUNTER = os.environ.get("GOATCOUNTER", "mkolar")
 
-# Material labels (shops/_defaults.yaml `materials`) grouped into the two page columns.
+# Material labels (shops/_defaults.yaml `materials`) grouped into the three page columns.
 PLA_MATERIALS  = ("PLA", "PLA+")
 PETG_MATERIALS = ("PETG",)
+ASA_MATERIALS  = ("ASA",)
 
 def car_dir(car: str) -> Path:    return CARS_DIR / car
 def car_sources(car: str) -> Path: return car_dir(car) / "sources"

@@ -48,7 +48,7 @@ def best_per_hex(matches):
     best = {}
     for colours in matches.values():
         for colour in colours:
-            for cand in colour.get("pla", []) + colour.get("petg", []):
+            for cand in colour.get("pla", []) + colour.get("petg", []) + colour.get("asa", []):
                 hx = (cand.get("hex") or "").upper()
                 if hex_to_rgb(hx) and not penalised(cand, colour) and (hx not in best or cand["delta_e"] < best[hx]["delta_e"]):
                     best[hx] = cand
@@ -494,7 +494,7 @@ def page(cars):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Car paint filaments</title>
-<meta name="description" content="Original paint colours of classic cars matched to the closest PLA and PETG filaments.">
+<meta name="description" content="Original paint colours of classic cars matched to the closest PLA, PETG and ASA filaments.">
 {font_link}
 <style>{css}</style>
 <script>document.documentElement.className = 'js';</script>
@@ -502,7 +502,7 @@ def page(cars):
 <body>
 <header class="site-head">
   <h1>Car paint filaments</h1>
-  <p>Original paint colours of classic cars, matched to the closest PLA and PETG filaments. Pick a car, then a filament.</p>
+  <p>Original paint colours of classic cars, matched to the closest PLA, PETG and ASA filaments. Pick a car, then a filament.</p>
 </header>
 <main>{"".join(tile_html(c) for c in cars)}
 </main>

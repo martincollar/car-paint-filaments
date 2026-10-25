@@ -439,6 +439,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
           <div class="rcols" data-r="{r}">
             <div class="col pla-col">{filament_column(by_name[r][m['name']]['pla'], 'PLA', fil_thumbs)}</div>
             <div class="col petg-col">{filament_column(by_name[r][m['name']]['petg'], 'PETG', fil_thumbs)}</div>
+            <div class="col asa-col">{filament_column(by_name[r][m['name']].get('asa', []), 'ASA', fil_thumbs)}</div>
           </div>""" for r in regions)
             rows.append(f"""
         <article class="row">
@@ -451,9 +452,11 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         fr = [f for f in all_filaments if r in (f.get("regions") or []) and f.get("rgb")]
         pla_n  = sum(1 for f in fr if f["material"] in config.PLA_MATERIALS)
         petg_n = sum(1 for f in fr if f["material"] in config.PETG_MATERIALS)
+        asa_n  = sum(1 for f in fr if f["material"] in config.ASA_MATERIALS)
         shops  = {f.get("shop", "?") for f in fr}
         counts += (f'<div data-r="{r}"><strong>{pla_n}</strong><span>PLA candidates</span></div>'
                    f'<div data-r="{r}"><strong>{petg_n}</strong><span>PETG candidates</span></div>'
+                   f'<div data-r="{r}"><strong>{asa_n}</strong><span>ASA candidates</span></div>'
                    f'<div data-r="{r}"><strong>{len(shops)}</strong><span>e-shops</span></div>')
     switch = ""
     if len(regions) > 1:

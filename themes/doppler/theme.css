@@ -204,7 +204,7 @@ h2.year-head {
 }
 /* ===== Table rows ===== */
 .row {
-  display: grid; grid-template-columns: 1fr 1.1fr 1.1fr; gap: 16px;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
   padding: 16px 0; border-bottom: 1px dashed var(--rule); align-items: start;
 }
 .row:last-of-type { border-bottom: none; }
@@ -216,6 +216,7 @@ h2.year-head {
 }
 
 /* ===== Paint block — mimics a paint-chip card ===== */
+.row > .paint-col { grid-column: 1 / -1; }
 .paint { display: flex; gap: 12px; align-items: flex-start; min-width: 0; }
 .paint .swatch.big {
   width: 88px; height: 88px; flex-shrink: 0;
