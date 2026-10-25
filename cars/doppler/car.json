@@ -28,8 +28,10 @@
   ],
   "index": {
     "buy_url": "https://3dsets.com/product/model-23-doppler/?add-to-cart=107197",
-    "paints": ["Royal Red", "Caribbean Blue Green", "Glacier Blue", "Symphony Blue Green Light", "Bermuda Green",
-               {"combo": "RQ-144"}, {"combo": "RP-171"}, {"combo": "P90-72"}, {"combo": "P95-93"}, {"combo": "P44A69"}],
+    "paints": [{"combo": "RJ-176"}, {"combo": "RQ-144"}, {"combo": "RP-171"}, {"combo": "P90-72"}, {"combo": "P95-93"},
+               {"combo": "P44A69"}, {"combo": "RM-138"}, {"combo": "RU-178"}, {"combo": "P66A69"}, {"combo": "P85-72"},
+               {"combo": "P92-89"}, {"combo": "RX-169"}, {"combo": "P64A69"}],
+    "roof_upper": true,
     "shuffle": true
   }
 }

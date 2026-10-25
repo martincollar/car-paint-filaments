@@ -250,6 +250,7 @@ def collect_car(car):
         "hero": hero,
         "cut": cut,
         "fg": fg,
+        "roof_upper": bool((meta.get("index") or {}).get("roof_upper")),
         "shuffle": bool((meta.get("index") or {}).get("shuffle")),
         "order": meta.get("index", {}).get("order", 100),
         "buy_url": (meta.get("index") or {}).get("buy_url") or "",
@@ -442,7 +443,7 @@ PAGE_JS = """
     var t = this, key = hex + '/' + (lower || ''), c = t.cache[key]; if (c) return c;
     var o = new ImageData(new Uint8ClampedArray(t.base.data), t.W, t.H), px = o.data, src = t.base.data,
         tu = toLab.apply(null, hexRgb(hex)), tl = lower ? toLab.apply(null, hexRgb(lower)) : tu,
-        tr = t.car.hero.roof ? toLab.apply(null, hexRgb(t.car.hero.roof)) : tu, tz = [tu, tr, tl];
+        tr = t.car.roofUpper || !t.car.hero.roof ? tu : toLab.apply(null, hexRgb(t.car.hero.roof)), tz = [tu, tr, tl];
     for (var q = 0; q < t.idx.length; q++) {
       var i = t.idx[q], m = t.mk, kk = m[3*q+1] > m[3*q] ? 1 : 0;      // the zone that covers the pixel most
       if (m[3*q+2] > m[3*q+kk]) kk = 2;
@@ -511,7 +512,7 @@ def page(cars):
     credits = sorted({brand(c) for c in cars})
     credit_html = ", ".join(
         f'<a href="{html.escape(u)}" target="_blank" rel="noopener">{html.escape(n)}</a>' for n, u in credits if n and u)
-    js_cars = {c["slug"]: {"slug": c["slug"], "palette": c["palette"], "shuffle": c["shuffle"],
+    js_cars = {c["slug"]: {"slug": c["slug"], "palette": c["palette"], "shuffle": c["shuffle"], "roofUpper": c["roof_upper"],
                            "hero": {"mask": c["hero"]["mask"], "roof": c["hero"].get("roof"), "cut": c["cut"], "fg": c["fg"]}} for c in cars}
     js = PAGE_JS.replace("__CARS__", json.dumps(js_cars, separators=(",", ":")).replace("</", "<\\/"))
     font_link = f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{fonts}">' if fonts else ""
