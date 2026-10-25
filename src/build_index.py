@@ -19,6 +19,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 import config
 from build_html import counter_html
+from tile_parts import split_name, TILE_BASE_CSS
 from color_tools import delta_e_2000, hex_to_rgb, rgb_to_lab
 from compute_matches import NEON_PENALTY, NEON_PAINT_CHROMA
 
@@ -245,17 +246,6 @@ def fonts_href(themes):
     return "https://fonts.googleapis.com/css2?" + "&".join(fams) + "&display=swap" if fams else ""
 
 
-def split_name(text):
-    """(html, length): one span per letter so a theme can bend the title (--i = index, --n = length on the heading);
-    letters stay together per word, so a long title can only wrap between words."""
-    words, idx = [], 0
-    for w in text.split(" "):
-        chars = "".join(f'<span class="ch" style="--i:{idx + k}" aria-hidden="true">{html.escape(ch)}</span>' for k, ch in enumerate(w))
-        words.append(f'<span class="w">{chars}</span>')
-        idx += len(w) + 1
-    return " ".join(words), len(text)
-
-
 def offsets_css(themes):
     """element offsets saved by the layout editor (`?edit` on scripts/serve_preview.py), applied after the theme CSS"""
     out = ""
@@ -327,11 +317,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
              display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }
 
 /* neutral default tile; a theme's tile.css restyles it through `.tile--<theme>` */
+__BASE__
 .tile { position: relative; width: 100%; max-width: 470px; justify-self: center; min-height: 340px; padding: 12px 24px 20px; display: flex; flex-direction: column;
         justify-content: space-between; --stage-w: 121%; --stage-left: -10.5%; --stage-bottom: 30px; }
-.tile-frame { position: absolute; inset: 0; background: var(--tile); border: 2px solid var(--ink); border-radius: 14px;
-              box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
-.tile-deco { position: absolute; inset: 0; pointer-events: none; }
 .tile-stage { position: absolute; left: var(--stage-left); bottom: var(--stage-bottom); width: var(--stage-w);
               aspect-ratio: 1000 / 640; pointer-events: none; }
 .tile-photo, .tile-shade, .tile-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
@@ -340,16 +328,9 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile-photo { filter: brightness(1.032); }
 .tile.ready .tile-photo { visibility: hidden; }
 .js .tile:not(.ready) .tile-photo { opacity: 0; }   /* no flash of the photo's own colour before the recolour */
-.tile-text { position: relative; z-index: 3; }
-.tile-name { margin: 0; font-size: 1.7rem; line-height: 1.1; }
-.tile-name a { text-decoration: none; }
-.tile-name .w { white-space: nowrap; }
-.tile-name .ch { display: inline-block; }
 @media (hover: hover) and (pointer: fine) {   /* mouse: the whole tile is the link; touch: a tap cycles colours instead */
   .tile-name a::after { content: ""; position: absolute; inset: -22px -24px -300px; }
 }
-.tile-tag { margin: 6px 0 0; color: var(--muted); }
-.tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
 .tile-foot { position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto;
              padding-top: 202px; }
 .tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0; }
@@ -496,7 +477,7 @@ PAGE_JS = """
 def page(cars):
     themes = sorted({c["theme"] for c in cars})
     fonts = fonts_href(themes)
-    css = PAGE_CSS + "".join(theme_file(t, "tile.css") for t in themes) + offsets_css(themes)
+    css = PAGE_CSS.replace("__BASE__", TILE_BASE_CSS) +"".join(theme_file(t, "tile.css") for t in themes) + offsets_css(themes)
     # the footer names the photographer/brand once ("3D Sets"), not every model ("3D Sets Model 19 Torq")
     def brand(c):
         url = urlsplit(c["hero"].get("credit_url") or "")
