@@ -1,13 +1,31 @@
 {
   "name": "doppler",
-  "redirect_from": ["hudson"],
+  "redirect_from": [
+    "hudson"
+  ],
   "display": "3D Sets Doppler",
   "badge_label": "DOPPLER",
   "publish": true,
   "script_tagline": "Fins, Chrome & Flakes",
   "subtitle_source": "Hudson & Nash-Hudson Ditzler color cards (1951-1957)",
-  "years": [1951, 1952, 1953, 1954, 1955, 1956, 1957],
-  "pages_per_year": {"1951": 3, "1952": 2, "1953": 1, "1954": 2, "1955": 2, "1956": 2, "1957": 6},
+  "years": [
+    1951,
+    1952,
+    1953,
+    1954,
+    1955,
+    1956,
+    1957
+  ],
+  "pages_per_year": {
+    "1951": 3,
+    "1952": 2,
+    "1953": 1,
+    "1954": 2,
+    "1955": 2,
+    "1956": 2,
+    "1957": 6
+  },
   "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-hudson",
   "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-hudson-pg{page:02d}.jpg",
   "hero": {
@@ -15,9 +33,30 @@
     "mask": "sources/hero_mask.png",
     "roof": "#f2f2f2",
     "zones": [
-      {"id": "upper", "label": "Upper body", "channels": [0]},
-      {"id": "lower", "label": "Lower body", "channels": [2]},
-      {"id": "roof",  "label": "Roof",       "channels": [1], "fixed": true, "dl": 4, "contrast": 0.7}
+      {
+        "id": "upper",
+        "label": "Upper body",
+        "channels": [
+          0
+        ]
+      },
+      {
+        "id": "lower",
+        "label": "Lower body",
+        "channels": [
+          2
+        ]
+      },
+      {
+        "id": "roof",
+        "label": "Roof",
+        "channels": [
+          1
+        ],
+        "fixed": true,
+        "dl": 4,
+        "contrast": 0.7
+      }
     ],
     "credit": "3D Sets Model 23 Doppler",
     "credit_url": "https://3dsets.com/product/model-23-doppler/"
@@ -28,9 +67,52 @@
   ],
   "index": {
     "buy_url": "https://3dsets.com/product/model-23-doppler/?add-to-cart=107197",
-    "paints": [{"combo": "RJ-176"}, {"combo": "RQ-144"}, {"combo": "RP-171"}, {"combo": "P90-72"}, {"combo": "P95-93"},
-               {"combo": "P44A69"}, {"combo": "RM-138"}, {"combo": "RU-178"}, {"combo": "P66A69"}, {"combo": "P85-72"},
-               {"combo": "P92-89"}, {"combo": "RX-169"}, {"combo": "P64A69"}],
+    "paints": [
+      {
+        "combo": "RQ-144",
+        "roof": "upper"
+      },
+      {
+        "combo": "RP-171",
+        "roof": "white"
+      },
+      {
+        "combo": "P90-72",
+        "roof": "upper"
+      },
+      {
+        "combo": "P95-93",
+        "roof": "white"
+      },
+      {
+        "combo": "RU-178",
+        "roof": "white"
+      },
+      {
+        "combo": "P92-89",
+        "roof": "upper"
+      },
+      {
+        "combo": "P44A69",
+        "roof": "upper"
+      },
+      {
+        "combo": "RM-138",
+        "roof": "upper"
+      },
+      {
+        "combo": "P66A69",
+        "roof": "upper"
+      },
+      {
+        "combo": "P85-72",
+        "roof": "upper"
+      },
+      {
+        "combo": "P64A69",
+        "roof": "upper"
+      }
+    ],
     "roof_upper": true,
     "shuffle": true
   }
