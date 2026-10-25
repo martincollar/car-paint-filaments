@@ -1267,8 +1267,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 4.53,
@@ -1647,8 +1646,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 12.87,
@@ -4296,8 +4294,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.81,
@@ -5162,8 +5159,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         },
         {
           "delta_e": 8.04,
@@ -6356,60 +6352,6 @@
       ],
       "asa": [
         {
-          "delta_e": 5.85,
-          "slug": "filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92b0d1adbe51de72ac494fd3301929a0-asa-signalni-bila.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-bila-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ BÍLÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            218,
-            223,
-            204
-          ],
-          "hex": "#DADFCC",
-          "pixel_count": 16898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.89,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            219,
-            224,
-            205
-          ],
-          "hex": "#DBE0CD",
-          "pixel_count": 41599,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.84,
           "slug": "asa-extrafill-traffic-white",
           "brand": "Fillamentum",
@@ -6435,8 +6377,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 8.02,
@@ -6490,6 +6431,60 @@
           ],
           "hex": "#E2E2DA",
           "pixel_count": 52663,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.71,
+          "slug": "asa-extrafill-snow-white",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Snow White",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
+          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Snow White\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            217,
+            210,
+            201
+          ],
+          "hex": "#D9D2C9",
+          "pixel_count": 29647,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.3,
+          "slug": "fiber3d-asa-white",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+          "local_image": "na3d-fiber3d-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            199,
+            196,
+            187
+          ],
+          "hex": "#C7C4BB",
+          "pixel_count": 6953,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -7303,8 +7298,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 12.81,
@@ -8631,8 +8625,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         },
         {
           "delta_e": 11.25,
@@ -9501,8 +9494,7 @@
           "hex": "#9CA0A6",
           "pixel_count": 10051,
           "confidence": "manual_override",
-          "measured_hex": "#D3D3D4",
-          "previous_hex": "#D3D3D4"
+          "measured_hex": "#D3D3D4"
         },
         {
           "delta_e": 9.28,
@@ -10314,8 +10306,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 6.4,
@@ -12099,8 +12090,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.42,
@@ -13423,8 +13413,7 @@
           "hex": "#77C35F",
           "pixel_count": 223070,
           "confidence": "manual_override",
-          "measured_hex": "#C02726",
-          "previous_hex": "#84D36A"
+          "measured_hex": "#C02726"
         }
       ]
     },
@@ -13831,8 +13820,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         },
         {
           "delta_e": 15.79,
@@ -14264,8 +14252,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 11.54,
@@ -14670,8 +14657,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 6.34,
@@ -15483,8 +15469,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 6.57,
@@ -15514,60 +15499,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.07,
-          "slug": "filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92b0d1adbe51de72ac494fd3301929a0-asa-signalni-bila.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-bila-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ BÍLÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            218,
-            223,
-            204
-          ],
-          "hex": "#DADFCC",
-          "pixel_count": 16898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.14,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            219,
-            224,
-            205
-          ],
-          "hex": "#DBE0CD",
-          "pixel_count": 41599,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.5,
           "slug": "fiber3d-asa-white",
           "brand": "FIBER3D",
@@ -15593,6 +15524,61 @@
           "hex": "#C7C4BB",
           "pixel_count": 6953,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.99,
+          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "ASA",
+          "color_name": "301 Bílá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
+          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            237,
+            236,
+            224
+          ],
+          "hex": "#EDECE0",
+          "pixel_count": 3674,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.01,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
         }
       ]
     },
@@ -16836,8 +16822,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.53,
@@ -19435,8 +19420,7 @@
           "hex": "#9CA0A6",
           "pixel_count": 10051,
           "confidence": "manual_override",
-          "measured_hex": "#D3D3D4",
-          "previous_hex": "#D3D3D4"
+          "measured_hex": "#D3D3D4"
         },
         {
           "delta_e": 8.88,
@@ -20356,8 +20340,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         }
       ]
     },
@@ -20709,8 +20692,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 12.98,
@@ -20765,8 +20747,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 13.46,
@@ -22443,8 +22424,7 @@
           "hex": "#77C35F",
           "pixel_count": 223070,
           "confidence": "manual_override",
-          "measured_hex": "#C02726",
-          "previous_hex": "#84D36A"
+          "measured_hex": "#C02726"
         },
         {
           "delta_e": 11.97,
@@ -22526,8 +22506,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         }
       ]
     },
@@ -24609,8 +24588,7 @@
           "hex": "#77C35F",
           "pixel_count": 223070,
           "confidence": "manual_override",
-          "measured_hex": "#C02726",
-          "previous_hex": "#84D36A"
+          "measured_hex": "#C02726"
         },
         {
           "delta_e": 7.55,
@@ -25501,8 +25479,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 10.96,
@@ -25988,8 +25965,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         }
       ]
     },
@@ -27638,8 +27614,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 4.56,
@@ -29017,8 +28992,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         }
       ]
     },
@@ -29397,8 +29371,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 9.75,
@@ -31564,8 +31537,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 4.48,
@@ -32401,8 +32373,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 6.74,
@@ -32836,8 +32807,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 9.97,
@@ -32865,8 +32835,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 10.53,
@@ -33272,8 +33241,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 11.0,
@@ -33706,8 +33674,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 13.95,
@@ -34655,8 +34622,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         }
       ]
     },
@@ -36277,8 +36243,7 @@
           "hex": "#5E8C47",
           "pixel_count": 369947,
           "confidence": "manual_override",
-          "measured_hex": "#537D3F",
-          "previous_hex": "#6C9757"
+          "measured_hex": "#537D3F"
         },
         {
           "delta_e": 9.84,
@@ -36794,8 +36759,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         },
         {
           "delta_e": 14.07,
@@ -38063,8 +38027,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 6.15,
@@ -39715,60 +39678,6 @@
       ],
       "asa": [
         {
-          "delta_e": 4.99,
-          "slug": "filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92b0d1adbe51de72ac494fd3301929a0-asa-signalni-bila.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-bila-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ BÍLÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            218,
-            223,
-            204
-          ],
-          "hex": "#DADFCC",
-          "pixel_count": 16898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.05,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            219,
-            224,
-            205
-          ],
-          "hex": "#DBE0CD",
-          "pixel_count": 41599,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.61,
           "slug": "asa-extrafill-traffic-white",
           "brand": "Fillamentum",
@@ -39794,8 +39703,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 5.75,
@@ -39849,6 +39757,60 @@
           ],
           "hex": "#EDECE0",
           "pixel_count": 3674,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.13,
+          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "ASA",
+          "color_name": "Bílá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
+          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            226,
+            226,
+            218
+          ],
+          "hex": "#E2E2DA",
+          "pixel_count": 52663,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.93,
+          "slug": "fiber3d-asa-white",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+          "local_image": "na3d-fiber3d-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            199,
+            196,
+            187
+          ],
+          "hex": "#C7C4BB",
+          "pixel_count": 6953,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -41093,8 +41055,7 @@
           "hex": "#8A8B64",
           "pixel_count": 134697,
           "confidence": "manual_override",
-          "measured_hex": "#969A91",
-          "previous_hex": "#93956B"
+          "measured_hex": "#969A91"
         },
         {
           "delta_e": 10.86,
@@ -42417,8 +42378,7 @@
           "hex": "#797571",
           "pixel_count": 125489,
           "confidence": "manual_override",
-          "measured_hex": "#77746D",
-          "previous_hex": "#85827C"
+          "measured_hex": "#77746D"
         },
         {
           "delta_e": 5.63,
@@ -43310,8 +43270,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         }
       ]
     },
@@ -43663,8 +43622,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 7.42,
@@ -43692,8 +43650,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 8.78,
@@ -44099,8 +44056,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 11.14,
@@ -45880,8 +45836,7 @@
           "hex": "#77C35F",
           "pixel_count": 223070,
           "confidence": "manual_override",
-          "measured_hex": "#C02726",
-          "previous_hex": "#84D36A"
+          "measured_hex": "#C02726"
         },
         {
           "delta_e": 6.75,
@@ -46232,8 +46187,7 @@
           "hex": "#5E8C47",
           "pixel_count": 369947,
           "confidence": "manual_override",
-          "measured_hex": "#537D3F",
-          "previous_hex": "#6C9757"
+          "measured_hex": "#537D3F"
         },
         {
           "delta_e": 9.84,
@@ -48883,8 +48837,7 @@
           "hex": "#253846",
           "pixel_count": 318565,
           "confidence": "manual_override",
-          "measured_hex": "#7B796A",
-          "previous_hex": "#34464D"
+          "measured_hex": "#7B796A"
         },
         {
           "delta_e": 8.88,
@@ -50668,8 +50621,7 @@
           "hex": "#28282A",
           "pixel_count": 9180,
           "confidence": "manual_override",
-          "measured_hex": "#DBDBDB",
-          "previous_hex": "#353538"
+          "measured_hex": "#DBDBDB"
         }
       ]
     },
@@ -51426,62 +51378,7 @@
           "hex": "#CAC5B8",
           "pixel_count": 118063,
           "confidence": "manual_override",
-          "measured_hex": "#E8E4E0",
-          "previous_hex": "#E8E4E0"
-        },
-        {
-          "delta_e": 5.49,
-          "slug": "filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92b0d1adbe51de72ac494fd3301929a0-asa-signalni-bila.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-bila-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ BÍLÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            218,
-            223,
-            204
-          ],
-          "hex": "#DADFCC",
-          "pixel_count": 16898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.54,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            219,
-            224,
-            205
-          ],
-          "hex": "#DBE0CD",
-          "pixel_count": 41599,
-          "confidence": "measured_dominant_hue"
+          "measured_hex": "#E8E4E0"
         },
         {
           "delta_e": 5.55,
@@ -51535,6 +51432,60 @@
           ],
           "hex": "#EDECE0",
           "pixel_count": 3674,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.31,
+          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
+          "brand": "AzureFilm",
+          "material": "ASA",
+          "color_name": "Bílá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
+          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            226,
+            226,
+            218
+          ],
+          "hex": "#E2E2DA",
+          "pixel_count": 52663,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.81,
+          "slug": "fiber3d-asa-white",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+          "local_image": "na3d-fiber3d-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            199,
+            196,
+            187
+          ],
+          "hex": "#C7C4BB",
+          "pixel_count": 6953,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -58389,8 +58340,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 17.41,
@@ -59260,8 +59210,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 20.04,
@@ -61030,8 +60979,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 16.29,
@@ -61846,8 +61794,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 15.32,
@@ -68041,8 +67988,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         }
       ]
     },
@@ -70978,8 +70924,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 12.68,
@@ -80102,8 +80047,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 15.92,
@@ -80595,8 +80539,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 18.56,
@@ -83579,8 +83522,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 11.15,
@@ -84044,8 +83986,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 12.01,
@@ -89745,8 +89686,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 17.24,
@@ -91406,8 +91346,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 16.37,
@@ -92276,8 +92215,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 12.12,
@@ -94992,8 +94930,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         }
       ]
     },
@@ -95347,8 +95284,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 10.91,
@@ -101023,8 +100959,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 16.88,
@@ -101459,8 +101394,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 19.83,
@@ -103578,8 +103512,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 14.28,
@@ -104044,8 +103977,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 16.08,
@@ -107112,8 +107044,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 15.19,
@@ -107576,8 +107507,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 15.81,

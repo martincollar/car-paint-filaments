@@ -297,60 +297,6 @@
       ],
       "asa": [
         {
-          "delta_e": 5.45,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            219,
-            224,
-            205
-          ],
-          "hex": "#DBE0CD",
-          "pixel_count": 41599,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.47,
-          "slug": "filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "Signální Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/2/92b0d1adbe51de72ac494fd3301929a0-asa-signalni-bila.png",
-          "local_image": "smart3d-filament-aurapol-asa-signalni-bila-1-75-mm-850g.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AURAPOL / ASA / SIGNÁLNÍ BÍLÁ / 1,75 mm / 850g.",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            218,
-            223,
-            204
-          ],
-          "hex": "#DADFCC",
-          "pixel_count": 16898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.93,
           "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
           "brand": "NEBULA + COLORFIL",
@@ -429,6 +375,61 @@
           ],
           "hex": "#D9D2C9",
           "pixel_count": 29647,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.82,
+          "slug": "asa-extrafill-traffic-white",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Traffic White",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
+          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Traffic White\"",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            202,
+            197,
+            184
+          ],
+          "hex": "#CAC5B8",
+          "pixel_count": 118063,
+          "confidence": "manual_override",
+          "measured_hex": "#E8E4E0"
+        },
+        {
+          "delta_e": 8.32,
+          "slug": "filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "ASA",
+          "color_name": "275 Bílá Polar",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/9/b972dcffd311a4bb11e0416ea9b9aec0-vyr-1203-16-1.jpg",
+          "local_image": "smart3d-filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament SPECTRUM / ASA 275 / BÍLÁ \"POLAR\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            228,
+            224,
+            219
+          ],
+          "hex": "#E4E0DB",
+          "pixel_count": 89136,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -836,8 +837,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 8.11,
@@ -5568,8 +5568,7 @@
           "hex": "#303C55",
           "pixel_count": 213868,
           "confidence": "manual_override",
-          "measured_hex": "#C12728",
-          "previous_hex": "#3C4A68"
+          "measured_hex": "#C12728"
         },
         {
           "delta_e": 10.17,
@@ -6876,8 +6875,7 @@
           "hex": "#81634E",
           "pixel_count": 1782481,
           "confidence": "manual_override",
-          "measured_hex": "#C6A771",
-          "previous_hex": "#8E735E"
+          "measured_hex": "#C6A771"
         },
         {
           "delta_e": 16.65,
