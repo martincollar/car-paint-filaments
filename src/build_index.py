@@ -326,8 +326,10 @@ __BASE__
 .tile-photo, .tile-shade { mix-blend-mode: multiply; z-index: 1; }  /* floor shadow melts into the tile colour */
 .tile-canvas { z-index: 4; }                                         /* the cut-out car: above frame, text and decoration */
 .tile-photo { filter: brightness(1.032); }
-/* scroll effect: the car shrinks towards its wheels as the tile leaves the middle of the screen (--car-s set by PAGE_JS) */
-.tile-photo, .tile-shade, .tile-canvas { transform: scale(var(--car-s, 1)); transform-origin: 50% 78%; }
+/* scroll effect: the whole tile (frame, decoration, text, buttons, car) shrinks towards its own centre as it leaves the middle of the
+   screen. --car-s comes from PAGE_JS; --ox/--oy put every part's transform origin at the tile centre. Never transform .tile itself:
+   it would become an isolated group and the floor shadow's multiply would no longer reach the page. */
+.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas { transform: scale(var(--car-s, 1)); transform-origin: var(--ox, 50%) var(--oy, 50%); }
 .tile.ready .tile-photo { visibility: hidden; }
 .js .tile:not(.ready) .tile-photo { opacity: 0; }   /* no flash of the photo's own colour before the recolour */
 @media (hover: hover) and (pointer: fine) {   /* mouse: the whole tile is the link; touch: a tap cycles colours instead */
@@ -463,20 +465,31 @@ PAGE_JS = """
     }
   };
 
-  // scroll effect: --car-s = 1 in the middle band of the screen, shrinking to .55 as the tile's centre nears the top or bottom edge
+  // scroll effect: --car-s = 1 in the middle band of the screen, shrinking to .68 as the tile's centre nears the top or bottom edge
   var shrink = !editing && !calm, tickQ = 0;
+  function setOrigins() {   // transform origin of every part = the tile's centre, in that part's own coordinates
+    Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
+      var cx = el.offsetWidth / 2, cy = el.offsetHeight / 2;
+      Array.prototype.forEach.call(el.querySelectorAll('.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas'), function (c) {
+        var x = 0, y = 0, n = c;
+        while (n && n !== el) { x += n.offsetLeft; y += n.offsetTop; n = n.offsetParent; }
+        c.style.setProperty('--ox', (cx - x) + 'px'); c.style.setProperty('--oy', (cy - y) + 'px');
+      });
+    });
+  }
   function sizeCars() {
     tickQ = 0;
     var vh = innerHeight;
     Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
       var r = el.getBoundingClientRect(), d = Math.abs((r.top + r.bottom) / 2 - vh / 2) / (vh / 2 + r.height / 2);
       var k = Math.max(0, Math.min(1, (d - 0.3) / 0.7)); k = k * k * (3 - 2 * k);
-      el.style.setProperty('--car-s', (1 - 0.45 * k).toFixed(3));
+      el.style.setProperty('--car-s', (1 - 0.32 * k).toFixed(3));
     });
   }
   if (shrink) {
     var queue = function () { if (!tickQ) tickQ = requestAnimationFrame(sizeCars); };
-    addEventListener('scroll', queue, { passive: true }); addEventListener('resize', queue); sizeCars();
+    addEventListener('scroll', queue, { passive: true }); addEventListener('resize', function () { setOrigins(); queue(); });
+    setOrigins(); addEventListener('load', setOrigins); sizeCars();
   }
 
   var tiles = {};
