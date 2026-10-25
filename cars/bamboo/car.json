@@ -14,8 +14,8 @@
   "card_file_pattern": "{year}-bamboo-pg{page:02d}.jpg",
   "notes": [
     "Cards cover each year's full line; only the chips of the 4x4 utility model are picked by hand in card_layout.json. Several sheets are byte-identical across years, so a chip is sampled once from the clearest sheet and repeated for every year it was offered (carried_over_from).",
-    "1966-72 colours and years come from the card's own 'LANDCRUISER 1966-72' table (sources/1966-bamboo-pg03.jpg); card spellings are used for names (the table misspells Cygnus, Muleta, Appenino).",
-    "1973-77 years and the colours 304, 541, 031, 632, 637, 854, 1654 come from a community chart (importarchive.com, IH8MUD), not from Toyota: treat as less certain until checked against real-car photos.",
-    "1964-65 cards are used only as chip sources (T-451, T-452, T-1028, T-1208); no Land Cruiser year table exists for 1964-65."
+    "1966-72 colours and years come from the card's own model table for these years (sources/1966-bamboo-pg03.jpg); card spellings are used for names (the table misspells Cygnus, Muleta, Appenino).",
+    "1973-77 years and the colours 304, 541, 031, 632, 637, 854, 1654 come from a community chart (importarchive.com, IH8MUD), not from the maker: treat as less certain until checked against real-car photos.",
+    "1964-65 cards are used only as chip sources (T-451, T-452, T-1028, T-1208); the card has no model year table for 1964-65."
   ]
 }
