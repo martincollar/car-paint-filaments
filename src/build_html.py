@@ -301,7 +301,7 @@ HERO_JS = """
         if (!zid && z.fixed) { sel[k] = H.roof; names[k] = ''; } else { sel[k] = d.hex; names[k] = d.name; }
       }
     });
-    info.innerHTML = window.filInfo(d) + slotsHtml();
+    info.innerHTML = window.filInfo(d, true) + slotsHtml();
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
     box.classList.remove('closed', 'empty');
@@ -334,7 +334,7 @@ HERO_JS = """
           var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : (z.follows === 'upper' ? up : null);
           if (el) { sel[k] = el.dataset.hex; names[k] = el.dataset.name; }
         });
-        info.innerHTML = window.filInfo(up.dataset) + slotsHtml();
+        info.innerHTML = window.filInfo(up.dataset, true) + slotsHtml();
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
@@ -372,6 +372,7 @@ TIP_CSS = """
 .fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
 .fil-tip .t-link, .hero-preview .t-link { font-weight: 600; text-decoration: none; }
 .fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
+.hero-preview .t-row .t-shop { display: inline-flex; align-items: center; gap: 8px; }
 .combos { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 4px 0 14px; font-size: 0.72rem; }
 .combos-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 4px; }
 .combo { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; font: inherit; color: inherit; background: transparent; border: 1px solid var(--rule); cursor: pointer; }
@@ -397,12 +398,17 @@ TIP_JS = """
   var T = __THUMBS__, tip = document.createElement('div'), cur = null, timer = null;
   tip.className = 'fil-tip'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip);
   // Name / HEX / shop / link block, shared with the hover bubble (TIP_JS).
-  window.filInfo = function (d) {
+  // With `linked` (the floating preview) there is no "Open in shop" line: the swatch, HEX and name are the shop link.
+  window.filInfo = function (d, linked) {
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-    return '<div class="t-name">' + esc(d.name) + (d.neon ? ' <span class="neon-tag">NEON</span>' : '') + '</div>' +
-      '<div class="t-row"><span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex) + '</div>' +
+    var url = d.url && d.url !== '#' ? d.url : '', name = esc(d.name) + (d.neon ? ' <span class="neon-tag">NEON</span>' : ''),
+        row = '<span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex);
+    function a(inner) { return '<a class="t-link t-shop" href="' + esc(url) + '" target="_blank" rel="noopener" title="Open in shop">' + inner + '</a>'; }
+    if (linked && url) { name = a(name); row = a(row); }
+    return '<div class="t-name">' + name + '</div>' +
+      '<div class="t-row">' + row + '</div>' +
       '<div class="t-row"><span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div>' +
-      (d.url && d.url !== '#' ? '<a class="t-link" href="' + esc(d.url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');
+      (!linked && url ? '<a class="t-link" href="' + esc(url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');
   };
   function show(el) {
     clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
