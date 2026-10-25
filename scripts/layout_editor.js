@@ -8,7 +8,7 @@
    "Uložit" writes themes/<theme>/tile-offsets.css (or tile-offsets-mobile.css when the window is <= 520 px wide) and
    tile-colors.css, then rebuilds the page. */
 (function () {
-  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-buy, .head-filters, .tile-deco > *';   // any decoration of a theme's tile.html
+  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-buy, .head-filters, .tile-deco > *:not(.t-clip), .tile-deco > .t-clip > *';   // any decoration of a theme's tile.html
   var sel = null, drag = null, touched = {}, colors = {}, lastTile = null;
 
   var css = document.createElement('style');
@@ -16,6 +16,7 @@
     '.tile-name a::after{display:none!important}' +
     '.tile-car{display:none!important}' +   // the car link would sit over the decorations and swallow their clicks
     '.tile-deco *{pointer-events:auto!important}' +
+    '.tile-deco > .t-clip{pointer-events:none!important}' +
     '.le-hover{outline:2px dashed #2563eb;outline-offset:3px;cursor:move}' +
     '.le-sel{outline:2px solid #e11d48!important;outline-offset:3px;cursor:move}' +
     '#le-panel{position:fixed;z-index:99999;right:8px;top:8px;width:244px;padding:10px 12px;border-radius:10px;background:#111;color:#fff;' +

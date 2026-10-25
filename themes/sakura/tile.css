@@ -3,7 +3,7 @@
 .tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --art: 275px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
 .tile--sakura .tile-frame { background-color: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='sk-n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .06 0 0 0 -34 9.4'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23sk-n)'/%3E%3C/svg%3E"); }
-.tile--sakura .tile-deco { overflow: hidden; border-radius: var(--dl-radius); }   /* clips the art at the card's corner */
+.tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); pointer-events: none; }   /* clips the art (sun, branch, petals) at the card's corner; the sign is outside it and may overflow the card */
 .tile--sakura .t-art { position: absolute; top: 0; right: 0; width: var(--art); height: auto; }   /* sun, branch, petals share one box, so each can be moved on its own */
 .tile--sakura .t-sign { position: absolute; right: 16px; top: 36%; padding: 8px 5px; background: var(--dl-ink); color: var(--dl-paper); z-index: 2;
   writing-mode: vertical-rl; font: 400 .85rem/1 var(--dl-font-brush); letter-spacing: .15em; border: 2px solid var(--dl-ink); box-shadow: 2px 2px 0 var(--dl-accent2); }
