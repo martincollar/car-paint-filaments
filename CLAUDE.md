@@ -6,6 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Before starting anything new (a shop, a car, a fix, a refactor), first make the main checkout clean and current (`git status` clean, `git pull --ff-only` on `main`), then create a new worktree for it (`git worktree add .worktrees/<branch> -b <branch>`) and do all the work there. Never start new work, or leave it uncommitted, in the main checkout. Symlink `.venv`, `filaments/sources` and `filaments/.cache` into the worktree from the main checkout.
 
+**Git rules (the user set these; they override any "push when done" habit).**
+- Free to do without asking: commit, push to a feature branch, `git pull --ff-only` on `main`, create worktrees.
+- **Always ask first, every time, before anything lands on `main`**: `git push origin <branch>:main`, merging into `main`, or any push to `main`. Pushing to `main` publishes the live GitHub Pages site (CI deploys on push), so it is outward-facing. An earlier "yes, push" does not cover a later change, and a request like "add X to the page" is not a request to publish it. Build, commit on the branch, show the result (local preview), then ask.
+- **Every feature, fix or doc change gets its own worktree**, no exceptions for small edits (CLAUDE.md edits included). Never commit in the main checkout.
+
 ## Commands
 
 Always use the in-project venv (`./.venv/bin/python`), never the system Python or `~/.venvs/hudson/` from the project's earlier life.
@@ -56,16 +61,16 @@ Every script that needs paths imports `src/config.py`, which exposes `FILAMENTS_
 
 **Adding a new car** must not require editing any code in `src/`. The whole per-car customization is: `cars/<new_name>/car.json` (display name, tagline, years, source URL template, badge label), `cars/<new_name>/card_layout.json` (card images + swatch coordinates), and the card scans in `cars/<new_name>/sources/`. Then `scripts/rebuild.sh <new_name>`. Keep this contract — if a new car requires a code change, that's a bug in the generic pipeline, not a reason to special-case the car.
 
-**New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the push to `main`.
+**New-car checklist: every item, so nothing is missed.** Do all of these in one go; the finish line is the commit on its branch; the push to `main` waits for the user's go-ahead (see Git rules).
 1. Work in a git worktree (`.worktrees/<branch>`, gitignored); symlink `.venv`, `filaments/sources` and `filaments/.cache` from the main checkout.2. `cars/<name>/car.json` (years newest-first, `pages_per_year`, URL patterns), then `scripts/fetch_car_cards.sh <name>` (ask the user before downloading).
 3. `card_layout.json`: pick only the chips that belong to the model; cards with smaller chips set `box_width`/`box_height` per card. Check the boxes on an overlay image before measuring.
 4. `scripts/rebuild.sh <name>`, unit tests, and show the user the sampling preview and the HTML page (check both region views) before pushing.
 5. **README.md "Current cars" table**: add or update the car's row (years, colour count, page link).
 6. **Publish**: `"publish": true` in `car.json` (only when the user wants it live), plus `"index": {"color": ...}` (the tile's resting colour, chosen by the user) and **its own theme**: `"theme": "<name>"` in `car.json` with `themes/<name>/tile.css` + `tile.html`. A car without `theme` falls back to `doppler` and would share Doppler's look *and* its layout-editor offsets/colours (they are saved per theme, not per car). Run `src/build_index.py` and commit `site/index.html`; there is no hand-written list of cars on the site.
-7. Push to `main`. The `pages` workflow deploys on its own: do not wait for it or check the build/live page unless the user asks.
+7. Ask the user, then push to `main` (never without a yes). The `pages` workflow deploys on its own: do not wait for it or check the build/live page unless the user asks.
 7a. **Hero**: prepare it as described under "Recolor preview" (full-size photo, `hero_assets.json`, `make_hero_assets.py`); a low-res or colour-keyed-only hero is the most common reason a car's preview looks bad.
 8. Update the car list in this file ("Current shops"-style docs) if it names cars, and say in the reply what was not done.
-9. The main checkout may be on another branch with someone else's uncommitted work: never commit there. Use a temporary worktree on `origin/main` to commit and push.
+9. The main checkout may be on another branch with someone else's uncommitted work: never commit there. Use a worktree on `origin/main` to commit; push to `main` only after the user says so.
 10. **Previews from a worktree need a local server.** Whenever the user wants to see the result of work done in a worktree, start a local server in a Terminal panel tab (`run_in_terminal`), e.g. `.venv/bin/python scripts/serve_preview.py .worktrees/<branch>/cars/<car>/output <port>` (a no-cache server: plain `http.server` lets Chrome keep showing the old page after a rebuild), and give the user the `http://localhost:<port>/<car>.html` link to open in Chrome. Don't just hand over a file path.
 
 **Adding a new shop** must not require code either, if its platform is known: write `shops/<key>.yaml` (`name`, `platform`, **`regions`**, `base`, `sitemap`, `include` regex for product URLs), run `src/fetch_all.py --shop <key> --dry-run` to check the candidate list, then a real run. Add a `.shop-tag.shop-<slugified name>` CSS block in `build_html.py`. Platforms (`src/adapters/`): `upgates` / `shoptet` / `generic` = sitemap + one product page each (JSON-LD → microdata → `<h1>`/og); `shopify` = `/products.json`; `manual` = only `pins:`. A shop on a new platform that has a sitemap and schema.org markup works as `generic`. Record shape downstream: `{slug, brand, material, color_name, shop, url, image_url, local_image, availability, stock, title, last_ok, stale?}` (no `price`, see below).
