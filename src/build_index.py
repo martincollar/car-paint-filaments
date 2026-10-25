@@ -306,7 +306,14 @@ a { color: inherit; }
 .site-head, .site-foot { max-width: 1180px; margin: 0 auto; padding: 28px 28px; }
 .site-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px;
              padding-top: 36px; }
-.site-head h1 { margin: 0; font-size: 1.15rem; font-weight: 700; letter-spacing: .01em; }
+.wordmark { display: flex; flex-direction: column; align-items: flex-start; margin: 0; line-height: 1; }
+.wm-script { font: 400 2.9rem/1 "Pacifico", cursive; color: var(--ink); transform: rotate(-4deg); transform-origin: left bottom;
+             margin: 0 0 -.45rem .5rem; position: relative; z-index: 1;
+             text-shadow: -2px -2px 0 var(--page), 2px -2px 0 var(--page), -2px 2px 0 var(--page), 2px 2px 0 var(--page), 3px 3px 0 var(--ink); }
+.wm-slab { font: 400 3rem/1 "Alfa Slab One", Georgia, serif; text-transform: uppercase; letter-spacing: .07em; color: var(--ink);
+           padding-bottom: .65rem; position: relative; }
+.wm-slab::after { content: ""; position: absolute; left: 0; right: .07em; bottom: 0; height: 10px;
+                  background: linear-gradient(var(--ink) 0 5px, transparent 5px 7px, var(--ink) 7px 9px); }
 .site-head p { margin: 0; color: var(--muted); max-width: 46ch; }
 main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 64px 76px;
        grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); }
@@ -495,6 +502,7 @@ def page(cars):
                            "hero": {"mask": c["hero"]["mask"], "roof": c["hero"].get("roof"), "cut": c["cut"], "fg": c["fg"]}} for c in cars}
     js = PAGE_JS.replace("__CARS__", json.dumps(js_cars, separators=(",", ":")).replace("</", "<\\/"))
     font_link = f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{fonts}">' if fonts else ""
+    font_link += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap">'
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -508,7 +516,7 @@ def page(cars):
 </head>
 <body>
 <header class="site-head">
-  <h1>Car paint filaments</h1>
+  <h1 class="wordmark" aria-label="Car paint filaments"><span class="wm-script" aria-hidden="true">Car paint</span><span class="wm-slab" aria-hidden="true">Filaments</span></h1>
   <p>Original paint colours of classic cars, matched to the closest PLA, PETG and ASA filaments. Pick a car, then a filament.</p>
 </header>
 <main>{"".join(tile_html(c) for c in cars)}
