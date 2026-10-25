@@ -110,94 +110,54 @@ body {
   display: flex; flex-wrap: wrap; gap: 8px 6px; margin: 22px 0 0;
   align-items: center; font-family: var(--font-mono); font-size: 0.95rem;
 }
-.year-nav .nav-label { color: var(--white); letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; margin-right: 6px; }
+.year-nav .nav-label { color: var(--dl-ink); letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.85rem; font-weight: 700; margin-right: 6px; }
 .year-nav a {
-  padding: 4px 18px; background: var(--blue); color: var(--white);
-  text-decoration: none; font-weight: 700; letter-spacing: 0.06em;
-  clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%);
+  font: 400 .8rem var(--dl-font-title); letter-spacing: .03em; text-transform: uppercase; text-decoration: none;
+  padding: 5px 14px; color: var(--dl-paper); background: var(--dl-primary); border: 3px solid var(--dl-outline);
+  border-radius: 0; box-shadow: var(--dl-shadow); cursor: pointer;
 }
-.year-nav a:hover { background: #000; }
+.year-nav a:hover { background: var(--dl-accent); color: var(--dl-paper); }
 
 .region-switch button {
-  font: inherit; font-size: 0.95rem; line-height: inherit; padding: 4px 18px; background: var(--blue); color: var(--white);
-  border: 0; font-weight: 700; letter-spacing: 0.06em;
-  clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%);
+  font: 400 .8rem var(--dl-font-title); letter-spacing: .03em; text-transform: uppercase; text-decoration: none;
+  padding: 5px 14px; color: var(--dl-paper); background: var(--dl-primary); border: 3px solid var(--dl-outline);
+  border-radius: 0; box-shadow: var(--dl-shadow); cursor: pointer;
 }
-.region-switch button[aria-pressed="true"] { background: #000; }
-.region-switch button:hover { background: #000; color: var(--white); }
+.region-switch button[aria-pressed="true"] { background: var(--dl-accent); }
+.region-switch button:hover { background: var(--dl-accent); color: var(--dl-paper); }
 
 /* ===== Legend ===== */
 .legend {
-  display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: center;
-  padding: 12px 16px; background: var(--white);
-  border: 2px solid var(--ink); border-left: 8px solid var(--red);
-  margin: 24px 0; font-size: 0.82rem;
-  box-shadow: 4px 4px 0 var(--ink);
+  display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+  padding: 4px 2px; margin: 4px 0 8px; font-size: 0.82rem; color: var(--muted);
 }
 .legend .lblock { display: inline-flex; gap: 5px; align-items: center; }
-.legend .legend-head { font-family: var(--font-display); font-size: 0.95rem; color: var(--ink); text-transform: uppercase; letter-spacing: 0.04em; }
-.pill, .de {
-  padding: 1px 9px; font-weight: 700; letter-spacing: 0.03em;
-  font-family: var(--font-mono); font-size: 0.82rem;
-  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
-}
-.pill.exc, .de.exc  { background: var(--good); color: #fff; }
-.pill.vg,  .de.vg   { background: var(--blue); color: #fff; }
-.pill.ok,  .de.ok   { background: var(--gold); color: var(--ink); }
-.pill.weak,.de.weak { background: #c9c9cf; color: #333; }
-.pill.bad, .de.bad  { background: var(--red); color: #fff; }
+.legend .legend-head { font: 700 .85rem var(--dl-font-ui); color: var(--ink); text-transform: uppercase; letter-spacing: 0.1em; }
+.pill, .de { padding: 0; font-weight: 700; letter-spacing: 0.03em; font-family: var(--font-mono); font-size: 0.86rem; }
+.pill.exc, .de.exc { color: var(--good); }
+.pill.vg, .de.vg { color: var(--blue); }
+.pill.ok, .de.ok { color: var(--warn); }
+.pill.weak, .de.weak { color: var(--muted); }
+.pill.bad, .de.bad { color: var(--red-deep); }
 
 /* ===== Shop tags ===== */
-.shop-tag {
-  display: inline-block; font-family: var(--font-mono); font-size: 0.78rem;
-  padding: 0 7px; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase;
-  background: var(--rule-soft); color: var(--muted); border: 1px solid var(--rule);
-}
-.shop-tag.shop-smart3d { background: var(--blue-weak); color: var(--blue-deep); }
-.shop-tag.shop-prusa3d { background: var(--red-weak); color: var(--red-deep); }
-.shop-tag.shop-3djake  { background: #fbe7a8; color: var(--warn); }
-.shop-tag.shop-aurapol { background: color-mix(in srgb, var(--red) 15%, transparent); color: var(--bad); }
-.shop-tag.shop-fillamentum { background: color-mix(in srgb, #6b3fa0 15%, transparent); color: #6b3fa0; }
-.shop-tag.shop-filamentpm { background: color-mix(in srgb, #2d7f3f 15%, transparent); color: #2d7f3f; }
-.shop-tag.shop-na3d { background: color-mix(in srgb, #0066a3 15%, transparent); color: #0066a3; }
-.shop-tag.shop-hubacek3d { background: color-mix(in srgb, #8a5a2b 15%, transparent); color: #8a5a2b; }
-.shop-tag.shop-3dfox { background: color-mix(in srgb, #c4561a 15%, transparent); color: #c4561a; }
-.shop-tag.shop-bambu-lab { background: color-mix(in srgb, #00ae42 15%, transparent); color: #007a2e; }
-.shop-tag.shop-polymaker { background: color-mix(in srgb, #0b6fb8 15%, transparent); color: #0b5a94; }
-.shop-tag.shop-spectrum { background: color-mix(in srgb, #d6336c 15%, transparent); color: #b02a58; }
-.shop-tag.shop-overture { background: color-mix(in srgb, #e8590c 15%, transparent); color: #b8460a; }
+.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.05em; font-weight: 700; text-transform: uppercase; color: var(--muted); }
 
 /* ===== Year section header: number plate with a little flag ===== */
 h2.year-head {
-  display: flex; align-items: center; gap: 16px;
-  margin: 40px 0 14px; padding: 0 0 12px;
-  border: none; scroll-margin-top: 10px; font-weight: 400;
-  border-bottom: 4px solid var(--ink);
-  background: linear-gradient(90deg, var(--red) 0 120px, transparent 120px) bottom / 100% 4px no-repeat;
+  display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6px; padding: 0 0 6px;
+  border: none; border-bottom: 3px solid var(--ink); scroll-margin-top: 10px; font-weight: 400;
 }
-.year-badge {
-  position: relative; display: inline-flex; flex-direction: column; align-items: flex-start;
-  background: var(--ink); color: var(--white);
-  padding: 7px 58px 9px 18px; margin-right: 22px; line-height: 1;
-}
+.year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--ink); line-height: 1; }
 /* the fender shield again, same as the header one */
-.year-badge::after {
-  content: ""; position: absolute; right: -24px; top: 50%;
-  width: 52px; height: 64px; transform: translateY(-50%) rotate(4deg);
-  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 122%22 aria-hidden=%22true%22%3E%3Cdefs%3E%3CclipPath id=%22c%22%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22%23fff%22 stroke=%22%23111%22 stroke-width=%226%22 stroke-linejoin=%22round%22/%3E%3Cg clip-path=%22url%28%23c%29%22%3E%3Crect x=%225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2215.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2225.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2235.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2245.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2255.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2265.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%2275.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23fff%22/%3E%3Crect x=%2285.0%22 y=%220%22 width=%2210.0%22 height=%22120%22 fill=%22%23d9432b%22/%3E%3Crect x=%220%22 y=%220%22 width=%22100%22 height=%2246%22 fill=%22%2327407a%22/%3E%3Cpolygon points=%2224.0%2C19.0 25.7%2C23.6 30.7%2C23.8 26.8%2C26.9 28.1%2C31.7 24.0%2C28.9 19.9%2C31.7 21.2%2C26.9 17.3%2C23.8 22.3%2C23.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2242.0%2C17.0 43.7%2C21.6 48.7%2C21.8 44.8%2C24.9 46.1%2C29.7 42.0%2C26.9 37.9%2C29.7 39.2%2C24.9 35.3%2C21.8 40.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2258.0%2C17.0 59.7%2C21.6 64.7%2C21.8 60.8%2C24.9 62.1%2C29.7 58.0%2C26.9 53.9%2C29.7 55.2%2C24.9 51.3%2C21.8 56.3%2C21.6%22 fill=%22%23fff%22/%3E%3Cpolygon points=%2276.0%2C19.0 77.7%2C23.6 82.7%2C23.8 78.8%2C26.9 80.1%2C31.7 76.0%2C28.9 71.9%2C31.7 73.2%2C26.9 69.3%2C23.8 74.3%2C23.6%22 fill=%22%23fff%22/%3E%3C/g%3E%3Cpath d=%22M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z%22 fill=%22none%22 stroke=%22%23111%22 stroke-width=%223%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E") center / contain no-repeat;
-  filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.35));
-}
-.year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.28em; color: var(--gold); margin-bottom: 3px; }
-.year-badge-num { font-family: var(--font-display); font-size: 2.1rem; line-height: 1; letter-spacing: 0.03em; }
-.year-tagline {
-  font-family: var(--font-mono); font-style: italic; font-weight: 700; font-size: 1.1rem;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); line-height: 1;
-}
+.year-badge-top { font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); order: 2; }
+.year-badge-num { font-family: var(--dl-font-title); font-size: 2.4rem; line-height: 1; letter-spacing: 0.03em; color: var(--red); }
+.year-tagline { font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); line-height: 1; }
 
 /* ===== Table rows ===== */
 .row {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
-  padding: 18px 0; border-bottom: 1px solid var(--rule); align-items: start;
+  padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start;
 }
 .row:last-of-type { border-bottom: none; }
 @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
@@ -210,16 +170,9 @@ h2.year-head {
 /* ===== Paint block ===== */
 .row > .paint-col { grid-column: 1 / -1; }
 .paint { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
-.paint .swatch.big {
-  width: 88px; height: 88px; flex-shrink: 0;
-  border: 3px solid var(--white); outline: 2px solid var(--ink);
-  box-shadow: 5px 5px 0 var(--red);
-}
+.paint .swatch.big { width: 56px; height: 56px; flex-shrink: 0; border: 2px solid var(--ink); }
 .paint .meta { min-width: 0; flex: 1; }
-.paint .name {
-  font-family: var(--font-display); font-weight: 400; text-transform: uppercase;
-  font-size: 1rem; line-height: 1.2; color: var(--ink); letter-spacing: 0.02em;
-}
+.paint .name { font-weight: 700; font-size: 1.05rem; line-height: 1.2; color: var(--ink); }
 .paint .sub {
   font-family: var(--font-mono); font-size: 0.86rem; font-weight: 500;
   color: var(--muted); margin-top: 3px; letter-spacing: 0.03em;
@@ -228,32 +181,17 @@ h2.year-head {
 .paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
 .paint a.year:hover { background: var(--red-weak); }
 
-.no-match {
-  margin: 0 0 6px; padding: 5px 10px;
-  background: var(--ink); color: var(--white); border-left: 8px solid var(--red);
-  font-family: var(--font-mono); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.04em;
-}
+.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--red-deep); font-family: var(--font-mono); font-size: 0.86rem; font-weight: 700; letter-spacing: 0.04em; }
 .paint .hex { font-family: var(--font-mono); font-size: 0.95rem; font-weight: 600; margin-top: 4px; }
 .paint .rgb { color: var(--muted); font-size: 0.82rem; margin-left: 4px; font-weight: 500; }
 
-.chip {
-  display: inline-block; padding: 1px 9px;
-  font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; font-weight: 700;
-  text-transform: uppercase; background: var(--gold); color: var(--ink);
-  margin-left: 6px; vertical-align: middle;
-  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
-}
+.chip { display: inline-block; padding: 0 7px; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.12em; font-weight: 700; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); margin-left: 6px; vertical-align: middle; }
 
 /* ===== Primary filament card ===== */
-.filament.primary {
-  display: grid; grid-template-columns: 48px 1fr; gap: 12px;
-  padding: 10px 12px; background: var(--white);
-  border: 2px solid var(--ink); border-left: 8px solid var(--blue);
-  margin-bottom: 8px; box-shadow: 3px 3px 0 var(--rule);
-}
-.filament.primary .swatch.mini { width: 48px; height: 48px; border: 2px solid var(--ink); }
+.filament.primary { display: grid; grid-template-columns: 36px 1fr; gap: 10px; padding: 4px 0; margin-bottom: 4px; }
+.filament.primary .swatch.mini { width: 36px; height: 36px; border: 1px solid var(--ink); }
 .filament.primary .fname { font-size: 0.92rem; line-height: 1.3; }
-.filament.primary .fname strong { font-family: var(--font-display); font-weight: 400; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.02em; }
+.filament.primary .fname strong { font-weight: 700; font-size: 0.95rem; }
 .filament.primary .fname .color { color: var(--muted); font-size: 0.86rem; }
 .filament.primary .fsub {
   display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center;
@@ -285,10 +223,10 @@ h2.year-head {
     flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip;
     font-size: 0.9rem; line-height: 1.25;
   }
-  .year-badge { padding-right: 50px; }
 }
 
 /* ===== Footer ===== */
+footer.card-footer .legend { margin: 0 0 18px; justify-content: center; }
 footer.card-footer {
   margin-top: 28px; padding-top: 22px; text-align: center;
   border-top: 4px solid var(--ink);
@@ -309,12 +247,11 @@ footer.card-footer .visit-count {
 
 /* ===== Back to top (floating, bottom left) ===== */
 .to-top {
-  width: 66px; height: 46px; text-decoration: none;
-  background: var(--blue); border-bottom: 5px solid var(--blue-deep);
-  clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+  width: 56px; height: 44px; text-decoration: none; display: grid; place-items: center;
+  background: var(--dl-primary); border: 3px solid var(--dl-outline); box-shadow: var(--dl-shadow);
 }
 .to-top svg { width: 24px; height: 24px; fill: var(--white); }
-.to-top:hover { background: #000; border-bottom-color: #000; }
+.to-top:hover { background: var(--dl-accent); }
 .to-top:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 
 /* ===== Recolor preview + hover bubble (shared CSS holds layout only; this theme owns the look) ===== */
@@ -330,19 +267,18 @@ footer.card-footer .visit-count {
 }
 /* Slanted keys like the back-to-top button: flat face, darker foot, white icon */
 .hero-preview .hp-close, .hero-preview .hp-zoom {
-  top: 20px; width: 34px; height: 26px; border: 0; border-bottom: 4px solid var(--blue-deep);
-  background: var(--blue); color: var(--white);
-  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+  top: 20px; width: 34px; height: 26px; border: 2px solid var(--dl-outline); box-shadow: 2px 2px 0 var(--dl-outline);
+  background: var(--dl-accent); color: var(--white); clip-path: none;
 }
-.hero-preview .hp-close { right: 12px; background-color: var(--red); border-bottom-color: var(--red-deep); }
+.hero-preview .hp-close { right: 12px; background-color: var(--dl-primary); }
 .hero-preview .hp-zoom  { right: 52px; }
 .hero-preview .hp-close::before, .hero-preview .hp-zoom::before {
   content: ""; width: 14px; height: 14px; margin-top: -2px; background: center / contain no-repeat;
 }
 .hero-preview .hp-close::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='square'%3E%3Cpath d='M3 3 13 13M13 3 3 13'/%3E%3C/svg%3E"); }
 .hero-preview .hp-zoom::before  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='square'%3E%3Cpath d='M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9'/%3E%3C/svg%3E"); }
-.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background-color: #000; border-bottom-color: #000; }
-.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translateY(2px); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background-color: var(--dl-outline); }
+.hero-preview .hp-close:active, .hero-preview .hp-zoom:active { transform: translate(2px, 2px); box-shadow: none; }
 .hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 0; box-shadow: inset 0 0 0 3px var(--gold); }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 30px; width: 42px; height: 32px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 74px; }
@@ -483,8 +419,6 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 </head>
 <body id="top" data-region="eu">
 
-<div class="paper">
-
 <header class="page-head tile tile--torq head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-shield" viewBox="0 0 100 122" aria-hidden="true">
   <defs><clipPath id="tile-shield-clip"><path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z"/></clipPath></defs>
   <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
@@ -496,14 +430,11 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
   <path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z" fill="none" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
 </svg></div><div class="tile-text"><h1 class="tile-name" style="--n:12"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">T</span><span class="ch" style="--i:9" aria-hidden="true">o</span><span class="ch" style="--i:10" aria-hidden="true">r</span><span class="ch" style="--i:11" aria-hidden="true">q</span></span></h1><p class="tile-tag">Vitamin C &amp; Bad Decisions</p><p class="tile-meta">1970-1974 · 124 paint colours<br><span data-r="eu">1120 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1974">1974</a><a href="#y1973">1973</a><a href="#y1972">1972</a><a href="#y1971">1971</a><a href="#y1970">1970</a></nav></div></header>
 
-<div class="legend">
-  <span class="legend-head">ΔE2000 scale</span>
-  <span class="lblock"><span class="pill exc">&lt; 2</span> excellent</span>
-  <span class="lblock"><span class="pill vg">2-4</span> very good</span>
-  <span class="lblock"><span class="pill ok">4-7</span> good</span>
-  <span class="lblock"><span class="pill weak">7-12</span> noticeable shift</span>
-  <span class="lblock"><span class="pill bad">&gt; 12</span> large difference</span>
-</div>
+<div class="paper">
+
+
+
+
 
 <main>
   
@@ -22751,6 +22682,14 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 </main>
 
 <footer class="card-footer">
+  <div class="legend">
+    <span class="legend-head">ΔE2000 scale</span>
+    <span class="lblock"><span class="pill exc">&lt; 2</span> excellent</span>
+    <span class="lblock"><span class="pill vg">2-4</span> very good</span>
+    <span class="lblock"><span class="pill ok">4-7</span> good</span>
+    <span class="lblock"><span class="pill weak">7-12</span> noticeable shift</span>
+    <span class="lblock"><span class="pill bad">&gt; 12</span> large difference</span>
+  </div>
   <div class="brand">3D Sets Torq factory colors · 3D-print filament matches</div>
   <div class="sub">Generated by car-paint-filaments · 1970-1974 color cards · 2026</div>
   <div class="visit-count" id="vc" hidden></div>
