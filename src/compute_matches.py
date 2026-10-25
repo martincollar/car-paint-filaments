@@ -53,14 +53,17 @@ def main():
         filaments = in_region(all_fil, region)
         pla  = [f for f in filaments if f["material"] in config.PLA_MATERIALS]
         petg = [f for f in filaments if f["material"] in config.PETG_MATERIALS]
-        print(f"[{args.car}/{region}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG")
+        asa  = [f for f in filaments if f["material"] in config.ASA_MATERIALS]
+        print(f"[{args.car}/{region}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG + {len(asa)} ASA")
         pla_lab  = rgb_to_lab([f["rgb"] for f in pla])  if pla  else None
         petg_lab = rgb_to_lab([f["rgb"] for f in petg]) if petg else None
+        asa_lab  = rgb_to_lab([f["rgb"] for f in asa])  if asa  else None
         matches = []
         for h in colors:
             rec = dict(h)
             rec["pla"]   = topk(h["rgb"], pla,  k=args.k, pool_lab=pla_lab)
             rec["petg"]  = topk(h["rgb"], petg, k=args.k, pool_lab=petg_lab)
+            rec["asa"]   = topk(h["rgb"], asa,  k=args.k, pool_lab=asa_lab)
             matches.append(rec)
         result[region] = matches
 

@@ -1,5 +1,285 @@
 [
   {
+    "slug": "aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Aluminium Gray",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/d/3d0192f6170fecacc3dc0253b55617b8-asa-aluminium-gray-aurapol.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-aluminium-gray-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Aluminium Gray 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D ARMY Armor Brown",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/d/1d7b4ce028ccd461b95cba606e358642-1de5b3f5fdb1c8dc783a7306bcc20e00.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-army-armor-brown-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament ARMY Armor Brown 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D ARMY Desert Dust",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/9/19a6f37a0501836addc107590a19999f-f401782a3b72a8b3564415904175bf27.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-army-desert-dust-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament ARMY Desert Dust 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D ARMY Field Olive",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/c/0/c029d254c3e319f3067ed45ef29a1d37-445520fc4bc8d9037d520eb1e2ab544f.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-army-field-olive-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament ARMY Field Olive 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D ARMY Supply Grey",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/c/3caf295c984ff5e199dfa82ac526049e-6ef7f3c212a90a159011ce832770ab9b.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament ARMY Supply Grey 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D ARMY Urban Grey",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/2/b20041c61ea0a62797b013f127fddd38-2b27a0fa9ecef0004665bfcd8c2bfe2d.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-army-urban-grey-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament ARMY Urban Grey 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Brown Khaki",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/7/0/7022819665851d589f229498d8a2bd68-asa-khaki-brown.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-brown-khaki-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Brown Khaki 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-construction-yellow-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Construction Yellow",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-construction-yellow-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/8/3/8302934cc71844832283d01a8566aa1d-asa-construction-yellow.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-construction-yellow-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Construction Yellow 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-dark-brass-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Dark Brass",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-dark-brass-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/f/4fd3b4135d603a6c3a8949767e05705c-asa-dark-brass-aurapol.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-dark-brass-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Dark Brass 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Dark Bronze",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/1/9/190780be065186217f484b9a570415e0-asa-dark-bronze-aurapol.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-dark-bronze-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Dark Bronze 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-dark-turquoise-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Dark Turquoise",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-dark-turquoise-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/7/f73d44514b8ef59fb0acf10992607603-asa-dark-turquoise-aurapol.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-dark-turquoise-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Dark Turquoise 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-garden-green-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Garden Green",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-garden-green-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/0/90053428d4d063bb44c0c8be1903d947-asa-garden-green.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-garden-green-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Garden Green 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-graphite-black-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Graphite Black",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-graphite-black-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/a/ba1cd7d11c62a54b6a88ad0bf6008c72-asa-graphite-black.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-graphite-black-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Graphite Black 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-green-grass-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Green Grass",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-green-grass-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/9/99a6475167554d17bf153a4e3ba07084-asa-green-grass.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-green-grass-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Green Grass 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-light-grey-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Light Grey",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-light-grey-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/6/a6334d66d54199ca7af5f16212f7e244-asa-light-grey-aurapol.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-light-grey-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Light Grey 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-signal-orange-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Signal Orange",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-orange-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/3/33ffc243c26ff412b4493d4a33dcb33a-asa-signal-orange.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-signal-orange-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Signal Orange 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Signal White",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-sky-blue-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Sky Blue",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-sky-blue-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/8/4/845b40e2850871304249c16e63dd0013-asa-sky-blue.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-sky-blue-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Sky Blue 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Slate Grey",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-slate-grey-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f915a237bdb78137d0e97c99b9332970-asa-grey.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-slate-grey-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Slate Grey 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "aurapol-asa-3d-filament-tool-red-850g-1-75-mm",
+    "brand": "AURAPOL",
+    "material": "ASA",
+    "color_name": "3D Tool Red",
+    "shop": "Aurapol",
+    "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm",
+    "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/2/7/27b557b20b074175d003b220ff8df0a9-asa-tool-red.png",
+    "local_image": "aurapol-aurapol-asa-3d-filament-tool-red-850g-1-75-mm.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "AURAPOL ASA 3D Filament Tool Red 850g 1,75 mm",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "aurapol-pet-g-filament-army-desert-storm-1-kg-1-75-mm",
     "brand": "Aurapol",
     "material": "PETG",
@@ -11,7 +291,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament ARMY Desert Storm 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-army-highland-zelena-1-kg-1-75-mm",
@@ -25,7 +305,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament ARMY Highland zelená 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-army-panzer-grau-1-kg-1-75-mm",
@@ -39,7 +319,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament ARMY Panzer Grau 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-army-sand-storm-1-kg-1-75-mm",
@@ -53,7 +333,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament ARMY Sand Storm 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-army-survival-grey-1-kg-1-75-mm",
@@ -67,7 +347,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament ARMY Survival Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-baby-blue-1-kg-1-75-mm",
@@ -81,7 +361,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Baby Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-bright-orange-1-kg-1-75-mm",
@@ -95,7 +375,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Bright Orange 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-bright-white-1-kg-1-75-mm",
@@ -109,7 +389,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Bright White 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-copper-brown-1-kg-1-75-mm",
@@ -123,7 +403,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Copper brown 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-cotton-candy-1-kg-1-75-mm",
@@ -137,7 +417,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Cotton Candy 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-dusty-brown-1-kg-1-75-mm",
@@ -151,7 +431,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Dusty Brown 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-galaxy-black-1-kg-1-75-mm",
@@ -165,7 +445,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Galaxy Black 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-graphite-black-1-kg-1-75-mm",
@@ -179,7 +459,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Graphite black 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-green-mint-1-kg-1-75-mm",
@@ -193,7 +473,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Green Mint 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-light-terracotta-1-kg-1-75-mm",
@@ -207,7 +487,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Light Terracotta 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-machine-blue-1-kg-1-75-mm",
@@ -221,7 +501,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Machine Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-mint-cream-1-kg-1-75-mm",
@@ -235,7 +515,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Mint Cream 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-misty-forest-1-kg-1-75-mm",
@@ -249,7 +529,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Misty Forest 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-misty-grey-1-kg-1-75-mm",
@@ -263,7 +543,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Misty Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-nuclear-orange-1-kg-1-75-mm",
@@ -277,7 +557,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Nuclear Orange 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-park-side-1-kg-1-75-mm",
@@ -291,7 +571,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament PARK-SIDE 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-pistachio-cream-1-kg-1-75-mm",
@@ -305,7 +585,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Pistachio Cream 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-recycled-1-kg-1-75-mm",
@@ -319,7 +599,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament RECYCLED 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-signal-blue-1-kg-1-75-mm",
@@ -333,7 +613,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Signal Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-signal-grey-1-kg-1-75-mm",
@@ -347,7 +627,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Signal Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-silver-1-kg-1-75-mm",
@@ -361,7 +641,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Silver 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-sky-grey-1-kg-1-75-mm",
@@ -375,7 +655,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Sky Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-sugar-sunbeam-1-kg-1-75-mm",
@@ -389,7 +669,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Sugar Sunbeam 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-sulfur-yellow-1-kg-1-75-mm",
@@ -403,7 +683,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Sulfur Yellow 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-sunset-mochi-1-kg-1-75-mm",
@@ -417,7 +697,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Sunset Mochi 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-traffic-red-1-kg-1-75-mm",
@@ -431,7 +711,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Traffic Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-twilight-fluff-1-kg-1-75-mm",
@@ -445,7 +725,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament Twilight Fluff 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-filament-white-1-kg-1-75-mm",
@@ -459,7 +739,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Filament White 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm",
@@ -473,7 +753,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Recycled Filament Cloud Stone 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-earth-taupe-1-kg-1-75-mm",
@@ -487,7 +767,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Recycled Filament Earth Taupe 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-herb-green1-kg-1-75-mm",
@@ -501,7 +781,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Recycled Filament Herb Green1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-moss-charcoal-1-kg-1-75-mm",
@@ -515,7 +795,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Recycled Filament Moss Charcoal 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-stonewashed-blue-1-kg-1-75-mm",
@@ -529,7 +809,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Recycled Filament Stonewashed Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pet-g-rose-dust-filament-1-kg-1-75-mm",
@@ -543,7 +823,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PET-G Rose Dust Filament 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
@@ -557,7 +837,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Antique Pink 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm",
@@ -571,7 +851,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Aqua Relic 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-army-highland-green-1-kg-1-75-mm",
@@ -585,7 +865,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament ARMY Highland Green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-banana-peel-1-kg-1-75-mm",
@@ -599,7 +879,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Banana peel 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-black-1-kg-1-75-mm",
@@ -613,7 +893,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Black 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm",
@@ -627,7 +907,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Black-Grey 1 kg 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-blossom-spirit-1-kg-1-75-mm",
@@ -641,7 +921,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Blossom Spirit 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm",
@@ -655,7 +935,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Blue Sapphire 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-body-color-1-kg-1-75-mm",
@@ -669,7 +949,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Body color 1 kg 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-bondi-beach-1-kg-1-75-mm",
@@ -683,7 +963,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Bondi Beach 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-bright-blush-1-kg-1-75-mm",
@@ -697,7 +977,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Bright Blush 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-bright-orange-1-kg-1-75-mm",
@@ -711,7 +991,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Bright Orange 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-caramel-champagne-1-kg-1-75-mm",
@@ -725,7 +1005,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Caramel Champagne 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm",
@@ -739,7 +1019,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Cherry Gleam 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-clay-brown-1-kg-1-75-mm",
@@ -753,7 +1033,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Clay Brown 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-crazy-mauve-1-kg-1-75-mm",
@@ -767,7 +1047,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Crazy Mauve 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-cyber-ballerina-1-kg-1-75-mm",
@@ -781,7 +1061,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Cyber Ballerina 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-dark-gold-powder-1-kg-1-75-mm",
@@ -795,7 +1075,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Dark Gold Powder 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-evergreen-moss-1-kg-1-75-mm",
@@ -809,7 +1089,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Evergreen Moss 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-frosted-mint-1-kg-1-75-mm",
@@ -823,7 +1103,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Frosted Mint 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-galaxy-black-1-kg-1-75-mm",
@@ -837,7 +1117,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Galaxy Black 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-golden-veil-1-kg-1-75-mm",
@@ -851,7 +1131,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Golden Veil 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-grandma-gray-1-kg-1-75-mm",
@@ -865,7 +1145,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Grandma Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-green-pearl-1-kg-1-75-mm",
@@ -879,7 +1159,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Green Pearl 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-grey-1-kg-1-75-mm",
@@ -893,7 +1173,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Grey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-baby-blue-1-kg-1-75-mm",
@@ -907,7 +1187,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Baby Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-blue-1-kg-1-75-mm",
@@ -921,7 +1201,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-brown-1-kg-1-75-mm",
@@ -935,7 +1215,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Brown 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-cloud-nine-1-kg-1-75-mm",
@@ -949,7 +1229,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Cloud Nine 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-desert-dune-1-kg-1-75-mm",
@@ -963,7 +1243,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Desert Dune 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-green-1-kg-1-75-mm",
@@ -977,7 +1257,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-mild-moss-1-kg-1-75-mm",
@@ -991,7 +1271,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Mild Moss 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-nude-color-1-kg-1-75-mm",
@@ -1005,7 +1285,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Nude Color 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-red-1-kg-1-75-mm",
@@ -1019,7 +1299,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-sour-mustard-1-kg-1-75-mm",
@@ -1033,7 +1313,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Sour Mustard 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-l-ego-yellow-1-kg-1-75-mm",
@@ -1047,7 +1327,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament L-EGO Yellow 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-leaf-green-1-kg-1-75-mm",
@@ -1061,7 +1341,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Leaf green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm",
@@ -1075,7 +1355,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Lemon Yellow 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-light-blue-1-kg-1-75-mm",
@@ -1089,7 +1369,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Light Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-light-blush-1-kg-1-75-mm",
@@ -1103,7 +1383,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Light Blush 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-lilac-lily-1-kg-1-75-mm",
@@ -1117,7 +1397,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Lilac Lily 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-lipstick-red-1-kg-1-75-mm",
@@ -1131,7 +1411,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Lipstick Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-machine-blue-1-kg-1-75-mm",
@@ -1145,7 +1425,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Machine Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-magenta-1-kg-1-75-mm",
@@ -1159,7 +1439,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Magenta 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-mango-tango-1-kg-1-75-mm",
@@ -1173,7 +1453,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Mango Tango 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-marble-1-kg-1-75-mm",
@@ -1187,7 +1467,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Marble 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-medieval-gold-1-kg-1-75-mm",
@@ -1201,7 +1481,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Medieval Gold 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-blue-1-kg-1-75-mm",
@@ -1215,7 +1495,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-brick-1-kg-1-75-mm",
@@ -1229,7 +1509,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Brick 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
@@ -1243,7 +1523,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-purple-1-kg-1-75-mm",
@@ -1257,7 +1537,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Purple 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-red-1-kg-1-75-mm",
@@ -1271,7 +1551,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
@@ -1285,7 +1565,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-mustard-field-1-kg-1-75-mm",
@@ -1299,7 +1579,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Mustard Field 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-nordic-blue-1-kg-1-75-mm",
@@ -1313,7 +1593,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Nordic Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-ocean-jade-1-kg-1-75-mm",
@@ -1327,7 +1607,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Ocean Jade 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-olive-powder-1-kg-1-75-mm",
@@ -1341,7 +1621,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Olive Powder 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-onyx-mist-1-kg-1-75-mm",
@@ -1355,7 +1635,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Onyx Mist 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
@@ -1369,7 +1649,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
@@ -1383,7 +1663,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Pick Your Poison 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-pink-powder-1-kg-1-75-mm",
@@ -1397,7 +1677,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Pink Powder 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-pink-universe-1-kg-1-75-mm",
@@ -1411,7 +1691,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Pink Universe 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-purple-pearl-1-kg-1-75-mm",
@@ -1425,7 +1705,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Purple Pearl 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-royal-red-1-kg-1-75-mm",
@@ -1439,7 +1719,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Royal Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-sandy-blush-1-kg-1-75-mm",
@@ -1453,7 +1733,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Sandy Blush 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-seafoam-blue-1-kg-1-75-mm",
@@ -1467,7 +1747,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Seafoam Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-silver-1-kg-1-75-mm",
@@ -1481,7 +1761,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Silver 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
@@ -1495,7 +1775,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Skeleton White 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm",
@@ -1509,7 +1789,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Snowflake 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-soft-linen-1-kg-1-75-mm",
@@ -1523,7 +1803,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Soft Linen 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-summer-sky-1-kg-1-75-mm",
@@ -1537,7 +1817,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Summer Sky 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-teal-eclipse-1-kg-1-75-mm",
@@ -1551,7 +1831,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Teal Eclipse 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-toffee-biscuit-1-kg-1-75-mm",
@@ -1565,7 +1845,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Toffee Biscuit 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-tulip-purple-1-kg-1-75-mm",
@@ -1579,7 +1859,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Tulip Purple 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-undercity-sky-1-kg-1-75-mm",
@@ -1593,7 +1873,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Undercity Sky 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-vintage-red-1-kg-1-75-mm",
@@ -1607,7 +1887,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Vintage Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-white-1-kg-1-75-mm",
@@ -1621,7 +1901,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament White 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
@@ -1635,7 +1915,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Wild Honey 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-wild-sage-1-kg-1-75-mm",
@@ -1649,7 +1929,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Wild Sage 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-wisteria-winds-1-kg-1-75-mm",
@@ -1663,7 +1943,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Wisteria Winds 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-yellow-green-1-kg-1-75-mm",
@@ -1677,7 +1957,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Yellow Green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-filament-yellow-marble-1-kg-1-75-mm",
@@ -1691,7 +1971,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Filament Yellow Marble 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-3d-recycled-filament-1-kg-1-75-mm",
@@ -1705,7 +1985,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA 3D Recycled Filament 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-black-1-kg-1-75-mm",
@@ -1719,7 +1999,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Black 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-blue-1-kg-1-75-mm",
@@ -1733,7 +2013,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-bodycolor-1-kg-1-75-mm",
@@ -1747,7 +2027,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Bodycolor 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-brown-1-kg-1-75-mm",
@@ -1761,7 +2041,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Brown 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-green-1-kg-1-75-mm",
@@ -1775,7 +2055,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Green 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm",
@@ -1789,7 +2069,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Machine Blue 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-nahodny-mix-barev-1-kg-1-75-mm",
@@ -1803,7 +2083,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "AURAPOL PLA HT110 3D Filament náhodný mix barev 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-red-1-kg-1-75-mm",
@@ -1817,7 +2097,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Red 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-white-1-kg-1-75-mm",
@@ -1831,7 +2111,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament White 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-yellow-1-kg-1-75-mm",
@@ -1845,6 +2125,6 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "AURAPOL PLA HT110 3D Filament Yellow 1 kg 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

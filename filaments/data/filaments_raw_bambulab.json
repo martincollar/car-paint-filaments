@@ -1,5 +1,89 @@
 [
   {
+    "slug": "bambu-lab-asa-black",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "Black",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/e84878a0e381455ab6ff4b90ce7860b6/11d6469b590e4b8080ca5bd3f2385e22.media",
+    "local_image": "bambulab-bambu-lab-asa-black.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "bambu-lab-asa-blue",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "Blue",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/2bbd63b7ac6041be82120f46a22693a7/08592504ef0c4ed4a3054fac903bf20f.media",
+    "local_image": "bambulab-bambu-lab-asa-blue.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "bambu-lab-asa-gray",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "Gray",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/bf06ff5739d24cd9a821873f88630e2a/7e5829465d8a48b39c5ad1d103db0b5e.media",
+    "local_image": "bambulab-bambu-lab-asa-gray.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "bambu-lab-asa-green",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "Green",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/74d99fbb500d4e56b170eb33d53e8e64/cb784d59ca1d48cea42f9c2e545854b7.media",
+    "local_image": "bambulab-bambu-lab-asa-green.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "bambu-lab-asa-red",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "Red",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/a0641e0a35554c19817d6c30fac1297c/1e6d5f24fcc14949a25332fbbd52f7f2.media",
+    "local_image": "bambulab-bambu-lab-asa-red.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "bambu-lab-asa-white",
+    "brand": "Bambu Lab",
+    "material": "ASA",
+    "color_name": "White",
+    "shop": "Bambu Lab",
+    "url": "https://eu.store.bambulab.com/products/asa-filament",
+    "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+    "local_image": "bambulab-bambu-lab-asa-white.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "ASA",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "bambu-lab-petg-black",
     "brand": "Bambu Lab",
     "material": "PETG",
@@ -11,7 +95,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-dark-beige",
@@ -25,7 +109,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-dark-brown",
@@ -39,7 +123,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-gray",
@@ -53,7 +137,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-green",
@@ -67,7 +151,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-black",
@@ -81,7 +165,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-blue",
@@ -95,7 +179,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-cream",
@@ -109,7 +193,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-dark-gray",
@@ -123,7 +207,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-forest-green",
@@ -137,7 +221,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-gray",
@@ -151,7 +235,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-green",
@@ -165,7 +249,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-lake-blue",
@@ -179,7 +263,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-lime-green",
@@ -193,7 +277,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-orange",
@@ -207,7 +291,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-peanut-brown",
@@ -221,7 +305,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-red",
@@ -235,7 +319,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-white",
@@ -249,7 +333,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-hf-yellow",
@@ -263,7 +347,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG HF",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-avocado-green",
@@ -277,7 +361,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-baby-blue",
@@ -291,7 +375,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-black",
@@ -305,7 +389,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-gray",
@@ -319,7 +403,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-lime",
@@ -333,7 +417,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-pink",
@@ -347,7 +431,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-violet",
@@ -361,7 +445,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-matte-white",
@@ -375,7 +459,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-misty-blue",
@@ -389,7 +473,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-navy-blue",
@@ -403,7 +487,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-orange",
@@ -417,7 +501,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-pine-green",
@@ -431,7 +515,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-red",
@@ -445,7 +529,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-reflex-blue",
@@ -459,7 +543,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-white",
@@ -473,7 +557,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-petg-yellow",
@@ -487,7 +571,7 @@
     "availability": null,
     "stock": "?",
     "title": "PETG Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-absolute-black",
@@ -501,7 +585,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Pure",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-alpine-green-sparkle",
@@ -515,7 +599,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-apricot",
@@ -529,7 +613,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Pure",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-baby-blue",
@@ -543,7 +627,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Pure",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-bambu-green",
@@ -557,7 +641,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-beige",
@@ -571,7 +655,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-black",
@@ -585,7 +669,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-blue",
@@ -599,7 +683,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-blue-grey",
@@ -613,7 +697,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-bright-green",
@@ -627,7 +711,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-bronze",
@@ -641,7 +725,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-brown",
@@ -655,7 +739,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-classic-gold-sparkle",
@@ -669,7 +753,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-cobalt-blue",
@@ -683,7 +767,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-cobalt-blue-metallic",
@@ -697,7 +781,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Metal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-cocoa-brown",
@@ -711,7 +795,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-copper-brown-metallic",
@@ -725,7 +809,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Metal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-crimson-red-sparkle",
@@ -739,7 +823,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-cyan",
@@ -753,7 +837,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-dark-gray",
@@ -767,7 +851,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-gold",
@@ -781,7 +865,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-gray",
@@ -795,7 +879,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-hot-pink",
@@ -809,7 +893,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-indigo-purple",
@@ -823,7 +907,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-iridium-gold-metallic",
@@ -837,7 +921,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Metal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-iron-gray-metallic",
@@ -851,7 +935,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Metal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-jade-white",
@@ -865,7 +949,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-light-gray",
@@ -879,7 +963,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-magenta",
@@ -893,7 +977,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-maroon-red",
@@ -907,7 +991,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-apple-green",
@@ -921,7 +1005,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-ash-gray",
@@ -935,7 +1019,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-bone-white",
@@ -949,7 +1033,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-caramel",
@@ -963,7 +1047,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-charcoal",
@@ -977,7 +1061,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-dark-blue",
@@ -991,7 +1075,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-dark-brown",
@@ -1005,7 +1089,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-dark-chocolate",
@@ -1019,7 +1103,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-dark-green",
@@ -1033,7 +1117,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-dark-red",
@@ -1047,7 +1131,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-desert-tan",
@@ -1061,7 +1145,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-grass-green",
@@ -1075,7 +1159,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-ice-blue",
@@ -1089,7 +1173,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-ivory-white",
@@ -1103,7 +1187,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-latte-brown",
@@ -1117,7 +1201,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-lemon-yellow",
@@ -1131,7 +1215,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-lilac-purple",
@@ -1145,7 +1229,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-mandarin-orange",
@@ -1159,7 +1243,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-marine-blue",
@@ -1173,7 +1257,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-nardo-gray",
@@ -1187,7 +1271,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-plum",
@@ -1201,7 +1285,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-sakura-pink",
@@ -1215,7 +1299,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-scarlet-red",
@@ -1229,7 +1313,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-sky-blue",
@@ -1243,7 +1327,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-matte-terracotta",
@@ -1257,7 +1341,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Matte",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-milky-pink",
@@ -1271,7 +1355,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Pure",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-mistletoe-green",
@@ -1285,7 +1369,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-onyx-black-sparkle",
@@ -1299,7 +1383,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-orange",
@@ -1313,7 +1397,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-oxide-green-metallic",
@@ -1327,7 +1411,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Metal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-pink",
@@ -1341,7 +1425,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-pumpkin-orange",
@@ -1355,7 +1439,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-pure-white",
@@ -1369,7 +1453,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Pure",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-purple",
@@ -1383,7 +1467,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-red",
@@ -1397,7 +1481,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-royal-purple-sparkle",
@@ -1411,7 +1495,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-silver",
@@ -1425,7 +1509,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-slate-gray-sparkle",
@@ -1439,7 +1523,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Sparkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-sunflower-yellow",
@@ -1453,7 +1537,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-black",
@@ -1467,7 +1551,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-cyan",
@@ -1481,7 +1565,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-gray",
@@ -1495,7 +1579,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-orange",
@@ -1509,7 +1593,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-silver",
@@ -1523,7 +1607,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-white",
@@ -1537,7 +1621,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-tough-yellow",
@@ -1551,7 +1635,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Tough+",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-turquoise",
@@ -1565,7 +1649,7 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "bambu-lab-pla-yellow",
@@ -1579,6 +1663,6 @@
     "availability": null,
     "stock": "?",
     "title": "PLA Basic",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

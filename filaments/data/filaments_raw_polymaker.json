@@ -1,5 +1,285 @@
 [
   {
+    "slug": "asa-army-brown",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Army Brown",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=40627010109497",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/brown_4c09579a-7a33-4e28-bedd-88ab168a8d08.png",
+    "local_image": "polymaker-asa-army-brown.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Army Brown",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-army-green",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Army Green",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39597309624377",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/army_green.png",
+    "local_image": "polymaker-asa-army-green.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Army Green",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-black",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Black",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39574343254073",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/black.png",
+    "local_image": "polymaker-asa-black.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Black",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-blue",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Blue",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39574343123001",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/blue_4e235a69-57fa-4037-abe0-6570c660921c.png",
+    "local_image": "polymaker-asa-blue.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Blue",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-dark-gray-green",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Dark Gray Green",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41590536634425",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01046_pdt_isometric_top.png",
+    "local_image": "polymaker-asa-dark-gray-green.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Dark Gray Green",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-dark-grey",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Dark Grey",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41170857918521",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/dark_grey.png",
+    "local_image": "polymaker-asa-dark-grey.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Dark Grey",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-dark-purple",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Dark Purple",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41590534897721",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01047_pdt_isometric_top.png",
+    "local_image": "polymaker-asa-dark-purple.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Dark Purple",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-green",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Green",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=40294530875449",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/green_ea4d0303-6888-4689-bf02-eded1827b17f.png",
+    "local_image": "polymaker-asa-green.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Green",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-grey",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Grey",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39574343188537",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/grey_cdffe279-bbb1-49af-8033-73294aac3e89.png",
+    "local_image": "polymaker-asa-grey.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Grey",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-jet-black",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Jet Black",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41297658314809",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/jet_black.png",
+    "local_image": "polymaker-asa-jet-black.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Jet Black",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-olive-brown",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Olive Brown",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41590536667193",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01045_pdt_isometric_top.png",
+    "local_image": "polymaker-asa-olive-brown.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Olive Brown",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-orange",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Orange",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39597309231161",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/orange_123f45f4-f36a-4b76-9165-2fdfc282b334.png",
+    "local_image": "polymaker-asa-orange.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Orange",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-polymaker-teal",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Polymaker Teal",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=40294530940985",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/teal_08ed98ce-8fcf-4c96-80d8-72cc7b78fed1.png",
+    "local_image": "polymaker-asa-polymaker-teal.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Polymaker Teal",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-pop-blue",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Pop Blue",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41159525826617",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pop_blue.png",
+    "local_image": "polymaker-asa-pop-blue.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Pop Blue",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-pop-green",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Pop Green",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41159525892153",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pop_green.png",
+    "local_image": "polymaker-asa-pop-green.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Pop Green",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-pop-pink",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Pop Pink",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=41159525859385",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pop_pink.png",
+    "local_image": "polymaker-asa-pop-pink.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Pop Pink",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-purple",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Purple",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39597310148665",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/purple_2e359a81-91b1-4c1c-85aa-8312d9b13c16.png",
+    "local_image": "polymaker-asa-purple.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Purple",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-red",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Red",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39574343155769",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/red_06b4583b-1442-4895-9bb0-f3c94b3f7fc5.png",
+    "local_image": "polymaker-asa-red.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA Red",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-white",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "White",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+    "local_image": "polymaker-asa-white.png",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "Polymaker™ ASA White",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-yellow",
+    "brand": "Polymaker",
+    "material": "ASA",
+    "color_name": "Yellow",
+    "shop": "Polymaker",
+    "url": "https://us.polymaker.com/products/asa?variant=40294530908217",
+    "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/yellow_bedff49d-ef5c-4c7a-8313-aa82574509bd.png",
+    "local_image": "polymaker-asa-yellow.png",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "Polymaker™ ASA Yellow",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "matte-pla-matte-arctic-teal",
     "brand": "Polymaker",
     "material": "PLA",
@@ -11,7 +291,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Arctic Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-beige",
@@ -25,7 +305,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Army Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-blue",
@@ -39,7 +319,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Army Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-brown",
@@ -53,7 +333,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Army Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-dark-green",
@@ -67,7 +347,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Army Dark Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-light-green",
@@ -81,7 +361,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Army Light Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-purple",
@@ -95,7 +375,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Army Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-army-red",
@@ -109,7 +389,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Army Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-ash-grey",
@@ -123,7 +403,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Ash Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-charcoal-black",
@@ -137,7 +417,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Charcoal Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-cotton-white",
@@ -151,7 +431,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Cotton White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-earth-brown",
@@ -165,7 +445,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Earth Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-electric-indigo",
@@ -179,7 +459,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Electric Indigo",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-electric-magenta",
@@ -193,7 +473,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Electric Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-emerald-green",
@@ -207,7 +487,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Emerald Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-forest-green",
@@ -221,7 +501,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Forest Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-fossil-grey",
@@ -235,7 +515,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Fossil Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-grass-green",
@@ -249,7 +529,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Grass Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-lava-red",
@@ -263,7 +543,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Lava Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-lavender-purple",
@@ -277,7 +557,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Lavender Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-lime-green",
@@ -291,7 +571,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Lime Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-lotus-pink",
@@ -305,7 +585,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Lotus Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-blue",
@@ -319,7 +599,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-green",
@@ -333,7 +613,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-mauve",
@@ -347,7 +627,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Mauve",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-moss",
@@ -361,7 +641,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Moss",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-purple",
@@ -375,7 +655,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-red",
@@ -389,7 +669,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Muted Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-teal",
@@ -403,7 +683,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-terracotta",
@@ -417,7 +697,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted Terracotta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-muted-white",
@@ -431,7 +711,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Muted White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-banana",
@@ -445,7 +725,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Banana",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-beige",
@@ -459,7 +739,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-candy",
@@ -473,7 +753,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Pastel Candy",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-coral",
@@ -487,7 +767,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Coral",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-ice",
@@ -501,7 +781,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Ice",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-mint",
@@ -515,7 +795,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Mint",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-peach",
@@ -529,7 +809,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Peach",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-peanut",
@@ -543,7 +823,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Peanut",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-periwinkle",
@@ -557,7 +837,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Pastel Periwinkle",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-pastel-watermelon",
@@ -571,7 +851,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Pastel Watermelon",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-raspberry-blue",
@@ -585,7 +865,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Raspberry Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-sakura-pink",
@@ -599,7 +879,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Sakura Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-sapphire-blue",
@@ -613,7 +893,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Sapphire Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-savannah-yellow",
@@ -627,7 +907,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Savannah Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-seafoam-green",
@@ -641,7 +921,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Seafoam Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-sky-blue",
@@ -655,7 +935,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Sky Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-sunrise-orange",
@@ -669,7 +949,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Sunrise Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-sunshine-yellow",
@@ -683,7 +963,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Sunshine Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-wine-burgundy",
@@ -697,7 +977,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Matte PLA Matte Wine Burgundy",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "matte-pla-matte-wood-brown",
@@ -711,7 +991,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Matte PLA Matte Wood Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "metallic-pla-metallic-blue",
@@ -725,7 +1005,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Metallic PLA Metallic Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "metallic-pla-metallic-bronze",
@@ -739,7 +1019,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Metallic PLA Metallic Bronze",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "metallic-pla-metallic-gold",
@@ -753,7 +1033,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Metallic PLA Metallic Gold",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "metallic-pla-metallic-green",
@@ -767,7 +1047,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Metallic PLA Metallic Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "metallic-pla-metallic-silver",
@@ -781,7 +1061,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Metallic PLA Metallic Silver",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-green",
@@ -795,7 +1075,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Neon PLA Neon Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-magenta",
@@ -809,7 +1089,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Neon PLA Neon Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-orange",
@@ -823,7 +1103,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Neon PLA Neon Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-pink",
@@ -837,7 +1117,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Neon PLA Neon Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-red",
@@ -851,7 +1131,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Neon PLA Neon Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "neon-pla-neon-yellow",
@@ -865,7 +1145,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Neon PLA Neon Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-aqua-blue",
@@ -879,7 +1159,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Aqua Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-azure-blue",
@@ -893,7 +1173,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Azure Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-beige",
@@ -907,7 +1187,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-black",
@@ -921,7 +1201,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-blue",
@@ -935,7 +1215,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-brown",
@@ -949,7 +1229,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Basic PLA Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-cold-white",
@@ -963,7 +1243,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Cold White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-cream",
@@ -977,7 +1257,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Cream",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-dark-grey",
@@ -991,7 +1271,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Dark Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-dark-olive-drab",
@@ -1005,7 +1285,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Dark Olive Drab",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-green",
@@ -1019,7 +1299,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-grey",
@@ -1033,7 +1313,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-jungle-green",
@@ -1047,7 +1327,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Jungle Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-lemon-yellow",
@@ -1061,7 +1341,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Lemon Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-lime-green",
@@ -1075,7 +1355,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Lime Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-magenta",
@@ -1089,7 +1369,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-olive-green",
@@ -1103,7 +1383,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Olive Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-orange",
@@ -1117,7 +1397,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-pink",
@@ -1131,7 +1411,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Basic PLA Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-polymaker-teal",
@@ -1145,7 +1425,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Polymaker Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-purple",
@@ -1159,7 +1439,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Panchroma™ Basic PLA Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-red",
@@ -1173,7 +1453,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-steel-grey",
@@ -1187,7 +1467,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Steel Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-stone-blue",
@@ -1201,7 +1481,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Stone Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-tan",
@@ -1215,7 +1495,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Tan",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-white",
@@ -1229,7 +1509,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-wine-red",
@@ -1243,7 +1523,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Wine Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "panchroma-pla-yellow",
@@ -1257,7 +1537,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Basic PLA Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-army-brown",
@@ -1271,7 +1551,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Army Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-black",
@@ -1285,7 +1565,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-blue",
@@ -1299,7 +1579,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-dark-blue",
@@ -1313,7 +1593,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Dark Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-dark-green",
@@ -1327,7 +1607,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Dark Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-dark-grey",
@@ -1341,7 +1621,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Dark Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-dark-purple",
@@ -1355,7 +1635,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PETG Dark Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-electric-blue",
@@ -1369,7 +1649,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Electric Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-galaxy-black",
@@ -1383,7 +1663,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Galaxy Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-galaxy-blue",
@@ -1397,7 +1677,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Galaxy Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-galaxy-dark-grey",
@@ -1411,7 +1691,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Galaxy Dark Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-galaxy-red",
@@ -1425,7 +1705,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Galaxy Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-green",
@@ -1439,7 +1719,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-grey",
@@ -1453,7 +1733,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-lime",
@@ -1467,7 +1747,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Lime",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-magenta",
@@ -1481,7 +1761,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PETG Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-orange",
@@ -1495,7 +1775,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-pink",
@@ -1509,7 +1789,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PETG Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-purple",
@@ -1523,7 +1803,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-red",
@@ -1537,7 +1817,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-silver",
@@ -1551,7 +1831,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Silver",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-teal",
@@ -1565,7 +1845,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-white",
@@ -1579,7 +1859,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-yellow",
@@ -1593,7 +1873,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PETG Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-aqua-blue",
@@ -1607,7 +1887,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Aqua Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-azure-blue",
@@ -1621,7 +1901,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Azure Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-beige",
@@ -1635,7 +1915,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-black",
@@ -1649,7 +1929,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-blue",
@@ -1663,7 +1943,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-brown",
@@ -1677,7 +1957,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-cold-white",
@@ -1691,7 +1971,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Cold White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-cream",
@@ -1705,7 +1985,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Cream",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-dark-gray-green",
@@ -1719,7 +1999,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Dark Gray Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-dark-grey",
@@ -1733,7 +2013,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Dark Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-green",
@@ -1747,7 +2027,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-grey",
@@ -1761,7 +2041,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-jungle-green",
@@ -1775,7 +2055,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Jungle Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-lemon-yellow",
@@ -1789,7 +2069,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Lemon Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-lime-green",
@@ -1803,7 +2083,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Lime Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-magenta",
@@ -1817,7 +2097,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-olive-brown",
@@ -1831,7 +2111,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Olive Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-olive-green",
@@ -1845,7 +2125,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Olive Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-orange",
@@ -1859,7 +2139,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-pink",
@@ -1873,7 +2153,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-polymaker-teal",
@@ -1887,7 +2167,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Polymaker Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-purple",
@@ -1901,7 +2181,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-red",
@@ -1915,7 +2195,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-steel-grey",
@@ -1929,7 +2209,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Steel Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-stone-blue",
@@ -1943,7 +2223,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Stone Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-white",
@@ -1957,7 +2237,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-wine-red",
@@ -1971,7 +2251,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PolyLite™ PLA Wine Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polylite-pla-yellow",
@@ -1985,7 +2265,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PolyLite™ PLA Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-army-beige",
@@ -1999,7 +2279,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Army Beige",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-army-green",
@@ -2013,7 +2293,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PLA Pro Army Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-black",
@@ -2027,7 +2307,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-blue",
@@ -2041,7 +2321,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-blue-green",
@@ -2055,7 +2335,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Blue-Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-brown",
@@ -2069,7 +2349,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Brown",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-cold-white",
@@ -2083,7 +2363,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Cold White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-dark-grey",
@@ -2097,7 +2377,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Dark Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-dark-purple",
@@ -2111,7 +2391,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Dark Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-green",
@@ -2125,7 +2405,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-grey",
@@ -2139,7 +2419,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-light-blue",
@@ -2153,7 +2433,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PLA Pro Light Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-light-green",
@@ -2167,7 +2447,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Light Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-light-red",
@@ -2181,7 +2461,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Light Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-light-yellow",
@@ -2195,7 +2475,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Light Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-magenta",
@@ -2209,7 +2489,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Magenta",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-black",
@@ -2223,7 +2503,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PLA Pro Metallic Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-blue",
@@ -2237,7 +2517,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-bronze",
@@ -2251,7 +2531,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Bronze",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-chrome",
@@ -2265,7 +2545,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Chrome",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-dark-red",
@@ -2279,7 +2559,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Dark Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-gold",
@@ -2293,7 +2573,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Gold",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-green",
@@ -2307,7 +2587,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-plum",
@@ -2321,7 +2601,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Plum",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-metallic-silver",
@@ -2335,7 +2615,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Metallic Silver",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-orange",
@@ -2349,7 +2629,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-pink",
@@ -2363,7 +2643,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Pink",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-polymaker-teal",
@@ -2377,7 +2657,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Polymaker Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-purple",
@@ -2391,7 +2671,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-red",
@@ -2405,7 +2685,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-white",
@@ -2419,7 +2699,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "Polymaker™ PLA Pro White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "polymaker-pla-pro-yellow",
@@ -2433,7 +2713,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Polymaker™ PLA Pro Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-black",
@@ -2447,7 +2727,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Black",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-blue",
@@ -2461,7 +2741,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Blue",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-green",
@@ -2475,7 +2755,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Green",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-grey",
@@ -2489,7 +2769,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Grey",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-orange",
@@ -2503,7 +2783,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Orange",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-polymaker-teal",
@@ -2517,7 +2797,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Polymaker Teal",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-purple",
@@ -2531,7 +2811,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Purple",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-red",
@@ -2545,7 +2825,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Red",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-white",
@@ -2559,7 +2839,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin White",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "satin-pla-satin-yellow",
@@ -2573,6 +2853,6 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "Panchroma™ Satin PLA Satin Yellow",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

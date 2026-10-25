@@ -69,6 +69,35 @@ def measure_hints(brand):
             out.update(opts)
     return out
 
+def drop_duplicate_listings(rows):
+    """Drop another shop's listing of a product the brand's preferred shop (`preferred_shop` in
+    shops/_defaults.yaml) also sells. Twins have the same brand + material and a measured colour
+    within `dedupe_delta_e`; they are paired one-to-one, closest first, so a colour only the other
+    shop stocks stays. Returns (kept rows, [(dropped, kept twin)])."""
+    import re
+    d = shoplib.load_defaults()
+    rules = [(re.compile(rx, re.I), shop) for rx, shop in (d.get("preferred_shop") or {}).items()]
+    limit = float(d.get("dedupe_delta_e", 2))
+    exclusive = set(d.get("preferred_shop_exclusive") or [])
+    pairs, dropped = [], {}
+    for rx, shop in rules:
+        grp = [r for r in rows if r.get("rgb") and rx.search(r.get("brand") or "")]
+        for o in grp:
+            if o["shop"] == shop: continue
+            for p in grp:
+                if p["shop"] == shop and p["material"] == o["material"]:
+                    de = delta_e_2000(p["rgb"], o["rgb"])
+                    if de <= limit: pairs.append((de, id(o), id(p), o, p))
+    taken = set()
+    for rx, shop in rules:
+        for o in rows:
+            if o["shop"] != shop and o.get("material") in exclusive and rx.search(o.get("brand") or ""):
+                dropped[id(o)] = (o, next((p for p in rows if p["shop"] == shop and p["material"] == o["material"]), o))
+    for de, _, _, o, p in sorted(pairs, key=lambda x: x[:3]):
+        if id(o) in dropped or id(p) in taken: continue
+        dropped[id(o)] = (o, p); taken.add(id(p))
+    return [r for r in rows if id(r) not in dropped], list(dropped.values())
+
 def measure_record(r):
     rec = dict(r)
     # If raw already has rgb (hand-made raw file), keep it as-is
@@ -122,6 +151,11 @@ def main():
                 prev[(r.get("url"), r.get("slug"))] = r
 
     measured = [measure_record(r) for r in all_rows]
+
+    measured, dups = drop_duplicate_listings(measured)
+    print(f"dropped {len(dups)} duplicate listings of a preferred shop's products")
+    for o, p in dups:
+        print(f"  = {o['shop']}: {o['slug']}  ->  {p['shop']}: {p['slug']}")
 
     overrides = load_overrides()
     used = set()

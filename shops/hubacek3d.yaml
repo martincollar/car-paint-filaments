@@ -8,3 +8,6 @@ sitemap_filter: product
 include:
 - ^/p/
 pins: []
+overrides:
+  3d-sphynx-asa-bila-white-800g:
+    skip: true   # shop photo is unusable (cyan cast, beige stand); no ASA white from this shop

@@ -1,5 +1,89 @@
 [
   {
+    "slug": "fiber3d-asa-black",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "Black",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-black.jpg",
+    "local_image": "na3d-fiber3d-asa-black.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "fiber3d-asa-green",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "Green",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-green.jpg",
+    "local_image": "na3d-fiber3d-asa-green.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "fiber3d-asa-grey",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "Grey",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-grey.jpg",
+    "local_image": "na3d-fiber3d-asa-grey.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "fiber3d-asa-orange",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "Orange",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-orange.jpg",
+    "local_image": "na3d-fiber3d-asa-orange.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "fiber3d-asa-red",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "Red",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-red.jpg",
+    "local_image": "na3d-fiber3d-asa-red.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "fiber3d-asa-white",
+    "brand": "FIBER3D",
+    "material": "ASA",
+    "color_name": "White",
+    "shop": "Na3D",
+    "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+    "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+    "local_image": "na3d-fiber3d-asa-white.jpg",
+    "availability": null,
+    "stock": "?",
+    "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "fiber3d-pla-black",
     "brand": "FIBER3D",
     "material": "PLA+",
@@ -11,7 +95,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-green",
@@ -25,7 +109,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-grey",
@@ -39,7 +123,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-matt-blue",
@@ -53,7 +137,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-olive",
@@ -67,7 +151,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-olive-green",
@@ -81,7 +165,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-orange",
@@ -95,7 +179,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-orange-(classic)",
@@ -109,7 +193,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-rainbow",
@@ -123,7 +207,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-red",
@@ -137,7 +221,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-white",
@@ -151,7 +235,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-white-(studio)",
@@ -165,7 +249,7 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "fiber3d-pla-yellow",
@@ -179,6 +263,6 @@
     "availability": null,
     "stock": "?",
     "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

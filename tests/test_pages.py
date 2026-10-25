@@ -40,6 +40,14 @@ class PageBits(unittest.TestCase):
         self.assertIn("no-match", build_html.filament_column([cand(12.0)], "PLA", {}))
         self.assertNotIn("no-match", build_html.filament_column([cand(11.9)], "PLA", {}))
 
+    def test_render_has_an_asa_column(self):
+        m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
+             "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://x.example/",
+             "pla": [], "petg": [], "asa": []}
+        page = build_html.render("hudson", {"eu": [m], "int": [m]}, {}, [], {"display": "Hudson"})
+        self.assertIn("asa-col", page)
+        self.assertIn("no ASA candidate", page)
+
     def test_render_is_a_full_document_without_card_source(self):
         m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
              "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",

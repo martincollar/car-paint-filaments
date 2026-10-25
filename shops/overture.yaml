@@ -7,7 +7,7 @@ platform: shopify
 regions: [int]
 base: https://overture3d.com
 include:
-- ^/products/overture-(pla|matte-pla|pla-plus-3d-printer-filament-1-75mm|super-pla-3d-printer-filament-1-75mm|easy-pla-3d-printer-filament|high-speed-petg-refill-3d-printer-filament-1-75mm)$
+- ^/products/overture-(pla|matte-pla|pla-plus-3d-printer-filament-1-75mm|super-pla-3d-printer-filament-1-75mm|easy-pla-3d-printer-filament|high-speed-petg-refill-3d-printer-filament-1-75mm|asa-filament-1-75mm)$
 exclude:
 - '\bglow\b|\bshimmer\b|carbon fiber|\brock\b|\bwood\b|rocket pop|black-white|avocado|christmas prism|aurora berry|light blue-yellow'
 default_brand: Overture

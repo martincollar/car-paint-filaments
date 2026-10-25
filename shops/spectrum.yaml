@@ -1,13 +1,13 @@
 # Spectrum Filaments (Polish maker) via its US Shopify storefront; one product per colour.
 # The EU shop (shop.spectrumfilaments.com) is not Shopify, so INT only for now.
-# Left out: refills (same colour), glitter, silk, wood, 4.5 kg, CF/ASA/ABS/PC/flex lines.
+# Left out: refills (same colour), glitter, silk, wood, 4.5 kg, CF/GF/ABS/PC/flex lines.
 name: Spectrum
 platform: shopify
 regions: [int]
 base: https://us.spectrumfilaments.com
 include:
-- ^/products/filament-spectrum-(pla-premium|pla-pro|pla-matt|pla-pastello|pastello-pla|pet-g-premium|pet-g-matt|premium-pla-high-speed|petg-premium-high-speed|r-pla|rpetg)-
+- ^/products/filament-spectrum-(pla-premium|pla-pro|pla-matt|pla-pastello|pastello-pla|pet-g-premium|pet-g-matt|premium-pla-high-speed|petg-premium-high-speed|r-pla|rpetg|asa-275)-
 exclude:
 - refill|glitter|4-5kg|flameguard|safeguard
 default_brand: Spectrum
-color_strip: '^(premium high speed|premium|pastello|pro|r pla|pla pro|pla)\s+'
+color_strip: '^(275|premium high speed|premium|pastello|pro|r pla|pla pro|pla)\s+'

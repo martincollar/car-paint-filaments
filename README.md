@@ -8,9 +8,8 @@ All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.g
 
 | Car | Years | Colors | Page |
 |---|---|---|---|
-| 3D Sets Doppler (Hudson Hornet paints) | 1951-1957 | 65 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
-| Toyota Land Cruiser FJ40 | 1964-1977 | — | in progress |
-| 3D Sets Torq (Plymouth Barracuda paints) | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
+| 3D Sets Doppler | 1951-1957 | 65 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
+| 3D Sets Torq | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
 | 3D Sets Sakura (Datsun 240Z paints) | 1971-1972 | 13 | not published yet |
 
 ## Quick start
@@ -49,7 +48,7 @@ car-paint-filaments/
 │   ├── color_tools.py                # _load, median_rgb, filament_rgb, delta_e_2000
 │   ├── measure_car.py                # car colors from scanned cards → car_colors.json
 │   ├── measure_filaments.py          # one filaments.json from every filaments_raw*.json
-│   ├── compute_matches.py            # top-K PLA/PETG per car color and region → matches.json
+│   ├── compute_matches.py            # top-K PLA/PETG/ASA per car color and region → matches.json
 │   ├── prepare_thumbnails.py         # base64 product photos → thumbnails.json
 │   ├── build_html.py                 # final HTML page → cars/<car>/output/<car>.html
 │   ├── fetch_all.py                  # every shop: sitemap → rules → product pages → raw JSON
@@ -69,7 +68,7 @@ car-paint-filaments/
         ├── sources/                     # scanned color cards (jpg/png)
         ├── data/
         │   ├── car_colors.json          # measured car swatches
-        │   ├── matches.json   # top-K PLA/PETG per color, per region
+        │   ├── matches.json   # top-K PLA/PETG/ASA per color, per region
         │   └── thumbnails.json # inline base64 JPEGs for the HTML
         └── output/
             └── <car_name>.html          # final self-contained HTML page
@@ -95,7 +94,7 @@ scripts/rebuild_html_only.sh doppler && scripts/publish.sh doppler
 1. **`measure_car.py --car <name>`** — reads `cars/<name>/card_layout.json` (card images + per-swatch cx/cy coordinates) and writes `cars/<name>/data/car_colors.json`.
 2. **`fetch_all.py`** — for each `shops/<shop>.yaml`: discover products from the sitemap (or Shopify JSON / pins), filter them by rules, read each product page, download photos into `filaments/sources/` and write `filaments/data/filaments_raw_<shop>.json`. Transparent, natural and silk filaments are never included.
 3. **`measure_filaments.py`** — scans every `filaments_raw*.json`, drops banned finishes, measures each image with `color_tools.filament_rgb()`, stamps each record's `regions` from its shop YAML, deduplicates by (URL, slug), writes the single `filaments/data/filaments.json`.
-4. **`compute_matches.py --car <name>`** — top-5 PLA + top-5 PETG per car color via ΔE2000.
+4. **`compute_matches.py --car <name>`** — top-5 PLA + PETG + ASA per car color via ΔE2000.
 5. **`prepare_thumbnails.py --car <name>`** — base64 JPEGs for the HTML (product photos resized to 100px, white-composited over transparency).
 5b. **`prepare_hero.py --car <name>`** — optional recolor preview: embeds the `hero` photo and paint mask from `car.json` (skipped when absent).
 6. **`build_html.py --car <name>`** — final HTML. Reads `car.json` for title, tagline, subtitle etc., so the same code works for any car.
@@ -148,7 +147,7 @@ The filament catalog is reused as-is; no need to re-fetch unless you want fresh 
 - **Dominant-hue extraction**: For colored filaments, read the median of pixels within ±15° of the saturation²-weighted hue peak, excluding studio-white background, cardboard boxes (hue 15-45° at v < 0.65), yellow watermarks (hue 42-62° at s > 0.4) and gray pixels (s < 0.10, their hue is numerical noise and otherwise dominates).
 - **Neutral filaments** (beige, cream, gray, white) use plain median of non-background pixels instead of dominant hue — their saturation is too low for the hue approach.
 - **ΔE2000 vs vision**: ΔE weights lightness heavily, so a bright yellow may score closer to a beige than a muted peach. For HTML display, a primary with ΔE ≥ 12 gets a "no close match" banner, and up to 4 alternatives are shown when their ΔE < max(10, primary + 2).
-- **Real names**: pages show the real make/model, colour names and codes from the cards, and credit the card source. Third-party affiliate/tracking codes are stripped from shop links (`build_html.clean_url()`).
+- **Real names**: pages show the car's display name, colour names and codes from the cards, and credit the card source. Third-party affiliate/tracking codes are stripped from shop links (`build_html.clean_url()`).
 
 ## Dependencies
 

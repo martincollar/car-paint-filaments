@@ -505,7 +505,7 @@ def _tidy_case(t: str) -> str:
 def derive_color_name(title: str, brand: str | None, material: str | None) -> str:
     """'Filament AURAPOL PLA Cloud Nine 1,75 mm 1 kg' → 'Cloud Nine'."""
     t = clean_title(html_mod.unescape(title or ""))
-    for word in filter(None, [*_brand_words(clean_brand(brand)), material, "PLA+", "PLA", "PETG", "PET-G"]):
+    for word in filter(None, [*_brand_words(clean_brand(brand)), material, "PLA+", "PLA", "PETG", "PET-G", "ASA"]):
         t = re.sub(rf"(?<![\w-]){re.escape(word)}(?![\w-])", " ", t, flags=re.I)
     t = _NOISE.sub(" ", t)
     t = re.sub(r"[\"“”„]", " ", t)

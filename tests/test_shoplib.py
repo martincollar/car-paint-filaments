@@ -60,13 +60,17 @@ class Rules(unittest.TestCase):
         self.assertFalse(self.r.accepts("https://x.cz/p/aurapol-pla-vzorek-red"))
         self.assertFalse(self.r.accepts("https://x.cz/p/9-1-box-aurapol-pet-g-filament-white"))
         self.assertFalse(self.r.accepts("https://x.cz/p/filament-pla-cf-black-1kg"))
+        self.assertTrue(self.r.accepts("https://x.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g"))
+        self.assertFalse(self.r.accepts("https://x.cz/products/asa_cf10-extrafill-black"))
+        self.assertFalse(self.r.accepts("https://x.cz/p/aurapol-asa-3d-filament-slate-grey-2000g-1-75-mm"))
+        self.assertFalse(self.r.accepts("https://x.cz/p/filament-spectrum-asa-275-kevlar-black"))
 
     def test_material(self):
         self.assertEqual(self.r.material("/p/aurapol-pet-g-filament-white"), "PETG")
         self.assertEqual(self.r.material("/p/filament-lume-petg-tyrkysova"), "PETG")
         self.assertEqual(self.r.material("Filament LUME PLA+ Tyrkysová"), "PLA+")
         self.assertEqual(self.r.material("/p/filament-aurapol-pla-cloud-nine"), "PLA")
-        self.assertIsNone(self.r.material("/p/filament-rosa3d-asa-tyrkysova"))
+        self.assertEqual(self.r.material("/p/filament-rosa3d-asa-tyrkysova"), "ASA")
         self.assertIsNone(self.r.material("/p/plastova-civka"))
 
     def test_slug(self):

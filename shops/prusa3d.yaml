@@ -346,3 +346,52 @@ pins:
   color_name: Mystic Green
   image_url: https://prusament.com/wp-content/uploads/2018/12/mystic_green_split-256x236.png
   local_image: prusament-pla-mystic-green.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-jet-black-800g-nfc/
+  slug: prusament-asa-jet-black
+  brand: Prusament
+  material: ASA
+  color_name: Jet Black
+  image_url: https://www.prusa3d.com/content/images/product/90a28488-7fa4-447c-a665-de362d227435.jpg
+  local_image: prusament-asa-jet-black.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-lipstick-red-800g-nfc/
+  slug: prusament-asa-lipstick-red
+  brand: Prusament
+  material: ASA
+  color_name: Lipstick Red
+  image_url: https://www.prusa3d.com/content/images/product/45cc1eb1-27f4-4874-8d92-f96f2818a7e3.jpg
+  local_image: prusament-asa-lipstick-red.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-olive-green-800g-nfc/
+  slug: prusament-asa-olive-green
+  brand: Prusament
+  material: ASA
+  color_name: Olive Green
+  image_url: https://www.prusa3d.com/content/images/product/7669fdab-6070-4194-b85f-b43a4e91bf36.jpg
+  local_image: prusament-asa-olive-green.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-prusa-orange-800g-nfc/
+  slug: prusament-asa-prusa-orange
+  brand: Prusament
+  material: ASA
+  color_name: Prusa Orange
+  image_url: https://www.prusa3d.com/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg
+  local_image: prusament-asa-prusa-orange.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-prusa-pro-green-800g-nfc/
+  slug: prusament-asa-prusa-pro-green
+  brand: Prusament
+  material: ASA
+  color_name: Prusa Pro Green
+  image_url: https://www.prusa3d.com/content/images/product/4e11d95a-599d-4735-a63e-d8ba54fc81d5.jpg
+  local_image: prusament-asa-prusa-pro-green.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/
+  slug: prusament-asa-sapphire-blue
+  brand: Prusament
+  material: ASA
+  color_name: Sapphire Blue
+  image_url: https://www.prusa3d.com/content/images/product/f1389555-31ac-492d-af45-8d9a32656f70.jpg
+  local_image: prusament-asa-sapphire-blue.jpg
+- url: https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/
+  slug: prusament-asa-signal-white
+  brand: Prusament
+  material: ASA
+  color_name: Signal White
+  image_url: https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg
+  local_image: prusament-asa-signal-white.jpg

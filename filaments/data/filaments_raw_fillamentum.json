@@ -1,5 +1,201 @@
 [
   {
+    "slug": "asa-extrafill-anthracite-grey",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Anthracite Grey",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-anthracite-grey",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_ANTHRACITE_GREY_1.jpg",
+    "local_image": "fillamentum-asa-extrafill-anthracite-grey.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Anthracite Grey\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-dijon-mustard",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Dijon Mustard",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-dijon-mustard",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Dijon_Mustard_1_75.jpg",
+    "local_image": "fillamentum-asa-extrafill-dijon-mustard.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Dijon Mustard\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-green-grass",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Green Grass",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-green-grass",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_GREEN_GRASS_2.jpg",
+    "local_image": "fillamentum-asa-extrafill-green-grass.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Green Grass\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-grey-blue",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Grey Blue",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-grey-blue",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Grey_bluie.jpg",
+    "local_image": "fillamentum-asa-extrafill-grey-blue.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Grey Blue\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-metallic-grey",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Metallic Grey",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-metallic-grey",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_Metallic_Grey.jpg",
+    "local_image": "fillamentum-asa-extrafill-metallic-grey.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Metallic Grey\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-sky-blue",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Sky Blue",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-sky-blue",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Sky_Blue.jpg",
+    "local_image": "fillamentum-asa-extrafill-sky-blue.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Sky Blue\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-snow-white",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Snow White",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
+    "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Snow White\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-traffic-black",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Traffic Black",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-traffic-black",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_TRAFFIC_BLACK_1.jpg",
+    "local_image": "fillamentum-asa-extrafill-traffic-black.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Traffic Black\" ",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-traffic-red",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Traffic Red",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-traffic-red",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Traffic_Red.jpg",
+    "local_image": "fillamentum-asa-extrafill-traffic-red.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Traffic Red\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-traffic-white",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Traffic White",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
+    "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Traffic White\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-traffic-yellow",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Traffic Yellow",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-traffic-yellow",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_TRAFFIC_YELLOW_1.jpg",
+    "local_image": "fillamentum-asa-extrafill-traffic-yellow.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Traffic Yellow\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-vertigo-grey",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Vertigo Grey",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-vertigo-grey",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_VERTIGO_GREY_1.jpg",
+    "local_image": "fillamentum-asa-extrafill-vertigo-grey.jpg",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "ASA Extrafill \"Vertigo Grey\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-vivid-pink",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill Vivid Pink",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-vivid-pink",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Vivid_Piink.jpg",
+    "local_image": "fillamentum-asa-extrafill-vivid-pink.jpg",
+    "availability": "InStock",
+    "stock": "Skladem",
+    "title": "ASA Extrafill \"Vivid Pink\"",
+    "last_ok": "2026-10-25"
+  },
+  {
+    "slug": "asa-extrafill-white-aluminium",
+    "brand": "Fillamentum",
+    "material": "ASA",
+    "color_name": "Extrafill White Aluminium",
+    "shop": "Fillamentum",
+    "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+    "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+    "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+    "availability": "OutOfStock",
+    "stock": "Vyprodáno",
+    "title": "ASA Extrafill \"White Aluminium\"",
+    "last_ok": "2026-10-25"
+  },
+  {
     "slug": "petg-aloe-green",
     "brand": "Fillamentum",
     "material": "PETG",
@@ -11,7 +207,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Aloe Green\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-black-soul",
@@ -25,7 +221,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Black Soul\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-calendula-orange",
@@ -39,7 +235,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PETG \"Calendula Orange\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-copper-with-me",
@@ -53,7 +249,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Copper With Me\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-forget-me-not-blue",
@@ -67,7 +263,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Forget-me-not Blue\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-ghost-white",
@@ -81,7 +277,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Ghost White\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-gold-cloud",
@@ -95,7 +291,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Gold Cloud\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-greedy-dragon",
@@ -109,7 +305,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Greedy Dragon\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-hffr",
@@ -123,7 +319,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG HFFR | 750 g | 1,75 ",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-koala-grey",
@@ -137,7 +333,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Koala Grey\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-melon-yellow",
@@ -151,7 +347,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Melon Yellow\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "petg-sea-wave",
@@ -165,7 +361,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PETG \"Sea Wave\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-abu-dhabi-green",
@@ -179,7 +375,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Abu Dhabi Green\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-baby-blue-1kg",
@@ -193,7 +389,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Baby Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-cairo-gold",
@@ -207,7 +403,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Cairo Gold\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-chocolate-brown-1kg",
@@ -221,7 +417,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Chocolate Brown\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-cobalt-blue-1kg",
@@ -235,7 +431,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Cobalt Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-concrete-grey-1kg",
@@ -249,7 +445,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Concrete Grey\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-electric-grey-1kg",
@@ -263,7 +459,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Electric Grey\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-everybodys-magenta-1kg",
@@ -277,7 +473,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Everybody's Magenta\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-gold-happens-1kg",
@@ -291,7 +487,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Gold Happens\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-green-grass-1kg",
@@ -305,7 +501,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Green Grass\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-iron-grey-1kg",
@@ -319,7 +515,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Iron Grey\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-light-ivory-1kg",
@@ -333,7 +529,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Light Ivory\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-lilac-1kg",
@@ -347,7 +543,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Lilac\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-luminous-green",
@@ -361,7 +557,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Luminous Green\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-luminous-green-1kg",
@@ -375,7 +571,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Luminous Green\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-marrakesh-red",
@@ -389,7 +585,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Marrakesh Red\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-melon-yellow-1kg",
@@ -403,7 +599,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Melon Yellow\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-metallic-grey-1kg",
@@ -417,7 +613,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Metallic Grey\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-mint-1kg",
@@ -431,7 +627,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Mint\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-mukha-1kg",
@@ -445,7 +641,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Mukha\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-noble-blue-1kg",
@@ -459,7 +655,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Noble Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-orange-orange-1kg",
@@ -473,7 +669,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Orange Orange\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-pearl-night-blue-1kg",
@@ -487,7 +683,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Pearl Night Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-pearl-ruby-red",
@@ -501,7 +697,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Pearl Ruby Red\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-pearl-ruby-red-1kg",
@@ -515,7 +711,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Pearl Ruby Red\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-purple-red-1kg",
@@ -529,7 +725,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Purple Red\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-rapunzel-silver-1kg",
@@ -543,7 +739,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Rapunzel Silver\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-signal-red-1kg",
@@ -557,7 +753,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Signal Red\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-sky-blue-1kg",
@@ -571,7 +767,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Sky Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-traffic-black-1kg",
@@ -585,7 +781,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Traffic Black\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-traffic-red-1kg",
@@ -599,7 +795,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Traffic Red\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-traffic-white-1kg",
@@ -613,7 +809,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Traffic White\" | 1 KG | 1,75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-traffic-yellow-1kg",
@@ -627,7 +823,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Traffic Yellow\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-turkey-egg-1-kg-1-75-mm",
@@ -641,7 +837,7 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Turkey Egg\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-turquoise-blue-1kg",
@@ -655,7 +851,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Turquoise Blue\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-cherry-1-kg-1-75-mm",
@@ -669,7 +865,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Cherry\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-galaxy-1kg",
@@ -683,7 +879,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Galaxy\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-grey-1kg",
@@ -697,7 +893,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Grey\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-jade-1kg",
@@ -711,7 +907,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Jade\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-mystique",
@@ -725,7 +921,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Mystique\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-vertigo-starlight-1kg",
@@ -739,7 +935,7 @@
     "availability": "InStock",
     "stock": "Skladem",
     "title": "PLA Extrafill \"Vertigo Starlight\" | 1 KG | 1.75 mm",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   },
   {
     "slug": "pla-extrafill-witch-please",
@@ -753,6 +949,6 @@
     "availability": "OutOfStock",
     "stock": "Vyprodáno",
     "title": "PLA Extrafill \"Witch Please\"",
-    "last_ok": "2026-10-24"
+    "last_ok": "2026-10-25"
   }
 ]

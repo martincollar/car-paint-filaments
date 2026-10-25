@@ -8,7 +8,7 @@
    "Uložit" writes themes/<theme>/tile-offsets.css (or tile-offsets-mobile.css when the window is <= 520 px wide) and
    tile-colors.css, then rebuilds the page. */
 (function () {
-  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-deco > *';   // any decoration of a theme's tile.html
+  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-buy, .tile-deco > *';   // any decoration of a theme's tile.html
   var sel = null, drag = null, touched = {}, colors = {}, lastTile = null;
 
   var css = document.createElement('style');

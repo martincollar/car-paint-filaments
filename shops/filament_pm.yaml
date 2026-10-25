@@ -1,14 +1,14 @@
 # Product URLs are /<slug>/p<id>; record slug is the trailing p<id> (legacy).
 # pins: hand-written products from before sitemap discovery; discovery finds them too, the pin only
 # keeps their brand, material, colour name and photo file (so measured colours) stable. Pins skip include/exclude
-# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg, ASA …).
+# and the title check (not the finish ban), so never pin what the rules would reject (2.85 mm, 0.5 kg …).
 name: FilamentPM
 platform: generic
 regions: [eu]
 base: https://www.filament-pm.cz
 sitemap: https://www.filament-pm.cz/sitemap.xml
 include:
-- ^/(pla|petg)-[^/]+/p\d+$
+- ^/(pla|petg|asa)-[^/]+/p\d+$
 default_brand: Filament PM
 pins:
 - url: https://www.filament-pm.cz/pla-graphite-black-1-75-mm-1-kg/p299

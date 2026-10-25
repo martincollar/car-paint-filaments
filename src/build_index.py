@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 import config
+from build_html import counter_html
 from color_tools import delta_e_2000, hex_to_rgb, rgb_to_lab
 from compute_matches import NEON_PENALTY, NEON_PAINT_CHROMA
 
@@ -48,7 +49,7 @@ def best_per_hex(matches):
     best = {}
     for colours in matches.values():
         for colour in colours:
-            for cand in colour.get("pla", []) + colour.get("petg", []):
+            for cand in colour.get("pla", []) + colour.get("petg", []) + colour.get("asa", []):
                 hx = (cand.get("hex") or "").upper()
                 if hex_to_rgb(hx) and not penalised(cand, colour) and (hx not in best or cand["delta_e"] < best[hx]["delta_e"]):
                     best[hx] = cand
@@ -231,6 +232,7 @@ def collect_car(car):
         "cut": cut,
         "fg": fg,
         "order": meta.get("index", {}).get("order", 100),
+        "buy_url": (meta.get("index") or {}).get("buy_url") or "",
     }
 
 
@@ -271,6 +273,8 @@ def tile_html(c):
     meta = " · ".join(x for x in (c["years"], f'{c["colours"]} paint colours') if x)
     name_html, name_len = split_name(c["display"])
     tagline = f'<p class="tile-tag">{esc(c["tagline"])}</p>' if c["tagline"] else ""
+    buy = (f'\n    <a class="tile-buy" href="{esc(c["buy_url"])}" target="_blank" rel="noopener">Buy files</a>'
+           if c["buy_url"] else "")
     return f"""
 <article class="tile tile--{esc(c['theme'])}" data-car="{esc(c['slug'])}" style="--tile-colour:{first['hex']}">
   <div class="tile-frame"></div>
@@ -287,10 +291,15 @@ def tile_html(c):
   </div>
   <div class="tile-foot">
     <span class="tile-label">{esc(first['label'])}</span>
-    <a class="tile-open" href="{esc(c['slug'])}/">Pick a filament &rarr;</a>
+    <a class="tile-open" href="{esc(c['slug'])}/">Pick a filament &rarr;</a>{buy}
   </div>
 </article>"""
 
+
+# Retro wordmark (styles in PAGE_CSS); flip to True to replace the plain heading on the root page.
+SHOW_WORDMARK = False
+WORDMARK_HTML = ('<h1 class="wordmark" aria-label="Car paint filaments"><span class="wm-script" aria-hidden="true">Car paint</span>'
+                 '<span class="wm-slab" aria-hidden="true">Filaments</span></h1>')
 
 PAGE_CSS = """
 :root { --page: #ecebe7; --tile: #fbfbf9; --ink: #1d1d1b; --muted: #6b6a66; --line: #d9d7d0; --accent: #1d1d1b; }
@@ -303,7 +312,15 @@ a { color: inherit; }
 .site-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 24px;
              padding-top: 36px; }
 .site-head h1 { margin: 0; font-size: 1.15rem; font-weight: 700; letter-spacing: .01em; }
-.site-head p { margin: 0; color: var(--muted); max-width: 46ch; }
+.wordmark { display: flex; flex-direction: column; align-items: flex-start; margin: 0; line-height: 1; }
+.wm-script { font: 400 2.9rem/1 "Pacifico", cursive; color: var(--ink); transform: rotate(-4deg); transform-origin: left bottom;
+             margin: 0 0 -.45rem .5rem; position: relative; z-index: 1;
+             text-shadow: -2px -2px 0 var(--page), 2px -2px 0 var(--page), -2px 2px 0 var(--page), 2px 2px 0 var(--page), 3px 3px 0 var(--ink); }
+.wm-slab { font: 400 3rem/1 "Alfa Slab One", Georgia, serif; text-transform: uppercase; letter-spacing: .07em; color: var(--ink);
+           padding-bottom: .65rem; position: relative; }
+.wm-slab::after { content: ""; position: absolute; left: 0; right: .07em; bottom: 0; height: 10px;
+                  background: linear-gradient(var(--ink) 0 5px, transparent 5px 7px, var(--ink) 7px 9px); }
+.site-head p { margin: 0 0 0 auto; color: var(--muted); max-width: 46ch; }
 main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 64px 76px;
        grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); }
 .site-foot { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
@@ -335,10 +352,13 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
 .tile-foot { position: relative; z-index: 3; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: auto;
              padding-top: 202px; }
-.tile-label { font-size: .85rem; color: var(--muted); min-height: 1.3em; flex: 1 1 8ch; min-width: 0; }
+.tile-label { font-size: .7rem; color: var(--muted); opacity: .65; min-height: 1.3em; flex: 1 0 100%; min-width: 0; }
 .tile-open { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
              border: 2px solid var(--ink); border-radius: 999px; background: var(--tile); white-space: nowrap; }
 .tile-open:hover, .tile-open:focus-visible { background: var(--ink); color: var(--tile); }
+.tile-buy { position: relative; z-index: 4; font-size: .9rem; font-weight: 600; text-decoration: none; padding: 7px 14px;
+            border: 2px solid var(--ink); border-radius: 999px; background: transparent; white-space: nowrap; }
+.tile-buy:hover, .tile-buy:focus-visible { background: var(--ink); color: var(--tile); }
 .tile-name a:focus-visible { outline: 3px solid #2563eb; outline-offset: 6px; }
 @media (max-width: 520px) {
   .site-head, .site-foot { padding-left: 26px; padding-right: 26px; }
@@ -488,29 +508,33 @@ def page(cars):
                            "hero": {"mask": c["hero"]["mask"], "roof": c["hero"].get("roof"), "cut": c["cut"], "fg": c["fg"]}} for c in cars}
     js = PAGE_JS.replace("__CARS__", json.dumps(js_cars, separators=(",", ":")).replace("</", "<\\/"))
     font_link = f'<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="{fonts}">' if fonts else ""
+    if SHOW_WORDMARK:
+        font_link += '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Pacifico&display=swap">'
     return f"""<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Car paint filaments</title>
-<meta name="description" content="Original paint colours of classic cars matched to the closest PLA and PETG filaments.">
+<meta name="description" content="Original paint colours of classic cars matched to the closest PLA, PETG and ASA filaments.">
 {font_link}
 <style>{css}</style>
 <script>document.documentElement.className = 'js';</script>
 </head>
 <body>
 <header class="site-head">
-  <h1>Car paint filaments</h1>
-  <p>Original paint colours of classic cars, matched to the closest PLA and PETG filaments. Pick a car, then a filament.</p>
+  {WORDMARK_HTML if SHOW_WORDMARK else ""}
+  <p>Original paint colours of classic cars, matched to the closest PLA, PETG and ASA filaments. Pick a car, then a filament.</p>
 </header>
 <main>{"".join(tile_html(c) for c in cars)}
 </main>
 <footer class="site-foot">
   <span>Car photos{": " + credit_html if credit_html else ""}</span>
   <span>Created by {html.escape(AUTHOR)}</span>
+  {'<span class="visit-count" id="vc" hidden></span>' if config.GOATCOUNTER else ''}
 </footer>
 <script>{js}</script>
+{counter_html()}
 </body>
 </html>
 """

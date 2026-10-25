@@ -30,17 +30,20 @@ exclude:
   - 'bundle|balicek|multipack|multi-pack|\bbox\b|-box-|(^|[-/])sada([-/]|$)|(^|[-/])set([-/]|$)|-kopie|/akce-|/akcia-'
   - '2-85|2[.,]85|285-?mm'
   - '(^|[-/])(2|3|4|5|8|10)-?kg'
+  - '(^|[-/])(2|3|4|5)000-?g([-/]|$)'
+  - '(^|[-/_])(c|g)f\d*([-/_]|$)|kevlar|flameguard|safeguard|(^|[-/])asa-x([-/]|$)'
   - '(^|[-/])(cf|carbon|karbon|wood|drevo|woodjet|glow|svitici|tungsten|magnetite?)([-/]|$)'
   - 'rainbow|duhov|multicolou?r|tricolou?r|dual-colou?r|gradient|dvoubarev|dvojbarev|tribarev|trojbarev|termo|thermo|chameleon|kameleon'
-  - '(^|[-/])(asa|abs|tpu|tpe|pc|pa|nylon|pva|hips|pp)([-/]|$)'
+  - '(^|[-/])(abs|tpu|tpe|pc|pa|nylon|pva|hips|pp)([-/]|$)'
 
 # First match wins (on URL path + product title).
 materials:
   PETG: '(^|[^a-z])pet-?g([^a-z]|$)'
   PLA+: '(^|[^a-z])pla(\+|-?plus)'
   PLA:  '(^|[^a-z])pla([^a-z]|$)'
+  ASA:  '(^|[^a-z])asa([^a-z]|$)'
 
-material_in_url: true   # URL must already name PLA/PETG (cheap pre-filter before any page fetch)
+material_in_url: true   # URL must already name PLA/PETG/ASA (cheap pre-filter before any page fetch)
 max_new_per_run: 300   # cap on never-seen product pages fetched in one run (first crawl spreads over runs)
 refresh_days: 7        # re-fetch a known product page (stock) when the cached copy is older
 min_keep_ratio: 0.8    # refuse to overwrite a shop's raw JSON if it would shrink below 80 %
@@ -54,3 +57,14 @@ measure_hints:
   # Blue-grey (lavender-looking) SUNLU spool with a navy hub, hue ~220°, next to pale
   # marble windings: drop that band or every SUNLU colour measures as the spool (#767C93).
   'sunlu': {drop_hue_band: [205, 240, 0.05, 1.0]}
+
+# One brand sold by several shops under different (often translated) names: keep the preferred
+# shop's record and drop the other shops' twins (same brand + material, measured colour within
+# `dedupe_delta_e`, matched one-to-one nearest first). brand regex -> shop name. Other brands keep
+# every shop, because each shop link is a real choice for the buyer.
+preferred_shop:
+  '^aurapol$': Aurapol
+dedupe_delta_e: 2
+# Materials where the preferred shop is the only source: every other shop's listing of that brand is
+# dropped, twin or not (the other shops just resell it). Aurapol ASA: only the Aurapol store.
+preferred_shop_exclusive: [ASA]
