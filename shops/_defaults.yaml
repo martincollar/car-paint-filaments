@@ -17,6 +17,13 @@ exclude_finishes:
   natural:     '\bnatur\w*|\bprirodn\w*'
   silk:        '\bsilk\w*|\bhedvab\w*'
 
+# Effects the shop itself declares in the product's parameter table (shoplib.product_attrs, upgates
+# markup), matched as "parameter=value" on diacritics-folded text. Not a colour-name keyword: a plain
+# PLA called "Kámen" has no such parameter. Stone effect = marble, sandstone, brick, "kámen" lines
+# (Spectrum PLA Special, Devil Design, Lume, ...): textured, not a single-colour spool.
+exclude_attrs:
+  stone: '^doplnujici cleneni=efekt\W*kamen'
+
 # Neon / fluorescent colours. Not banned, but flagged `neon: true` on the record
 # (measure_filaments.py) and ranked behind normal filaments in compute_matches.py:
 # on a car they only look right when the paint itself is neon. Diacritics-folded
@@ -36,6 +43,7 @@ finish_flags:
 
 # URL-path excludes: things that are not a single-colour 1.75 mm ~1 kg spool.
 exclude:
+  - '(^|-)pla-special(-|$)'
   - 'vzor|sample|probe|tester|(^|-)\d+-?pack(-|$)'
   - 'bundle|balicek|multipack|multi-pack|\bbox\b|-box-|(^|[-/])sada([-/]|$)|(^|[-/])set([-/]|$)|-kopie|/akce-|/akcia-'
   - '2-85|2[.,]85|285-?mm'

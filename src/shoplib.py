@@ -256,10 +256,25 @@ def _meta(html, *names):
                 return html_mod.unescape(m.group(1).strip())
     return None
 
+_ATTR_ROW = re.compile(r'<th\b[^>]*>\s*<span>([^<]+)</span>\s*</th>\s*<td\b[^>]*>(.*?)</td>', re.S | re.I)
+
+def product_attrs(html: str) -> dict[str, list[str]]:
+    """The shop's own parameter table ("Doplňující členění: Efekt „kámen“", upgates markup) as
+    {parameter: [values]}. Empty on platforms without such a table."""
+    out = {}
+    for name, cell in _ATTR_ROW.findall(html):
+        vals = [re.sub(r"\s+", " ", html_mod.unescape(v)).strip()
+                for v in re.sub(r"<[^>]+>", "\n", cell).split(",")]
+        vals = [v for v in vals if v]
+        if vals:
+            out[html_mod.unescape(name).strip()] = vals
+    return out
+
 def extract_product(html: str, url: str = "") -> dict:
     """Best-effort product facts from a product page.
     Keys: name, brand, image, availability, sku, gtin, source (which layer answered)."""
-    p = {"name": None, "brand": None, "image": None, "availability": None, "sku": None, "gtin": None, "source": []}
+    p = {"name": None, "brand": None, "image": None, "availability": None, "sku": None, "gtin": None, "source": [],
+         "attrs": product_attrs(html)}
 
     # 1) JSON-LD Product
     for n in _jsonld_nodes(html):
@@ -344,6 +359,21 @@ def _finish_patterns(defaults: dict | None = None) -> dict[str, re.Pattern]:
     return {name: re.compile(rx, re.I) for name, rx in (d.get("exclude_finishes") or {}).items()}
 
 _FINISH_CACHE: dict[str, re.Pattern] | None = None
+_ATTR_CACHE: dict[str, re.Pattern] | None = None
+
+def excluded_attr(attrs: dict | None, patterns: dict[str, re.Pattern] | None = None) -> str | None:
+    """Name of the `exclude_attrs` rule (e.g. 'stone') that a product's parameter table trips, else None.
+    Each parameter is matched as "name=value", diacritics-folded and lowercased."""
+    global _ATTR_CACHE
+    if patterns is None:
+        if _ATTR_CACHE is None:
+            _ATTR_CACHE = {k: re.compile(v, re.I) for k, v in (load_defaults().get("exclude_attrs") or {}).items()}
+        patterns = _ATTR_CACHE
+    lines = [f"{_fold(k)}={_fold(v)}" for k, vals in (attrs or {}).items() for v in vals]
+    for name, rx in patterns.items():
+        if any(rx.search(line) for line in lines):
+            return name
+    return None
 
 def excluded_finish(*texts, patterns: dict[str, re.Pattern] | None = None) -> str | None:
     """Name of the banned finish (e.g. 'silk') found in any of `texts`, else None.

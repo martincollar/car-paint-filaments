@@ -152,6 +152,18 @@ class Extract(unittest.TestCase):
         p = shoplib.extract_product(html)
         self.assertEqual((p["image"], p["name"], p["availability"]), ("https://cdn/x.jpg", "PLA Mint", "InStock"))
 
+    def test_attrs_and_stone_rule(self):
+        row = ('<tr><th class="pl-0"><span>%s</span></th><td class="pr-0"><a href="/x">%s</a></td></tr>')
+        stone = shoplib.extract_product(row % ("Doplňující členění", "Efekt &quot;kámen&quot;"))
+        self.assertEqual(stone["attrs"], {"Doplňující členění": ['Efekt "kámen"']})
+        self.assertEqual(shoplib.excluded_attr(stone["attrs"]), "stone")
+        multi = shoplib.product_attrs(row % ("Doplňující členění", "MATT\n , \n Efekt &quot;kámen&quot;"))
+        self.assertEqual(shoplib.excluded_attr(multi), "stone")
+        # a plain colour called "Kámen" has no such parameter
+        plain = shoplib.product_attrs(row % ("Barva", "Kámen") + row % ("Doplňující členění", "MATT"))
+        self.assertIsNone(shoplib.excluded_attr(plain))
+        self.assertIsNone(shoplib.excluded_attr({}))
+
     def test_availability(self):
         self.assertEqual(shoplib.norm_availability("http://schema.org/SoldOut"), "OutOfStock")
         self.assertEqual(shoplib.norm_availability(True), "InStock")
