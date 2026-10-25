@@ -25,3 +25,28 @@ class NeonPenalty(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FinishPool(unittest.TestCase):
+    FILS = [{"slug": "plain", "material": "PLA", "rgb": [200, 30, 30], "regions": ["eu"], "finish": []},
+            {"slug": "sparkle", "material": "PLA", "rgb": [190, 30, 30], "regions": ["eu"], "finish": ["glitter"]},
+            {"slug": "mattglit", "material": "PLA", "rgb": [190, 30, 30], "regions": ["eu"], "finish": ["glitter", "matt"]}]
+    COLORS = [{"name": "Red", "rgb": [190, 30, 30]}]
+
+    def best(self, allowed):
+        rec = cm.match_colors(self.COLORS, self.FILS, "eu", frozenset(allowed))[0]
+        return [c["slug"] for c in rec["pla"]]
+
+    def test_flagged_filaments_wait_until_allowed(self):
+        self.assertEqual(self.best([]), ["plain"])
+        self.assertEqual(self.best(["glitter"]), ["sparkle", "plain"])
+        self.assertEqual(self.best(["glitter", "matt"]), ["sparkle", "mattglit", "plain"])
+
+    def test_keys(self):
+        self.assertEqual(cm.finish_key(frozenset()), "-")
+        self.assertEqual(cm.finish_key(frozenset(["matt", "glitter"])), "glitter+matt")
+        self.assertEqual(len(cm.all_finish_sets()), 8)
+
+    def test_defaults_from_car_json(self):
+        self.assertEqual(cm.allowed_finishes({}), frozenset())
+        self.assertEqual(cm.allowed_finishes({"filter_defaults": {"matt": True, "glitter": False}}), frozenset(["matt"]))

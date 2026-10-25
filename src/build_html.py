@@ -11,7 +11,8 @@ from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import config
-from shoplib import slugify, region_labels
+from shoplib import slugify, region_labels, finish_names
+import compute_matches
 from tile_parts import head_card_html, TILE_BASE_CSS
 
 NO_MATCH_DE = 12.0      # primary at or above this gets the "no close match" banner
@@ -80,12 +81,13 @@ def filament_row(c, fil_thumbs, is_primary=False):
     attrs = (f'data-hex="{c["hex"]}" data-name="{esc(full)}" data-slug="{esc(c["slug"])}" '
              f'data-brand="{esc(c["brand"])}" data-material="{esc(c["material"])}" data-color="{esc(c["color_name"])}" '
              f'data-shop="{esc(c.get("shop") or "?")}" data-shop-cls="{slugify(c.get("shop") or "") or "unknown"}" '
-             f'data-url="{esc(clean_url(c))}"' + (' data-neon="1"' if c.get("neon") else ""))
+             f'data-url="{esc(clean_url(c))}"' + (' data-neon="1"' if c.get("neon") else "") + (f' data-finish="{esc(" ".join(c["finish"]))}"' if c.get("finish") else ""))
     # One <a> around swatch + name (display: contents keeps the row's grid): hover opens the bubble, a plain
     # click recolours the preview (HERO_JS), ctrl/middle click follows the shop link.
     link = f'<a class="pick" href="{esc(clean_url(c))}" target="_blank" rel="noopener" {attrs}>'
     name = f"<strong>{esc(c['brand'])}</strong> {esc(c['material'])} <span class=\"color\">{esc(c['color_name'])}</span>"
     neon = ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>' if c.get("neon") else ""
+    neon += "".join(f' <span class="finish-tag" title="{esc(f)} finish">{esc(f.upper())}</span>' for f in c.get("finish") or ())
     name += neon
     if is_primary:
         # Three lines: brand / filament / match (ΔE, HEX). The shop opens from the swatch/name of the hover bubble and the preview.
@@ -317,7 +319,7 @@ HERO_JS = """
   // keeps its colour), the rows of its colours are marked and every other row is hidden.
   function bestPick(name, year) {
     var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\\"') + '"][data-year="' + year + '"]');
-    return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
+    return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"][data-f~="' + document.body.dataset.finish + '"] .pla-col a.pick') : null;
   }
   // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are marked
   // wherever they are and every other row of the page is hidden, so the page shows just the colours of the clicked two-tone.
@@ -394,7 +396,7 @@ HERO_JS = """
 """
 
 TIP_CSS = """
-.neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
+.neon-tag, .finish-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
 .fil-tip { position: fixed; z-index: 30; width: min(340px, calc(100vw - 16px)); padding: 12px; display: none; font-size: 0.8rem; line-height: 1.3; }
 .fil-tip.show { display: block; }
 .fil-tip img { display: block; width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px; }
@@ -439,7 +441,8 @@ TIP_JS = """
   // The swatch and the name are the link to the shop (hover bubble, combination bubble and preview alike).
   window.filInfo = function (d, linked) {
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-    var url = d.url && d.url !== '#' ? d.url : '', neon = d.neon ? ' <span class="neon-tag">NEON</span>' : '',
+    var url = d.url && d.url !== '#' ? d.url : '', neon = (d.neon ? ' <span class="neon-tag">NEON</span>' : '') +
+          (d.finish || '').split(' ').filter(Boolean).map(function (f) { return ' <span class="finish-tag">' + esc(f.toUpperCase()) + '</span>'; }).join(''),
         inner = '<div class="swatch mini" style="background:' + esc(d.hex) + '"></div><div class="finfo"><div class="fname"><strong>' + esc(d.brand) +
           '</strong><span class="fline">' + esc(d.material) + ' <span class="color">' + esc(d.color) + '</span>' + neon + '</span></div></div>';
     if (url) inner = '<a class="t-shop" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>';
@@ -587,13 +590,17 @@ def load_theme(name):
             "headcard": part("headcard.css"), "deco": part("tile.html"), "tile": part("tile.css"), "tile_fonts": part("tile-fonts.txt"),
             "head_offsets": head_offsets(d)}
 
-def region_css(regions):
-    """Show only the active region's candidates and counts (body[data-region])."""
+def region_css(regions, finish_keys=()):
+    """Show only the active region's candidates and counts (body[data-region]); with finish toggles
+    (`finish_keys`, one per state) also only the candidate lists of the active state (body[data-finish])."""
     out = ["[data-r] { display: none; }"]
     for r in regions:
-        out.append(f'body[data-region="{r}"] div[data-r="{r}"] {{ display: block; }}')
+        out.append(f'body[data-region="{r}"] div[data-r="{r}"]:not(.rcols) {{ display: block; }}')
         out.append(f'body[data-region="{r}"] span[data-r="{r}"] {{ display: inline; }}')
-        out.append(f'body[data-region="{r}"] .rcols[data-r="{r}"] {{ display: contents; }}')
+        if finish_keys:
+            out += [f'body[data-region="{r}"][data-finish="{k}"] .rcols[data-r="{r}"][data-f~="{k}"] {{ display: contents; }}' for k in finish_keys]
+        else:
+            out.append(f'body[data-region="{r}"] .rcols[data-r="{r}"] {{ display: contents; }}')
     return "\n".join(out)
 
 SPACING_CSS = """
@@ -625,6 +632,29 @@ REGION_JS = """
   var want = null;
   try { want = new URL(location.href).searchParams.get('region'); } catch (e) {}
   if (want && document.querySelector('[data-region-btn="' + want + '"]')) show(want, true);
+})();
+</script>
+"""
+
+# Finish toggles: body[data-finish] is the key of the pressed set ('-' = none, 'glitter+matt' ...), ?finish=glitter,matt in the URL.
+FINISH_JS = """
+<script>
+(function () {
+  var btns = [].slice.call(document.querySelectorAll('[data-finish-btn]')), order = btns.map(function (b) { return b.dataset.finishBtn; });
+  function key() { var on = btns.filter(function (b) { return b.getAttribute('aria-pressed') === 'true'; }).map(function (b) { return b.dataset.finishBtn; }); return on.join('+') || '-'; }
+  function apply(keep) {
+    document.body.dataset.finish = key();
+    if (keep) return;
+    try { var u = new URL(location.href), on = key(); if (on === '-') u.searchParams.set('finish', ''); else u.searchParams.set('finish', on.replace(/\\+/g, ',')); history.replaceState(null, '', u); } catch (e) {}
+  }
+  btns.forEach(function (b) { b.onclick = function () { b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true'); apply(); }; });
+  var want = null;
+  try { want = new URL(location.href).searchParams.get('finish'); } catch (e) {}
+  if (want !== null) {
+    var set = want.split(',');
+    btns.forEach(function (b) { b.setAttribute('aria-pressed', set.indexOf(b.dataset.finishBtn) >= 0 ? 'true' : 'false'); });
+  }
+  apply(true);
 })();
 </script>
 """
@@ -672,8 +702,12 @@ def combos_html(year, combos, matches):
     return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
             '<span class="combos-hint">click the active one again to show all colours</span></div>')
 
-def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
-    """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""
+def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None, variants=None):
+    """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]} for the car's default
+    finishes; `variants` is {finish key: matches_by_region} for every state of the finish toggles (including the default)."""
+    default_key = compute_matches.finish_key(compute_matches.allowed_finishes(meta))
+    variants = variants or {default_key: matches_by_region}
+    finish_ui = len(variants) > 1
     labels  = region_labels()
     regions = [r for r in labels if r in matches_by_region]
     matches = matches_by_region[regions[0]]          # same colours in every region
@@ -688,7 +722,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         fonts_q = merge_fonts(fonts_q, theme["tile_fonts"])
     theme_css = (TILE_BASE_CSS + theme["tokens"] + theme["css"] + theme["tile"] + theme["headcard"] + theme["head_offsets"]) if use_card else theme["css"]
 
-    by_name = {r: {m["name"]: m for m in matches_by_region[r]} for r in regions}
+    by_name = {k: {r: {m["name"]: m for m in mbr[r]} for r in regions} for k, mbr in variants.items()}
     by_year = {}
     for m in matches:
         if m.get("year") is None:
@@ -712,12 +746,19 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
       </h2>""")
         rows.append(combos_html(year, combos, matches))
         for m in by_year[year]:
-            cols = "".join(f"""
-          <div class="rcols" data-r="{r}">
-            <div class="col pla-col">{filament_column(by_name[r][m['name']]['pla'], 'PLA', fil_thumbs)}</div>
-            <div class="col petg-col">{filament_column(by_name[r][m['name']]['petg'], 'PETG', fil_thumbs)}</div>
-            <div class="col asa-col">{filament_column(by_name[r][m['name']].get('asa', []), 'ASA', fil_thumbs)}</div>
-          </div>""" for r in regions)
+            cols = ""
+            for r in regions:
+                # one candidate block per distinct result; a block lists every finish state it is right for
+                blocks = {}
+                for k in variants:
+                    cand = by_name[k][r][m['name']]
+                    blocks.setdefault(f"""
+          <div class="col pla-col">{filament_column(cand['pla'], 'PLA', fil_thumbs)}</div>
+          <div class="col petg-col">{filament_column(cand['petg'], 'PETG', fil_thumbs)}</div>
+          <div class="col asa-col">{filament_column(cand.get('asa', []), 'ASA', fil_thumbs)}</div>""", []).append(k)
+                for inner, keys in blocks.items():
+                    f_attr = f' data-f="{" ".join(keys)}"' if finish_ui else ""
+                    cols += f'\n          <div class="rcols" data-r="{r}"{f_attr}>{inner}\n          </div>'
             rows.append(f"""
         <article class="row" id="c{m['year']}-{slugify(m['name'])}" data-paint="{esc(m['name'])}" data-year="{m['year']}">
           <div class="col paint-col">{paint_block(m)}<button type="button" class="row-toggle" aria-expanded="false" title="Show the filaments for this colour"><span>Filaments</span></button></div>{cols}
@@ -742,6 +783,13 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
                   + "".join(f'<button type="button" data-region-btn="{r}" aria-pressed="{"true" if r == regions[0] else "false"}">{esc(labels[r])}</button>'
                             for r in regions)
                   + '</div>')
+
+    if finish_ui:
+        on = set(default_key.split("+"))
+        switch += ('<div class="year-nav region-switch finish-switch"><span class="nav-label">Finishes:</span>'
+                   + "".join(f'<button type="button" data-finish-btn="{n}" aria-pressed="{"true" if n in on else "false"}" '
+                             f'title="Show {n} filaments">{n.title()}</button>' for n in finish_names())
+                   + '</div>')
 
     _years = sorted(by_year.keys())
     _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
@@ -780,7 +828,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {TOP_CSS}
 {ROWS_CSS}
 {REGION_SWITCH_CSS}
-{region_css(regions)}
+{region_css(regions, list(variants) if finish_ui else ())}
 {PICK_CSS}
 {hero_css}
 {SPACING_CSS}
@@ -789,7 +837,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts_q)}&display=swap">
 </head>
-<body id="top" data-region="{regions[0]}" data-car="{esc(car)}">
+<body id="top" data-region="{regions[0]}"{f' data-finish="{default_key}"' if finish_ui else ""} data-car="{esc(car)}">
 
 {header_html if use_card else ""}
 
@@ -825,6 +873,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {hero_js}
 {tip_js}
 {REGION_JS if len(regions) > 1 else ""}
+{FINISH_JS if finish_ui else ""}
 {EDITOR_LOADER if use_card else ""}
 {counter_html()}
 </body>
@@ -842,7 +891,13 @@ def main():
     all_filaments = json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8"))
     hero_path = car_data / "hero.json"
     hero = json.loads(hero_path.read_text(encoding="utf-8")) if hero_path.exists() else None
-    page = render(args.car, matches, thumbs["filaments"], all_filaments, config.car_meta(args.car), hero)
+    meta = config.car_meta(args.car)
+    # every state of the finish toggles gets its own candidate lists (a hidden finish must not leave a row short)
+    colors = {r: [dict(m) for m in ms] for r, ms in matches.items()}
+    pool = [f for f in all_filaments if f.get("rgb")]
+    variants = {compute_matches.finish_key(a): {r: compute_matches.match_colors(colors[r], pool, r, a) for r in colors}
+                for a in compute_matches.all_finish_sets()}
+    page = render(args.car, matches, thumbs["filaments"], all_filaments, meta, hero, variants)
 
     out = config.car_output(args.car) / f"{args.car}.html"
     out.parent.mkdir(parents=True, exist_ok=True)

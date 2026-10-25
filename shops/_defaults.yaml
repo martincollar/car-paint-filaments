@@ -24,6 +24,16 @@ exclude_finishes:
 # too dark (shaded sides pull the median down), so plain ΔE flatters them.
 neon_names: '\bfluo\w*|\bneon\w*|\buv\b|\bhighlight\b|\bsuper (yellow|zluta)\b'
 
+# Surface finishes. Not banned: every record gets `finish: [..]` (measure_filaments.py) and the
+# page header has one on/off toggle per finish; `filter_defaults` in car.json says which are on
+# for that car (missing = off). Diacritics-folded regexes (hyphens read as spaces) on colour name,
+# title and slug, Czech and English. Order = order of the toggles. `matov*` is deliberately NOT
+# a matt keyword: "mátová" (mint) folds to the same word.
+finish_flags:
+  glitter: '\bglitt\w*|\bsparkl\w*|\bgalax\w*|\bmetal\w*|\btrpyt\w*|\bstardust\b|\bstarlight\b|\bstar\b|\bglamou?r\b|\bbril+i?ant\b|\bdiamond\b|\baurora\b|\bshimmer\w*|\bsugar\b|\bpearl\w*|\bperl\w*|\biridescen\w*|\bchameleon\b|\bflip\b|\bvertigo\b'
+  matt:    '(?<!semi )(?<!half )(?:\bmat\b|\bmatt\w*|\bmatn\w*)|\bsoft touch\b|\bvelvet\w*|\bsuede\b'
+  satin:   '\bsatin\w*|\bsaten\w*|\bsatyn\w*|\b(semi|half|pol[ao]) ?mat\w*'
+
 # URL-path excludes: things that are not a single-colour 1.75 mm ~1 kg spool.
 exclude:
   - 'vzor|sample|probe|tester|(^|-)\d+-?pack(-|$)'

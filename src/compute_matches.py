@@ -38,6 +38,38 @@ def topk(target_rgb, pool, k=5, pool_lab=None):
 def in_region(filaments, region):
     return [f for f in filaments if region in (f.get("regions") or [])]
 
+def allowed_finishes(meta):
+    """The finishes a car shows by default: `filter_defaults` in car.json ({finish: bool}; missing = off)."""
+    on = meta.get("filter_defaults") or {}
+    return frozenset(n for n in shoplib.finish_names() if on.get(n))
+
+def finish_key(allowed):
+    """Stable name of a set of allowed finishes, in toggle order: '-' = plain only, 'glitter+matt', ..."""
+    return "+".join(n for n in shoplib.finish_names() if n in allowed) or "-"
+
+def all_finish_sets():
+    """Every subset of the finishes (each one a state of the page's toggles), plain-only first."""
+    names = shoplib.finish_names()
+    return [frozenset(n for i, n in enumerate(names) if m >> i & 1) for m in range(1 << len(names))]
+
+def without_finishes(filaments, allowed):
+    """Drop the filaments that have a finish which is not allowed."""
+    return [f for f in filaments if not (set(f.get("finish") or ()) - allowed)]
+
+def match_colors(colors, filaments, region, allowed, k=5):
+    """[color + pla/petg/asa top-k] for one region with only the `allowed` finishes in the pool."""
+    pool_all = without_finishes(in_region(filaments, region), allowed)
+    pools = {m: [f for f in pool_all if f["material"] in mats]
+             for m, mats in (("pla", config.PLA_MATERIALS), ("petg", config.PETG_MATERIALS), ("asa", config.ASA_MATERIALS))}
+    labs = {m: rgb_to_lab([f["rgb"] for f in p]) if p else None for m, p in pools.items()}
+    out = []
+    for h in colors:
+        rec = dict(h)
+        for m, p in pools.items():
+            rec[m] = topk(h["rgb"], p, k=k, pool_lab=labs[m])
+        out.append(rec)
+    return out
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--car", default=config.DEFAULT_CAR)
@@ -47,25 +79,14 @@ def main():
     car_data = config.car_data(args.car)
     colors   = json.loads((car_data / "car_colors.json").read_text(encoding="utf-8"))
     all_fil  = [f for f in json.loads(config.FILAMENTS_JSON.read_text(encoding="utf-8")) if f.get("rgb")]
+    allowed  = allowed_finishes(config.car_meta(args.car))
 
+    # matches.json holds the car's default finish set (what the root-page tiles use); build_html.py
+    # calls match_colors() itself for the other states of the finish toggles.
     result = {}
     for region in shoplib.region_labels():
-        filaments = in_region(all_fil, region)
-        pla  = [f for f in filaments if f["material"] in config.PLA_MATERIALS]
-        petg = [f for f in filaments if f["material"] in config.PETG_MATERIALS]
-        asa  = [f for f in filaments if f["material"] in config.ASA_MATERIALS]
-        print(f"[{args.car}/{region}] {len(colors)} car colors × {len(pla)} PLA + {len(petg)} PETG + {len(asa)} ASA")
-        pla_lab  = rgb_to_lab([f["rgb"] for f in pla])  if pla  else None
-        petg_lab = rgb_to_lab([f["rgb"] for f in petg]) if petg else None
-        asa_lab  = rgb_to_lab([f["rgb"] for f in asa])  if asa  else None
-        matches = []
-        for h in colors:
-            rec = dict(h)
-            rec["pla"]   = topk(h["rgb"], pla,  k=args.k, pool_lab=pla_lab)
-            rec["petg"]  = topk(h["rgb"], petg, k=args.k, pool_lab=petg_lab)
-            rec["asa"]   = topk(h["rgb"], asa,  k=args.k, pool_lab=asa_lab)
-            matches.append(rec)
-        result[region] = matches
+        result[region] = match_colors(colors, all_fil, region, allowed, args.k)
+        print(f"[{args.car}/{region}] {len(colors)} car colors, finishes allowed: {finish_key(allowed)}")
 
     out = car_data / "matches.json"
     config.write_json(out, result)

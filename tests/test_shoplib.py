@@ -21,6 +21,27 @@ class NeonDetection(unittest.TestCase):
             self.assertFalse(shoplib.is_neon(name), name)
 
 
+class FinishFlags(unittest.TestCase):
+    def test_glitter(self):
+        for name in ["Onyx Black Sparkle", "PLA Glitter", "Galaxy Black", "Metallic Blue", "Metalická černá", "PETG metalická edice",
+                     "Třpytivý antracit", "Modrá Stardust", "Silver Star", "Černá Starlight", "Green Pearl", "Perleťově stříbrná",
+                     "Perlová Zelená", "Glamour", "Stříbrná Brillant", "Diamond Red", "Sugar Sunbeam"]:
+            self.assertEqual(shoplib.finish_flags(name), ["glitter"], name)
+
+    def test_matt(self):
+        for name in ["Matte Black", "Overture Matte PLA", "Matná černá", "PLA Matt", "Mat Green"]:
+            self.assertEqual(shoplib.finish_flags(name), ["matt"], name)
+
+    def test_satin(self):
+        for name in ["Satin Black", "Saténová stříbrná", "Saténově růžová", "Satén červená", "Semi-matte grey", "Polomatná"]:
+            self.assertEqual(shoplib.finish_flags(name), ["satin"], name)
+
+    def test_plain(self):
+        for name in ["Silver", "Copper", "Měď (Copper)", "Hliníková", "Pastel Mátová", "NEBULA Černá", "Starter Red", "Gold", "Bronze"]:
+            self.assertEqual(shoplib.finish_flags(name), [], name)
+        self.assertEqual(shoplib.finish_flags("Černá", "NEBULA PLA metalická černá", "nebula-pla-metalicka-cerna"), ["glitter"])
+
+
 class FinishFilter(unittest.TestCase):
     def test_banned(self):
         for text, finish in [

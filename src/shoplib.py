@@ -371,6 +371,21 @@ def is_neon(*texts) -> bool:
     return _NEON_RX.search(blob) is not None
 
 
+_FINISH_FLAGS_RX: dict[str, re.Pattern] | None = None
+
+def finish_names() -> list[str]:
+    """The finish flags in display order (`finish_flags` in shops/_defaults.yaml)."""
+    return list(load_defaults().get("finish_flags") or {})
+
+def finish_flags(*texts) -> list[str]:
+    """The surface finishes (glitter, matt, satin, ...) a colour name / title / slug names, in display order."""
+    global _FINISH_FLAGS_RX
+    if _FINISH_FLAGS_RX is None:
+        _FINISH_FLAGS_RX = {k: re.compile(v) for k, v in (load_defaults().get("finish_flags") or {}).items()}
+    blob = " | ".join(_fold(t).replace("-", " ") for t in texts if t)
+    return [k for k, rx in _FINISH_FLAGS_RX.items() if rx.search(blob)]
+
+
 def region_labels(defaults: dict | None = None) -> dict[str, str]:
     """{region key: label} in display order, from `regions:` in shops/_defaults.yaml."""
     return dict((defaults if defaults is not None else load_defaults()).get("regions") or {})
