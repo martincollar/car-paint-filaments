@@ -36,7 +36,7 @@ body {
     repeating-linear-gradient(45deg, transparent 0 26px, color-mix(in srgb, var(--mustard) 3%, transparent) 26px 27px),
     repeating-linear-gradient(-45deg, transparent 0 26px, color-mix(in srgb, var(--teal) 2%, transparent) 26px 27px);
   color: var(--fg); font-family: var(--font-body);
-  line-height: 1.45; max-width: 1360px; margin: 0 auto;
+  line-height: 1.45; max-width: 1200px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-block: 28px;
