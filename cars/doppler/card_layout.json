@@ -235,7 +235,9 @@
           "year": 1954,
           "car_code": "M-167",
           "paint_ref": "70451",
-          "poly": false
+          "poly": false,
+          "hex": "#B94739",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #4B1319. 1954 Hornet, Sahara Ivory with Royal Red roof, repainted in original colours (auction123 listing); only the roof is Royal Red"
         },
         {
           "cx": 185,
