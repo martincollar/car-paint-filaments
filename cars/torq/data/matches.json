@@ -40318,8 +40318,7 @@
           "hex": "#BDD03F",
           "pixel_count": 291281,
           "confidence": "manual_override",
-          "measured_hex": "#9CAF10",
-          "previous_hex": "#9CAF10"
+          "measured_hex": "#9CAF10"
         },
         {
           "delta_e": 3.6,

@@ -465,11 +465,11 @@
     "car_code": "M-167",
     "paint_ref": "70451",
     "rgb": [
-      75,
-      19,
-      25
+      185,
+      71,
+      57
     ],
-    "hex": "#4B1319",
+    "hex": "#B94739",
     "poly": false,
     "source_url": "https://www.autocolorlibrary.com/pages/1954-hudson",
     "source_file": "sources/1954-hudson-pg01.jpg",
@@ -477,7 +477,9 @@
       420,
       160
     ],
-    "confidence": "measured_from_card"
+    "confidence": "manual_override",
+    "measured_hex": "#4B1319",
+    "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #4B1319. 1954 Hornet, Sahara Ivory with Royal Red roof, repainted in original colours (auction123 listing); only the roof is Royal Red"
   },
   {
     "name": "St. Clair Gray",

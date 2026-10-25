@@ -1,0 +1,30 @@
+{
+ "photos_dir": "sources/photos",
+ "entries": [
+  {
+   "car_code": "M-167",
+   "year": 1954,
+   "note": "1954 Hornet, Sahara Ivory with Royal Red roof, repainted in original colours (auction123 listing); only the roof is Royal Red",
+   "photos": [
+    {
+     "file": "1954_royal_red_roof.jpg",
+     "url": "https://images.auction123.com/2efc0a2d-2f04-463e-92c7-3c95db3b365d/7295829/01.jpg?webimage001l",
+     "bbox": [
+      275,
+      123,
+      405,
+      138
+     ],
+     "mode": [
+      "hue",
+      -0.06,
+      0.04,
+      0.4,
+      0.2,
+      1
+     ]
+    }
+   ]
+  }
+ ]
+}
