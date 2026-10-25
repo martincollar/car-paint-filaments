@@ -1,0 +1,27 @@
+/* Sakura design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = indigo (buttons, titles), accent = sun red (small spark only), accent2 = gold trim, sakura = pink wash. */
+.theme-sakura, .tile--sakura {
+  --dl-bg: #fffdf9;            /* tile / header card */
+  --dl-page: #f6f1ea;          /* washi page background */
+  --dl-card: #ffffff;
+  --dl-paper: #fffdf9;
+  --dl-ink: #1f2433;
+  --dl-outline: #1a2342;
+  --dl-primary: #2b3a67;
+  --dl-primary-deep: #1a2342;
+  --dl-accent: #c8102e;
+  --dl-accent-deep: #8d0a20;
+  --dl-accent2: #e0b25a;
+  --dl-sakura: #f2b8c0;        /* ray / petal pink */
+  --dl-sakura-weak: #f8dde1;
+  --dl-rule: #dcd6cc;
+  --dl-muted: #6c6f78;
+  --dl-radius: 18px;
+  --dl-border: 1px solid #dcd6cc;
+  --dl-shadow: 0 6px 14px -8px rgba(26,35,66,.55);
+  --dl-card-shadow: 0 14px 30px -16px rgba(26,35,66,.45);
+  --dl-font-title: "Reggae One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}

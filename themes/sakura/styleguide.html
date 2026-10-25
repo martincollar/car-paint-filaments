@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en" class="theme-sakura"><head><meta charset="utf-8"><title>sakura design language</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+.tile-frame { position: absolute; inset: 0; background: var(--tile); border: 2px solid var(--ink); border-radius: 14px;
+              box-shadow: 0 10px 24px -14px rgba(0,0,0,.35); }
+.tile-deco { position: absolute; inset: 0; pointer-events: none; }
+.tile-text { position: relative; z-index: 3; }
+.tile-name { margin: 0; font-size: 1.7rem; line-height: 1.1; }
+.tile-name a { text-decoration: none; }
+.tile-name .w { white-space: nowrap; }
+.tile-name .ch { display: inline-block; }
+.tile-tag { margin: 6px 0 0; color: var(--muted); }
+.tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+/* Sakura design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = indigo (buttons, titles), accent = sun red (small spark only), accent2 = gold trim, sakura = pink wash. */
+.theme-sakura, .tile--sakura {
+  --dl-bg: #fffdf9;            /* tile / header card */
+  --dl-page: #f6f1ea;          /* washi page background */
+  --dl-card: #ffffff;
+  --dl-paper: #fffdf9;
+  --dl-ink: #1f2433;
+  --dl-outline: #1a2342;
+  --dl-primary: #2b3a67;
+  --dl-primary-deep: #1a2342;
+  --dl-accent: #c8102e;
+  --dl-accent-deep: #8d0a20;
+  --dl-accent2: #e0b25a;
+  --dl-sakura: #f2b8c0;        /* ray / petal pink */
+  --dl-sakura-weak: #f8dde1;
+  --dl-rule: #dcd6cc;
+  --dl-muted: #6c6f78;
+  --dl-radius: 18px;
+  --dl-border: 1px solid #dcd6cc;
+  --dl-shadow: 0 6px 14px -8px rgba(26,35,66,.55);
+  --dl-card-shadow: 0 14px 30px -16px rgba(26,35,66,.45);
+  --dl-font-title: "Reggae One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}/* sakura: rising sun on washi. Indigo primary, red only as a spark. Look comes from tokens.css (--dl-*);
+   header is the tile-style card (headcard.css). Soft cards, thin rules, no hard offset shadows. */
+:root {
+  --red: var(--dl-accent); --red-deep: var(--dl-accent-deep); --red-weak: #f6d4da;
+  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #dcdee9;
+  --fg: var(--dl-ink); --muted: var(--dl-muted); --rule: var(--dl-rule); --rule-soft: #ece8e0;
+  --bg: var(--dl-page); --bg-paper: var(--dl-paper); --bg-soft: #f8f4ec; --bg-raised: #fff;
+  --font-display: var(--dl-font-title);
+  --font-mono: var(--dl-font-ui);
+  --font-body: var(--dl-font-body);
+  --pad: clamp(18px, 3vw, 36px);
+  color-scheme: light;
+  --good: #2f7d4f; --warn: #8a5a00; --bad: var(--red-deep); --gold: var(--dl-accent2);
+  /* names read by the shared recolor-preview CSS */
+  --teal: var(--indigo); --teal-deep: var(--indigo-deep); --teal-weak: var(--indigo-weak);
+  --orange: var(--red); --orange-deep: var(--red-deep); --orange-weak: var(--red-weak);
+  --mustard: var(--gold); --mustard-weak: #f6e2b0; --cherry: var(--red); --navy: var(--indigo-deep);
+  --hero-q-bg: var(--indigo-deep); --hero-q-fg: #fff; --hero-q-font: var(--font-display);
+}
+body {
+  background-color: var(--bg);
+  color: var(--fg); font-family: var(--font-body); line-height: 1.5;
+  max-width: 1200px; margin: 0 auto; padding-block: 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  font-variant-numeric: tabular-nums;
+}
+.paper {
+  background: var(--bg-paper); border-radius: 22px; overflow: hidden;
+  box-shadow: 0 1px 0 var(--rule), var(--dl-card-shadow);
+  padding: 0 var(--pad) 32px; position: relative;
+}
+
+/* ===== Nav (inside the header card) ===== */
+.year-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; align-items: center; font-family: var(--font-mono); font-size: .92rem; }
+.year-nav .nav-label { letter-spacing: .16em; text-transform: uppercase; font-size: .74rem; font-weight: 600; margin-right: 4px; color: var(--muted); }
+.year-nav a, .region-switch button {
+  padding: 4px 18px; border-radius: 999px; background: transparent; color: var(--indigo);
+  border: 1px solid var(--indigo); text-decoration: none; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;
+}
+.region-switch button { font: inherit; font-size: .92rem; font-weight: 700; line-height: inherit; letter-spacing: .08em; text-transform: uppercase; }
+.year-nav a:hover, .region-switch button:hover { background: var(--dl-sakura-weak); }
+.region-switch button[aria-pressed="true"] { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+
+/* ===== Legend ===== */
+.legend {
+  display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; padding: 12px 18px; margin: 0 0 22px;
+  background: var(--bg-soft); border-radius: 14px; border: 1px solid var(--rule-soft); font-size: .82rem;
+}
+.legend .lblock { display: inline-flex; gap: 6px; align-items: center; }
+.legend .legend-head { font-family: var(--font-display); font-size: .95rem; font-weight: 700; color: var(--indigo-deep); letter-spacing: .03em; }
+.pill, .de { padding: 1px 10px; border-radius: 999px; font-weight: 700; letter-spacing: .03em; font-family: var(--font-mono); font-size: .8rem; }
+.pill.exc, .de.exc  { background: var(--good); color: #fff; }
+.pill.vg,  .de.vg   { background: var(--indigo); color: #fff; }
+.pill.ok,  .de.ok   { background: var(--gold); color: #3a2a00; }
+.pill.weak,.de.weak { background: #d6d6d6; color: #3b3b3b; }
+.pill.bad, .de.bad  { background: var(--red); color: #fff; }
+
+/* ===== Shop tags ===== */
+.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: .76rem; padding: 0 8px; border-radius: 6px; letter-spacing: .05em; font-weight: 700; text-transform: uppercase; background: var(--rule-soft); color: var(--muted); border: 1px solid var(--rule); }
+.shop-tag.shop-smart3d { background: var(--indigo-weak); color: var(--indigo-deep); }
+.shop-tag.shop-prusa3d { background: var(--red-weak); color: var(--red-deep); }
+.shop-tag.shop-3djake  { background: #f6e2b0; color: var(--warn); }
+.shop-tag.shop-aurapol { background: color-mix(in srgb, var(--red) 14%, transparent); color: var(--red-deep); }
+.shop-tag.shop-fillamentum { background: color-mix(in srgb, #6b3fa0 15%, transparent); color: #6b3fa0; }
+.shop-tag.shop-filamentpm { background: color-mix(in srgb, #2d7f3f 15%, transparent); color: #2d7f3f; }
+.shop-tag.shop-na3d { background: color-mix(in srgb, #0066a3 15%, transparent); color: #0066a3; }
+.shop-tag.shop-hubacek3d { background: color-mix(in srgb, #8a5a2b 15%, transparent); color: #8a5a2b; }
+.shop-tag.shop-3dfox { background: color-mix(in srgb, #c4561a 15%, transparent); color: #c4561a; }
+.shop-tag.shop-bambu-lab { background: color-mix(in srgb, #00ae42 15%, transparent); color: #007a2e; }
+.shop-tag.shop-polymaker { background: color-mix(in srgb, #0b6fb8 15%, transparent); color: #0b5a94; }
+.shop-tag.shop-spectrum { background: color-mix(in srgb, #d6336c 15%, transparent); color: #b02a58; }
+.shop-tag.shop-overture { background: color-mix(in srgb, #e8590c 15%, transparent); color: #b8460a; }
+
+/* ===== Year header: red sun disc + number ===== */
+h2.year-head {
+  display: flex; align-items: center; gap: 18px; margin: 44px 0 14px; padding: 0 0 12px; font-weight: 400;
+  border: none; border-bottom: 1px solid var(--rule); scroll-margin-top: 10px; position: relative;
+}
+h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 64px; height: 3px; background: var(--red); border-radius: 3px; }
+.year-badge {
+  display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 92px; height: 92px; border-radius: 50%; background: var(--indigo); color: #fff; line-height: 1;
+  box-shadow: 0 0 0 5px var(--bg-paper), 0 0 0 6px var(--indigo); margin-right: 8px; flex: none;
+}
+.year-badge-top { display: none; font-family: var(--font-mono); font-weight: 700; font-size: .56rem; letter-spacing: .18em; opacity: .85; margin-bottom: 5px; text-transform: uppercase; }
+.year-badge-num { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; letter-spacing: .01em; }
+.year-tagline { font-family: var(--font-mono); font-weight: 600; font-size: 1rem; letter-spacing: .24em; text-transform: uppercase; color: var(--indigo); line-height: 1; }
+
+/* ===== Rows ===== */
+.row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--rule-soft); align-items: start; }
+.row:last-of-type { border-bottom: none; }
+@media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
+.col-label { font-family: var(--font-mono); font-size: .76rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px 2px; }
+
+.row > .paint-col { grid-column: 1 / -1; }
+.paint { display: flex; gap: 16px; align-items: flex-start; min-width: 0; }
+.paint .swatch.big { width: 92px; height: 92px; flex-shrink: 0; border-radius: 50%; border: 4px solid var(--bg-paper); box-shadow: 0 0 0 1px var(--rule), 0 8px 18px -8px rgba(0,0,0,.45); }
+.paint .meta { min-width: 0; flex: 1; }
+.paint .name { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; line-height: 1.2; color: var(--indigo-deep); }
+.paint .sub { font-family: var(--font-mono); font-size: .86rem; font-weight: 500; color: var(--muted); margin-top: 3px; letter-spacing: .03em; }
+.paint .year { color: var(--indigo); font-weight: 700; }
+.paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
+.paint a.year:hover { background: var(--red-weak); }
+.no-match { margin: 0 0 8px; padding: 6px 12px; border-radius: 8px; background: var(--red-weak); color: var(--red-deep); border-left: 5px solid var(--red); font-family: var(--font-mono); font-size: .86rem; font-weight: 700; }
+.paint .hex { font-family: var(--font-mono); font-size: .95rem; font-weight: 600; margin-top: 4px; }
+.paint .rgb { color: var(--muted); font-size: .82rem; margin-left: 4px; font-weight: 500; }
+.chip { display: inline-block; padding: 1px 10px; border-radius: 999px; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .12em; font-weight: 700; text-transform: uppercase; background: var(--gold); color: #3a2a00; margin-left: 6px; vertical-align: middle; }
+
+.filament.primary { display: grid; grid-template-columns: 48px 1fr; gap: 12px; padding: 10px 14px; background: var(--bg-soft); border-radius: 14px; border: 1px solid var(--rule-soft); border-left: 5px solid var(--indigo); margin-bottom: 8px; }
+.filament.primary .swatch.mini { width: 48px; height: 48px; border-radius: 50%; border: 3px solid var(--bg-paper); box-shadow: 0 0 0 1px var(--rule); }
+.filament.primary .fname { font-size: .92rem; line-height: 1.3; }
+.filament.primary .fname strong { font-family: var(--font-display); font-weight: 700; font-size: .95rem; }
+.filament.primary .fname .color { color: var(--muted); font-size: .86rem; }
+.filament.primary .fsub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 4px; font-size: .86rem; font-family: var(--font-mono); font-weight: 600; }
+.filament.alt { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 5px 8px; align-items: center; padding: 5px 10px; font-size: .8rem; border-bottom: 1px solid var(--rule-soft); border-radius: 8px; }
+.filament.alt:hover { background: var(--bg-soft); }
+.filament.alt:last-child { border-bottom: none; }
+.filament.alt .swatch.tiny { width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--rule); }
+.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .84rem; }
+.filament.alt .fname-inline .color { color: var(--muted); font-size: .78rem; }
+.filament.empty { color: var(--muted); font-style: italic; padding: 8px 10px; }
+
+@media (max-width: 600px) {
+  .paint .swatch.big { width: 68px; height: 68px; }
+  .year-badge { width: 76px; height: 76px; }
+  .filament.primary { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .filament.primary .swatch.mini { width: 40px; height: 40px; }
+  .filament.alt { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; }
+  .filament.alt .fname-inline { flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip; font-size: .9rem; line-height: 1.25; }
+}
+
+/* ===== Footer, back to top ===== */
+footer.card-footer { margin-top: 30px; padding-top: 22px; text-align: center; border-top: 1px solid var(--rule); }
+footer.card-footer .brand { font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--indigo-deep); letter-spacing: .1em; }
+footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font-weight: 600; color: var(--muted); letter-spacing: .18em; text-transform: uppercase; margin-top: 4px; }
+.to-top { width: 46px; height: 46px; border-radius: 50%; background: var(--indigo); text-decoration: none; box-shadow: 0 8px 18px -8px rgba(0,0,0,.5); }
+.to-top svg { width: 22px; height: 22px; fill: #fff; }
+.to-top:hover { background: var(--red); }
+.to-top:focus-visible { outline: 3px solid var(--indigo); outline-offset: 3px; }
+
+/* ===== Recolor preview + hover bubble ===== */
+.hero-preview { background: var(--bg-paper); color: var(--fg); border: 1px solid var(--rule); border-radius: 18px; box-shadow: 0 18px 40px -14px rgba(20,30,50,.5); }
+.hero-preview .hp-close, .hero-preview .hp-zoom { top: 12px; width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--indigo-deep); color: #fff; }
+.hero-preview .hp-close { right: 12px; background-color: var(--indigo); }
+.hero-preview .hp-zoom  { right: 48px; }
+.hero-preview .hp-close::before, .hero-preview .hp-zoom::before { content: ""; width: 13px; height: 13px; background: center / contain no-repeat; }
+.hero-preview .hp-close::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M3 3 13 13M13 3 3 13'/%3E%3C/svg%3E"); }
+.hero-preview .hp-zoom::before  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9'/%3E%3C/svg%3E"); }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background-color: var(--red-deep); }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 0; box-shadow: 0 0 0 3px var(--gold); }
+.hero-preview.big { box-shadow: 0 0 0 100vmax rgba(10,16,28,.55), 0 20px 50px rgba(0,0,0,.4); }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 38px; height: 38px; }
+.hero-preview.big .hp-close { right: 22px; } .hero-preview.big .hp-zoom { right: 68px; }
+.hero-preview.big .t-name { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; line-height: 1.2; color: var(--indigo-deep); }
+.hero-preview.big .hp-credit { font-size: .78rem; font-weight: 600; }
+.hero-preview.closed .hp-close { top: 7px; right: 8px; }
+.fil-tip { background: var(--bg-paper); color: var(--fg); border: 1px solid var(--rule); border-radius: 14px; box-shadow: 0 14px 34px -12px rgba(20,30,50,.5); }
+.fil-tip img { border-radius: 8px; border: 1px solid var(--rule); }
+.fil-tip .t-sw, .hero-preview .t-sw { border: 2px solid var(--bg-paper); box-shadow: 0 0 0 1px var(--rule); border-radius: 50%; }
+.fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 700; }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; }
+.legend .legend-head, .year-badge-num, .paint .name, .filament.primary .fname strong, footer.card-footer .brand, .hero-preview .t-name, .hero-preview.big .t-name, .fil-tip .t-name { font-family: var(--font-body); font-weight: 700; }
+.paint .name { font-size: 1.15rem; }/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
+   are clipped by the card, the car spills over the frame). Indigo title, thin rules, soft shadow, no hard offsets. */
+.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --sun: 140px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
+.tile--sakura .tile-frame { background: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow); }
+.tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); }
+.tile--sakura .t-rays { position: absolute; inset: 0;
+  background: repeating-conic-gradient(at 100% 0, var(--dl-sakura-weak) 0 7.5deg, transparent 7.5deg 15deg);
+  -webkit-mask-image: linear-gradient(225deg, #000 0, transparent 78%); mask-image: linear-gradient(225deg, #000 0, transparent 78%); }
+.tile--sakura .t-sun { position: absolute; right: calc(var(--sun) * -.36); top: calc(var(--sun) * -.36); width: var(--sun); height: var(--sun);
+  border-radius: 50%; background: var(--dl-accent); box-shadow: 0 0 0 calc(var(--sun) * .05) var(--dl-bg), 0 0 0 calc(var(--sun) * .055) var(--dl-accent); }
+.tile--sakura .tile-text { padding-top: 6px; max-width: none; }
+.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 2.2rem; line-height: 1.05; letter-spacing: .01em; color: var(--dl-primary); }
+.tile--sakura .tile-name::after { content: ""; display: block; width: 46px; height: 4px; margin-top: 10px; border-radius: 2px; background: var(--dl-accent); }
+.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .22em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-label { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
+.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .12em; text-transform: uppercase; color: #fff;
+  background: var(--dl-primary); border: 1px solid var(--dl-primary); border-radius: 999px; box-shadow: var(--dl-shadow); }
+.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent); color: #fff; }
+.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .12em; text-transform: uppercase; color: var(--dl-primary);
+  background: transparent; border: 1px solid var(--dl-primary); border-radius: 999px; }
+.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-sakura-weak); color: var(--dl-primary-deep); }
+@media (max-width: 520px) {
+  .tile--sakura { --sun: 112px; }
+  .tile--sakura .tile-name { font-size: 1.75rem; }
+  .tile--sakura .tile-tag { font-size: .75rem; }
+}/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --sun: 230px;
+  --tile: var(--dl-bg); --muted: var(--dl-muted); }
+.theme-sakura .head-card .tile-name { font-size: 4rem; }
+.theme-sakura .head-card .tile-name::after { width: 64px; height: 5px; }
+.theme-sakura .head-card .tile-tag { font-size: 1.05rem; margin-top: 12px; }
+.theme-sakura .head-card .tile-meta { margin-top: 14px; line-height: 1.6; }
+.theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
+  margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--dl-rule); }
+.theme-sakura .head-filters .year-nav { margin: 0; }
+.theme-sakura .head-filters .nav-label { font: 600 .8rem var(--dl-font-ui); letter-spacing: .16em; text-transform: uppercase; color: var(--dl-muted); }
+@media (max-width: 600px) {
+  .theme-sakura .head-card { padding: 22px 18px 18px; --sun: 140px; }
+  .theme-sakura .head-card .tile-name { font-size: 2.4rem; }
+  .theme-sakura .head-card .tile-tag { font-size: .85rem; }
+}
+.sg { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
+.sg h2 { margin: 36px 0 12px; font: 700 1.1rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
+.sg-tokens { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.sg-token { display: flex; gap: 10px; align-items: center; font: .8rem monospace; color: #222; }
+.sg-chip { width: 44px; height: 44px; flex: none; border: 1px solid #0003; display: grid; place-items: center; font-size: .6rem; overflow: hidden; background: var(--v); }
+.sg-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap"></head>
+<body><div class="sg"><h1>sakura: design language</h1>
+<h2>Tokens</h2><div class="sg-tokens"><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-bg)"></span><span><b>--dl-bg</b><br>#fffdf9</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-page)"></span><span><b>--dl-page</b><br>#f6f1ea</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card)"></span><span><b>--dl-card</b><br>#ffffff</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-paper)"></span><span><b>--dl-paper</b><br>#fffdf9</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-ink)"></span><span><b>--dl-ink</b><br>#1f2433</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-outline)"></span><span><b>--dl-outline</b><br>#1a2342</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary)"></span><span><b>--dl-primary</b><br>#2b3a67</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary-deep)"></span><span><b>--dl-primary-deep</b><br>#1a2342</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent)"></span><span><b>--dl-accent</b><br>#c8102e</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent-deep)"></span><span><b>--dl-accent-deep</b><br>#8d0a20</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent2)"></span><span><b>--dl-accent2</b><br>#e0b25a</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura)"></span><span><b>--dl-sakura</b><br>#f2b8c0</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura-weak)"></span><span><b>--dl-sakura-weak</b><br>#f8dde1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-rule)"></span><span><b>--dl-rule</b><br>#dcd6cc</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-muted)"></span><span><b>--dl-muted</b><br>#6c6f78</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-radius)"></span><span><b>--dl-radius</b><br>18px</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-border)"></span><span><b>--dl-border</b><br>1px solid #dcd6cc</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-shadow)"></span><span><b>--dl-shadow</b><br>0 6px 14px -8px rgba(26,35,66,.55)</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card-shadow)"></span><span><b>--dl-card-shadow</b><br>0 14px 30px -16px rgba(26,35,66,.45)</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-title)">Aa</span><span><b>--dl-font-title</b><br>&quot;Reggae One&quot;, &quot;Zen Kaku Gothic New&quot;, &quot;Hiragino Sans&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-tag)">Aa</span><span><b>--dl-font-tag</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-ui)">Aa</span><span><b>--dl-font-ui</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-body)">Aa</span><span><b>--dl-font-body</b><br>&quot;Barlow&quot;, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Arial, sans-serif</span></div></div>
+<h2>Fonts</h2><p style="font:700 1.6rem var(--dl-font-title)">--dl-font-title: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-tag)">--dl-font-tag: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-ui)">--dl-font-ui: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-body)">--dl-font-body: Gulf Green 1952 — Fins, chrome &amp; flakes</p>
+<h2>Buttons</h2><div class="sg-row"><nav class="year-nav"><a href="#">1957</a><a href="#">1956</a></nav><div class="year-nav region-switch"><button type="button" aria-pressed="true">EU / CZ</button><button type="button" aria-pressed="false">INT</button></div><a class="to-top" href="#" style="position:static"><svg viewBox="0 0 24 24"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg></a></div>
+<h2>Header card</h2><header class="page-head tile tile--sakura head-card"><div class="tile-frame"></div><div class="tile-deco"><div class="t-clip"><div class="t-rays"></div><div class="t-sun"></div></div></div><div class="tile-text"><h1 class="tile-name" style="--n:11"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">S</span><span class="ch" style="--i:1" aria-hidden="true">a</span><span class="ch" style="--i:2" aria-hidden="true">m</span><span class="ch" style="--i:3" aria-hidden="true">p</span><span class="ch" style="--i:4" aria-hidden="true">l</span><span class="ch" style="--i:5" aria-hidden="true">e</span></span> <span class="w"><span class="ch" style="--i:7" aria-hidden="true">N</span><span class="ch" style="--i:8" aria-hidden="true">a</span><span class="ch" style="--i:9" aria-hidden="true">m</span><span class="ch" style="--i:10" aria-hidden="true">e</span></span></h1><p class="tile-tag">Tagline goes here</p><p class="tile-meta">1951-1957 · 65 paint colours</p></div><div class="head-filters"><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#">1957</a></nav></div></header>
+<h2>Table row</h2><div class="paper"><article class="row"><div class="col paint-col">
+      <div class="paint">
+        <div class="swatch big" style="background:#3A5F4B"></div>
+        <div class="meta">
+          <div class="name">Gulf Green</div>
+          <div class="sub">
+            <span class="year">1952</span>
+            · Q-115
+            · ref. 41206
+          </div>
+          <div class="hex">#3A5F4B <span class="rgb">RGB 58,95,75</span></div>
+        </div>
+      </div>
+    </div><div class="col pla-col"><div class="col-label">PLA</div>
+      <div class="filament primary"><a class="pick" href="https://shop.example/p" target="_blank" rel="noopener" data-hex="#3B6A4D" data-name="Brand PLA Forest" data-slug="x" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://shop.example/p">
+        <div class="swatch mini" style="background:#3B6A4D"></div>
+        <div class="finfo">
+          <div class="fname"><strong>Brand</strong><span class="fline">PLA <span class="color">Forest</span></span></div>
+        </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.4</span><span class="fhex">#3B6A4D</span><a class="shop-link" href="https://shop.example/p" target="_blank" rel="noopener">open shop</a></div>
+      </div>
+    </div></article></div>
+</div></body></html>

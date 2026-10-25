@@ -1,7 +1,7 @@
 {
   "name": "sakura",
   "display": "3D Sets Sakura",
-  "publish": false,
+  "publish": true,
   "script_tagline": "Rising Sun & Straight Six",
   "subtitle_source": "Datsun Ditzler color cards (1971-1972; the 240Z palette is the same for 1970-1973)",
   "years": [
