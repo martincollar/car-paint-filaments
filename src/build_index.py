@@ -354,8 +354,6 @@ __BASE__
   .tile { padding: 18px 18px 16px; --stage-w: 108%; --stage-left: -4%; }
   .tile-name { font-size: 1.45rem; }
   .tile-foot { padding-top: 175px; }
-  /* phone: lift the car clear of the label and buttons row (themes set --stage-bottom for the wide tile) */
-  .tile.tile { --stage-bottom: 88px; }
 }
 """
 
@@ -474,6 +472,14 @@ PAGE_JS = """
   var shrink = !editing && !calm, tickQ = 0;
   function setOrigins() {   // transform origin of every part = the tile's centre, in that part's own coordinates
     Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
+      // phone: the buttons wrap onto more lines, so seat the car on the label row instead of a fixed offset (wide tile: the theme's own value)
+      var lab = el.querySelector('.tile-label');
+      if (innerWidth <= 520 && lab) {
+        var ly = 0, ln = lab;
+        while (ln && ln !== el) { ly += ln.offsetTop; ln = ln.offsetParent; }
+        el.style.setProperty('--stage-bottom', Math.max(20, el.offsetHeight - ly - 34) + 'px');
+      }
+      else el.style.removeProperty('--stage-bottom');
       var cx = el.offsetWidth / 2, cy = el.offsetHeight / 2;
       Array.prototype.forEach.call(el.querySelectorAll('.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas, .tile-car'), function (c) {
         var x = 0, y = 0, n = c;
