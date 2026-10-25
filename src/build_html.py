@@ -309,6 +309,42 @@ HERO_JS = """
     cv.classList.add('swap');
     setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
+  // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
+  // follows the upper one), the colour rows of that year are marked; "only these colours" hides the others.
+  function bestPick(name, year) {
+    var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\\"') + '"][data-year="' + year + '"]');
+    return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
+  }
+  function marks(strip) {
+    var on = strip.querySelector('.combo.on'), only = strip.querySelector('input').checked, y = strip.dataset.year,
+        rows = document.querySelectorAll('article.row[data-year="' + y + '"]');
+    rows.forEach(function (r) {
+      var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
+        return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
+      r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
+    });
+  }
+  document.addEventListener('click', function (e) {
+    var cb = e.target.closest && e.target.closest('.combo');
+    if (cb) {
+      var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
+      if (up && lo) {
+        if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); names = Z.map(function () { return ''; }); }
+        Z.forEach(function (z, k) {
+          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : (z.follows === 'upper' ? up : null);
+          if (el) { sel[k] = el.dataset.hex; names[k] = el.dataset.name; }
+        });
+        info.innerHTML = window.filInfo(up.dataset) + slotsHtml();
+        box.classList.remove('closed', 'empty');
+        if (loaded >= 2) paint(sel);
+      }
+      var strip = cb.closest('.combos'); strip.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
+      cb.classList.add('on'); marks(strip);
+    }
+  });
+  document.addEventListener('change', function (e) {
+    var strip = e.target.closest && e.target.closest('.combos'); if (strip) marks(strip);
+  });
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('.t-slot');
     if (b) { var el0 = window.tipEl && window.tipEl(); if (el0) pick(el0, b.dataset.zone); }
@@ -336,6 +372,15 @@ TIP_CSS = """
 .fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
 .fil-tip .t-link, .hero-preview .t-link { font-weight: 600; text-decoration: none; }
 .fil-tip .t-link:hover, .hero-preview .t-link:hover { text-decoration: underline; }
+.combos { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 4px 0 14px; font-size: 0.72rem; }
+.combos-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 4px; }
+.combo { display: inline-flex; align-items: center; gap: 3px; padding: 2px 5px; font: inherit; color: inherit; background: transparent; border: 1px solid var(--rule); cursor: pointer; }
+.combo:hover, .combo:focus-visible, .combo.on { background: var(--rule); }
+.cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
+.cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
+.combos-f { margin-left: 6px; color: var(--muted); }
+article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); }
+article.row.combo-out { display: none; }
 .t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
 .t-slots-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 2px; }
 .t-slot { font: inherit; font-size: 0.72rem; padding: 2px 7px; border: 1px solid var(--rule); background: transparent; color: inherit; cursor: pointer; }
@@ -500,6 +545,47 @@ REGION_JS = """
 </script>
 """
 
+def _norm(n):
+    return n.replace(" Poly", "").lower()
+
+def load_combinations(car, hero):
+    """Factory two-tone combinations that can be shown: the car has a preview with slots, every colour of the
+    combination is a paint of the car (an entry with `unresolved` has a colour without chip and is kept in the file,
+    not published) and the slots it names exist on the car (Doppler has no intermediate slot)."""
+    path = config.car_dir(car) / "combinations.json"
+    if not (hero and path.exists()):
+        return {}
+    ids = {z["id"] for z in hero.get("zones") or [] if z.get("label")}
+    out = {}
+    for year, v in json.loads(path.read_text(encoding="utf-8")).get("years", {}).items():
+        ok = [c for c in v["combinations"] if "unresolved" not in c and {z for z in ("upper", "intermediate", "lower") if c.get(z)} <= ids]
+        if ok:
+            out[int(year)] = ok
+    return out
+
+def combos_html(year, combos, matches):
+    """The 'Factory two-tones' strip under a year heading: one button per combination, upper colour over lower."""
+    items = combos.get(year)
+    if not items:
+        return ""
+    def find(name):
+        c = [m for m in matches if _norm(m["name"]) == _norm(name)]
+        c.sort(key=lambda m: abs(m["year"] - year))
+        return c[0] if c else None
+    btns = []
+    for c in items:
+        cols = {z: find(c[z]) for z in ("upper", "lower") if c.get(z)}
+        if len(cols) < 2 or not all(cols.values()):
+            continue
+        attrs = " ".join(f'data-{z}="{esc(m["name"])}" data-{z}-year="{m["year"]}"' for z, m in cols.items())
+        sw = "".join(f'<i class="cb-sw" style="background:{cols[z]["hex"]}" title="{esc(cols[z]["name"])}"></i>' for z in ("upper", "lower"))
+        btns.append(f'<button type="button" class="combo" {attrs} title="{esc(cols["upper"]["name"])} over {esc(cols["lower"]["name"])}">'
+                    f'<span class="cb-code">{esc(c["code"])}</span>{sw}</button>')
+    if not btns:
+        return ""
+    return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
+            '<label class="combos-f"><input type="checkbox"> only these colours</label></div>')
+
 def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""
     labels  = region_labels()
@@ -526,6 +612,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     total_count = sum(len(v) for v in by_year.values())
 
     USED_THUMBS.clear()
+    combos = load_combinations(car, hero)
     rows = []
     for year in sorted(by_year.keys(), reverse=True):
         rows.append(f"""
@@ -536,6 +623,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
         </span>
         <span class="year-tagline">Model Year</span>
       </h2>""")
+        rows.append(combos_html(year, combos, matches))
         for m in by_year[year]:
             cols = "".join(f"""
           <div class="rcols" data-r="{r}">
@@ -544,7 +632,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
             <div class="col asa-col">{filament_column(by_name[r][m['name']].get('asa', []), 'ASA', fil_thumbs)}</div>
           </div>""" for r in regions)
             rows.append(f"""
-        <article class="row">
+        <article class="row" data-paint="{esc(m['name'])}" data-year="{m['year']}">
           <div class="col paint-col">{paint_block(m)}</div>{cols}
         </article>
         """)
