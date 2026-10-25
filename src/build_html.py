@@ -317,16 +317,24 @@ HERO_JS = """
   }
   // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are
   // marked wherever they are, "only these colours" hides every other row of the page, and a link names the other years.
-  function marks(strip) {
-    var on = strip.querySelector('.combo.on'), only = strip.querySelector('input').checked, y = strip.dataset.year,
-        ref = strip.querySelector('.combos-ref'), far = [];
+  // "Only these colours" is one switch for the whole page (every strip shows the same state). Hiding or showing rows above the
+  // clicked strip would move it, so the scroll position is corrected to keep the strip where it was on screen.
+  function marks() {
+    var on = document.querySelector('.combo.on'), strip = on && on.closest('.combos'), only = document.querySelector('.combos-f input').checked,
+        y = strip && strip.dataset.year, far = [];
     document.querySelectorAll('article.row').forEach(function (r) {
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
       r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
       if (hit) { if (window.openRow) window.openRow(r); if (r.dataset.year !== y) far.push(r); }
     });
-    ref.innerHTML = far.map(function (r) { return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
+    document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
+    if (strip) strip.querySelector('.combos-ref').innerHTML = far.map(function (r) {
+      return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
+  }
+  function keepPos(strip, fn) {
+    var t = strip.getBoundingClientRect().top; fn();
+    var d = strip.getBoundingClientRect().top - t; if (d) window.scrollBy({ top: d, behavior: 'instant' });
   }
   document.addEventListener('click', function (e) {
     var cb = e.target.closest && e.target.closest('.combo');
@@ -343,12 +351,12 @@ HERO_JS = """
         if (loaded >= 2) paint(sel);
       }
       var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
-      document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
-      cb.classList.add('on'); marks(strip);
+      cb.classList.add('on'); keepPos(strip, marks);
     }
   });
   document.addEventListener('change', function (e) {
-    var strip = e.target.closest && e.target.closest('.combos'); if (strip) marks(strip);
+    var strip = e.target.closest && e.target.closest('.combos'), box = e.target.closest && e.target.closest('.combos-f input');
+    if (strip && box) { document.querySelectorAll('.combos-f input').forEach(function (x) { x.checked = box.checked; }); keepPos(strip, marks); }
   });
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('.t-slot');
