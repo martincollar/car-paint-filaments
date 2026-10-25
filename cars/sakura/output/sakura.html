@@ -322,10 +322,10 @@ article.row.combo-out { display: none; }
 .t-slots-l { font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); margin-right: 2px; }
 .t-slot { font: inherit; font-size: 0.72rem; padding: 2px 7px; border: 1px solid var(--rule); background: transparent; color: inherit; cursor: pointer; }
 .t-slot:hover, .t-slot:focus-visible { background: var(--rule); }
-.hp-slots { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: 6px 0 2px; font-size: 0.7rem; }
-.hp-slot { display: inline-flex; align-items: center; gap: 4px; }
-.hp-slot i { width: 12px; height: 12px; border: 1px solid var(--rule); }
-.hp-slot small { color: var(--muted); font-size: 0.64rem; max-width: 9em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hero-preview .t-slotname { margin: 8px 0 2px; }
+.hero-preview .hp-slotblock:first-child .t-slotname { margin-top: 0; }
+.hero-preview.big .hp-info { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 0 16px; }   /* enlarged: the slots side by side */
+.hero-preview.big .t-slotname { margin-top: 0; }
 
 </style>
 
@@ -3593,7 +3593,7 @@ article.row.combo-out { display: none; }
   }
   function hexRgb(h) { return [1, 3, 5].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
 
-  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [], Sc = [], sel = null, names = [];
+  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [], Sc = [], sel = null, picks = [], last = null;
   function za(i, z) { var a = 0; Z[z].channels.forEach(function (c) { a += mk[4*i+c]; }); return Math.min(1, a / 255); }
   function ready() {
     if (++loaded < 2) return;
@@ -3679,23 +3679,26 @@ article.row.combo-out { display: none; }
     return '<div class="t-slots"><span class="t-slots-l">Put on</span>' + slots.map(function (z) {
       return '<button type="button" class="t-slot" data-zone="' + z.id + '">' + z.label + '</button>'; }).join('') + '</div>';
   };
-  function slotsHtml() {
-    if (slots.length < 2 || !sel) return '';
-    return '<div class="hp-slots">' + Z.map(function (z, k) {
-      return z.label ? '<span class="hp-slot"><i style="background:' + (sel[k] || 'transparent') + '"></i>' + z.label +
-        '<small>' + (names[k] || (sel[k] ? 'default' : 'not set')) + '</small></span>' : ''; }).join('') + '</div>';
+  // What the preview names: one filament block per slot (a roof only once it was set by hand), each a link to the shop;
+  // a car with a single colour shows just the filament.
+  function infoHtml() {
+    if (slots.length < 2) return last ? window.filInfo(last, true) : '';
+    return slots.map(function (z) {
+      var k = Z.indexOf(z); return picks[k] ? '<div class="hp-slotblock"><div class="t-slotname">' + z.label + '</div>' + window.filInfo(picks[k], true) + '</div>' : '';
+    }).join('');
   }
+  function snap(d) { var c = {}; for (var key in d) c[key] = d[key]; return c; }
 
   var picked = null;
   function pick(el, zid) {
     var d = el.dataset;
-    if (!sel) { sel = allHex(null).map(function (h, k) { return Z[k].fixed ? H.roof : null; }); names = Z.map(function () { return ''; }); }
+    if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
     Z.forEach(function (z, k) {
       if (zid ? z.id === zid : true) {
-        if (!zid && z.fixed) { sel[k] = H.roof; names[k] = ''; } else { sel[k] = d.hex; names[k] = d.name; }
+        if (!zid && z.fixed) { sel[k] = H.roof; picks[k] = null; } else { sel[k] = d.hex; picks[k] = snap(d); }
       }
     });
-    info.innerHTML = window.filInfo(d, true) + slotsHtml();
+    last = snap(d); info.innerHTML = infoHtml();
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
     box.classList.remove('closed', 'empty');
@@ -3754,12 +3757,12 @@ article.row.combo-out { display: none; }
     if (cb) {
       var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
       if (up && lo) {
-        if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); names = Z.map(function () { return ''; }); }
+        if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
         Z.forEach(function (z, k) {
           var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
-          if (el) { sel[k] = el.dataset.hex; names[k] = el.dataset.name; }
+          if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); }
         });
-        info.innerHTML = window.filInfo(up.dataset, true) + slotsHtml();
+        last = snap(up.dataset); info.innerHTML = infoHtml();
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
