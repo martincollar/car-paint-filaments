@@ -311,7 +311,7 @@ a { color: inherit; }
 .wm-slab::after { content: ""; position: absolute; left: 0; right: .07em; bottom: 0; height: 10px;
                   background: linear-gradient(var(--ink) 0 5px, transparent 5px 7px, var(--ink) 7px 9px); }
 .site-head p { margin: 0 0 0 auto; color: var(--muted); max-width: 46ch; }
-main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 64px 76px;
+main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid; gap: 112px 76px;
        grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr)); }
 .site-foot { border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem;
              display: flex; flex-wrap: wrap; gap: 6px 24px; justify-content: space-between; }
@@ -326,6 +326,8 @@ __BASE__
 .tile-photo, .tile-shade { mix-blend-mode: multiply; z-index: 1; }  /* floor shadow melts into the tile colour */
 .tile-canvas { z-index: 4; }                                         /* the cut-out car: above frame, text and decoration */
 .tile-photo { filter: brightness(1.032); }
+/* scroll effect: the car shrinks towards its wheels as the tile leaves the middle of the screen (--car-s set by PAGE_JS) */
+.tile-photo, .tile-shade, .tile-canvas { transform: scale(var(--car-s, 1)); transform-origin: 50% 78%; }
 .tile.ready .tile-photo { visibility: hidden; }
 .js .tile:not(.ready) .tile-photo { opacity: 0; }   /* no flash of the photo's own colour before the recolour */
 @media (hover: hover) and (pointer: fine) {   /* mouse: the whole tile is the link; touch: a tap cycles colours instead */
@@ -343,7 +345,7 @@ __BASE__
 .tile-name a:focus-visible { outline: 3px solid #2563eb; outline-offset: 6px; }
 @media (max-width: 520px) {
   .site-head, .site-foot { padding-left: 26px; padding-right: 26px; }
-  main { padding-left: 26px; padding-right: 26px; gap: 54px; }
+  main { padding-left: 26px; padding-right: 26px; gap: 96px; }
   .tile { padding: 18px 18px 16px; --stage-w: 108%; --stage-left: -4%; }
   .tile-name { font-size: 1.45rem; }
   .tile-foot { padding-top: 175px; }
@@ -460,6 +462,22 @@ PAGE_JS = """
       el.addEventListener('click', function (e) { if (!e.target.closest('a')) t.next(); });
     }
   };
+
+  // scroll effect: --car-s = 1 in the middle band of the screen, shrinking to .55 as the tile's centre nears the top or bottom edge
+  var shrink = !editing && !calm, tickQ = 0;
+  function sizeCars() {
+    tickQ = 0;
+    var vh = innerHeight;
+    Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
+      var r = el.getBoundingClientRect(), d = Math.abs((r.top + r.bottom) / 2 - vh / 2) / (vh / 2 + r.height / 2);
+      var k = Math.max(0, Math.min(1, (d - 0.3) / 0.7)); k = k * k * (3 - 2 * k);
+      el.style.setProperty('--car-s', (1 - 0.45 * k).toFixed(3));
+    });
+  }
+  if (shrink) {
+    var queue = function () { if (!tickQ) tickQ = requestAnimationFrame(sizeCars); };
+    addEventListener('scroll', queue, { passive: true }); addEventListener('resize', queue); sizeCars();
+  }
 
   var tiles = {};
   Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
