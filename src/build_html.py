@@ -164,7 +164,7 @@ HERO_HTML = """
 HERO_JS = """
 <script>
 (function () {
-  var H = __HERO__;
+  var H = __HERO__, TN = H.tone || {}, DL = TN.dl || 0, CS = TN.contrast == null ? 1 : TN.contrast;  // per-car calibration (review_hero.py /calibrate)
   var box = document.getElementById('hero-preview'), cv = document.getElementById('hero-canvas'),
       info = document.getElementById('hero-info'), ctx = cv.getContext('2d');
   box.querySelector('.hp-close').onclick = function () { box.classList.remove('big'); box.classList.add('closed'); };
@@ -186,7 +186,7 @@ HERO_JS = """
   }
   function hexRgb(h) { return [1, 3, 5].map(function (i) { return parseInt(h.substr(i, 2), 16); }); }
 
-  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [0, 0], cur = null;
+  var photo = new Image(), mask = new Image(), loaded = 0, W, Hh, base, mk, L, Lm = [0, 0], Sc = [1, 1], cur = null;
   function ready() {
     if (++loaded < 2) return;
     W = cv.width = photo.width; Hh = cv.height = photo.height;
@@ -198,6 +198,10 @@ HERO_JS = """
       for (var k = 0; k < 2; k++) { var a = mk[4*i+k] / 255; sum[k] += a * c[0]; wt[k] += a; }
     }
     L = lab; Lm = [sum[0] / wt[0], sum[1] / wt[1]];
+    // Contrast of the body shading differs a lot between photos (flat pastel Doppler vs. hard-lit Torq). Cap it at the
+    // same level for every car, otherwise one filament colour looks darker or flatter on some cars than on others.
+    var vr = [0, 0]; for (var j = 0; j < n; j++) for (var q = 0; q < 2; q++) { var aq = mk[4*j+q] / 255, dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
+    Sc = [0, 1].map(function (q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
     if (cur) paint(cur); else greyed();
   }
   photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
@@ -222,9 +226,9 @@ HERO_JS = """
     for (var i = 0; i < n; i++) {
       var ab = mk[4*i] / 255, ar = mk[4*i+1] / 255, r = d[4*i], g = d[4*i+1], b = d[4*i+2];
       if (ab > 0 || ar > 0) {
-        var kk = ab >= ar ? 0 : 1, t = kk ? tr : tb, a = kk ? ar : ab, dev = L[3*i] - Lm[kk];
-        dev *= dev > 0 ? Math.min(1, (100 - t[0]) / (100 - Lm[kk])) : Math.min(1, t[0] / Lm[kk]);
-        var ly = (Math.max(0, Math.min(100, t[0] + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
+        var kk = ab >= ar ? 0 : 1, t = kk ? tr : tb, a = kk ? ar : ab, t0 = Math.max(0, Math.min(100, t[0] + DL)), dev = (L[3*i] - Lm[kk]) * Sc[kk] * CS;
+        dev *= dev > 0 ? Math.min(1, (100 - t0) / (100 - Lm[kk])) : Math.min(1, t0 / Lm[kk]);
+        var ly = (Math.max(0, Math.min(100, t0 + dev)) + 16) / 116, fx = ly + t[1] / 500, fz = ly - t[2] / 200,
             X = finv(fx) * WP[0], Y = finv(ly), Z = finv(fz) * WP[2];
         r = r * (1 - a) + gam(Mi[0][0]*X + Mi[0][1]*Y + Mi[0][2]*Z) * a;
         g = g * (1 - a) + gam(Mi[1][0]*X + Mi[1][1]*Y + Mi[1][2]*Z) * a;

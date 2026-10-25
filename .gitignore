@@ -9,5 +9,6 @@ filaments/sources/
 filaments/.cache/
 /_site/
 /.worktrees/
+/cars/*/backup-*/
 /.claude/
 cars/*/sources/cut_work/

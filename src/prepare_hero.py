@@ -6,13 +6,16 @@ Reads `hero` from `cars/<car>/car.json`:
 The mask is an RGB PNG: R = body paint, G = roof paint (0-255 coverage, soft edges).
 `roof` is the fixed roof colour; omit it to give the roof the body colour.
 
-Produces `cars/<car>/data/hero.json` ({photo, mask, roof, credit, credit_url}) and
+`tone` ({"dl": L* shift of the target lightness, "contrast": factor on the body shading}) is taken from
+`cars/<car>/hero_assets.json`; set with the calibration page of review_hero.py.
+
+Produces `cars/<car>/data/hero.json` ({photo, mask, roof, tone, credit, credit_url}) and
 does nothing for a car without `hero`.
 
 Usage:
     python prepare_hero.py [--car <name>]
 """
-import argparse, base64, io, sys
+import argparse, base64, io, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from PIL import Image
@@ -53,10 +56,13 @@ def main():
     if mask.size != photo.size:
         sys.exit(f"mask {mask.size} and photo {photo.size} differ in size")
 
+    assets = base / "hero_assets.json"
+    tone = json.loads(assets.read_text(encoding="utf-8")).get("tone") if assets.exists() else None
     w = min(MAX_W, photo.width)
     data = {"photo": photo_uri(_resize(photo, w)),
             "mask": mask_uri(_resize(mask, w)),
             "roof": hero.get("roof"),
+            "tone": tone,
             "credit": hero.get("credit", ""),
             "credit_url": hero.get("credit_url", "")}
     config.write_json(out, data, indent=None)

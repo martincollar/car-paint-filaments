@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Kilimanjaro White",
+    "year": 1971,
+    "car_code": "904",
+    "paint_ref": "8879",
+    "rgb": [
+      231,
+      224,
+      198
+    ],
+    "hex": "#E7E0C6",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      100,
+      304
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Universal Blue Poly",
+    "year": 1971,
+    "car_code": "903",
+    "paint_ref": "14239",
+    "rgb": [
+      1,
+      46,
+      90
+    ],
+    "hex": "#012E5A",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      100,
+      370
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Safari Gold Poly",
+    "year": 1971,
+    "car_code": "920",
+    "paint_ref": "23576",
+    "rgb": [
+      172,
+      96,
+      18
+    ],
+    "hex": "#AC6012",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      100,
+      431
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Silver Gray Poly",
+    "year": 1971,
+    "car_code": "901",
+    "paint_ref": "32910",
+    "rgb": [
+      127,
+      135,
+      139
+    ],
+    "hex": "#7F878B",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      100,
+      556
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Racing Green",
+    "year": 1971,
+    "car_code": "907",
+    "paint_ref": "44403",
+    "rgb": [
+      1,
+      12,
+      8
+    ],
+    "hex": "#010C08",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      100,
+      624
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "New Sight Orange",
+    "year": 1971,
+    "car_code": "918",
+    "paint_ref": "60636",
+    "rgb": [
+      157,
+      30,
+      9
+    ],
+    "hex": "#9D1E09",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      210,
+      115
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Monte Carlo Red",
+    "year": 1971,
+    "car_code": "905",
+    "paint_ref": "71899",
+    "rgb": [
+      183,
+      0,
+      0
+    ],
+    "hex": "#B70000",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      210,
+      181
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sunshine Yellow",
+    "year": 1971,
+    "car_code": "919",
+    "paint_ref": "81908",
+    "rgb": [
+      229,
+      203,
+      82
+    ],
+    "hex": "#E5CB52",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
+    "source_file": "sources/1971-datsun-pg01.jpg",
+    "source_pos": [
+      210,
+      306
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Red (Persimmon)",
+    "year": 1972,
+    "car_code": "110",
+    "paint_ref": "72000",
+    "rgb": [
+      170,
+      1,
+      1
+    ],
+    "hex": "#AA0101",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
+    "source_file": "sources/1972-datsun-pg01.jpg",
+    "source_pos": [
+      445,
+      113
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Yellow (Lime)",
+    "year": 1972,
+    "car_code": "112",
+    "paint_ref": "82040",
+    "rgb": [
+      188,
+      196,
+      64
+    ],
+    "hex": "#BCC440",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
+    "source_file": "sources/1972-datsun-pg01.jpg",
+    "source_pos": [
+      445,
+      370
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Avocado Green Poly",
+    "year": 1972,
+    "car_code": "113",
+    "paint_ref": "44681",
+    "rgb": [
+      55,
+      69,
+      18
+    ],
+    "hex": "#374512",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
+    "source_file": "sources/1972-datsun-pg01.jpg",
+    "source_pos": [
+      330,
+      306
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Bronze Poly",
+    "year": 1972,
+    "car_code": "114",
+    "paint_ref": "23750",
+    "rgb": [
+      75,
+      24,
+      4
+    ],
+    "hex": "#4B1804",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
+    "source_file": "sources/1972-datsun-pg01.jpg",
+    "source_pos": [
+      215,
+      176
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Blue Poly",
+    "year": 1972,
+    "car_code": "115",
+    "paint_ref": "14467",
+    "rgb": [
+      1,
+      38,
+      92
+    ],
+    "hex": "#01265C",
+    "poly": true,
+    "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
+    "source_file": "sources/1972-datsun-pg01.jpg",
+    "source_pos": [
+      110,
+      493
+    ],
+    "confidence": "measured_from_card"
+  }
+]

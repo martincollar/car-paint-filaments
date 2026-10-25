@@ -1,0 +1,147 @@
+{
+  "box_width": 60,
+  "box_height": 24,
+  "source_url_template": "https://www.autocolorlibrary.com/pages/{year}-datsun",
+  "cards": [
+    {
+      "card_file": "1971-datsun-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 304,
+          "name": "Kilimanjaro White",
+          "year": 1971,
+          "car_code": "904",
+          "paint_ref": "8879",
+          "poly": false,
+          "card_name": "White"
+        },
+        {
+          "cx": 100,
+          "cy": 370,
+          "name": "Universal Blue Poly",
+          "year": 1971,
+          "car_code": "903",
+          "paint_ref": "14239",
+          "poly": true,
+          "card_name": "Blue Poly"
+        },
+        {
+          "cx": 100,
+          "cy": 431,
+          "name": "Safari Gold Poly",
+          "year": 1971,
+          "car_code": "920",
+          "paint_ref": "23576",
+          "poly": true,
+          "card_name": "Gold Poly"
+        },
+        {
+          "cx": 100,
+          "cy": 556,
+          "name": "Silver Gray Poly",
+          "year": 1971,
+          "car_code": "901",
+          "paint_ref": "32910",
+          "poly": true,
+          "card_name": "Light Gray Poly"
+        },
+        {
+          "cx": 100,
+          "cy": 624,
+          "name": "Racing Green",
+          "year": 1971,
+          "car_code": "907",
+          "paint_ref": "44403",
+          "poly": false,
+          "card_name": "Green"
+        },
+        {
+          "cx": 210,
+          "cy": 115,
+          "name": "New Sight Orange",
+          "year": 1971,
+          "car_code": "918",
+          "paint_ref": "60636",
+          "poly": false,
+          "card_name": "Orange"
+        },
+        {
+          "cx": 210,
+          "cy": 181,
+          "name": "Monte Carlo Red",
+          "year": 1971,
+          "car_code": "905",
+          "paint_ref": "71899",
+          "poly": false,
+          "card_name": "Red"
+        },
+        {
+          "cx": 210,
+          "cy": 306,
+          "name": "Sunshine Yellow",
+          "year": 1971,
+          "car_code": "919",
+          "paint_ref": "81908",
+          "poly": false,
+          "card_name": "Yellow"
+        }
+      ]
+    },
+    {
+      "card_file": "1972-datsun-pg01.jpg",
+      "swatches": [
+        {
+          "cx": 445,
+          "cy": 113,
+          "name": "Red (Persimmon)",
+          "year": 1972,
+          "car_code": "110",
+          "paint_ref": "72000",
+          "poly": false,
+          "card_name": "Red"
+        },
+        {
+          "cx": 445,
+          "cy": 370,
+          "name": "Yellow (Lime)",
+          "year": 1972,
+          "car_code": "112",
+          "paint_ref": "82040",
+          "poly": false,
+          "card_name": "Yellow"
+        },
+        {
+          "cx": 330,
+          "cy": 306,
+          "name": "Avocado Green Poly",
+          "year": 1972,
+          "car_code": "113",
+          "paint_ref": "44681",
+          "poly": true,
+          "card_name": "Avocado Green Poly"
+        },
+        {
+          "cx": 215,
+          "cy": 176,
+          "name": "Bronze Poly",
+          "year": 1972,
+          "car_code": "114",
+          "paint_ref": "23750",
+          "poly": true,
+          "card_name": "Bronze Poly"
+        },
+        {
+          "cx": 110,
+          "cy": 493,
+          "name": "Blue Poly",
+          "year": 1972,
+          "car_code": "115",
+          "paint_ref": "14467",
+          "poly": true,
+          "card_name": "Blue Poly"
+        }
+      ]
+    }
+  ]
+}

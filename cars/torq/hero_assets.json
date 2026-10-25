@@ -1,0 +1,9 @@
+{
+  "ref_width": 1900,
+  "hue": 35,
+  "mask": "chroma",
+  "tone": {
+    "dl": 6.0,
+    "contrast": 0.85
+  }
+}
