@@ -83,16 +83,20 @@ def filament_row(c, fil_thumbs, is_primary=False):
     # click recolours the preview (HERO_JS), ctrl/middle click follows the shop link.
     link = f'<a class="pick" href="{esc(clean_url(c))}" target="_blank" rel="noopener" {attrs}>'
     name = f"<strong>{esc(c['brand'])}</strong> {esc(c['material'])} <span class=\"color\">{esc(c['color_name'])}</span>"
-    if c.get("neon"):
-        name += ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>'
+    neon = ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>' if c.get("neon") else ""
+    name += neon
     if is_primary:
+        # Three lines: brand / filament / match (ΔE, HEX, shop link). The shop link must stay outside the
+        # .pick anchor (no nested <a>), so .fsub is its own grid child under .finfo.
+        shop = (f'<a class="shop-link" href="{esc(clean_url(c))}" target="_blank" rel="noopener">open shop</a>'
+                if safe_url(c.get("url")) else "")
         return f"""
       <div class="filament primary">{link}
         <div class="swatch mini" style="background:{c['hex']}"></div>
         <div class="finfo">
-          <div class="fname">{name}</div>
-          <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span></div>
+          <div class="fname"><strong>{esc(c['brand'])}</strong><span class="fline">{esc(c['material'])} <span class="color">{esc(c['color_name'])}</span>{neon}</span></div>
         </div></a>
+        <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span><span class="fhex">{c['hex'].upper()}</span>{shop}</div>
       </div>
     """
     return f"""
@@ -124,6 +128,14 @@ HERO_CSS = """
 a.pick { display: contents; }
 a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--teal); outline-offset: 1px; }
 a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
+div.filament.primary { row-gap: 0; }
+div.filament.primary .swatch.mini { grid-row: 1 / 3; align-self: start; }
+div.filament.primary .finfo { grid-column: 2; grid-row: 1; }
+div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
+.filament.primary .fname strong, .filament.primary .fline { display: block; }
+.filament.primary .fhex { color: var(--muted); }
+.filament.primary .shop-link { color: var(--muted); text-decoration: underline; font-weight: 400; }
+.filament.primary .shop-link:hover { color: var(--teal); }
 /* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;

@@ -238,6 +238,14 @@ body[data-region="int"] .rcols[data-r="int"] { display: contents; }
 a.pick { display: contents; }
 a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--teal); outline-offset: 1px; }
 a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
+div.filament.primary { row-gap: 0; }
+div.filament.primary .swatch.mini { grid-row: 1 / 3; align-self: start; }
+div.filament.primary .finfo { grid-column: 2; grid-row: 1; }
+div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
+.filament.primary .fname strong, .filament.primary .fline { display: block; }
+.filament.primary .fhex { color: var(--muted); }
+.filament.primary .shop-link { color: var(--muted); text-decoration: underline; font-weight: 400; }
+.filament.primary .shop-link:hover { color: var(--teal); }
 /* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
@@ -339,9 +347,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#A00705" data-name="Professional Lab PLA Meta Červená" data-slug="filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#A00705"></div>
         <div class="finfo">
-          <div class="fname"><strong>Professional Lab</strong> PLA <span class="color">Meta Červená</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.0</span></div>
+          <div class="fname"><strong>Professional Lab</strong><span class="fline">PLA <span class="color">Meta Červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.0</span><span class="fhex">#A00705</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#9E0705" data-name="Professional Lab PLA Matte Červená" data-slug="filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg">
@@ -372,9 +380,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#B0170D" data-name="NEBULA PETG Rubínově červená" data-slug="filament-nebula-petg-rubinove-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/">
         <div class="swatch mini" style="background:#B0170D"></div>
         <div class="finfo">
-          <div class="fname"><strong>NEBULA</strong> PETG <span class="color">Rubínově červená</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.2</span></div>
+          <div class="fname"><strong>NEBULA</strong><span class="fline">PETG <span class="color">Rubínově červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.2</span><span class="fhex">#B0170D</span><a class="shop-link" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-petg-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#B22416" data-name="LUME PETG Red" data-slug="filament-lume-petg-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-petg-cervena-1-75-mm-1-kg">
@@ -405,9 +413,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/asa-extrafill-traffic-red" target="_blank" rel="noopener" data-hex="#AE1C1F" data-name="Fillamentum ASA Extrafill Traffic Red" data-slug="asa-extrafill-traffic-red" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/asa-extrafill-traffic-red">
         <div class="swatch mini" style="background:#AE1C1F"></div>
         <div class="finfo">
-          <div class="fname"><strong>Fillamentum</strong> ASA <span class="color">Extrafill Traffic Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.1</span></div>
+          <div class="fname"><strong>Fillamentum</strong><span class="fline">ASA <span class="color">Extrafill Traffic Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.1</span><span class="fhex">#AE1C1F</span><a class="shop-link" href="https://fillamentum.shop/products/asa-extrafill-traffic-red" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm" target="_blank" rel="noopener" data-hex="#B71E1D" data-name="AURAPOL ASA 3D Tool Red" data-slug="aurapol-asa-3d-filament-tool-red-850g-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm">
@@ -440,9 +448,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=42116542365950" target="_blank" rel="noopener" data-hex="#A21913" data-name="Overture 3D PLA Brick Red" data-slug="overture-matte-pla-brick-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=42116542365950">
         <div class="swatch mini" style="background:#A21913"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA <span class="color">Brick Red</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.9</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA <span class="color">Brick Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.9</span><span class="fhex">#A21913</span><a class="shop-link" href="https://overture3d.com/products/overture-matte-pla?variant=42116542365950" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/matte-pla?variant=43631459106873" target="_blank" rel="noopener" data-hex="#AB2C1D" data-name="Polymaker PLA Matte Army Red" data-slug="matte-pla-matte-army-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/matte-pla?variant=43631459106873">
@@ -473,9 +481,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45588259504185" target="_blank" rel="noopener" data-hex="#8A2519" data-name="Polymaker PETG Galaxy Red" data-slug="petg-galaxy-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45588259504185">
         <div class="swatch mini" style="background:#8A2519"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Galaxy Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.9</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Galaxy Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.9</span><span class="fhex">#8A2519</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45588259504185" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221207097" target="_blank" rel="noopener" data-hex="#C72F19" data-name="Polymaker PETG Red" data-slug="petg-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221207097">
@@ -500,9 +508,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener" data-hex="#BE2415" data-name="Overture 3D ASA Diamond Red" data-slug="overture-asa-filament-1-75mm-diamond-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446">
         <div class="swatch mini" style="background:#BE2415"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Diamond Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.6</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Diamond Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.6</span><span class="fhex">#BE2415</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343155769" target="_blank" rel="noopener" data-hex="#CB1B14" data-name="Polymaker ASA Red" data-slug="asa-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343155769">
@@ -540,9 +548,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-basic-filament" target="_blank" rel="noopener" data-hex="#BDCF00" data-name="Bambu Lab PLA Bright Green" data-slug="bambu-lab-pla-bright-green" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-basic-filament">
         <div class="swatch mini" style="background:#BDCF00"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PLA <span class="color">Bright Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.7</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PLA <span class="color">Bright Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.7</span><span class="fhex">#BDCF00</span><a class="shop-link" href="https://eu.store.bambulab.com/products/pla-basic-filament" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#D0C800" data-name="AURAPOL PLA 3D Lemon Yellow" data-slug="aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-lemon-yellow-1-kg-1-75-mm">
@@ -573,9 +581,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sulfur-yellow-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#C7CF39" data-name="AURAPOL PETG Sulfur Yellow" data-slug="aurapol-pet-g-filament-sulfur-yellow-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sulfur-yellow-1-kg-1-75-mm">
         <div class="swatch mini" style="background:#C7CF39"></div>
         <div class="finfo">
-          <div class="fname"><strong>AURAPOL</strong> PETG <span class="color">Sulfur Yellow</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.2</span></div>
+          <div class="fname"><strong>AURAPOL</strong><span class="fline">PETG <span class="color">Sulfur Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.2</span><span class="fhex">#C7CF39</span><a class="shop-link" href="https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sulfur-yellow-1-kg-1-75-mm" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-aurapol-petg-sirova-zluta-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#C8D03A" data-name="AURAPOL PETG Sírová Žlutá" data-slug="filament-aurapol-petg-sirova-zluta-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-aurapol-petg-sirova-zluta-1-75-mm-1-kg">
@@ -606,9 +614,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/asa-light-green-1" target="_blank" rel="noopener" data-hex="#A8CA3B" data-name="Fiberlogy ASA Light Green" data-slug="asa-light-green-1" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/asa-light-green-1">
         <div class="swatch mini" style="background:#A8CA3B"></div>
         <div class="finfo">
-          <div class="fname"><strong>Fiberlogy</strong> ASA <span class="color">Light Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.4</span></div>
+          <div class="fname"><strong>Fiberlogy</strong><span class="fline">ASA <span class="color">Light Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.4</span><span class="fhex">#A8CA3B</span><a class="shop-link" href="https://www.3djake.cz/fiberlogy/asa-light-green-1" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://fillamentum.shop/products/asa-extrafill-dijon-mustard" target="_blank" rel="noopener" data-hex="#CDBF60" data-name="Fillamentum ASA Extrafill Dijon Mustard" data-slug="asa-extrafill-dijon-mustard" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/asa-extrafill-dijon-mustard">
@@ -629,9 +637,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=37152393724092" target="_blank" rel="noopener" data-hex="#BBCE1D" data-name="Overture 3D PLA Grass green" data-slug="overture-matte-pla-grass-green" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=37152393724092">
         <div class="swatch mini" style="background:#BBCE1D"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA <span class="color">Grass green</span></div>
-          <div class="fsub"><span class="de vg">ΔE 4.0</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA <span class="color">Grass green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 4.0</span><span class="fhex">#BBCE1D</span><a class="shop-link" href="https://overture3d.com/products/overture-matte-pla?variant=37152393724092" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/matte-pla?variant=43631458451513" target="_blank" rel="noopener" data-hex="#CEC73A" data-name="Polymaker PLA Matte Army Light Green" data-slug="matte-pla-matte-army-light-green" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/matte-pla?variant=43631458451513">
@@ -662,9 +670,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076229411070" target="_blank" rel="noopener" data-hex="#C2DC43" data-name="Overture 3D PETG Grass Green" data-slug="overture-high-speed-petg-refill-3d-printer-filament-1-75mm-grass-green" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076229411070">
         <div class="swatch mini" style="background:#C2DC43"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PETG <span class="color">Grass Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.3</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PETG <span class="color">Grass Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.3</span><span class="fhex">#C2DC43</span><a class="shop-link" href="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076229411070" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-matte" target="_blank" rel="noopener" data-hex="#C0DF16" data-name="Bambu Lab PETG Matte Lime" data-slug="bambu-lab-petg-matte-lime" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-matte">
@@ -683,9 +691,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539686142" target="_blank" rel="noopener" data-hex="#F2EA1F" data-name="Overture 3D ASA Yellow" data-slug="overture-asa-filament-1-75mm-yellow" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539686142">
         <div class="swatch mini" style="background:#F2EA1F"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Yellow</span></div>
-          <div class="fsub"><span class="de weak">ΔE 11.6</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 11.6</span><span class="fhex">#F2EA1F</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539686142" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
           </div>
@@ -711,9 +719,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#3E4B29" data-name="ROSA3D PLA Starter VOJENSKÁ ZELENÁ" data-slug="refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#3E4B29"></div>
         <div class="finfo">
-          <div class="fname"><strong>ROSA3D</strong> PLA <span class="color">Starter VOJENSKÁ ZELENÁ</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.0</span></div>
+          <div class="fname"><strong>ROSA3D</strong><span class="fline">PLA <span class="color">Starter VOJENSKÁ ZELENÁ</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.0</span><span class="fhex">#3E4B29</span><a class="shop-link" href="https://www.smart3d.cz/p/refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#4F572D" data-name="ROSA3D PLA Magic Army" data-slug="refill-rosa3d-pla-magic-army-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-rosa3d-pla-magic-army-1-75-mm-1-kg">
@@ -744,9 +752,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#39541A" data-name="Bambu Lab PETG HF Forest Green" data-slug="bambu-lab-petg-hf-forest-green" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
         <div class="swatch mini" style="background:#39541A"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">HF Forest Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.5</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">HF Forest Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.5</span><span class="fhex">#39541A</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-petg-armadni-zelena-1-kg/" target="_blank" rel="noopener" data-hex="#3D4E30" data-name="NEBULA PETG Armádní zelená" data-slug="filament-nebula-petg-armadni-zelena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-petg-armadni-zelena-1-kg/">
@@ -771,9 +779,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/asa-matte-olive-green" target="_blank" rel="noopener" data-hex="#3F422D" data-name="Fiberlogy ASA Matte Olive Green" data-slug="asa-matte-olive-green" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/asa-matte-olive-green">
         <div class="swatch mini" style="background:#3F422D"></div>
         <div class="finfo">
-          <div class="fname"><strong>Fiberlogy</strong> ASA <span class="color">Matte Olive Green</span></div>
-          <div class="fsub"><span class="de weak">ΔE 9.2</span></div>
+          <div class="fname"><strong>Fiberlogy</strong><span class="fline">ASA <span class="color">Matte Olive Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 9.2</span><span class="fhex">#3F422D</span><a class="shop-link" href="https://www.3djake.cz/fiberlogy/asa-matte-olive-green" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-green-grass-850g-1-75-mm" target="_blank" rel="noopener" data-hex="#1E5A17" data-name="AURAPOL ASA 3D Green Grass" data-slug="aurapol-asa-3d-filament-green-grass-850g-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-green-grass-850g-1-75-mm">
@@ -794,9 +802,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.spectrumfilaments.com/products/filament-spectrum-r-pla-1-75mm-leaf-green-1kg" target="_blank" rel="noopener" data-hex="#16551E" data-name="Spectrum PLA Leaf Green" data-slug="filament-spectrum-r-pla-1-75mm-leaf-green-1kg" data-shop="Spectrum" data-shop-cls="spectrum" data-url="https://us.spectrumfilaments.com/products/filament-spectrum-r-pla-1-75mm-leaf-green-1kg">
         <div class="swatch mini" style="background:#16551E"></div>
         <div class="finfo">
-          <div class="fname"><strong>Spectrum</strong> PLA <span class="color">Leaf Green</span></div>
-          <div class="fsub"><span class="de weak">ΔE 10.3</span></div>
+          <div class="fname"><strong>Spectrum</strong><span class="fline">PLA <span class="color">Leaf Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 10.3</span><span class="fhex">#16551E</span><a class="shop-link" href="https://us.spectrumfilaments.com/products/filament-spectrum-r-pla-1-75mm-leaf-green-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.prusa3d.com/product/prusament-premium-pla-mystic-green-1kg-2/" target="_blank" rel="noopener" data-hex="#404331" data-name="Prusament PLA Mystic Green" data-slug="prusament-premium-pla-mystic-green-1kg-2" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-premium-pla-mystic-green-1kg-2/">
@@ -827,18 +835,18 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#39541A" data-name="Bambu Lab PETG HF Forest Green" data-slug="bambu-lab-petg-hf-forest-green" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
         <div class="swatch mini" style="background:#39541A"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">HF Forest Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.5</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">HF Forest Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.5</span><span class="fhex">#39541A</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
             <div class="col asa-col"><div class="col-label">ASA</div>
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39597309624377" target="_blank" rel="noopener" data-hex="#4B4D1A" data-name="Polymaker ASA Army Green" data-slug="asa-army-green" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39597309624377">
         <div class="swatch mini" style="background:#4B4D1A"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> ASA <span class="color">Army Green</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.4</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">ASA <span class="color">Army Green</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.4</span><span class="fhex">#4B4D1A</span><a class="shop-link" href="https://us.polymaker.com/products/asa?variant=39597309624377" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
           </div>
@@ -864,9 +872,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener" data-hex="#4D251A" data-name="Prusament PLA Noctua Brown" data-slug="prusament-pla-noctua-brown" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/">
         <div class="swatch mini" style="background:#4D251A"></div>
         <div class="finfo">
-          <div class="fname"><strong>Prusament</strong> PLA <span class="color">Noctua Brown</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.8</span></div>
+          <div class="fname"><strong>Prusament</strong><span class="fline">PLA <span class="color">Noctua Brown</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.8</span><span class="fhex">#4D251A</span><a class="shop-link" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#440803" data-name="3DLabPrint PLA Poly Light 1.0 LW Pla Orange" data-slug="filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg">
@@ -897,9 +905,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-petg-medena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#572E1F" data-name="DEVIL DESIGN PETG Měděná" data-slug="filament-devil-design-petg-medena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-petg-medena-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#572E1F"></div>
         <div class="finfo">
-          <div class="fname"><strong>DEVIL DESIGN</strong> PETG <span class="color">Měděná</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.4</span></div>
+          <div class="fname"><strong>DEVIL DESIGN</strong><span class="fline">PETG <span class="color">Měděná</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.4</span><span class="fhex">#572E1F</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-devil-design-petg-medena-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener" data-hex="#502C1E" data-name="Bambu Lab PETG Dark Brown" data-slug="bambu-lab-petg-dark-brown" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-basic">
@@ -930,9 +938,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/devil-design-asa-tmave-hneda-dark-brown-800g" target="_blank" rel="noopener" data-hex="#583A25" data-name="Devil Design ASA Tmavě Hnědá (Dark Brown)" data-slug="devil-design-asa-tmave-hneda-dark-brown-800g" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/devil-design-asa-tmave-hneda-dark-brown-800g">
         <div class="swatch mini" style="background:#583A25"></div>
         <div class="finfo">
-          <div class="fname"><strong>Devil Design</strong> ASA <span class="color">Tmavě Hnědá (Dark Brown)</span></div>
-          <div class="fsub"><span class="de weak">ΔE 11.2</span></div>
+          <div class="fname"><strong>Devil Design</strong><span class="fline">ASA <span class="color">Tmavě Hnědá (Dark Brown)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 11.2</span><span class="fhex">#583A25</span><a class="shop-link" href="https://www.hubacek3d.cz/p/devil-design-asa-tmave-hneda-dark-brown-800g" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
           </div>
@@ -941,27 +949,27 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener" data-hex="#4D251A" data-name="Prusament PLA Noctua Brown" data-slug="prusament-pla-noctua-brown" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/">
         <div class="swatch mini" style="background:#4D251A"></div>
         <div class="finfo">
-          <div class="fname"><strong>Prusament</strong> PLA <span class="color">Noctua Brown</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.8</span></div>
+          <div class="fname"><strong>Prusament</strong><span class="fline">PLA <span class="color">Noctua Brown</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.8</span><span class="fhex">#4D251A</span><a class="shop-link" href="https://www.prusa3d.com/product/prusament-pla-noctua-brown-1kg-nfc/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
             <div class="col petg-col"><div class="col-label">PETG</div>
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener" data-hex="#502C1E" data-name="Bambu Lab PETG Dark Brown" data-slug="bambu-lab-petg-dark-brown" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-basic">
         <div class="swatch mini" style="background:#502C1E"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">Dark Brown</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.4</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">Dark Brown</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.4</span><span class="fhex">#502C1E</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
             <div class="col asa-col"><div class="col-label">ASA</div>
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/asa?variant=40627010109497" target="_blank" rel="noopener" data-hex="#532E19" data-name="Polymaker ASA Army Brown" data-slug="asa-army-brown" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=40627010109497">
         <div class="swatch mini" style="background:#532E19"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> ASA <span class="color">Army Brown</span></div>
-          <div class="fsub"><span class="de ok">ΔE 7.0</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">ASA <span class="color">Army Brown</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 7.0</span><span class="fhex">#532E19</span><a class="shop-link" href="https://us.polymaker.com/products/asa?variant=40627010109497" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
           </div>
@@ -987,9 +995,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg" target="_blank" rel="noopener" data-hex="#053075" data-name="Fillamentum PLA Noble Blue" data-slug="pla-extrafill-noble-blue-1kg" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg">
         <div class="swatch mini" style="background:#053075"></div>
         <div class="finfo">
-          <div class="fname"><strong>Fillamentum</strong> PLA <span class="color">Noble Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.4</span></div>
+          <div class="fname"><strong>Fillamentum</strong><span class="fline">PLA <span class="color">Noble Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.4</span><span class="fhex">#053075</span><a class="shop-link" href="https://fillamentum.shop/products/pla-extrafill-noble-blue-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#042F56" data-name="Bambu Lab PLA Matte Dark Blue" data-slug="bambu-lab-pla-matte-dark-blue" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
@@ -1020,9 +1028,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-petg-tmave-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#032A70" data-name="LUME Filaments PETG Lume Tmavě Modrá" data-slug="filament-lume-petg-tmave-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-petg-tmave-modra-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#032A70"></div>
         <div class="finfo">
-          <div class="fname"><strong>LUME Filaments</strong> PETG <span class="color">Lume Tmavě Modrá</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.3</span></div>
+          <div class="fname"><strong>LUME Filaments</strong><span class="fline">PETG <span class="color">Lume Tmavě Modrá</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.3</span><span class="fhex">#032A70</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-lume-petg-tmave-modra-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-petg-pulnocni-modra-1-kg/" target="_blank" rel="noopener" data-hex="#21295E" data-name="NEBULA PETG Půlnoční modrá" data-slug="filament-nebula-petg-pulnocni-modra-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-petg-pulnocni-modra-1-kg/">
@@ -1053,9 +1061,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/" target="_blank" rel="noopener" data-hex="#111F46" data-name="Prusament ASA Sapphire Blue" data-slug="prusament-asa-sapphire-blue" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/">
         <div class="swatch mini" style="background:#111F46"></div>
         <div class="finfo">
-          <div class="fname"><strong>Prusament</strong> ASA <span class="color">Sapphire Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Prusament</strong><span class="fline">ASA <span class="color">Sapphire Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#111F46</span><a class="shop-link" href="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-spectrum-asa-275-namornicka-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#2A4570" data-name="Spectrum + The Filament ASA 275 Námořnická Modrá" data-slug="filament-spectrum-asa-275-namornicka-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-spectrum-asa-275-namornicka-modra-1-75-mm-1-kg">
@@ -1076,9 +1084,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/polymaker-pla-pro?variant=42901840363577" target="_blank" rel="noopener" data-hex="#1F3063" data-name="Polymaker PLA Blue" data-slug="polymaker-pla-pro-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/polymaker-pla-pro?variant=42901840363577">
         <div class="swatch mini" style="background:#1F3063"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PLA <span class="color">Blue</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.8</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PLA <span class="color">Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.8</span><span class="fhex">#1F3063</span><a class="shop-link" href="https://us.polymaker.com/products/polymaker-pla-pro?variant=42901840363577" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#042F56" data-name="Bambu Lab PLA Matte Dark Blue" data-slug="bambu-lab-pla-matte-dark-blue" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
@@ -1109,9 +1117,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45588259176505" target="_blank" rel="noopener" data-hex="#203068" data-name="Polymaker PETG Galaxy Blue" data-slug="petg-galaxy-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45588259176505">
         <div class="swatch mini" style="background:#203068"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Galaxy Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.0</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Galaxy Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.0</span><span class="fhex">#203068</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45588259176505" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221534777" target="_blank" rel="noopener" data-hex="#142C46" data-name="Polymaker PETG Dark Blue" data-slug="petg-dark-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221534777">
@@ -1142,9 +1150,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678" target="_blank" rel="noopener" data-hex="#0C2F71" data-name="Overture 3D ASA Diamond Blue" data-slug="overture-asa-filament-1-75mm-diamond-blue" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678">
         <div class="swatch mini" style="background:#0C2F71"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Diamond Blue</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.8</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Diamond Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.8</span><span class="fhex">#0C2F71</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343123001" target="_blank" rel="noopener" data-hex="#012F78" data-name="Polymaker ASA Blue" data-slug="asa-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343123001">
@@ -1189,9 +1197,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E6DDC6" data-name="AzureFilm PLA Champagne" data-slug="refill-azurefilm-pla-champagne-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#E6DDC6"></div>
         <div class="finfo">
-          <div class="fname"><strong>AzureFilm</strong> PLA <span class="color">Champagne</span></div>
-          <div class="fsub"><span class="de exc">ΔE 1.7</span></div>
+          <div class="fname"><strong>AzureFilm</strong><span class="fline">PLA <span class="color">Champagne</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de exc">ΔE 1.7</span><span class="fhex">#E6DDC6</span><a class="shop-link" href="https://www.smart3d.cz/p/refill-azurefilm-pla-champagne-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#E8DBB7" data-name="Bambu Lab PLA Matte Desert Tan" data-slug="bambu-lab-pla-matte-desert-tan" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
@@ -1222,9 +1230,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#D7D4B7" data-name="Aurapol PETG Cloud Stone (recycled)" data-slug="aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm">
         <div class="swatch mini" style="background:#D7D4B7"></div>
         <div class="finfo">
-          <div class="fname"><strong>Aurapol</strong> PETG <span class="color">Cloud Stone (recycled)</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.8</span></div>
+          <div class="fname"><strong>Aurapol</strong><span class="fline">PETG <span class="color">Cloud Stone (recycled)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.8</span><span class="fhex">#D7D4B7</span><a class="shop-link" href="https://www.aurapol.com/cz/p/aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-petg-vanilkova-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#DDDBB2" data-name="DEVIL DESIGN PETG Vanilková" data-slug="filament-devil-design-petg-vanilkova-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-petg-vanilkova-1-75-mm-1-kg">
@@ -1255,9 +1263,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm" target="_blank" rel="noopener" data-hex="#DBE0CD" data-name="AURAPOL ASA 3D Signal White" data-slug="aurapol-asa-3d-filament-signal-white-850g-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm">
         <div class="swatch mini" style="background:#DBE0CD"></div>
         <div class="finfo">
-          <div class="fname"><strong>AURAPOL</strong> ASA <span class="color">3D Signal White</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.5</span></div>
+          <div class="fname"><strong>AURAPOL</strong><span class="fline">ASA <span class="color">3D Signal White</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.5</span><span class="fhex">#DBE0CD</span><a class="shop-link" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g" target="_blank" rel="noopener" data-hex="#DADFCC" data-name="AURAPOL ASA Signální Bílá" data-slug="filament-aurapol-asa-signalni-bila-1-75-mm-850g" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-aurapol-asa-signalni-bila-1-75-mm-850g">
@@ -1290,9 +1298,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.spectrumfilaments.com/products/filament-spectrum-pastello-pla-1-75mm-lemon-cream-1kg" target="_blank" rel="noopener" data-hex="#E6D9C1" data-name="Spectrum PLA Lemon Cream" data-slug="filament-spectrum-pastello-pla-1-75mm-lemon-cream-1kg" data-shop="Spectrum" data-shop-cls="spectrum" data-url="https://us.spectrumfilaments.com/products/filament-spectrum-pastello-pla-1-75mm-lemon-cream-1kg">
         <div class="swatch mini" style="background:#E6D9C1"></div>
         <div class="finfo">
-          <div class="fname"><strong>Spectrum</strong> PLA <span class="color">Lemon Cream</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.4</span></div>
+          <div class="fname"><strong>Spectrum</strong><span class="fline">PLA <span class="color">Lemon Cream</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.4</span><span class="fhex">#E6D9C1</span><a class="shop-link" href="https://us.spectrumfilaments.com/products/filament-spectrum-pastello-pla-1-75mm-lemon-cream-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#E8DBB7" data-name="Bambu Lab PLA Matte Desert Tan" data-slug="bambu-lab-pla-matte-desert-tan" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
@@ -1323,9 +1331,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#F9DFB9" data-name="Bambu Lab PETG HF Cream" data-slug="bambu-lab-petg-hf-cream" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
         <div class="swatch mini" style="background:#F9DFB9"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">HF Cream</span></div>
-          <div class="fsub"><span class="de weak">ΔE 7.5</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">HF Cream</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 7.5</span><span class="fhex">#F9DFB9</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-matt-1-75mm-polar-white-1kg" target="_blank" rel="noopener" data-hex="#E8E7E2" data-name="Spectrum PETG Matt Polar White" data-slug="filament-spectrum-pet-g-matt-1-75mm-polar-white-1kg" data-shop="Spectrum" data-shop-cls="spectrum" data-url="https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-matt-1-75mm-polar-white-1kg">
@@ -1356,9 +1364,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg" target="_blank" rel="noopener" data-hex="#E4E1DF" data-name="Spectrum ASA Polar White" data-slug="filament-spectrum-asa-275-1-75mm-polar-white-1kg" data-shop="Spectrum" data-shop-cls="spectrum" data-url="https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg">
         <div class="swatch mini" style="background:#E4E1DF"></div>
         <div class="finfo">
-          <div class="fname"><strong>Spectrum</strong> ASA <span class="color">Polar White</span></div>
-          <div class="fsub"><span class="de weak">ΔE 9.8</span></div>
+          <div class="fname"><strong>Spectrum</strong><span class="fline">ASA <span class="color">Polar White</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 9.8</span><span class="fhex">#E4E1DF</span><a class="shop-link" href="https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790" target="_blank" rel="noopener" data-hex="#E0E3E1" data-name="Overture 3D ASA White" data-slug="overture-asa-filament-1-75mm-white" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790">
@@ -1402,9 +1410,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#042F56" data-name="Bambu Lab PLA Matte Dark Blue" data-slug="bambu-lab-pla-matte-dark-blue" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
         <div class="swatch mini" style="background:#042F56"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PLA <span class="color">Matte Dark Blue</span></div>
-          <div class="fsub"><span class="de exc">ΔE 1.1</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PLA <span class="color">Matte Dark Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de exc">ΔE 1.1</span><span class="fhex">#042F56</span><a class="shop-link" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#003475" data-name="AURAPOL PLA 3D Blue Sapphire" data-slug="aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm">
@@ -1435,9 +1443,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-basic-petg-tmave-modra-dark-blue-1kg" target="_blank" rel="noopener" data-hex="#213258" data-name="3DPower PETG Basic Tmavě Modrá (Dark Blue)" data-slug="3dpower-basic-petg-tmave-modra-dark-blue-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-basic-petg-tmave-modra-dark-blue-1kg">
         <div class="swatch mini" style="background:#213258"></div>
         <div class="finfo">
-          <div class="fname"><strong>3DPower</strong> PETG <span class="color">Basic Tmavě Modrá (Dark Blue)</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.2</span></div>
+          <div class="fname"><strong>3DPower</strong><span class="fline">PETG <span class="color">Basic Tmavě Modrá (Dark Blue)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.2</span><span class="fhex">#213258</span><a class="shop-link" href="https://www.hubacek3d.cz/p/3dpower-basic-petg-tmave-modra-dark-blue-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-petg-tmave-modra-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#032A70" data-name="LUME Filaments PETG Lume Tmavě Modrá" data-slug="filament-lume-petg-tmave-modra-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-petg-tmave-modra-1-75-mm-1-kg">
@@ -1468,9 +1476,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/" target="_blank" rel="noopener" data-hex="#111F46" data-name="Prusament ASA Sapphire Blue" data-slug="prusament-asa-sapphire-blue" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/">
         <div class="swatch mini" style="background:#111F46"></div>
         <div class="finfo">
-          <div class="fname"><strong>Prusament</strong> ASA <span class="color">Sapphire Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.9</span></div>
+          <div class="fname"><strong>Prusament</strong><span class="fline">ASA <span class="color">Sapphire Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.9</span><span class="fhex">#111F46</span><a class="shop-link" href="https://www.prusa3d.com/product/prusament-asa-sapphire-blue-800g-nfc/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-asa-modra-blue-1kg" target="_blank" rel="noopener" data-hex="#0D4477" data-name="3DPower ASA Modrá (Blue)" data-slug="3dpower-asa-modra-blue-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-asa-modra-blue-1kg">
@@ -1503,9 +1511,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#042F56" data-name="Bambu Lab PLA Matte Dark Blue" data-slug="bambu-lab-pla-matte-dark-blue" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
         <div class="swatch mini" style="background:#042F56"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PLA <span class="color">Matte Dark Blue</span></div>
-          <div class="fsub"><span class="de exc">ΔE 1.1</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PLA <span class="color">Matte Dark Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de exc">ΔE 1.1</span><span class="fhex">#042F56</span><a class="shop-link" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=43982524809470" target="_blank" rel="noopener" data-hex="#14365F" data-name="Overture 3D PLA Navy Blue" data-slug="overture-matte-pla-navy-blue" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=43982524809470">
@@ -1536,9 +1544,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221534777" target="_blank" rel="noopener" data-hex="#142C46" data-name="Polymaker PETG Dark Blue" data-slug="petg-dark-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221534777">
         <div class="swatch mini" style="background:#142C46"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Dark Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.5</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Dark Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.5</span><span class="fhex">#142C46</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45079221534777" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45588259176505" target="_blank" rel="noopener" data-hex="#203068" data-name="Polymaker PETG Galaxy Blue" data-slug="petg-galaxy-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45588259176505">
@@ -1569,9 +1577,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678" target="_blank" rel="noopener" data-hex="#0C2F71" data-name="Overture 3D ASA Diamond Blue" data-slug="overture-asa-filament-1-75mm-diamond-blue" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678">
         <div class="swatch mini" style="background:#0C2F71"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Diamond Blue</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.3</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Diamond Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.3</span><span class="fhex">#0C2F71</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539751678" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343123001" target="_blank" rel="noopener" data-hex="#012F78" data-name="Polymaker ASA Blue" data-slug="asa-blue" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343123001">
@@ -1609,9 +1617,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-tmave-oranzova-1-kg/" target="_blank" rel="noopener" data-hex="#AE5800" data-name="NEBULA PLA Tmavě oranžová" data-slug="filament-nebula-pla-tmave-oranzova-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-tmave-oranzova-1-kg/">
         <div class="swatch mini" style="background:#AE5800"></div>
         <div class="finfo">
-          <div class="fname"><strong>NEBULA</strong> PLA <span class="color">Tmavě oranžová</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.7</span></div>
+          <div class="fname"><strong>NEBULA</strong><span class="fline">PLA <span class="color">Tmavě oranžová</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.7</span><span class="fhex">#AE5800</span><a class="shop-link" href="https://www.3dfoxshop.cz/filament-nebula-pla-tmave-oranzova-1-kg/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.3dfoxshop.cz/filament-fox-refill-pla-pastelove-oranzova-1-kg/" target="_blank" rel="noopener" data-hex="#BD6109" data-name="3DFOX PLA Pastelově oranžová" data-slug="filament-fox-refill-pla-pastelove-oranzova-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-fox-refill-pla-pastelove-oranzova-1-kg/">
@@ -1642,9 +1650,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/devil-design-petg-zlata-gold-1kg" target="_blank" rel="noopener" data-hex="#B36122" data-name="Devil Design PETG Zlatá (Gold)" data-slug="devil-design-petg-zlata-gold-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/devil-design-petg-zlata-gold-1kg">
         <div class="swatch mini" style="background:#B36122"></div>
         <div class="finfo">
-          <div class="fname"><strong>Devil Design</strong> PETG <span class="color">Zlatá (Gold)</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.4</span></div>
+          <div class="fname"><strong>Devil Design</strong><span class="fline">PETG <span class="color">Zlatá (Gold)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.4</span><span class="fhex">#B36122</span><a class="shop-link" href="https://www.hubacek3d.cz/p/devil-design-petg-zlata-gold-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-devil-design-petg-gold-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#AE5F24" data-name="DEVIL DESIGN PETG Gold" data-slug="filament-devil-design-petg-gold-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-devil-design-petg-gold-1-75-mm-1-kg">
@@ -1675,9 +1683,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg" target="_blank" rel="noopener" data-hex="#BA5418" data-name="FIBER3D ASA Orange" data-slug="fiber3d-asa-orange" data-shop="Na3D" data-shop-cls="na3d" data-url="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg">
         <div class="swatch mini" style="background:#BA5418"></div>
         <div class="finfo">
-          <div class="fname"><strong>FIBER3D</strong> ASA <span class="color">Orange</span></div>
-          <div class="fsub"><span class="de weak">ΔE 7.3</span></div>
+          <div class="fname"><strong>FIBER3D</strong><span class="fline">ASA <span class="color">Orange</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 7.3</span><span class="fhex">#BA5418</span><a class="shop-link" href="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     </div>
           </div>
@@ -1686,9 +1694,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/metallic-pla?variant=43595097407545" target="_blank" rel="noopener" data-hex="#A65934" data-name="Polymaker PLA Metallic Bronze" data-slug="metallic-pla-metallic-bronze" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/metallic-pla?variant=43595097407545">
         <div class="swatch mini" style="background:#A65934"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PLA <span class="color">Metallic Bronze</span></div>
-          <div class="fsub"><span class="de weak">ΔE 9.0</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PLA <span class="color">Metallic Bronze</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 9.0</span><span class="fhex">#A65934</span><a class="shop-link" href="https://us.polymaker.com/products/metallic-pla?variant=43595097407545" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=37861752799420" target="_blank" rel="noopener" data-hex="#926A38" data-name="Overture 3D PLA Chocolate" data-slug="overture-matte-pla-chocolate" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=37861752799420">
@@ -1719,9 +1727,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221239865" target="_blank" rel="noopener" data-hex="#C97133" data-name="Polymaker PETG Orange" data-slug="petg-orange" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221239865">
         <div class="swatch mini" style="background:#C97133"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Orange</span></div>
-          <div class="fsub"><span class="de weak">ΔE 8.8</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Orange</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de weak">ΔE 8.8</span><span class="fhex">#C97133</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45079221239865" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#875718" data-name="Bambu Lab PETG HF Peanut Brown" data-slug="bambu-lab-petg-hf-peanut-brown" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
@@ -1734,9 +1742,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475741950" target="_blank" rel="noopener" data-hex="#E07524" data-name="Overture 3D ASA Orange" data-slug="overture-asa-filament-1-75mm-orange" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475741950">
         <div class="swatch mini" style="background:#E07524"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Orange</span></div>
-          <div class="fsub"><span class="de bad">ΔE 12.5</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Orange</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de bad">ΔE 12.5</span><span class="fhex">#E07524</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475741950" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39597309231161" target="_blank" rel="noopener" data-hex="#E75D07" data-name="Polymaker ASA Orange" data-slug="asa-orange" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39597309231161">
@@ -1768,9 +1776,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-basic-pla-svetle-seda-light-grey-1kg" target="_blank" rel="noopener" data-hex="#7E8A90" data-name="3DPower PLA Basic Světle Šedá (Light Grey)" data-slug="3dpower-basic-pla-svetle-seda-light-grey-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-basic-pla-svetle-seda-light-grey-1kg">
         <div class="swatch mini" style="background:#7E8A90"></div>
         <div class="finfo">
-          <div class="fname"><strong>3DPower</strong> PLA <span class="color">Basic Světle Šedá (Light Grey)</span></div>
-          <div class="fsub"><span class="de exc">ΔE 1.9</span></div>
+          <div class="fname"><strong>3DPower</strong><span class="fline">PLA <span class="color">Basic Světle Šedá (Light Grey)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de exc">ΔE 1.9</span><span class="fhex">#7E8A90</span><a class="shop-link" href="https://www.hubacek3d.cz/p/3dpower-basic-pla-svetle-seda-light-grey-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-colorfil-pla-seda-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#7C8485" data-name="NEBULA + COLORFIL PLA Šedá" data-slug="filament-colorfil-pla-seda-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-colorfil-pla-seda-1-75-mm-1-kg">
@@ -1801,9 +1809,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-aurapol-petg-seda-sky-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#818686" data-name="AURAPOL PETG Šedá Sky" data-slug="filament-aurapol-petg-seda-sky-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-aurapol-petg-seda-sky-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#818686"></div>
         <div class="finfo">
-          <div class="fname"><strong>AURAPOL</strong> PETG <span class="color">Šedá Sky</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.3</span></div>
+          <div class="fname"><strong>AURAPOL</strong><span class="fline">PETG <span class="color">Šedá Sky</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.3</span><span class="fhex">#818686</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-aurapol-petg-seda-sky-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sky-grey-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#808585" data-name="AURAPOL PETG Sky Grey" data-slug="aurapol-pet-g-filament-sky-grey-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pet-g-filament-sky-grey-1-kg-1-75-mm">
@@ -1834,9 +1842,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.hubacek3d.cz/p/devil-design-asa-seda-aluminum-1kg" target="_blank" rel="noopener" data-hex="#808486" data-name="Devil Design ASA Šedá (Aluminum)" data-slug="devil-design-asa-seda-aluminum-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/devil-design-asa-seda-aluminum-1kg">
         <div class="swatch mini" style="background:#808486"></div>
         <div class="finfo">
-          <div class="fname"><strong>Devil Design</strong> ASA <span class="color">Šedá (Aluminum)</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.1</span></div>
+          <div class="fname"><strong>Devil Design</strong><span class="fline">ASA <span class="color">Šedá (Aluminum)</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.1</span><span class="fhex">#808486</span><a class="shop-link" href="https://www.hubacek3d.cz/p/devil-design-asa-seda-aluminum-1kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-asa-stribrna-silver-1kg" target="_blank" rel="noopener" data-hex="#7B8186" data-name="3DPower ASA Stříbrná (Silver)" data-slug="3dpower-asa-stribrna-silver-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-asa-stribrna-silver-1kg">
@@ -1869,9 +1877,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-pla-plus-3d-printer-filament-1-75mm?variant=48286875287806" target="_blank" rel="noopener" data-hex="#868B8B" data-name="Overture 3D PLA+ Gray Blue" data-slug="overture-pla-plus-3d-printer-filament-1-75mm-gray-blue" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-pla-plus-3d-printer-filament-1-75mm?variant=48286875287806">
         <div class="swatch mini" style="background:#868B8B"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA+ <span class="color">Gray Blue</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.8</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA+ <span class="color">Gray Blue</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.8</span><span class="fhex">#868B8B</span><a class="shop-link" href="https://overture3d.com/products/overture-pla-plus-3d-printer-filament-1-75mm?variant=48286875287806" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-pla-plus-3d-printer-filament-1-75mm?variant=48286839472382" target="_blank" rel="noopener" data-hex="#868B8B" data-name="Overture 3D PLA+ Light Gray" data-slug="overture-pla-plus-3d-printer-filament-1-75mm-light-gray" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-pla-plus-3d-printer-filament-1-75mm?variant=48286839472382">
@@ -1902,9 +1910,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221403705" target="_blank" rel="noopener" data-hex="#7F8386" data-name="Polymaker PETG Silver" data-slug="petg-silver" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221403705">
         <div class="swatch mini" style="background:#7F8386"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Silver</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.2</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Silver</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.2</span><span class="fhex">#7F8386</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45079221403705" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076463603966" target="_blank" rel="noopener" data-hex="#6E7A80" data-name="Overture 3D PETG Light Gray" data-slug="overture-high-speed-petg-refill-3d-printer-filament-1-75mm-light-gray" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=48076463603966">
@@ -1935,9 +1943,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343188537" target="_blank" rel="noopener" data-hex="#7A7D83" data-name="Polymaker ASA Grey" data-slug="asa-grey" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343188537">
         <div class="swatch mini" style="background:#7A7D83"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> ASA <span class="color">Grey</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.5</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">ASA <span class="color">Grey</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.5</span><span class="fhex">#7A7D83</span><a class="shop-link" href="https://us.polymaker.com/products/asa?variant=39574343188537" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-silver-star-1kg" target="_blank" rel="noopener" data-hex="#8C8B8B" data-name="Spectrum ASA Silver Star" data-slug="filament-spectrum-asa-275-1-75mm-silver-star-1kg" data-shop="Spectrum" data-shop-cls="spectrum" data-url="https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-silver-star-1kg">
@@ -1975,9 +1983,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-onyx-mist-1-kg-1-75-mm" target="_blank" rel="noopener" data-hex="#131414" data-name="AURAPOL PLA 3D Onyx Mist" data-slug="aurapol-pla-3d-filament-onyx-mist-1-kg-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-onyx-mist-1-kg-1-75-mm">
         <div class="swatch mini" style="background:#131414"></div>
         <div class="finfo">
-          <div class="fname"><strong>AURAPOL</strong> PLA <span class="color">3D Onyx Mist</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.6</span></div>
+          <div class="fname"><strong>AURAPOL</strong><span class="fline">PLA <span class="color">3D Onyx Mist</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.6</span><span class="fhex">#131414</span><a class="shop-link" href="https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-onyx-mist-1-kg-1-75-mm" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-aurapol-pla-onyx-mist-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#131414" data-name="AURAPOL PLA Onyx Mist" data-slug="filament-aurapol-pla-onyx-mist-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-aurapol-pla-onyx-mist-1-75-mm-1-kg">
@@ -2008,9 +2016,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab PETG Black" data-slug="bambu-lab-petg-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-basic">
         <div class="swatch mini" style="background:#000000"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">Black</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">Black</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#000000</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab PETG HF Black" data-slug="bambu-lab-petg-hf-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
@@ -2041,9 +2049,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/asa-filament" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab ASA Black" data-slug="bambu-lab-asa-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/asa-filament">
         <div class="swatch mini" style="background:#000000"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> ASA <span class="color">Black</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">ASA <span class="color">Black</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#000000</span><a class="shop-link" href="https://eu.store.bambulab.com/products/asa-filament" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg" target="_blank" rel="noopener" data-hex="#131313" data-name="FIBER3D ASA Black" data-slug="fiber3d-asa-black" data-shop="Na3D" data-shop-cls="na3d" data-url="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg">
@@ -2076,9 +2084,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=32981343600717" target="_blank" rel="noopener" data-hex="#151616" data-name="Overture 3D PLA Black" data-slug="overture-matte-pla-black" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=32981343600717">
         <div class="swatch mini" style="background:#151616"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA <span class="color">Black</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA <span class="color">Black</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#151616</span><a class="shop-link" href="https://overture3d.com/products/overture-matte-pla?variant=32981343600717" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-pure" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab PLA Absolute Black" data-slug="bambu-lab-pla-absolute-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-pure">
@@ -2109,9 +2117,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab PETG Black" data-slug="bambu-lab-petg-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-basic">
         <div class="swatch mini" style="background:#000000"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PETG <span class="color">Black</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PETG <span class="color">Black</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#000000</span><a class="shop-link" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-hf" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab PETG HF Black" data-slug="bambu-lab-petg-hf-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-hf">
@@ -2142,9 +2150,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475774718" target="_blank" rel="noopener" data-hex="#171917" data-name="Overture 3D ASA Black" data-slug="overture-asa-filament-1-75mm-black" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475774718">
         <div class="swatch mini" style="background:#171917"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Black</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.4</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Black</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.4</span><span class="fhex">#171917</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475774718" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/asa-filament" target="_blank" rel="noopener" data-hex="#000000" data-name="Bambu Lab ASA Black" data-slug="bambu-lab-asa-black" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/asa-filament">
@@ -2176,9 +2184,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#A00705" data-name="Professional Lab PLA Meta Červená" data-slug="filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#A00705"></div>
         <div class="finfo">
-          <div class="fname"><strong>Professional Lab</strong> PLA <span class="color">Meta Červená</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.1</span></div>
+          <div class="fname"><strong>Professional Lab</strong><span class="fline">PLA <span class="color">Meta Červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.1</span><span class="fhex">#A00705</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-professional-lab-pla-meta-cervena-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#9E0705" data-name="Professional Lab PLA Matte Červená" data-slug="filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-professional-lab-pla-matte-cervena-1-75-mm-1-kg">
@@ -2209,9 +2217,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#B0170D" data-name="NEBULA PETG Rubínově červená" data-slug="filament-nebula-petg-rubinove-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/">
         <div class="swatch mini" style="background:#B0170D"></div>
         <div class="finfo">
-          <div class="fname"><strong>NEBULA</strong> PETG <span class="color">Rubínově červená</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.7</span></div>
+          <div class="fname"><strong>NEBULA</strong><span class="fline">PETG <span class="color">Rubínově červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.7</span><span class="fhex">#B0170D</span><a class="shop-link" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-lume-petg-cervena-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#B22416" data-name="LUME PETG Red" data-slug="filament-lume-petg-cervena-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-lume-petg-cervena-1-75-mm-1-kg">
@@ -2242,9 +2250,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg" target="_blank" rel="noopener" data-hex="#922C1F" data-name="FIBER3D ASA Red" data-slug="fiber3d-asa-red" data-shop="Na3D" data-shop-cls="na3d" data-url="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg">
         <div class="swatch mini" style="background:#922C1F"></div>
         <div class="finfo">
-          <div class="fname"><strong>FIBER3D</strong> ASA <span class="color">Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.4</span></div>
+          <div class="fname"><strong>FIBER3D</strong><span class="fline">ASA <span class="color">Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.4</span><span class="fhex">#922C1F</span><a class="shop-link" href="https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://fillamentum.shop/products/asa-extrafill-traffic-red" target="_blank" rel="noopener" data-hex="#AE1C1F" data-name="Fillamentum ASA Extrafill Traffic Red" data-slug="asa-extrafill-traffic-red" data-shop="Fillamentum" data-shop-cls="fillamentum" data-url="https://fillamentum.shop/products/asa-extrafill-traffic-red">
@@ -2277,9 +2285,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=42116542365950" target="_blank" rel="noopener" data-hex="#A21913" data-name="Overture 3D PLA Brick Red" data-slug="overture-matte-pla-brick-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=42116542365950">
         <div class="swatch mini" style="background:#A21913"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA <span class="color">Brick Red</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.7</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA <span class="color">Brick Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.7</span><span class="fhex">#A21913</span><a class="shop-link" href="https://overture3d.com/products/overture-matte-pla?variant=42116542365950" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/matte-pla?variant=43631459106873" target="_blank" rel="noopener" data-hex="#AB2C1D" data-name="Polymaker PLA Matte Army Red" data-slug="matte-pla-matte-army-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/matte-pla?variant=43631459106873">
@@ -2310,9 +2318,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45588259504185" target="_blank" rel="noopener" data-hex="#8A2519" data-name="Polymaker PETG Galaxy Red" data-slug="petg-galaxy-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45588259504185">
         <div class="swatch mini" style="background:#8A2519"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Galaxy Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.9</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Galaxy Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.9</span><span class="fhex">#8A2519</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45588259504185" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221207097" target="_blank" rel="noopener" data-hex="#C72F19" data-name="Polymaker PETG Red" data-slug="petg-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221207097">
@@ -2325,9 +2333,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener" data-hex="#BE2415" data-name="Overture 3D ASA Diamond Red" data-slug="overture-asa-filament-1-75mm-diamond-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446">
         <div class="swatch mini" style="background:#BE2415"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Diamond Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.8</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Diamond Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.8</span><span class="fhex">#BE2415</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343155769" target="_blank" rel="noopener" data-hex="#CB1B14" data-name="Polymaker ASA Red" data-slug="asa-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343155769">
@@ -2365,9 +2373,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#BD1910" data-name="NEBULA PLA Zářivě červená" data-slug="filament-nebula-pla-zarive-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/">
         <div class="swatch mini" style="background:#BD1910"></div>
         <div class="finfo">
-          <div class="fname"><strong>NEBULA</strong> PLA <span class="color">Zářivě červená</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.6</span></div>
+          <div class="fname"><strong>NEBULA</strong><span class="fline">PLA <span class="color">Zářivě červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.6</span><span class="fhex">#BD1910</span><a class="shop-link" href="https://www.3dfoxshop.cz/filament-nebula-pla-zarive-cervena-1-kg/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-select-pla-cervena-red-1kg" target="_blank" rel="noopener" data-hex="#C00610" data-name="3DPower PLA Select Červená (Red)" data-slug="3dpower-select-pla-cervena-red-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-select-pla-cervena-red-1kg">
@@ -2398,9 +2406,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener" data-hex="#B0170D" data-name="NEBULA PETG Rubínově červená" data-slug="filament-nebula-petg-rubinove-cervena-1-kg" data-shop="3DFox" data-shop-cls="3dfox" data-url="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/">
         <div class="swatch mini" style="background:#B0170D"></div>
         <div class="finfo">
-          <div class="fname"><strong>NEBULA</strong> PETG <span class="color">Rubínově červená</span></div>
-          <div class="fsub"><span class="de exc">ΔE 1.9</span></div>
+          <div class="fname"><strong>NEBULA</strong><span class="fline">PETG <span class="color">Rubínově červená</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de exc">ΔE 1.9</span><span class="fhex">#B0170D</span><a class="shop-link" href="https://www.3dfoxshop.cz/filament-nebula-petg-rubinove-cervena-1-kg/" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-select-petg-cervena-red-1kg" target="_blank" rel="noopener" data-hex="#BF050F" data-name="3DPower PETG Select Červená (Red)" data-slug="3dpower-select-petg-cervena-red-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-select-petg-cervena-red-1kg">
@@ -2431,9 +2439,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm" target="_blank" rel="noopener" data-hex="#B71E1D" data-name="AURAPOL ASA 3D Tool Red" data-slug="aurapol-asa-3d-filament-tool-red-850g-1-75-mm" data-shop="Aurapol" data-shop-cls="aurapol" data-url="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm">
         <div class="swatch mini" style="background:#B71E1D"></div>
         <div class="finfo">
-          <div class="fname"><strong>AURAPOL</strong> ASA <span class="color">3D Tool Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 4.3</span></div>
+          <div class="fname"><strong>AURAPOL</strong><span class="fline">ASA <span class="color">3D Tool Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 4.3</span><span class="fhex">#B71E1D</span><a class="shop-link" href="https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-tool-red-850g-1-75-mm" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g" target="_blank" rel="noopener" data-hex="#B71E1D" data-name="AURAPOL ASA Červená Tool" data-slug="filament-aurapol-asa-cervena-tool-1-75-mm-850g" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-aurapol-asa-cervena-tool-1-75-mm-850g">
@@ -2466,9 +2474,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-easy-pla-3d-printer-filament?variant=46019408167166" target="_blank" rel="noopener" data-hex="#BD2010" data-name="Overture 3D PLA Easy Red" data-slug="overture-easy-pla-3d-printer-filament-easy-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-easy-pla-3d-printer-filament?variant=46019408167166">
         <div class="swatch mini" style="background:#BD2010"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PLA <span class="color">Easy Red</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.9</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PLA <span class="color">Easy Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.9</span><span class="fhex">#BD2010</span><a class="shop-link" href="https://overture3d.com/products/overture-easy-pla-3d-printer-filament?variant=46019408167166" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-pla?variant=42105042862334" target="_blank" rel="noopener" data-hex="#B8121A" data-name="Overture 3D PLA Fresh Red" data-slug="overture-pla-fresh-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-pla?variant=42105042862334">
@@ -2499,9 +2507,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/petg?variant=45079221207097" target="_blank" rel="noopener" data-hex="#C72F19" data-name="Polymaker PETG Red" data-slug="petg-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/petg?variant=45079221207097">
         <div class="swatch mini" style="background:#C72F19"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PETG <span class="color">Red</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.1</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PETG <span class="color">Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.1</span><span class="fhex">#C72F19</span><a class="shop-link" href="https://us.polymaker.com/products/petg?variant=45079221207097" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/petg-basic" target="_blank" rel="noopener" data-hex="#D6001C" data-name="Bambu Lab PETG Red" data-slug="bambu-lab-petg-red" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/petg-basic">
@@ -2532,9 +2540,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener" data-hex="#BE2415" data-name="Overture 3D ASA Diamond Red" data-slug="overture-asa-filament-1-75mm-diamond-red" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446">
         <div class="swatch mini" style="background:#BE2415"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> ASA <span class="color">Diamond Red</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.6</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">ASA <span class="color">Diamond Red</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.6</span><span class="fhex">#BE2415</span><a class="shop-link" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539784446" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://us.polymaker.com/products/asa?variant=39574343155769" target="_blank" rel="noopener" data-hex="#CB1B14" data-name="Polymaker ASA Red" data-slug="asa-red" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=39574343155769">
@@ -2572,9 +2580,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener" data-hex="#F7D959" data-name="Bambu Lab PLA Matte Lemon Yellow" data-slug="bambu-lab-pla-matte-lemon-yellow" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-matte">
         <div class="swatch mini" style="background:#F7D959"></div>
         <div class="finfo">
-          <div class="fname"><strong>Bambu Lab</strong> PLA <span class="color">Matte Lemon Yellow</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.6</span></div>
+          <div class="fname"><strong>Bambu Lab</strong><span class="fline">PLA <span class="color">Matte Lemon Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.6</span><span class="fhex">#F7D959</span><a class="shop-link" href="https://eu.store.bambulab.com/products/pla-matte" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://eu.store.bambulab.com/products/pla-tough-upgrade" target="_blank" rel="noopener" data-hex="#F4D53F" data-name="Bambu Lab PLA Tough+ Yellow" data-slug="bambu-lab-pla-tough-yellow" data-shop="Bambu Lab" data-shop-cls="bambu-lab" data-url="https://eu.store.bambulab.com/products/pla-tough-upgrade">
@@ -2605,9 +2613,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-zluta-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E9CB3B" data-name="BambuLab PETG HF Žlutá" data-slug="filament-bambu-lab-petg-hf-zluta-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-zluta-1-75-mm-1-kg">
         <div class="swatch mini" style="background:#E9CB3B"></div>
         <div class="finfo">
-          <div class="fname"><strong>BambuLab</strong> PETG <span class="color">HF Žlutá</span></div>
-          <div class="fsub"><span class="de vg">ΔE 2.4</span></div>
+          <div class="fname"><strong>BambuLab</strong><span class="fline">PETG <span class="color">HF Žlutá</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 2.4</span><span class="fhex">#E9CB3B</span><a class="shop-link" href="https://www.smart3d.cz/p/filament-bambu-lab-petg-hf-zluta-1-75-mm-1-kg" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.smart3d.cz/p/refill-bambu-lab-petg-hf-yellow-1-75-mm-1-kg" target="_blank" rel="noopener" data-hex="#E9CB3B" data-name="BambuLab PETG HF Žlutá" data-slug="refill-bambu-lab-petg-hf-yellow-1-75-mm-1-kg" data-shop="Smart3D" data-shop-cls="smart3d" data-url="https://www.smart3d.cz/p/refill-bambu-lab-petg-hf-yellow-1-75-mm-1-kg">
@@ -2638,9 +2646,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://www.3djake.cz/fiberlogy/asa-yellow" target="_blank" rel="noopener" data-hex="#EEC83B" data-name="Fiberlogy ASA Yellow" data-slug="asa-yellow" data-shop="3DJake" data-shop-cls="3djake" data-url="https://www.3djake.cz/fiberlogy/asa-yellow">
         <div class="swatch mini" style="background:#EEC83B"></div>
         <div class="finfo">
-          <div class="fname"><strong>Fiberlogy</strong> ASA <span class="color">Yellow</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.6</span></div>
+          <div class="fname"><strong>Fiberlogy</strong><span class="fline">ASA <span class="color">Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.6</span><span class="fhex">#EEC83B</span><a class="shop-link" href="https://www.3djake.cz/fiberlogy/asa-yellow" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.hubacek3d.cz/p/3dpower-asa-zluta-yellow-1kg" target="_blank" rel="noopener" data-hex="#F6D73D" data-name="3DPower ASA Žlutá (Yellow)" data-slug="3dpower-asa-zluta-yellow-1kg" data-shop="Hubacek3D" data-shop-cls="hubacek3d" data-url="https://www.hubacek3d.cz/p/3dpower-asa-zluta-yellow-1kg">
@@ -2673,9 +2681,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/satin-pla?variant=43689639575609" target="_blank" rel="noopener" data-hex="#E5D55C" data-name="Polymaker PLA Satin Yellow" data-slug="satin-pla-satin-yellow" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/satin-pla?variant=43689639575609">
         <div class="swatch mini" style="background:#E5D55C"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> PLA <span class="color">Satin Yellow</span></div>
-          <div class="fsub"><span class="de vg">ΔE 3.4</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">PLA <span class="color">Satin Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de vg">ΔE 3.4</span><span class="fhex">#E5D55C</span><a class="shop-link" href="https://us.polymaker.com/products/satin-pla?variant=43689639575609" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-matte-pla?variant=37152253083836" target="_blank" rel="noopener" data-hex="#D7BF37" data-name="Overture 3D PLA Yellow" data-slug="overture-matte-pla-yellow" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-matte-pla?variant=37152253083836">
@@ -2706,9 +2714,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=47753934242046" target="_blank" rel="noopener" data-hex="#F6C929" data-name="Overture 3D PETG Yellow" data-slug="overture-high-speed-petg-refill-3d-printer-filament-1-75mm-yellow" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=47753934242046">
         <div class="swatch mini" style="background:#F6C929"></div>
         <div class="finfo">
-          <div class="fname"><strong>Overture 3D</strong> PETG <span class="color">Yellow</span></div>
-          <div class="fsub"><span class="de ok">ΔE 5.6</span></div>
+          <div class="fname"><strong>Overture 3D</strong><span class="fline">PETG <span class="color">Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 5.6</span><span class="fhex">#F6C929</span><a class="shop-link" href="https://overture3d.com/products/overture-high-speed-petg-refill-3d-printer-filament-1-75mm?variant=47753934242046" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://www.prusa3d.com/product/prusament-petg-mango-yellow-1kg/" target="_blank" rel="noopener" data-hex="#EFC11F" data-name="Prusament PETG Mango Yellow" data-slug="prusament-petg-mango-yellow" data-shop="Prusa3D" data-shop-cls="prusa3d" data-url="https://www.prusa3d.com/product/prusament-petg-mango-yellow-1kg/">
@@ -2739,9 +2747,9 @@ a.pick.picked .swatch { outline: 2px solid var(--orange); outline-offset: 1px; }
       <div class="filament primary"><a class="pick" href="https://us.polymaker.com/products/asa?variant=40294530908217" target="_blank" rel="noopener" data-hex="#F1C501" data-name="Polymaker ASA Yellow" data-slug="asa-yellow" data-shop="Polymaker" data-shop-cls="polymaker" data-url="https://us.polymaker.com/products/asa?variant=40294530908217">
         <div class="swatch mini" style="background:#F1C501"></div>
         <div class="finfo">
-          <div class="fname"><strong>Polymaker</strong> ASA <span class="color">Yellow</span></div>
-          <div class="fsub"><span class="de ok">ΔE 6.1</span></div>
+          <div class="fname"><strong>Polymaker</strong><span class="fline">ASA <span class="color">Yellow</span></span></div>
         </div></a>
+        <div class="fsub"><span class="de ok">ΔE 6.1</span><span class="fhex">#F1C501</span><a class="shop-link" href="https://us.polymaker.com/products/asa?variant=40294530908217" target="_blank" rel="noopener">open shop</a></div>
       </div>
     
       <div class="filament alt"><a class="pick" href="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539686142" target="_blank" rel="noopener" data-hex="#F2EA1F" data-name="Overture 3D ASA Yellow" data-slug="overture-asa-filament-1-75mm-yellow" data-shop="Overture" data-shop-cls="overture" data-url="https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539686142">
