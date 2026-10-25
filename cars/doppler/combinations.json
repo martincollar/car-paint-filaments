@@ -12,12 +12,18 @@
     {
      "code": "RD-84",
      "upper": "Burgundy Maroon",
-     "lower": "French Gray"
+     "lower": "French Gray",
+     "unresolved": [
+      "Burgundy Maroon"
+     ]
     },
     {
      "code": "RJ-86",
      "upper": "Jefferson Green Poly",
-     "lower": "Corinthian Cream"
+     "lower": "Corinthian Cream",
+     "unresolved": [
+      "Corinthian Cream"
+     ]
     },
     {
      "code": "J-45",
@@ -27,7 +33,10 @@
     {
      "code": "N-85",
      "upper": "Admiral Blue",
-     "lower": "Corinthian Cream"
+     "lower": "Corinthian Cream",
+     "unresolved": [
+      "Corinthian Cream"
+     ]
     }
    ]
   },
@@ -38,7 +47,10 @@
     {
      "code": "RA",
      "upper": "Boston Ivory",
-     "lower": "Ebony Black"
+     "lower": "Ebony Black",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RB",
@@ -73,7 +85,10 @@
     {
      "code": "RI",
      "upper": "Ebony Black",
-     "lower": "French Gray"
+     "lower": "French Gray",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RJ",
@@ -154,7 +169,10 @@
     {
      "code": "RA-141",
      "upper": "Honey Cream",
-     "lower": "Ebony Black"
+     "lower": "Ebony Black",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RC-142",
@@ -184,7 +202,10 @@
     {
      "code": "RI-147",
      "upper": "Ebony Black",
-     "lower": "Seal Gray"
+     "lower": "Seal Gray",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RE-148",
@@ -209,7 +230,10 @@
     {
      "code": "RW-152",
      "upper": "Ebony Black",
-     "lower": "Robin's Egg Green"
+     "lower": "Robin's Egg Green",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RV-153",
@@ -219,7 +243,10 @@
     {
      "code": "RH-154",
      "upper": "Ebony Black",
-     "lower": "Toro Red"
+     "lower": "Toro Red",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RS-155",
@@ -229,7 +256,10 @@
     {
      "code": "RP-156",
      "upper": "Ebony Black",
-     "lower": "Pearl Gray Poly"
+     "lower": "Pearl Gray Poly",
+     "unresolved": [
+      "Ebony Black"
+     ]
     }
    ]
   },
@@ -260,7 +290,10 @@
     {
      "code": "RW-173",
      "upper": "Ebony Black",
-     "lower": "Palm Beach Green"
+     "lower": "Palm Beach Green",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RQ-174",
@@ -270,7 +303,10 @@
     {
      "code": "RH-175",
      "upper": "Ebony Black",
-     "lower": "Royal Red"
+     "lower": "Royal Red",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RJ-176",
@@ -295,52 +331,84 @@
     {
      "code": "RO-180",
      "upper": "Ebony Black",
-     "lower": "Roman Bronze"
+     "lower": "Roman Bronze",
+     "unresolved": [
+      "Ebony Black"
+     ]
     },
     {
      "code": "RJ-183",
      "upper": "Lipstick",
-     "lower": "St. Clair Gray"
+     "lower": "St. Clair Gray",
+     "unresolved": [
+      "Lipstick"
+     ]
     },
     {
      "code": "RH-184",
      "upper": "Ebony Black",
-     "lower": "Lipstick"
+     "lower": "Lipstick",
+     "unresolved": [
+      "Ebony Black",
+      "Lipstick"
+     ]
     },
     {
      "code": "RC-185",
      "upper": "Coronation Cream",
-     "lower": "Lipstick"
+     "lower": "Lipstick",
+     "unresolved": [
+      "Lipstick"
+     ]
     },
     {
      "code": "RT-186",
      "upper": "Green Gold",
-     "lower": "Coronation Cream"
+     "lower": "Coronation Cream",
+     "unresolved": [
+      "Green Gold"
+     ]
     },
     {
      "code": "RX-187",
      "upper": "Green Gold",
-     "lower": "Roman Bronze"
+     "lower": "Roman Bronze",
+     "unresolved": [
+      "Green Gold"
+     ]
     },
     {
      "code": "RQ-188",
      "upper": "Green Gold",
-     "lower": "Pasture Green Poly"
+     "lower": "Pasture Green Poly",
+     "unresolved": [
+      "Green Gold"
+     ]
     },
     {
      "code": "RM-189",
      "upper": "St. Clair Gray",
-     "lower": "Green Gold"
+     "lower": "Green Gold",
+     "unresolved": [
+      "Green Gold"
+     ]
     },
     {
      "code": "RQ-190",
      "upper": "Ebony Black",
-     "lower": "Green Gold"
+     "lower": "Green Gold",
+     "unresolved": [
+      "Ebony Black",
+      "Green Gold"
+     ]
     },
     {
      "code": "RX-191",
      "upper": "Lipstick",
-     "lower": "Coronation Cream"
+     "lower": "Coronation Cream",
+     "unresolved": [
+      "Lipstick"
+     ]
     },
     {
      "code": "RA-192",
@@ -356,7 +424,10 @@
     {
      "code": "P66A1",
      "upper": "Black",
-     "lower": "Sunburst Yellow"
+     "lower": "Sunburst Yellow",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P67A62",
@@ -401,7 +472,10 @@
     {
      "code": "P1A69",
      "upper": "Snowberry White",
-     "lower": "Black"
+     "lower": "Black",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P71A69",
@@ -430,7 +504,10 @@
      "code": "P78-1-78",
      "upper": "Grenadier Red",
      "lower": "Grenadier Red",
-     "intermediate": "Black"
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P83-72-83",
@@ -448,7 +525,10 @@
      "code": "P77-1-77",
      "upper": "Mint Green",
      "lower": "Mint Green",
-     "intermediate": "Black"
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P66-72-66",
@@ -502,13 +582,19 @@
      "code": "P1-72-1",
      "upper": "Black",
      "lower": "Black",
-     "intermediate": "Frost White"
+     "intermediate": "Frost White",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P78-1-72",
      "upper": "Frost White",
      "lower": "Grenadier Red",
-     "intermediate": "Black"
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P83-80-72",
@@ -520,7 +606,10 @@
      "code": "P77-1-72",
      "upper": "Frost White",
      "lower": "Mint Green",
-     "intermediate": "Black"
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
     },
     {
      "code": "P81-72-82",
@@ -538,7 +627,10 @@
      "code": "P66-1-72",
      "upper": "Frost White",
      "lower": "Sunburst Yellow",
-     "intermediate": "Black"
+     "intermediate": "Black",
+     "unresolved": [
+      "Black"
+     ]
     }
    ]
   },
@@ -549,12 +641,18 @@
     {
      "code": "P1-72",
      "upper": "Frost White",
-     "lower": "Classic Black"
+     "lower": "Classic Black",
+     "unresolved": [
+      "Classic Black"
+     ]
     },
     {
      "code": "P72-1",
      "upper": "Classic Black",
-     "lower": "Frost White"
+     "lower": "Frost White",
+     "unresolved": [
+      "Classic Black"
+     ]
     },
     {
      "code": "P87-67",
@@ -637,7 +735,10 @@
      "code": "P89-1-92",
      "upper": "Mojave Yellow",
      "lower": "Avocado Poly",
-     "intermediate": "Classic Black"
+     "intermediate": "Classic Black",
+     "unresolved": [
+      "Classic Black"
+     ]
     },
     {
      "code": "P94-93-72",
@@ -649,45 +750,68 @@
      "code": "P1-90-72",
      "upper": "Frost White",
      "lower": "Classic Black",
-     "intermediate": "Mardi Gras Red"
+     "intermediate": "Mardi Gras Red",
+     "unresolved": [
+      "Classic Black"
+     ]
     },
     {
      "code": "P67-D-72",
      "upper": "Frost White",
      "lower": "Bermuda Green",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
     },
     {
      "code": "P84-D-72",
      "upper": "Frost White",
      "lower": "Glacier Blue",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
     },
     {
      "code": "P90-D-72",
      "upper": "Frost White",
      "lower": "Mardi Gras Red",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
     },
     {
      "code": "P94-D-92",
      "upper": "Mojave Yellow",
      "lower": "Cinnamon Bronze Poly",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
     },
     {
      "code": "P1-D-92",
      "upper": "Mojave Yellow",
      "lower": "Classic Black",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Classic Black",
+      "Dinoc"
+     ]
     },
     {
      "code": "P89-D-92",
      "upper": "Mojave Yellow",
      "lower": "Avocado Poly",
-     "intermediate": "Dinoc"
+     "intermediate": "Dinoc",
+     "unresolved": [
+      "Dinoc"
+     ]
     }
    ]
   }
- }
+ },
+ "note": "Combinations whose colours are all on a chip of our scans are published. Those with a colour that has no chip (see `unresolved`) are kept here for future work and are NOT published: the builder skips every entry that has `unresolved`."
 }
