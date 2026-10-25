@@ -78,6 +78,7 @@ def filament_row(c, fil_thumbs, is_primary=False):
     full = f"{c['brand']} {c['material']} {c['color_name']}"
     # Swatch and name are both .pick: click recolours the preview, hover/focus opens the bubble (TIP_JS).
     attrs = (f'data-hex="{c["hex"]}" data-name="{esc(full)}" data-slug="{esc(c["slug"])}" '
+             f'data-brand="{esc(c["brand"])}" data-material="{esc(c["material"])}" data-color="{esc(c["color_name"])}" '
              f'data-shop="{esc(c.get("shop") or "?")}" data-shop-cls="{slugify(c.get("shop") or "") or "unknown"}" '
              f'data-url="{esc(clean_url(c))}"' + (' data-neon="1"' if c.get("neon") else ""))
     # One <a> around swatch + name (display: contents keeps the row's grid): hover opens the bubble, a plain
@@ -87,17 +88,14 @@ def filament_row(c, fil_thumbs, is_primary=False):
     neon = ' <span class="neon-tag" title="Neon / fluorescent: ranked behind normal filaments">NEON</span>' if c.get("neon") else ""
     name += neon
     if is_primary:
-        # Three lines: brand / filament / match (ΔE, HEX, shop link). The shop link must stay outside the
-        # .pick anchor (no nested <a>), so .fsub is its own grid child under .finfo.
-        shop = (f'<a class="shop-link" href="{esc(clean_url(c))}" target="_blank" rel="noopener">open shop</a>'
-                if safe_url(c.get("url")) else "")
+        # Three lines: brand / filament / match (ΔE, HEX). The shop opens from the swatch/name of the hover bubble and the preview.
         return f"""
       <div class="filament primary">{link}
         <div class="swatch mini" style="background:{c['hex']}"></div>
         <div class="finfo">
           <div class="fname"><strong>{esc(c['brand'])}</strong><span class="fline">{esc(c['material'])} <span class="color">{esc(c['color_name'])}</span>{neon}</span></div>
         </div></a>
-        <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span><span class="fhex">{c['hex'].upper()}</span>{shop}</div>
+        <div class="fsub"><span class="de {cls}">ΔE {c['delta_e']:.1f}</span><span class="fhex">{c['hex'].upper()}</span></div>
       </div>
     """
     return f"""
@@ -135,8 +133,6 @@ div.filament.primary .finfo { grid-column: 2; grid-row: 1; }
 div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .filament.primary .fname strong, .filament.primary .fline { display: block; }
 .filament.primary .fhex { color: var(--muted); }
-.filament.primary .shop-link { color: var(--muted); text-decoration: underline; font-weight: 400; }
-.filament.primary .shop-link:hover { color: var(--teal); }
 /* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
@@ -310,40 +306,59 @@ HERO_JS = """
     setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
   // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
-  // follows the upper one), the colour rows of that year are marked; "only these colours" hides the others.
+  // keeps its colour), the rows of its colours are marked and every other row is hidden.
   function bestPick(name, year) {
     var row = document.querySelector('article.row[data-paint="' + name.replace(/"/g, '\\"') + '"][data-year="' + year + '"]');
     return row ? row.querySelector('.rcols[data-r="' + document.body.dataset.region + '"] .pla-col a.pick') : null;
   }
-  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are
-  // marked wherever they are, "only these colours" hides every other row of the page, and a link names the other years.
-  // "Only these colours" is one switch for the whole page (every strip shows the same state). Hiding or showing rows above the
-  // clicked strip would move it, so the scroll position is corrected to keep the strip where it was on screen.
+  // A combination can use colours whose chips are on another year's card (1957 -> 1956 Frost White): its rows are marked
+  // wherever they are and every other row of the page is hidden, so the page shows just the colours of the clicked two-tone.
+  // Hiding or showing rows above the clicked strip would move it, so the scroll position is corrected (keepPos).
   function marks() {
-    var on = document.querySelector('.combo.on'), strip = on && on.closest('.combos'), only = document.querySelector('.combos-f input').checked,
-        y = strip && strip.dataset.year, far = [];
+    var on = document.querySelector('.combo.on');
     document.querySelectorAll('article.row').forEach(function (r) {
       var hit = on && [['upper', 'upperYear'], ['lower', 'lowerYear']].some(function (k) {
         return r.dataset.paint === on.dataset[k[0]] && r.dataset.year === on.dataset[k[1]]; });
-      r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(only && on && !hit));
-      if (hit) { if (window.openRow) window.openRow(r); if (r.dataset.year !== y) far.push(r); }
+      r.classList.toggle('combo-hit', !!hit); r.classList.toggle('combo-out', !!(on && !hit));
+      if (hit && window.openRow) window.openRow(r);
     });
-    document.querySelectorAll('.combos-ref').forEach(function (x) { x.innerHTML = ''; });
-    if (strip) strip.querySelector('.combos-ref').innerHTML = far.map(function (r) {
-      return '<a href="#' + r.id + '">' + r.dataset.paint + ' (' + r.dataset.year + ' card)</a>'; }).join(' ');
   }
+  function zl(id) { var z = Z.filter(function (x) { return x.id === id; })[0]; return z && z.label || id; }
+  function comboSel(up, lo) {
+    return Z.map(function (z, k) {       // slots other than upper / lower (the roof) keep what they have: white until set by hand
+      var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;
+      return el ? el.dataset.hex : ((sel && sel[k]) || (z.fixed ? H.roof : null));
+    });
+  }
+  // For the hover bubble of a two-tone: both filaments and the car painted with them.
+  window.comboInfo = function (btn) {
+    var up = bestPick(btn.dataset.upper, btn.dataset.upperYear), lo = bestPick(btn.dataset.lower, btn.dataset.lowerYear);
+    if (!up || !lo) return null;
+    var key = 'c' + up.dataset.hex + lo.dataset.hex, src = '';
+    if (loaded >= 2) {
+      if (!small[key]) {
+        tmp.width = W; tmp.height = Hh; tmp.getContext('2d').putImageData(render(comboSel(up, lo)), 0, 0);
+        off.width = 480; off.height = Math.round(480 * Hh / W);
+        off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
+        small[key] = off.toDataURL('image/jpeg', 0.85);
+      }
+      src = small[key];
+    }
+    return { up: up, lo: lo, src: src, upLabel: zl('upper'), loLabel: zl('lower') };
+  };
   function keepPos(strip, fn) {
     var t = strip.getBoundingClientRect().top; fn();
     var d = strip.getBoundingClientRect().top - t; if (d) window.scrollBy({ top: d, behavior: 'instant' });
   }
   document.addEventListener('click', function (e) {
     var cb = e.target.closest && e.target.closest('.combo');
+    if (cb && cb.classList.contains('on')) { cb.classList.remove('on'); keepPos(cb.closest('.combos'), marks); return; }   // again = all colours
     if (cb) {
       var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
       if (up && lo) {
         if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); names = Z.map(function () { return ''; }); }
         Z.forEach(function (z, k) {
-          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : (z.follows === 'upper' ? up : null);
+          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
           if (el) { sel[k] = el.dataset.hex; names[k] = el.dataset.name; }
         });
         info.innerHTML = window.filInfo(up.dataset, true) + slotsHtml();
@@ -353,10 +368,6 @@ HERO_JS = """
       var strip = cb.closest('.combos'); document.querySelectorAll('.combo.on').forEach(function (x) { x.classList.remove('on'); });
       cb.classList.add('on'); keepPos(strip, marks);
     }
-  });
-  document.addEventListener('change', function (e) {
-    var strip = e.target.closest && e.target.closest('.combos'), box = e.target.closest && e.target.closest('.combos-f input');
-    if (strip && box) { document.querySelectorAll('.combos-f input').forEach(function (x) { x.checked = box.checked; }); keepPos(strip, marks); }
   });
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('.t-slot');
@@ -376,10 +387,15 @@ HERO_JS = """
 
 TIP_CSS = """
 .neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
-.fil-tip { position: fixed; z-index: 30; width: 220px; padding: 10px; display: none; font-size: 0.8rem; line-height: 1.3; }
+.fil-tip { position: fixed; z-index: 30; width: min(340px, calc(100vw - 16px)); padding: 12px; display: none; font-size: 0.8rem; line-height: 1.3; }
 .fil-tip.show { display: block; }
-.fil-tip img { display: block; width: 100%; height: 140px; object-fit: cover; margin-bottom: 8px; }
+.fil-tip img { display: block; width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px; }
 .fil-tip img.t-car { height: auto; object-fit: contain; background: #f8f8f8; }
+a.t-shop { display: contents; color: inherit; text-decoration: none; }
+a.t-shop:hover .fname { text-decoration: underline; }
+.fil-tip .filament.primary, .hero-preview .filament.primary { margin-bottom: 0; }
+.t-combo { margin-bottom: 4px; }
+.t-slotname { margin: 10px 0 2px; font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
 .fil-tip .t-name, .hero-preview .t-name { font-weight: 600; margin-bottom: 6px; }
 .fil-tip .t-row, .hero-preview .t-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-family: var(--font-mono); }
 .fil-tip .t-sw, .hero-preview .t-sw { width: 16px; height: 16px; flex: none; }
@@ -392,9 +408,8 @@ TIP_CSS = """
 .combo:hover, .combo:focus-visible, .combo.on { background: var(--rule); }
 .cb-code { font-family: var(--font-mono); font-size: 0.64rem; }
 .cb-sw { display: inline-block; width: 14px; height: 14px; border: 1px solid var(--rule); }
-.combos-f { margin-left: 6px; color: var(--muted); }
-.combos-ref { margin-left: 6px; color: var(--muted); }
-.combos-ref a { color: inherit; margin-right: 8px; }
+.combos-hint { display: none; margin-left: 6px; font-size: 0.66rem; color: var(--muted); }
+.combos:has(.combo.on) .combos-hint { display: inline; }
 article.row.combo-hit { box-shadow: inset 3px 0 0 var(--orange); margin-left: -16px; padding-left: 16px; }   /* the line sits in the margin, the content stays where it was */
 article.row.combo-out { display: none; }
 .t-slots { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
@@ -412,39 +427,51 @@ TIP_JS = """
 (function () {
   var T = __THUMBS__, tip = document.createElement('div'), cur = null, timer = null;
   tip.className = 'fil-tip'; tip.setAttribute('role', 'tooltip'); document.body.appendChild(tip);
-  // Name / HEX / shop / link block, shared with the hover bubble (TIP_JS).
-  // With `linked` (the floating preview) there is no "Open in shop" line: the swatch, HEX and name are the shop link.
+  // Brand / material / colour block, built from the same markup as a filament on the page so every theme styles it alike.
+  // The swatch and the name are the link to the shop (hover bubble, combination bubble and preview alike).
   window.filInfo = function (d, linked) {
     function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-    var url = d.url && d.url !== '#' ? d.url : '', name = esc(d.name) + (d.neon ? ' <span class="neon-tag">NEON</span>' : ''),
-        row = '<span class="t-sw" style="background:' + esc(d.hex) + '"></span>' + esc(d.hex);
-    function a(inner) { return '<a class="t-link t-shop" href="' + esc(url) + '" target="_blank" rel="noopener" title="Open in shop">' + inner + '</a>'; }
-    if (linked && url) { name = a(name); row = a(row); }
-    return '<div class="t-name">' + name + '</div>' +
-      '<div class="t-row">' + row + '</div>' +
-      '<div class="t-row"><span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div>' +
-      (!linked && url ? '<a class="t-link" href="' + esc(url) + '" target="_blank" rel="noopener">Open in shop ↗</a>' : '');
+    var url = d.url && d.url !== '#' ? d.url : '', neon = d.neon ? ' <span class="neon-tag">NEON</span>' : '',
+        inner = '<div class="swatch mini" style="background:' + esc(d.hex) + '"></div><div class="finfo"><div class="fname"><strong>' + esc(d.brand) +
+          '</strong><span class="fline">' + esc(d.material) + ' <span class="color">' + esc(d.color) + '</span>' + neon + '</span></div></div>';
+    if (url) inner = '<a class="t-shop" href="' + esc(url) + '" target="_blank" rel="noopener">' + inner + '</a>';
+    return '<div class="filament primary">' + inner + '<div class="fsub"><span class="fhex">' + esc(d.hex).toUpperCase() + '</span>' +
+      '<span class="shop-tag shop-' + esc(d.shopCls) + '">' + esc(d.shop) + '</span></div></div>';
   };
+  function place(r) {
+    var w = tip.offsetWidth, h = tip.offsetHeight, x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
+        y = r.bottom + 6;
+    if (y + h > innerHeight - 8) { y = r.top - h - 6; if (y < 8) y = Math.max(8, innerHeight - h - 8); }
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    tip.querySelectorAll('img').forEach(function (i) { if (!i.complete) i.onload = function () { place(r); }; });   // the photo changes the height
+  }
+  // Hovering a factory two-tone: the car in that combination and the filament chosen for each of its two colours.
+  function showCombo(btn) {
+    clearTimeout(timer); var c = window.comboInfo && window.comboInfo(btn); if (!c) return; cur = btn;
+    tip.innerHTML = (c.src ? '<img class="t-car" alt="" src="' + c.src + '">' : '') +
+      '<div class="t-combo"><strong>' + btn.querySelector('.cb-code').textContent + '</strong> ' + btn.title + '</div>' +
+      '<div class="t-slotname">' + c.upLabel + '</div>' + window.filInfo(c.up.dataset) +
+      '<div class="t-slotname">' + c.loLabel + '</div>' + window.filInfo(c.lo.dataset);
+    tip.classList.add('show'); place(btn.getBoundingClientRect());
+  }
   function show(el) {
     clearTimeout(timer); if (cur === el && tip.classList.contains('show')) return; cur = el;
     var d = el.dataset, car = window.heroRender ? window.heroRender(d.hex) : '', src = car || T[d.slug],
         img = src ? '<img alt=""' + (car ? ' class="t-car"' : '') + ' src="' + src + '">' : '';
     tip.innerHTML = img + window.filInfo(d) + (window.heroSlots ? window.heroSlots() : '');
-    tip.classList.add('show');
-    var r = (el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight,
-        x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
-        y = r.bottom + 6; if (y + h > innerHeight - 8) y = Math.max(8, r.top - h - 6);
-    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+    tip.classList.add('show'); place((el.querySelector('.fname, .fname-inline') || el).getBoundingClientRect());
   }
   window.tipEl = function () { return cur; };
   function hide() { timer = setTimeout(function () { tip.classList.remove('show'); cur = null; }, 180); }
   document.addEventListener('mouseover', function (e) {
     var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) show(el);
+    var cb = e.target.closest && e.target.closest('.combo'); if (cb) showCombo(cb);
   });
   document.addEventListener('mouseout', function (e) {
     var el = e.target.closest && e.target.closest('.pick'); if (el && el.dataset.slug) hide();
+    if (e.target.closest && e.target.closest('.combo')) hide();
   });
-  document.addEventListener('focusin', function (e) { if (e.target.dataset && e.target.dataset.slug) show(e.target); });
+  document.addEventListener('focusin', function (e) { if (e.target.dataset && e.target.dataset.slug) show(e.target); else if (e.target.classList && e.target.classList.contains('combo')) showCombo(e.target); });
   document.addEventListener('focusout', hide);
   tip.addEventListener('mouseenter', function () { clearTimeout(timer); });
   tip.addEventListener('mouseleave', hide);
@@ -635,7 +662,7 @@ def combos_html(year, combos, matches):
     if not btns:
         return ""
     return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
-            '<label class="combos-f"><input type="checkbox"> only these colours</label><span class="combos-ref"></span></div>')
+            '<span class="combos-hint">click the active one again to show all colours</span></div>')
 
 def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]}."""

@@ -17,7 +17,7 @@
     "zones": [
       {"id": "upper", "label": "Upper body", "channels": [0]},
       {"id": "lower", "label": "Lower body", "channels": [2]},
-      {"id": "roof",  "label": "Roof",       "channels": [1], "fixed": true, "follows": "upper"}
+      {"id": "roof",  "label": "Roof",       "channels": [1], "fixed": true}
     ],
     "credit": "3D Sets Model 23 Doppler",
     "credit_url": "https://3dsets.com/product/model-23-doppler/"
