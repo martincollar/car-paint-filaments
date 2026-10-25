@@ -273,6 +273,7 @@ def tile_html(c):
     <canvas class="tile-shade"></canvas>
     <img class="tile-photo" alt="" src="{c['hero']['photo']}">
     <canvas class="tile-canvas"></canvas>
+    <a class="tile-car" href="{esc(c['slug'])}/" tabindex="-1"></a>
   </div>
   <div class="tile-text">
     <h2 class="tile-name" style="--n:{name_len}"><a href="{esc(c['slug'])}/" aria-label="{esc(c['display'])}">{name_html}</a></h2>
@@ -324,12 +325,14 @@ __BASE__
               aspect-ratio: 1000 / 640; pointer-events: none; }
 .tile-photo, .tile-shade, .tile-canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
 .tile-photo, .tile-shade { mix-blend-mode: multiply; z-index: 1; }  /* floor shadow melts into the tile colour */
-.tile-canvas { z-index: 4; }                                         /* the cut-out car: above frame, text and decoration */
+.tile-canvas { z-index: 4; }
+.tile-foot { pointer-events: none; } .tile-foot a { pointer-events: auto; }   /* its top padding covers the car: let clicks through to .tile-car */
+.tile-car { position: absolute; inset: 0; z-index: 2; pointer-events: auto; cursor: pointer; }   /* the car is a link; below text and buttons (z 3) so they still win */                                         /* the cut-out car: above frame, text and decoration */
 .tile-photo { filter: brightness(1.032); }
 /* scroll effect: the whole tile (frame, decoration, text, buttons, car) shrinks towards its own centre as it leaves the middle of the
    screen. --car-s comes from PAGE_JS; --ox/--oy put every part's transform origin at the tile centre. Never transform .tile itself:
    it would become an isolated group and the floor shadow's multiply would no longer reach the page. */
-.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas { transform: scale(var(--car-s, 1)); transform-origin: var(--ox, 50%) var(--oy, 50%); }
+.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas, .tile-car { transform: scale(var(--car-s, 1)); transform-origin: var(--ox, 50%) var(--oy, 50%); }
 .tile.ready .tile-photo { visibility: hidden; }
 .js .tile:not(.ready) .tile-photo { opacity: 0; }   /* no flash of the photo's own colour before the recolour */
 @media (hover: hover) and (pointer: fine) {   /* mouse: the whole tile is the link; touch: a tap cycles colours instead */
@@ -472,7 +475,7 @@ PAGE_JS = """
   function setOrigins() {   // transform origin of every part = the tile's centre, in that part's own coordinates
     Array.prototype.forEach.call(document.querySelectorAll('.tile'), function (el) {
       var cx = el.offsetWidth / 2, cy = el.offsetHeight / 2;
-      Array.prototype.forEach.call(el.querySelectorAll('.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas'), function (c) {
+      Array.prototype.forEach.call(el.querySelectorAll('.tile-frame, .tile-deco, .tile-text, .tile-foot, .tile-photo, .tile-shade, .tile-canvas, .tile-car'), function (c) {
         var x = 0, y = 0, n = c;
         while (n && n !== el) { x += n.offsetLeft; y += n.offsetTop; n = n.offsetParent; }
         c.style.setProperty('--ox', (cx - x) + 'px'); c.style.setProperty('--oy', (cy - y) + 'px');
