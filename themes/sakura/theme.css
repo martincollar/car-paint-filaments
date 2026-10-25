@@ -137,3 +137,9 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
 .fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; }
 .paint .name, .filament.primary .fname strong, footer.card-footer .brand, .hero-preview .t-name, .hero-preview.big .t-name, .fil-tip .t-name { font-family: var(--font-body); font-weight: 700; }
 .paint .name { font-size: 1.15rem; }
+
+/* ===== Collapse controls ("Show all filaments", per-row "Filaments") ===== */
+html .rows-bar { margin-top: 22px; }
+html .rows-bar button, html .row-toggle { font: 700 .8rem var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--indigo);
+  border: 1px solid var(--indigo); border-radius: 999px; padding: 4px 14px; background: transparent; }
+html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visible { background: var(--dl-sakura-weak); }
