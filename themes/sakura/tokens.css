@@ -1,26 +1,28 @@
-/* Sakura design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
-   Roles: primary = indigo (buttons, titles), accent = sun red (small spark only), accent2 = gold trim, sakura = pink wash. */
+/* Sakura design language ("Sakura Run" screen-print poster): cream paper, black ink, pink and a striped red-pink sun.
+   Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = ink (type, buttons), accent = sun red-pink (hover, small spark), accent2 = blossom pink, sakura = pink wash. */
 .theme-sakura, .tile--sakura {
-  --dl-bg: #fffdf9;            /* tile / header card */
-  --dl-page: #f6f1ea;          /* washi page background */
-  --dl-card: #ffffff;
-  --dl-paper: #fffdf9;
-  --dl-ink: #1f2433;
-  --dl-outline: #1a2342;
-  --dl-primary: #2b3a67;
-  --dl-primary-deep: #1a2342;
-  --dl-accent: #c8102e;
-  --dl-accent-deep: #8d0a20;
-  --dl-accent2: #e0b25a;
-  --dl-sakura: #f2b8c0;        /* ray / petal pink */
-  --dl-sakura-weak: #f8dde1;
-  --dl-rule: #dcd6cc;
-  --dl-muted: #6c6f78;
-  --dl-radius: 18px;
-  --dl-border: 1px solid #dcd6cc;
-  --dl-shadow: 0 6px 14px -8px rgba(26,35,66,.55);
-  --dl-card-shadow: 0 14px 30px -16px rgba(26,35,66,.45);
-  --dl-font-title: "Reggae One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-bg: #f4ecda;            /* tile / header card: poster paper */
+  --dl-page: #fbf6ea;          /* page background, lighter than the card */
+  --dl-card: #fffdf6;
+  --dl-paper: #fffdf6;
+  --dl-ink: #17130f;
+  --dl-outline: #17130f;
+  --dl-primary: #17130f;
+  --dl-primary-deep: #000000;
+  --dl-accent: #e8506a;        /* sun */
+  --dl-accent-deep: #b92e48;
+  --dl-accent2: #f4a3b1;       /* blossom pink */
+  --dl-sakura: #f4a3b1;
+  --dl-sakura-weak: #fadde1;
+  --dl-rule: #d9cdb4;
+  --dl-muted: #6b6154;
+  --dl-radius: 6px;
+  --dl-border: 3px solid #17130f;
+  --dl-shadow: 3px 3px 0 #f4a3b1;
+  --dl-card-shadow: 7px 7px 0 #f4a3b1;
+  --dl-font-title: "Dela Gothic One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-font-brush: "Yuji Boku", "Hiragino Mincho ProN", serif;
   --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;

@@ -2,13 +2,13 @@
 
 Source of truth: `tokens.css` (`--dl-*`, scoped `.theme-sakura, .tile--sakura`). Visual reference: `styleguide.html` (`python src/build_styleguide.py --theme sakura`).
 
-- **Mood:** rising sun on washi paper. Quiet, soft, Japanese-print: pale rays from a small red sun in the corner, indigo ink type. Red is a spark (sun, short title bar, hover), never the main colour.
-- **Palette:** page `#f6f1ea`, card `#fffdf9`, primary indigo `#2b3a67` (deep `#1a2342`), accent sun red `#c8102e` (deep `#8d0a20`), trim gold `#e0b25a`, ray/petal pink `#f2b8c0` (weak `#f8dde1`), ink `#1f2433`, rule `#dcd6cc`, muted `#6c6f78`.
-- **Fonts:** title Reggae One, tagline and UI Barlow Condensed (uppercase, wide tracking), body Barlow.
-- **Shapes:** radius 18 px, 1 px rules, soft shadow (no hard offset shadows: that is Torq). Buttons are indigo pills, hover turns red.
-- **Tile:** `tile.html` = `.t-clip` (clips rays + sun to the card) with `.t-rays` (`repeating-conic-gradient` from the top-right corner, masked to fade) and `.t-sun` (red disc, cream ring). `--sun` sets the disc size. The car overflows the frame.
-- **Header card (detail page):** `tile--sakura head-card`, same builder as Doppler/Torq, bigger sun, filters inside under a hairline.
-- **Table:** on the paper, soft: hairline rows, round swatches, small indigo year badge with a red bar.
+- **Mood:** "Sakura Run" Japanese street-culture screen print. Cream paper with print specks, black ink type, blossom pink, a striped red-pink sun, a cherry branch, falling petals, a black kana sign. Decorative Japanese lettering only (not meant as copy).
+- **Palette:** page `#fbf6ea`, card/paper `#f4ecda` / `#fffdf6`, ink `#17130f` (also primary), sun red-pink `#e8506a` (deep `#b92e48`), blossom pink `#f4a3b1` (weak `#fadde1`), rule `#d9cdb4`, muted `#6b6154`.
+- **Fonts:** title Dela Gothic One (ink, hard pink shadow), brush kana Yuji Boku, tagline and UI Barlow Condensed (tagline italic 800 on a skewed pink slab), body Barlow.
+- **Shapes:** radius 6 px, 3 px ink borders, hard pink offset shadow (`7px 7px 0`, buttons `3px 3px 0`); buttons are ink rectangles, hover turns sun red.
+- **Tile:** `tile.html` = `.t-clip` (clips the SVG `.t-art`: striped sun, ink branch, three blossom colours, buds, loose petals; `--art` sets its size), `.t-sign` (black vertical kana box), `.t-vert` (tiny vertical caption on the left edge, hidden in the header card). Paper specks = an SVG `feTurbulence` data-URI on `.tile-frame`; the threshold is the last two numbers of its `feColorMatrix` (lower = fewer specks).
+- **Header card (detail page):** `tile--sakura head-card`, bigger art, filters under a 3 px ink rule.
+- **Table:** on the paper (3 px ink border), flat: hairline rows, rounded-square swatches, plain coloured ΔE text, year number in the title font with a pink shadow.
 
 ## Adopting this in a new car
 Copy `tokens.css`, `tile.css`, `tile.html`, `headcard.css`, `tile-fonts.txt`, rewrite values, set `"theme"` in `car.json`.

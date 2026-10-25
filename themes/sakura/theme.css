@@ -2,7 +2,7 @@
    header is the tile-style card (headcard.css). Soft cards, thin rules, no hard offset shadows. */
 :root {
   --red: var(--dl-accent); --red-deep: var(--dl-accent-deep); --red-weak: #f6d4da;
-  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #dcdee9;
+  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #f6dfe2;
   --fg: var(--dl-ink); --muted: var(--dl-muted); --rule: var(--dl-rule); --rule-soft: #ece8e0;
   --bg: var(--dl-page); --bg-paper: var(--dl-paper); --bg-soft: #f8f4ec; --bg-raised: #fff;
   --font-display: var(--dl-font-title);
@@ -25,8 +25,8 @@ body {
   font-variant-numeric: tabular-nums;
 }
 .paper {
-  background: var(--bg-paper); border-radius: 22px; overflow: hidden;
-  box-shadow: 0 1px 0 var(--rule), var(--dl-card-shadow);
+  background: var(--bg-paper); border-radius: 8px; overflow: hidden;
+  border: 3px solid var(--dl-ink);
   padding: 22px var(--pad) 32px; position: relative;
 }
 
@@ -60,7 +60,7 @@ h2.year-head { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6
 h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 64px; height: 3px; background: var(--red); border-radius: 3px; }
 .year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--indigo); line-height: 1; }
 .year-badge-top { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); order: 2; }
-.year-badge-num { font-family: var(--font-display); font-size: 2.4rem; line-height: 1; letter-spacing: .02em; color: var(--indigo); }
+.year-badge-num { font-family: var(--font-display); font-size: 1.9rem; line-height: 1; color: var(--dl-ink); text-shadow: 2px 2px 0 var(--dl-accent2); }
 .year-tagline { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); line-height: 1; }
 
 /* ===== Rows: flat, hairlines only ===== */

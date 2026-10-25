@@ -11,29 +11,31 @@
 .tile-name .ch { display: inline-block; }
 .tile-tag { margin: 6px 0 0; color: var(--muted); }
 .tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
-/* Sakura design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
-   Roles: primary = indigo (buttons, titles), accent = sun red (small spark only), accent2 = gold trim, sakura = pink wash. */
+/* Sakura design language ("Sakura Run" screen-print poster): cream paper, black ink, pink and a striped red-pink sun.
+   Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = ink (type, buttons), accent = sun red-pink (hover, small spark), accent2 = blossom pink, sakura = pink wash. */
 .theme-sakura, .tile--sakura {
-  --dl-bg: #fffdf9;            /* tile / header card */
-  --dl-page: #f6f1ea;          /* washi page background */
-  --dl-card: #ffffff;
-  --dl-paper: #fffdf9;
-  --dl-ink: #1f2433;
-  --dl-outline: #1a2342;
-  --dl-primary: #2b3a67;
-  --dl-primary-deep: #1a2342;
-  --dl-accent: #c8102e;
-  --dl-accent-deep: #8d0a20;
-  --dl-accent2: #e0b25a;
-  --dl-sakura: #f2b8c0;        /* ray / petal pink */
-  --dl-sakura-weak: #f8dde1;
-  --dl-rule: #dcd6cc;
-  --dl-muted: #6c6f78;
-  --dl-radius: 18px;
-  --dl-border: 1px solid #dcd6cc;
-  --dl-shadow: 0 6px 14px -8px rgba(26,35,66,.55);
-  --dl-card-shadow: 0 14px 30px -16px rgba(26,35,66,.45);
-  --dl-font-title: "Reggae One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-bg: #f4ecda;            /* tile / header card: poster paper */
+  --dl-page: #fbf6ea;          /* page background, lighter than the card */
+  --dl-card: #fffdf6;
+  --dl-paper: #fffdf6;
+  --dl-ink: #17130f;
+  --dl-outline: #17130f;
+  --dl-primary: #17130f;
+  --dl-primary-deep: #000000;
+  --dl-accent: #e8506a;        /* sun */
+  --dl-accent-deep: #b92e48;
+  --dl-accent2: #f4a3b1;       /* blossom pink */
+  --dl-sakura: #f4a3b1;
+  --dl-sakura-weak: #fadde1;
+  --dl-rule: #d9cdb4;
+  --dl-muted: #6b6154;
+  --dl-radius: 6px;
+  --dl-border: 3px solid #17130f;
+  --dl-shadow: 3px 3px 0 #f4a3b1;
+  --dl-card-shadow: 7px 7px 0 #f4a3b1;
+  --dl-font-title: "Dela Gothic One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-font-brush: "Yuji Boku", "Hiragino Mincho ProN", serif;
   --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -41,7 +43,7 @@
    header is the tile-style card (headcard.css). Soft cards, thin rules, no hard offset shadows. */
 :root {
   --red: var(--dl-accent); --red-deep: var(--dl-accent-deep); --red-weak: #f6d4da;
-  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #dcdee9;
+  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #f6dfe2;
   --fg: var(--dl-ink); --muted: var(--dl-muted); --rule: var(--dl-rule); --rule-soft: #ece8e0;
   --bg: var(--dl-page); --bg-paper: var(--dl-paper); --bg-soft: #f8f4ec; --bg-raised: #fff;
   --font-display: var(--dl-font-title);
@@ -64,8 +66,8 @@ body {
   font-variant-numeric: tabular-nums;
 }
 .paper {
-  background: var(--bg-paper); border-radius: 22px; overflow: hidden;
-  box-shadow: 0 1px 0 var(--rule), var(--dl-card-shadow);
+  background: var(--bg-paper); border-radius: 8px; overflow: hidden;
+  border: 3px solid var(--dl-ink);
   padding: 22px var(--pad) 32px; position: relative;
 }
 
@@ -99,7 +101,7 @@ h2.year-head { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6
 h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 64px; height: 3px; background: var(--red); border-radius: 3px; }
 .year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--indigo); line-height: 1; }
 .year-badge-top { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); order: 2; }
-.year-badge-num { font-family: var(--font-display); font-size: 2.4rem; line-height: 1; letter-spacing: .02em; color: var(--indigo); }
+.year-badge-num { font-family: var(--font-display); font-size: 1.9rem; line-height: 1; color: var(--dl-ink); text-shadow: 2px 2px 0 var(--dl-accent2); }
 .year-tagline { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); line-height: 1; }
 
 /* ===== Rows: flat, hairlines only ===== */
@@ -180,47 +182,52 @@ footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font
 /* ===== Collapse controls ("Show all filaments", per-row "Filaments") ===== */
 html .rows-bar button, html .row-toggle { font: 600 .74rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--indigo);
   border: 1px solid var(--indigo); border-radius: 999px; padding: 4px 14px; background: transparent; }
-html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visible { background: var(--dl-sakura-weak); }/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
-   are clipped by the card, the car spills over the frame). Indigo title, thin rules, soft shadow, no hard offsets. */
-.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --sun: 140px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
-.tile--sakura .tile-frame { background: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow); }
+html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visible { background: var(--dl-sakura-weak); }/* Index tile: "Sakura Run" poster. Cream paper with print specks, black ink type, a striped red-pink sun and a blossom branch in the
+   top-right corner (clipped by the card), a black kana sign, vertical kana on the left edge. Hard pink offset shadow. The car spills over. */
+.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --art: 275px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
+.tile--sakura .tile-frame { background-color: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='sk-n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .06 0 0 0 -34 9.4'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23sk-n)'/%3E%3C/svg%3E"); }
 .tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); }
-.tile--sakura .t-rays { position: absolute; inset: 0;
-  background: repeating-conic-gradient(at 100% 0, var(--dl-sakura-weak) 0 7.5deg, transparent 7.5deg 15deg);
-  -webkit-mask-image: linear-gradient(225deg, #000 0, transparent 78%); mask-image: linear-gradient(225deg, #000 0, transparent 78%); }
-.tile--sakura .t-sun { position: absolute; right: calc(var(--sun) * -.36); top: calc(var(--sun) * -.36); width: var(--sun); height: var(--sun);
-  border-radius: 50%; background: var(--dl-accent); box-shadow: 0 0 0 calc(var(--sun) * .05) var(--dl-bg), 0 0 0 calc(var(--sun) * .055) var(--dl-accent); }
+.tile--sakura .t-art { position: absolute; top: 0; right: 0; width: var(--art); height: auto; }
+.tile--sakura .t-sign { position: absolute; right: 16px; top: 36%; padding: 8px 5px; background: var(--dl-ink); color: var(--dl-paper); z-index: 2;
+  writing-mode: vertical-rl; font: 400 .85rem/1 var(--dl-font-brush); letter-spacing: .15em; border: 2px solid var(--dl-ink); box-shadow: 2px 2px 0 var(--dl-accent2); }
+.tile--sakura .t-vert { position: absolute; left: 7px; top: 108px; writing-mode: vertical-rl; font: 400 .62rem/1 var(--dl-font-brush); letter-spacing: .2em; color: var(--dl-ink); opacity: .75; }
 .tile--sakura .tile-text { padding-top: 6px; max-width: none; }
-.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 2.2rem; line-height: 1.05; letter-spacing: .01em; color: var(--dl-primary); }
-.tile--sakura .tile-name::after { content: ""; display: block; width: 46px; height: 4px; margin-top: 10px; border-radius: 2px; background: var(--dl-accent); }
-.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
-.tile--sakura .tile-meta { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 1.85rem; line-height: 1.05; letter-spacing: 0; color: var(--dl-ink);
+  text-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-tag { position: relative; display: block; width: fit-content; margin-top: 12px; padding: 3px 18px 3px 12px; color: var(--dl-ink);
+  font: italic 800 1.05rem var(--dl-font-tag); letter-spacing: .06em; text-transform: uppercase; transform: skewX(-8deg); z-index: 1; }
+.tile--sakura .tile-tag::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--dl-accent2); clip-path: polygon(0 12%, 100% 0, 96% 100%, 3% 88%); }
+.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
 .tile--sakura .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
-.tile--sakura .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: #fff;
-  background: var(--dl-primary); border: 1px solid var(--dl-primary); border-radius: 999px; box-shadow: var(--dl-shadow); }
-.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent); color: #fff; }
-.tile--sakura .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary);
-  background: transparent; border: 1px solid var(--dl-primary); border-radius: 999px; }
-.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-sakura-weak); color: var(--dl-primary-deep); }
+.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-paper);
+  background: var(--dl-ink); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-ink); color: var(--dl-paper); }
+.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink);
+  background: var(--dl-paper); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
 @media (max-width: 520px) {
-  .tile--sakura { --sun: 112px; }
-  .tile--sakura .tile-name { font-size: 1.55rem; }
-  .tile--sakura .tile-tag { font-size: .75rem; }
+  .tile--sakura { --art: 190px; }
+  .tile--sakura .tile-name { font-size: 1.5rem; }
+  .tile--sakura .tile-tag { font-size: .9rem; }
+  .tile--sakura .t-sign { top: 31%; font-size: .72rem; }
 }/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
-.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --sun: 230px;
+.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --art: 470px;
   --tile: var(--dl-bg); --muted: var(--dl-muted); }
-.theme-sakura .head-card .tile-name { font-size: 4rem; }
-.theme-sakura .head-card .tile-name::after { width: 64px; height: 5px; }
-.theme-sakura .head-card .tile-tag { font-size: 1.05rem; margin-top: 12px; }
+.theme-sakura .head-card .tile-name { font-size: 3.6rem; text-shadow: 4px 4px 0 var(--dl-accent2); }
+.theme-sakura .head-card .tile-tag { font-size: 1.4rem; margin-top: 16px; padding: 4px 24px 4px 16px; }
 .theme-sakura .head-card .tile-meta { margin-top: 14px; line-height: 1.6; }
+.theme-sakura .head-card .t-sign { top: 52%; right: 28px; font-size: 1.05rem; }
+.theme-sakura .head-card .t-vert { display: none; }
 .theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
-  margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--dl-rule); }
+  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-ink); }
 .theme-sakura .head-filters .year-nav { margin: 0; }
-.theme-sakura .head-filters .nav-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-muted); }
+.theme-sakura .head-filters .nav-label { font: 700 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
 @media (max-width: 600px) {
-  .theme-sakura .head-card { padding: 22px 18px 18px; --sun: 110px; }
-  .theme-sakura .head-card .tile-name { font-size: 2.1rem; }
-  .theme-sakura .head-card .tile-tag { font-size: .85rem; }
+  .theme-sakura .head-card { padding: 22px 18px 18px; --art: 200px; }
+  .theme-sakura .head-card .tile-name { font-size: 1.9rem; max-width: 66%; }
+  .theme-sakura .head-card .tile-tag { font-size: 1rem; }
+  .theme-sakura .head-card .t-sign { display: none; }
 }
 .sg { max-width: 1100px; margin: 0 auto; padding: 24px 16px 60px; }
 .sg h2 { margin: 36px 0 12px; font: 700 1.1rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
@@ -229,12 +236,51 @@ html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visi
 .sg-chip { width: 44px; height: 44px; flex: none; border: 1px solid #0003; display: grid; place-items: center; font-size: .6rem; overflow: hidden; background: var(--v); }
 .sg-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 </style>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap"></head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Yuji+Boku&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,800&family=Barlow:wght@400;500;600&display=swap"></head>
 <body><div class="sg"><h1>sakura: design language</h1>
-<h2>Tokens</h2><div class="sg-tokens"><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-bg)"></span><span><b>--dl-bg</b><br>#fffdf9</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-page)"></span><span><b>--dl-page</b><br>#f6f1ea</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card)"></span><span><b>--dl-card</b><br>#ffffff</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-paper)"></span><span><b>--dl-paper</b><br>#fffdf9</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-ink)"></span><span><b>--dl-ink</b><br>#1f2433</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-outline)"></span><span><b>--dl-outline</b><br>#1a2342</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary)"></span><span><b>--dl-primary</b><br>#2b3a67</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary-deep)"></span><span><b>--dl-primary-deep</b><br>#1a2342</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent)"></span><span><b>--dl-accent</b><br>#c8102e</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent-deep)"></span><span><b>--dl-accent-deep</b><br>#8d0a20</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent2)"></span><span><b>--dl-accent2</b><br>#e0b25a</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura)"></span><span><b>--dl-sakura</b><br>#f2b8c0</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura-weak)"></span><span><b>--dl-sakura-weak</b><br>#f8dde1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-rule)"></span><span><b>--dl-rule</b><br>#dcd6cc</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-muted)"></span><span><b>--dl-muted</b><br>#6c6f78</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-radius)"></span><span><b>--dl-radius</b><br>18px</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-border)"></span><span><b>--dl-border</b><br>1px solid #dcd6cc</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-shadow)"></span><span><b>--dl-shadow</b><br>0 6px 14px -8px rgba(26,35,66,.55)</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card-shadow)"></span><span><b>--dl-card-shadow</b><br>0 14px 30px -16px rgba(26,35,66,.45)</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-title)">Aa</span><span><b>--dl-font-title</b><br>&quot;Reggae One&quot;, &quot;Zen Kaku Gothic New&quot;, &quot;Hiragino Sans&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-tag)">Aa</span><span><b>--dl-font-tag</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-ui)">Aa</span><span><b>--dl-font-ui</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-body)">Aa</span><span><b>--dl-font-body</b><br>&quot;Barlow&quot;, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Arial, sans-serif</span></div></div>
-<h2>Fonts</h2><p style="font:700 1.6rem var(--dl-font-title)">--dl-font-title: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-tag)">--dl-font-tag: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-ui)">--dl-font-ui: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-body)">--dl-font-body: Gulf Green 1952 — Fins, chrome &amp; flakes</p>
+<h2>Tokens</h2><div class="sg-tokens"><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-bg)"></span><span><b>--dl-bg</b><br>#f4ecda</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-page)"></span><span><b>--dl-page</b><br>#fbf6ea</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card)"></span><span><b>--dl-card</b><br>#fffdf6</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-paper)"></span><span><b>--dl-paper</b><br>#fffdf6</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-ink)"></span><span><b>--dl-ink</b><br>#17130f</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-outline)"></span><span><b>--dl-outline</b><br>#17130f</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary)"></span><span><b>--dl-primary</b><br>#17130f</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-primary-deep)"></span><span><b>--dl-primary-deep</b><br>#000000</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent)"></span><span><b>--dl-accent</b><br>#e8506a</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent-deep)"></span><span><b>--dl-accent-deep</b><br>#b92e48</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-accent2)"></span><span><b>--dl-accent2</b><br>#f4a3b1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura)"></span><span><b>--dl-sakura</b><br>#f4a3b1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-sakura-weak)"></span><span><b>--dl-sakura-weak</b><br>#fadde1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-rule)"></span><span><b>--dl-rule</b><br>#d9cdb4</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-muted)"></span><span><b>--dl-muted</b><br>#6b6154</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-radius)"></span><span><b>--dl-radius</b><br>6px</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-border)"></span><span><b>--dl-border</b><br>3px solid #17130f</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-shadow)"></span><span><b>--dl-shadow</b><br>3px 3px 0 #f4a3b1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-card-shadow)"></span><span><b>--dl-card-shadow</b><br>7px 7px 0 #f4a3b1</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-title)">Aa</span><span><b>--dl-font-title</b><br>&quot;Dela Gothic One&quot;, &quot;Zen Kaku Gothic New&quot;, &quot;Hiragino Sans&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-brush)">Aa</span><span><b>--dl-font-brush</b><br>&quot;Yuji Boku&quot;, &quot;Hiragino Mincho ProN&quot;, serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-tag)">Aa</span><span><b>--dl-font-tag</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-ui)">Aa</span><span><b>--dl-font-ui</b><br>&quot;Barlow Condensed&quot;, &quot;Arial Narrow&quot;, sans-serif</span></div><div class="sg-token"><span class="sg-chip" style="--v: var(--dl-font-body)">Aa</span><span><b>--dl-font-body</b><br>&quot;Barlow&quot;, -apple-system, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, Arial, sans-serif</span></div></div>
+<h2>Fonts</h2><p style="font:700 1.6rem var(--dl-font-title)">--dl-font-title: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-brush)">--dl-font-brush: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-tag)">--dl-font-tag: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-ui)">--dl-font-ui: Gulf Green 1952 — Fins, chrome &amp; flakes</p><p style="font:700 1.6rem var(--dl-font-body)">--dl-font-body: Gulf Green 1952 — Fins, chrome &amp; flakes</p>
 <h2>Buttons</h2><div class="sg-row"><nav class="year-nav"><a href="#">1957</a><a href="#">1956</a></nav><div class="year-nav region-switch"><button type="button" aria-pressed="true">EU / CZ</button><button type="button" aria-pressed="false">INT</button></div><a class="to-top" href="#" style="position:static"><svg viewBox="0 0 24 24"><path d="M12 3 3.5 12.5H9V21h6v-8.5h5.5z"/></svg></a></div>
-<h2>Header card</h2><header class="page-head tile tile--sakura head-card"><div class="tile-frame"></div><div class="tile-deco"><div class="t-clip"><div class="t-rays"></div><div class="t-sun"></div></div></div><div class="tile-text"><h1 class="tile-name" style="--n:11"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">S</span><span class="ch" style="--i:1" aria-hidden="true">a</span><span class="ch" style="--i:2" aria-hidden="true">m</span><span class="ch" style="--i:3" aria-hidden="true">p</span><span class="ch" style="--i:4" aria-hidden="true">l</span><span class="ch" style="--i:5" aria-hidden="true">e</span></span> <span class="w"><span class="ch" style="--i:7" aria-hidden="true">N</span><span class="ch" style="--i:8" aria-hidden="true">a</span><span class="ch" style="--i:9" aria-hidden="true">m</span><span class="ch" style="--i:10" aria-hidden="true">e</span></span></h1><p class="tile-tag">Tagline goes here</p><p class="tile-meta">1951-1957 · 65 paint colours</p></div><div class="head-filters"><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#">1957</a></nav></div></header>
+<h2>Header card</h2><header class="page-head tile tile--sakura head-card"><div class="tile-frame"></div><div class="tile-deco"><div class="t-clip"><svg class="t-art" viewBox="0 0 320 210" preserveAspectRatio="xMaxYMin meet" aria-hidden="true"><defs><symbol id="sk-f1" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f2" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(288)"/><circle r="1.5" fill="#b92e48"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f3" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-bud" viewBox="-4 -5 8 10" overflow="visible"><ellipse rx="2.6" ry="3.6" fill="#ef8aa0"/><ellipse rx="1.4" ry="2.4" cy=".6" fill="#f9c9d1"/></symbol></defs>
+<g><circle cx="256" cy="112" r="48" fill="#e8506a"/><clipPath id="sk-sunclip"><circle cx="256" cy="112" r="48"/></clipPath><g clip-path="url(#sk-sunclip)" fill="#f4ecda"><rect x="200" y="118" width="110" height="3.2"/><rect x="200" y="127" width="110" height="4.4"/><rect x="200" y="137" width="110" height="5.8"/><rect x="200" y="149" width="110" height="7.5"/></g></g>
+<path d="M335 10C296 18 254 14 214 38S150 70 100 62" fill="none" stroke="#17130f" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M238 24C236 46 226 66 208 84" fill="none" stroke="#17130f" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M214 38C196 26 178 24 160 30" fill="none" stroke="#17130f" stroke-width="3" stroke-linecap="round"/>
+<path d="M172 54C170 70 162 84 148 92" fill="none" stroke="#17130f" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M335 66C306 70 286 84 266 92" fill="none" stroke="#17130f" stroke-width="3.6" stroke-linecap="round"/>
+<path d="M100 62C90 56 78 58 68 66" fill="none" stroke="#17130f" stroke-width="2.4" stroke-linecap="round"/>
+<use href="#sk-bud" x="186" y="13" width="8" height="10" transform="rotate(0 190 18)"/>
+<use href="#sk-bud" x="146" y="35" width="8" height="10" transform="rotate(-20 150 40)"/>
+<use href="#sk-bud" x="226" y="51" width="8" height="10" transform="rotate(15 230 56)"/>
+<use href="#sk-bud" x="112" y="73" width="8" height="10" transform="rotate(0 116 78)"/>
+<use href="#sk-bud" x="86" y="51" width="8" height="10" transform="rotate(30 90 56)"/>
+<use href="#sk-f1" x="284.8" y="-3.2" width="34.5" height="34.5" transform="rotate(10 302 14)"/>
+<use href="#sk-f2" x="255.0" y="5.0" width="30.0" height="30.0" transform="rotate(50 270 20)"/>
+<use href="#sk-f3" x="220.0" y="10.0" width="36.0" height="36.0" transform="rotate(20 238 28)"/>
+<use href="#sk-f1" x="195.0" y="27.0" width="30.0" height="30.0" transform="rotate(70 210 42)"/>
+<use href="#sk-f2" x="165.5" y="15.5" width="33.0" height="33.0" transform="rotate(5 182 32)"/>
+<use href="#sk-f3" x="146.5" y="16.5" width="27.0" height="27.0" transform="rotate(40 160 30)"/>
+<use href="#sk-f1" x="191.5" y="67.5" width="33.0" height="33.0" transform="rotate(30 208 84)"/>
+<use href="#sk-f2" x="134.5" y="78.5" width="27.0" height="27.0" transform="rotate(60 148 92)"/>
+<use href="#sk-f3" x="106.8" y="44.8" width="34.5" height="34.5" transform="rotate(0 124 62)"/>
+<use href="#sk-f1" x="86.5" y="50.5" width="27.0" height="27.0" transform="rotate(25 100 64)"/>
+<use href="#sk-f2" x="63.2" y="53.2" width="25.5" height="25.5" transform="rotate(45 76 66)"/>
+<use href="#sk-f2" x="287.5" y="47.5" width="33.0" height="33.0" transform="rotate(15 304 64)"/>
+<use href="#sk-f1" x="263.0" y="69.0" width="30.0" height="30.0" transform="rotate(60 278 84)"/>
+<use href="#sk-f3" x="162.5" y="44.5" width="27.0" height="27.0" transform="rotate(15 176 58)"/>
+<use href="#sk-f1" x="48.0" y="64.0" width="24.0" height="24.0" transform="rotate(10 60 76)"/>
+<ellipse cx="60" cy="100" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(30 60 100)"/>
+<ellipse cx="36" cy="130" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-20 36 130)"/>
+<ellipse cx="96" cy="126" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(60 96 126)"/>
+<ellipse cx="20" cy="84" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(10 20 84)"/>
+<ellipse cx="130" cy="150" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-40 130 150)"/>
+<ellipse cx="66" cy="168" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(25 66 168)"/>
+<ellipse cx="200" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(40 200 176)"/>
+<ellipse cx="150" cy="190" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-30 150 190)"/>
+<ellipse cx="30" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(15 30 176)"/>
+</svg></div>
+<div class="t-sign" lang="ja"><span>どこまでも</span></div>
+<div class="t-vert" lang="ja"><span>走る、私らしく</span></div></div><div class="tile-text"><h1 class="tile-name" style="--n:11"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">S</span><span class="ch" style="--i:1" aria-hidden="true">a</span><span class="ch" style="--i:2" aria-hidden="true">m</span><span class="ch" style="--i:3" aria-hidden="true">p</span><span class="ch" style="--i:4" aria-hidden="true">l</span><span class="ch" style="--i:5" aria-hidden="true">e</span></span> <span class="w"><span class="ch" style="--i:7" aria-hidden="true">N</span><span class="ch" style="--i:8" aria-hidden="true">a</span><span class="ch" style="--i:9" aria-hidden="true">m</span><span class="ch" style="--i:10" aria-hidden="true">e</span></span></h1><p class="tile-tag">Tagline goes here</p><p class="tile-meta">1951-1957 · 65 paint colours</p></div><div class="head-filters"><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#">1957</a></nav></div></header>
 <h2>Table row</h2><div class="paper"><article class="row"><div class="col paint-col">
       <div class="paint">
         <div class="swatch big" style="background:#3A5F4B"></div>

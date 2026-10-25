@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Car paint filaments</title>
 <meta name="description" content="Original paint colours of classic cars matched to the closest PLA, PETG and ASA filaments.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yesteryear&family=Pacifico&family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Lobster+Two:ital,wght@1,700&family=Barlow+Condensed:ital,wght@1,800&family=Oswald:wght@500;600&family=Reggae+One&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=Russo+One&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Yesteryear&family=Pacifico&family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Lobster+Two:ital,wght@1,700&family=Barlow+Condensed:ital,wght@1,800&family=Oswald:wght@500;600&family=Dela+Gothic+One&family=Yuji+Boku&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,800&family=Barlow:wght@400;500;600&family=Russo+One&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&display=swap">
 <style>
 :root { --page: #ecebe7; --tile: #fbfbf9; --ink: #1d1d1b; --muted: #6b6a66; --line: #d9d7d0; --accent: #1d1d1b; }
 * { box-sizing: border-box; }
@@ -145,59 +145,64 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 .tile--doppler .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary-deep);
   background: var(--dl-paper); border: 2px solid var(--dl-primary-deep); border-radius: 999px; box-shadow: 0 3px 0 var(--dl-primary-deep); }
 .tile--doppler .tile-buy:hover, .tile--doppler .tile-buy:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent-deep); box-shadow: 0 3px 0 var(--dl-accent-deep); color: var(--dl-paper); }
-/* Sakura design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
-   Roles: primary = indigo (buttons, titles), accent = sun red (small spark only), accent2 = gold trim, sakura = pink wash. */
+/* Sakura design language ("Sakura Run" screen-print poster): cream paper, black ink, pink and a striped red-pink sun.
+   Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = ink (type, buttons), accent = sun red-pink (hover, small spark), accent2 = blossom pink, sakura = pink wash. */
 .theme-sakura, .tile--sakura {
-  --dl-bg: #fffdf9;            /* tile / header card */
-  --dl-page: #f6f1ea;          /* washi page background */
-  --dl-card: #ffffff;
-  --dl-paper: #fffdf9;
-  --dl-ink: #1f2433;
-  --dl-outline: #1a2342;
-  --dl-primary: #2b3a67;
-  --dl-primary-deep: #1a2342;
-  --dl-accent: #c8102e;
-  --dl-accent-deep: #8d0a20;
-  --dl-accent2: #e0b25a;
-  --dl-sakura: #f2b8c0;        /* ray / petal pink */
-  --dl-sakura-weak: #f8dde1;
-  --dl-rule: #dcd6cc;
-  --dl-muted: #6c6f78;
-  --dl-radius: 18px;
-  --dl-border: 1px solid #dcd6cc;
-  --dl-shadow: 0 6px 14px -8px rgba(26,35,66,.55);
-  --dl-card-shadow: 0 14px 30px -16px rgba(26,35,66,.45);
-  --dl-font-title: "Reggae One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-bg: #f4ecda;            /* tile / header card: poster paper */
+  --dl-page: #fbf6ea;          /* page background, lighter than the card */
+  --dl-card: #fffdf6;
+  --dl-paper: #fffdf6;
+  --dl-ink: #17130f;
+  --dl-outline: #17130f;
+  --dl-primary: #17130f;
+  --dl-primary-deep: #000000;
+  --dl-accent: #e8506a;        /* sun */
+  --dl-accent-deep: #b92e48;
+  --dl-accent2: #f4a3b1;       /* blossom pink */
+  --dl-sakura: #f4a3b1;
+  --dl-sakura-weak: #fadde1;
+  --dl-rule: #d9cdb4;
+  --dl-muted: #6b6154;
+  --dl-radius: 6px;
+  --dl-border: 3px solid #17130f;
+  --dl-shadow: 3px 3px 0 #f4a3b1;
+  --dl-card-shadow: 7px 7px 0 #f4a3b1;
+  --dl-font-title: "Dela Gothic One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --dl-font-brush: "Yuji Boku", "Hiragino Mincho ProN", serif;
   --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
   --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 }
-/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
-   are clipped by the card, the car spills over the frame). Indigo title, thin rules, soft shadow, no hard offsets. */
-.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --sun: 140px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
-.tile--sakura .tile-frame { background: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow); }
+/* Index tile: "Sakura Run" poster. Cream paper with print specks, black ink type, a striped red-pink sun and a blossom branch in the
+   top-right corner (clipped by the card), a black kana sign, vertical kana on the left edge. Hard pink offset shadow. The car spills over. */
+.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --art: 275px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
+.tile--sakura .tile-frame { background-color: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='sk-n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .06 0 0 0 -34 9.4'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23sk-n)'/%3E%3C/svg%3E"); }
 .tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); }
-.tile--sakura .t-rays { position: absolute; inset: 0;
-  background: repeating-conic-gradient(at 100% 0, var(--dl-sakura-weak) 0 7.5deg, transparent 7.5deg 15deg);
-  -webkit-mask-image: linear-gradient(225deg, #000 0, transparent 78%); mask-image: linear-gradient(225deg, #000 0, transparent 78%); }
-.tile--sakura .t-sun { position: absolute; right: calc(var(--sun) * -.36); top: calc(var(--sun) * -.36); width: var(--sun); height: var(--sun);
-  border-radius: 50%; background: var(--dl-accent); box-shadow: 0 0 0 calc(var(--sun) * .05) var(--dl-bg), 0 0 0 calc(var(--sun) * .055) var(--dl-accent); }
+.tile--sakura .t-art { position: absolute; top: 0; right: 0; width: var(--art); height: auto; }
+.tile--sakura .t-sign { position: absolute; right: 16px; top: 36%; padding: 8px 5px; background: var(--dl-ink); color: var(--dl-paper); z-index: 2;
+  writing-mode: vertical-rl; font: 400 .85rem/1 var(--dl-font-brush); letter-spacing: .15em; border: 2px solid var(--dl-ink); box-shadow: 2px 2px 0 var(--dl-accent2); }
+.tile--sakura .t-vert { position: absolute; left: 7px; top: 108px; writing-mode: vertical-rl; font: 400 .62rem/1 var(--dl-font-brush); letter-spacing: .2em; color: var(--dl-ink); opacity: .75; }
 .tile--sakura .tile-text { padding-top: 6px; max-width: none; }
-.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 2.2rem; line-height: 1.05; letter-spacing: .01em; color: var(--dl-primary); }
-.tile--sakura .tile-name::after { content: ""; display: block; width: 46px; height: 4px; margin-top: 10px; border-radius: 2px; background: var(--dl-accent); }
-.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
-.tile--sakura .tile-meta { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 1.85rem; line-height: 1.05; letter-spacing: 0; color: var(--dl-ink);
+  text-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-tag { position: relative; display: block; width: fit-content; margin-top: 12px; padding: 3px 18px 3px 12px; color: var(--dl-ink);
+  font: italic 800 1.05rem var(--dl-font-tag); letter-spacing: .06em; text-transform: uppercase; transform: skewX(-8deg); z-index: 1; }
+.tile--sakura .tile-tag::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--dl-accent2); clip-path: polygon(0 12%, 100% 0, 96% 100%, 3% 88%); }
+.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
 .tile--sakura .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
-.tile--sakura .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: #fff;
-  background: var(--dl-primary); border: 1px solid var(--dl-primary); border-radius: 999px; box-shadow: var(--dl-shadow); }
-.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent); color: #fff; }
-.tile--sakura .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary);
-  background: transparent; border: 1px solid var(--dl-primary); border-radius: 999px; }
-.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-sakura-weak); color: var(--dl-primary-deep); }
+.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-paper);
+  background: var(--dl-ink); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-ink); color: var(--dl-paper); }
+.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink);
+  background: var(--dl-paper); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
 @media (max-width: 520px) {
-  .tile--sakura { --sun: 112px; }
-  .tile--sakura .tile-name { font-size: 1.55rem; }
-  .tile--sakura .tile-tag { font-size: .75rem; }
+  .tile--sakura { --art: 190px; }
+  .tile--sakura .tile-name { font-size: 1.5rem; }
+  .tile--sakura .tile-tag { font-size: .9rem; }
+  .tile--sakura .t-sign { top: 31%; font-size: .72rem; }
 }
 /* Torq design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
    Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
@@ -326,7 +331,46 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 </article>
 <article class="tile tile--sakura" data-car="sakura" style="--tile-colour:#CED1CD">
   <div class="tile-frame"></div>
-  <div class="tile-deco" aria-hidden="true"><div class="t-clip"><div class="t-rays"></div><div class="t-sun"></div></div>
+  <div class="tile-deco" aria-hidden="true"><div class="t-clip"><svg class="t-art" viewBox="0 0 320 210" preserveAspectRatio="xMaxYMin meet" aria-hidden="true"><defs><symbol id="sk-f1" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f2" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(288)"/><circle r="1.5" fill="#b92e48"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f3" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-bud" viewBox="-4 -5 8 10" overflow="visible"><ellipse rx="2.6" ry="3.6" fill="#ef8aa0"/><ellipse rx="1.4" ry="2.4" cy=".6" fill="#f9c9d1"/></symbol></defs>
+<g><circle cx="256" cy="112" r="48" fill="#e8506a"/><clipPath id="sk-sunclip"><circle cx="256" cy="112" r="48"/></clipPath><g clip-path="url(#sk-sunclip)" fill="#f4ecda"><rect x="200" y="118" width="110" height="3.2"/><rect x="200" y="127" width="110" height="4.4"/><rect x="200" y="137" width="110" height="5.8"/><rect x="200" y="149" width="110" height="7.5"/></g></g>
+<path d="M335 10C296 18 254 14 214 38S150 70 100 62" fill="none" stroke="#17130f" stroke-width="6.5" stroke-linecap="round"/>
+<path d="M238 24C236 46 226 66 208 84" fill="none" stroke="#17130f" stroke-width="3.2" stroke-linecap="round"/>
+<path d="M214 38C196 26 178 24 160 30" fill="none" stroke="#17130f" stroke-width="3" stroke-linecap="round"/>
+<path d="M172 54C170 70 162 84 148 92" fill="none" stroke="#17130f" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M335 66C306 70 286 84 266 92" fill="none" stroke="#17130f" stroke-width="3.6" stroke-linecap="round"/>
+<path d="M100 62C90 56 78 58 68 66" fill="none" stroke="#17130f" stroke-width="2.4" stroke-linecap="round"/>
+<use href="#sk-bud" x="186" y="13" width="8" height="10" transform="rotate(0 190 18)"/>
+<use href="#sk-bud" x="146" y="35" width="8" height="10" transform="rotate(-20 150 40)"/>
+<use href="#sk-bud" x="226" y="51" width="8" height="10" transform="rotate(15 230 56)"/>
+<use href="#sk-bud" x="112" y="73" width="8" height="10" transform="rotate(0 116 78)"/>
+<use href="#sk-bud" x="86" y="51" width="8" height="10" transform="rotate(30 90 56)"/>
+<use href="#sk-f1" x="284.8" y="-3.2" width="34.5" height="34.5" transform="rotate(10 302 14)"/>
+<use href="#sk-f2" x="255.0" y="5.0" width="30.0" height="30.0" transform="rotate(50 270 20)"/>
+<use href="#sk-f3" x="220.0" y="10.0" width="36.0" height="36.0" transform="rotate(20 238 28)"/>
+<use href="#sk-f1" x="195.0" y="27.0" width="30.0" height="30.0" transform="rotate(70 210 42)"/>
+<use href="#sk-f2" x="165.5" y="15.5" width="33.0" height="33.0" transform="rotate(5 182 32)"/>
+<use href="#sk-f3" x="146.5" y="16.5" width="27.0" height="27.0" transform="rotate(40 160 30)"/>
+<use href="#sk-f1" x="191.5" y="67.5" width="33.0" height="33.0" transform="rotate(30 208 84)"/>
+<use href="#sk-f2" x="134.5" y="78.5" width="27.0" height="27.0" transform="rotate(60 148 92)"/>
+<use href="#sk-f3" x="106.8" y="44.8" width="34.5" height="34.5" transform="rotate(0 124 62)"/>
+<use href="#sk-f1" x="86.5" y="50.5" width="27.0" height="27.0" transform="rotate(25 100 64)"/>
+<use href="#sk-f2" x="63.2" y="53.2" width="25.5" height="25.5" transform="rotate(45 76 66)"/>
+<use href="#sk-f2" x="287.5" y="47.5" width="33.0" height="33.0" transform="rotate(15 304 64)"/>
+<use href="#sk-f1" x="263.0" y="69.0" width="30.0" height="30.0" transform="rotate(60 278 84)"/>
+<use href="#sk-f3" x="162.5" y="44.5" width="27.0" height="27.0" transform="rotate(15 176 58)"/>
+<use href="#sk-f1" x="48.0" y="64.0" width="24.0" height="24.0" transform="rotate(10 60 76)"/>
+<ellipse cx="60" cy="100" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(30 60 100)"/>
+<ellipse cx="36" cy="130" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-20 36 130)"/>
+<ellipse cx="96" cy="126" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(60 96 126)"/>
+<ellipse cx="20" cy="84" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(10 20 84)"/>
+<ellipse cx="130" cy="150" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-40 130 150)"/>
+<ellipse cx="66" cy="168" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(25 66 168)"/>
+<ellipse cx="200" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(40 200 176)"/>
+<ellipse cx="150" cy="190" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-30 150 190)"/>
+<ellipse cx="30" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(15 30 176)"/>
+</svg></div>
+<div class="t-sign" lang="ja"><span>どこまでも</span></div>
+<div class="t-vert" lang="ja"><span>走る、私らしく</span></div>
 </div>
   <div class="tile-stage" aria-hidden="true">
     <canvas class="tile-shade"></canvas>

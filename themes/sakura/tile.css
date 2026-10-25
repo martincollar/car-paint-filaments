@@ -1,27 +1,30 @@
-/* Index tile: washi card, pale pink rays fanning from a small red sun in the top-right corner (the sun and rays
-   are clipped by the card, the car spills over the frame). Indigo title, thin rules, soft shadow, no hard offsets. */
-.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --sun: 140px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
-.tile--sakura .tile-frame { background: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow); }
+/* Index tile: "Sakura Run" poster. Cream paper with print specks, black ink type, a striped red-pink sun and a blossom branch in the
+   top-right corner (clipped by the card), a black kana sign, vertical kana on the left edge. Hard pink offset shadow. The car spills over. */
+.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --art: 275px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
+.tile--sakura .tile-frame { background-color: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='sk-n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .06 0 0 0 -34 9.4'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23sk-n)'/%3E%3C/svg%3E"); }
 .tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); }
-.tile--sakura .t-rays { position: absolute; inset: 0;
-  background: repeating-conic-gradient(at 100% 0, var(--dl-sakura-weak) 0 7.5deg, transparent 7.5deg 15deg);
-  -webkit-mask-image: linear-gradient(225deg, #000 0, transparent 78%); mask-image: linear-gradient(225deg, #000 0, transparent 78%); }
-.tile--sakura .t-sun { position: absolute; right: calc(var(--sun) * -.36); top: calc(var(--sun) * -.36); width: var(--sun); height: var(--sun);
-  border-radius: 50%; background: var(--dl-accent); box-shadow: 0 0 0 calc(var(--sun) * .05) var(--dl-bg), 0 0 0 calc(var(--sun) * .055) var(--dl-accent); }
+.tile--sakura .t-art { position: absolute; top: 0; right: 0; width: var(--art); height: auto; }
+.tile--sakura .t-sign { position: absolute; right: 16px; top: 36%; padding: 8px 5px; background: var(--dl-ink); color: var(--dl-paper); z-index: 2;
+  writing-mode: vertical-rl; font: 400 .85rem/1 var(--dl-font-brush); letter-spacing: .15em; border: 2px solid var(--dl-ink); box-shadow: 2px 2px 0 var(--dl-accent2); }
+.tile--sakura .t-vert { position: absolute; left: 7px; top: 108px; writing-mode: vertical-rl; font: 400 .62rem/1 var(--dl-font-brush); letter-spacing: .2em; color: var(--dl-ink); opacity: .75; }
 .tile--sakura .tile-text { padding-top: 6px; max-width: none; }
-.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 2.2rem; line-height: 1.05; letter-spacing: .01em; color: var(--dl-primary); }
-.tile--sakura .tile-name::after { content: ""; display: block; width: 46px; height: 4px; margin-top: 10px; border-radius: 2px; background: var(--dl-accent); }
-.tile--sakura .tile-tag { margin-top: 10px; font: 600 .85rem var(--dl-font-tag); letter-spacing: .14em; text-transform: uppercase; color: var(--dl-muted); }
-.tile--sakura .tile-meta { font: 500 .8rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-muted); }
+.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 1.85rem; line-height: 1.05; letter-spacing: 0; color: var(--dl-ink);
+  text-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-tag { position: relative; display: block; width: fit-content; margin-top: 12px; padding: 3px 18px 3px 12px; color: var(--dl-ink);
+  font: italic 800 1.05rem var(--dl-font-tag); letter-spacing: .06em; text-transform: uppercase; transform: skewX(-8deg); z-index: 1; }
+.tile--sakura .tile-tag::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--dl-accent2); clip-path: polygon(0 12%, 100% 0, 96% 100%, 3% 88%); }
+.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
 .tile--sakura .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
-.tile--sakura .tile-open { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: #fff;
-  background: var(--dl-primary); border: 1px solid var(--dl-primary); border-radius: 999px; box-shadow: var(--dl-shadow); }
-.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-accent); color: #fff; }
-.tile--sakura .tile-buy { font: 600 .9rem var(--dl-font-ui); letter-spacing: .06em; text-transform: uppercase; color: var(--dl-primary);
-  background: transparent; border: 1px solid var(--dl-primary); border-radius: 999px; }
-.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-sakura-weak); color: var(--dl-primary-deep); }
+.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-paper);
+  background: var(--dl-ink); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-ink); color: var(--dl-paper); }
+.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink);
+  background: var(--dl-paper); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
+.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
 @media (max-width: 520px) {
-  .tile--sakura { --sun: 112px; }
-  .tile--sakura .tile-name { font-size: 1.55rem; }
-  .tile--sakura .tile-tag { font-size: .75rem; }
+  .tile--sakura { --art: 190px; }
+  .tile--sakura .tile-name { font-size: 1.5rem; }
+  .tile--sakura .tile-tag { font-size: .9rem; }
+  .tile--sakura .t-sign { top: 31%; font-size: .72rem; }
 }

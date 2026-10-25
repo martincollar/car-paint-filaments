@@ -1,16 +1,18 @@
 /* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
-.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --sun: 230px;
+.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --art: 470px;
   --tile: var(--dl-bg); --muted: var(--dl-muted); }
-.theme-sakura .head-card .tile-name { font-size: 4rem; }
-.theme-sakura .head-card .tile-name::after { width: 64px; height: 5px; }
-.theme-sakura .head-card .tile-tag { font-size: 1.05rem; margin-top: 12px; }
+.theme-sakura .head-card .tile-name { font-size: 3.6rem; text-shadow: 4px 4px 0 var(--dl-accent2); }
+.theme-sakura .head-card .tile-tag { font-size: 1.4rem; margin-top: 16px; padding: 4px 24px 4px 16px; }
 .theme-sakura .head-card .tile-meta { margin-top: 14px; line-height: 1.6; }
+.theme-sakura .head-card .t-sign { top: 52%; right: 28px; font-size: 1.05rem; }
+.theme-sakura .head-card .t-vert { display: none; }
 .theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
-  margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--dl-rule); }
+  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-ink); }
 .theme-sakura .head-filters .year-nav { margin: 0; }
-.theme-sakura .head-filters .nav-label { font: 500 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-muted); }
+.theme-sakura .head-filters .nav-label { font: 700 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
 @media (max-width: 600px) {
-  .theme-sakura .head-card { padding: 22px 18px 18px; --sun: 110px; }
-  .theme-sakura .head-card .tile-name { font-size: 2.1rem; }
-  .theme-sakura .head-card .tile-tag { font-size: .85rem; }
+  .theme-sakura .head-card { padding: 22px 18px 18px; --art: 200px; }
+  .theme-sakura .head-card .tile-name { font-size: 1.9rem; max-width: 66%; }
+  .theme-sakura .head-card .tile-tag { font-size: 1rem; }
+  .theme-sakura .head-card .t-sign { display: none; }
 }
