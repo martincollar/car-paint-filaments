@@ -8373,13 +8373,14 @@
     ],
     "neon": false,
     "rgb": [
-      55,
-      58,
-      66
+      24,
+      23,
+      27
     ],
-    "hex": "#373A42",
+    "hex": "#18171B",
     "pixel_count": 130144,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#373A42"
   },
   {
     "slug": "aurapol-pla-3d-filament-black-grey-1-kg-1-75-mm",
@@ -10443,13 +10444,14 @@
     ],
     "neon": false,
     "rgb": [
-      55,
-      58,
-      66
+      24,
+      23,
+      27
     ],
-    "hex": "#373A42",
+    "hex": "#18171B",
     "pixel_count": 130144,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#373A42"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-blue-1-kg-1-75-mm",
