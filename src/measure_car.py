@@ -18,6 +18,8 @@ card_layout.json shape:
         {"cx":185,"cy":87,"name":"Gulf Green","year":1952,"car_code":"Q-115","paint_ref":"41206","poly":false},
         {"cx":100,"cy":624,"name":"Racing Green",...,"hex":"#1E4A30","hex_note":"why"},   (optional manual colour,
          for a chip the scan reproduces badly; the measured value is kept as measured_hex)
+        {"cx":514,"cy":441,"box_width":70,"box_height":24,"name":"Toro Red",...,"combo_only":true},   (optional: a chip that is not a paint row of the
+         car but only a colour of the factory combinations; goes to combo_colors.json, not to car_colors.json)
         ...
       ]
     },
@@ -56,7 +58,7 @@ def main():
     bh = layout.get("box_height", 35)
     url_tpl = layout.get("source_url_template", "")
 
-    records = []
+    records, combo = [], []
     for card in layout["cards"]:
         card_file = card["card_file"]
         year_hint = None
@@ -69,7 +71,7 @@ def main():
         cbh = card.get("box_height", bh)
         for sw in card["swatches"]:
             year = sw.get("year") or year_hint
-            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], cbw, cbh)
+            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], sw.get("box_width", cbw), sw.get("box_height", cbh))
             rec = {
                 "name":        sw["name"],
                 "year":        year,
@@ -88,11 +90,17 @@ def main():
                 rec.update(measured_hex=rec["hex"], hex="#" + h.upper(),
                            rgb=[int(h[i:i+2], 16) for i in (0, 2, 4)],
                            confidence="manual_override", note=sw.get("hex_note", ""))
-            records.append(rec)
+            (combo if sw.get("combo_only") else records).append(rec)
 
     out = data_dir / "car_colors.json"
     config.write_json(out, records)
     print(f"[{args.car}] {len(records)} swatches measured → {out}")
+    cpath = data_dir / "combo_colors.json"
+    if combo:
+        config.write_json(cpath, combo)
+        print(f"[{args.car}] {len(combo)} combination-only chips → {cpath}")
+    elif cpath.exists():
+        cpath.unlink()
 
 if __name__ == "__main__":
     main()

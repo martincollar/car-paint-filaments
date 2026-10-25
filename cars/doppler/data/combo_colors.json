@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Toro Red",
+    "year": 1951,
+    "car_code": "M-64",
+    "paint_ref": "50216",
+    "rgb": [
+      55,
+      15,
+      18
+    ],
+    "hex": "#370F12",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      514,
+      441
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "French Gray",
+    "year": 1951,
+    "car_code": "RR-72",
+    "paint_ref": "30862",
+    "rgb": [
+      151,
+      155,
+      140
+    ],
+    "hex": "#979B8C",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      514,
+      574
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Bali Blue",
+    "year": 1951,
+    "car_code": "J-45",
+    "paint_ref": "10742",
+    "rgb": [
+      94,
+      110,
+      123
+    ],
+    "hex": "#5E6E7B",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg01.jpg",
+    "source_pos": [
+      332,
+      369
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Admiral Blue",
+    "year": 1951,
+    "car_code": "7105-G",
+    "paint_ref": "10435",
+    "rgb": [
+      13,
+      29,
+      54
+    ],
+    "hex": "#0D1D36",
+    "poly": false,
+    "source_url": "https://www.autocolorlibrary.com/pages/1951-hudson",
+    "source_file": "sources/1951-hudson-pg03.jpg",
+    "source_pos": [
+      1095,
+      1382
+    ],
+    "confidence": "measured_from_card"
+  }
+]
