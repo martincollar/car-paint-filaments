@@ -16,6 +16,8 @@ card_layout.json shape:
       "box_width": 60, "box_height": 24,      (optional per-card override)
       "swatches": [
         {"cx":185,"cy":87,"name":"Gulf Green","year":1952,"car_code":"Q-115","paint_ref":"41206","poly":false},
+        {"cx":100,"cy":624,"name":"Racing Green",...,"hex":"#1E4A30","hex_note":"why"},   (optional manual colour,
+         for a chip the scan reproduces badly; the measured value is kept as measured_hex)
         ...
       ]
     },
@@ -68,7 +70,7 @@ def main():
         for sw in card["swatches"]:
             year = sw.get("year") or year_hint
             rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], cbw, cbh)
-            records.append({
+            rec = {
                 "name":        sw["name"],
                 "year":        year,
                 "car_code":    sw.get("car_code", ""),
@@ -80,7 +82,13 @@ def main():
                 "source_file": f"sources/{card_file}",
                 "source_pos":  [sw["cx"], sw["cy"]],
                 "confidence":  "measured_from_card",
-            })
+            }
+            if sw.get("hex"):
+                h = sw["hex"].lstrip("#")
+                rec.update(measured_hex=rec["hex"], hex="#" + h.upper(),
+                           rgb=[int(h[i:i+2], 16) for i in (0, 2, 4)],
+                           confidence="manual_override", note=sw.get("hex_note", ""))
+            records.append(rec)
 
     out = data_dir / "car_colors.json"
     config.write_json(out, records)
