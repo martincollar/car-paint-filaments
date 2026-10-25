@@ -1,0 +1,265 @@
+[
+  {
+    "car_code": "903",
+    "name": "Universal Blue Poly",
+    "card_hex": "#012E5A",
+    "suggested": "#2072A8",
+    "delta_e": 23.4,
+    "note": "1971 car, factory Blue Metallic 903 (Beverly Hills Car Club listing)",
+    "photos": [
+      {
+        "file": "903_blue_metallic.jpg",
+        "url": "https://www.beverlyhillscarclub.com/galleria_images/16179/16179_main_l.jpg",
+        "n": 35637,
+        "median": "#025E90",
+        "lit": "#0C7EBA"
+      },
+      {
+        "file": "903_blue_metallic_2.jpg",
+        "url": "https://www.beverlyhillscarclub.com/galleria_images/16179/16179_p2_l.jpg",
+        "n": 107063,
+        "median": "#3F87C1",
+        "lit": "#569DD3"
+      }
+    ]
+  },
+  {
+    "car_code": "904",
+    "name": "Kilimanjaro White",
+    "card_hex": "#E7E0C6",
+    "suggested": "#D0D3CE",
+    "delta_e": 9.2,
+    "note": "two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)",
+    "photos": [
+      {
+        "file": "904_white_az.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/209/7751/60820329-1972-datsun-240z-thumb.jpg",
+        "n": 32324,
+        "median": "#D3D7CB",
+        "lit": "#E6E9DE"
+      },
+      {
+        "file": "904_white_id.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/132/2819/19494842-1972-datsun-240z-thumb.jpg",
+        "n": 43754,
+        "median": "#CDCFD1",
+        "lit": "#D6D8DA"
+      }
+    ]
+  },
+  {
+    "car_code": "901",
+    "name": "Silver Gray Poly",
+    "card_hex": "#7F878B",
+    "suggested": "#9FADB1",
+    "delta_e": 12.1,
+    "note": "1973 car repainted in factory silver (classiccars.com); grass tints it green, sky blue",
+    "photos": [
+      {
+        "file": "901_silver.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/208/8458/60248672-1973-datsun-240z-thumb.jpg",
+        "n": 47054,
+        "median": "#9FADB1",
+        "lit": "#C2CFD9"
+      }
+    ]
+  },
+  {
+    "car_code": "920",
+    "name": "Safari Gold Poly",
+    "card_hex": "#AC6012",
+    "suggested": "#C6902C",
+    "delta_e": 17.2,
+    "note": "1971 gold car (classiccars.com, Milford CT)",
+    "photos": [
+      {
+        "file": "920_gold.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/141/7118/22858923-1971-datsun-240z-thumb.jpg",
+        "n": 35822,
+        "median": "#C6902C",
+        "lit": "#DCA94F"
+      }
+    ]
+  },
+  {
+    "car_code": "918",
+    "name": "New Sight Orange",
+    "card_hex": "#9D1E09",
+    "suggested": "#D56938",
+    "delta_e": 22.2,
+    "note": "1972 car repainted in factory 918 Orange (classiccars.com / Barrett-Jackson photo)",
+    "photos": [
+      {
+        "file": "918_orange.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/209/8822/60888326-1972-datsun-240z-thumb.jpg",
+        "n": 26029,
+        "median": "#D56938",
+        "lit": "#E17344"
+      }
+    ]
+  },
+  {
+    "car_code": "905",
+    "name": "Monte Carlo Red",
+    "card_hex": "#B70000",
+    "suggested": "#F64445",
+    "delta_e": 19.0,
+    "note": "1971 car, original Monte Carlo Red; strong sun, near clipping (classiccars.com, Apopka FL)",
+    "photos": [
+      {
+        "file": "905_monte_carlo_red.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/192/7615/51152872-1971-datsun-240z-thumb.jpg",
+        "n": 29530,
+        "median": "#F64445",
+        "lit": "#FD4A4C"
+      }
+    ]
+  },
+  {
+    "car_code": "919",
+    "name": "Sunshine Yellow",
+    "card_hex": "#E5CB52",
+    "suggested": "#EEEB82",
+    "delta_e": 9.2,
+    "note": "1970 car, original 919 paint; studio flash, near clipping (Motorcar Classics)",
+    "photos": [
+      {
+        "file": "919_yellow.jpg",
+        "url": "https://www.motorcarclassics.com/galleria_images/674/674_main_l.jpg",
+        "n": 26485,
+        "median": "#E7E286",
+        "lit": "#EFEB8B"
+      },
+      {
+        "file": "919_yellow_2.jpg",
+        "url": "https://www.motorcarclassics.com/galleria_images/674/674_p2_l.jpg",
+        "n": 37450,
+        "median": "#F5F47D",
+        "lit": "#FDFF82"
+      }
+    ]
+  },
+  {
+    "car_code": "110",
+    "name": "Red (Persimmon)",
+    "card_hex": "#AA0101",
+    "suggested": "#EF4422",
+    "delta_e": 18.6,
+    "note": "1972 car, original paint #110 (Motorcar Classics)",
+    "photos": [
+      {
+        "file": "110_red.jpg",
+        "url": "https://www.motorcarclassics.com/galleria_images/680/680_main_l.jpg",
+        "n": 38576,
+        "median": "#ED4323",
+        "lit": "#F4421E"
+      },
+      {
+        "file": "110_red_2.jpg",
+        "url": "https://www.motorcarclassics.com/galleria_images/680/680_p2_l.jpg",
+        "n": 70911,
+        "median": "#F14422",
+        "lit": "#FD4F2E"
+      }
+    ]
+  },
+  {
+    "car_code": "112",
+    "name": "Yellow (Lime)",
+    "card_hex": "#BCC440",
+    "suggested": "#A6B767",
+    "delta_e": 8.7,
+    "note": "1972 car in Lime Yellow 112; studio floor reflections wash it out (ER Classics via classiccars.com)",
+    "photos": [
+      {
+        "file": "112_lime_yellow.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/106/2328/10898023-1972-datsun-240z-thumb.jpg",
+        "n": 46815,
+        "median": "#A6B767",
+        "lit": "#AABE70"
+      }
+    ]
+  },
+  {
+    "car_code": "113",
+    "name": "Avocado Green Poly",
+    "card_hex": "#374512",
+    "suggested": "#62864E",
+    "delta_e": 22.6,
+    "note": "1972 car, original Avocado Green Metallic, some wear (Beverly Hills Car Club)",
+    "photos": [
+      {
+        "file": "113_avocado_green.jpg",
+        "url": "https://www.beverlyhillscarclub.com/galleria_images/19137/19137_main_l.jpg",
+        "n": 23710,
+        "median": "#5D7A45",
+        "lit": "#698C56"
+      },
+      {
+        "file": "113_avocado_green_2.jpg",
+        "url": "https://www.beverlyhillscarclub.com/galleria_images/19137/19137_p2_l.jpg",
+        "n": 51910,
+        "median": "#689356",
+        "lit": "#76A064"
+      }
+    ]
+  },
+  {
+    "car_code": "114",
+    "name": "Bronze Poly",
+    "card_hex": "#4B1804",
+    "suggested": "#312623",
+    "delta_e": 15.3,
+    "note": "1972 car, dark brown metallic (ER Classics via classiccars.com)",
+    "photos": [
+      {
+        "file": "114_brown_metallic.jpg",
+        "url": "https://photos.classiccars.com/cc-temp/listing/142/3824/23201485-1972-datsun-240z-thumb.jpg",
+        "n": 20581,
+        "median": "#312623",
+        "lit": "#3C2F29"
+      }
+    ]
+  },
+  {
+    "car_code": "115",
+    "name": "Blue Poly",
+    "card_hex": "#01265C",
+    "suggested": "#1C4875",
+    "delta_e": 11.1,
+    "note": "1972 car refinished in 115 Blue Metallic (PCarMarket)",
+    "photos": [
+      {
+        "file": "115_blue_1.jpg",
+        "url": "https://assets.basta.app/accounts/005fe31d-e133-4f0b-ac58-2c2cd5f3301c/images/fe5835ce-22f3-4b8f-930d-31bc2956c882?width=1000&quality=75&format=webp",
+        "n": 53364,
+        "median": "#204F7E",
+        "lit": "#396497"
+      },
+      {
+        "file": "115_blue_2.jpg",
+        "url": "https://assets.basta.app/accounts/005fe31d-e133-4f0b-ac58-2c2cd5f3301c/images/cf817d9a-1eef-46fb-a65b-4d156823f83f?width=1000&quality=75&format=webp",
+        "n": 6622,
+        "median": "#19416C",
+        "lit": "#234B76"
+      }
+    ]
+  },
+  {
+    "car_code": "907",
+    "name": "Racing Green",
+    "card_hex": "#010C08",
+    "suggested": "#1F4A31",
+    "delta_e": 22.5,
+    "note": "photo of a real Racing Green 240Z supplied by the user (evening light)",
+    "photos": [
+      {
+        "file": "907_racing_green_user.png",
+        "url": "user-supplied",
+        "n": 12449,
+        "median": "#1F4A31",
+        "lit": "#224E34"
+      }
+    ]
+  }
+]

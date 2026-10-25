@@ -12,3 +12,6 @@ filaments/.cache/
 /cars/*/backup-*/
 /.claude/
 cars/*/sources/cut_work/
+# third-party photos used for colour calibration (manifest with URLs is committed)
+cars/*/sources/photos/
+cars/*/data/calibration_report.html

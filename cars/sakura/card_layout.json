@@ -14,7 +14,9 @@
           "car_code": "904",
           "paint_ref": "8879",
           "poly": false,
-          "card_name": "White"
+          "card_name": "White",
+          "hex": "#D0D3CE",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)"
         },
         {
           "cx": 100,
@@ -24,7 +26,9 @@
           "car_code": "903",
           "paint_ref": "14239",
           "poly": true,
-          "card_name": "Blue Poly"
+          "card_name": "Blue Poly",
+          "hex": "#2072A8",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #012E5A. 1971 car, factory Blue Metallic 903 (Beverly Hills Car Club listing)"
         },
         {
           "cx": 100,
@@ -34,7 +38,9 @@
           "car_code": "920",
           "paint_ref": "23576",
           "poly": true,
-          "card_name": "Gold Poly"
+          "card_name": "Gold Poly",
+          "hex": "#C6902C",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #AC6012. 1971 gold car (classiccars.com, Milford CT)"
         },
         {
           "cx": 100,
@@ -44,7 +50,9 @@
           "car_code": "901",
           "paint_ref": "32910",
           "poly": true,
-          "card_name": "Light Gray Poly"
+          "card_name": "Light Gray Poly",
+          "hex": "#9FADB1",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #7F878B. 1973 car repainted in factory silver (classiccars.com); grass tints it green, sky blue"
         },
         {
           "cx": 100,
@@ -54,7 +62,9 @@
           "car_code": "907",
           "paint_ref": "44403",
           "poly": false,
-          "card_name": "Green"
+          "card_name": "Green",
+          "hex": "#1F4A31",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #010C08. photo of a real Racing Green 240Z supplied by the user (evening light)"
         },
         {
           "cx": 210,
@@ -64,7 +74,9 @@
           "car_code": "918",
           "paint_ref": "60636",
           "poly": false,
-          "card_name": "Orange"
+          "card_name": "Orange",
+          "hex": "#D56938",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #9D1E09. 1972 car repainted in factory 918 Orange (classiccars.com / Barrett-Jackson photo)"
         },
         {
           "cx": 210,
@@ -74,7 +86,9 @@
           "car_code": "905",
           "paint_ref": "71899",
           "poly": false,
-          "card_name": "Red"
+          "card_name": "Red",
+          "hex": "#F64445",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #B70000. 1971 car, original Monte Carlo Red; strong sun, near clipping (classiccars.com, Apopka FL)"
         },
         {
           "cx": 210,
@@ -84,7 +98,48 @@
           "car_code": "919",
           "paint_ref": "81908",
           "poly": false,
-          "card_name": "Yellow"
+          "card_name": "Yellow",
+          "hex": "#EEEB82",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E5CB52. 1970 car, original 919 paint; studio flash, near clipping (Motorcar Classics)"
+        },
+        {
+          "cx": 100,
+          "cy": 304,
+          "name": "Kilimanjaro White",
+          "year": 1972,
+          "car_code": "904",
+          "paint_ref": "8879",
+          "poly": false,
+          "card_name": "White",
+          "carried_over_from": 1971,
+          "hex": "#D0D3CE",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)"
+        },
+        {
+          "cx": 100,
+          "cy": 556,
+          "name": "Silver Gray Poly",
+          "year": 1972,
+          "car_code": "901",
+          "paint_ref": "32910",
+          "poly": true,
+          "card_name": "Light Gray Poly",
+          "carried_over_from": 1971,
+          "hex": "#9FADB1",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #7F878B. 1973 car repainted in factory silver (classiccars.com); grass tints it green, sky blue"
+        },
+        {
+          "cx": 210,
+          "cy": 115,
+          "name": "New Sight Orange",
+          "year": 1972,
+          "car_code": "918",
+          "paint_ref": "60636",
+          "poly": false,
+          "card_name": "Orange",
+          "carried_over_from": 1971,
+          "hex": "#D56938",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #9D1E09. 1972 car repainted in factory 918 Orange (classiccars.com / Barrett-Jackson photo)"
         }
       ]
     },
@@ -99,7 +154,9 @@
           "car_code": "110",
           "paint_ref": "72000",
           "poly": false,
-          "card_name": "Red"
+          "card_name": "Red",
+          "hex": "#EF4422",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #AA0101. 1972 car, original paint #110 (Motorcar Classics)"
         },
         {
           "cx": 445,
@@ -109,7 +166,9 @@
           "car_code": "112",
           "paint_ref": "82040",
           "poly": false,
-          "card_name": "Yellow"
+          "card_name": "Yellow",
+          "hex": "#A6B767",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #BCC440. 1972 car in Lime Yellow 112; studio floor reflections wash it out (ER Classics via classiccars.com)"
         },
         {
           "cx": 330,
@@ -119,7 +178,9 @@
           "car_code": "113",
           "paint_ref": "44681",
           "poly": true,
-          "card_name": "Avocado Green Poly"
+          "card_name": "Avocado Green Poly",
+          "hex": "#62864E",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #374512. 1972 car, original Avocado Green Metallic, some wear (Beverly Hills Car Club)"
         },
         {
           "cx": 215,
@@ -129,7 +190,9 @@
           "car_code": "114",
           "paint_ref": "23750",
           "poly": true,
-          "card_name": "Bronze Poly"
+          "card_name": "Bronze Poly",
+          "hex": "#312623",
+          "hex_note": "Photo-calibrated (1 real-car photo(s)); card scan measured #4B1804. 1972 car, dark brown metallic (ER Classics via classiccars.com)"
         },
         {
           "cx": 110,
@@ -139,7 +202,9 @@
           "car_code": "115",
           "paint_ref": "14467",
           "poly": true,
-          "card_name": "Blue Poly"
+          "card_name": "Blue Poly",
+          "hex": "#1C4875",
+          "hex_note": "Photo-calibrated (2 real-car photo(s)); card scan measured #01265C. 1972 car refinished in 115 Blue Metallic (PCarMarket)"
         }
       ]
     }
