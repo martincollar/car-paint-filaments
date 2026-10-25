@@ -122,7 +122,9 @@ def filament_column(cands, kind, fil_thumbs):
     return "".join(out)
 
 
-HERO_CSS = """
+# Candidate rows: the swatch-and-name link is layout-transparent, so swatch, name and ΔE line sit in the row's grid.
+# Always included: a car without a recolor preview (no hero) needs it as much as one with.
+PICK_CSS = """
 .pick { cursor: pointer; color: inherit; text-decoration: none; }
 a.pick { display: contents; }
 a.pick:hover .swatch, a.pick:focus-visible .swatch { outline: 2px solid var(--teal); outline-offset: 1px; }
@@ -133,6 +135,9 @@ div.filament.primary .finfo { grid-column: 2; grid-row: 1; }
 div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .filament.primary .fname strong, .filament.primary .fline { display: block; }
 .filament.primary .fhex { color: var(--muted); }
+"""
+
+HERO_CSS = """
 /* Layout and states only: colours, borders, shadows, button faces and icons live in themes/<name>/theme.css */
 .hero-preview {
   position: fixed; right: max(12px, env(safe-area-inset-right, 0px)); bottom: 12px; z-index: 20;
@@ -675,7 +680,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     DISPLAY    = meta.get("display", car.title())
     SCRIPT_TAG = meta.get("script_tagline", "")
     BADGE_TOP  = meta.get("badge_label", DISPLAY.upper())
-    theme_name = meta.get("theme", "doppler")
+    theme_name = meta.get("theme", "default")
     theme = load_theme(theme_name)
     fonts_q, motif_html = theme["fonts"], theme["motif"]
     use_card = bool(theme["tokens"])
@@ -776,6 +781,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {ROWS_CSS}
 {REGION_SWITCH_CSS}
 {region_css(regions)}
+{PICK_CSS}
 {hero_css}
 {SPACING_CSS}
 {TIP_CSS}

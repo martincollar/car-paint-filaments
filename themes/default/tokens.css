@@ -1,0 +1,25 @@
+/* Default design language: used by every car that does not pick its own theme (`car.json` without "theme").
+   Cool grey, one graphite accent, one type family. Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = buttons and active states, accent = hover, accent2 = quiet trim. */
+.theme-default, .tile--default {
+  --dl-bg: #eceef0;            /* tile and header card; the studio photo's floor melts into it */
+  --dl-page: #e2e5e8;          /* page ground */
+  --dl-card: #f7f8f9;          /* raised surface */
+  --dl-paper: #ffffff;         /* the table, text on colour */
+  --dl-ink: #1b2127;
+  --dl-outline: #c9ced4;       /* hairline frames and dividers */
+  --dl-primary: #3a4550;       /* graphite */
+  --dl-primary-deep: #232b33;
+  --dl-accent: #1b2127;
+  --dl-accent-deep: #0f1317;
+  --dl-accent2: #8b95a0;
+  --dl-radius: 14px;
+  --dl-border: 1px solid #c9ced4;
+  --dl-shadow: none;
+  --dl-card-shadow: 0 1px 2px rgba(20, 28, 36, .06), 0 12px 28px -18px rgba(20, 28, 36, .32);
+  --dl-font-title: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --dl-font-tag: var(--dl-font-title);
+  --dl-font-ui: var(--dl-font-title);
+  --dl-font-body: var(--dl-font-title);
+  --dl-font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}

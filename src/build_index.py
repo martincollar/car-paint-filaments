@@ -239,7 +239,7 @@ def collect_car(car):
     primary = (meta.get("index") or {}).get("color")
     comb_path = config.car_dir(car) / "combinations.json"
     combinations = json.loads(comb_path.read_text(encoding="utf-8")) if comb_path.exists() else None
-    theme = meta.get("theme") or "doppler"
+    theme = meta.get("theme") or "default"
     return {
         "slug": car,
         "display": meta.get("display") or meta.get("name") or car,

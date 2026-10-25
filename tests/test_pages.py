@@ -67,10 +67,21 @@ class PageBits(unittest.TestCase):
 
     def test_header_is_a_tile_card_with_filters_inside(self):
         page = self._page()
-        self.assertIn("head-card", page); self.assertIn("tile--doppler", page)
+        self.assertIn("head-card", page); self.assertIn("tile--default", page)
         self.assertIn('class="tile-name"', page)
         filters = page.split('class="head-filters"')[1].split("</header>")[0]
         self.assertIn('data-region-btn="int"', filters); self.assertIn('href="#y1952"', filters)
+
+    def test_a_car_without_theme_gets_the_default_theme(self):
+        page = self._page()
+        self.assertIn('class="theme-default"', page); self.assertNotIn("theme-doppler", page)
+
+    def test_a_named_theme_is_still_used(self):
+        page = self._page("doppler")
+        self.assertIn('class="theme-doppler"', page); self.assertIn("tile--doppler", page)
+
+    def test_candidate_row_layout_is_there_without_a_hero(self):
+        self.assertIn("a.pick { display: contents; }", self._page())
 
     def test_header_card_sits_above_the_paper_and_legend_is_in_the_footer(self):
         page = self._page()

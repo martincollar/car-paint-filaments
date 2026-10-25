@@ -1,0 +1,18 @@
+/* Index tile: a flat grey panel. No decoration; the car, the name and one outlined button. */
+.tile--default { --tile: var(--dl-bg); --ink: var(--dl-ink); --muted: #5d6671; --stage-w: 118%; --stage-left: -9%; --stage-bottom: 24px;
+  font-family: var(--dl-font-body); }
+.tile--default .tile-frame { border: var(--dl-border); border-radius: var(--dl-radius); background: var(--dl-bg); box-shadow: var(--dl-card-shadow); }
+.tile--default .tile-text { padding-top: 6px; }
+.tile--default .tile-name { font: 600 2.1rem/1.08 var(--dl-font-title); letter-spacing: -.025em; color: var(--dl-ink); }
+.tile--default .tile-tag { margin: 8px 0 0; font: 400 1rem/1.35 var(--dl-font-tag); color: var(--muted); }
+.tile--default .tile-meta { margin: 6px 0 0; font: 400 .8rem/1.4 var(--dl-font-mono); color: var(--muted); }
+.tile--default .tile-label { font: 400 .76rem var(--dl-font-mono); color: var(--muted); opacity: 1; }
+.tile--default .tile-open, .tile--default .tile-buy { font: 500 .88rem var(--dl-font-ui); padding: 7px 16px; border: 1.5px solid var(--dl-primary);
+  border-radius: 999px; background: transparent; color: var(--dl-primary); box-shadow: none; }
+.tile--default .tile-buy { border-color: var(--dl-outline); color: var(--muted); }
+.tile--default .tile-open:hover, .tile--default .tile-open:focus-visible,
+.tile--default .tile-buy:hover, .tile--default .tile-buy:focus-visible { background: var(--dl-primary); border-color: var(--dl-primary); color: var(--dl-paper); }
+@media (max-width: 520px) {
+  .tile--default .tile-name { font-size: 1.7rem; }
+  .tile--default .tile-tag { font-size: .92rem; }
+}
