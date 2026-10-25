@@ -38,7 +38,7 @@ def paint_block(h):
           <div class="sub">
             {year}
             · {esc(h['car_code'])}
-            · ref. {esc(h['paint_ref'])}
+            {f"· ref. {esc(h['paint_ref'])}" if h.get("paint_ref") else ""}
           </div>
           <div class="hex">{h['hex']} <span class="rgb">RGB {h['rgb'][0]},{h['rgb'][1]},{h['rgb'][2]}</span></div>
         </div>
