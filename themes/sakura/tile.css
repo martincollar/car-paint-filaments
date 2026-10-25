@@ -22,6 +22,8 @@
 .tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink);
   background: var(--dl-paper); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
 .tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
+/* the homepage tile has no sun and one sign; the header card keeps the sun and shows a second sign */
+.tile--sakura:not(.head-card) .t-sun, .tile--sakura:not(.head-card) .t-sign2 { display: none; }
 @media (max-width: 520px) {
   .tile--sakura { --art: 190px; }
   .tile--sakura .tile-name { font-size: 1.5rem; }
