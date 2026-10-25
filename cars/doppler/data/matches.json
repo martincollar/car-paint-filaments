@@ -1431,31 +1431,33 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.97,
-          "slug": "devil-design-pla-zelena-green-1kg",
-          "brand": "Devil Design",
+          "delta_e": 3.38,
+          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
+          "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Zelená (Green)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/devil-design-pla-zelena-green-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/d/d/dda0e984cfe49854918933ad0d1064cb-pla-1-75-green.png",
-          "local_image": "hubacek3d-devil-design-pla-zelena-green-1kg.png",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Devil Design PLA - Zelená (Green) - 1kg",
+          "color_name": "3D Park Side",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            49,
-            86,
-            58
+            63,
+            79,
+            62
           ],
-          "hex": "#31563A",
-          "pixel_count": 181336,
-          "confidence": "measured_dominant_hue"
+          "hex": "#3F4F3E",
+          "pixel_count": 179041,
+          "confidence": "manual_override",
+          "measured_hex": "#233824",
+          "previous_hex": "#233824"
         }
       ],
       "petg": [
@@ -1781,33 +1783,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.15,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.17,
           "slug": "p276",
           "brand": "Filament PM",
@@ -1888,6 +1863,33 @@
           "pixel_count": 615412,
           "confidence": "manual_override",
           "measured_hex": "#D07263"
+        },
+        {
+          "delta_e": 7.38,
+          "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
+          "brand": "LUME",
+          "material": "PLA+",
+          "color_name": "Vojenská zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/3/839bf745d240b9d2205fd8a3f9870a6a-pla-wojskowa-zielen-5903669510956-03.webp",
+          "local_image": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament LUME / PLA+ / VOJENSKÁ ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            39,
+            55,
+            29
+          ],
+          "hex": "#27371D",
+          "pixel_count": 89483,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
@@ -4786,6 +4788,35 @@
       "confidence": "measured_from_card",
       "pla": [
         {
+          "delta_e": 3.6,
+          "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Metallic Green",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f9d80b6b74c026d3a6a008fc34311888-pla-metalic-green-aurapol.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            82,
+            124,
+            113
+          ],
+          "hex": "#527C71",
+          "pixel_count": 229569,
+          "confidence": "manual_override",
+          "measured_hex": "#2A4C45",
+          "previous_hex": "#2A4C45"
+        },
+        {
           "delta_e": 4.68,
           "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-green-1-75-mm-1-kg",
           "brand": "3DLabPrint",
@@ -4891,33 +4922,6 @@
           ],
           "hex": "#6C7670",
           "pixel_count": 99592,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.92,
-          "slug": "pla-extrafill-turquoise-blue-1kg",
-          "brand": "Fillamentum",
-          "material": "PLA",
-          "color_name": "Turquoise Blue",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/pla-extrafill-turquoise-blue-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_TurquoiseBlue_1KG.jpg",
-          "local_image": "fillamentum-pla-pla-extrafill-turquoise-blue-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "PLA Extrafill \"Turquoise Blue\" | 1 KG | 1.75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            45,
-            128,
-            121
-          ],
-          "hex": "#2D8079",
-          "pixel_count": 425799,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -5298,33 +5302,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.85,
-          "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Green",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f9d80b6b74c026d3a6a008fc34311888-pla-metalic-green-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 229569,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.55,
           "slug": "refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg",
           "brand": "Spectrum + The Filament",
@@ -5349,6 +5326,33 @@
           ],
           "hex": "#1D3E31",
           "pixel_count": 384090,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.13,
+          "slug": "filamentree-pla-plus-zelena-moss-green-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Zelená (Moss Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-moss-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/9/993581f3cab8dc6a5ce0ce73035757f6-pla-plus-moss-green-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-zelena-moss-green-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PLA plus - Zelená (Moss Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            38,
+            73,
+            59
+          ],
+          "hex": "#26493B",
+          "pixel_count": 225928,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -6135,33 +6139,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.91,
-          "slug": "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Aqua Relic",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/0/9029412a8d9895dc4191438d93ef8123-aquarelic.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Aqua Relic 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            89,
-            173,
-            164
-          ],
-          "hex": "#59ADA4",
-          "pixel_count": 209155,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.04,
           "slug": "p242",
           "brand": "Filament PM",
@@ -6213,6 +6190,33 @@
           ],
           "hex": "#90C0A9",
           "pixel_count": 449926,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.74,
+          "slug": "filament-3dfox-pla-refill-pastelove-tyrkysova-1-kg-1-75-mm",
+          "brand": "3DFOX",
+          "material": "PLA",
+          "color_name": "Pastelově tyrkysová",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-3dfox-pla-refill-pastelove-tyrkysova-1-kg-1-75-mm/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/6769-1_svetle-modra-nova.png?ff=1&x=1024&y=768&q=85&ts=68357453&sg=161563f2",
+          "local_image": "3dfox-filament-3dfox-pla-refill-pastelove-tyrkysova-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DFOX PLA REFILL pastelově tyrkysová 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            125,
+            171,
+            177
+          ],
+          "hex": "#7DABB1",
+          "pixel_count": 163045,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -6567,33 +6571,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.74,
-          "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Green",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f9d80b6b74c026d3a6a008fc34311888-pla-metalic-green-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 229569,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.63,
           "slug": "easy-pla-alien-green",
           "brand": "Fiberlogy",
@@ -6645,6 +6622,33 @@
           ],
           "hex": "#1A4B49",
           "pixel_count": 395305,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.09,
+          "slug": "filamentree-pla-plus-zelena-moss-green-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Zelená (Moss Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-moss-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/9/993581f3cab8dc6a5ce0ce73035757f6-pla-plus-moss-green-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-zelena-moss-green-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PLA plus - Zelená (Moss Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            38,
+            73,
+            59
+          ],
+          "hex": "#26493B",
+          "pixel_count": 225928,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -8246,33 +8250,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 1.74,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.31,
           "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
           "brand": "LUME",
@@ -8378,6 +8355,33 @@
           ],
           "hex": "#324A2F",
           "pixel_count": 207770,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.31,
+          "slug": "filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
+          "brand": "DEVIL DESIGN",
+          "material": "PLA",
+          "color_name": "Zelená Galaxy",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9bf254ee1772d426fccb0cec18e8b9a5-pla-1-75-galaxy-green.jpg",
+          "local_image": "smart3d-filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament DEVIL DESIGN / PLA / ZELENÁ GALAXY / 1,75 mm / 1 kg.",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            41,
+            67,
+            59
+          ],
+          "hex": "#29433B",
+          "pixel_count": 354624,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -10869,33 +10873,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.31,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.45,
           "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
           "brand": "LUME",
@@ -10974,6 +10951,33 @@
           ],
           "hex": "#29433B",
           "pixel_count": 354624,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.77,
+          "slug": "refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PLA",
+          "color_name": "High speed ZELENÁ MOSS",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/f/7fa1a190d393ebcd62f382469fbada9d-the-filament-moss-green-pla-hs-0.jpg",
+          "local_image": "smart3d-refill-thefilament-pla-high-speed-zelena-moss-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill TheFilament / PLA High speed / ZELENÁ \"MOSS\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            29,
+            62,
+            49
+          ],
+          "hex": "#1D3E31",
+          "pixel_count": 384090,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -11273,33 +11277,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 4.34,
-          "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Green",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f9d80b6b74c026d3a6a008fc34311888-pla-metalic-green-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 229569,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.4,
           "slug": "filament-devil-design-pla-zelena-galaxy-1-75-mm-1-kg",
           "brand": "DEVIL DESIGN",
@@ -11405,6 +11382,33 @@
           ],
           "hex": "#1A4B49",
           "pixel_count": 395305,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.63,
+          "slug": "devil-design-pla-zelena-galaxy-green-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Zelená (Galaxy Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-zelena-galaxy-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/3/639c42a04ad89d822cd90163d10052a2-pla-1-75-galaxy-green.png",
+          "local_image": "hubacek3d-devil-design-pla-zelena-galaxy-green-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Zelená (Galaxy Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            42,
+            80,
+            68
+          ],
+          "hex": "#2A5044",
+          "pixel_count": 177196,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -13545,30 +13549,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.27,
-          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "brand": "AURAPOL",
+          "delta_e": 6.17,
+          "slug": "refill-azurefilm-pla-smaragdova-1-75-mm-1-kg",
+          "brand": "AZUREFILM",
           "material": "PLA",
-          "color_name": "3D Metallic Turquoise",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
+          "color_name": "Smaragdová (refill)",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-smaragdova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/c/5cd5ad7e6ca265b43845197ccd115bfe-3d-printing-high-quality-filament-refill-emerald.webp",
+          "local_image": "refill-azurefilm-pla-smaragdova-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
+          "title": "ReFill AzureFilm / PLA / SMARAGDOVÁ / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            15,
-            74,
-            97
+            41,
+            94,
+            106
           ],
-          "hex": "#0F4A61",
-          "pixel_count": 195349,
+          "hex": "#295E6A",
+          "pixel_count": 490703,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -20444,33 +20448,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.42,
-          "slug": "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Green",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/f/9/f9d80b6b74c026d3a6a008fc34311888-pla-metalic-green-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Green 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            42,
-            76,
-            69
-          ],
-          "hex": "#2A4C45",
-          "pixel_count": 229569,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.68,
           "slug": "filament-3dfox-pla-refill-emerald-green-sa-1-kg-1-75-mm",
           "brand": "3DFOX",
@@ -20495,6 +20472,33 @@
           ],
           "hex": "#114235",
           "pixel_count": 124392,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.86,
+          "slug": "filamentree-pla-plus-zelena-moss-green-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Zelená (Moss Green)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-moss-green-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/9/993581f3cab8dc6a5ce0ce73035757f6-pla-plus-moss-green-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-zelena-moss-green-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PLA plus - Zelená (Moss Green) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            38,
+            73,
+            59
+          ],
+          "hex": "#26493B",
+          "pixel_count": 225928,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -24368,32 +24372,33 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.37,
-          "slug": "bambu-lab-pla-matte-marine-blue",
-          "brand": "Bambu Lab",
+          "delta_e": 3.24,
+          "slug": "aurapol-pla-3d-filament-metallic-blue-1-kg-1-75-mm",
+          "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Matte Marine Blue",
-          "shop": "Bambu Lab",
-          "url": "https://eu.store.bambulab.com/products/pla-matte",
-          "image_url": "https://store.bblcdn.eu/s8/default/c948001284044939b0e8565b687537a8/c3f24581020141108a78632680271e09.media",
-          "local_image": "bambulab-bambu-lab-pla-matte-marine-blue.jpg",
-          "availability": null,
-          "stock": "?",
-          "title": "PLA Matte",
+          "color_name": "3D Metallic Blue",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-blue-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/2/1/210192ef0257a125561d59371da79231-pla-metallic-blue-web.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-blue-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Metallic Blue 1 kg 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
-            "eu",
-            "int"
+            "eu"
           ],
           "neon": false,
           "rgb": [
-            0,
-            120,
-            191
+            65,
+            119,
+            185
           ],
-          "hex": "#0078BF",
-          "pixel_count": 16384,
-          "confidence": "measured_dominant_hue"
+          "hex": "#4177B9",
+          "pixel_count": 259468,
+          "confidence": "manual_override",
+          "measured_hex": "#173782",
+          "previous_hex": "#173782"
         }
       ],
       "petg": [
@@ -26074,6 +26079,35 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 4.77,
+          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Metallic Turquoise",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            56,
+            131,
+            156
+          ],
+          "hex": "#38839C",
+          "pixel_count": 195349,
+          "confidence": "manual_override",
+          "measured_hex": "#0F4A61",
+          "previous_hex": "#0F4A61"
+        },
+        {
           "delta_e": 5.16,
           "slug": "aurapol-pla-3d-filament-machine-blue-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -26086,33 +26120,6 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PLA 3D Filament Machine Blue 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            19,
-            125,
-            132
-          ],
-          "hex": "#137D84",
-          "pixel_count": 235898,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.16,
-          "slug": "aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "HT110 3D Machine Blue",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/0/4058c6cb63876f79914a62f4df224bd6-aurapol-machine-makita-pla-ral5021.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament Machine Blue 1 kg 1,75 mm",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"

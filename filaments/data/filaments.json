@@ -8267,13 +8267,14 @@
     ],
     "neon": false,
     "rgb": [
-      170,
-      157,
-      123
+      172,
+      160,
+      126
     ],
-    "hex": "#AA9D7B",
+    "hex": "#ACA07E",
     "pixel_count": 180162,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#AA9D7B"
   },
   {
     "slug": "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm",
@@ -8293,13 +8294,15 @@
     ],
     "neon": false,
     "rgb": [
-      89,
-      173,
-      164
+      118,
+      194,
+      187
     ],
-    "hex": "#59ADA4",
+    "hex": "#76C2BB",
     "pixel_count": 209155,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#59ADA4",
+    "previous_hex": "#59ADA4"
   },
   {
     "slug": "aurapol-pla-3d-filament-army-highland-green-1-kg-1-75-mm",
@@ -9492,13 +9495,15 @@
     ],
     "neon": false,
     "rgb": [
-      23,
-      55,
-      130
+      65,
+      119,
+      185
     ],
-    "hex": "#173782",
+    "hex": "#4177B9",
     "pixel_count": 259468,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#173782",
+    "previous_hex": "#173782"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-brick-1-kg-1-75-mm",
@@ -9544,13 +9549,15 @@
     ],
     "neon": false,
     "rgb": [
-      42,
-      76,
-      69
+      82,
+      124,
+      113
     ],
-    "hex": "#2A4C45",
+    "hex": "#527C71",
     "pixel_count": 229569,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#2A4C45",
+    "previous_hex": "#2A4C45"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-purple-1-kg-1-75-mm",
@@ -9570,13 +9577,15 @@
     ],
     "neon": false,
     "rgb": [
-      110,
-      39,
-      91
+      171,
+      108,
+      163
     ],
-    "hex": "#6E275B",
+    "hex": "#AB6CA3",
     "pixel_count": 241000,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#6E275B",
+    "previous_hex": "#6E275B"
   },
   {
     "slug": "aurapol-pla-3d-filament-metallic-red-1-kg-1-75-mm",
@@ -9622,13 +9631,15 @@
     ],
     "neon": false,
     "rgb": [
-      15,
-      74,
-      97
+      56,
+      131,
+      156
     ],
-    "hex": "#0F4A61",
+    "hex": "#38839C",
     "pixel_count": 195349,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#0F4A61",
+    "previous_hex": "#0F4A61"
   },
   {
     "slug": "aurapol-pla-3d-filament-mustard-field-1-kg-1-75-mm",
@@ -9700,13 +9711,15 @@
     ],
     "neon": false,
     "rgb": [
-      0,
-      110,
-      89
+      12,
+      122,
+      106
     ],
-    "hex": "#006E59",
+    "hex": "#0C7A6A",
     "pixel_count": 193008,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#006E59",
+    "previous_hex": "#006E59"
   },
   {
     "slug": "aurapol-pla-3d-filament-olive-powder-1-kg-1-75-mm",
@@ -9778,13 +9791,15 @@
     ],
     "neon": false,
     "rgb": [
-      35,
-      56,
-      36
+      63,
+      79,
+      62
     ],
-    "hex": "#233824",
+    "hex": "#3F4F3E",
     "pixel_count": 179041,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#233824",
+    "previous_hex": "#233824"
   },
   {
     "slug": "aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
@@ -9804,13 +9819,15 @@
     ],
     "neon": false,
     "rgb": [
-      156,
-      175,
-      16
+      189,
+      208,
+      63
     ],
-    "hex": "#9CAF10",
+    "hex": "#BDD03F",
     "pixel_count": 291281,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#9CAF10",
+    "previous_hex": "#9CAF10"
   },
   {
     "slug": "aurapol-pla-3d-filament-pink-powder-1-kg-1-75-mm",
@@ -9882,13 +9899,15 @@
     ],
     "neon": false,
     "rgb": [
-      130,
-      37,
-      97
+      169,
+      87,
+      144
     ],
-    "hex": "#822561",
+    "hex": "#A95790",
     "pixel_count": 253825,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#822561",
+    "previous_hex": "#822561"
   },
   {
     "slug": "aurapol-pla-3d-filament-royal-red-1-kg-1-75-mm",
@@ -10012,13 +10031,15 @@
     ],
     "neon": false,
     "rgb": [
-      198,
-      203,
-      204
+      176,
+      174,
+      153
     ],
-    "hex": "#C6CBCC",
+    "hex": "#B0AE99",
     "pixel_count": 35476,
-    "confidence": "measured_dominant_hue"
+    "confidence": "manual_override",
+    "measured_hex": "#C6CBCC",
+    "previous_hex": "#C6CBCC"
   },
   {
     "slug": "aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm",

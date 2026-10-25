@@ -242,5 +242,49 @@
   "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm": {
     "hex": "#8A8B64",
     "note": "Hex = median of a box sampled by hand on the review page. wrong colour, filament is green colour, there is grey aurapol stand"
+  },
+  "aurapol-pla-3d-filament-metallic-green-1-kg-1-75-mm": {
+    "hex": "#527C71",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-metallic-purple-1-kg-1-75-mm": {
+    "hex": "#AB6CA3",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm": {
+    "hex": "#38839C",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-metallic-blue-1-kg-1-75-mm": {
+    "hex": "#4177B9",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm": {
+    "hex": "#3F4F3E",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm": {
+    "hex": "#BDD03F",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-ocean-jade-1-kg-1-75-mm": {
+    "hex": "#0C7A6A",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-purple-pearl-1-kg-1-75-mm": {
+    "hex": "#A95790",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm": {
+    "hex": "#B0AE99",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm": {
+    "hex": "#76C2BB",
+    "note": "Hex = median of a box sampled by hand on the review page."
+  },
+  "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm": {
+    "hex": "#ACA07E",
+    "note": "Hex = median of a box sampled by hand on the review page."
   }
 }

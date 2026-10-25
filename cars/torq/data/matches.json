@@ -3915,33 +3915,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 2.02,
-          "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Antique Pink",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/2/42e5fc28f295143e5c6a34ea7a160d12-antiquepink.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Antique Pink 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            170,
-            157,
-            123
-          ],
-          "hex": "#AA9D7B",
-          "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 2.41,
           "slug": "filament-nebula-pla-bezova-1-kg",
           "brand": "NEBULA",
@@ -4021,6 +3994,34 @@
           "hex": "#AB9B71",
           "pixel_count": 160606,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 2.95,
+          "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Antique Pink",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/2/42e5fc28f295143e5c6a34ea7a160d12-antiquepink.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Antique Pink 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            172,
+            160,
+            126
+          ],
+          "hex": "#ACA07E",
+          "pixel_count": 180162,
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         },
         {
           "delta_e": 3.91,
@@ -12606,33 +12607,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.86,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.09,
           "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
           "brand": "LUME",
@@ -12713,6 +12687,33 @@
           "pixel_count": 615412,
           "confidence": "manual_override",
           "measured_hex": "#D07263"
+        },
+        {
+          "delta_e": 9.25,
+          "slug": "fiber3d-pla-black",
+          "brand": "FIBER3D",
+          "material": "PLA+",
+          "color_name": "Black",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/shop/filament/prasata/black.jpg",
+          "local_image": "na3d-fiber3d-black.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            47,
+            51,
+            48
+          ],
+          "hex": "#2F3330",
+          "pixel_count": 151223,
+          "confidence": "measured_dominant_hue"
         }
       ],
       "petg": [
@@ -13932,33 +13933,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.73,
-          "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Antique Pink",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/2/42e5fc28f295143e5c6a34ea7a160d12-antiquepink.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Antique Pink 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            170,
-            157,
-            123
-          ],
-          "hex": "#AA9D7B",
-          "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.41,
           "slug": "aurapol-pla-3d-filament-body-color-1-kg-1-75-mm",
           "brand": "Aurapol",
@@ -14011,6 +13985,34 @@
           "hex": "#AB9B71",
           "pixel_count": 160606,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.5,
+          "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Antique Pink",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/4/2/42e5fc28f295143e5c6a34ea7a160d12-antiquepink.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Antique Pink 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            172,
+            160,
+            126
+          ],
+          "hex": "#ACA07E",
+          "pixel_count": 180162,
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         }
       ],
       "petg": [
@@ -14365,33 +14367,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.78,
-          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Turquoise",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            15,
-            74,
-            97
-          ],
-          "hex": "#0F4A61",
-          "pixel_count": 195349,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.21,
           "slug": "easy-pla-spectra-blue",
           "brand": "Fiberlogy",
@@ -14443,6 +14418,33 @@
           ],
           "hex": "#154379",
           "pixel_count": 250325,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.9,
+          "slug": "filament-lume-pla-smaragdova-1-75-mm-1-kg",
+          "brand": "LUME",
+          "material": "PLA+",
+          "color_name": "Smaragdová",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-smaragdova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/e/9eb6196d9b9ff680ea94507772843338-pla-szmaragdowy-5903669509073-03.webp",
+          "local_image": "filament-lume-pla-smaragdova-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament LUME / PLA+ / SMARAGDOVÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            10,
+            70,
+            88
+          ],
+          "hex": "#0A4658",
+          "pixel_count": 388359,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -23002,33 +23004,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.16,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.23,
           "slug": "filament-nebula-pla-mysticka-zelena-1-kg",
           "brand": "NEBULA",
@@ -23108,6 +23083,33 @@
           ],
           "hex": "#324A2F",
           "pixel_count": 207770,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.38,
+          "slug": "refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "PLA",
+          "color_name": "Starter VOJENSKÁ ZELENÁ",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/1/e16ecb2a00251434baa55a111d005dc3-refill-pla-starter-army-green-1kg-box-rosa3d.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-vojenska-zelena-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / PLA Starter / VOJENSKÁ ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            62,
+            75,
+            41
+          ],
+          "hex": "#3E4B29",
+          "pixel_count": 491717,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -23407,33 +23409,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 7.54,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.57,
           "slug": "filament-lume-pla-vojenska-zelena-1-75-mm-1-kg",
           "brand": "LUME",
@@ -23540,6 +23515,34 @@
           "hex": "#363930",
           "pixel_count": 98727,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 11.5,
+          "slug": "aurapol-pla-3d-recycled-filament-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Recycled",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-recycled-filament-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/a/9ae097cfdf0224e1f70fb11f738bee88-rpla-aurapol-recycled-1-kg.png",
+          "local_image": "aurapol-aurapol-pla-3d-recycled-filament-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Recycled Filament 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            40,
+            45,
+            44
+          ],
+          "hex": "#282D2C",
+          "pixel_count": 615412,
+          "confidence": "manual_override",
+          "measured_hex": "#D07263"
         }
       ],
       "petg": [
@@ -25190,7 +25193,7 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.32,
+          "delta_e": 4.31,
           "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
@@ -25208,13 +25211,14 @@
           ],
           "neon": false,
           "rgb": [
-            170,
-            157,
-            123
+            172,
+            160,
+            126
           ],
-          "hex": "#AA9D7B",
+          "hex": "#ACA07E",
           "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         },
         {
           "delta_e": 4.39,
@@ -25623,33 +25627,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.44,
-          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Turquoise",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            15,
-            74,
-            97
-          ],
-          "hex": "#0F4A61",
-          "pixel_count": 195349,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.54,
           "slug": "3dpower-basic-pla-modra-blue-1kg",
           "brand": "3DPower",
@@ -25701,6 +25678,33 @@
           ],
           "hex": "#154379",
           "pixel_count": 250325,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.09,
+          "slug": "3dpower-refill-pla-modra-blue-1kg",
+          "brand": "3DPower",
+          "material": "PLA",
+          "color_name": "Modrá (Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-refill-pla-modra-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/2/4/24ad6cfaabcad2f3ccd38161a5ae2491-3dpower-pet-g-blue-1.jpg",
+          "local_image": "hubacek3d-3dpower-refill-pla-modra-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "3DPower Refill PLA - Modrá (Blue) - 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            7,
+            77,
+            137
+          ],
+          "hex": "#074D89",
+          "pixel_count": 267396,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -29084,7 +29088,7 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.3,
+          "delta_e": 4.41,
           "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
@@ -29102,13 +29106,14 @@
           ],
           "neon": false,
           "rgb": [
-            170,
-            157,
-            123
+            172,
+            160,
+            126
           ],
-          "hex": "#AA9D7B",
+          "hex": "#ACA07E",
           "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         },
         {
           "delta_e": 5.06,
@@ -35175,33 +35180,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.66,
-          "slug": "aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Park Side",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-park-side-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/5/b5f8fdd6fe6f115dc5ea64e1ae6f7244-pla-park-side-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-park-side-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            35,
-            56,
-            36
-          ],
-          "hex": "#233824",
-          "pixel_count": 179041,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.68,
           "slug": "prusament-premium-pla-mystic-green-1kg-2",
           "brand": "Prusament",
@@ -35227,6 +35205,33 @@
           ],
           "hex": "#404331",
           "pixel_count": 11395,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.63,
+          "slug": "fiber3d-pla-black",
+          "brand": "FIBER3D",
+          "material": "PLA+",
+          "color_name": "Black",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/2443/fiber3d-pla-filament-175-mm-1kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/shop/filament/prasata/black.jpg",
+          "local_image": "na3d-fiber3d-black.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            47,
+            51,
+            48
+          ],
+          "hex": "#2F3330",
+          "pixel_count": 151223,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -36826,7 +36831,7 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 1.9,
+          "delta_e": 2.05,
           "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
@@ -36844,13 +36849,14 @@
           ],
           "neon": false,
           "rgb": [
-            170,
-            157,
-            123
+            172,
+            160,
+            126
           ],
-          "hex": "#AA9D7B",
+          "hex": "#ACA07E",
           "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         },
         {
           "delta_e": 3.8,
@@ -37745,33 +37751,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.96,
-          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Metallic Turquoise",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            15,
-            74,
-            97
-          ],
-          "hex": "#0F4A61",
-          "pixel_count": 195349,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 6.44,
           "slug": "easy-pla-spectra-blue",
           "brand": "Fiberlogy",
@@ -37823,6 +37802,34 @@
           ],
           "hex": "#154379",
           "pixel_count": 250325,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.91,
+          "slug": "bambu-lab-pla-matte-dark-blue",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Matte Dark Blue",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/pla-matte",
+          "image_url": "https://store.bblcdn.eu/s8/default/1ac27cb3f8584843b25a64cee769437f/353e1dc2aced4c808db0c85d394bbee6.media",
+          "local_image": "bambulab-bambu-lab-pla-matte-dark-blue.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PLA Matte",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "rgb": [
+            4,
+            47,
+            86
+          ],
+          "hex": "#042F56",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -40286,6 +40293,35 @@
       "confidence": "measured_from_card",
       "pla": [
         {
+          "delta_e": 3.09,
+          "slug": "aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "PLA",
+          "color_name": "3D Pick Your Poison",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/e/1/e128e0de4a6864332d0f331b654f6bcc-pla-aurapol-pick-your-poison.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Pick Your Poison 1 kg 1,75 mm",
+          "last_ok": "2026-10-25",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "rgb": [
+            189,
+            208,
+            63
+          ],
+          "hex": "#BDD03F",
+          "pixel_count": 291281,
+          "confidence": "manual_override",
+          "measured_hex": "#9CAF10",
+          "previous_hex": "#9CAF10"
+        },
+        {
           "delta_e": 3.6,
           "slug": "bambu-lab-pla-bright-green",
           "brand": "Bambu Lab",
@@ -40366,33 +40402,6 @@
           ],
           "hex": "#97B62B",
           "pixel_count": 18661,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 5.96,
-          "slug": "aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "PLA",
-          "color_name": "3D Pick Your Poison",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/e/1/e128e0de4a6864332d0f331b654f6bcc-pla-aurapol-pick-your-poison.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-pick-your-poison-1-kg-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Pick Your Poison 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "rgb": [
-            156,
-            175,
-            16
-          ],
-          "hex": "#9CAF10",
-          "pixel_count": 291281,
           "confidence": "measured_dominant_hue"
         },
         {
@@ -47639,7 +47648,7 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 1.92,
+          "delta_e": 2.2,
           "slug": "aurapol-pla-3d-filament-antique-pink-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
@@ -47657,13 +47666,14 @@
           ],
           "neon": false,
           "rgb": [
-            170,
-            157,
-            123
+            172,
+            160,
+            126
           ],
-          "hex": "#AA9D7B",
+          "hex": "#ACA07E",
           "pixel_count": 180162,
-          "confidence": "measured_dominant_hue"
+          "confidence": "manual_override",
+          "measured_hex": "#AA9D7B"
         },
         {
           "delta_e": 3.85,
@@ -48612,30 +48622,30 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.43,
-          "slug": "aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "brand": "AURAPOL",
+          "delta_e": 7.23,
+          "slug": "p75",
+          "brand": "Filament PM",
           "material": "PLA",
-          "color_name": "3D Metallic Turquoise",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/3/a384c065aeea0d71678cad177dd5817e-pla-turquiose-metallic-aurapol.png",
-          "local_image": "aurapol-aurapol-pla-3d-filament-metallic-turquoise-1-kg-1-75-mm.png",
+          "color_name": "Metallic Green",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/pla-metallic-green-1-75-mm-1-kg/p75",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4364-pla-metallic-green-1kg-1-75-1-product-og.jpg?v=642867621",
+          "local_image": "filament_pm-p75.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament Metallic Turquoise 1 kg 1,75 mm",
+          "title": "PLA - Metallic Green",
           "last_ok": "2026-10-25",
           "regions": [
             "eu"
           ],
           "neon": false,
           "rgb": [
-            15,
-            74,
-            97
+            55,
+            66,
+            64
           ],
-          "hex": "#0F4A61",
-          "pixel_count": 195349,
+          "hex": "#374240",
+          "pixel_count": 128997,
           "confidence": "measured_dominant_hue"
         }
       ],
