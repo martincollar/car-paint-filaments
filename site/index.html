@@ -77,7 +77,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
 /* Doppler design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
    Roles: primary = main shape/button colour, accent = second colour (ribbon, hover), accent2 = trim. */
 .theme-doppler, .tile--doppler {
-  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner */
+  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner (header card) */
+  --dl-page: #fefaeb;          /* page background, lighter than the card */
   --dl-card: #fffffb;          /* raised surface */
   --dl-paper: #fffdf4;         /* text on colour, outlines */
   --dl-ink: #1d4a52;
@@ -141,6 +142,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 24px 28px 56px; display: grid
    Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
 .theme-torq, .tile--torq {
   --dl-bg: #dedede;
+  --dl-page: #e8e4dc;
   --dl-card: #ffffff;
   --dl-paper: #ffffff;
   --dl-ink: #111111;

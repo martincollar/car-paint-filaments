@@ -154,7 +154,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 }
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
-.hero-preview.big { width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%); padding: 14px 16px 10px; }
+.hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview.big canvas { cursor: zoom-out; }
@@ -388,6 +388,15 @@ def merge_fonts(*queries):
     return "&".join(fams)
 
 
+def head_offsets(d):
+    """header-card offsets and colours saved by the layout editor (`?edit` on scripts/serve_preview.py)"""
+    def part(f):
+        fp = d / f
+        return fp.read_text() if fp.is_file() else ""
+    mobile = part("headcard-offsets-mobile.css")
+    return part("headcard-offsets.css") + part("headcard-colors.css") + (f"@media (max-width: 520px) {{\n{mobile}}}\n" if mobile.strip() else "")
+
+
 def load_theme(name):
     """dict of css, fonts query, header motif html and, for a theme with tile-style header (tokens.css), tokens,
     headcard css and tile decoration, read from themes/<name>/. Each car picks one in car.json."""
@@ -398,7 +407,8 @@ def load_theme(name):
         fp = d / f
         return fp.read_text().strip() if fp.is_file() else ""
     return {"css": part("theme.css"), "fonts": part("fonts.txt"), "motif": part("motif.html"), "tokens": part("tokens.css"),
-            "headcard": part("headcard.css"), "deco": part("tile.html"), "tile": part("tile.css"), "tile_fonts": part("tile-fonts.txt")}
+            "headcard": part("headcard.css"), "deco": part("tile.html"), "tile": part("tile.css"), "tile_fonts": part("tile-fonts.txt"),
+            "head_offsets": head_offsets(d)}
 
 def region_css(regions):
     """Show only the active region's candidates and counts (body[data-region])."""
@@ -409,9 +419,21 @@ def region_css(regions):
         out.append(f'body[data-region="{r}"] .rcols[data-r="{r}"] {{ display: contents; }}')
     return "\n".join(out)
 
+SPACING_CSS = """
+/* vertical rhythm shared by every theme: paint rows and the candidates in them breathe */
+.row { padding: 30px 0; row-gap: 22px; }
+.col-label { margin-bottom: 12px; }
+.no-match { margin-bottom: 12px; }
+.filament.primary { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); }
+.filament.alt { padding-top: 8px; padding-bottom: 8px; }
+"""
+
 REGION_SWITCH_CSS = """
 .region-switch button { font: inherit; cursor: pointer; }
 """
+
+# `?edit` on scripts/serve_preview.py loads the layout editor for the header card (the file does not exist on Pages)
+EDITOR_LOADER = """<script>if (/[?&]edit\\b/.test(location.search)) { var s = document.createElement('script'); s.src = '/__editor.js'; document.head.appendChild(s); }</script>"""
 
 REGION_JS = """
 <script>
@@ -444,7 +466,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
     use_card = bool(theme["tokens"])
     if use_card:
         fonts_q = merge_fonts(fonts_q, theme["tile_fonts"])
-    theme_css = (TILE_BASE_CSS + theme["tokens"] + theme["css"] + theme["tile"] + theme["headcard"]) if use_card else theme["css"]
+    theme_css = (TILE_BASE_CSS + theme["tokens"] + theme["css"] + theme["tile"] + theme["headcard"] + theme["head_offsets"]) if use_card else theme["css"]
 
     by_name = {r: {m["name"]: m for m in matches_by_region[r]} for r in regions}
     by_year = {}
@@ -536,12 +558,13 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {REGION_SWITCH_CSS}
 {region_css(regions)}
 {hero_css}
+{SPACING_CSS}
 {TIP_CSS}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts_q)}&display=swap">
 </head>
-<body id="top" data-region="{regions[0]}">
+<body id="top" data-region="{regions[0]}" data-car="{esc(car)}">
 
 {header_html if use_card else ""}
 
@@ -576,6 +599,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None):
 {hero_js}
 {tip_js}
 {REGION_JS if len(regions) > 1 else ""}
+{EDITOR_LOADER if use_card else ""}
 {counter_html()}
 </body>
 </html>

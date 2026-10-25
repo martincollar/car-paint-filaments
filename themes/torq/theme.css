@@ -12,7 +12,7 @@
   --ink: #111111;
   --white: #ffffff;
 
-  --bg: #e8e4dc;
+  --bg: var(--dl-page);
   --bg-paper: #ffffff;
   --bg-raised: #ffffff;
   --fg: #16161a;

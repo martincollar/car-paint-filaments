@@ -4,7 +4,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
 REQUIRED = ["bg", "card", "ink", "primary", "primary-deep", "accent", "accent-deep", "paper", "shadow", "radius",
-            "border", "font-title", "font-tag", "font-ui", "font-body"]
+            "border", "page", "font-title", "font-tag", "font-ui", "font-body"]
 CARS = ["doppler", "torq"]
 
 

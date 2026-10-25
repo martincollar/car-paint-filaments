@@ -48,6 +48,45 @@ class PageBits(unittest.TestCase):
         self.assertIn("asa-col", page)
         self.assertIn("no ASA candidate", page)
 
+    def _page(self, theme=None, regions=("eu", "int")):
+        m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
+             "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://x.example/", "pla": [], "petg": [], "asa": []}
+        meta = {"display": "3D Sets Doppler", "script_tagline": "Fins, chrome"}
+        if theme:
+            meta["theme"] = theme
+        return build_html.render("doppler", {r: [m] for r in regions}, {}, [], meta)
+
+    def test_header_is_a_tile_card_with_filters_inside(self):
+        page = self._page()
+        self.assertIn("head-card", page); self.assertIn("tile--doppler", page)
+        self.assertIn('class="tile-name"', page)
+        filters = page.split('class="head-filters"')[1].split("</header>")[0]
+        self.assertIn('data-region-btn="int"', filters); self.assertIn('href="#y1952"', filters)
+
+    def test_header_card_sits_above_the_paper_and_legend_is_in_the_footer(self):
+        page = self._page()
+        self.assertLess(page.index("head-card"), page.index('class="paper"'))
+        self.assertGreater(page.index('class="legend"'), page.index("<footer"))
+
+    def test_counts_per_region_sit_in_the_meta_line(self):
+        meta = self._page().split('class="tile-meta"')[1].split("</p>")[0]
+        self.assertIn('data-r="eu"', meta); self.assertIn('data-r="int"', meta)
+
+    def test_single_region_has_no_switch(self):
+        self.assertNotIn("data-region-btn", self._page(regions=("eu",)))
+
+    def test_theme_without_tokens_keeps_the_old_header(self):
+        page = self._page("sakura")
+        self.assertNotIn("head-card", page); self.assertIn('class="page-head"', page)
+
+    def test_editor_hook_and_car_name_on_card_pages(self):
+        page = self._page()
+        self.assertIn('data-car="doppler"', page); self.assertIn("/__editor.js", page)
+        self.assertNotIn("/__editor.js", self._page("sakura"))
+
+    def test_enlarged_preview_fits_the_screen(self):
+        self.assertIn("100vh", build_html.HERO_CSS.split(".hero-preview.big {")[1].split("}")[0])
+
     def test_render_is_a_full_document_without_card_source(self):
         m = {"name": "Gulf Green", "year": 1952, "car_code": "Q-115", "paint_ref": "41206",
              "hex": "#3A5F4B", "rgb": [58, 95, 75], "source_url": "https://www.autocolorlibrary.com/pages/1952-hudson",

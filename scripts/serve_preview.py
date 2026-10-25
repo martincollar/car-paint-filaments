@@ -2,7 +2,7 @@
 Last-Modified, so Chrome keeps showing an old page after a rebuild), and serves the layout editor.
 
 `<page>?edit` loads scripts/layout_editor.js: drag, resize and recolour the tile's elements, press "Uložit" and the
-changes are written to `themes/<theme>/tile-offsets.css` (all widths) or `tile-offsets-mobile.css` (window <= 520 px)
+changes are written (on a car page: `headcard-*.css`, then that car's page is rebuilt) to `themes/<theme>/tile-offsets.css` (all widths) or `tile-offsets-mobile.css` (window <= 520 px)
 for position and size, and `tile-colors.css` for colours; then `src/build_index.py` is run. Saving is accepted from
 localhost only.
 
@@ -12,7 +12,7 @@ import functools, http.server, json, re, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SELECTOR = re.compile(r"^\.tile--([a-z0-9_-]+) \.[a-z0-9_-]+$")
+SELECTOR = re.compile(r"^\.tile--([a-z0-9_-]+)(\.head-card)? \.[a-z0-9_-]+$")
 PX = r"-?\d+(?:\.\d+)?px"
 TRANSLATE = re.compile(rf"^{PX} {PX}$")
 ORIGIN = {"center", "left center"}
@@ -36,8 +36,13 @@ def write_rules(path, lines):
 
 def save_offsets(data):
     mobile = data.get("scope") == "mobile"
+    car = data.get("car") or ""        # set by the detail page: edits go to headcard-*.css and that car's page is rebuilt
+    head = bool(car)
+    prefix = "headcard-" if head else "tile-"
+    if head and not (re.fullmatch(r"[a-z0-9_-]+", car) and (ROOT / "cars" / car).is_dir()):
+        raise ValueError(f"unknown car {car!r}")
     for theme, rules in data.get("themes", {}).items():
-        path = theme_dir(theme) / ("tile-offsets-mobile.css" if mobile else "tile-offsets.css")
+        path = theme_dir(theme) / (prefix + ("offsets-mobile.css" if mobile else "offsets.css"))
         current = {}
         if path.exists():
             for line in path.read_text(encoding="utf-8").splitlines():
@@ -47,7 +52,7 @@ def save_offsets(data):
         for selector, r in rules.items():
             m = SELECTOR.match(selector)
             scale, rotate = float(r.get("scale", 1)), float(r.get("rotate", 0))
-            if (not m or m.group(1) != theme or not TRANSLATE.match(r["translate"]) or not 0.2 <= scale <= 4
+            if (not m or m.group(1) != theme or bool(m.group(2)) != head or not TRANSLATE.match(r["translate"]) or not 0.2 <= scale <= 4
                     or not -360 <= rotate <= 360 or r.get("origin") not in ORIGIN):
                 raise ValueError(f"bad rule {selector!r}: {r!r}")
             body = f"translate: {r['translate']};"
@@ -65,11 +70,11 @@ def save_offsets(data):
     by_theme = {}
     for c in data.get("colors", []):
         m = SELECTOR.match(c["selector"])
-        if not m or c["prop"] not in ("background", "color") or not re.fullmatch(r"#[0-9a-fA-F]{6}", c["value"]):
+        if not m or bool(m.group(2)) != head or c["prop"] not in ("background", "color") or not re.fullmatch(r"#[0-9a-fA-F]{6}", c["value"]):
             raise ValueError(f"bad colour {c!r}")
         by_theme.setdefault(m.group(1), []).append(c)
     for theme, items in by_theme.items():
-        path = theme_dir(theme) / "tile-colors.css"
+        path = theme_dir(theme) / (prefix + "colors.css")
         current = {}
         if path.exists():
             for line in path.read_text(encoding="utf-8").splitlines():
@@ -79,7 +84,8 @@ def save_offsets(data):
         for c in items:
             current[(c["selector"], c["prop"])] = f"{c['selector']} {{ {c['prop']}: {c['value'].lower()}; }}"
         write_rules(path, list(current.values()))
-    done = subprocess.run([sys.executable, str(ROOT / "src" / "build_index.py")], cwd=ROOT, capture_output=True, text=True)
+    cmd = [sys.executable, str(ROOT / "src" / "build_html.py"), "--car", car] if head else [sys.executable, str(ROOT / "src" / "build_index.py")]
+    done = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True)
     if done.returncode:
         raise RuntimeError(done.stderr.strip()[-400:])
 

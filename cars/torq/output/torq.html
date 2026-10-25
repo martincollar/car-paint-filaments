@@ -21,6 +21,7 @@
    Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
 .theme-torq, .tile--torq {
   --dl-bg: #dedede;
+  --dl-page: #e8e4dc;
   --dl-card: #ffffff;
   --dl-paper: #ffffff;
   --dl-ink: #111111;
@@ -52,7 +53,7 @@
   --ink: #111111;
   --white: #ffffff;
 
-  --bg: #e8e4dc;
+  --bg: var(--dl-page);
   --bg-paper: #ffffff;
   --bg-raised: #ffffff;
   --fg: #16161a;
@@ -392,7 +393,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 }
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
-.hero-preview.big { width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%); padding: 14px 16px 10px; }
+.hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview.big canvas { cursor: zoom-out; }
@@ -400,6 +401,14 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .hero-preview.empty .hp-zoom { display: none; }
 .hero-preview.empty canvas { cursor: default; }
 .hero-preview.closed { display: none; }
+
+
+/* vertical rhythm shared by every theme: paint rows and the candidates in them breathe */
+.row { padding: 30px 0; row-gap: 22px; }
+.col-label { margin-bottom: 12px; }
+.no-match { margin-bottom: 12px; }
+.filament.primary { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); }
+.filament.alt { padding-top: 8px; padding-bottom: 8px; }
 
 
 .neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
@@ -417,7 +426,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&amp;family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&amp;family=Barlow:wght@400;500;600&display=swap">
 </head>
-<body id="top" data-region="eu">
+<body id="top" data-region="eu" data-car="torq">
 
 <header class="page-head tile tile--torq head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-shield" viewBox="0 0 100 122" aria-hidden="true">
   <defs><clipPath id="tile-shield-clip"><path d="M5 6H37Q50 20 63 6H95V68Q95 100 50 116Q5 100 5 68Z"/></clipPath></defs>
@@ -22877,6 +22886,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 })();
 </script>
 
+<script>if (/[?&]edit\b/.test(location.search)) { var s = document.createElement('script'); s.src = '/__editor.js'; document.head.appendChild(s); }</script>
 <script data-goatcounter="https://mkolar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>(function(){var v=document.getElementById('vc');if(!v)return;fetch('https://mkolar.goatcounter.com/counter/TOTAL.json').then(function(r){return r.json()}).then(function(d){v.textContent='Visitor no. '+d.count;v.hidden=false}).catch(function(){});})();</script>
 </body>

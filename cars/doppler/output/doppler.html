@@ -20,7 +20,8 @@
 /* Doppler design language: single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
    Roles: primary = main shape/button colour, accent = second colour (ribbon, hover), accent2 = trim. */
 .theme-doppler, .tile--doppler {
-  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner */
+  --dl-bg: #f5e8bd;            /* cream, like the 3D Sets banner (header card) */
+  --dl-page: #fefaeb;          /* page background, lighter than the card */
   --dl-card: #fffffb;          /* raised surface */
   --dl-paper: #fffdf4;         /* text on colour, outlines */
   --dl-ink: #1d4a52;
@@ -40,7 +41,7 @@
 }/* Doppler theme: mid-century reproduction of a factory color-chip card.
    Cream paper ground, bottle-teal + sunburst-orange + mustard accents, slab serif display. */
 :root {
-  --bg: var(--dl-bg);
+  --bg: var(--dl-page);
   --bg-paper: #fffdf4;
   --bg-raised: var(--dl-card);
   --fg: #2d2217;
@@ -397,7 +398,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 }
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
-.hero-preview.big { width: min(1000px, calc(100vw - 24px)); right: 50%; transform: translateX(50%); padding: 14px 16px 10px; }
+.hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview.big canvas { cursor: zoom-out; }
@@ -405,6 +406,14 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .hero-preview.empty .hp-zoom { display: none; }
 .hero-preview.empty canvas { cursor: default; }
 .hero-preview.closed { display: none; }
+
+
+/* vertical rhythm shared by every theme: paint rows and the candidates in them breathe */
+.row { padding: 30px 0; row-gap: 22px; }
+.col-label { margin-bottom: 12px; }
+.no-match { margin-bottom: 12px; }
+.filament.primary { margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--rule-soft); }
+.filament.alt { padding-top: 8px; padding-bottom: 8px; }
 
 
 .neon-tag { display: inline-block; padding: 0 4px; border: 1px solid var(--rule); color: var(--muted); font: 600 0.62rem/1.4 var(--font-mono); letter-spacing: 0.04em; vertical-align: 1px; }
@@ -422,7 +431,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Yesteryear&amp;family=Pacifico&amp;family=Space+Mono:wght@400;700&amp;family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&amp;family=Lobster+Two:ital,wght@1,700&amp;family=Barlow+Condensed:ital,wght@1,800&amp;family=Oswald:wght@500;600&display=swap">
 </head>
-<body id="top" data-region="eu">
+<body id="top" data-region="eu" data-car="doppler">
 
 <header class="page-head tile tile--doppler head-card"><div class="tile-frame"></div><div class="tile-deco"><svg class="t-star t-star-1" viewBox="-76 -76 152 152" aria-hidden="true"><path d="M0.0 -68.0Q0.6 -1.5 24.0 -24.0Q1.5 -0.6 56.0 -0.0Q1.5 0.6 24.0 24.0Q0.6 1.5 0.0 68.0Q-0.6 1.5 -24.0 24.0Q-1.5 0.6 -56.0 0.0Q-1.5 -0.6 -24.0 -24.0Q-0.6 -1.5 0.0 -68.0Z" fill="#fffdf4" stroke="#fffdf4" stroke-width="9" stroke-linejoin="round"/><path d="M0.0 -68.0Q0.6 -1.5 24.0 -24.0Q1.5 -0.6 56.0 -0.0Q1.5 0.6 24.0 24.0Q0.6 1.5 0.0 68.0Q-0.6 1.5 -24.0 24.0Q-1.5 0.6 -56.0 0.0Q-1.5 -0.6 -24.0 -24.0Q-0.6 -1.5 0.0 -68.0Z" fill="#d2452f"/><circle r="2.6" fill="#fffdf4"/></svg></div><div class="tile-text"><h1 class="tile-name" style="--n:15"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">D</span><span class="ch" style="--i:9" aria-hidden="true">o</span><span class="ch" style="--i:10" aria-hidden="true">p</span><span class="ch" style="--i:11" aria-hidden="true">p</span><span class="ch" style="--i:12" aria-hidden="true">l</span><span class="ch" style="--i:13" aria-hidden="true">e</span><span class="ch" style="--i:14" aria-hidden="true">r</span></span></h1><p class="tile-tag">Fins, Chrome &amp; Flakes</p><p class="tile-meta">1951-1957 · 65 paint colours<br><span data-r="eu">1120 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1957">1957</a><a href="#y1956">1956</a><a href="#y1955">1955</a><a href="#y1954">1954</a><a href="#y1953">1953</a><a href="#y1952">1952</a><a href="#y1951">1951</a></nav></div></header>
 
@@ -12744,6 +12753,7 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 })();
 </script>
 
+<script>if (/[?&]edit\b/.test(location.search)) { var s = document.createElement('script'); s.src = '/__editor.js'; document.head.appendChild(s); }</script>
 <script data-goatcounter="https://mkolar.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <script>(function(){var v=document.getElementById('vc');if(!v)return;fetch('https://mkolar.goatcounter.com/counter/TOTAL.json').then(function(r){return r.json()}).then(function(d){v.textContent='Visitor no. '+d.count;v.hidden=false}).catch(function(){});})();</script>
 </body>

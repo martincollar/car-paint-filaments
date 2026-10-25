@@ -1,7 +1,7 @@
 /* Doppler theme: mid-century reproduction of a factory color-chip card.
    Cream paper ground, bottle-teal + sunburst-orange + mustard accents, slab serif display. */
 :root {
-  --bg: var(--dl-bg);
+  --bg: var(--dl-page);
   --bg-paper: #fffdf4;
   --bg-raised: var(--dl-card);
   --fg: #2d2217;

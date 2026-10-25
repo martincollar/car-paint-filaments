@@ -2,6 +2,7 @@
    Roles: primary = main shape/button colour, accent = second colour (hover), accent2 = trim. */
 .theme-torq, .tile--torq {
   --dl-bg: #dedede;
+  --dl-page: #e8e4dc;
   --dl-card: #ffffff;
   --dl-paper: #ffffff;
   --dl-ink: #111111;

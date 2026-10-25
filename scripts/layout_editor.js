@@ -1,4 +1,4 @@
-/* Layout editor for the root page tiles. Only loaded by `?edit` on the preview server (scripts/serve_preview.py).
+/* Layout editor for the root page tiles and the detail-page header card (`.head-card`, saved to headcard-*.css). Only loaded by `?edit` on the preview server (scripts/serve_preview.py).
    - drag an element, or select it and use the arrow keys (Shift = 10 px)
    - size: + / - keys (Shift = bigger steps), the buttons in the panel, or Alt + mouse wheel
    - rotation: [ and ] keys (Shift = 5 degrees) or the ⟲ ⟳ buttons
@@ -8,7 +8,7 @@
    "Uložit" writes themes/<theme>/tile-offsets.css (or tile-offsets-mobile.css when the window is <= 520 px wide) and
    tile-colors.css, then rebuilds the page. */
 (function () {
-  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-buy, .tile-deco > *';   // any decoration of a theme's tile.html
+  var TARGETS = '.tile-name, .tile-tag, .tile-meta, .tile-label, .tile-open, .tile-buy, .head-filters, .tile-deco > *';   // any decoration of a theme's tile.html
   var sel = null, drag = null, touched = {}, colors = {}, lastTile = null;
 
   var css = document.createElement('style');
@@ -48,9 +48,9 @@
   function rotOf(el) { var v = parseFloat(getComputedStyle(el).rotate); return isNaN(v) ? 0 : v; }
   function theme(el) { var t = el.closest('.tile'); return t && (/tile--([\w-]+)/.exec(t.className) || [])[1]; }
   function key(el) {
-    var cls = Array.prototype.filter.call(el.classList, function (c) { return /^(tile-|t-)/.test(c) && !/^le-/.test(c); })
+    var cls = Array.prototype.filter.call(el.classList, function (c) { return /^(tile-|t-|head-)/.test(c) && !/^le-/.test(c); })
       .sort(function (a, b) { return b.length - a.length; })[0];
-    return '.tile--' + theme(el) + ' .' + cls;
+    return '.tile--' + theme(el) + (el.closest('.head-card') ? '.head-card' : '') + ' .' + cls;
   }
   function hex(c) {
     var m = /(\d+)[, ]+(\d+)[, ]+(\d+)/.exec(c || '');
@@ -144,7 +144,7 @@
   };
   bg.oninput = function () {
     if (!lastTile) { msg.textContent = 'Nejdřív klikni do dlaždice.'; return; }
-    var frame = lastTile.querySelector('.tile-frame'), k = '.tile--' + theme(frame) + ' .tile-frame';
+    var frame = lastTile.querySelector('.tile-frame'), k = '.tile--' + theme(frame) + (lastTile.classList.contains('head-card') ? '.head-card' : '') + ' .tile-frame';
     frame.style.background = bg.value; colors[k + '|background'] = { selector: k, prop: 'background', value: bg.value };
   };
   fg.oninput = function () {
@@ -161,7 +161,7 @@
     if (!Object.keys(themes).length && !cols.length) { msg.textContent = 'Nic jsi neupravil.'; return; }
     msg.textContent = 'Ukládám…';
     fetch('/__save_offsets', { method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ scope: innerWidth <= 520 ? 'mobile' : 'all', themes: themes, colors: cols }) })
+      body: JSON.stringify({ scope: innerWidth <= 520 ? 'mobile' : 'all', car: document.body.dataset.car || '', themes: themes, colors: cols }) })
       .then(function (r) { return r.json(); })
       .then(function (r) { msg.textContent = r.ok ? 'Uloženo a přebuilděno.' : 'Chyba: ' + r.error; })
       .catch(function (err) { msg.textContent = 'Chyba: ' + err; });
