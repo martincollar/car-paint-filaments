@@ -5,11 +5,11 @@
     "car_code": "904",
     "paint_ref": "8879",
     "rgb": [
-      208,
-      211,
-      206
+      255,
+      255,
+      255
     ],
-    "hex": "#D0D3CE",
+    "hex": "#FFFFFF",
     "poly": false,
     "source_url": "https://www.autocolorlibrary.com/pages/1971-datsun",
     "source_file": "sources/1971-datsun-pg01.jpg",
@@ -19,7 +19,7 @@
     ],
     "confidence": "manual_override",
     "measured_hex": "#E7E0C6",
-    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)"
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho) White lift: paint is white, photos/scans read it grey."
   },
   {
     "name": "Universal Blue Poly",
@@ -181,11 +181,11 @@
     "car_code": "904",
     "paint_ref": "8879",
     "rgb": [
-      208,
-      211,
-      206
+      255,
+      255,
+      255
     ],
-    "hex": "#D0D3CE",
+    "hex": "#FFFFFF",
     "poly": false,
     "source_url": "https://www.autocolorlibrary.com/pages/1972-datsun",
     "source_file": "sources/1971-datsun-pg01.jpg",
@@ -195,7 +195,7 @@
     ],
     "confidence": "manual_override",
     "measured_hex": "#E7E0C6",
-    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)"
+    "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho) White lift: paint is white, photos/scans read it grey."
   },
   {
     "name": "Silver Gray Poly",

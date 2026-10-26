@@ -280,8 +280,8 @@
     "note": "Hex = median of a box sampled by hand on the review page."
   },
   "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm": {
-    "hex": "#B0AE99",
-    "note": "Hex = median of a box sampled by hand on the review page."
+    "hex": "#DCD7C5",
+    "note": "Hex = median of the user's sample photo of the printed Skeleton White (hexagon relief, shading included). Deliberately not pure white; the white lift skips 'skeleton' names."
   },
   "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm": {
     "hex": "#76C2BB",

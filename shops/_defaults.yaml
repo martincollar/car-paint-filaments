@@ -33,6 +33,22 @@ exclude_attrs:
 # too dark (shaded sides pull the median down), so plain ΔE flatters them.
 neon_names: '\bfluo\w*|\bneon\w*|\buv\b|\bhighlight\b|\bsuper (yellow|zluta)\b'
 
+# White lift (color_tools.lift_white, applied by measure_filaments.py after the overrides).
+# A filament photo cannot show white lighter than ~#ECECEC (filament_rgb() drops v > 0.93 as studio
+# background) and the winding is shaded, so every white measures grey. For colours NAMED white
+# (color_tools.neutral_class) the first rule whose regex matches the diacritics-folded colour name
+# moves lightness `pull` of the way to `L` (never down) and scales a*/b* by `chroma`. Order matters.
+# A white no rule matches stays as measured. Dial the look here, then re-run measure_filaments.py.
+white_lift:
+  # off-whites by name: not white, leave alone
+  - {match: 'ivory|slonov|bone|cream|krem|vanil|beige|skeleton|spinav|alumin|seda|grey|gray|lilac|ruzov', pull: 0}
+  # traffic / signal white (RAL 9016 / 9003): as white as it gets
+  - {match: 'traffic|signal|dopravn|signaln', L: 100, chroma: 0}
+  # tinted by name: nearly white, a light cast of the tint kept
+  - {match: 'cold|ghost|warm', L: 100, pull: 0.85, chroma: 0.6}
+  # every other white
+  - {match: '.', L: 100, chroma: 0.1}
+
 # Surface finishes. Not banned: every record gets `finish: [..]` (measure_filaments.py) and the
 # page header has one on/off toggle per finish; `filter_defaults` in car.json says which are on
 # for that car (missing = off). Diacritics-folded regexes (hyphens read as spaces) on colour name,

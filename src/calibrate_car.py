@@ -9,6 +9,8 @@ chip can be checked against photos of the real paint. Per car, the manifest
   "entries": [
     {"car_code": "903", "year": 1971,          (year optional: matches every year with that code)
      "note": "1971 car, original paint",
+     "basis": "lit",                              (optional: suggest from the brighter half instead of the median;
+                                                    for white / beige paint, which a photo shades grey)
      "photos": [
        {"file": "903_blue.jpg", "url": "https://...",
         "bbox": [x0, y0, x1, y1],              (body area in photo pixels, no background)
@@ -140,7 +142,8 @@ def main():
                 shots.append((p, r[0], r[1]))
         if not shots:
             continue
-        meds = [rgb(s[1]["median"]) for s in shots]
+        basis = "lit" if e.get("basis") == "lit" else "median"
+        meds = [rgb(s[1][basis]) for s in shots]
         sug = hexs(np.mean(meds, 0) / 255.0)
         de = delta_e_2000(rgb(card), rgb(sug))
         results.append(dict(car_code=e["car_code"], name=c["name"], card_hex=card, suggested=sug,
@@ -153,7 +156,7 @@ def main():
             h += swatch(c["hex"], "picked now")
         for i, (p, r, _) in enumerate(shots, 1):
             h += swatch(r["median"], f"photo {i} median") + swatch(r["lit"], f"photo {i} lit half")
-        h += swatch(sug, "<b>suggested</b>") + '</div><div class="row imgs">'
+        h += swatch(sug, f"<b>suggested</b> ({basis})") + '</div><div class="row imgs">'
         for p, r, prev in shots:
             h += f'<img src="{data_uri(Image.open(pdir / p["file"]))}"><img src="{data_uri(prev)}">'
         h += "</div></section>"

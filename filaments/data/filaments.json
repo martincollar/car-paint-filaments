@@ -1293,13 +1293,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      213,
-      221,
-      226
+      254,
+      255,
+      255
     ],
-    "hex": "#D5DDE2",
+    "hex": "#FEFFFF",
     "pixel_count": 33910,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D5DDE2"
   },
   {
     "slug": "filament-fox-refill-petg-cerna-1-kg",
@@ -1779,13 +1780,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      226,
-      218
+      255,
+      255,
+      254
     ],
-    "hex": "#E4E2DA",
+    "hex": "#FFFFFE",
     "pixel_count": 38239,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E2DA"
   },
   {
     "slug": "filament-fox-refill-pla-cerna-1-kg",
@@ -2672,13 +2674,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      213,
-      221,
-      220
+      255,
+      255,
+      255
     ],
-    "hex": "#D5DDDC",
+    "hex": "#FFFFFF",
     "pixel_count": 41327,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D5DDDC"
   },
   {
     "slug": "filament-nebula-petg-smaragdove-zelena-1-kg",
@@ -3023,13 +3026,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      202,
-      202,
-      197
+      255,
+      255,
+      255
     ],
-    "hex": "#CACAC5",
+    "hex": "#FFFFFF",
     "pixel_count": 40524,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#CACAC5"
   },
   {
     "slug": "filament-nebula-pla-cerna-1-kg",
@@ -4111,13 +4115,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      233,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E5",
+    "hex": "#FFFFFF",
     "pixel_count": 92974,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E5"
   },
   {
     "slug": "filament-prof--lab-petg-cerna-1-kg-1-75-mm",
@@ -4219,14 +4224,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      222,
-      225,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#DEE1DD",
+    "hex": "#FFFFFF",
     "pixel_count": 57523,
     "confidence": "manual_override",
-    "measured_hex": "#E3E5E0"
+    "measured_hex": "#E3E5E0",
+    "pre_lift_hex": "#DEE1DD"
   },
   {
     "slug": "filament-smart-print-petg-cerna-1-kg-1-75-mm",
@@ -4274,13 +4280,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      229,
-      224
+      255,
+      255,
+      255
     ],
-    "hex": "#E3E5E0",
+    "hex": "#FFFFFF",
     "pixel_count": 57523,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E3E5E0"
   },
   {
     "slug": "asa-black-3",
@@ -4718,13 +4725,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      227,
-      227
+      255,
+      255,
+      255
     ],
-    "hex": "#E3E3E3",
+    "hex": "#FFFFFF",
     "pixel_count": 4589,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E3E3E3"
   },
   {
     "slug": "asa-yellow",
@@ -5206,13 +5214,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      221,
-      219,
-      222
+      255,
+      255,
+      255
     ],
-    "hex": "#DDDBDE",
+    "hex": "#FFFFFF",
     "pixel_count": 4366,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DDDBDE"
   },
   {
     "slug": "easy-petg-scarlet",
@@ -5316,13 +5325,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      229,
-      228,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E5E4E2",
+    "hex": "#FFFFFF",
     "pixel_count": 4578,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E5E4E2"
   },
   {
     "slug": "easy-petg-yellow",
@@ -5804,13 +5814,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      226,
-      225
+      255,
+      255,
+      255
     ],
-    "hex": "#E1E2E1",
+    "hex": "#FFFFFF",
     "pixel_count": 4809,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1E2E1"
   },
   {
     "slug": "easy-pla-midnight-sky",
@@ -6481,13 +6492,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      226,
-      225
+      255,
+      255,
+      255
     ],
-    "hex": "#E2E2E1",
+    "hex": "#FFFFFF",
     "pixel_count": 4543,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E2E1"
   },
   {
     "slug": "easy-pla-ruby-red",
@@ -6780,13 +6792,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      226,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E2E2E2",
+    "hex": "#FFFFFF",
     "pixel_count": 4736,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E2E2"
   },
   {
     "slug": "easy-pla-yellow",
@@ -7267,14 +7280,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      240,
-      240,
-      236
+      255,
+      255,
+      255
     ],
-    "hex": "#F0F0EC",
+    "hex": "#FFFFFF",
     "pixel_count": 41599,
     "confidence": "manual_override",
-    "measured_hex": "#DBE0CD"
+    "measured_hex": "#DBE0CD",
+    "pre_lift_hex": "#F0F0EC"
   },
   {
     "slug": "aurapol-asa-3d-filament-sky-blue-850g-1-75-mm",
@@ -7565,14 +7579,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      220,
-      218
+      255,
+      255,
+      255
     ],
-    "hex": "#E3DCDA",
+    "hex": "#FFFFFF",
     "pixel_count": 35245,
     "confidence": "manual_override",
-    "measured_hex": "#E5DEDC"
+    "measured_hex": "#E5DEDC",
+    "pre_lift_hex": "#E3DCDA"
   },
   {
     "slug": "aurapol-pet-g-filament-copper-brown-1-kg-1-75-mm",
@@ -8246,14 +8261,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      206,
-      209,
-      205
+      255,
+      255,
+      255
     ],
-    "hex": "#CED1CD",
+    "hex": "#FFFFFF",
     "pixel_count": 55422,
     "confidence": "manual_override",
-    "measured_hex": "#D3D8D3"
+    "measured_hex": "#D3D8D3",
+    "pre_lift_hex": "#CED1CD"
   },
   {
     "slug": "aurapol-pet-g-recycled-filament-cloud-stone-1-kg-1-75-mm",
@@ -10249,14 +10265,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      176,
-      174,
-      153
+      220,
+      215,
+      197
     ],
-    "hex": "#B0AE99",
+    "hex": "#DCD7C5",
     "pixel_count": 35476,
     "confidence": "manual_override",
-    "measured_hex": "#C6CBCC"
+    "measured_hex": "#C6CBCC",
+    "previous_hex": "#B0AE99"
   },
   {
     "slug": "aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm",
@@ -10277,14 +10294,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      216,
-      214,
-      212
+      255,
+      255,
+      255
     ],
-    "hex": "#D8D6D4",
+    "hex": "#FFFFFF",
     "pixel_count": 42827,
     "confidence": "manual_override",
-    "measured_hex": "#DBDAD7"
+    "measured_hex": "#DBDAD7",
+    "pre_lift_hex": "#D8D6D4"
   },
   {
     "slug": "aurapol-pla-3d-filament-soft-linen-1-kg-1-75-mm",
@@ -10495,14 +10513,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      218,
-      222,
-      207
+      255,
+      255,
+      254
     ],
-    "hex": "#DADECF",
+    "hex": "#FFFFFE",
     "pixel_count": 52198,
     "confidence": "manual_override",
-    "measured_hex": "#E2E6D9"
+    "measured_hex": "#E2E6D9",
+    "pre_lift_hex": "#DADECF"
   },
   {
     "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
@@ -10876,13 +10895,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      230,
-      217
+      255,
+      255,
+      254
     ],
-    "hex": "#E2E6D9",
+    "hex": "#FFFFFE",
     "pixel_count": 52198,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E6D9"
   },
   {
     "slug": "aurapol-pla-ht110-3d-filament-yellow-1-kg-1-75-mm",
@@ -14920,13 +14940,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      231,
-      225
+      255,
+      255,
+      254
     ],
-    "hex": "#E8E7E1",
+    "hex": "#FFFFFE",
     "pixel_count": 5355,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E7E1"
   },
   {
     "slug": "p273",
@@ -15493,13 +15514,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      233,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E7",
+    "hex": "#FFFFFF",
     "pixel_count": 7439,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E7"
   },
   {
     "slug": "p396",
@@ -15682,14 +15704,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      243,
-      242,
-      237
+      255,
+      255,
+      255
     ],
-    "hex": "#F3F2ED",
+    "hex": "#FFFFFF",
     "pixel_count": 5355,
     "confidence": "manual_override",
-    "measured_hex": "#E8E7E1"
+    "measured_hex": "#E8E7E1",
+    "pre_lift_hex": "#F3F2ED"
   },
   {
     "slug": "p62",
@@ -16232,13 +16255,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      217,
-      210,
-      201
+      255,
+      255,
+      254
     ],
-    "hex": "#D9D2C9",
+    "hex": "#FFFFFE",
     "pixel_count": 29647,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D9D2C9"
   },
   {
     "slug": "asa-extrafill-traffic-black",
@@ -16313,14 +16337,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      202,
-      197,
-      184
+      255,
+      255,
+      255
     ],
-    "hex": "#CAC5B8",
+    "hex": "#FFFFFF",
     "pixel_count": 118063,
     "confidence": "manual_override",
-    "measured_hex": "#E8E4E0"
+    "measured_hex": "#E8E4E0",
+    "pre_lift_hex": "#CAC5B8"
   },
   {
     "slug": "asa-extrafill-traffic-yellow",
@@ -16586,14 +16611,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      230,
-      236
+      249,
+      251,
+      255
     ],
-    "hex": "#E2E6EC",
+    "hex": "#F9FBFF",
     "pixel_count": 49543,
     "confidence": "manual_override",
-    "measured_hex": "#DFE4EB"
+    "measured_hex": "#DFE4EB",
+    "pre_lift_hex": "#E2E6EC"
   },
   {
     "slug": "petg-gold-cloud",
@@ -17622,14 +17648,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      210,
-      208,
-      203
+      255,
+      255,
+      255
     ],
-    "hex": "#D2D0CB",
+    "hex": "#FFFFFF",
     "pixel_count": 34935,
     "confidence": "manual_override",
-    "measured_hex": "#D8D6D0"
+    "measured_hex": "#D8D6D0",
+    "pre_lift_hex": "#D2D0CB"
   },
   {
     "slug": "pla-extrafill-traffic-yellow-1kg",
@@ -17988,14 +18015,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      249,
-      248,
-      243
+      255,
+      255,
+      255
     ],
-    "hex": "#F9F8F3",
+    "hex": "#FFFFFF",
     "pixel_count": 26128,
     "confidence": "manual_override",
-    "measured_hex": "#E7E4DD"
+    "measured_hex": "#E7E4DD",
+    "pre_lift_hex": "#F9F8F3"
   },
   {
     "slug": "3dpower-asa-cerna-black-1kg",
@@ -18232,13 +18260,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      232,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E8E7",
+    "hex": "#FFFFFF",
     "pixel_count": 25925,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E8E7"
   },
   {
     "slug": "3dpower-basic-petg-cerna-black-1kg",
@@ -18718,13 +18747,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      231,
-      224
+      255,
+      255,
+      254
     ],
-    "hex": "#E9E7E0",
+    "hex": "#FFFFFE",
     "pixel_count": 23785,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E7E0"
   },
   {
     "slug": "3dpower-basic-pla-cerna-black-1kg",
@@ -19690,13 +19720,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      224,
-      224,
-      219
+      255,
+      255,
+      255
     ],
-    "hex": "#E0E0DB",
+    "hex": "#FFFFFF",
     "pixel_count": 42625,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E0E0DB"
   },
   {
     "slug": "3dpower-select-petg-cerna-black-1kg",
@@ -19906,13 +19937,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      224,
-      224,
-      219
+      255,
+      255,
+      255
     ],
-    "hex": "#E0E0DB",
+    "hex": "#FFFFFF",
     "pixel_count": 42605,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E0E0DB"
   },
   {
     "slug": "3dpower-select-pla-cerna-black-1kg",
@@ -20393,13 +20425,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      223,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#E1DFDD",
+    "hex": "#FFFFFF",
     "pixel_count": 65156,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1DFDD"
   },
   {
     "slug": "devil-design-petg-cerna-black-1kg",
@@ -21479,13 +21512,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      229,
-      224,
-      215
+      255,
+      255,
+      254
     ],
-    "hex": "#E5E0D7",
+    "hex": "#FFFFFE",
     "pixel_count": 63013,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E5E0D7"
   },
   {
     "slug": "devil-design-pla-cerna-black-1kg",
@@ -22760,13 +22794,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      219,
-      220,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#DBDCDD",
+    "hex": "#FFFFFF",
     "pixel_count": 92503,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DBDCDD"
   },
   {
     "slug": "filamentree-petg-cerna-jet-black-1kg",
@@ -23273,13 +23308,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      219,
-      220,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#DBDCDD",
+    "hex": "#FFFFFF",
     "pixel_count": 92503,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DBDCDD"
   },
   {
     "slug": "filamentree-pla-plus-cerna-jet-black-1kg",
@@ -24220,13 +24256,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      199,
-      196,
-      187
+      255,
+      255,
+      254
     ],
-    "hex": "#C7C4BB",
+    "hex": "#FFFFFE",
     "pixel_count": 6953,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#C7C4BB"
   },
   {
     "slug": "fiber3d-pla-black",
@@ -24519,13 +24556,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      222,
-      222,
-      222
+      255,
+      255,
+      255
     ],
-    "hex": "#DEDEDE",
+    "hex": "#FFFFFF",
     "pixel_count": 23156,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DEDEDE"
   },
   {
     "slug": "fiber3d-pla-white-(studio)",
@@ -24546,13 +24584,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      197,
-      195,
-      193
+      255,
+      255,
+      255
     ],
-    "hex": "#C5C3C1",
+    "hex": "#FFFFFF",
     "pixel_count": 219241,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#C5C3C1"
   },
   {
     "slug": "fiber3d-pla-yellow",
@@ -24904,13 +24943,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      224,
-      227,
-      225
+      255,
+      255,
+      255
     ],
-    "hex": "#E0E3E1",
+    "hex": "#FFFFFF",
     "pixel_count": 207488,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E0E3E1"
   },
   {
     "slug": "overture-asa-filament-1-75mm-yellow",
@@ -25309,13 +25349,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      231,
-      232,
-      224
+      255,
+      255,
+      254
     ],
-    "hex": "#E7E8E0",
+    "hex": "#FFFFFE",
     "pixel_count": 326532,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7E8E0"
   },
   {
     "slug": "overture-easy-pla-3d-printer-filament-easy-yellow",
@@ -25743,13 +25784,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      233,
-      232
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E8",
+    "hex": "#FFFFFF",
     "pixel_count": 571362,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E8"
   },
   {
     "slug": "overture-high-speed-petg-refill-3d-printer-filament-1-75mm-yellow",
@@ -26553,13 +26595,14 @@
       "matt"
     ],
     "rgb": [
-      231,
-      232,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E7E8E4",
+    "hex": "#FFFFFF",
     "pixel_count": 401782,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7E8E4"
   },
   {
     "slug": "overture-matte-pla-yellow",
@@ -26771,13 +26814,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      222,
-      224,
-      226
+      249,
+      250,
+      252
     ],
-    "hex": "#DEE0E2",
+    "hex": "#F9FAFC",
     "pixel_count": 333387,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DEE0E2"
   },
   {
     "slug": "overture-pla-fresh-red",
@@ -27205,13 +27249,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      218,
-      220,
-      229
+      248,
+      250,
+      255
     ],
-    "hex": "#DADCE5",
+    "hex": "#F8FAFF",
     "pixel_count": 293106,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DADCE5"
   },
   {
     "slug": "overture-pla-plus-3d-printer-filament-1-75mm-fresh-red",
@@ -27502,13 +27547,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      223,
-      218
+      255,
+      255,
+      254
     ],
-    "hex": "#E2DFDA",
+    "hex": "#FFFFFE",
     "pixel_count": 340748,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2DFDA"
   },
   {
     "slug": "overture-pla-plus-3d-printer-filament-1-75mm-yellow",
@@ -27749,13 +27795,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      224,
-      222
+      255,
+      255,
+      255
     ],
-    "hex": "#E1E0DE",
+    "hex": "#FFFFFF",
     "pixel_count": 310935,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1E0DE"
   },
   {
     "slug": "overture-pla-yellow",
@@ -28073,13 +28120,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      231,
-      231,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E7E7E4",
+    "hex": "#FFFFFF",
     "pixel_count": 465273,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7E7E4"
   },
   {
     "slug": "overture-super-pla-3d-printer-filament-1-75mm-yellow",
@@ -28613,13 +28661,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      222,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#E2DEDD",
+    "hex": "#FFFFFF",
     "pixel_count": 402348,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2DEDD"
   },
   {
     "slug": "asa-yellow",
@@ -28959,13 +29008,14 @@
       "matt"
     ],
     "rgb": [
-      220,
-      223,
-      220
+      255,
+      255,
+      255
     ],
-    "hex": "#DCDFDC",
+    "hex": "#FFFFFF",
     "pixel_count": 33883,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DCDFDC"
   },
   {
     "slug": "matte-pla-matte-earth-brown",
@@ -29539,13 +29589,14 @@
       "matt"
     ],
     "rgb": [
-      215,
-      216,
-      212
+      255,
+      255,
+      255
     ],
-    "hex": "#D7D8D4",
+    "hex": "#FFFFFF",
     "pixel_count": 31595,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D7D8D4"
   },
   {
     "slug": "matte-pla-matte-pastel-banana",
@@ -30615,13 +30666,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      219,
-      222,
-      236
+      248,
+      250,
+      255
     ],
-    "hex": "#DBDEEC",
+    "hex": "#F8FAFF",
     "pixel_count": 99015,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DBDEEC"
   },
   {
     "slug": "panchroma-pla-cream",
@@ -31128,13 +31180,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      233,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E7",
+    "hex": "#FFFFFF",
     "pixel_count": 153994,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E7"
   },
   {
     "slug": "panchroma-pla-wine-red",
@@ -31811,13 +31864,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      233,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E9E7",
+    "hex": "#FFFFFF",
     "pixel_count": 156290,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E9E7"
   },
   {
     "slug": "petg-yellow",
@@ -32027,13 +32081,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      208,
-      214,
-      224
+      245,
+      249,
+      255
     ],
-    "hex": "#D0D6E0",
+    "hex": "#F5F9FF",
     "pixel_count": 35943,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D0D6E0"
   },
   {
     "slug": "polylite-pla-cream",
@@ -32540,13 +32595,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      227,
-      221
+      255,
+      255,
+      254
     ],
-    "hex": "#E9E3DD",
+    "hex": "#FFFFFE",
     "pixel_count": 133038,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E3DD"
   },
   {
     "slug": "polylite-pla-wine-red",
@@ -32783,13 +32839,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      227,
-      232
+      251,
+      251,
+      254
     ],
-    "hex": "#E4E3E8",
+    "hex": "#FBFBFE",
     "pixel_count": 230160,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E3E8"
   },
   {
     "slug": "polymaker-pla-pro-dark-grey",
@@ -33449,13 +33506,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      230,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E6E2",
+    "hex": "#FFFFFF",
     "pixel_count": 198528,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E6E2"
   },
   {
     "slug": "polymaker-pla-pro-yellow",
@@ -33737,13 +33795,14 @@
       "satin"
     ],
     "rgb": [
-      232,
-      233,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E9E5",
+    "hex": "#FFFFFF",
     "pixel_count": 13343,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E9E5"
   },
   {
     "slug": "satin-pla-satin-yellow",
@@ -33962,13 +34021,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      231,
-      231,
-      230
+      255,
+      255,
+      255
     ],
-    "hex": "#E7E7E6",
+    "hex": "#FFFFFF",
     "pixel_count": 235591,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7E7E6"
   },
   {
     "slug": "prusament-petg-anthracite-grey",
@@ -34300,14 +34360,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      216,
-      214,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#D8D6DD",
+    "hex": "#FFFFFF",
     "pixel_count": 3298,
     "confidence": "manual_override",
-    "measured_hex": "#E9E7EB"
+    "measured_hex": "#E9E7EB",
+    "pre_lift_hex": "#D8D6DD"
   },
   {
     "slug": "prusament-petg-sky-blue-1kg-nfc",
@@ -35072,14 +35133,15 @@
       "glitter"
     ],
     "rgb": [
-      215,
-      216,
-      210
+      255,
+      255,
+      254
     ],
-    "hex": "#D7D8D2",
+    "hex": "#FFFFFE",
     "pixel_count": 7951,
     "confidence": "manual_override",
-    "measured_hex": "#E0E1DD"
+    "measured_hex": "#E0E1DD",
+    "pre_lift_hex": "#D7D8D2"
   },
   {
     "slug": "prusament-pla-pineapple-yellow",
@@ -35157,13 +35219,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      226,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E1E2E4",
+    "hex": "#FFFFFF",
     "pixel_count": 7595,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1E2E4"
   },
   {
     "slug": "prusament-pla-prusa-galaxy-black",
@@ -36034,13 +36097,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      226,
-      218
+      255,
+      255,
+      254
     ],
-    "hex": "#E2E2DA",
+    "hex": "#FFFFFE",
     "pixel_count": 52663,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E2DA"
   },
   {
     "slug": "filament-azurefilm-asa-cerna-1-75-mm-1-kg",
@@ -37367,13 +37431,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      222,
-      218,
-      223
+      255,
+      255,
+      255
     ],
-    "hex": "#DEDADF",
+    "hex": "#FFFFFF",
     "pixel_count": 135893,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DEDADF"
   },
   {
     "slug": "filament-bambu-lab-petg-hf-black-1-75-mm-1-kg",
@@ -37772,13 +37837,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      234,
-      234
+      255,
+      255,
+      255
     ],
-    "hex": "#E9EAEA",
+    "hex": "#FFFFFF",
     "pixel_count": 7140,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9EAEA"
   },
   {
     "slug": "filament-colorfil-pla-bordo-1-75-mm-1-kg",
@@ -38339,13 +38405,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      223,
-      220
+      255,
+      255,
+      255
     ],
-    "hex": "#E1DFDC",
+    "hex": "#FFFFFF",
     "pixel_count": 166736,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1DFDC"
   },
   {
     "slug": "filament-devil-design-petg-cerna-1-75-mm-1-kg",
@@ -39344,13 +39411,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      223,
-      213
+      255,
+      255,
+      254
     ],
-    "hex": "#E4DFD5",
+    "hex": "#FFFFFE",
     "pixel_count": 155198,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4DFD5"
   },
   {
     "slug": "filament-devil-design-pla-cerna-1-75-mm-1-kg",
@@ -40601,14 +40669,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      217,
-      219,
-      223
+      255,
+      255,
+      255
     ],
-    "hex": "#D9DBDF",
+    "hex": "#FFFFFF",
     "pixel_count": 54352,
     "confidence": "manual_override",
-    "measured_hex": "#E3E5E8"
+    "measured_hex": "#E3E5E8",
+    "pre_lift_hex": "#D9DBDF"
   },
   {
     "slug": "filament-lume-petg-burgundy-1-75-mm-1-kg",
@@ -41310,14 +41379,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      220,
-      220,
-      214
+      255,
+      255,
+      254
     ],
-    "hex": "#DCDCD6",
+    "hex": "#FFFFFE",
     "pixel_count": 49550,
     "confidence": "manual_override",
-    "measured_hex": "#E5E5E0"
+    "measured_hex": "#E5E5E0",
+    "pre_lift_hex": "#DCDCD6"
   },
   {
     "slug": "filament-lume-pla-burgundy-1-75-mm-1-kg",
@@ -41990,13 +42060,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      237,
-      236,
-      224
+      255,
+      255,
+      254
     ],
-    "hex": "#EDECE0",
+    "hex": "#FFFFFE",
     "pixel_count": 3674,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EDECE0"
   },
   {
     "slug": "filament-nebula-asa-301-cerna-1-75-mm-1-kg",
@@ -42206,13 +42277,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      231,
-      234,
-      234
+      255,
+      255,
+      255
     ],
-    "hex": "#E7EAEA",
+    "hex": "#FFFFFF",
     "pixel_count": 13167,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7EAEA"
   },
   {
     "slug": "filament-nebula-petg-broskvove-oranzova-1-75-mm-1-kg",
@@ -42532,13 +42604,14 @@
       "glitter"
     ],
     "rgb": [
-      228,
-      232,
-      234
+      255,
+      255,
+      255
     ],
-    "hex": "#E4E8EA",
+    "hex": "#FFFFFF",
     "pixel_count": 36920,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E8EA"
   },
   {
     "slug": "filament-nebula-petg-pudinkove-hneda-1-75-mm-1-kg",
@@ -42939,13 +43012,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      228,
-      224
+      255,
+      255,
+      255
     ],
-    "hex": "#E2E4E0",
+    "hex": "#FFFFFF",
     "pixel_count": 78529,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E4E0"
   },
   {
     "slug": "filament-nebula-pla-607-cerna-1-75-mm-1-kg",
@@ -43209,13 +43283,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      226,
-      228,
-      224
+      255,
+      255,
+      255
     ],
-    "hex": "#E2E4E0",
+    "hex": "#FFFFFF",
     "pixel_count": 78529,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E2E4E0"
   },
   {
     "slug": "filament-nebula-pla-609hd-cerna-1-75-mm-1-kg",
@@ -43560,13 +43635,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      217,
-      219,
-      209
+      255,
+      255,
+      254
     ],
-    "hex": "#D9DBD1",
+    "hex": "#FFFFFE",
     "pixel_count": 66348,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#D9DBD1"
   },
   {
     "slug": "filament-nebula-pla-cerna-starlight-1-75-mm-1-kg",
@@ -44868,13 +44944,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      227,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E3E3E2",
+    "hex": "#FFFFFF",
     "pixel_count": 41417,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E3E3E2"
   },
   {
     "slug": "filament-onefil3d-petg-cerna-1-75mm-1-kg",
@@ -44949,13 +45026,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      227,
-      223
+      255,
+      255,
+      255
     ],
-    "hex": "#E3E3DF",
+    "hex": "#FFFFFF",
     "pixel_count": 205383,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E3E3DF"
   },
   {
     "slug": "filament-professional-lab-asa-cerna-1-75-mm-1-kg",
@@ -45111,13 +45189,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      231,
-      224
+      255,
+      255,
+      254
     ],
-    "hex": "#E9E7E0",
+    "hex": "#FFFFFE",
     "pixel_count": 158293,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E7E0"
   },
   {
     "slug": "filament-professional-lab-hs-pla-cerna-1-75-mm-1-kg",
@@ -45354,13 +45433,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      233,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E4",
+    "hex": "#FFFFFF",
     "pixel_count": 159948,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E4"
   },
   {
     "slug": "filament-professional-lab-petg-cerna-1-75-mm-1-kg",
@@ -45813,13 +45893,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      236,
-      236,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#ECECE9",
+    "hex": "#FFFFFF",
     "pixel_count": 83929,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#ECECE9"
   },
   {
     "slug": "filament-professional-lab-pla-cerna-1-75-mm-1-kg",
@@ -45950,13 +46031,14 @@
       "matt"
     ],
     "rgb": [
-      233,
-      233,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E9E7",
+    "hex": "#FFFFFF",
     "pixel_count": 199866,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E9E7"
   },
   {
     "slug": "filament-professional-lab-pla-matte-cerna-1-75-mm-1-kg",
@@ -46093,13 +46175,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      232,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E8E4",
+    "hex": "#FFFFFF",
     "pixel_count": 199768,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E8E4"
   },
   {
     "slug": "filament-professional-lab-pla-meta-cerna-1-75-mm-1-kg",
@@ -46714,13 +46797,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      224,
-      219
+      255,
+      255,
+      254
     ],
-    "hex": "#E4E0DB",
+    "hex": "#FFFFFE",
     "pixel_count": 89136,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E0DB"
   },
   {
     "slug": "filament-spectrum-asa-275-cerna-deep-1-75-mm-1-kg",
@@ -47127,13 +47211,14 @@
       "matt"
     ],
     "rgb": [
-      232,
-      232,
-      225
+      255,
+      255,
+      254
     ],
-    "hex": "#E8E8E1",
+    "hex": "#FFFFFE",
     "pixel_count": 66912,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E8E1"
   },
   {
     "slug": "filament-spectrum-petg-matt-cerna-deep-1-75-mm-1-kg",
@@ -47836,13 +47921,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      220,
-      220,
-      220
+      255,
+      255,
+      255
     ],
-    "hex": "#DCDCDC",
+    "hex": "#FFFFFF",
     "pixel_count": 228308,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DCDCDC"
   },
   {
     "slug": "refill-azurefilm-petg-cerna-1-75-mm-1-kg",
@@ -48538,13 +48624,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      219,
-      219,
-      219
+      255,
+      255,
+      255
     ],
-    "hex": "#DBDBDB",
+    "hex": "#FFFFFF",
     "pixel_count": 236327,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DBDBDB"
   },
   {
     "slug": "refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg",
@@ -48565,13 +48652,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      231,
-      229,
-      217
+      255,
+      255,
+      254
     ],
-    "hex": "#E7E5D9",
+    "hex": "#FFFFFE",
     "pixel_count": 168090,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E7E5D9"
   },
   {
     "slug": "refill-azurefilm-pla-bila-litho-1-75-mm-1-kg",
@@ -48592,13 +48680,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      225,
-      222,
-      216
+      255,
+      255,
+      254
     ],
-    "hex": "#E1DED8",
+    "hex": "#FFFFFE",
     "pixel_count": 179319,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E1DED8"
   },
   {
     "slug": "refill-azurefilm-pla-cerna-1-75-mm-1-kg",
@@ -48812,13 +48901,14 @@
       "matt"
     ],
     "rgb": [
-      221,
-      221,
-      221
+      255,
+      255,
+      255
     ],
-    "hex": "#DDDDDD",
+    "hex": "#FFFFFF",
     "pixel_count": 183772,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DDDDDD"
   },
   {
     "slug": "refill-azurefilm-pla-matte-hs-bordo-1-75-mm-1-kg",
@@ -49617,13 +49707,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      234,
-      231,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#EAE7E5",
+    "hex": "#FFFFFF",
     "pixel_count": 92987,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAE7E5"
   },
   {
     "slug": "refill-bambu-lab-petg-basic-cerna-1-75-mm-1-kg",
@@ -49995,13 +50086,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      222,
-      218,
-      223
+      255,
+      255,
+      255
     ],
-    "hex": "#DEDADF",
+    "hex": "#FFFFFF",
     "pixel_count": 135893,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DEDADF"
   },
   {
     "slug": "refill-bambu-lab-petg-hf-yellow-1-75-mm-1-kg",
@@ -50481,13 +50573,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      229,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E9E5E2",
+    "hex": "#FFFFFF",
     "pixel_count": 108936,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9E5E2"
   },
   {
     "slug": "refill-bambu-lab-pla-basic-light-gray-1-75-mm-1-kg",
@@ -50859,13 +50952,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      227,
-      234,
-      233
+      254,
+      255,
+      255
     ],
-    "hex": "#E3EAE9",
+    "hex": "#FEFFFF",
     "pixel_count": 14615,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E3EAE9"
   },
   {
     "slug": "refill-onefil3d-petg-cerna-1-75mm-10-x-1-kg",
@@ -50913,14 +51007,15 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      248,
-      249,
-      244
+      255,
+      255,
+      255
     ],
-    "hex": "#F8F9F4",
+    "hex": "#FFFFFF",
     "pixel_count": 14106,
     "confidence": "manual_override",
-    "measured_hex": "#E8E8E2"
+    "measured_hex": "#E8E8E2",
+    "pre_lift_hex": "#F8F9F4"
   },
   {
     "slug": "refill-rosa3d-asa-cerna-1-75-mm-1-kg",
@@ -51216,13 +51311,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      234,
-      222
+      255,
+      255,
+      254
     ],
-    "hex": "#E8EADE",
+    "hex": "#FFFFFE",
     "pixel_count": 27773,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8EADE"
   },
   {
     "slug": "refill-rosa3d-lw-pla-aero-neonove-oranzova-1-75mm-1-kg",
@@ -51297,13 +51393,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      234,
-      235,
-      227
+      255,
+      255,
+      254
     ],
-    "hex": "#EAEBE3",
+    "hex": "#FFFFFE",
     "pixel_count": 16993,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAEBE3"
   },
   {
     "slug": "refill-rosa3d-petg-ht-cerna-1-75-mm-1-kg",
@@ -51378,13 +51475,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      233,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E4E9E9",
+    "hex": "#FFFFFF",
     "pixel_count": 50861,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E9E9"
   },
   {
     "slug": "refill-rosa3d-petg-standard-hs-cerna-1-75-mm-1-kg",
@@ -52700,13 +52798,14 @@
       "matt"
     ],
     "rgb": [
-      234,
-      232,
-      227
+      255,
+      255,
+      254
     ],
-    "hex": "#EAE8E3",
+    "hex": "#FFFFFE",
     "pixel_count": 48464,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAE8E3"
   },
   {
     "slug": "refill-rosa3d-pla-speed-matt-cerna-1-75-mm-1-kg",
@@ -52930,13 +53029,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      224,
-      232,
-      230
+      254,
+      255,
+      255
     ],
-    "hex": "#E0E8E6",
+    "hex": "#FEFFFF",
     "pixel_count": 80640,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E0E8E6"
   },
   {
     "slug": "refill-rosa3d-pla-starter-bila-lithophane-1-75-mm-1-kg",
@@ -52957,13 +53057,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      230,
-      231,
-      220
+      255,
+      255,
+      254
     ],
-    "hex": "#E6E7DC",
+    "hex": "#FFFFFE",
     "pixel_count": 81215,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E6E7DC"
   },
   {
     "slug": "refill-rosa3d-pla-starter-bila-winter-1-75-mm-1-kg",
@@ -52984,13 +53085,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      218,
-      231,
-      235
+      254,
+      255,
+      255
     ],
-    "hex": "#DAE7EB",
+    "hex": "#FEFFFF",
     "pixel_count": 67454,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#DAE7EB"
   },
   {
     "slug": "refill-rosa3d-pla-starter-cerna-1-75-mm-1-kg",
@@ -53755,13 +53857,14 @@
       "satin"
     ],
     "rgb": [
-      237,
-      234,
-      218
+      255,
+      255,
+      253
     ],
-    "hex": "#EDEADA",
+    "hex": "#FFFFFD",
     "pixel_count": 39309,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EDEADA"
   },
   {
     "slug": "refill-rosa3d-pla-starter-satenove-ruzova-1-75-mm-1-kg",
@@ -54328,13 +54431,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      224,
-      233,
-      234
+      254,
+      255,
+      255
     ],
-    "hex": "#E0E9EA",
+    "hex": "#FEFFFF",
     "pixel_count": 61448,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E0E9EA"
   },
   {
     "slug": "refill-spectrum-pla-high-speed-cerna-deep-1-75-mm-1-kg",
@@ -54760,13 +54864,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      234,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#E8EAE5",
+    "hex": "#FFFFFF",
     "pixel_count": 78189,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8EAE5"
   },
   {
     "slug": "refill-spectrum-pla-high-speed-stribrna-star-1-75-mm-1-kg",
@@ -55302,13 +55407,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      234,
-      233,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#EAE9E5",
+    "hex": "#FFFFFF",
     "pixel_count": 32162,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAE9E5"
   },
   {
     "slug": "refill-thefilament-asa-cerna-midnight-1-75-mm-1-kg",
@@ -55734,13 +55840,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      232,
-      228
+      252,
+      252,
+      249
     ],
-    "hex": "#E8E8E4",
+    "hex": "#FCFCF9",
     "pixel_count": 41684,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E8E4"
   },
   {
     "slug": "refill-thefilament-petg-bila-snow-1-75-mm-1-kg",
@@ -55761,13 +55868,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      233,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E4E9E9",
+    "hex": "#FFFFFF",
     "pixel_count": 50832,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E9E9"
   },
   {
     "slug": "refill-thefilament-petg-fialova-plasma-1-75-mm-1-kg",
@@ -55815,13 +55923,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      233,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E9E4",
+    "hex": "#FFFFFF",
     "pixel_count": 38757,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E9E4"
   },
   {
     "slug": "refill-thefilament-petg-lite-cerna-1-75-mm-1-kg",
@@ -56301,13 +56410,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      234,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#E9EAE5",
+    "hex": "#FFFFFF",
     "pixel_count": 34502,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9EAE5"
   },
   {
     "slug": "refill-thefilament-pla-fialova-plasma-1-75-mm-1-kg",
@@ -56409,13 +56519,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      234,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#E9EAE5",
+    "hex": "#FFFFFF",
     "pixel_count": 34502,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9EAE5"
   },
   {
     "slug": "refill-thefilament-pla-high-speed-fialova-quantum-1-75-mm-1-kg",
@@ -56706,13 +56817,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      234,
-      233,
-      229
+      255,
+      255,
+      255
     ],
-    "hex": "#EAE9E5",
+    "hex": "#FFFFFF",
     "pixel_count": 32162,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAE9E5"
   },
   {
     "slug": "refill-thefilament-pla-lite-cerna-1-75-mm-1-kg",
@@ -57154,13 +57266,14 @@
       "matt"
     ],
     "rgb": [
-      230,
-      231,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E6E7E9",
+    "hex": "#FFFFFF",
     "pixel_count": 33547,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E6E7E9"
   },
   {
     "slug": "refill-thefilament-pla-matte-stealth-black-1-75-mm-1-kg",
@@ -57781,13 +57894,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      225,
-      223
+      255,
+      255,
+      255
     ],
-    "hex": "#E4E1DF",
+    "hex": "#FFFFFF",
     "pixel_count": 226273,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E1DF"
   },
   {
     "slug": "filament-spectrum-asa-275-1-75mm-silver-star-1kg",
@@ -58395,13 +58509,14 @@
       "matt"
     ],
     "rgb": [
-      232,
-      231,
-      226
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E7E2",
+    "hex": "#FFFFFF",
     "pixel_count": 96303,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E7E2"
   },
   {
     "slug": "filament-spectrum-pet-g-matt-1-75mm-sand-khaki-1kg",
@@ -58478,13 +58593,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      230,
-      229,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E6E5E4",
+    "hex": "#FFFFFF",
     "pixel_count": 224226,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E6E5E4"
   },
   {
     "slug": "filament-spectrum-pet-g-premium-1-75mm-bahama-yellow-1kg",
@@ -59076,13 +59192,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      234,
-      234,
-      231
+      255,
+      255,
+      255
     ],
-    "hex": "#EAEAE7",
+    "hex": "#FFFFFF",
     "pixel_count": 108445,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAEAE7"
   },
   {
     "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-dark-grey-1kg",
@@ -59499,13 +59616,14 @@
       "matt"
     ],
     "rgb": [
-      234,
-      233,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#EAE9E9",
+    "hex": "#FFFFFF",
     "pixel_count": 612383,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#EAE9E9"
   },
   {
     "slug": "filament-spectrum-pla-premium-1-75mm-anthracite-grey-1kg",
@@ -59553,13 +59671,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      230,
-      233,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E6E9E9",
+    "hex": "#FFFFFF",
     "pixel_count": 77213,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E6E9E9"
   },
   {
     "slug": "filament-spectrum-pla-premium-1-75mm-baby-blue-1kg",
@@ -60585,13 +60704,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      232,
-      228
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E8E4",
+    "hex": "#FFFFFF",
     "pixel_count": 130913,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E8E4"
   },
   {
     "slug": "filament-spectrum-pla-premium-1-75mm-royal-blue-1kg",
@@ -60830,13 +60950,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      230,
-      232,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E6E8E9",
+    "hex": "#FFFFFF",
     "pixel_count": 83170,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E6E8E9"
   },
   {
     "slug": "filament-spectrum-pla-pro-1-75mm-bahama-yellow-1kg",
@@ -61262,13 +61383,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      232,
-      232,
-      227
+      255,
+      255,
+      255
     ],
-    "hex": "#E8E8E3",
+    "hex": "#FFFFFF",
     "pixel_count": 131163,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E8E8E3"
   },
   {
     "slug": "filament-spectrum-pla-pro-1-75mm-silver-star-1kg",
@@ -61318,13 +61440,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      229,
-      232,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E5E8E9",
+    "hex": "#FFFFFF",
     "pixel_count": 164028,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E5E8E9"
   },
   {
     "slug": "filament-spectrum-premium-pla-high-speed-1-75mm-baby-blue-1kg",
@@ -61723,13 +61846,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      233,
-      234,
-      233
+      255,
+      255,
+      255
     ],
-    "hex": "#E9EAE9",
+    "hex": "#FFFFFF",
     "pixel_count": 203942,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E9EAE9"
   },
   {
     "slug": "filament-spectrum-premium-pla-high-speed-1-75mm-silver-star-1kg",
@@ -61941,13 +62065,14 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      228,
-      227,
-      222
+      255,
+      255,
+      255
     ],
-    "hex": "#E4E3DE",
+    "hex": "#FFFFFF",
     "pixel_count": 73661,
-    "confidence": "measured_dominant_hue"
+    "confidence": "measured_dominant_hue",
+    "pre_lift_hex": "#E4E3DE"
   },
   {
     "slug": "filament-spectrum-r-pla-1-75mm-traffic-black-1kg",
