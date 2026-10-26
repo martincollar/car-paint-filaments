@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="theme-sakura">
+<html lang="en" class="theme-default">
 <head>
 <meta charset="utf-8">
 <title>3D Sets Sakura · 1971-1972 color card</title>
@@ -17,232 +17,231 @@
 .tile-name .ch { display: inline-block; }
 .tile-tag { margin: 6px 0 0; color: var(--muted); }
 .tile-meta { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
-/* Sakura design language ("Sakura Run" screen-print poster): cream paper, black ink, pink and a striped red-pink sun.
-   Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
-   Roles: primary = ink (type, buttons), accent = sun red-pink (hover, small spark), accent2 = blossom pink, sakura = pink wash. */
-.theme-sakura, .tile--sakura {
-  --dl-bg: #f4ecda;            /* tile / header card: poster paper */
-  --dl-page: #fbf6ea;          /* page background, lighter than the card */
-  --dl-card: #fffdf6;
-  --dl-paper: #fffdf6;
-  --dl-ink: #17130f;
-  --dl-outline: #17130f;
-  --dl-primary: #17130f;
-  --dl-primary-deep: #000000;
-  --dl-accent: #e8506a;        /* sun */
-  --dl-accent-deep: #b92e48;
-  --dl-accent2: #f4a3b1;       /* blossom pink */
-  --dl-sakura: #f4a3b1;
-  --dl-sakura-weak: #fadde1;
-  --dl-rule: #d9cdb4;
-  --dl-muted: #6b6154;
-  --dl-radius: 6px;
-  --dl-border: 3px solid #17130f;
-  --dl-shadow: 3px 3px 0 #f4a3b1;
-  --dl-card-shadow: 7px 7px 0 #f4a3b1;
-  --dl-font-title: "Dela Gothic One", "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
-  --dl-font-brush: "Yuji Boku", "Hiragino Mincho ProN", serif;
-  --dl-font-tag: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --dl-font-ui: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --dl-font-body: "Barlow", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-}/* sakura: rising sun on washi. Indigo primary, red only as a spark. Look comes from tokens.css (--dl-*);
-   header is the tile-style card (headcard.css). Soft cards, thin rules, no hard offset shadows. */
+/* Default design language: used by every car that does not pick its own theme (`car.json` without "theme").
+   Cool grey, one graphite accent, one type family. Single source for the tile (tile.css) and the detail page (theme.css, headcard.css).
+   Roles: primary = buttons and active states, accent = hover, accent2 = quiet trim. */
+.theme-default, .tile--default {
+  --dl-bg: #eceef0;            /* tile and header card; the studio photo's floor melts into it */
+  --dl-page: #e2e5e8;          /* page ground */
+  --dl-card: #f7f8f9;          /* raised surface */
+  --dl-paper: #ffffff;         /* the table, text on colour */
+  --dl-ink: #1b2127;
+  --dl-outline: #c9ced4;       /* hairline frames and dividers */
+  --dl-primary: #3a4550;       /* graphite */
+  --dl-primary-deep: #232b33;
+  --dl-accent: #1b2127;
+  --dl-accent-deep: #0f1317;
+  --dl-accent2: #8b95a0;
+  --dl-radius: 14px;
+  --dl-border: 1px solid #c9ced4;
+  --dl-shadow: none;
+  --dl-card-shadow: 0 1px 2px rgba(20, 28, 36, .06), 0 12px 28px -18px rgba(20, 28, 36, .32);
+  --dl-font-title: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --dl-font-tag: var(--dl-font-title);
+  --dl-font-ui: var(--dl-font-title);
+  --dl-font-body: var(--dl-font-title);
+  --dl-font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}/* Default theme: plain grey. Used by every car without its own theme.
+   Cool grey ground, white table, hairline rules, one graphite accent, IBM Plex Sans with Plex Mono for codes and values. */
 :root {
-  --red: var(--dl-accent); --red-deep: var(--dl-accent-deep); --red-weak: #f6d4da;
-  --indigo: var(--dl-primary); --indigo-deep: var(--dl-primary-deep); --indigo-weak: #f6dfe2;
-  --fg: var(--dl-ink); --muted: var(--dl-muted); --rule: var(--dl-rule); --rule-soft: #ece8e0;
-  --bg: var(--dl-page); --bg-paper: var(--dl-paper); --bg-soft: #f8f4ec; --bg-raised: #fff;
+  --bg: var(--dl-page);
+  --bg-paper: var(--dl-paper);
+  --bg-raised: var(--dl-card);
+  --fg: var(--dl-ink);
+  --muted: #5d6671;
+  --rule: #cdd2d8;
+  --rule-soft: #e5e8eb;
+
+  /* variable names the shared recolor-preview CSS reads; here they are all greys */
+  --teal: var(--dl-primary);
+  --teal-deep: var(--dl-primary-deep);
+  --teal-weak: #dfe3e7;
+  --orange: var(--dl-accent);
+  --orange-deep: var(--dl-primary);
+  --orange-weak: #e4e7ea;
+  --mustard: var(--dl-accent2);
+  --mustard-weak: #e4e7ea;
+  --cherry: #b3372c;
+  --navy: var(--dl-ink);
+
+  --good: #2f7a4f;
+  --warn: #946514;
+  --bad: #b3372c;
+
   --font-display: var(--dl-font-title);
-  --font-mono: var(--dl-font-ui);
+  --font-script: var(--dl-font-title);
+  --font-mono: var(--dl-font-mono);
   --font-body: var(--dl-font-body);
-  --pad: clamp(18px, 3vw, 36px);
   color-scheme: light;
-  --good: #2f7d4f; --warn: #8a5a00; --bad: var(--red-deep); --gold: var(--dl-accent2);
-  /* names read by the shared recolor-preview CSS */
-  --teal: var(--indigo); --teal-deep: var(--indigo-deep); --teal-weak: var(--indigo-weak);
-  --orange: var(--red); --orange-deep: var(--red-deep); --orange-weak: var(--red-weak);
-  --mustard: var(--gold); --mustard-weak: #f6e2b0; --cherry: var(--red); --navy: var(--indigo-deep);
-  --hero-q-bg: var(--indigo-deep); --hero-q-fg: #fff; --hero-q-font: var(--font-display);
 }
 body {
-  background-color: var(--bg);
-  color: var(--fg); font-family: var(--font-body); line-height: 1.5;
-  max-width: 1200px; margin: 0 auto; padding-block: 28px;
-  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: var(--bg); color: var(--fg); font-family: var(--font-body);
+  line-height: 1.5; max-width: 1200px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px;
   font-variant-numeric: tabular-nums;
 }
+
 .paper {
-  background: var(--bg-paper); border-radius: 8px; overflow: hidden;
-  border: 3px solid var(--dl-ink);
-  padding: 22px var(--pad) 32px; position: relative;
+  background: var(--bg-paper); border: 1px solid var(--rule); border-radius: var(--dl-radius);
+  box-shadow: var(--dl-card-shadow);
+  padding: 28px clamp(18px, 3vw, 36px); position: relative;
 }
 
-/* ===== Nav (inside the header card) ===== */
-.year-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; align-items: center; font-family: var(--font-mono); font-size: .78rem; }
-.year-nav .nav-label { letter-spacing: .12em; text-transform: uppercase; font-size: .68rem; font-weight: 500; margin-right: 4px; color: var(--muted); }
+/* ===== Year nav and region switch ===== */
+.year-nav { display: flex; flex-wrap: wrap; gap: 6px 8px; margin: 20px 0 0; align-items: center; font-family: var(--font-body); font-size: 0.85rem; }
+.year-nav .nav-label { color: var(--muted); font-size: 0.85rem; letter-spacing: 0; text-transform: none; }
 .year-nav a, .region-switch button {
-  padding: 4px 16px; border-radius: 999px; background: transparent; color: var(--indigo);
-  border: 1px solid var(--indigo); text-decoration: none; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
+  font: 500 .85rem var(--dl-font-ui); text-decoration: none; cursor: pointer;
+  padding: 4px 13px; color: var(--dl-primary); background: transparent;
+  border: 1px solid var(--rule); border-radius: 999px;
 }
-.region-switch button { font: inherit; font-size: .85rem; font-weight: 600; line-height: inherit; letter-spacing: .06em; text-transform: uppercase; }
-.year-nav a:hover, .region-switch button:hover { background: var(--dl-sakura-weak); }
-.region-switch button[aria-pressed="true"] { background: var(--indigo); color: #fff; border-color: var(--indigo); }
+.year-nav a:hover, .region-switch button:hover { background: var(--dl-primary); border-color: var(--dl-primary); color: var(--dl-paper); }
+.region-switch button[aria-pressed="true"] { background: var(--dl-primary); border-color: var(--dl-primary); color: var(--dl-paper); }
+.year-nav a:focus-visible, .region-switch button:focus-visible { outline: 2px solid var(--dl-primary); outline-offset: 2px; }
 
 /* ===== Legend ===== */
-.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 4px 2px; margin: 4px 0 8px; font-size: .78rem; color: var(--muted); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 4px 2px; margin: 4px 0 8px; font-size: 0.78rem; color: var(--muted); }
 .legend .lblock { display: inline-flex; gap: 5px; align-items: center; }
-.legend .legend-head { font: 500 .8rem var(--font-mono); color: var(--fg); text-transform: uppercase; letter-spacing: .08em; }
-.pill, .de { padding: 0; font-weight: 600; font-family: var(--font-mono); font-size: .78rem; }
+.legend .legend-head { font: 500 .85rem var(--dl-font-ui); color: var(--fg); }
+.pill, .de { padding: 0; border: 0; background: none; font-weight: 500; font-family: var(--font-mono); font-size: 0.76rem; }
 .pill.exc, .de.exc { color: var(--good); }
-.pill.vg, .de.vg { color: var(--indigo); }
+.pill.vg, .de.vg { color: var(--dl-primary); }
 .pill.ok, .de.ok { color: var(--warn); }
 .pill.weak, .de.weak { color: var(--muted); }
-.pill.bad, .de.bad { color: var(--red-deep); }
+.pill.bad, .de.bad { color: var(--bad); }
 
-/* ===== Shop tags: plain text ===== */
-.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); font-weight: 600; }
+/* ===== Shop tags ===== */
+.shop-tag { display: inline-block; font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); font-weight: 500; }
 
-/* ===== Year header: plain number, hairline ===== */
-h2.year-head { display: flex; align-items: baseline; gap: 14px; margin: 40px 0 6px; padding: 0 0 8px; font-weight: 400; border: none; border-bottom: 1px solid var(--rule); scroll-margin-top: 10px; position: relative; }
-h2.year-head::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 64px; height: 3px; background: var(--red); border-radius: 3px; }
-.year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--indigo); line-height: 1; }
-.year-badge-top { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); order: 2; }
-.year-badge-num { font-family: var(--font-display); font-size: 1.9rem; line-height: 1; color: var(--dl-ink); text-shadow: 2px 2px 0 var(--dl-accent2); }
-.year-tagline { font: 500 .8rem var(--font-mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); line-height: 1; }
+/* ===== Year heading ===== */
+h2.year-head { display: flex; align-items: baseline; gap: 14px; margin: 44px 0 6px; padding: 0 0 8px; border: none;
+  border-bottom: 1px solid var(--rule); scroll-margin-top: 10px; font-weight: 400; }
+.year-badge { display: inline-flex; align-items: baseline; gap: 10px; color: var(--fg); line-height: 1; }
+.year-badge-top { display: none; }
+.year-badge-num { font: 600 2.3rem/1 var(--font-display); letter-spacing: -.025em; color: var(--fg); }
+.year-tagline { display: inline-block; font: 400 .9rem var(--font-body); color: var(--muted); text-transform: lowercase; }
+.year-tagline::first-letter { text-transform: uppercase; }
 
-/* ===== Rows: flat, hairlines only ===== */
-.row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+/* ===== Table rows ===== */
+.row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule-soft); align-items: start; }
 .row:last-of-type { border-bottom: none; }
 @media (max-width: 900px) { .row { grid-template-columns: 1fr; } }
-.col-label { font-family: var(--font-mono); font-size: .72rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px 2px; }
+.col-label { font: 500 .8rem var(--font-body); color: var(--muted); letter-spacing: 0; text-transform: none; margin: 0 0 6px 2px; }
 
+/* ===== Paint block ===== */
 .row > .paint-col { grid-column: 1 / -1; }
 .paint { display: flex; gap: 14px; align-items: flex-start; min-width: 0; }
 .paint .swatch.big { width: 56px; height: 56px; flex-shrink: 0; border-radius: 8px; border: 1px solid var(--rule); }
 .paint .meta { min-width: 0; flex: 1; }
-.paint .name { font-weight: 600; font-size: 1.05rem; line-height: 1.2; color: var(--fg); }
-.paint .sub { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); margin-top: 3px; }
-.paint .year { color: var(--indigo); font-weight: 600; }
-.paint a.year { text-decoration: none; border-bottom: 2px solid var(--red); }
-.paint a.year:hover { background: var(--red-weak); }
-.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--red-deep); font-family: var(--font-mono); font-size: .78rem; font-weight: 600; }
-.paint .hex { font-family: var(--font-mono); font-size: .85rem; margin-top: 4px; }
-.paint .rgb { color: var(--muted); font-size: .75rem; margin-left: 4px; }
-.chip { display: inline-block; padding: 0 8px; border-radius: 999px; font-family: var(--font-mono); font-size: .68rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); margin-left: 6px; vertical-align: middle; }
+.paint .name { font-weight: 600; font-size: 1.1rem; line-height: 1.2; letter-spacing: -.01em; color: var(--fg); }
+.paint .sub { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); margin-top: 4px; }
+.paint .year { color: var(--fg); font-weight: 500; }
+.paint a.year { text-decoration: none; border-bottom: 1px dotted var(--muted); }
+.paint a.year:hover { border-bottom-style: solid; }
+.no-match { margin: 0 0 6px; padding: 2px 0; color: var(--bad); font-family: var(--font-mono); font-size: 0.74rem; font-weight: 500; }
+.paint .hex { font-family: var(--font-mono); font-size: 0.8rem; margin-top: 4px; }
+.paint .rgb { color: var(--muted); font-size: 0.72rem; margin-left: 4px; }
+.chip { display: inline-block; font-family: var(--font-mono); font-size: 0.68rem; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; padding: 0 7px; margin-left: 6px; vertical-align: middle; }
 
+/* ===== Filaments ===== */
 .filament.primary { display: grid; grid-template-columns: 36px 1fr; gap: 10px; padding: 4px 0; margin-bottom: 4px; }
 .filament.primary .swatch.mini { width: 36px; height: 36px; border-radius: 6px; border: 1px solid var(--rule); }
-.filament.primary .fname { font-size: .9rem; line-height: 1.3; }
-.filament.primary .fname strong { font-weight: 600; font-size: .95rem; }
-.filament.primary .fname .color { color: var(--muted); font-size: .82rem; }
-.filament.primary .fsub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 4px; font-size: .78rem; font-family: var(--font-mono); }
-.filament.alt { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 5px 7px; align-items: center; padding: 5px 10px; font-size: .76rem; border-bottom: 1px solid var(--rule-soft); }
-.filament.alt:hover { background: var(--bg-soft); }
+.filament.primary .fname { font-size: 0.92rem; line-height: 1.3; }
+.filament.primary .fname strong { font-weight: 600; font-size: 0.95rem; }
+.filament.primary .fname .color { color: var(--muted); font-size: 0.84rem; }
+.filament.primary .fsub { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; margin-top: 4px; font-size: 0.76rem; font-family: var(--font-mono); }
+.filament.alt { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; gap: 5px 7px; align-items: center; padding: 5px 10px; font-size: 0.78rem; border-bottom: 1px solid var(--rule-soft); }
+.filament.alt:hover { background: var(--bg-raised); }
 .filament.alt:last-child { border-bottom: none; }
 .filament.alt .swatch.tiny { width: 18px; height: 18px; border-radius: 4px; border: 1px solid var(--rule); }
-.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .8rem; }
-.filament.alt .fname-inline .color { color: var(--muted); font-size: .74rem; }
+.filament.alt .fname-inline { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.8rem; }
+.filament.alt .fname-inline .color { color: var(--muted); font-size: 0.74rem; }
 .filament.empty { color: var(--muted); font-style: italic; padding: 8px 10px; }
+.rows-bar button, .row-toggle { font-family: var(--font-body); font-size: .78rem; color: var(--dl-primary); border-radius: 8px; padding: 3px 11px; }
+.rows-bar button:hover, .row-toggle:hover, .row-toggle:focus-visible { background: var(--rule-soft); }
 
+/* ===== Phones: the colour name gets the full line, the rest wraps below it ===== */
 @media (max-width: 600px) {
+  .paper { padding: 20px 14px; }
   .paint .swatch.big { width: 64px; height: 64px; }
   .filament.primary { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
   .filament.primary .swatch.mini { width: 40px; height: 40px; }
   .filament.alt { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 7px; }
-  .filament.alt .fname-inline { flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip; font-size: .9rem; line-height: 1.25; }
+  .filament.alt .fname-inline { flex: 1 1 calc(100% - 28px); white-space: normal; overflow: visible; text-overflow: clip; font-size: 0.86rem; line-height: 1.25; }
 }
 
-/* ===== Footer, back to top ===== */
-footer.card-footer { margin-top: 30px; padding-top: 22px; text-align: center; border-top: 1px solid var(--rule); }
-footer.card-footer .brand { font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; color: var(--indigo-deep); letter-spacing: .1em; }
-footer.card-footer .sub { font-family: var(--font-mono); font-size: .82rem; font-weight: 600; color: var(--muted); letter-spacing: .18em; text-transform: uppercase; margin-top: 4px; }
-.to-top { width: 46px; height: 46px; border-radius: 50%; background: var(--indigo); text-decoration: none; box-shadow: 0 8px 18px -8px rgba(0,0,0,.5); }
-.to-top svg { width: 22px; height: 22px; fill: #fff; }
-.to-top:hover { background: var(--red); }
-.to-top:focus-visible { outline: 3px solid var(--indigo); outline-offset: 3px; }
+/* ===== Footer ===== */
+footer.card-footer .legend { margin: 0 0 18px; justify-content: center; }
+footer.card-footer { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--rule); text-align: center; }
+footer.card-footer .brand { font: 600 1rem var(--font-display); letter-spacing: -.01em; color: var(--fg); }
+footer.card-footer .sub { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); margin-top: 4px; }
+footer.card-footer .visit-count { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); margin-top: 10px; }
 
-/* ===== Recolor preview + hover bubble ===== */
-.hero-preview { background: var(--bg-paper); color: var(--fg); border: 1px solid var(--rule); border-radius: 18px; box-shadow: 0 18px 40px -14px rgba(20,30,50,.5); }
-.hero-preview .hp-close, .hero-preview .hp-zoom { top: 12px; width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--indigo-deep); color: #fff; }
-.hero-preview .hp-close { right: 12px; background-color: var(--indigo); }
-.hero-preview .hp-zoom  { right: 48px; }
-.hero-preview .hp-close::before, .hero-preview .hp-zoom::before { content: ""; width: 13px; height: 13px; background: center / contain no-repeat; }
-.hero-preview .hp-close::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M3 3 13 13M13 3 3 13'/%3E%3C/svg%3E"); }
-.hero-preview .hp-zoom::before  { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M9.5 2.5h4v4M13.5 2.5 9 7M6.5 13.5h-4v-4M2.5 13.5 7 9'/%3E%3C/svg%3E"); }
-.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background-color: var(--red-deep); }
-.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 0; box-shadow: 0 0 0 3px var(--gold); }
-.hero-preview.big { box-shadow: 0 0 0 100vmax rgba(10,16,28,.55), 0 20px 50px rgba(0,0,0,.4); }
-.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 38px; height: 38px; }
-.hero-preview.big .hp-close { right: 22px; } .hero-preview.big .hp-zoom { right: 68px; }
-.hero-preview.big .t-name { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; line-height: 1.2; color: var(--indigo-deep); }
-.hero-preview.big .hp-credit { font-size: .78rem; font-weight: 600; }
+a { color: var(--dl-primary); text-underline-offset: 3px; }
+img { max-width: 100%; }
+
+/* ===== Back to top (floating, bottom left) ===== */
+.to-top { width: 44px; height: 44px; border-radius: 50%; text-decoration: none; background: var(--dl-primary); border: 1px solid var(--dl-primary-deep);
+  box-shadow: 0 6px 16px -8px rgba(20, 28, 36, .5); }
+.to-top svg { width: 30px; height: 30px; padding: 6px; box-sizing: border-box; border-radius: 50%; background: var(--dl-paper); fill: var(--dl-primary); }
+.to-top:hover { background: var(--dl-accent); border-color: var(--dl-accent-deep); }
+.to-top:active { transform: translateY(1px); }
+.to-top:focus-visible { outline: 2px solid var(--dl-primary); outline-offset: 3px; }
+
+/* ===== Recolor preview + hover bubble (shared CSS holds layout only; this theme owns the look) ===== */
+:root { --hero-q-bg: rgba(27, 33, 39, .72); --hero-q-fg: #ffffff; --hero-q-font: "IBM Plex Sans", sans-serif; }
+.hero-preview { background: var(--bg-raised); border: 1px solid var(--rule); color: var(--navy); box-shadow: 0 10px 30px -12px rgba(20, 28, 36, .4); }
+.hero-preview .hp-close, .hero-preview .hp-zoom { border: 1px solid var(--dl-primary-deep); border-radius: 50%; font-family: var(--dl-font-ui); font-size: 0.8rem; color: var(--dl-paper); background: var(--dl-primary); }
+.hero-preview .hp-close::before { content: "✕"; }
+.hero-preview .hp-zoom::before { content: "⤢"; }
+.hero-preview .hp-close:hover, .hero-preview .hp-zoom:hover { background: var(--dl-accent); }
+.hero-preview .hp-close:focus-visible, .hero-preview .hp-zoom:focus-visible { outline: 2px solid var(--dl-primary); outline-offset: 2px; }
+.hero-preview.big .hp-close, .hero-preview.big .hp-zoom { font-size: 1rem; }
+.hero-preview.big { box-shadow: 0 0 0 100vmax rgba(27, 33, 39, .45), 0 12px 32px rgba(20, 28, 36, .3); }
+.hero-preview.big .t-name { font: 600 1.15rem/1.2 var(--font-display); letter-spacing: -.01em; color: var(--fg); }
+.hero-preview.big .hp-credit { font-size: 0.7rem; }
 .hero-preview.closed .hp-close { top: 7px; right: 8px; }
-.fil-tip { background: var(--bg-paper); color: var(--fg); border: 1px solid var(--rule); border-radius: 14px; box-shadow: 0 14px 34px -12px rgba(20,30,50,.5); }
-.fil-tip img { border-radius: 8px; border: 1px solid var(--rule); }
-.fil-tip .t-sw, .hero-preview .t-sw { border: 2px solid var(--bg-paper); box-shadow: 0 0 0 1px var(--rule); border-radius: 50%; }
-.fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 700; }
-.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; }
-.paint .name, .filament.primary .fname strong, footer.card-footer .brand, .hero-preview .t-name, .hero-preview.big .t-name, .fil-tip .t-name { font-family: var(--font-body); font-weight: 600; }
-.paint .name { font-size: 1.15rem; }
-
-/* ===== Collapse controls ("Show all filaments", per-row "Filaments") ===== */
-html .rows-bar button, html .row-toggle { font: 600 .74rem var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--indigo);
-  border: 1px solid var(--indigo); border-radius: 999px; padding: 4px 14px; background: transparent; }
-html .rows-bar button:hover, html .row-toggle:hover, html .row-toggle:focus-visible { background: var(--dl-sakura-weak); }/* Index tile: "Sakura Run" poster. Cream paper with print specks, black ink type, a striped red-pink sun and a blossom branch in the
-   top-right corner (clipped by the card), a black kana sign, vertical kana on the left edge. Hard pink offset shadow. The car spills over. */
-.tile--sakura { --stage-w: 113%; --stage-left: -6.5%; --stage-bottom: 22px; --art: 275px; --ink: var(--dl-ink); --muted: var(--dl-muted); }
-.tile--sakura .tile-frame { background-color: var(--dl-bg); border: var(--dl-border); border-radius: var(--dl-radius); box-shadow: var(--dl-card-shadow);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='sk-n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .09 0 0 0 0 .07 0 0 0 0 .06 0 0 0 -34 9.4'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23sk-n)'/%3E%3C/svg%3E"); }
-.tile--sakura .t-clip { position: absolute; inset: 0; overflow: hidden; border-radius: var(--dl-radius); pointer-events: none; }   /* clips the art (sun, branch, petals) at the card's corner; the sign is outside it and may overflow the card */
-.tile--sakura .t-art { position: absolute; top: 0; right: 0; width: var(--art); height: auto; }   /* sun, branch, petals share one box, so each can be moved on its own */
-.tile--sakura .t-sign { position: absolute; right: 16px; top: 36%; padding: 8px 5px; background: var(--dl-ink); color: var(--dl-paper); z-index: 2;
-  writing-mode: vertical-rl; font: 400 .85rem/1 var(--dl-font-brush); letter-spacing: .15em; border: 2px solid var(--dl-ink); box-shadow: 2px 2px 0 var(--dl-accent2); }
-.tile--sakura .t-vert { position: absolute; left: 7px; top: 108px; writing-mode: vertical-rl; font: 400 .62rem/1 var(--dl-font-brush); letter-spacing: .2em; color: var(--dl-ink); opacity: .75; }
-.tile--sakura .tile-text { padding-top: 6px; max-width: none; }
-.tile--sakura .tile-name { font-family: var(--dl-font-title); font-weight: 400; font-size: 1.85rem; line-height: 1.05; letter-spacing: 0; color: var(--dl-ink);
-  text-shadow: 3px 3px 0 var(--dl-accent2); }
-.tile--sakura .tile-tag { position: relative; display: block; width: fit-content; margin-top: 12px; padding: 3px 18px 3px 12px; color: var(--dl-ink);
-  font: italic 800 1.05rem var(--dl-font-tag); letter-spacing: .06em; text-transform: uppercase; transform: skewX(-8deg); z-index: 1; }
-.tile--sakura .tile-tag::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--dl-accent2); clip-path: polygon(0 12%, 100% 0, 96% 100%, 3% 88%); }
-.tile--sakura .tile-meta { font: 600 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
-.tile--sakura .tile-label { font: 500 .7rem var(--dl-font-ui); letter-spacing: .05em; text-transform: uppercase; color: var(--dl-ink); opacity: .6; }
-.tile--sakura .tile-open { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-paper);
-  background: var(--dl-ink); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
-.tile--sakura .tile-open:hover, .tile--sakura .tile-open:focus-visible { background: var(--dl-accent); border-color: var(--dl-ink); color: var(--dl-paper); }
-.tile--sakura .tile-buy { font: 700 .9rem var(--dl-font-ui); letter-spacing: .08em; text-transform: uppercase; color: var(--dl-ink);
-  background: var(--dl-paper); border: 2px solid var(--dl-ink); border-radius: 4px; box-shadow: 3px 3px 0 var(--dl-accent2); }
-.tile--sakura .tile-buy:hover, .tile--sakura .tile-buy:focus-visible { background: var(--dl-accent); color: var(--dl-paper); }
-/* the homepage tile has one sign; the header card shows a second one */
-.tile--sakura:not(.head-card) .t-sign2 { display: none; }
+.fil-tip { background: var(--bg-raised); color: var(--navy); border: 1px solid var(--rule); box-shadow: 0 10px 30px -12px rgba(20, 28, 36, .4); }
+.fil-tip .t-name, .hero-preview .t-name { font-family: var(--font-display); font-weight: 600; }
+.fil-tip img { border: 1px solid var(--rule); }
+.fil-tip .t-sw, .hero-preview .t-sw { border: 1px solid var(--rule); }
+.fil-tip .t-link, .hero-preview .t-link { font-family: var(--font-mono); color: var(--dl-primary); }/* Index tile: a flat grey panel. No decoration; the car, the name and one outlined button. */
+.tile--default { --tile: var(--dl-bg); --ink: var(--dl-ink); --muted: #5d6671; --stage-w: 118%; --stage-left: -9%; --stage-bottom: 24px;
+  font-family: var(--dl-font-body); }
+.tile--default .tile-frame { border: var(--dl-border); border-radius: var(--dl-radius); background: var(--dl-bg); box-shadow: var(--dl-card-shadow); }
+.tile--default .tile-text { padding-top: 6px; }
+.tile--default .tile-name { font: 600 2.1rem/1.08 var(--dl-font-title); letter-spacing: -.025em; color: var(--dl-ink); }
+.tile--default .tile-tag { margin: 8px 0 0; font: 400 1rem/1.35 var(--dl-font-tag); color: var(--muted); }
+.tile--default .tile-meta { margin: 6px 0 0; font: 400 .8rem/1.4 var(--dl-font-mono); color: var(--muted); }
+.tile--default .tile-label { font: 400 .76rem var(--dl-font-mono); color: var(--muted); opacity: 1; }
+.tile--default .tile-open, .tile--default .tile-buy { font: 500 .88rem var(--dl-font-ui); padding: 7px 16px; border: 1.5px solid var(--dl-primary);
+  border-radius: 999px; background: transparent; color: var(--dl-primary); box-shadow: none; }
+.tile--default .tile-buy { border-color: var(--dl-outline); color: var(--muted); }
+.tile--default .tile-open:hover, .tile--default .tile-open:focus-visible,
+.tile--default .tile-buy:hover, .tile--default .tile-buy:focus-visible { background: var(--dl-primary); border-color: var(--dl-primary); color: var(--dl-paper); }
 @media (max-width: 520px) {
-  .tile--sakura { --art: 190px; }
-  .tile--sakura .tile-name { font-size: 1.5rem; }
-  .tile--sakura .tile-tag { font-size: .9rem; }
-  .tile--sakura .t-sign { top: 31%; font-size: .72rem; }
+  .tile--default .tile-name { font-size: 1.7rem; }
+  .tile--default .tile-tag { font-size: .92rem; }
 }/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
-.theme-sakura .head-card { display: block; position: relative; margin: 26px 0 30px; padding: 30px 40px 22px; --art: 470px;
-  --tile: var(--dl-bg); --muted: var(--dl-muted); }
-.theme-sakura .head-card .tile-name { font-size: 3.6rem; text-shadow: 4px 4px 0 var(--dl-accent2); }
-.theme-sakura .head-card .tile-tag { font-size: 1.4rem; margin-top: 16px; padding: 4px 24px 4px 16px; }
-.theme-sakura .head-card .tile-meta { margin-top: 14px; line-height: 1.6; }
-.theme-sakura .head-card .t-sign { top: 26%; white-space: nowrap; right: clamp(108px, calc(100% - 661px), 508px); padding: 14px 9px; font-size: 1.7rem; border-width: 3px; box-shadow: 3px 3px 0 var(--dl-accent2); }
-.theme-sakura .head-card .t-sign2 { top: 26%; white-space: nowrap; right: clamp(28px, calc(100% - 741px), 428px); }
-.theme-sakura .head-card .t-vert { display: none; }
-.theme-sakura .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 30px;
-  margin-top: 22px; padding-top: 16px; border-top: 3px solid var(--dl-ink); }
-.theme-sakura .head-filters .year-nav { margin: 0; }
-.theme-sakura .head-filters .nav-label { font: 700 .8rem var(--dl-font-ui); letter-spacing: .1em; text-transform: uppercase; color: var(--dl-ink); }
-@media (max-width: 860px) {
-  .theme-sakura .head-card .t-sign, .theme-sakura .head-card .t-sign2 { display: none; }
-}
+.theme-default .head-card { display: block; position: relative; margin: 16px 0 26px; padding: 30px 36px 22px;
+  --tile: var(--dl-bg); --muted: #5d6671; }
+.theme-default .head-card .tile-text { padding-top: 0; }
+.theme-default .head-card .tile-name { font-size: 3rem; white-space: normal; max-width: 100%; }
+.theme-default .head-card .tile-tag { font-size: 1.15rem; margin-top: 8px; }
+.theme-default .head-card .tile-meta { margin-top: 18px; font-size: .85rem; line-height: 1.6; }
+.theme-default .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 32px;
+  margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--dl-outline); }
+.theme-default .head-filters .year-nav { margin: 0; }
+.theme-default .head-filters .nav-label { font: 500 .85rem var(--dl-font-ui); color: var(--muted); letter-spacing: 0; text-transform: none; }
 @media (max-width: 600px) {
-  .theme-sakura .head-card { padding: 22px 18px 18px; --art: 200px; }
-  .theme-sakura .head-card .tile-name { font-size: 1.9rem; max-width: 66%; }
-  .theme-sakura .head-card .tile-tag { font-size: 1rem; }
-  .theme-sakura .head-card .t-sign, .theme-sakura .head-card .t-sign2 { display: none; }
-}.tile--sakura.head-card .t-sign { translate: 0 -102px; }
-.tile--sakura.head-card .t-sign2 { translate: 0 -102px; }
-
+  .theme-default .head-card { padding: 22px 16px 16px; }
+  .theme-default .head-card .tile-name { font-size: 2.1rem; }
+  .theme-default .head-card .tile-tag { font-size: 1rem; }
+  .theme-default .head-card .tile-meta { font-size: .76rem; }
+  .theme-default .head-filters { margin-top: 18px; }
+}
 
 html { scroll-behavior: smooth; }
 .to-top { position: fixed; left: max(12px, env(safe-area-inset-left, 0px)); bottom: 12px; z-index: 19;
@@ -372,17 +371,11 @@ article.row.combo-out { display: none; }
 
 </style>
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;family=Yuji+Boku&amp;family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,800&amp;family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&display=swap">
 </head>
 <body id="top" data-region="eu" data-finish="-" data-car="sakura">
 
-<header class="page-head tile tile--sakura head-card"><div class="tile-frame"></div><div class="tile-deco"><div class="t-clip">
-<svg class="t-art t-petals" viewBox="0 0 320 210" preserveAspectRatio="xMaxYMin meet" aria-hidden="true"><ellipse cx="60" cy="100" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(30 60 100)"/><ellipse cx="36" cy="130" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-20 36 130)"/><ellipse cx="96" cy="126" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(60 96 126)"/><ellipse cx="20" cy="84" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(10 20 84)"/><ellipse cx="130" cy="150" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-40 130 150)"/><ellipse cx="66" cy="168" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(25 66 168)"/><ellipse cx="200" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(40 200 176)"/><ellipse cx="150" cy="190" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(-30 150 190)"/><ellipse cx="30" cy="176" rx="4.2" ry="2.6" fill="#f4a3b1" opacity=".9" transform="rotate(15 30 176)"/></svg>
-<svg class="t-art t-branch" viewBox="0 0 320 210" preserveAspectRatio="xMaxYMin meet" aria-hidden="true"><defs><symbol id="sk-f1" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f4a3b1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f2" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#ef8aa0" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#f6b4c1" transform="rotate(288)"/><circle r="1.5" fill="#b92e48"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-f3" viewBox="-15 -16 30 30" overflow="visible"><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(0)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(72)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(144)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(216)"/><path d="M0 0C-6.5-4-8.5-12-2.6-14.6L0-12.2 2.6-14.6C8.5-12 6.5-4 0 0Z" fill="#f9c9d1" transform="rotate(288)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(0)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(72)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(144)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(216)"/><path d="M0 0C-3-2-3.6-6 0-8 3.6-6 3-2 0 0Z" fill="#fde6ea" transform="rotate(288)"/><circle r="1.5" fill="#e8506a"/><path d="M0 0L1.5 -4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="-5.1" r=".8" fill="#17130f"/><path d="M0 0L5.0 -0.0" stroke="#17130f" stroke-width=".5"/><circle cx="5.4" cy="-0.0" r=".8" fill="#17130f"/><path d="M0 0L1.5 4.8" stroke="#17130f" stroke-width=".5"/><circle cx="1.7" cy="5.1" r=".8" fill="#17130f"/><path d="M0 0L-4.0 2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="3.2" r=".8" fill="#17130f"/><path d="M0 0L-4.0 -2.9" stroke="#17130f" stroke-width=".5"/><circle cx="-4.4" cy="-3.2" r=".8" fill="#17130f"/></symbol><symbol id="sk-bud" viewBox="-4 -5 8 10" overflow="visible"><ellipse rx="2.6" ry="3.6" fill="#ef8aa0"/><ellipse rx="1.4" ry="2.4" cy=".6" fill="#f9c9d1"/></symbol></defs><path d="M335 10C296 18 254 14 214 38S150 70 100 62" fill="none" stroke="#17130f" stroke-width="6.5" stroke-linecap="round"/><path d="M238 24C236 46 226 66 208 84" fill="none" stroke="#17130f" stroke-width="3.2" stroke-linecap="round"/><path d="M214 38C196 26 178 24 160 30" fill="none" stroke="#17130f" stroke-width="3" stroke-linecap="round"/><path d="M172 54C170 70 162 84 148 92" fill="none" stroke="#17130f" stroke-width="2.6" stroke-linecap="round"/><path d="M335 66C306 70 286 84 266 92" fill="none" stroke="#17130f" stroke-width="3.6" stroke-linecap="round"/><path d="M100 62C90 56 78 58 68 66" fill="none" stroke="#17130f" stroke-width="2.4" stroke-linecap="round"/><use href="#sk-bud" x="186" y="13" width="8" height="10" transform="rotate(0 190 18)"/><use href="#sk-bud" x="146" y="35" width="8" height="10" transform="rotate(-20 150 40)"/><use href="#sk-bud" x="226" y="51" width="8" height="10" transform="rotate(15 230 56)"/><use href="#sk-bud" x="112" y="73" width="8" height="10" transform="rotate(0 116 78)"/><use href="#sk-bud" x="86" y="51" width="8" height="10" transform="rotate(30 90 56)"/><use href="#sk-f1" x="284.8" y="-3.2" width="34.5" height="34.5" transform="rotate(10 302 14)"/><use href="#sk-f2" x="255.0" y="5.0" width="30.0" height="30.0" transform="rotate(50 270 20)"/><use href="#sk-f3" x="220.0" y="10.0" width="36.0" height="36.0" transform="rotate(20 238 28)"/><use href="#sk-f1" x="195.0" y="27.0" width="30.0" height="30.0" transform="rotate(70 210 42)"/><use href="#sk-f2" x="165.5" y="15.5" width="33.0" height="33.0" transform="rotate(5 182 32)"/><use href="#sk-f3" x="146.5" y="16.5" width="27.0" height="27.0" transform="rotate(40 160 30)"/><use href="#sk-f1" x="191.5" y="67.5" width="33.0" height="33.0" transform="rotate(30 208 84)"/><use href="#sk-f2" x="134.5" y="78.5" width="27.0" height="27.0" transform="rotate(60 148 92)"/><use href="#sk-f3" x="106.8" y="44.8" width="34.5" height="34.5" transform="rotate(0 124 62)"/><use href="#sk-f1" x="86.5" y="50.5" width="27.0" height="27.0" transform="rotate(25 100 64)"/><use href="#sk-f2" x="63.2" y="53.2" width="25.5" height="25.5" transform="rotate(45 76 66)"/><use href="#sk-f2" x="287.5" y="47.5" width="33.0" height="33.0" transform="rotate(15 304 64)"/><use href="#sk-f1" x="263.0" y="69.0" width="30.0" height="30.0" transform="rotate(60 278 84)"/><use href="#sk-f3" x="162.5" y="44.5" width="27.0" height="27.0" transform="rotate(15 176 58)"/><use href="#sk-f1" x="48.0" y="64.0" width="24.0" height="24.0" transform="rotate(10 60 76)"/></svg>
-</div>
-<div class="t-sign" lang="ja"><span>どこまでも</span></div>
-<div class="t-sign t-sign2" lang="ja"><span>さくらロード</span></div>
-<div class="t-vert" lang="ja"><span>走る、私らしく</span></div></div><div class="tile-text"><h1 class="tile-name" style="--n:14"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">S</span><span class="ch" style="--i:9" aria-hidden="true">a</span><span class="ch" style="--i:10" aria-hidden="true">k</span><span class="ch" style="--i:11" aria-hidden="true">u</span><span class="ch" style="--i:12" aria-hidden="true">r</span><span class="ch" style="--i:13" aria-hidden="true">a</span></span></h1><p class="tile-tag">Rising Sun &amp; Straight Six</p><p class="tile-meta">1971-1972 · 16 paint colours<br><span data-r="eu">1120 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><div class="year-nav region-switch finish-switch"><span class="nav-label">Finishes:</span><button type="button" data-finish-btn="glitter" aria-pressed="false" title="Show glitter filaments">Glitter</button><button type="button" data-finish-btn="matt" aria-pressed="false" title="Show matt filaments">Matt</button><button type="button" data-finish-btn="satin" aria-pressed="false" title="Show satin filaments">Satin</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1972">1972</a><a href="#y1971">1971</a></nav></div></header>
+<header class="page-head tile tile--default head-card"><div class="tile-frame"></div><div class="tile-deco"></div><div class="tile-text"><h1 class="tile-name" style="--n:14"><span class="w"><span class="ch" style="--i:0" aria-hidden="true">3</span><span class="ch" style="--i:1" aria-hidden="true">D</span></span> <span class="w"><span class="ch" style="--i:3" aria-hidden="true">S</span><span class="ch" style="--i:4" aria-hidden="true">e</span><span class="ch" style="--i:5" aria-hidden="true">t</span><span class="ch" style="--i:6" aria-hidden="true">s</span></span> <span class="w"><span class="ch" style="--i:8" aria-hidden="true">S</span><span class="ch" style="--i:9" aria-hidden="true">a</span><span class="ch" style="--i:10" aria-hidden="true">k</span><span class="ch" style="--i:11" aria-hidden="true">u</span><span class="ch" style="--i:12" aria-hidden="true">r</span><span class="ch" style="--i:13" aria-hidden="true">a</span></span></h1><p class="tile-tag">Rising Sun &amp; Straight Six</p><p class="tile-meta">1971-1972 · 16 paint colours<br><span data-r="eu">1105 PLA · 526 PETG · 150 ASA · 10 e-shops</span><span data-r="int">484 PLA · 131 PETG · 57 ASA · 5 e-shops</span></p></div><div class="head-filters"><div class="year-nav region-switch"><span class="nav-label">Shops in:</span><button type="button" data-region-btn="eu" aria-pressed="true">EU / CZ</button><button type="button" data-region-btn="int" aria-pressed="false">INT</button></div><div class="year-nav region-switch finish-switch"><span class="nav-label">Finishes:</span><button type="button" data-finish-btn="glitter" aria-pressed="false" title="Show glitter filaments">Glitter</button><button type="button" data-finish-btn="matt" aria-pressed="false" title="Show matt filaments">Matt</button><button type="button" data-finish-btn="satin" aria-pressed="false" title="Show satin filaments">Satin</button></div><nav class="year-nav"><span class="nav-label">Jump to year:</span><a href="#y1972">1972</a><a href="#y1971">1971</a></nav></div></header>
 
 <div class="paper">
 

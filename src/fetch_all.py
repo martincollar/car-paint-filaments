@@ -151,6 +151,9 @@ def fetch_shop(rules, args, lock, report):
         color = ov.get("color_name") or pin.get("color_name") or facts.get("color") or shoplib.derive_color_name(title, brand, material)
         if rules.cfg.get("color_strip") and not (ov.get("color_name") or pin.get("color_name") or facts.get("color")):
             color = shoplib._tidy_case(re.sub(rules.cfg["color_strip"], "", color, flags=re.I).strip()) or color
+        attr = shoplib.excluded_attr(facts.get("attrs"))
+        if attr and not pin:
+            reject(slug, f"attr:{attr}"); continue
         finish = shoplib.excluded_finish(slug, url, title, color, patterns=rules.finishes)
         if finish:
             reject(slug, f"finish:{finish}"); continue
