@@ -1845,11 +1845,11 @@
     "car_code": "W-3",
     "paint_ref": "2300",
     "rgb": [
-      232,
-      233,
-      221
+      255,
+      255,
+      254
     ],
-    "hex": "#E8E9DD",
+    "hex": "#FFFFFE",
     "poly": false,
     "source_url": "https://www.autocolorlibrary.com/pages/1971-plymouth",
     "source_file": "sources/1971-plymouth-pg01.jpg",
@@ -1857,7 +1857,9 @@
       506,
       289
     ],
-    "confidence": "measured_from_card"
+    "confidence": "measured_from_card",
+    "measured_hex": "#E8E9DD",
+    "note": "White lift: paint is white, photos/scans read it grey."
   },
   {
     "name": "Curious Yellow",

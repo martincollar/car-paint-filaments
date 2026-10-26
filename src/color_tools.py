@@ -3,6 +3,7 @@
   _load(path)                 image as an RGB array, transparent PNGs composited over white
   filament_rgb(path, ...)     measured colour of a filament product photo (see CLAUDE.md)
   neutral_class(name)         black / dark / white / grey from a colour name, else None
+  lift_white(rgb, name, rules)  pull a measured white towards true white (see CLAUDE.md, "White lift")
   kraft_share(path)           share of a photo that looks like kraft cardboard (review flag)
   kraft_like_name / _rgb      cardboard-coloured name or RGB
   rgb_to_hex, hex_to_rgb, rgb_to_lab, delta_e_2000, delta_e_2000_many (Lab arrays)
@@ -308,6 +309,33 @@ def rgb_to_lab(rgb):
     a = np.asarray(rgb, dtype=float) / 255.0
     xyz = colour.sRGB_to_XYZ(a)
     return colour.XYZ_to_Lab(xyz)
+
+def lab_to_rgb(lab):
+    a = colour.XYZ_to_sRGB(colour.Lab_to_XYZ(np.asarray(lab, dtype=float)))
+    return [int(round(float(c))) for c in np.clip(a, 0, 1) * 255]
+
+def lift_white(rgb, name, rules):
+    """Measured white → lighter, less grey. Photos cannot measure white above ~#EC (the studio
+    background cut-off in filament_rgb()) and shade the windings, so a filament named white
+    measures grey. `rules` = `white_lift` of shops/_defaults.yaml: ordered [{match, L, pull,
+    chroma}], first rule whose regex hits the folded colour name wins. Lightness moves `pull`
+    (default 1) of the way to `L`, never down; a*/b* are scaled by `chroma` (default 1).
+    Colours that are not named white, or that no rule matches, come back unchanged."""
+    if neutral_class(name) != "white":
+        return list(rgb)
+    n = fold(name)
+    for rule in rules or []:
+        if re.search(rule["match"], n):
+            break
+    else:
+        return list(rgb)
+    L, a, b = rgb_to_lab(rgb)
+    target, pull = float(rule.get("L", 100)), float(rule.get("pull", 1))
+    k = float(rule.get("chroma", 1))
+    if pull <= 0 or L >= target - 0.5:            # already there (also keeps a second pass from drifting)
+        return list(rgb)
+    out = lab_to_rgb([L + pull * (target - L), a * k, b * k])
+    return out if sum(out) > sum(rgb) else list(rgb)
 
 def delta_e_2000(rgb_a, rgb_b):
     la = rgb_to_lab(rgb_a)

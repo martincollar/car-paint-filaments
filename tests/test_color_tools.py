@@ -93,3 +93,37 @@ class Conversions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LiftWhite(unittest.TestCase):
+    RULES = [
+        {"match": "ivory|bone", "pull": 0},
+        {"match": "traffic|signal", "L": 100, "chroma": 0},
+        {"match": "cold", "L": 98, "pull": 0.5},
+        {"match": ".", "L": 98, "chroma": 0.15},
+    ]
+
+    def lift(self, rgb, name):
+        return ct.lift_white(rgb, name, self.RULES)
+
+    def test_plain_white_gets_much_lighter_and_neutral(self):
+        out = self.lift([227, 226, 218], "Bílá")
+        self.assertGreaterEqual(ct.rgb_to_lab(out)[0], 96)
+        self.assertLess(max(out) - min(out), 6)
+
+    def test_traffic_white_is_pure_white(self):
+        self.assertEqual(self.lift([210, 208, 203], "Traffic White"), [255, 255, 255])
+
+    def test_cold_white_keeps_its_blue_cast(self):
+        out = self.lift([218, 220, 229], "Cold White")
+        self.assertLess(ct.rgb_to_lab(out)[2], -1)
+        self.assertGreater(ct.rgb_to_lab(out)[0], ct.rgb_to_lab([218, 220, 229])[0])
+
+    def test_offwhite_names_and_non_whites_are_untouched(self):
+        self.assertEqual(self.lift([228, 205, 163], "Ivory White"), [228, 205, 163])
+        self.assertEqual(self.lift([200, 200, 200], "Light Grey"), [200, 200, 200])
+
+    def test_idempotent_and_never_darkens(self):
+        once = self.lift([227, 226, 218], "White")
+        self.assertEqual(self.lift(once, "White"), once)
+        self.assertEqual(self.lift([255, 255, 255], "White"), [255, 255, 255])

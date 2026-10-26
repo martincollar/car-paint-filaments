@@ -8,7 +8,7 @@ Finishes banned in `shops/_defaults.yaml` (`exclude_finishes`: transparent, natu
 silk) are dropped here too — fetch_all.py already skips them, this also covers any
 hand-made raw file.
 
-Manual colors from `filaments/color_overrides.json` ({slug: {hex, note}}) win over
+Manual colors from `filaments/color_overrides.json` ({slug: {hex, note, lift?}}) win over
 the measurement; the measured value is kept as `measured_hex` for comparison.
 
 Each record carries `regions` (e.g. ["eu"]), copied from its shop's `regions:` in
@@ -20,7 +20,7 @@ Usage:
 import json, sys, glob
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from color_tools import filament_rgb, hex_to_rgb, neutral_class, rgb_to_hex, rgb_to_lab, delta_e_2000
+from color_tools import lift_white, filament_rgb, hex_to_rgb, neutral_class, rgb_to_hex, rgb_to_lab, delta_e_2000
 import config, shoplib
 
 # filament_rgb() can't measure white/black filaments: white pixels are dropped as studio
@@ -52,6 +52,8 @@ def apply_override(rec, ov):
     rec["rgb"] = rgb
     rec["hex"] = rgb_to_hex(rgb)
     rec["confidence"] = "manual_override"
+    if ov.get("lift") is False:        # exact hex: the white lift must leave it alone
+        rec["lift"] = False
     rec.pop("error", None)
     return rec
 
@@ -167,6 +169,18 @@ def main():
     print(f"applied {len(used)}/{len(overrides)} color overrides")
     for slug in sorted(set(overrides) - used):
         print(f"  ! override for unknown slug: {slug}")
+
+    # White lift: photos measure white too grey (rules: `white_lift` in shops/_defaults.yaml)
+    rules = shoplib.load_defaults().get("white_lift")
+    lifted = 0
+    for r in measured:
+        if not r.get("rgb") or r.get("lift") is False: continue
+        new = lift_white(r["rgb"], r.get("color_name"), rules)
+        if new != list(r["rgb"]):
+            r["pre_lift_hex"] = r["hex"]
+            r["rgb"], r["hex"] = new, rgb_to_hex(new)
+            lifted += 1
+    print(f"white lift moved {lifted} colours")
 
     # Dedup by (url, slug): keep first (earliest raw file wins).
     # Slug is part of the key because one page can carry many colours (Na3D).

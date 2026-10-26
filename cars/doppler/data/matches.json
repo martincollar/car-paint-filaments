@@ -5235,91 +5235,6 @@
       ],
       "asa": [
         {
-          "delta_e": 10.49,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            197,
-            184
-          ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
-        },
-        {
-          "delta_e": 11.26,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            217,
-            210,
-            201
-          ],
-          "hex": "#D9D2C9",
-          "pixel_count": 29647,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.16,
-          "slug": "fiber3d-asa-white",
-          "brand": "FIBER3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Na3D",
-          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
-          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
-          "local_image": "na3d-fiber3d-asa-white.jpg",
-          "availability": null,
-          "stock": "?",
-          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            199,
-            196,
-            187
-          ],
-          "hex": "#C7C4BB",
-          "pixel_count": 6953,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 12.17,
           "slug": "asa-extrafill-dijon-mustard",
           "brand": "Fillamentum",
@@ -5373,6 +5288,91 @@
           ],
           "hex": "#B9A187",
           "pixel_count": 213837,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 12.87,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 14.56,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 15.17,
+          "slug": "asa-yellow",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Yellow",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-yellow",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33543_166538b2.128x128.jpg",
+          "local_image": "3djake-asa-yellow.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Yellow, 1,75 mm / 750 g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            238,
+            200,
+            59
+          ],
+          "hex": "#EEC83B",
+          "pixel_count": 10055,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -7468,63 +7468,6 @@
       ],
       "asa": [
         {
-          "delta_e": 11.4,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
-          "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            237,
-            236,
-            224
-          ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 11.48,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            197,
-            184
-          ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
-        },
-        {
           "delta_e": 12.05,
           "slug": "asa-extrafill-dijon-mustard",
           "brand": "Fillamentum",
@@ -7553,18 +7496,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.3,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
+          "delta_e": 13.54,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -7572,27 +7515,56 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            217,
-            210,
-            201
+            201,
+            199,
+            192
           ],
-          "hex": "#D9D2C9",
-          "pixel_count": 29647,
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 14.56,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.49,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
+          "delta_e": 14.73,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -7600,12 +7572,42 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            226,
-            226,
-            218
+            240,
+            240,
+            236
           ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false
+        },
+        {
+          "delta_e": 15.8,
+          "slug": "asa-yellow",
+          "brand": "Fiberlogy",
+          "material": "ASA",
+          "color_name": "Yellow",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/asa-yellow",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33543_166538b2.128x128.jpg",
+          "local_image": "3djake-asa-yellow.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy ASA Yellow, 1,75 mm / 750 g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            238,
+            200,
+            59
+          ],
+          "hex": "#EEC83B",
+          "pixel_count": 10055,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -12479,18 +12481,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.05,
-          "slug": "fiber3d-asa-white",
-          "brand": "FIBER3D",
+          "delta_e": 7.76,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "White",
-          "shop": "Na3D",
-          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
-          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
-          "local_image": "na3d-fiber3d-asa-white.jpg",
-          "availability": null,
-          "stock": "?",
-          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -12498,27 +12500,28 @@
           "neon": false,
           "finish": [],
           "rgb": [
+            201,
             199,
-            196,
-            187
+            192
           ],
-          "hex": "#C7C4BB",
-          "pixel_count": 6953,
-          "confidence": "measured_dominant_hue"
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
         },
         {
-          "delta_e": 7.66,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
+          "delta_e": 7.83,
+          "slug": "filament-azurefilm-asa-stribrna-1-75-mm-1-kg",
+          "brand": "AzureFilm",
           "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/1/b16648287568b8be515fa79f9aa5e463-vyr-3196-asa-technical-strong-3d-filament-silver.jpg",
+          "local_image": "smart3d-filament-azurefilm-asa-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament AzureFilm / ASA / STŘÍBRNÁ / 1,75 mm / 1 kg.",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -12526,14 +12529,13 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            202,
-            197,
-            184
+            162,
+            171,
+            175
           ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
+          "hex": "#A2ABAF",
+          "pixel_count": 160374,
+          "confidence": "measured_dominant_hue"
         }
       ]
     },
@@ -14461,18 +14463,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.16,
-          "slug": "refill-spectrum-pla-pastello-lemon-cream-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
+          "delta_e": 7.02,
+          "slug": "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
+          "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Pastello LEMON CREAM",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-spectrum-pla-pastello-lemon-cream-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/d/6df1725d6cbd3931e76ffc013b56728a-0-refill-pla-pastello-lemon-cream.jpg",
-          "local_image": "smart3d-refill-spectrum-pla-pastello-lemon-cream-1-75-mm-1-kg.jpg",
+          "color_name": "3D Skeleton White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/0/30ec319a847069ead63c07f5566dd2eb-skeleton.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill SPECTRUM / PLA Pastello / LEMON CREAM / 1,75 mm / 1 kg",
+          "title": "AURAPOL PLA 3D Filament Skeleton White 1 kg 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -14480,13 +14482,15 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            245,
-            225,
-            150
+            220,
+            215,
+            197
           ],
-          "hex": "#F5E196",
-          "pixel_count": 297253,
-          "confidence": "measured_dominant_hue"
+          "hex": "#DCD7C5",
+          "pixel_count": 35476,
+          "confidence": "manual_override",
+          "measured_hex": "#C6CBCC",
+          "lift": false
         }
       ],
       "petg": [
@@ -14634,18 +14638,18 @@
       ],
       "asa": [
         {
-          "delta_e": 10.09,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
+          "delta_e": 12.16,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -14653,125 +14657,127 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            237,
-            236,
-            224
-          ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.11,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            197,
-            184
-          ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
-        },
-        {
-          "delta_e": 10.18,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            217,
-            210,
-            201
-          ],
-          "hex": "#D9D2C9",
-          "pixel_count": 29647,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 11.1,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            226,
-            218
-          ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 11.71,
-          "slug": "fiber3d-asa-white",
-          "brand": "FIBER3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Na3D",
-          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
-          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
-          "local_image": "na3d-fiber3d-asa-white.jpg",
-          "availability": null,
-          "stock": "?",
-          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
+            201,
             199,
-            196,
-            187
+            192
           ],
-          "hex": "#C7C4BB",
-          "pixel_count": 6953,
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 13.05,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 13.15,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false
+        },
+        {
+          "delta_e": 13.97,
+          "slug": "asa-extrafill-dijon-mustard",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Dijon Mustard",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-dijon-mustard",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Dijon_Mustard_1_75.jpg",
+          "local_image": "fillamentum-asa-extrafill-dijon-mustard.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Dijon Mustard\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            205,
+            191,
+            96
+          ],
+          "hex": "#CDBF60",
+          "pixel_count": 358856,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 14.5,
+          "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "ASA",
+          "color_name": "Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5047052fb83662a0a8bed9b5b7ee0a85-fg-p135-e1fg-p135-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament PROFESSIONAL LAB / ASA / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            204,
+            206,
+            205
+          ],
+          "hex": "#CCCECD",
+          "pixel_count": 421488,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -16902,91 +16908,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.4,
-          "slug": "filament-smart-print-asa-bila-1-kg-1-75-mm",
-          "brand": "Smart Print",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-smart-print-asa-bila-1-kg-1-75-mm/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/8019-1_asa-smart-print-bila.jpg?ff=1&x=1024&y=768&q=85&ts=6a9e93a0&sg=161563f2",
-          "local_image": "3dfox-filament-smart-print-asa-bila-1-kg-1-75-mm.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Smart Print ASA bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            222,
-            225,
-            221
-          ],
-          "hex": "#DEE1DD",
-          "pixel_count": 57523,
-          "confidence": "manual_override",
-          "measured_hex": "#E3E5E0"
-        },
-        {
-          "delta_e": 17.71,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            226,
-            218
-          ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 17.79,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
-          "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            237,
-            236,
-            224
-          ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 18.53,
           "slug": "refill-rosa3d-asa-zelena-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -17014,6 +16935,91 @@
           "pixel_count": 223070,
           "confidence": "manual_override",
           "measured_hex": "#C02726"
+        },
+        {
+          "delta_e": 18.62,
+          "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "brand": "Professional Lab",
+          "material": "ASA",
+          "color_name": "Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/5047052fb83662a0a8bed9b5b7ee0a85-fg-p135-e1fg-p135-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-asa-seda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament PROFESSIONAL LAB / ASA / ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            204,
+            206,
+            205
+          ],
+          "hex": "#CCCECD",
+          "pixel_count": 421488,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 18.73,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 19.09,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
         }
       ]
     },
@@ -17655,91 +17661,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.12,
-          "slug": "filament-nebula-petg-signalni-bila-1-kg",
-          "brand": "NEBULA",
-          "material": "PETG",
-          "color_name": "Signální bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-signalni-bila-1-kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/90-3_filament-nebula-petg-signalni-bila-1-kg-1-75-mm.jpg?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
-          "local_image": "3dfox-filament-nebula-petg-signalni-bila-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA PETG signální bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            213,
-            221,
-            220
-          ],
-          "hex": "#D5DDDC",
-          "pixel_count": 41327,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 8.78,
-          "slug": "aurapol-pet-g-filament-white-1-kg-1-75-mm",
-          "brand": "Aurapol",
-          "material": "PETG",
-          "color_name": "White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pet-g-filament-white-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/b/4/b44bcca3b45e603f64621a52bdead636-white-signal-petg.png",
-          "local_image": "aurapol-pet-g-white-petg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PET-G Filament White 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            206,
-            209,
-            205
-          ],
-          "hex": "#CED1CD",
-          "pixel_count": 55422,
-          "confidence": "manual_override",
-          "measured_hex": "#D3D8D3"
-        },
-        {
-          "delta_e": 9.07,
-          "slug": "filament-fox-refill-petg-bila-1-kg",
-          "brand": "3DFOX",
-          "material": "PETG",
-          "color_name": "Bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-fox-refill-petg-bila-1-kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/5910_petg.png?ff=1&x=1024&y=768&q=85&ts=683d3f3a&sg=161563f2",
-          "local_image": "3dfox-filament-fox-refill-petg-bila-1-kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DFOX PETG REFILL bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            213,
-            221,
-            226
-          ],
-          "hex": "#D5DDE2",
-          "pixel_count": 33910,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 9.54,
           "slug": "refill-rosa3d-petg-structure-svetle-seda-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -17765,6 +17686,91 @@
           ],
           "hex": "#CCCDC7",
           "pixel_count": 72810,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.76,
+          "slug": "bambu-lab-petg-hf-gray",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "HF Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/b2509840152946cdab0a00a33d547a89/9a7dade47ad44a37a39325b7363a0370.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-gray.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            173,
+            177,
+            178
+          ],
+          "hex": "#ADB1B2",
+          "pixel_count": 1440000,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.79,
+          "slug": "refill-thefilament-petg-seda-cloud-1-75-mm-1-kg",
+          "brand": "Spectrum + The Filament",
+          "material": "PETG",
+          "color_name": "Šedá Cloud",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-thefilament-petg-seda-cloud-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/0/2/020f89c2aea840ee756114f008b16d14-the-filament-cloud-grey-petg-0.jpg",
+          "local_image": "smart3d-refill-thefilament-petg-seda-cloud-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill TheFilament / PETG / ŠEDÁ \"CLOUD \" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            184,
+            185,
+            182
+          ],
+          "hex": "#B8B9B6",
+          "pixel_count": 183154,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.81,
+          "slug": "easy-petg-gray",
+          "brand": "Fiberlogy",
+          "material": "PETG",
+          "color_name": "Easy Gray",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-petg-gray",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/118732_17921427176ad1ed7de8078.128x128.jpg",
+          "local_image": "3djake-easy-petg-gray.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy Easy PETG Gray, 1,75 mm / 1000 g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            195,
+            195,
+            194
+          ],
+          "hex": "#C3C3C2",
+          "pixel_count": 4743,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -18406,47 +18412,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.27,
-          "slug": "aurapol-pla-3d-filament-white-1-kg-1-75-mm",
-          "brand": "Aurapol",
-          "material": "PLA",
-          "color_name": "White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-white-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/8/7/87e17edfe995f4f27f5e86b46e618e19-white-pla.png",
-          "local_image": "aurapol-pla-white-pla.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL PLA 3D Filament White 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            218,
-            222,
-            207
-          ],
-          "hex": "#DADECF",
-          "pixel_count": 52198,
-          "confidence": "manual_override",
-          "measured_hex": "#E2E6D9"
-        },
-        {
-          "delta_e": 5.53,
-          "slug": "aurapol-pla-ht110-3d-filament-white-1-kg-1-75-mm",
+          "delta_e": 5.48,
+          "slug": "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
           "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "HT110 3D White",
+          "color_name": "3D Skeleton White",
           "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-white-1-kg-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/8/7/87e17edfe995f4f27f5e86b46e618e19-white-pla.png",
-          "local_image": "aurapol-aurapol-pla-ht110-3d-filament-white-1-kg-1-75-mm.png",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/0/30ec319a847069ead63c07f5566dd2eb-skeleton.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "AURAPOL PLA HT110 3D Filament White 1 kg 1,75 mm",
+          "title": "AURAPOL PLA 3D Filament Skeleton White 1 kg 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18454,27 +18431,29 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            226,
-            230,
-            217
+            220,
+            215,
+            197
           ],
-          "hex": "#E2E6D9",
-          "pixel_count": 52198,
-          "confidence": "measured_dominant_hue"
+          "hex": "#DCD7C5",
+          "pixel_count": 35476,
+          "confidence": "manual_override",
+          "measured_hex": "#C6CBCC",
+          "lift": false
         },
         {
-          "delta_e": 5.98,
-          "slug": "refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg",
-          "brand": "AzureFilm",
+          "delta_e": 8.17,
+          "slug": "p62",
+          "brand": "Filament PM",
           "material": "PLA",
-          "color_name": "Bílá Foggy",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/b/db0a5fd83124131326647a82747ad3bf-3d-printing-high-quality-filament-refill-pla-foggy-white.webp",
-          "local_image": "smart3d-refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg.webp",
+          "color_name": "Béžová",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/pla-bezova-1-75-mm-1-kg/p62",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4620-pla-beige-1kg-1-75-1-product-og.jpg?v=4128247862",
+          "local_image": "filament_pm-p62.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill AzureFilm / PLA / BÍLÁ \"FOGGY\" / 1,75 mm / 1 kg.",
+          "title": "PLA - Béžová",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18482,27 +18461,55 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            229,
-            217
+            219,
+            205,
+            178
           ],
-          "hex": "#E7E5D9",
-          "pixel_count": 168090,
+          "hex": "#DBCDB2",
+          "pixel_count": 132496,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 6.16,
-          "slug": "refill-rosa3d-pla-starter-bila-lithophane-1-75-mm-1-kg",
+          "delta_e": 8.59,
+          "slug": "filamentree-pla-plus-zelena-lime-cream-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Zelená (Lime Cream)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-zelena-lime-cream-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/b/0/b016267c2275b451c823c1b651a6cc9a-pla-plus-lime-cream-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-zelena-lime-cream-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PLA plus - Zelená (Lime Cream) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            193,
+            206,
+            178
+          ],
+          "hex": "#C1CEB2",
+          "pixel_count": 236917,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.65,
+          "slug": "refill-rosa3d-pla-starter-computers-8bit-retro-bezova-1-75-mm-1-kg",
           "brand": "ROSA3D",
           "material": "PLA",
-          "color_name": "Starter BÍLÁ LITHOPHANE",
+          "color_name": "Starter COMPUTERS 8bit RETRO BÉŽOVÁ",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-bila-lithophane-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/3/f/3fe9354dbfc971647b8d36ac62f17ae8-refill-pla-starter-litophane-white-1kg-box-rosa3d.jpg",
-          "local_image": "smart3d-refill-rosa3d-pla-starter-bila-lithophane-1-75-mm-1-kg.jpg",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-pla-starter-computers-8bit-retro-bezova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/2/22344cc61cae50cee96aa52378154277-refill-pla-starter-1-75mm-computers-8bit-retro-beige-1kg.jpg",
+          "local_image": "smart3d-refill-rosa3d-pla-starter-computers-8bit-retro-bezova-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill ROSA3D / PLA Starter / BÍLÁ \"LITHOPHANE\" / 1,75 mm / 1 kg",
+          "title": "ReFill ROSA3D / PLA Starter / COMPUTERS 8bit RETRO BÉŽOVÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18510,12 +18517,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            230,
-            231,
-            220
+            217,
+            204,
+            182
           ],
-          "hex": "#E6E7DC",
-          "pixel_count": 81215,
+          "hex": "#D9CCB6",
+          "pixel_count": 145122,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -18605,18 +18612,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.51,
-          "slug": "refill-rosa3d-petg-ht-bila-winter-1-75-mm-1-kg",
-          "brand": "ROSA3D",
+          "delta_e": 9.8,
+          "slug": "filament-professional-lab-petg-bezova-1-75-mm-1-kg",
+          "brand": "Professional Lab",
           "material": "PETG",
-          "color_name": "HT Bílá Winter",
+          "color_name": "Béžová",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-rosa3d-petg-ht-bila-winter-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/8/4808d3638962191de405bb11a21e3d3c-filament-3d-refill-pet-g-ht-winter-white.jpg",
-          "local_image": "smart3d-refill-rosa3d-petg-ht-bila-winter-1-75-mm-1-kg.jpg",
+          "url": "https://www.smart3d.cz/p/filament-professional-lab-petg-bezova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/f/cfa2bb6ccf1bf7719af49ac73cbbdef0-fg-p203-e1fg-p203-e1.jpg",
+          "local_image": "smart3d-filament-professional-lab-petg-bezova-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill ROSA3D / PETG HT / BÍLÁ \"WINTER\" / 1,75 mm / 1 kg",
+          "title": "Filament Professional LAB / PETG / BÉŽOVÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18624,57 +18631,58 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            234,
-            235,
-            227
+            197,
+            191,
+            160
           ],
-          "hex": "#EAEBE3",
-          "pixel_count": 16993,
+          "hex": "#C5BFA0",
+          "pixel_count": 503743,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.82,
-          "slug": "refill-thefilament-petg-lite-bila-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
+          "delta_e": 9.97,
+          "slug": "bambu-lab-petg-hf-cream",
+          "brand": "Bambu Lab",
           "material": "PETG",
-          "color_name": "Lite BÍLÁ",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-thefilament-petg-lite-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/a/2a6183f53165592baaf6b3a138c61775-eng-pl-the-filament-refill-petg-lite-1-75mm-white-1kg-3396-1.jpg",
-          "local_image": "smart3d-refill-thefilament-petg-lite-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill TheFilament / PETG Lite / BÍLÁ / 1,75 mm / 1 kg",
+          "color_name": "HF Cream",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/74667b6e77ab41a48bcbbf0e5a7e962f/61202de96c7c49ccab34f0cc001157ee.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-cream.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
           "last_ok": "2026-10-26",
           "regions": [
-            "eu"
+            "eu",
+            "int"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            232,
-            233,
-            228
+            249,
+            223,
+            185
           ],
-          "hex": "#E8E9E4",
-          "pixel_count": 38757,
+          "hex": "#F9DFB9",
+          "pixel_count": 640000,
           "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
         {
-          "delta_e": 5.97,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
+          "delta_e": 9.57,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18682,84 +18690,29 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            237,
-            236,
-            224
+            240,
+            240,
+            236
           ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 7.56,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            226,
-            218
-          ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 9.34,
-          "slug": "filament-smart-print-asa-bila-1-kg-1-75-mm",
-          "brand": "Smart Print",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-smart-print-asa-bila-1-kg-1-75-mm/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/8019-1_asa-smart-print-bila.jpg?ff=1&x=1024&y=768&q=85&ts=6a9e93a0&sg=161563f2",
-          "local_image": "3dfox-filament-smart-print-asa-bila-1-kg-1-75-mm.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Smart Print ASA bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            222,
-            225,
-            221
-          ],
-          "hex": "#DEE1DD",
-          "pixel_count": 57523,
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
           "confidence": "manual_override",
-          "measured_hex": "#E3E5E0"
+          "measured_hex": "#DBE0CD",
+          "lift": false
         },
         {
-          "delta_e": 9.37,
-          "slug": "filament-professional-lab-asa-bila-1-75-mm-1-kg",
-          "brand": "Professional Lab",
+          "delta_e": 10.66,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
           "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-professional-lab-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/e/2e064a4c7085169bc8d704c7e9ca0e44-fg-p133-e1fg-p133-e1.jpg",
-          "local_image": "smart3d-filament-professional-lab-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament PROFESSIONAL LAB / ASA / BÍLÁ / 1,75 mm / 1 kg",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18767,27 +18720,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            227,
-            227,
-            223
+            212,
+            212,
+            209
           ],
-          "hex": "#E3E3DF",
-          "pixel_count": 205383,
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.47,
-          "slug": "refill-thefilament-asa-bila-traffic-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
+          "delta_e": 10.9,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
           "material": "ASA",
-          "color_name": "Bílá Traffic",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-thefilament-asa-bila-traffic-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/e/de45a2db6bbcd430ba2ed293bbf4ad6a-eng-pl-the-filament-refill-asa-1-75mm-traffic-white-1kg-3330-2.jpg",
-          "local_image": "smart3d-refill-thefilament-asa-bila-traffic-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill TheFilament / ASA / BÍLÁ \"TRAFFIC\" / 1,75 mm / 1 kg",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -18795,13 +18748,72 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            234,
-            233,
-            229
+            201,
+            199,
+            192
           ],
-          "hex": "#EAE9E5",
-          "pixel_count": 32162,
-          "confidence": "measured_dominant_hue"
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 11.97,
+          "slug": "asa-extrafill-snow-white",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill Snow White",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
+          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ASA Extrafill \"Snow White\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            254
+          ],
+          "hex": "#FFFFFE",
+          "pixel_count": 29647,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#D9D2C9"
+        },
+        {
+          "delta_e": 11.97,
+          "slug": "fiber3d-asa-white",
+          "brand": "FIBER3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+          "local_image": "na3d-fiber3d-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            254
+          ],
+          "hex": "#FFFFFE",
+          "pixel_count": 6953,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#C7C4BB"
         }
       ]
     },
@@ -19833,18 +19845,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.05,
-          "slug": "refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg",
-          "brand": "AzureFilm",
+          "delta_e": 6.35,
+          "slug": "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
+          "brand": "AURAPOL",
           "material": "PLA",
-          "color_name": "Bílá Foggy",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/d/b/db0a5fd83124131326647a82747ad3bf-3d-printing-high-quality-filament-refill-pla-foggy-white.webp",
-          "local_image": "smart3d-refill-azurefilm-pla-bila-foggy-1-75-mm-1-kg.webp",
+          "color_name": "3D Skeleton White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/3/0/30ec319a847069ead63c07f5566dd2eb-skeleton.png",
+          "local_image": "aurapol-aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill AzureFilm / PLA / BÍLÁ \"FOGGY\" / 1,75 mm / 1 kg.",
+          "title": "AURAPOL PLA 3D Filament Skeleton White 1 kg 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -19852,13 +19864,15 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            229,
-            217
+            220,
+            215,
+            197
           ],
-          "hex": "#E7E5D9",
-          "pixel_count": 168090,
-          "confidence": "measured_dominant_hue"
+          "hex": "#DCD7C5",
+          "pixel_count": 35476,
+          "confidence": "manual_override",
+          "measured_hex": "#C6CBCC",
+          "lift": false
         }
       ],
       "petg": [
@@ -20006,18 +20020,18 @@
       ],
       "asa": [
         {
-          "delta_e": 8.47,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
+          "delta_e": 11.46,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
           "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -20025,16 +20039,75 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            237,
-            236,
-            224
+            240,
+            240,
+            236
           ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false
+        },
+        {
+          "delta_e": 11.8,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 12.13,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 9.34,
+          "delta_e": 13.58,
           "slug": "asa-extrafill-snow-white",
           "brand": "Fillamentum",
           "material": "ASA",
@@ -20053,27 +20126,28 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            217,
-            210,
-            201
+            255,
+            255,
+            254
           ],
-          "hex": "#D9D2C9",
+          "hex": "#FFFFFE",
           "pixel_count": 29647,
-          "confidence": "measured_dominant_hue"
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#D9D2C9"
         },
         {
-          "delta_e": 9.78,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
+          "delta_e": 13.58,
+          "slug": "fiber3d-asa-white",
+          "brand": "FIBER3D",
           "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
+          "color_name": "White",
+          "shop": "Na3D",
+          "url": "https://www.na3d.cz/p/3106/fiber3d-asa-filament-175-mm-1-kg",
+          "image_url": "https://www.na3d.cz/resize/e/800/800/files/fiber3d/asa-white.jpg",
+          "local_image": "na3d-fiber3d-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "FIBER3D ASA filament 1,75 mm 1 kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -20081,70 +20155,14 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            226,
-            226,
-            218
+            255,
+            255,
+            254
           ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.07,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            197,
-            184
-          ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
-        },
-        {
-          "delta_e": 10.34,
-          "slug": "filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg",
-          "brand": "Spectrum + The Filament",
-          "material": "ASA",
-          "color_name": "275 Bílá Polar",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/9/b972dcffd311a4bb11e0416ea9b9aec0-vyr-1203-16-1.jpg",
-          "local_image": "smart3d-filament-spectrum-asa-275-bila-polar-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament SPECTRUM / ASA 275 / BÍLÁ \"POLAR\" / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            224,
-            219
-          ],
-          "hex": "#E4E0DB",
-          "pixel_count": 89136,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFE",
+          "pixel_count": 6953,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#C7C4BB"
         }
       ]
     },
@@ -24960,91 +24978,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 16.16,
-          "slug": "filament-smart-print-asa-bila-1-kg-1-75-mm",
-          "brand": "Smart Print",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-smart-print-asa-bila-1-kg-1-75-mm/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/8019-1_asa-smart-print-bila.jpg?ff=1&x=1024&y=768&q=85&ts=6a9e93a0&sg=161563f2",
-          "local_image": "3dfox-filament-smart-print-asa-bila-1-kg-1-75-mm.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Smart Print ASA bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            222,
-            225,
-            221
-          ],
-          "hex": "#DEE1DD",
-          "pixel_count": 57523,
-          "confidence": "manual_override",
-          "measured_hex": "#E3E5E0"
-        },
-        {
-          "delta_e": 16.35,
-          "slug": "filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "brand": "AzureFilm",
-          "material": "ASA",
-          "color_name": "Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-azurefilm-asa-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/e/be6f796cf480463c648cc3358220b9c5-vyr-3197-asa-technical-strong-3d-filament-white.jpg",
-          "local_image": "smart3d-filament-azurefilm-asa-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament AzureFilm / ASA / BÍLÁ / 1,75 mm / 1 kg.",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            226,
-            218
-          ],
-          "hex": "#E2E2DA",
-          "pixel_count": 52663,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 16.42,
-          "slug": "filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "brand": "NEBULA + COLORFIL",
-          "material": "ASA",
-          "color_name": "301 Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-nebula-asa-301-bila-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/a/c/ac74068864dcd63b0d3b17cfbe50e4e0-white.jpg",
-          "local_image": "smart3d-filament-nebula-asa-301-bila-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament NEBULA / ASA 301 / BÍLÁ / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            237,
-            236,
-            224
-          ],
-          "hex": "#EDECE0",
-          "pixel_count": 3674,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 17.4,
           "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
           "brand": "Professional Lab",
@@ -25071,6 +25004,92 @@
           "hex": "#CCCECD",
           "pixel_count": 421488,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.45,
+          "slug": "asa-extrafill-white-aluminium",
+          "brand": "Fillamentum",
+          "material": "ASA",
+          "color_name": "Extrafill White Aluminium",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/asa-extrafill-white-aluminium",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_White_Aluminium.jpg",
+          "local_image": "fillamentum-asa-extrafill-white-aluminium.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "ASA Extrafill \"White Aluminium\"",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            212,
+            212,
+            209
+          ],
+          "hex": "#D4D4D1",
+          "pixel_count": 14901,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 17.66,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 17.97,
+          "slug": "refill-rosa3d-asa-zelena-1-75-mm-1-kg",
+          "brand": "ROSA3D",
+          "material": "ASA",
+          "color_name": "Zelená",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/refill-rosa3d-asa-zelena-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/a/ba8523682e3968b1f10e1dde05493b13-refill-asa-green-box-rosa3d.webp",
+          "local_image": "smart3d-refill-rosa3d-asa-zelena-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "ReFill ROSA3D / ASA / ZELENÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            119,
+            195,
+            95
+          ],
+          "hex": "#77C35F",
+          "pixel_count": 223070,
+          "confidence": "manual_override",
+          "measured_hex": "#C02726"
         }
       ]
     },
@@ -25797,18 +25816,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.28,
-          "slug": "filament-nebula-petg-signalni-bila-1-kg",
-          "brand": "NEBULA",
+          "delta_e": 12.35,
+          "slug": "petg-forget-me-not-blue",
+          "brand": "Fillamentum",
           "material": "PETG",
-          "color_name": "Signální bílá",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-nebula-petg-signalni-bila-1-kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/90-3_filament-nebula-petg-signalni-bila-1-kg-1-75-mm.jpg?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
-          "local_image": "3dfox-filament-nebula-petg-signalni-bila-1-kg.jpg",
+          "color_name": "Forget-Me-Not Blue",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/petg-forget-me-not-blue",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/Forget-me_1KG.png",
+          "local_image": "fillamentum-petg-petg-forget-me-not-blue.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament NEBULA PETG signální bílá 1 kg 1,75 mm",
+          "title": "PETG \"Forget-me-not Blue\"",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -25816,12 +25835,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            213,
-            221,
-            220
+            2,
+            192,
+            224
           ],
-          "hex": "#D5DDDC",
-          "pixel_count": 41327,
+          "hex": "#02C0E0",
+          "pixel_count": 471536,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -27226,63 +27245,6 @@
           "measured_hex": "#C32925"
         },
         {
-          "delta_e": 17.2,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            217,
-            210,
-            201
-          ],
-          "hex": "#D9D2C9",
-          "pixel_count": 29647,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 18.05,
-          "slug": "asa-extrafill-traffic-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Traffic White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-traffic-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/products/ASA_Extrafill_Traffic_White_1_75.jpg",
-          "local_image": "fillamentum-asa-extrafill-traffic-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Traffic White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            197,
-            184
-          ],
-          "hex": "#CAC5B8",
-          "pixel_count": 118063,
-          "confidence": "manual_override",
-          "measured_hex": "#E8E4E0"
-        },
-        {
           "delta_e": 18.2,
           "slug": "filament-azurefilm-asa-oranzova-1-75-mm-1-kg",
           "brand": "AzureFilm",
@@ -27308,6 +27270,63 @@
           ],
           "hex": "#F49411",
           "pixel_count": 188349,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 19.06,
+          "slug": "devil-design-asa-svetle-seda-light-grey-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Světle Šedá (Light Grey)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-svetle-seda-light-grey-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/a/9a154bbccdf533c866adc853e237a454-asa-1-75-light-gray.png",
+          "local_image": "hubacek3d-devil-design-asa-svetle-seda-light-grey-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            201,
+            199,
+            192
+          ],
+          "hex": "#C9C7C0",
+          "pixel_count": 176675,
+          "confidence": "manual_override",
+          "measured_hex": "#A9A79E"
+        },
+        {
+          "delta_e": 19.62,
+          "slug": "devil-design-asa-oranzova-bright-orange-1kg",
+          "brand": "Devil Design",
+          "material": "ASA",
+          "color_name": "Oranžová (Bright Orange)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-asa-oranzova-bright-orange-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/a/b/ab14e19bd42fafc82df6037307a0cbb5-asa-1-75-bright-orange.png",
+          "local_image": "hubacek3d-devil-design-asa-oranzova-bright-orange-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design ASA - Oranžová (Bright Orange) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            234,
+            119,
+            1
+          ],
+          "hex": "#EA7701",
+          "pixel_count": 184652,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -34015,18 +34034,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 20.19,
-          "slug": "overture-asa-filament-1-75mm-white",
+          "delta_e": 20.61,
+          "slug": "overture-asa-filament-1-75mm-green",
           "brand": "Overture 3D",
           "material": "ASA",
-          "color_name": "White",
+          "color_name": "Green",
           "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43982539653374",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-596211.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-green.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "title": "Overture ASA 3D Printer Filament 1.75mm Green",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -34034,12 +34053,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            59,
+            163,
+            91
           ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
+          "hex": "#3BA35B",
+          "pixel_count": 834085,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -36181,18 +36200,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 15.05,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "delta_e": 17.18,
+          "slug": "filament-spectrum-asa-275-1-75mm-traffic-yellow-1kg",
           "brand": "Spectrum",
           "material": "ASA",
-          "color_name": "Polar White",
+          "color_name": "Traffic Yellow",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-traffic-yellow-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-traffic-yellow-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-traffic-yellow-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum ASA 275 1.75mm TRAFFIC YELLOW 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -36200,27 +36219,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            243,
+            182,
+            14
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
+          "hex": "#F3B60E",
+          "pixel_count": 469437,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 15.41,
-          "slug": "asa-white",
+          "delta_e": 17.37,
+          "slug": "asa-yellow",
           "brand": "Polymaker",
           "material": "ASA",
-          "color_name": "White",
+          "color_name": "Yellow",
           "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
+          "url": "https://us.polymaker.com/products/asa?variant=40294530908217",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/yellow_bedff49d-ef5c-4c7a-8313-aa82574509bd.png",
+          "local_image": "polymaker-asa-yellow.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Yellow",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -36228,27 +36247,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            226,
-            222,
-            221
+            241,
+            197,
+            1
           ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
+          "hex": "#F1C501",
+          "pixel_count": 4346124,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 16.13,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
+          "delta_e": 18.67,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
           "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
           "last_ok": "2026-10-26",
           "regions": [
             "eu",
@@ -36257,16 +36276,16 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            231,
-            230
+            255,
+            255,
+            255
           ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
         },
         {
-          "delta_e": 16.21,
+          "delta_e": 18.67,
           "slug": "overture-asa-filament-1-75mm-white",
           "brand": "Overture 3D",
           "material": "ASA",
@@ -36285,13 +36304,14 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            255,
+            255,
+            255
           ],
-          "hex": "#E0E3E1",
+          "hex": "#FFFFFF",
           "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
         }
       ]
     },
@@ -38403,119 +38423,6 @@
       ],
       "asa": [
         {
-          "delta_e": 15.16,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 15.24,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 15.55,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 15.91,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            222,
-            221
-          ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 17.49,
           "slug": "bambu-lab-asa-white",
           "brand": "Bambu Lab",
@@ -38541,7 +38448,125 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 17.49,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 17.49,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
+        },
+        {
+          "delta_e": 17.49,
+          "slug": "prusament-asa-signal-white",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Signal White",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
+          "local_image": "prusament-asa-signal-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Signal White 800g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 235591,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E7E7E6"
+        },
+        {
+          "delta_e": 17.49,
+          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Polar White",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 226273,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E4E1DF"
         }
       ]
     },
@@ -40317,31 +40342,32 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.16,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
+          "delta_e": 19.89,
+          "slug": "bambu-lab-asa-green",
+          "brand": "Bambu Lab",
           "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "color_name": "Green",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/74d99fbb500d4e56b170eb33d53e8e64/cb784d59ca1d48cea42f9c2e545854b7.media",
+          "local_image": "bambulab-bambu-lab-asa-green.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
           "last_ok": "2026-10-26",
           "regions": [
+            "eu",
             "int"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            0,
+            166,
+            160
           ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
+          "hex": "#00A6A0",
+          "pixel_count": 16384,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -43416,18 +43442,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 13.57,
-          "slug": "asa-white",
+          "delta_e": 14.82,
+          "slug": "asa-olive-brown",
           "brand": "Polymaker",
           "material": "ASA",
-          "color_name": "White",
+          "color_name": "Olive Brown",
           "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
+          "url": "https://us.polymaker.com/products/asa?variant=41590536667193",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01045_pdt_isometric_top.png",
+          "local_image": "polymaker-asa-olive-brown.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Olive Brown",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -43435,27 +43461,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            226,
-            222,
-            221
+            175,
+            153,
+            104
           ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
+          "hex": "#AF9968",
+          "pixel_count": 306178,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 14.03,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
+          "delta_e": 16.82,
+          "slug": "asa-grey",
+          "brand": "Polymaker",
           "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "color_name": "Grey",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343188537",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/grey_cdffe279-bbb1-49af-8033-73294aac3e89.png",
+          "local_image": "polymaker-asa-grey.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "title": "Polymaker™ ASA Grey",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -43463,41 +43489,42 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            122,
+            125,
+            131
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
+          "hex": "#7A7D83",
+          "pixel_count": 1304391,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 14.59,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
+          "delta_e": 20.24,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
           "material": "ASA",
           "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
           "last_ok": "2026-10-26",
           "regions": [
+            "eu",
             "int"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            255,
+            255,
+            255
           ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
         }
       ]
     },
@@ -45576,18 +45603,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 13.19,
-          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
+          "delta_e": 14.28,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
           "brand": "Spectrum",
           "material": "PETG",
-          "color_name": "Arctic White",
+          "color_name": "Light Grey",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Arctic_White_1.jpg",
-          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg.jpg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-light-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum PETG Premium High Speed 1.75mm ARCTIC WHITE 1kg",
+          "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -45595,129 +45622,16 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            234,
-            234,
-            231
+            199,
+            199,
+            197
           ],
-          "hex": "#EAEAE7",
-          "pixel_count": 108445,
+          "hex": "#C7C7C5",
+          "pixel_count": 157662,
           "confidence": "measured_dominant_hue"
         }
       ],
       "asa": [
-        {
-          "delta_e": 13.17,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 13.78,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            222,
-            221
-          ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 13.87,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 13.88,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
         {
           "delta_e": 15.82,
           "slug": "bambu-lab-asa-white",
@@ -45744,7 +45658,125 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 15.82,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 15.82,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
+        },
+        {
+          "delta_e": 15.82,
+          "slug": "prusament-asa-signal-white",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Signal White",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
+          "local_image": "prusament-asa-signal-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Signal White 800g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 235591,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E7E7E6"
+        },
+        {
+          "delta_e": 15.82,
+          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Polar White",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 226273,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E4E1DF"
         }
       ]
     },
@@ -47827,18 +47859,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 18.96,
-          "slug": "petg-white",
-          "brand": "Polymaker",
+          "delta_e": 19.39,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "brand": "Spectrum",
           "material": "PETG",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/petg?variant=45079221141561",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05002_Isometric_Top_39081b84-719c-44b5-b39a-aa270422fa01.png",
-          "local_image": "polymaker-petg-white.png",
+          "color_name": "Light Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-light-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Polymaker™ PETG White",
+          "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -47846,12 +47878,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            232,
-            233,
-            231
+            199,
+            199,
+            197
           ],
-          "hex": "#E8E9E7",
-          "pixel_count": 156290,
+          "hex": "#C7C7C5",
+          "pixel_count": 157662,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -47886,63 +47918,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.98,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 19.55,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 20.71,
           "slug": "overture-asa-filament-1-75mm-gray",
           "brand": "Overture 3D",
@@ -47971,18 +47946,47 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 20.9,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
+          "delta_e": 21.25,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
           "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 21.25,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -47990,13 +47994,43 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            255,
+            255,
+            255
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 21.25,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
         }
       ]
     },
@@ -48785,7 +48819,36 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 10.79,
+          "delta_e": 16.2,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 16.2,
           "slug": "overture-asa-filament-1-75mm-white",
           "brand": "Overture 3D",
           "material": "ASA",
@@ -48804,16 +48867,46 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            255,
+            255,
+            255
           ],
-          "hex": "#E0E3E1",
+          "hex": "#FFFFFF",
           "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
         },
         {
-          "delta_e": 12.58,
+          "delta_e": 16.2,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
+        },
+        {
+          "delta_e": 16.2,
           "slug": "prusament-asa-signal-white",
           "brand": "Prusament",
           "material": "ASA",
@@ -48833,69 +48926,14 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            231,
-            230
+            255,
+            255,
+            255
           ],
-          "hex": "#E7E7E6",
+          "hex": "#FFFFFF",
           "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 13.19,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 13.59,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            222,
-            221
-          ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
-          "confidence": "measured_dominant_hue"
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E7E7E6"
         }
       ]
     },
@@ -49452,34 +49490,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.45,
-          "slug": "overture-easy-pla-3d-printer-filament-easy-white",
-          "brand": "Overture 3D",
-          "material": "PLA",
-          "color_name": "Easy White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-easy-pla-3d-printer-filament?variant=46019408036094",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/files/overture-easy-pla-3d-printer-filament-175mm-430108.jpg",
-          "local_image": "overture-overture-easy-pla-3d-printer-filament-easy-white.jpg",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Overture Easy PLA 3D Printer Filament 1.75mm Easy White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            232,
-            224
-          ],
-          "hex": "#E7E8E0",
-          "pixel_count": 326532,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.92,
           "slug": "filament-spectrum-pla-premium-1-75mm-ivory-beige-1kg",
           "brand": "Spectrum",
@@ -49506,22 +49516,20 @@
           "hex": "#E3D4BC",
           "pixel_count": 1805322,
           "confidence": "measured_dominant_hue"
-        }
-      ],
-      "petg": [
+        },
         {
-          "delta_e": 9.86,
-          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
+          "delta_e": 11.13,
+          "slug": "filament-spectrum-pastello-pla-1-75mm-coctail-green-1kg",
           "brand": "Spectrum",
-          "material": "PETG",
-          "color_name": "Arctic White",
+          "material": "PLA",
+          "color_name": "Coctail Green",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Arctic_White_1.jpg",
-          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum PETG Premium High Speed 1.75mm ARCTIC WHITE 1kg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pastello-pla-1-75mm-coctail-green-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/pla-pastello-coctail-green-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pastello-pla-1-75mm-coctail-green-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Filament Spectrum Pastello PLA 1.75mm COCTAIL GREEN 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -49529,14 +49537,16 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            234,
-            234,
-            231
+            186,
+            213,
+            184
           ],
-          "hex": "#EAEAE7",
-          "pixel_count": 108445,
+          "hex": "#BAD5B8",
+          "pixel_count": 911724,
           "confidence": "measured_dominant_hue"
-        },
+        }
+      ],
+      "petg": [
         {
           "delta_e": 9.97,
           "slug": "bambu-lab-petg-hf-cream",
@@ -49567,35 +49577,65 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 10.27,
-          "slug": "petg-white",
-          "brand": "Polymaker",
+          "delta_e": 12.44,
+          "slug": "bambu-lab-petg-hf-white",
+          "brand": "Bambu Lab",
           "material": "PETG",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/petg?variant=45079221141561",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05002_Isometric_Top_39081b84-719c-44b5-b39a-aa270422fa01.png",
-          "local_image": "polymaker-petg-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ PETG White",
+          "color_name": "HF White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-hf",
+          "image_url": "https://store.bblcdn.eu/s8/default/d757dad66404470eb30affe7212416c9/d0124e2bbb174c8ba1bad0675d35e37a.png",
+          "local_image": "bambulab-bambu-lab-petg-hf-white.png",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG HF",
           "last_ok": "2026-10-26",
           "regions": [
+            "eu",
             "int"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            232,
-            233,
-            231
+            255,
+            255,
+            255
           ],
-          "hex": "#E8E9E7",
-          "pixel_count": 156290,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
         },
         {
-          "delta_e": 10.84,
+          "delta_e": 12.44,
+          "slug": "bambu-lab-petg-white",
+          "brand": "Bambu Lab",
+          "material": "PETG",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/petg-basic",
+          "image_url": "https://store.bblcdn.eu/s8/default/9bf28782fd43453d8b895e606a89e2fe/Rectangle_4610.jpg",
+          "local_image": "bambulab-bambu-lab-petg-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "PETG Basic",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 12.44,
           "slug": "overture-high-speed-petg-refill-3d-printer-filament-1-75mm-white",
           "brand": "Overture 3D",
           "material": "PETG",
@@ -49614,27 +49654,28 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            233,
-            233,
-            232
+            255,
+            255,
+            255
           ],
-          "hex": "#E9E9E8",
+          "hex": "#FFFFFF",
           "pixel_count": 571362,
-          "confidence": "measured_dominant_hue"
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E9E9E8"
         },
         {
-          "delta_e": 10.99,
-          "slug": "filament-spectrum-pet-g-premium-1-75mm-arctic-white-1kg",
-          "brand": "Spectrum",
+          "delta_e": 12.44,
+          "slug": "petg-white",
+          "brand": "Polymaker",
           "material": "PETG",
-          "color_name": "Arctic White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-arctic-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-arctic-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-arctic-white-1kg.jpg",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "Filament Spectrum PET-G Premium 1.75mm ARCTIC WHITE 1kg",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/petg?variant=45079221141561",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05002_Isometric_Top_39081b84-719c-44b5-b39a-aa270422fa01.png",
+          "local_image": "polymaker-petg-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ PETG White",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -49642,129 +49683,17 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            230,
-            229,
-            228
+            255,
+            255,
+            255
           ],
-          "hex": "#E6E5E4",
-          "pixel_count": 224226,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "pixel_count": 156290,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E8E9E7"
         }
       ],
       "asa": [
-        {
-          "delta_e": 10.23,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.82,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.98,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 11.95,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            222,
-            221
-          ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
-          "confidence": "measured_dominant_hue"
-        },
         {
           "delta_e": 12.44,
           "slug": "bambu-lab-asa-white",
@@ -49791,7 +49720,125 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 12.44,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 12.44,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
+        },
+        {
+          "delta_e": 12.44,
+          "slug": "prusament-asa-signal-white",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Signal White",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
+          "local_image": "prusament-asa-signal-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Signal White 800g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 235591,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E7E7E6"
+        },
+        {
+          "delta_e": 12.44,
+          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Polar White",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 226273,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E4E1DF"
         }
       ]
     },
@@ -50943,133 +50990,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 11.63,
-          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
+          "delta_e": 13.49,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-glassy-1kg",
           "brand": "Spectrum",
           "material": "PETG",
-          "color_name": "Arctic White",
+          "color_name": "Glassy",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Arctic_White_1.jpg",
-          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg.jpg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-glassy-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-glassy-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-glassy-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum PETG Premium High Speed 1.75mm ARCTIC WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            234,
-            234,
-            231
-          ],
-          "hex": "#EAEAE7",
-          "pixel_count": 108445,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.19,
-          "slug": "petg-white",
-          "brand": "Polymaker",
-          "material": "PETG",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/petg?variant=45079221141561",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05002_Isometric_Top_39081b84-719c-44b5-b39a-aa270422fa01.png",
-          "local_image": "polymaker-petg-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ PETG White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            232,
-            233,
-            231
-          ],
-          "hex": "#E8E9E7",
-          "pixel_count": 156290,
-          "confidence": "measured_dominant_hue"
-        }
-      ],
-      "asa": [
-        {
-          "delta_e": 11.77,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.39,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.43,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
+          "title": "Filament Spectrum PET-G Premium 1.75mm GLASSY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -51078,26 +51010,26 @@
           "finish": [],
           "rgb": [
             226,
-            222,
-            221
+            224,
+            225
           ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
+          "hex": "#E2E0E1",
+          "pixel_count": 1389701,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 12.55,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "delta_e": 13.77,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "brand": "Spectrum",
+          "material": "PETG",
+          "color_name": "Light Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-light-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -51105,14 +51037,16 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            199,
+            199,
+            197
           ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
+          "hex": "#C7C7C5",
+          "pixel_count": 157662,
           "confidence": "measured_dominant_hue"
-        },
+        }
+      ],
+      "asa": [
         {
           "delta_e": 13.97,
           "slug": "bambu-lab-asa-white",
@@ -51139,7 +51073,125 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 13.97,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 13.97,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
+        },
+        {
+          "delta_e": 13.97,
+          "slug": "prusament-asa-signal-white",
+          "brand": "Prusament",
+          "material": "ASA",
+          "color_name": "Signal White",
+          "shop": "Prusa3D",
+          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
+          "local_image": "prusament-asa-signal-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Prusament ASA Signal White 800g",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 235591,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E7E7E6"
+        },
+        {
+          "delta_e": 13.97,
+          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "brand": "Spectrum",
+          "material": "ASA",
+          "color_name": "Polar White",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 226273,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E4E1DF"
         }
       ]
     },
@@ -52911,18 +52963,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 19.95,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
+          "delta_e": 20.17,
+          "slug": "asa-pop-green",
+          "brand": "Polymaker",
           "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "color_name": "Pop Green",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41159525892153",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pop_green.png",
+          "local_image": "polymaker-asa-pop-green.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "title": "Polymaker™ ASA Pop Green",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -52930,12 +52982,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            224,
-            227,
-            225
+            108,
+            217,
+            11
           ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
+          "hex": "#6CD90B",
+          "pixel_count": 4001465,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -55895,18 +55947,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.83,
-          "slug": "petg-white",
-          "brand": "Polymaker",
+          "delta_e": 18.12,
+          "slug": "filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "brand": "Spectrum",
           "material": "PETG",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/petg?variant=45079221141561",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/PB05002_Isometric_Top_39081b84-719c-44b5-b39a-aa270422fa01.png",
-          "local_image": "polymaker-petg-white.png",
+          "color_name": "Light Grey",
+          "shop": "Spectrum",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/petg-premium-light-grey-1.jpg",
+          "local_image": "spectrum-filament-spectrum-pet-g-premium-1-75mm-light-grey-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Polymaker™ PETG White",
+          "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -55914,27 +55966,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            232,
-            233,
-            231
+            199,
+            199,
+            197
           ],
-          "hex": "#E8E9E7",
-          "pixel_count": 156290,
+          "hex": "#C7C7C5",
+          "pixel_count": 157662,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.99,
-          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
+          "delta_e": 18.12,
+          "slug": "filament-spectrum-petg-premium-high-speed-1-75mm-light-grey-1kg",
           "brand": "Spectrum",
           "material": "PETG",
-          "color_name": "Arctic White",
+          "color_name": "Light Grey",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Arctic_White_1.jpg",
-          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-arctic-white-1kg.jpg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-petg-premium-high-speed-1-75mm-light-grey-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/PETG_Premium_High_Speed_Light_Grey_1.jpg",
+          "local_image": "spectrum-filament-spectrum-petg-premium-high-speed-1-75mm-light-grey-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum PETG Premium High Speed 1.75mm ARCTIC WHITE 1kg",
+          "title": "Filament Spectrum PETG Premium High Speed 1.75mm LIGHT GREY 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -55942,12 +55994,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            234,
-            234,
-            231
+            199,
+            199,
+            197
           ],
-          "hex": "#EAEAE7",
-          "pixel_count": 108445,
+          "hex": "#C7C7C5",
+          "pixel_count": 241030,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -55982,91 +56034,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 16.83,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 18.43,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 19.68,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
-          "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            228,
-            225,
-            223
-          ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 19.78,
           "slug": "overture-asa-filament-1-75mm-gray",
           "brand": "Overture 3D",
@@ -56093,6 +56060,93 @@
           "hex": "#A4AEB1",
           "pixel_count": 582356,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 20.32,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 20.32,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
+        },
+        {
+          "delta_e": 20.32,
+          "slug": "asa-white",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
+          "local_image": "polymaker-asa-white.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Polymaker™ ASA White",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 402348,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E2DEDD"
         }
       ]
     },
@@ -56883,63 +56937,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 14.83,
-          "slug": "overture-asa-filament-1-75mm-white",
-          "brand": "Overture 3D",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Overture",
-          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
-          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
-          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            224,
-            227,
-            225
-          ],
-          "hex": "#E0E3E1",
-          "pixel_count": 207488,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 16.34,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
-          "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu",
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            231,
-            231,
-            230
-          ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 16.92,
           "slug": "asa-polymaker-teal",
           "brand": "Polymaker",
@@ -56968,18 +56965,76 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 17.32,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
+          "delta_e": 18.9,
+          "slug": "bambu-lab-asa-gray",
+          "brand": "Bambu Lab",
           "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "color_name": "Gray",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/bf06ff5739d24cd9a821873f88630e2a/7e5829465d8a48b39c5ad1d103db0b5e.media",
+          "local_image": "bambulab-bambu-lab-asa-gray.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            138,
+            148,
+            158
+          ],
+          "hex": "#8A949E",
+          "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 19.02,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu",
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
+        },
+        {
+          "delta_e": 19.02,
+          "slug": "overture-asa-filament-1-75mm-white",
+          "brand": "Overture 3D",
+          "material": "ASA",
+          "color_name": "White",
+          "shop": "Overture",
+          "url": "https://overture3d.com/products/overture-asa-filament-1-75mm?variant=43725475905790",
+          "image_url": "https://cdn.shopify.com/s/files/1/0207/3624/5824/products/overture-asa-3d-printer-filament-175mm-954757.jpg",
+          "local_image": "overture-overture-asa-filament-1-75mm-white.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "title": "Overture ASA 3D Printer Filament 1.75mm White",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -56987,13 +57042,14 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            255,
+            255,
+            255
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "pixel_count": 207488,
+          "confidence": "measured_dominant_hue",
+          "pre_lift_hex": "#E0E3E1"
         }
       ]
     },
@@ -57388,18 +57444,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 18.31,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "brand": "Spectrum",
+          "delta_e": 18.89,
+          "slug": "asa-olive-brown",
+          "brand": "Polymaker",
           "material": "ASA",
-          "color_name": "Polar White",
-          "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "color_name": "Olive Brown",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=41590536667193",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/pf01045_pdt_isometric_top.png",
+          "local_image": "polymaker-asa-olive-brown.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Olive Brown",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -57407,27 +57463,27 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            175,
+            153,
+            104
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
+          "hex": "#AF9968",
+          "pixel_count": 306178,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 18.72,
-          "slug": "prusament-asa-signal-white",
-          "brand": "Prusament",
+          "delta_e": 19.98,
+          "slug": "bambu-lab-asa-white",
+          "brand": "Bambu Lab",
           "material": "ASA",
-          "color_name": "Signal White",
-          "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
+          "color_name": "White",
+          "shop": "Bambu Lab",
+          "url": "https://eu.store.bambulab.com/products/asa-filament",
+          "image_url": "https://store.bblcdn.eu/s8/default/1af069aa61ea47a3ad94c95b1d6ca00b/12007d17a7d9416abc87a01a8a299869.media",
+          "local_image": "bambulab-bambu-lab-asa-white.jpg",
+          "availability": null,
+          "stock": "?",
+          "title": "ASA",
           "last_ok": "2026-10-26",
           "regions": [
             "eu",
@@ -57436,13 +57492,13 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            231,
-            230
+            255,
+            255,
+            255
           ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
-          "confidence": "measured_dominant_hue"
+          "hex": "#FFFFFF",
+          "confidence": "manual_override",
+          "lift": false
         }
       ]
     },
@@ -58262,46 +58318,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 19.34,
-          "slug": "asa-white",
-          "brand": "Polymaker",
-          "material": "ASA",
-          "color_name": "White",
-          "shop": "Polymaker",
-          "url": "https://us.polymaker.com/products/asa?variant=39574343221305",
-          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/white_549bf1aa-8be2-4211-b5c4-76f38d4fd667.png",
-          "local_image": "polymaker-asa-white.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "int"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            226,
-            222,
-            221
-          ],
-          "hex": "#E2DEDD",
-          "pixel_count": 402348,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 19.8,
-          "slug": "filament-spectrum-asa-275-1-75mm-polar-white-1kg",
+          "delta_e": 21.69,
+          "slug": "filament-spectrum-asa-275-1-75mm-lion-orange-1kg",
           "brand": "Spectrum",
           "material": "ASA",
-          "color_name": "Polar White",
+          "color_name": "Lion Orange",
           "shop": "Spectrum",
-          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-polar-white-1kg",
-          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-polar-white-1.jpg",
-          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-polar-white-1kg.jpg",
+          "url": "https://us.spectrumfilaments.com/products/filament-spectrum-asa-275-1-75mm-lion-orange-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0912/5042/6226/files/asa-275-lion-orange-1.jpg",
+          "local_image": "spectrum-filament-spectrum-asa-275-1-75mm-lion-orange-1kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
+          "title": "Filament Spectrum ASA 275 1.75mm LION ORANGE 1kg",
           "last_ok": "2026-10-26",
           "regions": [
             "int"
@@ -58309,27 +58337,55 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            228,
-            225,
-            223
+            222,
+            93,
+            61
           ],
-          "hex": "#E4E1DF",
-          "pixel_count": 226273,
+          "hex": "#DE5D3D",
+          "pixel_count": 520439,
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 21.55,
-          "slug": "prusament-asa-signal-white",
+          "delta_e": 22.52,
+          "slug": "asa-orange",
+          "brand": "Polymaker",
+          "material": "ASA",
+          "color_name": "Orange",
+          "shop": "Polymaker",
+          "url": "https://us.polymaker.com/products/asa?variant=39597309231161",
+          "image_url": "https://cdn.shopify.com/s/files/1/0548/7299/7945/files/orange_123f45f4-f36a-4b76-9165-2fdfc282b334.png",
+          "local_image": "polymaker-asa-orange.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Polymaker™ ASA Orange",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "int"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            231,
+            93,
+            7
+          ],
+          "hex": "#E75D07",
+          "pixel_count": 4403302,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 22.56,
+          "slug": "prusament-asa-prusa-orange",
           "brand": "Prusament",
           "material": "ASA",
-          "color_name": "Signal White",
+          "color_name": "Prusa Orange",
           "shop": "Prusa3D",
-          "url": "https://www.prusa3d.com/product/prusament-asa-signal-white-800g-nfc/",
-          "image_url": "https://www.prusa3d.com/content/images/product/21e58c90-5b74-45b5-baff-accff3b66372.jpg",
-          "local_image": "prusament-asa-signal-white.jpg",
+          "url": "https://www.prusa3d.com/product/prusament-asa-prusa-orange-800g-nfc/",
+          "image_url": "https://www.prusa3d.com/content/images/product/0ea4d2e1-1401-458f-8350-e25551b0a319.jpg",
+          "local_image": "prusament-asa-prusa-orange.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Prusament ASA Signal White 800g",
+          "title": "Prusament ASA Prusa Orange 800g",
           "last_ok": "2026-10-26",
           "regions": [
             "eu",
@@ -58338,12 +58394,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            231,
-            231,
-            230
+            254,
+            83,
+            2
           ],
-          "hex": "#E7E7E6",
-          "pixel_count": 235591,
+          "hex": "#FE5302",
+          "pixel_count": 738140,
           "confidence": "measured_dominant_hue"
         }
       ]

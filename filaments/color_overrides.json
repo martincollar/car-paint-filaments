@@ -5,27 +5,33 @@
   },
   "aurapol-pla-3d-filament-white-1-kg-1-75-mm": {
     "hex": "#DADECF",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "aurapol-pet-g-filament-white-1-kg-1-75-mm": {
     "hex": "#CED1CD",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm": {
     "hex": "#D8D6D4",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "aurapol-pet-g-filament-bright-white-1-kg-1-75-mm": {
     "hex": "#E3DCDA",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "p61": {
     "hex": "#F3F2ED",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "pla-extrafill-traffic-white-1kg": {
     "hex": "#D2D0CB",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "pla-extrafill-traffic-black-1kg": {
     "hex": "#171718",
@@ -33,15 +39,18 @@
   },
   "petg-ghost-white": {
     "hex": "#E2E6EC",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "prusament-pla-pearl-white-blend": {
     "hex": "#D7D8D2",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "prusament-petg-signal-white": {
     "hex": "#D8D6DD",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "filament-lume-pla-cerna-1-75-mm-1-kg": {
     "hex": "#2A2016",
@@ -53,15 +62,18 @@
   },
   "filament-lume-pla-bila-1-75-mm-1-kg": {
     "hex": "#DCDCD6",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "filament-lume-petg-bila-1-75-mm-1-kg": {
     "hex": "#D9DBDF",
-    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo."
+    "note": "Neutral filament: filament_rgb() drops white pixels as studio background, so it measured the spool/stand instead. Hex = median of near-white non-background pixels, checked against the photo.",
+    "lift": true
   },
   "prusament-pla-vanilla-white": {
     "hex": "#D5CBC9",
-    "note": "Neutral filament: measurement mixed the winding with the black spool flanges (#C1B5AD). Hex = median of a crop of the winding only."
+    "note": "Neutral filament: measurement mixed the winding with the black spool flanges (#C1B5AD). Hex = median of a crop of the winding only.",
+    "lift": false
   },
   "aurapol-pla-3d-filament-soft-linen-1-kg-1-75-mm": {
     "hex": "#E4BF7A",
@@ -113,31 +125,38 @@
   },
   "bambu-lab-petg-hf-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-petg-matte-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-petg-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-pla-jade-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-pla-matte-ivory-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-pla-pure-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "bambu-lab-pla-tough-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "filament-lume-petg-bezova-1-75-mm-1-kg": {
     "hex": "#C2A171",
@@ -161,7 +180,8 @@
   },
   "bambu-lab-asa-white": {
     "hex": "#FFFFFF",
-    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre"
+    "note": "Bambu store colour swatch is flat #FFFFFF (white reads as background, so measuring fails); hex = swatch centre",
+    "lift": false
   },
   "asa-olive-green": {
     "hex": "#28282A",
@@ -213,7 +233,8 @@
   },
   "filament-smart-print-asa-bila-1-kg-1-75-mm": {
     "hex": "#DEE1DD",
-    "note": "Hex = median of a box sampled by hand on the review page."
+    "note": "Hex = median of a box sampled by hand on the review page.",
+    "lift": true
   },
   "asa-inox": {
     "hex": "#9CA0A6",
@@ -221,7 +242,8 @@
   },
   "asa-extrafill-traffic-white": {
     "hex": "#CAC5B8",
-    "note": "Hex = median of a box sampled by hand on the review page."
+    "note": "Hex = median of a box sampled by hand on the review page.",
+    "lift": true
   },
   "3d-sphynx-asa-cerna-black-800g": {
     "hex": "#3D4954",
@@ -233,15 +255,18 @@
   },
   "3dpower-asa-bila-white-1kg": {
     "hex": "#F9F8F3",
-    "note": "Hex = median of a box sampled by hand on the review page."
+    "note": "Hex = median of a box sampled by hand on the review page.",
+    "lift": true
   },
   "refill-rosa3d-asa-bila-1-75-mm-1-kg": {
     "hex": "#F8F9F4",
-    "note": "Hex = median of a box sampled by hand on the review page. Red box on the photo for ROSA3D ASA"
+    "note": "Hex = median of a box sampled by hand on the review page. Red box on the photo for ROSA3D ASA",
+    "lift": true
   },
   "aurapol-asa-3d-filament-signal-white-850g-1-75-mm": {
     "hex": "#F0F0EC",
-    "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request."
+    "note": "Shop photo is wrong (greenish tint, not the real signal white); hex shifted towards white (RAL 9003 signal white) by the user's request.",
+    "lift": false
   },
   "aurapol-asa-3d-filament-army-supply-grey-850g-1-75-mm": {
     "hex": "#8A8B64",
@@ -280,8 +305,9 @@
     "note": "Hex = median of a box sampled by hand on the review page."
   },
   "aurapol-pla-3d-filament-skeleton-white-1-kg-1-75-mm": {
-    "hex": "#B0AE99",
-    "note": "Hex = median of a box sampled by hand on the review page."
+    "hex": "#DCD7C5",
+    "note": "Hex = median of the user's sample photo of the printed Skeleton White (hexagon relief, shading included). Deliberately not pure white; the white lift skips 'skeleton' names.",
+    "lift": false
   },
   "aurapol-pla-3d-filament-aqua-relic-1-kg-1-75-mm": {
     "hex": "#76C2BB",

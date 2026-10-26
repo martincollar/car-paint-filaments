@@ -18,6 +18,8 @@ card_layout.json shape:
         {"cx":185,"cy":87,"name":"Gulf Green","year":1952,"car_code":"Q-115","paint_ref":"41206","poly":false},
         {"cx":100,"cy":624,"name":"Racing Green",...,"hex":"#1E4A30","hex_note":"why"},   (optional manual colour,
          for a chip the scan reproduces badly; the measured value is kept as measured_hex)
+         "white": true   (a paint that really is white: scans and photos show it grey, so its colour is
+                          pulled towards white with the same `white_lift` rules as white filaments)
         {"cx":514,"cy":441,"box_width":70,"box_height":24,"name":"Toro Red",...},   (optional per-swatch box size,
          for a chip smaller than the card's others)
         ...
@@ -34,7 +36,8 @@ import argparse, json, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import numpy as np
-from color_tools import _load, rgb_to_hex
+from color_tools import _load, rgb_to_hex, lift_white
+import shoplib
 import config
 
 def measure_region(path, cx, cy, w, h):
@@ -100,6 +103,12 @@ def main():
                 rec.update(hex="#" + h.upper(),
                            rgb=[int(h[i:i+2], 16) for i in (0, 2, 4)],
                            confidence="manual_override", note=sw.get("hex_note", ""))
+            if sw.get("white"):
+                new = lift_white(rec["rgb"], rec["name"], shoplib.load_defaults().get("white_lift"))
+                if new != rec["rgb"]:
+                    rec.setdefault("measured_hex", rec["hex"])
+                    rec["rgb"], rec["hex"] = new, rgb_to_hex(new)
+                    rec["note"] = (rec.get("note", "") + " White lift: paint is white, photos/scans read it grey.").strip()
             records.append(rec)
 
     out = data_dir / "car_colors.json"
