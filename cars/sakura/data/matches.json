@@ -378,36 +378,6 @@
         },
         {
           "delta_e": 0.0,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            255,
-            255,
-            255
-          ],
-          "hex": "#FFFFFF",
-          "pixel_count": 41599,
-          "confidence": "manual_override",
-          "measured_hex": "#DBE0CD",
-          "pre_lift_hex": "#F0F0EC"
-        },
-        {
-          "delta_e": 0.0,
           "slug": "bambu-lab-asa-white",
           "brand": "Bambu Lab",
           "material": "ASA",
@@ -432,7 +402,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -463,6 +434,36 @@
           "confidence": "manual_override",
           "measured_hex": "#E8E4E0",
           "pre_lift_hex": "#CAC5B8"
+        },
+        {
+          "delta_e": 0.0,
+          "slug": "3dpower-asa-bila-white-1kg",
+          "brand": "3DPower",
+          "material": "ASA",
+          "color_name": "Bílá (White)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-bila-white-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/b/9be2306deb1e22cd6bc046f5195e7619-6-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-bila-white-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower ASA - Bílá (White) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 26128,
+          "confidence": "manual_override",
+          "measured_hex": "#E7E4DD",
+          "pre_lift_hex": "#F9F8F3"
         }
       ]
     },
@@ -3991,36 +3992,6 @@
         },
         {
           "delta_e": 0.0,
-          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "brand": "AURAPOL",
-          "material": "ASA",
-          "color_name": "3D Signal White",
-          "shop": "Aurapol",
-          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
-          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
-          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            255,
-            255,
-            255
-          ],
-          "hex": "#FFFFFF",
-          "pixel_count": 41599,
-          "confidence": "manual_override",
-          "measured_hex": "#DBE0CD",
-          "pre_lift_hex": "#F0F0EC"
-        },
-        {
-          "delta_e": 0.0,
           "slug": "bambu-lab-asa-white",
           "brand": "Bambu Lab",
           "material": "ASA",
@@ -4045,7 +4016,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -4076,6 +4048,36 @@
           "confidence": "manual_override",
           "measured_hex": "#E8E4E0",
           "pre_lift_hex": "#CAC5B8"
+        },
+        {
+          "delta_e": 0.0,
+          "slug": "3dpower-asa-bila-white-1kg",
+          "brand": "3DPower",
+          "material": "ASA",
+          "color_name": "Bílá (White)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-asa-bila-white-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/9/b/9be2306deb1e22cd6bc046f5195e7619-6-1.jpg",
+          "local_image": "hubacek3d-3dpower-asa-bila-white-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower ASA - Bílá (White) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "hex": "#FFFFFF",
+          "pixel_count": 26128,
+          "confidence": "manual_override",
+          "measured_hex": "#E7E4DD",
+          "pre_lift_hex": "#F9F8F3"
         }
       ]
     },
@@ -7284,7 +7286,8 @@
           "hex": "#FFFFFF",
           "pixel_count": 2400,
           "confidence": "manual_override",
-          "measured_hex": "#808080"
+          "measured_hex": "#808080",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -7312,7 +7315,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -7342,7 +7346,8 @@
           "hex": "#FFFFFF",
           "pixel_count": 4788,
           "confidence": "manual_override",
-          "measured_hex": "#808080"
+          "measured_hex": "#808080",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -7430,7 +7435,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -7458,7 +7464,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -7577,7 +7584,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -10915,7 +10923,8 @@
           "hex": "#FFFFFF",
           "pixel_count": 2400,
           "confidence": "manual_override",
-          "measured_hex": "#808080"
+          "measured_hex": "#808080",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -10943,7 +10952,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -10973,7 +10983,8 @@
           "hex": "#FFFFFF",
           "pixel_count": 4788,
           "confidence": "manual_override",
-          "measured_hex": "#808080"
+          "measured_hex": "#808080",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -11061,7 +11072,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -11089,7 +11101,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,
@@ -11208,7 +11221,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.0,

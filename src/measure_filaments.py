@@ -8,7 +8,7 @@ Finishes banned in `shops/_defaults.yaml` (`exclude_finishes`: transparent, natu
 silk) are dropped here too — fetch_all.py already skips them, this also covers any
 hand-made raw file.
 
-Manual colors from `filaments/color_overrides.json` ({slug: {hex, note}}) win over
+Manual colors from `filaments/color_overrides.json` ({slug: {hex, note, lift?}}) win over
 the measurement; the measured value is kept as `measured_hex` for comparison.
 
 Each record carries `regions` (e.g. ["eu"]), copied from its shop's `regions:` in
@@ -52,6 +52,8 @@ def apply_override(rec, ov):
     rec["rgb"] = rgb
     rec["hex"] = rgb_to_hex(rgb)
     rec["confidence"] = "manual_override"
+    if ov.get("lift") is False:        # exact hex: the white lift must leave it alone
+        rec["lift"] = False
     rec.pop("error", None)
     return rec
 
@@ -172,7 +174,7 @@ def main():
     rules = shoplib.load_defaults().get("white_lift")
     lifted = 0
     for r in measured:
-        if not r.get("rgb"): continue
+        if not r.get("rgb") or r.get("lift") is False: continue
         new = lift_white(r["rgb"], r.get("color_name"), rules)
         if new != list(r["rgb"]):
             r["pre_lift_hex"] = r["hex"]

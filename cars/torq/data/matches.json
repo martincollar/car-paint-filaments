@@ -6346,7 +6346,7 @@
           "pixel_count": 35476,
           "confidence": "manual_override",
           "measured_hex": "#C6CBCC",
-          "previous_hex": "#B0AE99"
+          "lift": false
         },
         {
           "delta_e": 4.86,
@@ -6634,6 +6634,37 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 11.45,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false,
+          "previous_hex": "#FFFFFF"
+        },
+        {
           "delta_e": 11.95,
           "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
           "brand": "Professional Lab",
@@ -6688,35 +6719,6 @@
           "hex": "#B8B9B7",
           "pixel_count": 74609,
           "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 14.25,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            255,
-            255,
-            254
-          ],
-          "hex": "#FFFFFE",
-          "pixel_count": 29647,
-          "confidence": "measured_dominant_hue",
-          "pre_lift_hex": "#D9D2C9"
         }
       ]
     },
@@ -15820,7 +15822,7 @@
           "pixel_count": 35476,
           "confidence": "manual_override",
           "measured_hex": "#C6CBCC",
-          "previous_hex": "#B0AE99"
+          "lift": false
         },
         {
           "delta_e": 7.56,
@@ -16080,6 +16082,37 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 10.96,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false,
+          "previous_hex": "#FFFFFF"
+        },
+        {
           "delta_e": 12.01,
           "slug": "refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -16105,34 +16138,6 @@
           ],
           "hex": "#B8B9B7",
           "pixel_count": 74609,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.9,
-          "slug": "asa-grey",
-          "brand": "Fiberlogy",
-          "material": "ASA",
-          "color_name": "Grey",
-          "shop": "3DJake",
-          "url": "https://www.3djake.cz/fiberlogy/asa-grey",
-          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33525_85c3112e.128x128.jpg",
-          "local_image": "3djake-asa-grey.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Fiberlogy ASA Grey, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            187,
-            187,
-            188
-          ],
-          "hex": "#BBBBBC",
-          "pixel_count": 5830,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -28279,7 +28284,7 @@
           "pixel_count": 35476,
           "confidence": "manual_override",
           "measured_hex": "#C6CBCC",
-          "previous_hex": "#B0AE99"
+          "lift": false
         },
         {
           "delta_e": 2.93,
@@ -28624,6 +28629,37 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 7.66,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false,
+          "previous_hex": "#FFFFFF"
+        },
+        {
           "delta_e": 9.94,
           "slug": "refill-rosa3d-asa-stribrna-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -28649,34 +28685,6 @@
           ],
           "hex": "#B8B9B7",
           "pixel_count": 74609,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.5,
-          "slug": "asa-grey",
-          "brand": "Fiberlogy",
-          "material": "ASA",
-          "color_name": "Grey",
-          "shop": "3DJake",
-          "url": "https://www.3djake.cz/fiberlogy/asa-grey",
-          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33525_85c3112e.128x128.jpg",
-          "local_image": "3djake-asa-grey.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Fiberlogy ASA Grey, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            187,
-            187,
-            188
-          ],
-          "hex": "#BBBBBC",
-          "pixel_count": 5830,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -40826,7 +40834,7 @@
           "pixel_count": 35476,
           "confidence": "manual_override",
           "measured_hex": "#C6CBCC",
-          "previous_hex": "#B0AE99"
+          "lift": false
         },
         {
           "delta_e": 1.85,
@@ -41142,6 +41150,37 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 9.12,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false,
+          "previous_hex": "#FFFFFF"
+        },
+        {
           "delta_e": 9.31,
           "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
           "brand": "Professional Lab",
@@ -41196,35 +41235,6 @@
           "hex": "#B8B9B7",
           "pixel_count": 74609,
           "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.17,
-          "slug": "asa-extrafill-snow-white",
-          "brand": "Fillamentum",
-          "material": "ASA",
-          "color_name": "Extrafill Snow White",
-          "shop": "Fillamentum",
-          "url": "https://fillamentum.shop/products/asa-extrafill-snow-white",
-          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/ASA_fillamentum_Snow_pink.jpg",
-          "local_image": "fillamentum-asa-extrafill-snow-white.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ASA Extrafill \"Snow White\"",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            255,
-            255,
-            254
-          ],
-          "hex": "#FFFFFE",
-          "pixel_count": 29647,
-          "confidence": "measured_dominant_hue",
-          "pre_lift_hex": "#D9D2C9"
         }
       ]
     },
@@ -52930,7 +52940,7 @@
           "pixel_count": 35476,
           "confidence": "manual_override",
           "measured_hex": "#C6CBCC",
-          "previous_hex": "#B0AE99"
+          "lift": false
         },
         {
           "delta_e": 1.7,
@@ -53246,6 +53256,37 @@
           "confidence": "measured_dominant_hue"
         },
         {
+          "delta_e": 9.27,
+          "slug": "aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "brand": "AURAPOL",
+          "material": "ASA",
+          "color_name": "3D Signal White",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-asa-3d-filament-signal-white-850g-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/a/5/a577d9741ebbf71200dbcd23f9d0638d-asa-signal-white.png",
+          "local_image": "aurapol-aurapol-asa-3d-filament-signal-white-850g-1-75-mm.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL ASA 3D Filament Signal White 850g 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            240,
+            240,
+            236
+          ],
+          "hex": "#F0F0EC",
+          "pixel_count": 41599,
+          "confidence": "manual_override",
+          "measured_hex": "#DBE0CD",
+          "lift": false,
+          "previous_hex": "#FFFFFF"
+        },
+        {
           "delta_e": 9.34,
           "slug": "filament-professional-lab-asa-seda-1-75-mm-1-kg",
           "brand": "Professional Lab",
@@ -53299,34 +53340,6 @@
           ],
           "hex": "#B8B9B7",
           "pixel_count": 74609,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 12.17,
-          "slug": "asa-grey",
-          "brand": "Fiberlogy",
-          "material": "ASA",
-          "color_name": "Grey",
-          "shop": "3DJake",
-          "url": "https://www.3djake.cz/fiberlogy/asa-grey",
-          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/33525_85c3112e.128x128.jpg",
-          "local_image": "3djake-asa-grey.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Fiberlogy ASA Grey, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            187,
-            187,
-            188
-          ],
-          "hex": "#BBBBBC",
-          "pixel_count": 5830,
           "confidence": "measured_dominant_hue"
         }
       ]
@@ -62200,7 +62213,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 14.66,
@@ -71658,7 +71672,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 14.25,
@@ -84261,7 +84276,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 11.18,
@@ -96857,7 +96873,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 12.54,
@@ -97115,7 +97132,8 @@
           "hex": "#FFFFFF",
           "pixel_count": 2400,
           "confidence": "manual_override",
-          "measured_hex": "#808080"
+          "measured_hex": "#808080",
+          "lift": false
         },
         {
           "delta_e": 0.54,
@@ -97143,7 +97161,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         }
       ],
       "petg": [
@@ -97173,7 +97192,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.54,
@@ -97201,7 +97221,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.54,
@@ -97320,7 +97341,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 0.54,
@@ -109018,7 +109040,8 @@
             255
           ],
           "hex": "#FFFFFF",
-          "confidence": "manual_override"
+          "confidence": "manual_override",
+          "lift": false
         },
         {
           "delta_e": 12.67,

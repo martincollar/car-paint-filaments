@@ -7280,15 +7280,16 @@
     "neon": false,
     "finish": [],
     "rgb": [
-      255,
-      255,
-      255
+      240,
+      240,
+      236
     ],
-    "hex": "#FFFFFF",
+    "hex": "#F0F0EC",
     "pixel_count": 41599,
     "confidence": "manual_override",
     "measured_hex": "#DBE0CD",
-    "pre_lift_hex": "#F0F0EC"
+    "lift": false,
+    "previous_hex": "#FFFFFF"
   },
   {
     "slug": "aurapol-asa-3d-filament-sky-blue-850g-1-75-mm",
@@ -10273,7 +10274,7 @@
     "pixel_count": 35476,
     "confidence": "manual_override",
     "measured_hex": "#C6CBCC",
-    "previous_hex": "#B0AE99"
+    "lift": false
   },
   {
     "slug": "aurapol-pla-3d-filament-snowflake-1-kg-1-75-mm",
@@ -11096,7 +11097,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-petg-black",
@@ -11599,7 +11601,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-petg-hf-yellow",
@@ -11866,7 +11869,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-petg-misty-blue",
@@ -12061,7 +12065,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-petg-yellow",
@@ -12860,7 +12865,8 @@
     "hex": "#FFFFFF",
     "pixel_count": 2400,
     "confidence": "manual_override",
-    "measured_hex": "#808080"
+    "measured_hex": "#808080",
+    "lift": false
   },
   {
     "slug": "bambu-lab-pla-light-gray",
@@ -13363,7 +13369,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-pla-matte-latte-brown",
@@ -13920,7 +13927,8 @@
       255
     ],
     "hex": "#FFFFFF",
-    "confidence": "manual_override"
+    "confidence": "manual_override",
+    "lift": false
   },
   {
     "slug": "bambu-lab-pla-purple",
@@ -14261,7 +14269,8 @@
     "hex": "#FFFFFF",
     "pixel_count": 4788,
     "confidence": "manual_override",
-    "measured_hex": "#808080"
+    "measured_hex": "#808080",
+    "lift": false
   },
   {
     "slug": "bambu-lab-pla-tough-yellow",
@@ -35397,7 +35406,8 @@
     "hex": "#D5CBC9",
     "pixel_count": 5295,
     "confidence": "manual_override",
-    "measured_hex": "#DBD4D2"
+    "measured_hex": "#DBD4D2",
+    "lift": false
   },
   {
     "slug": "prusament-pla-viva-la-bronze-blend",
