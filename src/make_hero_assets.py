@@ -21,6 +21,9 @@ re-download of the same picture):
                 "keep": leave the existing hero_mask.png alone and neutralise only within `grow` px of it
   mask_chroma   [lo, hi] ramp of the mask alpha when mask is "chroma" (default [7, 22]); pastel paints need a
                 lower ramp, e.g. [3, 10]
+  lift          L* points added to the grey that is left where the old paint was (only with "mask": "chroma"); the
+                recolour result stays the same, but the greyed "?" state of the preview gets lighter. Doppler's grey is
+                L* ~77, Sakura's ~72
   roof_shape    optional single-channel PNG (white = roof), path relative to the car folder: two-tone cars. With "mask": "chroma" the
                 roof part of the alpha goes to the mask's G channel instead of R. Only a hint: its largest blob is
                 kept and grown by `roof_grow` px (default 6, must stay below the chrome gap
@@ -196,6 +199,16 @@ def main():
         out[..., 1] = (roof_a * 255).astype("uint8")
         Image.fromarray(out).save(src_dir / "hero_mask.png")
         print(f"[{args.car}] body mask from chroma → hero_mask.png")
+        if cfg.get("lift"):
+            # lighten the grey that is left of the old paint (the greyed "?" state of the preview). The recolour only uses the
+            # shading around the body mean, so an even lift leaves the recoloured car as it was; a soft knee keeps the
+            # brightest highlights from clipping
+            cov = out.max(axis=2) / 255
+            lifted = neutral[..., 0] + cfg["lift"]
+            lifted = np.where(lifted > 92, 92 + (lifted - 92) * 0.35, lifted)
+            neutral[..., 0] = neutral[..., 0] * (1 - cov) + lifted * cov
+            Image.fromarray(to_rgb(neutral).astype("uint8")).save(src_dir / "hero_neutral.jpg", quality=95)
+            print(f"[{args.car}] painted grey lifted by {cfg['lift']} L* → hero_neutral.jpg")
 
 if __name__ == "__main__":
     main()
