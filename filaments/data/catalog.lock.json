@@ -4147,11 +4147,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-26"
       },
-      "devil-design-pla-modra-ocean-blue-1kg": {
-        "url": "https://www.hubacek3d.cz/p/devil-design-pla-modra-ocean-blue-1kg",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-26"
-      },
       "devil-design-pla-modra-super-blue-1kg": {
         "url": "https://www.hubacek3d.cz/p/devil-design-pla-modra-super-blue-1kg",
         "first_seen": "2026-10-24",
@@ -4583,6 +4578,7 @@
       "devil-design-petg-zelena-transparentni-bright-green-transparent-1kg": "finish:transparent",
       "devil-design-petg-zelena-transparentni-green-transparent-1kg": "finish:transparent",
       "devil-design-petg-zluta-transparentni-amber-transparent-1kg": "finish:transparent",
+      "devil-design-pla-modra-ocean-blue-1kg": "override:skip",
       "devil-design-pla-mramor-marble-dark-1kg": "finish:stone",
       "devil-design-pla-mramor-marble-light-1kg": "finish:stone",
       "devil-design-pla-prirodni-natural-1kg": "finish:natural",

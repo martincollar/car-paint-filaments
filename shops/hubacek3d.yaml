@@ -11,3 +11,5 @@ pins: []
 overrides:
   3d-sphynx-asa-bila-white-800g:
     skip: true   # shop photo is unusable (cyan cast, beige stand); no ASA white from this shop
+  devil-design-pla-modra-ocean-blue-1kg:
+    skip: true   # duplicate of Smart3D's Devil Design PLA Ocean Blue

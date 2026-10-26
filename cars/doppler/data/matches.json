@@ -6377,34 +6377,6 @@
         },
         {
           "delta_e": 10.21,
-          "slug": "devil-design-pla-modra-ocean-blue-1kg",
-          "brand": "Devil Design",
-          "material": "PLA",
-          "color_name": "Modrá (Ocean Blue)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/devil-design-pla-modra-ocean-blue-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/e/8/e88c99696081e4e6395ffff6e8b79a86-pla-1-75-ocean-blue.png",
-          "local_image": "hubacek3d-devil-design-pla-modra-ocean-blue-1kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Devil Design PLA - Modrá (Ocean Blue) - 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            72,
-            124,
-            134
-          ],
-          "hex": "#487C86",
-          "pixel_count": 178117,
-          "confidence": "measured_dominant_hue"
-        },
-        {
-          "delta_e": 10.21,
           "slug": "refill-rosa3d-pla-starter-seda-1-75-mm-1-kg",
           "brand": "ROSA3D",
           "material": "PLA",
@@ -6429,6 +6401,34 @@
           ],
           "hex": "#6C7778",
           "pixel_count": 160894,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 10.58,
+          "slug": "filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/0/70a84ba4ea0ac2fb271cb95cfd38482e-silver.jpg",
+          "local_image": "smart3d-filament-colorfil-pla-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament COLORFIL / PLA / STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            122,
+            130,
+            129
+          ],
+          "hex": "#7A8281",
+          "pixel_count": 46601,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -28248,34 +28248,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 2.54,
-          "slug": "devil-design-pla-modra-ocean-blue-1kg",
-          "brand": "Devil Design",
-          "material": "PLA",
-          "color_name": "Modrá (Ocean Blue)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/devil-design-pla-modra-ocean-blue-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/e/8/e88c99696081e4e6395ffff6e8b79a86-pla-1-75-ocean-blue.png",
-          "local_image": "hubacek3d-devil-design-pla-modra-ocean-blue-1kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Devil Design PLA - Modrá (Ocean Blue) - 1kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            72,
-            124,
-            134
-          ],
-          "hex": "#487C86",
-          "pixel_count": 178117,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.1,
           "slug": "refill-thefilament-ht-pla-tooling-turquoise-1-75-mm-1-kg",
           "brand": "TheFilament",
@@ -28385,6 +28357,34 @@
           ],
           "hex": "#137D84",
           "pixel_count": 235898,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.7,
+          "slug": "filament-nebula-pla-modra-nautical-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Modrá Nautical",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-modra-nautical-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/9/f96092f886479acfbd97af95fd34f238-pla-nautical-blue.jpg",
+          "local_image": "smart3d-filament-nebula-pla-modra-nautical-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA / PLA / MODRÁ \"NAUTICAL\" / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            70,
+            140,
+            161
+          ],
+          "hex": "#468CA1",
+          "pixel_count": 469059,
           "confidence": "measured_dominant_hue"
         }
       ],
