@@ -4,7 +4,8 @@ Reads every `cars/*/car.json` with "publish": true, its `data/matches.json` and 
 and writes `site/index.html` (self-contained, committed; scripts/build_site.sh copies it into _site/).
 
 Per car, optional `"index": {"color": "#RRGGBB"}` in car.json is the tile's primary colour (the one
-shown at rest); without it the best-matching filament is used. A tile's look comes from
+shown at rest); without it the best-matching filament is used. `"no_white": true` keeps whites, creams
+and pale greys (L* >= 75, chroma < 16) out of the colours the tile cycles through (it does not touch `color`). A tile's look comes from
 `themes/<theme>/tile.css` (scoped `.tile--<theme>`) and `tile.html` (decoration that may overflow the
 frame); a theme without them gets the neutral default tile.
 
@@ -30,6 +31,7 @@ AUTHOR = "Martin Kolář"
 PALETTE_SIZE = 8        # colours a tile cycles through, primary included
 MIN_SPACING = 12.0      # ΔE2000 two colours of one tile must differ by, so no near-repeats
 MAX_MATCH_DE = 8.0      # a colour only counts as a "best" candidate below this ΔE to some paint
+WHITE_L, WHITE_CHROMA = 75.0, 16.0 # "no_white": at least this light and less colourful than this = white, off-white, cream, pale grey
 
 
 def penalised(cand, colour):
@@ -57,8 +59,14 @@ def best_per_hex(matches):
     return best
 
 
-def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, max_de=MAX_MATCH_DE):
-    """[{hex, label}] for one tile, primary first, best candidates after, none within `spacing` of another."""
+def whitish(hx):
+    lab = rgb_to_lab(hex_to_rgb(hx))
+    return lab[0] >= WHITE_L and float(np.hypot(lab[1], lab[2])) < WHITE_CHROMA
+
+
+def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, max_de=MAX_MATCH_DE, no_white=False):
+    """[{hex, label}] for one tile, primary first, best candidates after, none within `spacing` of another
+    (and, with `no_white`, none that is white, cream or pale grey)."""
     best = best_per_hex(matches)
     ranked = sorted((c for c in best.values() if c["delta_e"] <= max_de), key=lambda c: c["delta_e"])
     out = []
@@ -77,6 +85,8 @@ def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, 
         if len(out) >= size:
             break
         hx = cand["hex"].upper()
+        if no_white and whitish(hx):
+            continue
         if far_enough(hx) if out else True:
             out.append({"hex": hx, "label": label(hx)})
     return out
@@ -248,7 +258,7 @@ def collect_car(car):
         "colours": len(next(iter(matches.values()), [])),
         "theme": theme,
         "palette": (named_palette(matches, meta["index"]["paints"], combinations) if (meta.get("index") or {}).get("paints")
-                    else pick_palette(matches, primary)),
+                    else pick_palette(matches, primary, no_white=bool((meta.get("index") or {}).get("no_white")))),
         "hero": hero,
         "cut": cut,
         "fg": fg,
