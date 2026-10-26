@@ -1,0 +1,7 @@
+{
+  "marks": [
+    {"type": "never", "note": "front bumper: grey with blue JPEG noise", "points": [[216, 706], [300, 734], [412, 778], [414, 816], [396, 816], [300, 782], [218, 752]]},
+    {"type": "never", "note": "rear wheel hub centre", "points": [[1286, 776], [1314, 776], [1314, 804], [1286, 804]]},
+    {"type": "paint", "shape": "wand", "seed": [540, 507], "tol": 45, "note": "hood top edge, lit paint with low chroma"}
+  ]
+}
