@@ -23,6 +23,9 @@ card_layout.json shape:
         ...
       ]
     },
+    {"card_file": "", "swatches": [          (a colour no card has a chip for: no cx/cy, `hex` alone gives it,
+        {"name":"White","year":1980,"car_code":"033","poly":false,"hex":"#FFFFFF","hex_note":"where it came from"}
+    ]},                                                               `hex_note` says where it came from)
     ...
   ]
 }
@@ -71,7 +74,12 @@ def main():
         cbh = card.get("box_height", bh)
         for sw in card["swatches"]:
             year = sw.get("year") or year_hint
-            rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], sw.get("box_width", cbw), sw.get("box_height", cbh))
+            on_card = "cx" in sw
+            if on_card:
+                rgb = measure_region(sources / card_file, sw["cx"], sw["cy"], sw.get("box_width", cbw), sw.get("box_height", cbh))
+            else:
+                h = sw["hex"].lstrip("#")
+                rgb = tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
             rec = {
                 "name":        sw["name"],
                 "year":        year,
@@ -81,13 +89,15 @@ def main():
                 "hex":         rgb_to_hex(rgb),
                 "poly":        bool(sw.get("poly")),
                 "source_url":  url_tpl.format(year=year) if (year and url_tpl) else "",
-                "source_file": f"sources/{card_file}",
-                "source_pos":  [sw["cx"], sw["cy"]],
+                "source_file": f"sources/{card_file}" if on_card else "",
+                "source_pos":  [sw["cx"], sw["cy"]] if on_card else [],
                 "confidence":  "measured_from_card",
             }
             if sw.get("hex"):
                 h = sw["hex"].lstrip("#")
-                rec.update(measured_hex=rec["hex"], hex="#" + h.upper(),
+                if on_card:
+                    rec["measured_hex"] = rec["hex"]
+                rec.update(hex="#" + h.upper(),
                            rgb=[int(h[i:i+2], 16) for i in (0, 2, 4)],
                            confidence="manual_override", note=sw.get("hex_note", ""))
             records.append(rec)

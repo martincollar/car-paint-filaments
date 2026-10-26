@@ -4,7 +4,9 @@ Reads every `cars/*/car.json` with "publish": true, its `data/matches.json` and 
 and writes `site/index.html` (self-contained, committed; scripts/build_site.sh copies it into _site/).
 
 Per car, optional `"index": {"color": "#RRGGBB"}` in car.json is the tile's primary colour (the one
-shown at rest); without it the best-matching filament is used. A tile's look comes from
+shown at rest); without it the best-matching filament is used. `"exclude": ["white", "yellow"]` keeps a
+colour family out of the colours the tile cycles through (white = whites, creams and pale greys, yellow = bright
+yellows up to yellow-green; see FAMILIES; it does not touch `color`). A tile's look comes from
 `themes/<theme>/tile.css` (scoped `.tile--<theme>`) and `tile.html` (decoration that may overflow the
 frame); a theme without them gets the neutral default tile.
 
@@ -30,6 +32,10 @@ AUTHOR = "Martin Kolář"
 PALETTE_SIZE = 8        # colours a tile cycles through, primary included
 MIN_SPACING = 12.0      # ΔE2000 two colours of one tile must differ by, so no near-repeats
 MAX_MATCH_DE = 8.0      # a colour only counts as a "best" candidate below this ΔE to some paint
+FAMILIES = {            # "exclude" in car.json's index: name -> test on Lab (L*, chroma, hue angle in degrees)
+    "white": lambda L, c, h: L >= 75 and c < 16,                        # white, off-white, cream, pale grey
+    "yellow": lambda L, c, h: L >= 55 and c >= 30 and 80 <= h <= 112,   # bright yellow up to yellow-green (not gold, not olive)
+}
 
 
 def penalised(cand, colour):
@@ -57,8 +63,18 @@ def best_per_hex(matches):
     return best
 
 
-def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, max_de=MAX_MATCH_DE):
-    """[{hex, label}] for one tile, primary first, best candidates after, none within `spacing` of another."""
+def in_families(hx, families):
+    L, a, b = rgb_to_lab(hex_to_rgb(hx))
+    c, h = float(np.hypot(a, b)), float(np.degrees(np.arctan2(b, a)) % 360)
+    return any(FAMILIES[f](L, c, h) for f in families)
+
+
+def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, max_de=MAX_MATCH_DE, exclude=()):
+    """[{hex, label}] for one tile, primary first, best candidates after, none within `spacing` of another
+    and none in a colour family of `exclude` (names of FAMILIES)."""
+    unknown = [f for f in exclude if f not in FAMILIES]
+    if unknown:
+        raise ValueError(f"index.exclude: unknown colour family {unknown} (known: {', '.join(FAMILIES)})")
     best = best_per_hex(matches)
     ranked = sorted((c for c in best.values() if c["delta_e"] <= max_de), key=lambda c: c["delta_e"])
     out = []
@@ -77,6 +93,8 @@ def pick_palette(matches, primary=None, size=PALETTE_SIZE, spacing=MIN_SPACING, 
         if len(out) >= size:
             break
         hx = cand["hex"].upper()
+        if exclude and in_families(hx, exclude):
+            continue
         if far_enough(hx) if out else True:
             out.append({"hex": hx, "label": label(hx)})
     return out
@@ -248,7 +266,7 @@ def collect_car(car):
         "colours": len(next(iter(matches.values()), [])),
         "theme": theme,
         "palette": (named_palette(matches, meta["index"]["paints"], combinations) if (meta.get("index") or {}).get("paints")
-                    else pick_palette(matches, primary)),
+                    else pick_palette(matches, primary, exclude=(meta.get("index") or {}).get("exclude") or ())),
         "hero": hero,
         "cut": cut,
         "fg": fg,

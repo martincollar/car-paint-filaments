@@ -1,0 +1,1131 @@
+{
+ "source": "https://importarchive.com/toyota/landcruiser/1961-1983",
+ "note": "US-market Land Cruiser FJ40 colour chart (1961-1983) by the IH8MUD member 'ToyotaReference', hosted on ImportArchive. Hex values are the chart's own flat bar colours (read from the page CSS), not measurements; years as printed. Example photos are the site's slideshow for this generation (third-party, kept out of git).",
+ "retrieved": "2026-10-26",
+ "colors": [
+  {
+   "key": "1453",
+   "chart_code": "T1453",
+   "name": "Olympus White",
+   "aka": "",
+   "years_printed": "69-70",
+   "years": [
+    1969,
+    1970
+   ],
+   "hex": "#FFFFFF",
+   "page": "https://importarchive.com/color/t1453",
+   "photos": [
+    {
+     "file": "ia_1453_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1453_01.jpg"
+    },
+    {
+     "file": "ia_1453_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1453_02.jpg"
+    },
+    {
+     "file": "ia_1453_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1453_03.jpg"
+    }
+   ]
+  },
+  {
+   "key": "012",
+   "chart_code": "T12",
+   "name": "Cygnus White",
+   "aka": "White",
+   "years_printed": "71-75",
+   "years": [
+    1971,
+    1972,
+    1973,
+    1974,
+    1975
+   ],
+   "hex": "#FFFFFF",
+   "page": "https://importarchive.com/color/t12",
+   "photos": [
+    {
+     "file": "ia_012_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T12_01.jpg"
+    },
+    {
+     "file": "ia_012_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T12_02.jpg"
+    },
+    {
+     "file": "ia_012_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T12_03.jpg"
+    },
+    {
+     "file": "ia_012_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T12_04.jpg"
+    },
+    {
+     "file": "ia_012_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T12_05.jpg"
+    }
+   ]
+  },
+  {
+   "key": "031",
+   "chart_code": "031",
+   "name": "White",
+   "aka": "",
+   "years_printed": "76-80",
+   "years": [
+    1976,
+    1977,
+    1978,
+    1979,
+    1980
+   ],
+   "hex": "#FFFFFF",
+   "page": "https://importarchive.com/color/031",
+   "photos": [
+    {
+     "file": "ia_031_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_01.jpg"
+    },
+    {
+     "file": "ia_031_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_02.jpg"
+    },
+    {
+     "file": "ia_031_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_03.jpg"
+    },
+    {
+     "file": "ia_031_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_04.jpg"
+    },
+    {
+     "file": "ia_031_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_05.jpg"
+    },
+    {
+     "file": "ia_031_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_031_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "033",
+   "chart_code": "033",
+   "name": "White",
+   "aka": "",
+   "years_printed": "80-83",
+   "years": [
+    1980,
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#FFFFFF",
+   "page": "https://importarchive.com/color/033",
+   "photos": [
+    {
+     "file": "ia_033_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_033_01.jpg"
+    },
+    {
+     "file": "ia_033_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_033_02.jpg"
+    },
+    {
+     "file": "ia_033_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_033_03.jpg"
+    },
+    {
+     "file": "ia_033_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_033_04.jpg"
+    },
+    {
+     "file": "ia_033_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_033_05.jpg"
+    }
+   ]
+  },
+  {
+   "key": "451",
+   "chart_code": "T451",
+   "name": "Coronado Beige",
+   "aka": "",
+   "years_printed": "68-71",
+   "years": [
+    1968,
+    1969,
+    1970,
+    1971
+   ],
+   "hex": "#C9C5BC",
+   "page": "https://importarchive.com/color/t451",
+   "photos": [
+    {
+     "file": "ia_451_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_01.jpg"
+    },
+    {
+     "file": "ia_451_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_02.jpg"
+    },
+    {
+     "file": "ia_451_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_03.jpg"
+    },
+    {
+     "file": "ia_451_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_04.jpg"
+    },
+    {
+     "file": "ia_451_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_05.jpg"
+    },
+    {
+     "file": "ia_451_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T451_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "450",
+   "chart_code": "T450",
+   "name": "Silver Gray",
+   "aka": "",
+   "years_printed": "69-71",
+   "years": [
+    1969,
+    1970,
+    1971
+   ],
+   "hex": "#B9B7A8",
+   "page": "https://importarchive.com/color/t450",
+   "photos": [
+    {
+     "file": "ia_450_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T450_01.jpg"
+    }
+   ]
+  },
+  {
+   "key": "416",
+   "chart_code": "416",
+   "name": "Dune Beige",
+   "aka": "",
+   "years_printed": "72-80",
+   "years": [
+    1972,
+    1973,
+    1974,
+    1975,
+    1976,
+    1977,
+    1978,
+    1979,
+    1980
+   ],
+   "hex": "#989376",
+   "page": "https://importarchive.com/color/416",
+   "photos": [
+    {
+     "file": "ia_416_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_01.jpg"
+    },
+    {
+     "file": "ia_416_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_02.jpg"
+    },
+    {
+     "file": "ia_416_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_03.jpg"
+    },
+    {
+     "file": "ia_416_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_04.jpg"
+    },
+    {
+     "file": "ia_416_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_05.jpg"
+    },
+    {
+     "file": "ia_416_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_416_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "464",
+   "chart_code": "464",
+   "name": "Beige",
+   "aka": "",
+   "years_printed": "81-83",
+   "years": [
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#D3CCC1",
+   "page": "https://importarchive.com/color/464",
+   "photos": [
+    {
+     "file": "ia_464_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_01.jpg"
+    },
+    {
+     "file": "ia_464_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_02.jpg"
+    },
+    {
+     "file": "ia_464_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_03.jpg"
+    },
+    {
+     "file": "ia_464_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_04.jpg"
+    },
+    {
+     "file": "ia_464_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_05.jpg"
+    },
+    {
+     "file": "ia_464_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_464_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "541",
+   "chart_code": "541",
+   "name": "Yellow",
+   "aka": "",
+   "years_printed": "75-81",
+   "years": [
+    1975,
+    1976,
+    1977,
+    1978,
+    1979,
+    1980,
+    1981
+   ],
+   "hex": "#EED24C",
+   "page": "https://importarchive.com/color/541",
+   "photos": []
+  },
+  {
+   "key": "532",
+   "chart_code": "532",
+   "name": "Yellow",
+   "aka": "",
+   "years_printed": "82-83",
+   "years": [
+    1982,
+    1983
+   ],
+   "hex": "#D1CF47",
+   "page": "https://importarchive.com/color/532",
+   "photos": [
+    {
+     "file": "ia_532_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_532_01.jpg"
+    },
+    {
+     "file": "ia_532_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_532_02.jpg"
+    },
+    {
+     "file": "ia_532_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_532_03.jpg"
+    },
+    {
+     "file": "ia_532_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_532_04.jpg"
+    },
+    {
+     "file": "ia_532_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_532_05.jpg"
+    }
+   ]
+  },
+  {
+   "key": "304",
+   "chart_code": "304",
+   "name": "Pollux Orange",
+   "aka": "",
+   "years_printed": "71-75",
+   "years": [
+    1971,
+    1972,
+    1973,
+    1974,
+    1975
+   ],
+   "hex": "#AB5719",
+   "page": "https://importarchive.com/color/304",
+   "photos": [
+    {
+     "file": "ia_304_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_304_01.jpg"
+    },
+    {
+     "file": "ia_304_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_304_02.jpg"
+    },
+    {
+     "file": "ia_304_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_304_03.jpg"
+    },
+    {
+     "file": "ia_304_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_304_04.jpg"
+    },
+    {
+     "file": "ia_304_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_304_05.jpg"
+    }
+   ]
+  },
+  {
+   "key": "415",
+   "chart_code": "415",
+   "name": "Pueblo Brown",
+   "aka": "",
+   "years_printed": "71-75",
+   "years": [
+    1971,
+    1972,
+    1973,
+    1974,
+    1975
+   ],
+   "hex": "#844B20",
+   "page": "https://importarchive.com/color/415",
+   "photos": [
+    {
+     "file": "ia_415_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_415_01.jpg"
+    },
+    {
+     "file": "ia_415_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_415_02.jpg"
+    }
+   ]
+  },
+  {
+   "key": "414",
+   "chart_code": "414",
+   "name": "Buffalo Brown",
+   "aka": "",
+   "years_printed": "72",
+   "years": [
+    1972
+   ],
+   "hex": "#490303",
+   "page": "https://importarchive.com/color/414",
+   "photos": [
+    {
+     "file": "ia_414_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_414_01.jpg"
+    }
+   ]
+  },
+  {
+   "key": "309",
+   "chart_code": "309",
+   "name": "Freeborn Red",
+   "aka": "Red",
+   "years_printed": "68-83",
+   "years": [
+    1968,
+    1969,
+    1970,
+    1971,
+    1972,
+    1973,
+    1974,
+    1975,
+    1976,
+    1977,
+    1978,
+    1979,
+    1980,
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#F71000",
+   "page": "https://importarchive.com/color/309",
+   "photos": [
+    {
+     "file": "ia_309_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_01.jpg"
+    },
+    {
+     "file": "ia_309_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_02.jpg"
+    },
+    {
+     "file": "ia_309_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_03.jpg"
+    },
+    {
+     "file": "ia_309_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_04.jpg"
+    },
+    {
+     "file": "ia_309_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_05.jpg"
+    },
+    {
+     "file": "ia_309_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_309_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "1454",
+   "chart_code": "T1454",
+   "name": "Muleta Red",
+   "aka": "",
+   "years_printed": "68-70",
+   "years": [
+    1968,
+    1969,
+    1970
+   ],
+   "hex": "#A20C15",
+   "page": "https://importarchive.com/color/t1454",
+   "photos": [
+    {
+     "file": "ia_1454_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1454_01.jpg"
+    }
+   ]
+  },
+  {
+   "key": "332",
+   "chart_code": "T332",
+   "name": "Seminole Red",
+   "aka": "",
+   "years_printed": "68",
+   "years": [
+    1968
+   ],
+   "hex": "#B20015",
+   "page": "https://importarchive.com/color/t332",
+   "photos": []
+  },
+  {
+   "key": "303",
+   "chart_code": "T303",
+   "name": "Fashion Green",
+   "aka": "",
+   "years_printed": "69-71",
+   "years": [
+    1969,
+    1970,
+    1971
+   ],
+   "hex": "#6A7A70",
+   "page": "https://importarchive.com/color/t303",
+   "photos": [
+    {
+     "file": "ia_303_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T303_01.jpg"
+    },
+    {
+     "file": "ia_303_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T303_02.jpg"
+    }
+   ]
+  },
+  {
+   "key": "1028",
+   "chart_code": "T1028",
+   "name": "Spring Green",
+   "aka": "",
+   "years_printed": "70",
+   "years": [
+    1970
+   ],
+   "hex": "#B8D1BB",
+   "page": "https://importarchive.com/color/t1028",
+   "photos": [
+    {
+     "file": "ia_1028_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_01.jpg"
+    },
+    {
+     "file": "ia_1028_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_02.jpg"
+    },
+    {
+     "file": "ia_1028_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_03.jpg"
+    },
+    {
+     "file": "ia_1028_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_04.jpg"
+    },
+    {
+     "file": "ia_1028_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_05.jpg"
+    },
+    {
+     "file": "ia_1028_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1028_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "453",
+   "chart_code": "T453",
+   "name": "Judson Green",
+   "aka": "",
+   "years_printed": "70-72",
+   "years": [
+    1970,
+    1971,
+    1972
+   ],
+   "hex": "#2E4B39",
+   "page": "https://importarchive.com/color/t453",
+   "photos": [
+    {
+     "file": "ia_453_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T453_01.jpg"
+    }
+   ]
+  },
+  {
+   "key": "1654",
+   "chart_code": "T1654",
+   "name": "Breathe Green",
+   "aka": "",
+   "years_printed": "72-73",
+   "years": [
+    1972,
+    1973
+   ],
+   "hex": "#617E5F",
+   "page": "https://importarchive.com/color/t1654",
+   "photos": [
+    {
+     "file": "ia_1654_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1654_01.jpg"
+    },
+    {
+     "file": "ia_1654_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T1654_02.jpg"
+    }
+   ]
+  },
+  {
+   "key": "637",
+   "chart_code": "637",
+   "name": "Olive",
+   "aka": "",
+   "years_printed": "72-77",
+   "years": [
+    1972,
+    1973,
+    1974,
+    1975,
+    1976,
+    1977
+   ],
+   "hex": "#697620",
+   "page": "https://importarchive.com/color/637",
+   "photos": [
+    {
+     "file": "ia_637_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_01.jpg"
+    },
+    {
+     "file": "ia_637_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_02.jpg"
+    },
+    {
+     "file": "ia_637_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_03.jpg"
+    },
+    {
+     "file": "ia_637_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_04.jpg"
+    },
+    {
+     "file": "ia_637_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_05.jpg"
+    },
+    {
+     "file": "ia_637_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_637_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "621",
+   "chart_code": "621",
+   "name": "Rustic Green",
+   "aka": "Green",
+   "years_printed": "72-79",
+   "years": [
+    1972,
+    1973,
+    1974,
+    1975,
+    1976,
+    1977,
+    1978,
+    1979
+   ],
+   "hex": "#2F7B71",
+   "page": "https://importarchive.com/color/621",
+   "photos": [
+    {
+     "file": "ia_621_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_01.jpg"
+    },
+    {
+     "file": "ia_621_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_02.jpg"
+    },
+    {
+     "file": "ia_621_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_03.jpg"
+    },
+    {
+     "file": "ia_621_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_04.jpg"
+    },
+    {
+     "file": "ia_621_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_05.jpg"
+    },
+    {
+     "file": "ia_621_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_621_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "632",
+   "chart_code": "632",
+   "name": "Deep Green",
+   "aka": "",
+   "years_printed": "73-75",
+   "years": [
+    1973,
+    1974,
+    1975
+   ],
+   "hex": "#338871",
+   "page": "https://importarchive.com/color/632",
+   "photos": [
+    {
+     "file": "ia_632_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_01.jpg"
+    },
+    {
+     "file": "ia_632_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_02.jpg"
+    },
+    {
+     "file": "ia_632_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_03.jpg"
+    },
+    {
+     "file": "ia_632_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_04.jpg"
+    },
+    {
+     "file": "ia_632_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_05.jpg"
+    },
+    {
+     "file": "ia_632_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_632_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "622",
+   "chart_code": "622",
+   "name": "Nebula Green",
+   "aka": "",
+   "years_printed": "74",
+   "years": [
+    1974
+   ],
+   "hex": "#95A79B",
+   "page": "https://importarchive.com/color/622",
+   "photos": [
+    {
+     "file": "ia_622_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_01.jpg"
+    },
+    {
+     "file": "ia_622_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_02.jpg"
+    },
+    {
+     "file": "ia_622_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_03.jpg"
+    },
+    {
+     "file": "ia_622_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_04.jpg"
+    },
+    {
+     "file": "ia_622_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_05.jpg"
+    },
+    {
+     "file": "ia_622_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_622_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "653",
+   "chart_code": "653",
+   "name": "Olive",
+   "aka": "",
+   "years_printed": "78-83",
+   "years": [
+    1978,
+    1979,
+    1980,
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#52572F",
+   "page": "https://importarchive.com/color/653",
+   "photos": [
+    {
+     "file": "ia_653_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_01.jpg"
+    },
+    {
+     "file": "ia_653_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_02.jpg"
+    },
+    {
+     "file": "ia_653_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_03.jpg"
+    },
+    {
+     "file": "ia_653_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_04.jpg"
+    },
+    {
+     "file": "ia_653_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_05.jpg"
+    },
+    {
+     "file": "ia_653_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_653_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "681",
+   "chart_code": "681",
+   "name": "Green",
+   "aka": "",
+   "years_printed": "80-83",
+   "years": [
+    1980,
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#40AD5E",
+   "page": "https://importarchive.com/color/681",
+   "photos": [
+    {
+     "file": "ia_681_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_681_01.jpg"
+    },
+    {
+     "file": "ia_681_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_681_02.jpg"
+    }
+   ]
+  },
+  {
+   "key": "6L4",
+   "chart_code": "6L4",
+   "name": "Light Olive",
+   "aka": "",
+   "years_printed": "83",
+   "years": [
+    1983
+   ],
+   "hex": "#989876",
+   "page": "https://importarchive.com/color/6l4",
+   "photos": [
+    {
+     "file": "ia_6L4_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_6L4_01.jpg"
+    },
+    {
+     "file": "ia_6L4_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_6L4_02.jpg"
+    },
+    {
+     "file": "ia_6L4_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_6L4_03.jpg"
+    }
+   ]
+  },
+  {
+   "key": "808",
+   "chart_code": "T808",
+   "name": "Horizontal Blue",
+   "aka": "",
+   "years_printed": "65",
+   "years": [
+    1965
+   ],
+   "hex": "#88C3D6",
+   "page": "https://importarchive.com/color/t808",
+   "photos": [
+    {
+     "file": "ia_808_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_01.jpg"
+    },
+    {
+     "file": "ia_808_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_02.jpg"
+    },
+    {
+     "file": "ia_808_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_03.jpg"
+    },
+    {
+     "file": "ia_808_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_04.jpg"
+    },
+    {
+     "file": "ia_808_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_05.jpg"
+    },
+    {
+     "file": "ia_808_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T808_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "310",
+   "chart_code": "T310",
+   "name": "Capri Blue",
+   "aka": "",
+   "years_printed": "69-71",
+   "years": [
+    1969,
+    1970,
+    1971
+   ],
+   "hex": "#9FC5DD",
+   "page": "https://importarchive.com/color/t310",
+   "photos": [
+    {
+     "file": "ia_310_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_01.jpg"
+    },
+    {
+     "file": "ia_310_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_02.jpg"
+    },
+    {
+     "file": "ia_310_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_03.jpg"
+    },
+    {
+     "file": "ia_310_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_04.jpg"
+    },
+    {
+     "file": "ia_310_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_05.jpg"
+    },
+    {
+     "file": "ia_310_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T310_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "452",
+   "chart_code": "T452",
+   "name": "Royal Blue",
+   "aka": "",
+   "years_printed": "69-74",
+   "years": [
+    1969,
+    1970,
+    1971,
+    1972,
+    1973,
+    1974
+   ],
+   "hex": "#1F4572",
+   "page": "https://importarchive.com/color/t452",
+   "photos": [
+    {
+     "file": "ia_452_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T452_01.jpg"
+    },
+    {
+     "file": "ia_452_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T452_02.jpg"
+    },
+    {
+     "file": "ia_452_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T452_03.jpg"
+    }
+   ]
+  },
+  {
+   "key": "449",
+   "chart_code": "T449",
+   "name": "Cadet Blue",
+   "aka": "",
+   "years_printed": "70",
+   "years": [
+    1970
+   ],
+   "hex": "#4D6267",
+   "page": "https://importarchive.com/color/t449",
+   "photos": [
+    {
+     "file": "ia_449_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T449_01.jpg"
+    },
+    {
+     "file": "ia_449_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T449_02.jpg"
+    },
+    {
+     "file": "ia_449_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_T449_03.jpg"
+    }
+   ]
+  },
+  {
+   "key": "113",
+   "chart_code": "113",
+   "name": "Heath Gray",
+   "aka": "",
+   "years_printed": "72-74",
+   "years": [
+    1972,
+    1973,
+    1974
+   ],
+   "hex": "#8A97AA",
+   "page": "https://importarchive.com/color/113",
+   "photos": [
+    {
+     "file": "ia_113_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_113_01.jpg"
+    },
+    {
+     "file": "ia_113_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_113_02.jpg"
+    },
+    {
+     "file": "ia_113_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_113_03.jpg"
+    }
+   ]
+  },
+  {
+   "key": "854",
+   "chart_code": "854",
+   "name": "Sky Blue",
+   "aka": "Blue",
+   "years_printed": "75-80",
+   "years": [
+    1975,
+    1976,
+    1977,
+    1978,
+    1979,
+    1980
+   ],
+   "hex": "#69CCFF",
+   "page": "https://importarchive.com/color/854",
+   "photos": [
+    {
+     "file": "ia_854_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_01.jpg"
+    },
+    {
+     "file": "ia_854_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_02.jpg"
+    },
+    {
+     "file": "ia_854_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_03.jpg"
+    },
+    {
+     "file": "ia_854_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_04.jpg"
+    },
+    {
+     "file": "ia_854_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_05.jpg"
+    },
+    {
+     "file": "ia_854_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_854_06.jpg"
+    }
+   ]
+  },
+  {
+   "key": "857",
+   "chart_code": "857",
+   "name": "Medium Blue",
+   "aka": "",
+   "years_printed": "81-83",
+   "years": [
+    1981,
+    1982,
+    1983
+   ],
+   "hex": "#205A9C",
+   "page": "https://importarchive.com/color/857",
+   "photos": [
+    {
+     "file": "ia_857_01.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_01.jpg"
+    },
+    {
+     "file": "ia_857_02.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_02.jpg"
+    },
+    {
+     "file": "ia_857_03.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_03.jpg"
+    },
+    {
+     "file": "ia_857_04.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_04.jpg"
+    },
+    {
+     "file": "ia_857_05.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_05.jpg"
+    },
+    {
+     "file": "ia_857_06.jpg",
+     "url": "https://importarchive.com/colors/toyotalandcruiser/toyota_landcruiser_61_857_06.jpg"
+    }
+   ]
+  }
+ ]
+}
