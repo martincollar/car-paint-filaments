@@ -16,11 +16,13 @@ exclude_finishes:
   transparent: '\btransparent\w*|\btranslucent\w*|\bpruhledn\w*|\bpruhled\w*|\bcir(a|e|y|i|ou)\b|\bclear\b'
   natural:     '\bnatur\w*|\bprirodn\w*'
   silk:        '\bsilk\w*|\bhedvab\w*'
+  stone:       '\bmarble\w*|\bmramor\w*'
 
 # Effects the shop itself declares in the product's parameter table (shoplib.product_attrs, upgates
 # markup), matched as "parameter=value" on diacritics-folded text. Not a colour-name keyword: a plain
 # PLA called "Kámen" has no such parameter. Stone effect = marble, sandstone, brick, "kámen" lines
 # (Spectrum PLA Special, Devil Design, Lume, ...): textured, not a single-colour spool.
+# Shops without a parameter table (3DFox, ...) are caught by the `stone` keywords in exclude_finishes.
 exclude_attrs:
   stone: '^doplnujici cleneni=efekt\W*kamen'
 

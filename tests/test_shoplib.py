@@ -57,6 +57,9 @@ class FinishFilter(unittest.TestCase):
             ("Almond Silk", "silk"),
             ("refill-azurefilm-pla-silk-olivove-zelena", "silk"),
             ("PLA hedvábná zlatá", "silk"),
+            ("filament-sunlu-pla-marble-kastanove-hneda-1-75mm-1kg", "stone"),
+            ("filament-economy-pla-mramorova-1-kg", "stone"),
+            ("Marble Kaštanově Hnědá", "stone"),
         ]:
             self.assertEqual(shoplib.excluded_finish(text), finish, text)
 

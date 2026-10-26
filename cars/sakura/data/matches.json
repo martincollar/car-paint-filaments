@@ -23,34 +23,6 @@
       "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)",
       "pla": [
         {
-          "delta_e": 1.58,
-          "slug": "filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg",
-          "brand": "SUNLU",
-          "material": "PLA",
-          "color_name": "Marble Lesní Zelená",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7537_filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg.png?ff=1&x=1024&y=768&q=85&ts=69c016af&sg=161563f2",
-          "local_image": "3dfox-filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament SUNLU PLA Marble Lesní Zelená 1,75mm 1kg",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            206,
-            203
-          ],
-          "hex": "#CACECB",
-          "pixel_count": 114937,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 2.5,
           "slug": "filament-nebula-pla-bila-1-kg",
           "brand": "NEBULA",
@@ -63,7 +35,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA signální bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -91,7 +63,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA Extrafill \"Traffic White\" | 1 KG | 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -137,31 +109,59 @@
           "measured_hex": "#E5E5E0"
         },
         {
-          "delta_e": 2.79,
-          "slug": "3dpower-pla-marble-mramor-marmour-1kg",
-          "brand": "3DPower",
+          "delta_e": 2.91,
+          "slug": "filament-nebula-pla-bila-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
           "material": "PLA",
-          "color_name": "Marble Mramor (Marmour)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3dpower-pla-marble-mramor-marmour-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/7/f/7fa8d09abd69f9a07caca9031af69afe-3dpower-pla-marble-marmour-4.jpg",
-          "local_image": "hubacek3d-3dpower-pla-marble-mramor-marmour-1kg.jpg",
+          "color_name": "Bílá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-bila-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/6/b626ebbb5a292c6b45c902f1276df1e7-vyr-2285-pla-pure-white.jpg",
+          "local_image": "smart3d-filament-nebula-pla-bila-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "3DPower PLA Marble - Mramor (Marmour) - 1kg",
-          "last_ok": "2026-10-25",
+          "title": "Filament NEBULA / PLA / BÍLÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            207,
-            209,
+            217,
+            219,
             209
           ],
-          "hex": "#CFD1D1",
-          "pixel_count": 278451,
+          "hex": "#D9DBD1",
+          "pixel_count": 66348,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.02,
+          "slug": "easy-pla-inox",
+          "brand": "Fiberlogy",
+          "material": "PLA",
+          "color_name": "Easy Inox",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-pla-inox",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/27782_606e9e18.128x128.jpg",
+          "local_image": "3djake-easy-pla-inox.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy Easy PLA Inox",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            210,
+            211,
+            211
+          ],
+          "hex": "#D2D3D3",
+          "pixel_count": 9916,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -179,7 +179,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament White 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -236,7 +236,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PETG signální bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -264,7 +264,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Select PETG - Bílá (White) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -322,7 +322,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "ASA Extrafill \"White Aluminium\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -378,7 +378,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Smart Print ASA bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -407,7 +407,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -488,7 +488,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA - Modrá",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -516,7 +516,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA Extrafill \"Sky Blue\" | 1 KG | 1.75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -630,7 +630,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Modrá (Sky Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -658,7 +658,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament 3DFOX PETG REFILL modrá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -714,7 +714,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Select PETG - Modrá (Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -800,7 +800,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Sky Blue\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -884,7 +884,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Blue, 1,75 mm / 750 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -936,7 +936,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PLA 3D Filament Mustard Field 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -964,7 +964,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA dýňová oranžová 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1048,7 +1048,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PLA 3D Filament Mango Tango 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1106,7 +1106,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Žlutá (Yellow) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1134,7 +1134,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PETG Světlá hnědá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1190,7 +1190,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Oranžová (Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1276,7 +1276,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Construction Yellow 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1304,7 +1304,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design ASA - Oranžová (Bright Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1372,34 +1372,6 @@
       "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #7F878B. 1973 car repainted in factory silver (classiccars.com); grass tints it green, sky blue",
       "pla": [
         {
-          "delta_e": 3.86,
-          "slug": "3dpower-pla-marble-kamen-stone-1kg",
-          "brand": "3DPower",
-          "material": "PLA",
-          "color_name": "Marble Kámen (Stone)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3dpower-pla-marble-kamen-stone-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/d/c/dc7cef4c981cb121a525e72ef2c094e0-3dpower-pla-marble-stone-4.jpg",
-          "local_image": "hubacek3d-3dpower-pla-marble-kamen-stone-1kg.jpg",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3DPower PLA Marble - Kámen (Stone) - 1kg",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            174,
-            181,
-            183
-          ],
-          "hex": "#AEB5B7",
-          "pixel_count": 295336,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.12,
           "slug": "filamentree-pla-plus-seda-window-grey-1kg",
           "brand": "Filamentree",
@@ -1412,7 +1384,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PLA plus - Šedá (Window Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1468,7 +1440,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -1510,6 +1482,34 @@
           ],
           "hex": "#A4A6A5",
           "pixel_count": 274935,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.75,
+          "slug": "filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Basic Stříbrná",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7366_07971e17-691b-4ca3-95ad-072168ab3ec3.jpg?ff=1&x=1024&y=768&q=85&ts=69b14be7&sg=161563f2",
+          "local_image": "3dfox-filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Bambu Lab PLA Basic Stříbrná Refill 1,75mm 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            166,
+            167,
+            167
+          ],
+          "hex": "#A6A7A7",
+          "pixel_count": 163755,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -1555,7 +1555,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Šedá (Window Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1583,7 +1583,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -1640,7 +1640,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Urban Grey 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -1727,7 +1727,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Inox, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1836,7 +1836,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA travnatě zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1864,7 +1864,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PLA - Zelená (Race Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1920,7 +1920,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PLA - Zelená (Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1948,7 +1948,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PLA plus - Zelená (Moss Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -1978,7 +1978,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Zelená (Luminous Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2006,7 +2006,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -2035,7 +2035,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PETG smaragdově zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2091,7 +2091,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament PARK-SIDE 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2121,7 +2121,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design ASA - Zelená (Race Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2149,7 +2149,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Green Grass 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2177,7 +2177,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament ARMY Armor Brown 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2205,7 +2205,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D ASA filament 1,75 mm 1 kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2233,7 +2233,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Traffic Black\" ",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2313,7 +2313,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PLA - Tmavě Oranžová (Dark Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2369,7 +2369,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2484,7 +2484,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Sunset Mochi 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2512,7 +2512,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Nuclear Orange 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2540,7 +2540,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PETG - Oranžová (Papaya Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2570,7 +2570,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Orange, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2598,7 +2598,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Signal Orange 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2654,7 +2654,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Prusa Orange 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -2683,7 +2683,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D ASA filament 1,75 mm 1 kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2763,7 +2763,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy Easy PLA Red Orange, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -2877,7 +2877,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -2934,7 +2934,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy Easy PETG Red, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3077,7 +3077,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Red, 1,75 mm / 750 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3133,7 +3133,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -3242,7 +3242,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy Easy PLA Pastel Yellow, 1,75 mm / 850 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3298,7 +3298,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Bambu Lab PLA Basic Jasně Zelená Refill 1,75mm 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3384,7 +3384,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Sulfur Yellow 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3412,7 +3412,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PETG - Žlutá",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3440,7 +3440,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PETG - Žlutá (Yellow) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3499,7 +3499,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "3DPower ASA - Žlutá (Yellow) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3527,7 +3527,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Dijon Mustard\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3583,7 +3583,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Yellow, 1,75 mm / 750 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3623,34 +3623,6 @@
       "note": "Photo-calibrated (2 real-car photo(s)); card scan measured #E7E0C6. two 1972 cars in 904 White (classiccars.com listings, Arizona and Idaho)",
       "pla": [
         {
-          "delta_e": 1.58,
-          "slug": "filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg",
-          "brand": "SUNLU",
-          "material": "PLA",
-          "color_name": "Marble Lesní Zelená",
-          "shop": "3DFox",
-          "url": "https://www.3dfoxshop.cz/filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg/",
-          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7537_filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg.png?ff=1&x=1024&y=768&q=85&ts=69c016af&sg=161563f2",
-          "local_image": "3dfox-filament-sunlu-pla-marble-lesni-zelena-1-75mm-1kg.png",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament SUNLU PLA Marble Lesní Zelená 1,75mm 1kg",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            202,
-            206,
-            203
-          ],
-          "hex": "#CACECB",
-          "pixel_count": 114937,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 2.5,
           "slug": "filament-nebula-pla-bila-1-kg",
           "brand": "NEBULA",
@@ -3663,7 +3635,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA signální bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3691,7 +3663,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA Extrafill \"Traffic White\" | 1 KG | 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3737,31 +3709,59 @@
           "measured_hex": "#E5E5E0"
         },
         {
-          "delta_e": 2.79,
-          "slug": "3dpower-pla-marble-mramor-marmour-1kg",
-          "brand": "3DPower",
+          "delta_e": 2.91,
+          "slug": "filament-nebula-pla-bila-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
           "material": "PLA",
-          "color_name": "Marble Mramor (Marmour)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3dpower-pla-marble-mramor-marmour-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/7/f/7fa8d09abd69f9a07caca9031af69afe-3dpower-pla-marble-marmour-4.jpg",
-          "local_image": "hubacek3d-3dpower-pla-marble-mramor-marmour-1kg.jpg",
+          "color_name": "Bílá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-nebula-pla-bila-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/b/6/b626ebbb5a292c6b45c902f1276df1e7-vyr-2285-pla-pure-white.jpg",
+          "local_image": "smart3d-filament-nebula-pla-bila-1-75-mm-1-kg.jpg",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "3DPower PLA Marble - Mramor (Marmour) - 1kg",
-          "last_ok": "2026-10-25",
+          "title": "Filament NEBULA / PLA / BÍLÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
           "neon": false,
           "finish": [],
           "rgb": [
-            207,
-            209,
+            217,
+            219,
             209
           ],
-          "hex": "#CFD1D1",
-          "pixel_count": 278451,
+          "hex": "#D9DBD1",
+          "pixel_count": 66348,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 3.02,
+          "slug": "easy-pla-inox",
+          "brand": "Fiberlogy",
+          "material": "PLA",
+          "color_name": "Easy Inox",
+          "shop": "3DJake",
+          "url": "https://www.3djake.cz/fiberlogy/easy-pla-inox",
+          "image_url": "https://3d.nice-cdn.com/upload/image/product/large/default/27782_606e9e18.128x128.jpg",
+          "local_image": "3djake-easy-pla-inox.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Fiberlogy Easy PLA Inox",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            210,
+            211,
+            211
+          ],
+          "hex": "#D2D3D3",
+          "pixel_count": 9916,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -3779,7 +3779,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament White 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3836,7 +3836,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PETG signální bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3864,7 +3864,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Select PETG - Bílá (White) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3922,7 +3922,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "ASA Extrafill \"White Aluminium\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -3978,7 +3978,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Smart Print ASA bílá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4007,7 +4007,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design ASA - Světle Šedá (Light Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4076,34 +4076,6 @@
       "note": "Photo-calibrated (1 real-car photo(s)); card scan measured #7F878B. 1973 car repainted in factory silver (classiccars.com); grass tints it green, sky blue",
       "pla": [
         {
-          "delta_e": 3.86,
-          "slug": "3dpower-pla-marble-kamen-stone-1kg",
-          "brand": "3DPower",
-          "material": "PLA",
-          "color_name": "Marble Kámen (Stone)",
-          "shop": "Hubacek3D",
-          "url": "https://www.hubacek3d.cz/p/3dpower-pla-marble-kamen-stone-1kg",
-          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/d/c/dc7cef4c981cb121a525e72ef2c094e0-3dpower-pla-marble-stone-4.jpg",
-          "local_image": "hubacek3d-3dpower-pla-marble-kamen-stone-1kg.jpg",
-          "availability": "OutOfStock",
-          "stock": "Vyprodáno",
-          "title": "3DPower PLA Marble - Kámen (Stone) - 1kg",
-          "last_ok": "2026-10-25",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            174,
-            181,
-            183
-          ],
-          "hex": "#AEB5B7",
-          "pixel_count": 295336,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.12,
           "slug": "filamentree-pla-plus-seda-window-grey-1kg",
           "brand": "Filamentree",
@@ -4116,7 +4088,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PLA plus - Šedá (Window Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4172,7 +4144,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -4214,6 +4186,34 @@
           ],
           "hex": "#A4A6A5",
           "pixel_count": 274935,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.75,
+          "slug": "filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg",
+          "brand": "Bambu Lab",
+          "material": "PLA",
+          "color_name": "Basic Stříbrná",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/7366_07971e17-691b-4ca3-95ad-072168ab3ec3.jpg?ff=1&x=1024&y=768&q=85&ts=69b14be7&sg=161563f2",
+          "local_image": "3dfox-filament-bambu-lab-pla-basic-stribrna-refill-1-75mm-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament Bambu Lab PLA Basic Stříbrná Refill 1,75mm 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            166,
+            167,
+            167
+          ],
+          "hex": "#A6A7A7",
+          "pixel_count": 163755,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -4259,7 +4259,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Šedá (Window Grey) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4287,7 +4287,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -4344,7 +4344,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Urban Grey 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -4431,7 +4431,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Inox, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4568,7 +4568,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PLA - Tmavě Oranžová (Dark Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4624,7 +4624,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4739,7 +4739,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Sunset Mochi 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4767,7 +4767,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Nuclear Orange 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4795,7 +4795,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PETG - Oranžová (Papaya Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4825,7 +4825,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Orange, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4853,7 +4853,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Signal Orange 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4909,7 +4909,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Prusa Orange 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -4938,7 +4938,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D ASA filament 1,75 mm 1 kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -4990,7 +4990,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA zářivě oranžová 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5046,7 +5046,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA - Červená",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5074,7 +5074,7 @@
           "availability": null,
           "stock": "?",
           "title": "FIBER3D PLA+ filament 1,75 mm 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5102,7 +5102,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Tough+",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -5133,7 +5133,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PETG - Tmavě Oranžová (Dark Orange) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5245,7 +5245,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Filament Traffic Red 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5275,7 +5275,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Orange, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5359,7 +5359,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Lipstick Red 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -5440,7 +5440,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Blend Lime Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -5497,7 +5497,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA - Žlutozelená",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5525,7 +5525,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA+ Summer edice - Fresh lime",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5553,7 +5553,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament 3DFOX PLA REFILL světle zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5583,7 +5583,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Pistachio Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -5696,7 +5696,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PETG - Zelená (Bright Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5754,7 +5754,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Light Green, 1,75 mm / 750 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5782,7 +5782,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Dijon Mustard\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5839,7 +5839,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Garden Green 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5891,7 +5891,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -5948,7 +5948,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament 3DFOX PLA REFILL zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -5976,7 +5976,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament NEBULA PLA světle zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6034,7 +6034,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL PET-G Recycled Filament Herb Green1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6062,7 +6062,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament 3DFOX PETG REFILL zelená 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6090,7 +6090,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Zelená (Light Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6118,7 +6118,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PETG - Zelená",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6176,7 +6176,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Green Grass\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6205,7 +6205,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament ARMY Field Olive 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6289,7 +6289,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower ASA - Světle Zelená (Light Green) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6341,7 +6341,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Bambu Lab PLA Basic Bronzová Refill 1,75mm 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6397,7 +6397,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PLA - Hnědá (Brown) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6425,7 +6425,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PLA Extrafill \"Chocolate Brown\" | 1 KG | 1.75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6626,7 +6626,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Jet Black 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -6655,7 +6655,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Olive Green, 1,75 mm / 750 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6684,7 +6684,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA - Černá",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6712,7 +6712,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Onyx, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6740,7 +6740,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Fiberlogy ASA Black, 1,75 mm / 1000 g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6792,7 +6792,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PLA - Modrá (Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6820,7 +6820,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Refill PLA - Modrá (Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6848,7 +6848,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament 3DFOX PLA REFILL tmavě modrá 1 kg 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6876,7 +6876,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Devil Design PLA - Modrá (Super Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -6934,7 +6934,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower Basic PETG - Modrá (Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -7046,7 +7046,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filamentree PETG - Modrá (Sky Blue T) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -7076,7 +7076,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "3DPower ASA - Modrá (Blue) - 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -7132,7 +7132,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "AURAPOL ASA 3D Filament Dark Turquoise 850g 1,75 mm",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -7189,7 +7189,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "ASA Extrafill \"Sky Blue\"",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu"
           ],
@@ -7243,7 +7243,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7271,7 +7271,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Pro 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7299,7 +7299,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7328,7 +7328,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7356,7 +7356,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7386,7 +7386,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7414,7 +7414,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PETG Premium High Speed 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7442,7 +7442,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm ARCTIC WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7470,7 +7470,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7498,7 +7498,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm GLASSY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7528,7 +7528,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7556,7 +7556,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7584,7 +7584,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7612,7 +7612,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7641,7 +7641,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7693,7 +7693,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Easy PLA 3D Printer Filament 1.75mm Easy Digital Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7721,7 +7721,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Azure Blue 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7750,7 +7750,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "PolyLite™ PLA Stone Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7778,7 +7778,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "PolyLite™ PLA Azure Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7806,7 +7806,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7837,7 +7837,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Sky Blue 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7866,7 +7866,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7895,7 +7895,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7924,7 +7924,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -7953,7 +7953,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm PACIFIC BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -7983,7 +7983,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Pop Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8011,7 +8011,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8039,7 +8039,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm PACIFIC BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8067,7 +8067,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture ASA 3D Printer Filament 1.75mm Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8095,7 +8095,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8148,7 +8148,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8176,7 +8176,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm Pink",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8204,7 +8204,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm Chocolate",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8232,7 +8232,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Royal Gold",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8260,7 +8260,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Blend Viva La Bronze 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8291,7 +8291,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm SIGNAL YELLOW 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8319,7 +8319,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm BEIGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8347,7 +8347,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm BAHAMA YELLOW 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8375,7 +8375,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Yellow Gold 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8404,7 +8404,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Army Brown",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8434,7 +8434,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Olive Brown",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8462,7 +8462,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm TRAFFIC YELLOW 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8490,7 +8490,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8518,7 +8518,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8546,7 +8546,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8598,7 +8598,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Super PLA+ 3D Printer Filament 1.75mm Light Gray",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8626,7 +8626,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8655,7 +8655,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Grey",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8683,7 +8683,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Gray Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8711,7 +8711,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Tough+",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8742,7 +8742,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Grey",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8770,7 +8770,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8799,7 +8799,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Urban Grey 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8828,7 +8828,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8856,7 +8856,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PETG Premium High Speed 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8886,7 +8886,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Gray",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8914,7 +8914,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -8943,7 +8943,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8971,7 +8971,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -8999,7 +8999,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9051,7 +9051,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Emerald Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9080,7 +9080,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Opal Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9109,7 +9109,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum r-PLA 1.75mm LEAF GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9137,7 +9137,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9165,7 +9165,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Blue-Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9195,7 +9195,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9224,7 +9224,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Army Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9252,7 +9252,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Dark Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9280,7 +9280,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9309,7 +9309,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm OLIVE GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9339,7 +9339,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Army Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9367,7 +9367,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9395,7 +9395,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Dark Gray Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9423,7 +9423,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Olive Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9451,7 +9451,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Olive Green 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9504,7 +9504,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9532,7 +9532,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9560,7 +9560,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9588,7 +9588,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Super PLA+ 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9616,7 +9616,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Easy PLA 3D Printer Filament 1.75mm Easy Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9646,7 +9646,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9674,7 +9674,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9702,7 +9702,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9731,7 +9731,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9760,7 +9760,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Prusa Orange 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9791,7 +9791,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9819,7 +9819,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LION ORANGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9847,7 +9847,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9875,7 +9875,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Prusa Orange 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9904,7 +9904,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Lipstick Red 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -9957,7 +9957,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PLA Premium 1.75mm FOX ORANGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -9985,7 +9985,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum Pastello PLA 1.75mm HOLLAND RED 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10013,7 +10013,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Premium 1.75mm BLOODY RED 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10041,7 +10041,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10069,7 +10069,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PolyLite™ PLA Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10099,7 +10099,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10128,7 +10128,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Lipstick Red 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10157,7 +10157,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10185,7 +10185,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ PETG Magenta",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10213,7 +10213,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10244,7 +10244,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10273,7 +10273,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LION ORANGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10301,7 +10301,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Lipstick Red 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10330,7 +10330,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10358,7 +10358,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm BLOODY RED 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10410,7 +10410,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Light Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10438,7 +10438,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Lemon Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10466,7 +10466,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Lime Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10494,7 +10494,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10523,7 +10523,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10553,7 +10553,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Grass Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10581,7 +10581,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10609,7 +10609,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Lime",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10637,7 +10637,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10666,7 +10666,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10696,7 +10696,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture ASA 3D Printer Filament 1.75mm Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10724,7 +10724,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10752,7 +10752,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm TRAFFIC YELLOW 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10780,7 +10780,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Pop Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10808,7 +10808,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Olive Brown",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10860,7 +10860,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10888,7 +10888,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Pro 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10916,7 +10916,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -10945,7 +10945,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -10973,7 +10973,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11003,7 +11003,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11031,7 +11031,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PETG Premium High Speed 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11059,7 +11059,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm ARCTIC WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11087,7 +11087,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11115,7 +11115,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm GLASSY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11145,7 +11145,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11173,7 +11173,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11201,7 +11201,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11229,7 +11229,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Signal White 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11258,7 +11258,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11310,7 +11310,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Super PLA+ 3D Printer Filament 1.75mm Light Gray",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11338,7 +11338,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11367,7 +11367,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Grey",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11395,7 +11395,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Gray Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11423,7 +11423,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Tough+",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11454,7 +11454,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Grey",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11482,7 +11482,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11511,7 +11511,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Urban Grey 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11540,7 +11540,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11568,7 +11568,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PETG Premium High Speed 1.75mm LIGHT GREY 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11598,7 +11598,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Gray",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11626,7 +11626,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11655,7 +11655,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11683,7 +11683,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA White",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11711,7 +11711,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm POLAR WHITE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11763,7 +11763,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11791,7 +11791,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11819,7 +11819,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture PLA+ 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11847,7 +11847,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Super PLA+ 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11875,7 +11875,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Easy PLA 3D Printer Filament 1.75mm Easy Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11905,7 +11905,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11933,7 +11933,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -11961,7 +11961,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -11990,7 +11990,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12019,7 +12019,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Prusa Orange 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12050,7 +12050,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12078,7 +12078,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LION ORANGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12106,7 +12106,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12134,7 +12134,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Prusa Orange 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12163,7 +12163,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Lipstick Red 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12216,7 +12216,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PolyLite™ PLA Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12244,7 +12244,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture Easy PLA 3D Printer Filament 1.75mm Easy Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12272,7 +12272,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Tequila Sunrise",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12300,7 +12300,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12328,7 +12328,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Tough+",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12359,7 +12359,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12388,7 +12388,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12417,7 +12417,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12446,7 +12446,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12474,7 +12474,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Red",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12504,7 +12504,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LION ORANGE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12532,7 +12532,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Lipstick Red 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12561,7 +12561,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Prusa Orange 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12590,7 +12590,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12619,7 +12619,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Orange",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12671,7 +12671,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Blend Lime Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12700,7 +12700,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Olive Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12728,7 +12728,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Pistachio Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12757,7 +12757,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum Premium PLA High Speed 1.75mm LIME GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12785,7 +12785,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Premium 1.75mm LIME GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12815,7 +12815,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Pistachio Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12844,7 +12844,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm LIME GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12872,7 +12872,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Grass Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12900,7 +12900,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -12929,7 +12929,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12959,7 +12959,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LIME GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -12987,7 +12987,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Polymaker™ ASA Olive Brown",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13015,7 +13015,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Pop Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13043,7 +13043,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13071,7 +13071,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture ASA 3D Printer Filament 1.75mm Yellow",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13123,7 +13123,7 @@
           "availability": null,
           "stock": "?",
           "title": "PLA Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13152,7 +13152,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Panchroma™ Basic PLA Jungle Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13180,7 +13180,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Premium 1.75mm FOREST GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13208,7 +13208,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "PolyLite™ PLA Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13236,7 +13236,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Pro 1.75mm FOREST GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13266,7 +13266,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Jungle Green 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13295,7 +13295,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG Basic",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13324,7 +13324,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm MINT GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13352,7 +13352,7 @@
           "availability": null,
           "stock": "?",
           "title": "PETG HF",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13381,7 +13381,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13411,7 +13411,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Olive Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13439,7 +13439,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm FOREST GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13467,7 +13467,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13495,7 +13495,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm LIME GREEN 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13523,7 +13523,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture ASA 3D Printer Filament 1.75mm Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13575,7 +13575,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum r-PLA 1.75mm TRAFFIC BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13603,7 +13603,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PLA Pro Black",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13631,7 +13631,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PLA Jet Black 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13660,7 +13660,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PLA Pro 1.75mm DEEP BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13688,7 +13688,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum Premium PLA High Speed 1.75mm DEEP BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13718,7 +13718,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PETG Premium High Speed 1.75mm DEEP BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13746,7 +13746,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PET-G Premium 1.75mm DEEP BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13774,7 +13774,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Black",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13802,7 +13802,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Dark Grey",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13830,7 +13830,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Black",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13860,7 +13860,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Jet Black",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13888,7 +13888,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Jet Black 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -13917,7 +13917,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum ASA 275 1.75mm DEEP BLACK 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13945,7 +13945,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Black",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -13973,7 +13973,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Dark Gray Green",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14025,7 +14025,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum r-PLA 1.75mm SIGNAL BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14053,7 +14053,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum Premium PLA High Speed 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14081,7 +14081,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PLA 3D Printer Filament 1.75mm Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14109,7 +14109,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PLA Premium 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14137,7 +14137,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum PLA Pro 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14167,7 +14167,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Filament Spectrum PET-G Premium 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14195,7 +14195,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14223,7 +14223,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament PETG Sky Blue 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -14252,7 +14252,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Overture High Speed PETG Refill 3D Printer Filament 1.75mm Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14280,7 +14280,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ PETG Dark Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14310,7 +14310,7 @@
           "availability": "OutOfStock",
           "stock": "Vyprodáno",
           "title": "Overture ASA 3D Printer Filament 1.75mm Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14338,7 +14338,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Filament Spectrum ASA 275 1.75mm NAVY BLUE 1kg",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14366,7 +14366,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Polymaker™ ASA Blue",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "int"
           ],
@@ -14394,7 +14394,7 @@
           "availability": null,
           "stock": "?",
           "title": "ASA",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
@@ -14423,7 +14423,7 @@
           "availability": "InStock",
           "stock": "Skladem",
           "title": "Prusament ASA Sapphire Blue 800g",
-          "last_ok": "2026-10-25",
+          "last_ok": "2026-10-26",
           "regions": [
             "eu",
             "int"
