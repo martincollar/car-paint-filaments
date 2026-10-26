@@ -18,7 +18,7 @@
     "Reference model: 3D Sets Model 17 Sakura 240, a replica of the Datsun 240Z (S30, Fairlady Z in Japan). Built from October 1969; sold in the US as the 240Z for model years 1970-1973 (260Z from 1974).",
     "Cards cover the whole Datsun range; only the chips offered on the 240Z (paint codes 901-920 and 110-115) are picked by hand in card_layout.json. The 1970 and 1973 cards show none of the Z chips: the 1970/71 Z colours are on the 1971 card and the 1972/73 ones on the 1972 card."
   ],
-  "theme": "sakura",
+  "theme": "default",
   "index": {"color": "#A6B767", "order": 150, "buy_url": "https://3dsets.com/product/model-17-sakura-240/?add-to-cart=56324"},
   "hero": {
     "photo": "sources/hero_neutral.jpg",
