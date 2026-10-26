@@ -57416,11 +57416,18 @@ article.row.combo-out { display: none; }
       if (mk[4*i] | mk[4*i+1] | mk[4*i+2]) for (var k = 0; k < nz; k++) { var a = za(i, k); sum[k] += a * c[0]; wt[k] += a; }
     }
     L = lab; Lm = sum.map(function (v, k) { return wt[k] > 0 ? v / wt[k] : 50; });
+    // The paintable body zones (not `fixed`, e.g. Doppler's upper and lower body) are one paint: share one mean lightness,
+    // so the same colour gets the same tonal curve on all of them. Per-zone means made the shaded lower body squash its
+    // highlights (less headroom) while keeping its dark tail, so it looked darker and denser than the upper body.
+    var gs = 0, gw = 0, grp = [];
+    Z.forEach(function (zc, k) { if (!zc.fixed && wt[k] > 0) { gs += sum[k]; gw += wt[k]; grp.push(k); } });
+    if (grp.length > 1) grp.forEach(function (k) { Lm[k] = gs / gw; });
     // Contrast of the body shading differs a lot between photos (flat pastel Doppler vs. hard-lit Torq). Cap it at the
     // same level for every car, otherwise one filament colour looks darker or flatter on some cars than on others.
     var vr = Z.map(function () { return 0; });
     for (var j = 0; j < n; j++) if (mk[4*j] | mk[4*j+1] | mk[4*j+2]) for (var q = 0; q < nz; q++) { var aq = za(j, q), dq = L[3*j] - Lm[q]; vr[q] += aq * dq * dq; }
     Sc = Z.map(function (_, q) { return wt[q] > 0 ? Math.min(1, 12 / Math.sqrt(vr[q] / wt[q])) : 1; });
+    if (grp.length > 1) { var gv = 0; grp.forEach(function (k) { gv += vr[k]; }); grp.forEach(function (k) { Sc[k] = Math.min(1, 12 / Math.sqrt(gv / gw)); }); }
     if (sel) paint(sel); else greyed();
   }
   photo.onload = mask.onload = ready; photo.src = H.photo; mask.src = H.mask;
