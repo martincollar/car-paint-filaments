@@ -709,6 +709,10 @@ def combos_html(year, combos, matches):
     return (f'<div class="combos" data-year="{year}"><span class="combos-l">Factory two-tones</span>' + "".join(btns) +
             '<span class="combos-hint">click the active one again to show all colours</span></div>')
 
+def _chip_key(m):
+    return (m["name"], m.get("year"), m.get("car_code", ""))
+
+
 def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None, variants=None):
     """The whole self-contained page as a string. `matches_by_region` is {region: [match, ...]} for the car's default
     finishes; `variants` is {finish key: matches_by_region} for every state of the finish toggles (including the default)."""
@@ -729,7 +733,8 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None, v
         fonts_q = merge_fonts(fonts_q, theme["tile_fonts"])
     theme_css = (TILE_BASE_CSS + theme["tokens"] + theme["css"] + theme["tile"] + theme["headcard"] + theme["head_offsets"]) if use_card else theme["css"]
 
-    by_name = {k: {r: {m["name"]: m for m in mbr[r]} for r in regions} for k, mbr in variants.items()}
+    # One chip = name + year + code: two paints can share a name (Bamboo's "White" 031 and 033).
+    by_chip = {k: {r: {_chip_key(m): m for m in mbr[r]} for r in regions} for k, mbr in variants.items()}
     by_year = {}
     for m in matches:
         if m.get("year") is None:
@@ -758,7 +763,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None, v
                 # one candidate block per distinct result; a block lists every finish state it is right for
                 blocks = {}
                 for k in variants:
-                    cand = by_name[k][r][m['name']]
+                    cand = by_chip[k][r][_chip_key(m)]
                     blocks.setdefault(f"""
           <div class="col pla-col">{filament_column(cand['pla'], 'PLA', fil_thumbs)}</div>
           <div class="col petg-col">{filament_column(cand['petg'], 'PETG', fil_thumbs)}</div>
