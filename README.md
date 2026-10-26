@@ -6,12 +6,12 @@ Match factory car paint colors (scanned Ditzler-style color cards) to 3D-print f
 
 All pages: **[martincollar.github.io/car-paint-filaments](https://martincollar.github.io/car-paint-filaments/)**
 
-| Car | Years | Colors | Page |
-|---|---|---|---|
-| 3D Sets Doppler | 1951-1957 | 69 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
-| 3D Sets Torq | 1970-1974 | 124 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
-| 3D Sets Sakura | 1971-1972 | 13 | [sakura](https://martincollar.github.io/car-paint-filaments/sakura/) |
-| 3D Sets Bamboo | 1966-1983 | 157 (36 distinct) | [bamboo](https://martincollar.github.io/car-paint-filaments/bamboo/) |
+| Car | Years | Page |
+|---|---|---|
+| 3D Sets Doppler | 1951-1957 | [doppler](https://martincollar.github.io/car-paint-filaments/doppler/) |
+| 3D Sets Torq | 1970-1974 | [torq](https://martincollar.github.io/car-paint-filaments/torq/) |
+| 3D Sets Sakura | 1971-1972 | [sakura](https://martincollar.github.io/car-paint-filaments/sakura/) |
+| 3D Sets Bamboo | 1966-1983 | [bamboo](https://martincollar.github.io/car-paint-filaments/bamboo/) |
 
 ## Quick start
 
