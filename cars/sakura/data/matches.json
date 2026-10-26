@@ -6442,17 +6442,17 @@
         },
         {
           "delta_e": 5.06,
-          "slug": "refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
-          "brand": "ROSA3D",
-          "material": "PLA",
-          "color_name": "LW Pla Aero Antracitově Černá",
+          "slug": "filament-lume-pla-anthracitova-1-75-mm-1-kg",
+          "brand": "LUME Filaments",
+          "material": "PLA+",
+          "color_name": "Lume Anthracitová",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9bf2617355872be4121c36ad95a3cf7b-refill-pla-lw-aero-anthracite-175mm-1kg.webp",
-          "local_image": "smart3d-refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg.webp",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-anthracitova-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/6/d/6dd8ff66d19e52cc4176c4f4283baffa-pla-antracyt-5903669508991-03.webp",
+          "local_image": "smart3d-filament-lume-pla-anthracitova-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "ReFill ROSA3D / LW-PLA AERO / ANTRACITOVĚ ČERNÁ / 1,75mm / 1 kg",
+          "title": "Filament LUME / PLA+ / ANTHRACITOVÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -6460,12 +6460,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            38,
-            35,
-            33
+            42,
+            39,
+            36
           ],
-          "hex": "#262321",
-          "pixel_count": 275064,
+          "hex": "#2A2724",
+          "pixel_count": 117988,
           "confidence": "measured_dominant_hue"
         }
       ],

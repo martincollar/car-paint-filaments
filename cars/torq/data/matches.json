@@ -2318,34 +2318,6 @@
           "measured_hex": "#54291D"
         },
         {
-          "delta_e": 4.67,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Orange",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/d/8d95dd27453bb1580561120fc1ee1a85-vyr-2897-lw-orange-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ORANGE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            68,
-            8,
-            3
-          ],
-          "hex": "#440803",
-          "pixel_count": 170815,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.45,
           "slug": "filament-devil-design-pla-vinove-cervena-1-75-mm-1-kg",
           "brand": "DEVIL DESIGN",
@@ -2399,6 +2371,34 @@
           ],
           "hex": "#5A292D",
           "pixel_count": 9752,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.36,
+          "slug": "filament-colorfil-pla-hneda-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Hnědá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-colorfil-pla-hneda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/72cc86a952829176e03097dc46ab22ff-brown.jpg",
+          "local_image": "smart3d-filament-colorfil-pla-hneda-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament COLORFIL / PLA / HNĚDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            60,
+            31,
+            20
+          ],
+          "hex": "#3C1F14",
+          "pixel_count": 79485,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -4584,34 +4584,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.85,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-cub-yellow-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Cub Yellow",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-cub-yellow-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/3/4326082acf2e35fbd7fbbf2adf8dde37-vyr-3043-lw-yellow-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-cub-yellow-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / CUB YELLOW / 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            100,
-            58,
-            7
-          ],
-          "hex": "#643A07",
-          "pixel_count": 299464,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.0,
           "slug": "filament-devil-design-pla-tmave-hneda-1-75-mm-1-kg",
           "brand": "DEVIL DESIGN",
@@ -4637,6 +4609,34 @@
           ],
           "hex": "#4F2F1A",
           "pixel_count": 266090,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.01,
+          "slug": "filament-fox-refill-pla-svetle-hneda-1-kg",
+          "brand": "3DFOX",
+          "material": "PLA",
+          "color_name": "Světle hnědá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-fox-refill-pla-svetle-hneda-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/6289-1_svetle-hneda-pla--petg-1.png?ff=1&x=1024&y=768&q=85&ts=683b5f52&sg=161563f2",
+          "local_image": "3dfox-filament-fox-refill-pla-svetle-hneda-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DFOX PLA REFILL světle hnědá 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            85,
+            50,
+            30
+          ],
+          "hex": "#55321E",
+          "pixel_count": 76899,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -5003,34 +5003,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.78,
-          "slug": "refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
-          "brand": "ROSA3D",
-          "material": "PLA",
-          "color_name": "LW Pla Aero Antracitově Černá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/b/9bf2617355872be4121c36ad95a3cf7b-refill-pla-lw-aero-anthracite-175mm-1kg.webp",
-          "local_image": "smart3d-refill-rosa3d-lw-pla-aero-antracitove-cerna-1-75mm-1-kg.webp",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill ROSA3D / LW-PLA AERO / ANTRACITOVĚ ČERNÁ / 1,75mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            38,
-            35,
-            33
-          ],
-          "hex": "#262321",
-          "pixel_count": 275064,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.15,
           "slug": "p308",
           "brand": "Filament PM",
@@ -5084,6 +5056,34 @@
           ],
           "hex": "#262422",
           "pixel_count": 163315,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.09,
+          "slug": "filament-lume-pla-tmave-seda-1-75-mm-1-kg",
+          "brand": "LUME Filaments",
+          "material": "PLA+",
+          "color_name": "Lume Tmavě Šedá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-tmave-seda-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/9/7/97fa385cbf9504e23d0ce873902b73cb-pla-szary-ciemny-5903669508984-03.webp",
+          "local_image": "smart3d-filament-lume-pla-tmave-seda-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament LUME / PLA+ / TMAVĚ ŠEDÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            37,
+            36,
+            35
+          ],
+          "hex": "#252423",
+          "pixel_count": 120722,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -8112,34 +8112,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.07,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.51,
           "slug": "bambu-lab-pla-cocoa-brown",
           "brand": "Bambu Lab",
@@ -8222,6 +8194,34 @@
           ],
           "hex": "#7E5A14",
           "pixel_count": 172380,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.47,
+          "slug": "filament-nebula-pla-medena-1-kg",
+          "brand": "NEBULA",
+          "material": "PLA",
+          "color_name": "Měděná",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-pla-medena-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/507-1_filament-vaza-copper--new.png?ff=1&x=1024&y=768&q=85&ts=60b27a26&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-pla-medena-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PLA měděná 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            153,
+            100,
+            43
+          ],
+          "hex": "#99642B",
+          "pixel_count": 137525,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -20242,34 +20242,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.05,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-sky-blue-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Sky Blue",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-sky-blue-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/4/3/43905c34f87f9180a035c763f38b4059-vyr-2898-lw-sky-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-sky-blue-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / SKY BLUE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            32,
-            104,
-            157
-          ],
-          "hex": "#20689D",
-          "pixel_count": 285623,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.0,
           "slug": "filament-nebula-pla-modra-aqua-1-75-mm-1-kg",
           "brand": "NEBULA + COLORFIL",
@@ -20323,6 +20295,34 @@
           ],
           "hex": "#0761CB",
           "pixel_count": 250606,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.4,
+          "slug": "pla-extrafill-sky-blue-1kg",
+          "brand": "Fillamentum",
+          "material": "PLA",
+          "color_name": "Sky Blue",
+          "shop": "Fillamentum",
+          "url": "https://fillamentum.shop/products/pla-extrafill-sky-blue-1kg",
+          "image_url": "https://cdn.shopify.com/s/files/1/0677/6533/files/PLA_Fillamentum_Sky_Blue_1KG_1.jpg",
+          "local_image": "fillamentum-pla-pla-extrafill-sky-blue-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA Extrafill \"Sky Blue\" | 1 KG | 1.75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            24,
+            108,
+            160
+          ],
+          "hex": "#186CA0",
+          "pixel_count": 426951,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26906,34 +26906,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 3.42,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.49,
           "slug": "p64",
           "brand": "Filament PM",
@@ -27044,6 +27016,34 @@
           ],
           "hex": "#906A3F",
           "pixel_count": 157765,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.77,
+          "slug": "filament-nebula-pla-medena-1-kg",
+          "brand": "NEBULA",
+          "material": "PLA",
+          "color_name": "Měděná",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-pla-medena-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/507-1_filament-vaza-copper--new.png?ff=1&x=1024&y=768&q=85&ts=60b27a26&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-pla-medena-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PLA měděná 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            153,
+            100,
+            43
+          ],
+          "hex": "#99642B",
+          "pixel_count": 137525,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -31050,18 +31050,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 8.46,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Army Green",
+          "delta_e": 8.64,
+          "slug": "filament-lume-pla-zlata-1-75-mm-1-kg",
+          "brand": "LUME Filaments",
+          "material": "PLA+",
+          "color_name": "Lume Zlatá",
           "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/501c2487d8f6f7b5c6ba006f52adbe21-r6-6840-scaled.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg.jpg",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-zlata-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/e/2ed2c82c85c66d16769eb6829b69c809-pla-zloty-5903669508939-03.webp",
+          "local_image": "smart3d-filament-lume-pla-zlata-1-75-mm-1-kg.webp",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ARMY GREEN 1,75 mm / 1 kg",
+          "title": "Filament LUME / PLA+ / ZLATÁ / 1,75 mm / 1 kg",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -31069,13 +31069,14 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            125,
-            122,
-            95
+            148,
+            115,
+            58
           ],
-          "hex": "#7D7A5F",
-          "pixel_count": 219618,
-          "confidence": "measured_dominant_hue"
+          "hex": "#94733A",
+          "pixel_count": 180803,
+          "confidence": "manual_override",
+          "measured_hex": "#4F3519"
         }
       ],
       "petg": [
@@ -33233,34 +33234,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.18,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Navy Blue",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/2/e26b548a3dc24f8835c01b62787aa95d-vyr-2899-lw-navy-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / NAVY BLUE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            54,
-            60,
-            102
-          ],
-          "hex": "#363C66",
-          "pixel_count": 373854,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 4.36,
           "slug": "aurapol-pla-3d-filament-blue-sapphire-1-kg-1-75-mm",
           "brand": "AURAPOL",
@@ -33314,6 +33287,34 @@
           ],
           "hex": "#053075",
           "pixel_count": 439781,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 5.09,
+          "slug": "filament-nebula-pla-nebeska-modra-1-kg",
+          "brand": "NEBULA",
+          "material": "PLA",
+          "color_name": "Nebeská modrá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-nebula-pla-nebeska-modra-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/468_filament-vaza-sky-blue.png?ff=1&x=1024&y=768&q=85&ts=6036708b&sg=161563f2",
+          "local_image": "3dfox-filament-nebula-pla-nebeska-modra-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament NEBULA PLA nebeská modrá 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            24,
+            60,
+            130
+          ],
+          "hex": "#183C82",
+          "pixel_count": 134340,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -34130,34 +34131,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.0,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Navy Blue",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/2/e26b548a3dc24f8835c01b62787aa95d-vyr-2899-lw-navy-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / NAVY BLUE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            54,
-            60,
-            102
-          ],
-          "hex": "#363C66",
-          "pixel_count": 373854,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.07,
           "slug": "easy-pla-midnight-sky",
           "brand": "Fiberlogy",
@@ -34211,6 +34184,34 @@
           ],
           "hex": "#20294D",
           "pixel_count": 407099,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.73,
+          "slug": "3dpower-basic-pla-tmave-modra-dark-blue-1kg",
+          "brand": "3DPower",
+          "material": "PLA",
+          "color_name": "Basic Tmavě Modrá (Dark Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/3/9/39fa1222688a7320bcce55ef69a15f61-43-1.jpg",
+          "local_image": "hubacek3d-3dpower-basic-pla-tmave-modra-dark-blue-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower Basic PLA - Tmavě Modrá (Dark Blue) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            33,
+            50,
+            88
+          ],
+          "hex": "#213258",
+          "pixel_count": 400173,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -39538,34 +39539,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.98,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.86,
           "slug": "filament-nebula-pla-stare-zlato-1-kg",
           "brand": "NEBULA",
@@ -39592,6 +39565,35 @@
           "hex": "#69633B",
           "pixel_count": 137220,
           "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 9.06,
+          "slug": "filament-lume-pla-zlata-1-75-mm-1-kg",
+          "brand": "LUME Filaments",
+          "material": "PLA+",
+          "color_name": "Lume Zlatá",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-lume-pla-zlata-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/2/e/2ed2c82c85c66d16769eb6829b69c809-pla-zloty-5903669508939-03.webp",
+          "local_image": "smart3d-filament-lume-pla-zlata-1-75-mm-1-kg.webp",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament LUME / PLA+ / ZLATÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            148,
+            115,
+            58
+          ],
+          "hex": "#94733A",
+          "pixel_count": 180803,
+          "confidence": "manual_override",
+          "measured_hex": "#4F3519"
         }
       ],
       "petg": [
@@ -41242,34 +41244,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 0.49,
-          "slug": "refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg",
-          "brand": "ROSA3D",
-          "material": "PLA",
-          "color_name": "LW Pla Aero Bílá",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/1/4/14fb150112aed85edcc3aba8c4db61ce-refill-pla-lw-aero-white-175mm-1kg.webp",
-          "local_image": "smart3d-refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg.webp",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "ReFill ROSA3D / LW-PLA AERO / BÍLÁ / 1,75mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            232,
-            234,
-            222
-          ],
-          "hex": "#E8EADE",
-          "pixel_count": 27773,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 0.59,
           "slug": "refill-rosa3d-pla-starter-bila-lithophane-1-75-mm-1-kg",
           "brand": "ROSA3D",
@@ -41379,6 +41353,34 @@
           ],
           "hex": "#E4E2DA",
           "pixel_count": 38239,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 2.94,
+          "slug": "3dpower-basic-pla-bila-white-1kg",
+          "brand": "3DPower",
+          "material": "PLA",
+          "color_name": "Basic Bílá (White)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-basic-pla-bila-white-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/c/f/cfab44b6791986a8899e51e4ff23de72-20-1-white-pla.png",
+          "local_image": "hubacek3d-3dpower-basic-pla-bila-white-1kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "3DPower Basic PLA - Bílá (White) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            233,
+            231,
+            224
+          ],
+          "hex": "#E9E7E0",
+          "pixel_count": 23785,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -43565,34 +43567,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 3.89,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Light Gray",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/1/f15e91222db42542c6d10b317ab56cc3-vyr-2829-r6-6361-scaled.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / LIGHT GRAY 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            114,
-            118,
-            116
-          ],
-          "hex": "#727674",
-          "pixel_count": 201630,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 3.9,
           "slug": "pla-extrafill-rapunzel-silver-1kg",
           "brand": "Fillamentum",
@@ -43618,6 +43592,34 @@
           ],
           "hex": "#7F8070",
           "pixel_count": 372339,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 4.05,
+          "slug": "filament-fox-refill-pla-seda-1-kg",
+          "brand": "3DFOX",
+          "material": "PLA",
+          "color_name": "Šedá",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-fox-refill-pla-seda-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/6217_seda-pla--petg.png?ff=1&x=1024&y=768&q=85&ts=683b5f6a&sg=161563f2",
+          "local_image": "3dfox-filament-fox-refill-pla-seda-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DFOX PLA REFILL šedá 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            123,
+            128,
+            127
+          ],
+          "hex": "#7B807F",
+          "pixel_count": 132414,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -45357,34 +45359,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.31,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Navy Blue",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/e/2/e26b548a3dc24f8835c01b62787aa95d-vyr-2899-lw-navy-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-navy-blue-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / NAVY BLUE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            54,
-            60,
-            102
-          ],
-          "hex": "#363C66",
-          "pixel_count": 373854,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.56,
           "slug": "easy-pla-midnight-sky",
           "brand": "Fiberlogy",
@@ -45410,6 +45384,34 @@
           ],
           "hex": "#332A61",
           "pixel_count": 9757,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 6.56,
+          "slug": "3dpower-basic-pla-tmave-modra-dark-blue-1kg",
+          "brand": "3DPower",
+          "material": "PLA",
+          "color_name": "Basic Tmavě Modrá (Dark Blue)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/3dpower-basic-pla-tmave-modra-dark-blue-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/3/9/39fa1222688a7320bcce55ef69a15f61-43-1.jpg",
+          "local_image": "hubacek3d-3dpower-basic-pla-tmave-modra-dark-blue-1kg.jpg",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "3DPower Basic PLA - Tmavě Modrá (Dark Blue) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            33,
+            50,
+            88
+          ],
+          "hex": "#213258",
+          "pixel_count": 400173,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -50757,18 +50759,18 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 5.61,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
+          "delta_e": 5.86,
+          "slug": "aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm",
+          "brand": "Aurapol",
           "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Orange",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/d/8d95dd27453bb1580561120fc1ee1a85-vyr-2897-lw-orange-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg.jpg",
+          "color_name": "Cherry Gleam",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-cherry-gleam-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/0/5/05382796242879726919441c1c6a750d-cherrygleam.png",
+          "local_image": "aurapol-pla-cherry-gleam-pla.png",
           "availability": "InStock",
           "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ORANGE 1,75 mm / 1 kg",
+          "title": "AURAPOL PLA 3D Filament Cherry Gleam 1 kg 1,75 mm",
           "last_ok": "2026-10-26",
           "regions": [
             "eu"
@@ -50776,12 +50778,12 @@
           "neon": false,
           "finish": [],
           "rgb": [
-            68,
-            8,
-            3
+            83,
+            28,
+            33
           ],
-          "hex": "#440803",
-          "pixel_count": 170815,
+          "hex": "#531C21",
+          "pixel_count": 151492,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -51148,34 +51150,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.89,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.9,
           "slug": "refill-azurefilm-pla-zlata-1-75-mm-1-kg",
           "brand": "AzureFilm",
@@ -51229,6 +51203,34 @@
           ],
           "hex": "#5A451D",
           "pixel_count": 294452,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.67,
+          "slug": "p325",
+          "brand": "Filament PM",
+          "material": "PLA",
+          "color_name": "Envy Green",
+          "shop": "FilamentPM",
+          "url": "https://www.filament-pm.cz/pla-envy-green-1-75-mm-1-kg/p325",
+          "image_url": "https://www.filament-pm.cz/data/temp/product-images/5/4334-pla-envy-green-1kg-1-75-1-product-og.jpg?v=460899712",
+          "local_image": "filamentpm-pla-pla-envy-green-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "PLA - Envy Green",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            89,
+            85,
+            67
+          ],
+          "hex": "#595543",
+          "pixel_count": 118206,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -54667,34 +54669,6 @@
       "confidence": "measured_from_card",
       "pla": [
         {
-          "delta_e": 2.63,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Army Green",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/5/0/501c2487d8f6f7b5c6ba006f52adbe21-r6-6840-scaled.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ARMY GREEN 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            125,
-            122,
-            95
-          ],
-          "hex": "#7D7A5F",
-          "pixel_count": 219618,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.15,
           "slug": "pla-extrafill-gold-happens-1kg",
           "brand": "Fillamentum",
@@ -54805,6 +54779,34 @@
           ],
           "hex": "#847D48",
           "pixel_count": 16384,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.64,
+          "slug": "filament-fox-refill-pla-armadni-zelena-1-kg",
+          "brand": "3DFOX",
+          "material": "PLA",
+          "color_name": "Armádní zelená",
+          "shop": "3DFox",
+          "url": "https://www.3dfoxshop.cz/filament-fox-refill-pla-armadni-zelena-1-kg/",
+          "image_url": "https://cdn.myshoptet.com/usr/www.3dfoxshop.cz/user/shop/big/6214_armadni-zelena-pla.png?ff=1&x=1024&y=768&q=85&ts=683862fb&sg=161563f2",
+          "local_image": "3dfox-filament-fox-refill-pla-armadni-zelena-1-kg.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament 3DFOX PLA REFILL armádní zelená 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            102,
+            108,
+            90
+          ],
+          "hex": "#666C5A",
+          "pixel_count": 149046,
           "confidence": "measured_dominant_hue"
         }
       ],

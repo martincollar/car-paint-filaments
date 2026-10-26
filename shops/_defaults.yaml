@@ -17,6 +17,8 @@ exclude_finishes:
   natural:     '\bnatur\w*|\bprirodn\w*'
   silk:        '\bsilk\w*|\bhedvab\w*'
   stone:       '\bmarble\w*|\bmramor\w*'
+  # foaming lightweight filament for RC aircraft (3DLabPrint Poly Light, Rosa3D LW-PLA Aero); PolyLite is spelled differently
+  lightweight: '\blw[- ]?pla\b|\bpoly[- ]?light\b|\blight[- ]?weight\b|\bfoaming\b'
 
 # Effects the shop itself declares in the product's parameter table (shoplib.product_attrs, upgates
 # markup), matched as "parameter=value" on diacritics-folded text. Not a colour-name keyword: a plain

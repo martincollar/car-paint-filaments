@@ -60,6 +60,9 @@ class FinishFilter(unittest.TestCase):
             ("filament-sunlu-pla-marble-kastanove-hneda-1-75mm-1kg", "stone"),
             ("filament-economy-pla-mramorova-1-kg", "stone"),
             ("Marble Kaštanově Hnědá", "stone"),
+            ("filament-3dlabprint-poly-light-1-0-lw-pla-army-green-1-75-mm-1-kg", "lightweight"),
+            ("refill-rosa3d-lw-pla-aero-bila-1-75mm-1-kg", "lightweight"),
+            ("Filament Polymaker PolyLite PLA Red 1.75 mm 1 kg", None),
         ]:
             self.assertEqual(shoplib.excluded_finish(text), finish, text)
 

@@ -19861,34 +19861,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.41,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.62,
           "slug": "p64",
           "brand": "Filament PM",
@@ -19970,6 +19942,34 @@
           ],
           "hex": "#7D655C",
           "pixel_count": 58717,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.51,
+          "slug": "devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/d/6dde2ca7557943b02a334b1dff1ecea7-pla-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-pla-tmave-hneda-dark-brown-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Tmavě Hnědá (Dark Brown) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            92,
+            61,
+            36
+          ],
+          "hex": "#5C3D24",
+          "pixel_count": 112330,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -20308,34 +20308,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.41,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.62,
           "slug": "p64",
           "brand": "Filament PM",
@@ -20417,6 +20389,34 @@
           ],
           "hex": "#7D655C",
           "pixel_count": 58717,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.51,
+          "slug": "devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/d/6dde2ca7557943b02a334b1dff1ecea7-pla-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-pla-tmave-hneda-dark-brown-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Tmavě Hnědá (Dark Brown) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            92,
+            61,
+            36
+          ],
+          "hex": "#5C3D24",
+          "pixel_count": 112330,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -20755,34 +20755,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.41,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.62,
           "slug": "p64",
           "brand": "Filament PM",
@@ -20864,6 +20836,34 @@
           ],
           "hex": "#7D655C",
           "pixel_count": 58717,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.51,
+          "slug": "devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/d/6dde2ca7557943b02a334b1dff1ecea7-pla-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-pla-tmave-hneda-dark-brown-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Tmavě Hnědá (Dark Brown) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            92,
+            61,
+            36
+          ],
+          "hex": "#5C3D24",
+          "pixel_count": 112330,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -21202,34 +21202,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.41,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.62,
           "slug": "p64",
           "brand": "Filament PM",
@@ -21311,6 +21283,34 @@
           ],
           "hex": "#7D655C",
           "pixel_count": 58717,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.51,
+          "slug": "devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/d/6dde2ca7557943b02a334b1dff1ecea7-pla-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-pla-tmave-hneda-dark-brown-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Tmavě Hnědá (Dark Brown) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            92,
+            61,
+            36
+          ],
+          "hex": "#5C3D24",
+          "pixel_count": 112330,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -21649,34 +21649,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 4.41,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.62,
           "slug": "p64",
           "brand": "Filament PM",
@@ -21758,6 +21730,34 @@
           ],
           "hex": "#7D655C",
           "pixel_count": 58717,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.51,
+          "slug": "devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "brand": "Devil Design",
+          "material": "PLA",
+          "color_name": "Tmavě Hnědá (Dark Brown)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/devil-design-pla-tmave-hneda-dark-brown-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/6/d/6dde2ca7557943b02a334b1dff1ecea7-pla-1-75-dark-brown.png",
+          "local_image": "hubacek3d-devil-design-pla-tmave-hneda-dark-brown-1kg.png",
+          "availability": "OutOfStock",
+          "stock": "Vyprodáno",
+          "title": "Devil Design PLA - Tmavě Hnědá (Dark Brown) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            92,
+            61,
+            36
+          ],
+          "hex": "#5C3D24",
+          "pixel_count": 112330,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26205,34 +26205,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.14,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Light Gray",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/1/f15e91222db42542c6d10b317ab56cc3-vyr-2829-r6-6361-scaled.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / LIGHT GRAY 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            114,
-            118,
-            116
-          ],
-          "hex": "#727674",
-          "pixel_count": 201630,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.22,
           "slug": "filament-fox-refill-pla-armadni-zelena-1-kg",
           "brand": "3DFOX",
@@ -26258,6 +26230,34 @@
           ],
           "hex": "#666C5A",
           "pixel_count": 149046,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.33,
+          "slug": "filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/0/70a84ba4ea0ac2fb271cb95cfd38482e-silver.jpg",
+          "local_image": "smart3d-filament-colorfil-pla-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament COLORFIL / PLA / STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            122,
+            130,
+            129
+          ],
+          "hex": "#7A8281",
+          "pixel_count": 46601,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -26653,34 +26653,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.14,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Light Gray",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/f/1/f15e91222db42542c6d10b317ab56cc3-vyr-2829-r6-6361-scaled.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-light-gray-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / LIGHT GRAY 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            114,
-            118,
-            116
-          ],
-          "hex": "#727674",
-          "pixel_count": 201630,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 7.22,
           "slug": "filament-fox-refill-pla-armadni-zelena-1-kg",
           "brand": "3DFOX",
@@ -26706,6 +26678,34 @@
           ],
           "hex": "#666C5A",
           "pixel_count": 149046,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.33,
+          "slug": "filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "brand": "NEBULA + COLORFIL",
+          "material": "PLA",
+          "color_name": "Stříbrná",
+          "shop": "Smart3D",
+          "url": "https://www.smart3d.cz/p/filament-colorfil-pla-stribrna-1-75-mm-1-kg",
+          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/0/70a84ba4ea0ac2fb271cb95cfd38482e-silver.jpg",
+          "local_image": "smart3d-filament-colorfil-pla-stribrna-1-75-mm-1-kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filament COLORFIL / PLA / STŘÍBRNÁ / 1,75 mm / 1 kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            122,
+            130,
+            129
+          ],
+          "hex": "#7A8281",
+          "pixel_count": 46601,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -34661,34 +34661,6 @@
       "note": "Chart colour (US colour chart for these trucks, importarchive.com: the chart's flat colour, not a measurement), chosen in the colour review; the card chip stayed visible next to it.",
       "pla": [
         {
-          "delta_e": 1.69,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Orange",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/8/d/8d95dd27453bb1580561120fc1ee1a85-vyr-2897-lw-orange-1.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-orange-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / ORANGE 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            68,
-            8,
-            3
-          ],
-          "hex": "#440803",
-          "pixel_count": 170815,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 5.35,
           "slug": "filament-lume-pla-burgundy-1-75-mm-1-kg",
           "brand": "LUME Filaments",
@@ -34798,6 +34770,34 @@
           ],
           "hex": "#601924",
           "pixel_count": 439452,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 7.84,
+          "slug": "filamentree-pla-plus-cervena-wine-red-1kg",
+          "brand": "Filamentree",
+          "material": "PLA+",
+          "color_name": "Plus Červená (Wine Red)",
+          "shop": "Hubacek3D",
+          "url": "https://www.hubacek3d.cz/p/filamentree-pla-plus-cervena-wine-red-1kg",
+          "image_url": "https://printbase.s36.cdn-upgates.com/_cache/8/e/8ef0b8d238e27ccdc988ce49dd3b369d-pla-plus-wine-red-1kg-hlavny.jpg",
+          "local_image": "hubacek3d-filamentree-pla-plus-cervena-wine-red-1kg.jpg",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "Filamentree PLA plus - Červená (Wine Red) - 1kg",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            104,
+            31,
+            34
+          ],
+          "hex": "#681F22",
+          "pixel_count": 242296,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -35192,34 +35192,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.96,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.13,
           "slug": "devil-design-pla-med-copper-1kg",
           "brand": "Devil Design",
@@ -35245,6 +35217,34 @@
           ],
           "hex": "#763D23",
           "pixel_count": 139925,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.19,
+          "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PLA",
+          "color_name": "Wild Honey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/b/9bc2cb9b986f65c0befc4cef0477a6ca-wildhoney.png",
+          "local_image": "aurapol-pla-wild-honey-pla.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Wild Honey 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            146,
+            87,
+            8
+          ],
+          "hex": "#925708",
+          "pixel_count": 185579,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -35639,34 +35639,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.96,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.13,
           "slug": "devil-design-pla-med-copper-1kg",
           "brand": "Devil Design",
@@ -35692,6 +35664,34 @@
           ],
           "hex": "#763D23",
           "pixel_count": 139925,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.19,
+          "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PLA",
+          "color_name": "Wild Honey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/b/9bc2cb9b986f65c0befc4cef0477a6ca-wildhoney.png",
+          "local_image": "aurapol-pla-wild-honey-pla.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Wild Honey 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            146,
+            87,
+            8
+          ],
+          "hex": "#925708",
+          "pixel_count": 185579,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -36086,34 +36086,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.96,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.13,
           "slug": "devil-design-pla-med-copper-1kg",
           "brand": "Devil Design",
@@ -36139,6 +36111,34 @@
           ],
           "hex": "#763D23",
           "pixel_count": 139925,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.19,
+          "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PLA",
+          "color_name": "Wild Honey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/b/9bc2cb9b986f65c0befc4cef0477a6ca-wildhoney.png",
+          "local_image": "aurapol-pla-wild-honey-pla.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Wild Honey 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            146,
+            87,
+            8
+          ],
+          "hex": "#925708",
+          "pixel_count": 185579,
           "confidence": "measured_dominant_hue"
         }
       ],
@@ -36533,34 +36533,6 @@
           "confidence": "measured_dominant_hue"
         },
         {
-          "delta_e": 7.96,
-          "slug": "filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "brand": "3DLabPrint",
-          "material": "PLA",
-          "color_name": "Poly Light 1.0 LW Pla Balsa",
-          "shop": "Smart3D",
-          "url": "https://www.smart3d.cz/p/filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg",
-          "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/c/3/c31f45b55bad0edc61138d39357418a3-vyr-2951-lw-balsa-2.jpg",
-          "local_image": "smart3d-filament-3dlabprint-poly-light-1-0-lw-pla-balsa-1-75-mm-1-kg.jpg",
-          "availability": "InStock",
-          "stock": "Skladem",
-          "title": "Filament 3DLabPrint / POLY LIGHT 1.0 / LW-PLA / BALSA 1,75 mm / 1 kg",
-          "last_ok": "2026-10-26",
-          "regions": [
-            "eu"
-          ],
-          "neon": false,
-          "finish": [],
-          "rgb": [
-            127,
-            85,
-            51
-          ],
-          "hex": "#7F5533",
-          "pixel_count": 94066,
-          "confidence": "measured_dominant_hue"
-        },
-        {
           "delta_e": 8.13,
           "slug": "devil-design-pla-med-copper-1kg",
           "brand": "Devil Design",
@@ -36586,6 +36558,34 @@
           ],
           "hex": "#763D23",
           "pixel_count": 139925,
+          "confidence": "measured_dominant_hue"
+        },
+        {
+          "delta_e": 8.19,
+          "slug": "aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "brand": "Aurapol",
+          "material": "PLA",
+          "color_name": "Wild Honey",
+          "shop": "Aurapol",
+          "url": "https://www.aurapol.com/cz/p/aurapol-pla-3d-filament-wild-honey-1-kg-1-75-mm",
+          "image_url": "https://aurapol.s16.cdn-upgates.com/_cache/9/b/9bc2cb9b986f65c0befc4cef0477a6ca-wildhoney.png",
+          "local_image": "aurapol-pla-wild-honey-pla.png",
+          "availability": "InStock",
+          "stock": "Skladem",
+          "title": "AURAPOL PLA 3D Filament Wild Honey 1 kg 1,75 mm",
+          "last_ok": "2026-10-26",
+          "regions": [
+            "eu"
+          ],
+          "neon": false,
+          "finish": [],
+          "rgb": [
+            146,
+            87,
+            8
+          ],
+          "hex": "#925708",
+          "pixel_count": 185579,
           "confidence": "measured_dominant_hue"
         }
       ],
