@@ -2052,11 +2052,6 @@
         "first_seen": "2026-10-24",
         "last_seen": "2026-10-26"
       },
-      "aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm": {
-        "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm",
-        "first_seen": "2026-10-24",
-        "last_seen": "2026-10-26"
-      },
       "aurapol-pla-ht110-3d-filament-nahodny-mix-barev-1-kg-1-75-mm": {
         "url": "https://www.aurapol.com/cz/p/aurapol-pla-ht110-3d-filament-nahodny-mix-barev-1-kg-1-75-mm",
         "first_seen": "2026-10-24",
@@ -2100,7 +2095,8 @@
       "aurapol-pla-3d-filament-neon-coral-castecne-transparentni-1-kg-1-75-mm": "finish:transparent",
       "aurapol-pla-3d-filament-peach-flame-castecne-transparentni-1-kg-1-75-mm": "finish:transparent",
       "aurapol-pla-3d-filament-raspberry-partially-transparent-1-kg-1-75-mm": "finish:transparent",
-      "aurapol-pla-3d-filament-yellow-marble-1-kg-1-75-mm": "finish:stone"
+      "aurapol-pla-3d-filament-yellow-marble-1-kg-1-75-mm": "finish:stone",
+      "aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm": "override:skip"
     }
   },
   "bambulab": {

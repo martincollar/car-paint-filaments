@@ -11,6 +11,9 @@ sitemap_filter: product
 include:
 - ^/cz/p/aurapol-
 default_brand: Aurapol
+overrides:
+  aurapol-pla-ht110-3d-filament-machine-blue-1-kg-1-75-mm:
+    skip: true   # duplicate of the regular Aurapol PLA Machine Blue
 pins:
 - url: https://www.aurapol.com/cz/p/aurapol-pet-g-filament-army-desert-storm-1-kg-1-75-mm
   brand: Aurapol

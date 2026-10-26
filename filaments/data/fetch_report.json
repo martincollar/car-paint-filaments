@@ -33,7 +33,7 @@
     "status": "ok",
     "date": "2026-10-26",
     "candidates": 172,
-    "records": 150,
+    "records": 149,
     "new": [],
     "gone": [],
     "not_found": [],
@@ -41,7 +41,8 @@
     "errors": [],
     "deferred": 0,
     "rejected": {
-      "finish": 22
+      "finish": 22,
+      "override": 1
     }
   },
   "bambulab": {
