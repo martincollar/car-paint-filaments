@@ -32,14 +32,22 @@ def load(car: str):
     rows = json.loads(meas_path.read_text(encoding="utf-8"))
     ov_path = config.car_dir(car) / "chip_overrides.json"
     ov = json.loads(ov_path.read_text(encoding="utf-8")) if ov_path.exists() else {}
+    real_path = config.car_data(car) / "real_car_matches.json"
+    real = json.loads(real_path.read_text(encoding="utf-8"))["matches"] if real_path.exists() else {}
     chips = config.car_sources(car) / "chips"
     refs = config.car_sources(car) / "refcars"
+    photos = config.car_sources(car) / "photos"
     for r in rows:
         r["chip_uri"] = data_uri(chips / f"{r['key']}.jpg")
         r["ref_uri"] = data_uri(refs / f"404{r['key']}.gif")
         o = ov.get(r["key"])
         r["override"] = o["hex"].upper() if o else ""
         r["override_note"] = o.get("note", "") if o else ""
+        rc = real.get(r["key"], {})
+        r["real_uri"] = data_uri(photos / rc["file"]) if rc.get("file") else ""
+        r["real_confidence"] = rc.get("confidence", "")
+        r["real_note"] = rc.get("note", "")
+        r["real_credit"] = f'{rc.get("commons","")} · {rc.get("author","")} · {rc.get("licence","")}' if rc.get("file") else ""
     return rows, ov_path
 
 
@@ -51,16 +59,24 @@ header{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line)
 header h1{font-size:17px;margin:0 0 2px}
 header p{margin:0;color:var(--muted);font-size:13px}
 #status{font-size:13px;color:#2e7d32;min-height:18px;margin-top:4px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;padding:16px 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:14px;padding:16px 18px}
 .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;position:relative}
 .card.changed{border-color:#2e7d32;box-shadow:0 0 0 1px #2e7d32}
 .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .hd b{font-size:14px}.hd .code{color:var(--muted);font-size:12px}
-.imgs{display:flex;gap:8px;margin:8px 0}
+.imgs{display:flex;gap:8px;margin:8px 0;flex-wrap:wrap}
 .chipwrap{position:relative;flex:0 0 auto;line-height:0}
-.chip{width:150px;height:auto;border:1px solid var(--line);border-radius:4px;cursor:crosshair;touch-action:none}
-.ref{height:90px;width:auto;border:1px solid var(--line);border-radius:4px}
+.chip{width:130px;height:auto;border:1px solid var(--line);border-radius:4px;cursor:crosshair;touch-action:none}
+.ref{height:80px;width:auto;border:1px solid var(--line);border-radius:4px}
 .selbox{position:absolute;border:1.5px solid #fff;outline:1px solid #000;background:rgba(255,255,255,.12);pointer-events:none;display:none}
+.realwrap{flex:1 1 160px;min-width:160px}
+.real{width:100%;max-height:140px;object-fit:cover;border:1px solid var(--line);border-radius:4px;display:block}
+.real-missing{width:100%;min-height:80px;border:1px dashed var(--line);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;padding:8px}
+.real-tag{display:inline-block;font-size:10px;border-radius:3px;padding:0 5px;margin-top:3px}
+.real-tag.good{background:#e3f2e3;color:#1b5e20}
+.real-tag.tentative{background:#fde9c8;color:#8a5a00}
+.real-note{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
+.real-credit{font-size:10px;color:#9a9890;margin-top:2px}
 .swatches{display:flex;gap:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;height:40px;margin:6px 0}
 .swatches .sw{flex:1;display:flex;align-items:flex-end;justify-content:center;font-size:10px;padding:2px}
 .sw .lbl{background:rgba(255,255,255,.82);border-radius:2px;padding:0 3px;color:#111}
@@ -136,12 +152,24 @@ def card_html(r) -> str:
     changed = " changed" if r["override"] else ""
     ref = f'<img class="ref" src="{r["ref_uri"]}" alt="reference car">' if r["ref_uri"] else ""
     note = html.escape(r["override_note"])
+    if r["real_uri"]:
+        tag = html.escape(r["real_confidence"])
+        real_block = (
+            f'<div class="realwrap"><img class="real" src="{r["real_uri"]}" alt="real car in this colour">'
+            f'<span class="real-tag {tag}">{tag} match</span>'
+            f'<div class="real-note">{html.escape(r["real_note"])}</div>'
+            f'<div class="real-credit">{html.escape(r["real_credit"])}</div></div>'
+        )
+    else:
+        real_note = html.escape(r["real_note"]) if r["real_note"] else "No credible real-car photo found for this colour."
+        real_block = f'<div class="realwrap"><div class="real-missing">{real_note}</div></div>'
     return f"""
 <div class="card{changed}" data-key="{r['key']}" data-name="{name}" data-code="{code}" data-measured="{meas}">
  <div class="hd"><b>{name}{flag}</b><span class="code">{code}{ral}</span></div>
  <div class="imgs">
    <div class="chipwrap"><img class="chip" src="{r['chip_uri']}" alt="chip scan"><div class="selbox"></div></div>
    {ref}
+   {real_block}
  </div>
  <div class="swatches">
    <div class="sw" style="background:{meas}"><span class="lbl">measured {meas}</span></div>
@@ -168,7 +196,7 @@ def build_page(car, rows) -> str:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chip review — {html.escape(disp)}</title><style>{CSS}</style></head><body>
 <header><h1>Chip review — {html.escape(disp)}</h1>
-<p>Drag a box on a chip to re-measure, or type/pick a hex. Save writes cars/{car}/chip_overrides.json. Nothing is applied to the pipeline yet.</p>
+<p>Chip scan, reference-car mockup, and (where found) a real car photographed in this colour — "no match found" means I couldn't find one, not that one doesn't exist. Drag a box on the chip to re-measure, or type/pick a hex. Save writes cars/{car}/chip_overrides.json. Nothing is applied to the pipeline yet.</p>
 <div id="status"></div></header>
 <div class="grid">{cards}</div>
 <script>{JS}</script></body></html>"""
@@ -207,7 +235,7 @@ def serve(car, ov_path, port):
                            "code": body.get("code", ""),
                            "note": body.get("note", "") or "set by hand on the chip review page"}
                 print(f"override {key} → {hexv}", flush=True)
-            ov_path.write_text(json.dumps(ov, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            config.write_json(ov_path, ov)
             self._send(json.dumps({"ok": True}), "application/json")
 
         def log_message(self, *a): pass
