@@ -1,0 +1,18 @@
+/* Detail-page header: the homepage tile (tile.css) stretched into a wide card; filters sit inside it. */
+.theme-unimog406 .head-card { display: block; position: relative; margin: 16px 0 26px; padding: 30px 36px 22px;
+  --tile: var(--dl-bg); --muted: #5d6671; }
+.theme-unimog406 .head-card .tile-text { padding-top: 0; }
+.theme-unimog406 .head-card .tile-name { font-size: 3rem; white-space: normal; max-width: 100%; }
+.theme-unimog406 .head-card .tile-tag { font-size: 1.15rem; margin-top: 8px; }
+.theme-unimog406 .head-card .tile-meta { margin-top: 18px; font-size: .85rem; line-height: 1.6; }
+.theme-unimog406 .head-filters { position: relative; z-index: 3; display: flex; flex-wrap: wrap; gap: 12px 32px;
+  margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--dl-outline); }
+.theme-unimog406 .head-filters .year-nav { margin: 0; }
+.theme-unimog406 .head-filters .nav-label { font: 500 .85rem var(--dl-font-ui); color: var(--muted); letter-spacing: 0; text-transform: none; }
+@media (max-width: 600px) {
+  .theme-unimog406 .head-card { padding: 22px 16px 16px; }
+  .theme-unimog406 .head-card .tile-name { font-size: 2.1rem; }
+  .theme-unimog406 .head-card .tile-tag { font-size: 1rem; }
+  .theme-unimog406 .head-card .tile-meta { font-size: .76rem; }
+  .theme-unimog406 .head-filters { margin-top: 18px; }
+}
