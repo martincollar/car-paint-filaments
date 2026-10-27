@@ -1,9 +1,9 @@
 """Print a car's chip review as a static, self-contained colour-review PDF.
 
 Same information as review_chips.py's live page, but a non-interactive report
-in the "Bamboo: colour review" format: a summary header, an overview table
-(chip scan / measured swatch / your pick), then a detail section per colour
-with the real-car photo, confidence and notes. Colours are grouped by family
+in the "Bamboo: colour review" format: a summary header, then one detail card
+per colour with the chip scan, measured swatch, your pick (if overridden), and
+the real-car photo with confidence and notes. Colours are grouped by family
 (whites/greys, beige/sand, yellow, orange, red, green, blue) rather than the
 source chart's "standard / special" split, so related colours (e.g. all three
 yellows) sit together.
@@ -15,7 +15,7 @@ import argparse, html, subprocess, sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import config
-from review_chips import load, data_uri  # reuse the same data loading
+from review_chips import load  # reuse the same data loading
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
@@ -41,13 +41,8 @@ body{font:13px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;
 .bar .stats{font-size:12px;color:#c6ccd6}
 .page{padding:18px 22px 30px}
 h2{font-size:15px;margin:22px 0 10px}
-table{border-collapse:collapse;width:100%;margin-bottom:6px}
-th{font-size:10px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:2px solid var(--line)}
-td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
 .sw{width:64px;height:28px;border-radius:4px;border:1px solid var(--line);display:inline-block}
 .hexlbl{font-size:10px;color:var(--muted);font-family:ui-monospace,Menlo,monospace;display:block;margin-top:2px}
-.namecell b{font-size:12.5px}
-.namecell .code{display:block;font-size:10.5px;color:var(--muted)}
 .tag{display:inline-block;font-size:9.5px;border-radius:3px;padding:0 5px;margin-left:4px}
 .tag.good{background:#e3f2e3;color:#1b5e20}
 .tag.tentative{background:#fde9c8;color:#8a5a00}
@@ -66,20 +61,6 @@ td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
 .note .credit{font-size:10px;color:#9a9890;margin-top:4px}
 @page{size:A3 landscape;margin:14mm}
 """
-
-
-def overview_row(r) -> str:
-    code = html.escape(r["code"]) + (f" · {html.escape(r['ral'])}" if r.get("ral") else "")
-    pick = r["override"] or ""
-    pick_html = f'<span class="sw" style="background:{pick}"></span><span class="hexlbl">{pick}</span>' if pick else '<span style="color:var(--muted)">–</span>'
-    tag = f'<span class="tag {r["real_confidence"]}">{r["real_confidence"]}</span>' if r["real_confidence"] else ""
-    return f"""<tr>
- <td class="namecell"><b>{html.escape(r['name'])}</b><span class="code">{code}</span></td>
- <td><img class="chip" style="width:72px" src="{r['chip_uri']}"></td>
- <td><span class="sw" style="background:{r['measured'].upper()}"></span><span class="hexlbl">{r['measured'].upper()}</span></td>
- <td>{pick_html}</td>
- <td>{'real photo' if r['real_uri'] else 'no photo found'} {tag}</td>
-</tr>"""
 
 
 def detail_card(r) -> str:
@@ -122,7 +103,6 @@ def build(car: str) -> str:
     n_picked = sum(1 for r in ordered if r["override"])
     disp = config.car_meta(car).get("display") or "Mercedes-Benz Unimog 406/416 (1963–70)"
 
-    overview = "\n".join(overview_row(r) for r in ordered)
     details = "\n".join(detail_card(r) for r in ordered)
 
     return f"""<!doctype html><html><head><meta charset="utf-8">
@@ -130,10 +110,6 @@ def build(car: str) -> str:
 <div class="bar"><h1>{html.escape(disp)}: colour review</h1>
 <div class="stats">{len(ordered)} colours · {n_good} good match · {n_tent} tentative · {n_none} no real photo · {n_picked} with a hand override</div></div>
 <div class="page">
-<h2>Overview: chip, measured colour, your pick</h2>
-<table><thead><tr><th>Colour</th><th>Chip scan</th><th>Measured</th><th>Your pick</th><th>Real photo</th></tr></thead>
-<tbody>{overview}</tbody></table>
-
 <h2>Colours with photos</h2>
 {details}
 </div></body></html>"""
