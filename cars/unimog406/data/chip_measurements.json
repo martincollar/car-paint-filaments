@@ -1,0 +1,164 @@
+[
+  {
+    "key": "db1600",
+    "name": "Curry yellow",
+    "code": "DB 1600",
+    "ral": "RAL 1027",
+    "measured": "#A6802B",
+    "placeholder": "#A38C15",
+    "deltaE": 3.9
+  },
+  {
+    "key": "db1624",
+    "name": "Amber yellow",
+    "code": "DB 1624",
+    "ral": null,
+    "measured": "#F1BE6D",
+    "placeholder": "#D4A03A",
+    "deltaE": 6.0
+  },
+  {
+    "key": "db2550",
+    "name": "Yellow orange",
+    "code": "DB 2550",
+    "ral": "RAL 2000",
+    "measured": "#E56A2E",
+    "placeholder": "#ED760E",
+    "deltaE": 7.5
+  },
+  {
+    "key": "db2603",
+    "name": "Brown orange",
+    "code": "DB 2603",
+    "ral": "RAL 2011",
+    "measured": "#D06322",
+    "placeholder": "#E25303",
+    "deltaE": 8.0
+  },
+  {
+    "key": "db6277",
+    "name": "Lorry green",
+    "code": "DB 6277",
+    "ral": null,
+    "measured": "#64705C",
+    "placeholder": "#566B5E",
+    "deltaE": 1.0
+  },
+  {
+    "key": "ral6014",
+    "name": "NATO green",
+    "code": "DB 6431",
+    "ral": "RAL 6014",
+    "measured": "#616243",
+    "placeholder": "#47402E",
+    "deltaE": 8.1
+  },
+  {
+    "key": "db6821",
+    "name": "Sap green",
+    "code": "DB 6821",
+    "ral": null,
+    "measured": "#39A17E",
+    "placeholder": "#5C6B2E",
+    "deltaE": 10.0
+  },
+  {
+    "key": "db7187",
+    "name": "Lorry grey",
+    "code": "DB 7187",
+    "ral": null,
+    "measured": "#8F806B",
+    "placeholder": "#6F7268",
+    "deltaE": 1.8
+  },
+  {
+    "key": "ral1004",
+    "name": "Chrome yellow",
+    "code": "MB 1227",
+    "ral": "RAL 1004",
+    "measured": "#F8CE2A",
+    "placeholder": "#E2A900",
+    "deltaE": 2.6
+  },
+  {
+    "key": "db1448",
+    "name": "Brown beige",
+    "code": "DB 1448",
+    "ral": "RAL 1011",
+    "measured": "#B38063",
+    "placeholder": "#8A6642",
+    "deltaE": 5.4
+  },
+  {
+    "key": "db1474",
+    "name": "Desert sand",
+    "code": "DB 1474",
+    "ral": null,
+    "measured": "#857856",
+    "placeholder": "#CBB487",
+    "deltaE": 5.9
+  },
+  {
+    "key": "db2553",
+    "name": "Red orange",
+    "code": "DB 2553",
+    "ral": "RAL 2001",
+    "measured": "#CE3436",
+    "placeholder": "#C93C20",
+    "deltaE": 7.9
+  },
+  {
+    "key": "db3534",
+    "name": "Fire red",
+    "code": "DB 3534",
+    "ral": "RAL 3000",
+    "measured": "#CA2533",
+    "placeholder": "#AF2B1E",
+    "deltaE": 7.0
+  },
+  {
+    "key": "db5361",
+    "name": "Gentian blue",
+    "code": "DB 5361",
+    "ral": "RAL 5010",
+    "measured": "#20428C",
+    "placeholder": "#0E294B",
+    "deltaE": 7.9
+  },
+  {
+    "key": "db6294",
+    "name": "Moss green",
+    "code": "DB 6294",
+    "ral": "RAL 6005",
+    "measured": "#2B4333",
+    "placeholder": "#2F4538",
+    "deltaE": 0.9
+  },
+  {
+    "key": "db6840",
+    "name": "Light yellow green",
+    "code": "DB 6840",
+    "ral": null,
+    "measured": "#ADCF61",
+    "placeholder": "#9DA33C",
+    "deltaE": 3.6
+  },
+  {
+    "key": "db7701",
+    "name": "Pebble grey",
+    "code": "DB 7701",
+    "ral": "RAL 7032",
+    "measured": "#C0B6AD",
+    "placeholder": "#B8B799",
+    "deltaE": 4.3
+  },
+  {
+    "key": "db9136",
+    "name": "Grey-white",
+    "code": "DB 9136",
+    "ral": "RAL 9002",
+    "measured": "#E5E2DB",
+    "placeholder": "#D7D7D7",
+    "deltaE": 0.9
+  }
+]
