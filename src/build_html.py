@@ -804,7 +804,7 @@ def render(car, matches_by_region, fil_thumbs, all_filaments, meta, hero=None, v
                    + '</div>')
 
     _years = sorted(by_year.keys())
-    _year_range = f"{_years[0]}-{_years[-1]}" if _years else ""
+    _year_range = (str(_years[0]) if _years[0] == _years[-1] else f"{_years[0]}-{_years[-1]}") if _years else ""
     _year_links = sorted(by_year.keys(), reverse=True)
     hero_css, hero_html, hero_js = hero_parts(hero)
     year_nav = ('<nav class="year-nav"><span class="nav-label">Jump to year:</span>'
