@@ -6,8 +6,8 @@ type a hex, pick a colour, or drag a box on the chip to re-measure its median.
 Saves to cars/<car>/chip_overrides.json as {chip_key: {hex, name, code, note}}.
 Nothing is applied to the pipeline here; this is a review/decision step.
 
-    python src/review_chips.py --car unimog406            # serve + open
-    python src/review_chips.py --car unimog406 --port 8771 --no-open
+    python src/review_chips.py --car mogster            # serve + open
+    python src/review_chips.py --car mogster --port 8771 --no-open
 
 The chips live in cars/<car>/sources/chips/<key>.jpg and the measurements in
 cars/<car>/data/chip_measurements.json (see measure_chips.py / SOURCES.md).

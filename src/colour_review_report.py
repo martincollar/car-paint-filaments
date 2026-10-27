@@ -8,7 +8,7 @@ the real-car photo with confidence and notes. Colours are grouped by family
 source chart's "standard / special" split, so related colours (e.g. all three
 yellows) sit together.
 
-    python src/colour_review_report.py --car unimog406 --pdf OUT.pdf
+    python src/colour_review_report.py --car mogster --pdf OUT.pdf
 """
 from __future__ import annotations
 import argparse, html, subprocess, sys

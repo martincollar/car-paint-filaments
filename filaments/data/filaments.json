@@ -35737,17 +35737,17 @@
     "confidence": "measured_dominant_hue"
   },
   {
-    "slug": "filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg",
+    "slug": "filament-aurapol-pla-machine-modra-1-75-mm-1-kg",
     "brand": "AURAPOL",
     "material": "PLA",
-    "color_name": "Ht110 Machine Modrá",
+    "color_name": "Machine Modrá",
     "shop": "Smart3D",
-    "url": "https://www.smart3d.cz/p/filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg",
-    "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/2/72cd12d0905973dc9c61e7f355ec56c5-6ca2f5388b5fc4fa0c41ca3d243dee8a-pet-g-machine-blue-aurapol-makita.png",
-    "local_image": "smart3d-filament-aurapol-pla-ht110-machine-modra-1-75-mm-1-kg.png",
+    "url": "https://www.smart3d.cz/p/filament-aurapol-pla-machine-modra-1-75-mm-1-kg",
+    "image_url": "https://smart3d.s2.cdn-upgates.com/_cache/7/e/7ec9d7cf795a968ac0c29646c05f79c4-vyr-3252-aurapol-pla-3d-filament-machine-modra-1-kg-1-75-mm.png",
+    "local_image": "smart3d-filament-aurapol-pla-machine-modra-1-75-mm-1-kg.png",
     "availability": "InStock",
     "stock": "Skladem",
-    "title": "Filament AURAPOL / PLA HT110 / MACHINE MODRÁ / 1,75 mm / 1 kg.",
+    "title": "Filament AURAPOL / PLA / MACHINE MODRÁ / 1,75 mm / 1 kg.",
     "last_ok": "2026-10-26",
     "regions": [
       "eu"
@@ -35760,7 +35760,7 @@
       132
     ],
     "hex": "#137D84",
-    "pixel_count": 236043,
+    "pixel_count": 236027,
     "confidence": "measured_dominant_hue"
   },
   {
