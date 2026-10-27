@@ -1,0 +1,13 @@
+{
+  "marks": [
+    {
+      "type": "paint",
+      "note": "Roof ridge: the studio key light blows the highlight out to near-zero chroma (measured chroma ~1-15 along the ridge, vs ~20-30 on the rest of the body), so the chroma-based mask misses it and leaves a pale/white stripe along the whole roof. Forced to always-paint here instead of relying on chroma.",
+      "points": [
+        [900, 302], [920, 296], [950, 291], [990, 288], [1030, 286], [1090, 286],
+        [1130, 289], [1170, 293], [1210, 297], [1250, 300], [1290, 304], [1310, 308],
+        [1250, 308], [1162, 314], [1142, 316], [1100, 318], [1060, 320], [1000, 323], [915, 327]
+      ]
+    }
+  ]
+}
