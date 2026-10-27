@@ -1,0 +1,25 @@
+{
+  "name": "torq-summer",
+  "display": "Torq Summer Pack",
+  "years": [1971],
+  "pages_per_year": {"1971": 2},
+  "card_source_url": "https://www.autocolorlibrary.com/pages/{year}-plymouth",
+  "card_image_url_pattern": "https://cdn.shopify.com/s/files/1/0271/7931/9375/files/{year}-plymouth-pg{page:02d}.jpg",
+  "theme": "torq",
+  "hero": {
+    "photo": "sources/hero_neutral.jpg",
+    "mask": "sources/hero_mask.png",
+    "zones": [
+      {"id": "body", "label": "Body", "channels": [0]},
+      {"id": "stripe", "label": "Billboard stripe", "channels": [2]}
+    ],
+    "credit": "3D Sets Model 19 Torq Summer Pack",
+    "credit_url": "https://3dsets.com/product/model-19-torq-summer-pack/"
+  },
+  "notes": [
+    "Convertible variant of 3D Sets Model 19 Torq; reuses Torq's 1971 Plymouth Ditzler chips verbatim.",
+    "The 'Billboard' tape-stripe graphic (V6W white / V6X black) was a 1971-only 'Cuda option, over one body colour -- not a two-tone paint, so there's no combinations.json here.",
+    "Factory stripe colour was white or black only; no exact per-bodycolour chart survives as text, only scanned option-book images -- the body/stripe pairing here (True Blue body, white stripe) follows the documented general rule (dark body -> white tape), not a verified specific chart."
+  ],
+  "publish": false
+}
