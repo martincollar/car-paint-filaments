@@ -1,0 +1,16 @@
+{
+  "name": "unimog406",
+  "display": "3D Sets Mogster",
+  "publish": false,
+  "script_tagline": "Gaggenau's Finest, Since 1963",
+  "subtitle_source": "Rocky Mountain Moggers' Unimog colour chart (scanned original Daimler-Benz chips)",
+  "years": [1963, 1970],
+  "card_source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+  "notes": [
+    "Reference model: 3D Sets Model 20 Mogster 4x4 Tipper, which looks like a Mercedes-Benz Unimog 406/416.",
+    "The colour source is one scanned chip-chart page (not a multi-year card scan like the other cars), so every colour here is measured straight from its own chip image in sources/chips/ rather than cropped from a shared card. card_layout.json treats each chip file as its own single-swatch card.",
+    "No per-colour production-year window is documented in the sources used, so every swatch carries the same nominal year (1965, the midpoint of the 406/416's 1963-1970 run) purely so the page has something to group by — it is not a claim that colour was introduced or dropped that year. See SOURCES.md for the real dating caveats (e.g. lorry green DB6277 only from April 1966).",
+    "FLAG: sap green (DB 6821) measures as a vivid teal (#39A17E) from its chip scan, not the yellow-olive the name 'saftgrün' implies. A real-car photo matching that same teal was found (see data/real_car_matches.json), so this may be correct rather than a scan artefact — still worth a second look before trusting it fully.",
+    "Chip scans are approximate (the source page itself warns of monitor/scan drift); data/real_car_matches.json has a real photo per colour where one was found, for visual cross-check."
+  ]
+}

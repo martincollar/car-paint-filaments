@@ -1,0 +1,259 @@
+{
+  "box_width": 120,
+  "box_height": 60,
+  "source_url_template": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+  "cards": [
+    {
+      "card_file": "chips/db1600.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Curry yellow",
+          "year": 1965,
+          "car_code": "DB 1600",
+          "paint_ref": "RAL 1027",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db1624.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Amber yellow",
+          "year": 1965,
+          "car_code": "DB 1624",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db2550.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Yellow orange",
+          "year": 1965,
+          "car_code": "DB 2550",
+          "paint_ref": "RAL 2000",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db2603.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Brown orange",
+          "year": 1965,
+          "car_code": "DB 2603",
+          "paint_ref": "RAL 2011",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db6277.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Lorry green",
+          "year": 1965,
+          "car_code": "DB 6277",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/ral6014.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "NATO green",
+          "year": 1965,
+          "car_code": "DB 6431",
+          "paint_ref": "RAL 6014",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db6821.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Sap green",
+          "year": 1965,
+          "car_code": "DB 6821",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db7187.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Lorry grey",
+          "year": 1965,
+          "car_code": "DB 7187",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/ral1004.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Chrome yellow",
+          "year": 1965,
+          "car_code": "MB 1227",
+          "paint_ref": "RAL 1004",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db1448.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Brown beige",
+          "year": 1965,
+          "car_code": "DB 1448",
+          "paint_ref": "RAL 1011",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db1474.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Desert sand",
+          "year": 1965,
+          "car_code": "DB 1474",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db2553.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Red orange",
+          "year": 1965,
+          "car_code": "DB 2553",
+          "paint_ref": "RAL 2001",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db3534.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Fire red",
+          "year": 1965,
+          "car_code": "DB 3534",
+          "paint_ref": "RAL 3000",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db5361.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Gentian blue",
+          "year": 1965,
+          "car_code": "DB 5361",
+          "paint_ref": "RAL 5010",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db6294.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Moss green",
+          "year": 1965,
+          "car_code": "DB 6294",
+          "paint_ref": "RAL 6005",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db6840.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Light yellow green",
+          "year": 1965,
+          "car_code": "DB 6840",
+          "paint_ref": "",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db7701.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Pebble grey",
+          "year": 1965,
+          "car_code": "DB 7701",
+          "paint_ref": "RAL 7032",
+          "poly": false
+        }
+      ]
+    },
+    {
+      "card_file": "chips/db9136.jpg",
+      "swatches": [
+        {
+          "cx": 100,
+          "cy": 50,
+          "name": "Grey-white",
+          "year": 1965,
+          "car_code": "DB 9136",
+          "paint_ref": "RAL 9002",
+          "poly": false
+        }
+      ]
+    }
+  ]
+}

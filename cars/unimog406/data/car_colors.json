@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Curry yellow",
+    "year": 1965,
+    "car_code": "DB 1600",
+    "paint_ref": "RAL 1027",
+    "rgb": [
+      166,
+      128,
+      43
+    ],
+    "hex": "#A6802B",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db1600.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Amber yellow",
+    "year": 1965,
+    "car_code": "DB 1624",
+    "paint_ref": "",
+    "rgb": [
+      241,
+      190,
+      109
+    ],
+    "hex": "#F1BE6D",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db1624.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Yellow orange",
+    "year": 1965,
+    "car_code": "DB 2550",
+    "paint_ref": "RAL 2000",
+    "rgb": [
+      229,
+      106,
+      46
+    ],
+    "hex": "#E56A2E",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db2550.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Brown orange",
+    "year": 1965,
+    "car_code": "DB 2603",
+    "paint_ref": "RAL 2011",
+    "rgb": [
+      208,
+      99,
+      34
+    ],
+    "hex": "#D06322",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db2603.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Lorry green",
+    "year": 1965,
+    "car_code": "DB 6277",
+    "paint_ref": "",
+    "rgb": [
+      100,
+      112,
+      92
+    ],
+    "hex": "#64705C",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db6277.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "NATO green",
+    "year": 1965,
+    "car_code": "DB 6431",
+    "paint_ref": "RAL 6014",
+    "rgb": [
+      97,
+      98,
+      67
+    ],
+    "hex": "#616243",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/ral6014.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Sap green",
+    "year": 1965,
+    "car_code": "DB 6821",
+    "paint_ref": "",
+    "rgb": [
+      57,
+      161,
+      126
+    ],
+    "hex": "#39A17E",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db6821.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Lorry grey",
+    "year": 1965,
+    "car_code": "DB 7187",
+    "paint_ref": "",
+    "rgb": [
+      143,
+      128,
+      107
+    ],
+    "hex": "#8F806B",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db7187.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Chrome yellow",
+    "year": 1965,
+    "car_code": "MB 1227",
+    "paint_ref": "RAL 1004",
+    "rgb": [
+      248,
+      206,
+      42
+    ],
+    "hex": "#F8CE2A",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/ral1004.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Brown beige",
+    "year": 1965,
+    "car_code": "DB 1448",
+    "paint_ref": "RAL 1011",
+    "rgb": [
+      179,
+      128,
+      99
+    ],
+    "hex": "#B38063",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db1448.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Desert sand",
+    "year": 1965,
+    "car_code": "DB 1474",
+    "paint_ref": "",
+    "rgb": [
+      133,
+      120,
+      86
+    ],
+    "hex": "#857856",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db1474.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Red orange",
+    "year": 1965,
+    "car_code": "DB 2553",
+    "paint_ref": "RAL 2001",
+    "rgb": [
+      206,
+      52,
+      54
+    ],
+    "hex": "#CE3436",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db2553.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Fire red",
+    "year": 1965,
+    "car_code": "DB 3534",
+    "paint_ref": "RAL 3000",
+    "rgb": [
+      202,
+      37,
+      51
+    ],
+    "hex": "#CA2533",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db3534.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Gentian blue",
+    "year": 1965,
+    "car_code": "DB 5361",
+    "paint_ref": "RAL 5010",
+    "rgb": [
+      32,
+      66,
+      140
+    ],
+    "hex": "#20428C",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db5361.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Moss green",
+    "year": 1965,
+    "car_code": "DB 6294",
+    "paint_ref": "RAL 6005",
+    "rgb": [
+      43,
+      67,
+      51
+    ],
+    "hex": "#2B4333",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db6294.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Light yellow green",
+    "year": 1965,
+    "car_code": "DB 6840",
+    "paint_ref": "",
+    "rgb": [
+      173,
+      207,
+      97
+    ],
+    "hex": "#ADCF61",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db6840.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Pebble grey",
+    "year": 1965,
+    "car_code": "DB 7701",
+    "paint_ref": "RAL 7032",
+    "rgb": [
+      192,
+      182,
+      173
+    ],
+    "hex": "#C0B6AD",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db7701.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  },
+  {
+    "name": "Grey-white",
+    "year": 1965,
+    "car_code": "DB 9136",
+    "paint_ref": "RAL 9002",
+    "rgb": [
+      229,
+      226,
+      219
+    ],
+    "hex": "#E5E2DB",
+    "poly": false,
+    "source_url": "http://www.rockymountainmoggers.com/unimogcolorcodes.html",
+    "source_file": "sources/chips/db9136.jpg",
+    "source_pos": [
+      100,
+      50
+    ],
+    "confidence": "measured_from_card"
+  }
+]
