@@ -28,11 +28,13 @@ re-download of the same picture):
                 roof part of the alpha goes to the mask's G channel instead of R. Only a hint: its largest blob is
                 kept and grown by `roof_grow` px (default 6, must stay below the chrome gap
                 to the body); `roof_extra` (shapes dict) adds parts the outline misses, e.g. the tip
-  zones         optional extra paint areas of the car beyond body (R) and roof (G): {"<id>": {"channel": 2,
-                "shape": <shapes dict>}}. The part of the body alpha inside the shape moves to that mask channel
-                (B for channel 2), so the page can colour that area on its own (Doppler: "lower" = the body below the
-                chrome line). Slots shown on the page come from `hero.zones` in car.json. Marks of that id
-                (review_hero.py) force an area into the zone.
+  zones         optional extra paint areas of the car beyond body (R): {"<id>": {"channel": 2, "shape": <shapes dict>}}.
+                The part of the body alpha inside the shape moves to that mask channel (B for channel 2), so the page
+                can colour that area on its own (Doppler: "lower" = the body below the chrome line). Channel 1 (G) is
+                normally `roof_shape`'s, but a car with no `roof_shape` can give a zone `"channel": 1` instead (Torq
+                Summer Pack: "interior" = the seats, achromatic like the roof would be, so it needs `hero_marks.json`
+                marks to force it -- the chroma-based hint alone won't find a white area). Slots shown on the page
+                come from `hero.zones` in car.json. Marks of that id (review_hero.py) force an area into the zone.
   grow          px (ref scale) around the existing mask in which "keep" mode neutralises (default 10), or
                 "all" for the whole photo (right when nothing but paint and glass tint has that hue)
   keep_color    rects that stay in their colour (turn-signal lenses)
@@ -189,14 +191,17 @@ def main():
         out = np.zeros(a.shape + (3,), "uint8")
         for zid, z in zones.items():
             # an extra zone takes its share of the body alpha (the shape is only a hint, soft edge), marks of that id force it;
-            # what it takes is removed from the body channel, so a pixel is never half body, half zone
-            hint = shape_mask(src.size, z.get("shape"), k, 1.2)
+            # what it takes is removed from the body channel, so a pixel is never half body, half zone. A "paint" mark
+            # wins over the hint (same as it already wins over the legacy roof split above), so hand-correcting a spot
+            # the zone's shape over-reached into can hand it back to body.
+            hint = shape_mask(src.size, z.get("shape"), k, 1.2) * (1 - marks["paint"])
             forced = marks[zid] * (1 - marks["keep"]) * (1 - marks["never"])
             zone_a = np.maximum(body_a * hint, forced)
             body_a = body_a * (1 - hint) * (1 - forced)
             out[..., z["channel"]] = (zone_a * 255).astype("uint8")
         out[..., 0] = (body_a * 255).astype("uint8")
-        out[..., 1] = (roof_a * 255).astype("uint8")
+        if not any(z["channel"] == 1 for z in zones.values()):
+            out[..., 1] = (roof_a * 255).astype("uint8")
         Image.fromarray(out).save(src_dir / "hero_mask.png")
         print(f"[{args.car}] body mask from chroma → hero_mask.png")
         if cfg.get("lift"):

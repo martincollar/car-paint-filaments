@@ -4,10 +4,17 @@ Usage:  python review_hero.py [--port N]     (binds 127.0.0.1 only; pick an unco
 Open the printed URL. Per car: the neutral photo, its mask and an overlay (keys 1 / 2 / 3), zoom (+ / - / ctrl+wheel,
 hold Space to pan, M cycles marks: outline / filled / hidden). Delete a wrong mark: S (select) then click it (or click its dot in W mode), then Delete / Backspace.
 Pick a mark type, then either click an area (W: it grows to the connected area of similar colour, adjust the tolerance),
-drag a box (B) or drag a loop (L) around it; the marks are saved at once to
+drag a box (B), drag a loop (L), or click points for SAM (G: Segment Anything through rembg -- click once on the area,
+shift-click to add a point that must be EXCLUDED, "✓ commit" turns the live preview outline into a real mark; needs
+`pip install "rembg[cpu]"`, the vit_b model downloads into ~/.rembg on first use, encoding a photo takes a few seconds
+the first time a car is opened in SAM mode, then each click decodes in well under a second). SAM follows the real
+photographed edge far better than hand-tracing for an irregular shape (the billboard stripe, a seat) -- use the hue/
+chroma tools for the body itself, SAM for a sharp real boundary. The marks are saved at once to
 cars/<car>/hero_marks.json (polygons in pixels of hero.jpg) and merged by make_hero_assets.py:
   never       must not be repainted          paint       must be repainted (body)     roof   must be repainted (roof)
   neutralise  old paint colour is left here  keep        must keep its colour (e.g. turn-signal lens)
+A car's other hero.zones (Doppler's "lower", Torq Summer Pack's "stripe", ...) each get their own button too,
+built from that car's zones list, with the zone's own id as the mark type and its own keyboard shortcut.
 /calibrate: all cars side by side in the same colours, per-car lightness / contrast sliders, saved as "tone" in hero_assets.json.
 "Rebuild" runs make_hero_assets + prepare_hero + build_html for that car, then reloads the images.
 The mask is shown as stored: R channel = body paint, G channel = roof paint.
@@ -43,7 +50,8 @@ button.t{border-width:2px}button.t.on{color:#000;font-weight:600}
  <div class="grp"><a href="/calibrate" style="color:#7cf">light calibration →</a></div>
  <div class="grp"><span>view</span><button data-v="photo">1 photo</button><button data-v="mask">2 mask</button><button data-v="ov">3 overlay</button></div>
  <div class="grp"><span>zoom</span><button id="zo">−</button><button id="zf">fit</button><button id="z1">100%</button><button id="zi">+</button></div>
- <div class="grp"><span>shape</span><button data-s="wand">W click-select</button><button data-s="rect">B box</button><button data-s="loop">L loop</button><button data-s="sel">S select / delete</button><span>tolerance</span><input type="range" id="tol" min="5" max="90" value="30"><b id="tolv">30</b></div>
+ <div class="grp"><span>shape</span><button data-s="wand">W click-select</button><button data-s="rect">B box</button><button data-s="loop">L loop</button><button data-s="sam">G SAM points</button><button data-s="sel">S select / delete</button><span>tolerance</span><input type="range" id="tol" min="5" max="90" value="30"><b id="tolv">30</b></div>
+ <div class="grp" id="samCtl" style="display:none"><span>SAM</span><span style="color:#8e8e93">click = include, shift-click = exclude</span><button id="samCommit">✓ commit</button><button id="samClear">clear</button><span id="samSt"></span></div>
  <div class="grp" id="tools"><span>mark</span></div>
  <div class="grp"><span>marks</span><button id="mm">M outline</button></div>
  <div class="grp"><button id="undo">undo</button><button id="rebuild">rebuild this car</button><span id="st"></span></div>
@@ -52,17 +60,38 @@ button.t{border-width:2px}button.t.on{color:#000;font-weight:600}
 <div id="side"><b>Marks</b> <span id="cnt"></span><div id="list"></div><div id="log"></div></div></div>
 <script>
 var CARS=__CARS__;
-var TOOLS=[['never','N','#ff3b30','must NOT be repainted'],['paint','P','#34c759','must be repainted (body)'],
- ['roof','R','#00c7be','must be repainted (roof)'],['neutralise','O','#ff9500','old colour left here'],['keep','K','#0a84ff','keep its colour']];
+var USED_KEYS=['W','B','L','S']; // shape-tool shortcuts; mark-tool keys must not collide
+var ZONE_PALETTE=['#ff2d55','#5e5ce6','#ffd60a','#bf5af2','#ff9f0a','#30d158'];
+function toolsFor(c){
+ var t=[['never','N','#ff3b30','must NOT be repainted'],['paint','P','#34c759','must be repainted (body)']],used=USED_KEYS.concat(['N','P','R','O','K']);
+ var zones=c.zones||[],roofZone=zones.filter(function(z){return (z.channels||[]).indexOf(1)>=0})[0];
+ // a modern zone can reuse channel 1 under its own id (e.g. an "interior" zone on a car with no roof); only the
+ // legacy id "roof" (or no zone at all there) keeps the mark type "roof"
+ var ch1Type=(roofZone&&roofZone.id!=='roof')?roofZone.id:'roof';
+ t.push([ch1Type,'R','#00c7be','must be repainted ('+(roofZone?roofZone.label.toLowerCase():'roof')+')']);
+ // extra zones: anything not on channel 0 (body, already "paint") or channel 1 (already "roof")
+ zones.filter(function(z){var ch=z.channels||[];return ch.indexOf(0)<0&&ch.indexOf(1)<0}).forEach(function(z,i){
+  var key=null;for(var j=0;j<z.id.length;j++){var c2=z.id[j].toUpperCase();if(c2>='A'&&c2<='Z'&&used.indexOf(c2)<0){key=c2;break}}
+  if(!key)for(var n=1;n<10;n++)if(used.indexOf(''+n)<0){key=''+n;break}
+  used.push(key);t.push([z.id,key,ZONE_PALETTE[i%ZONE_PALETTE.length],'must be repainted ('+z.label.toLowerCase()+')'])});
+ t.push(['neutralise','O','#ff9500','old colour left here']);
+ t.push(['keep','K','#0a84ff','keep its colour']);
+ return t}
+var TOOLS=toolsFor(CARS[0]);
 var keepView=false, shape='wand', tol=30, orig=null, car=CARS[0], marks=[], mmode='outline', view='ov', zoom=1, nw=1, nh=1, tool='never', cur=null, sel=-1, panning=false, T=Date.now(), saveT=null;
+var samPts=[], samLab=[], samPreview=null, samBusy=false;
 var $=function(i){return document.getElementById(i)}, cv=$('cv'), ctx=cv.getContext('2d'), vp=$('vp'), stage=$('stage');
 function status(t){$('st').textContent=t}
 CARS.forEach(function(c){var b=document.createElement('button');b.textContent=c.display;b.dataset.car=c.name;b.onclick=function(){load(c)};$('cars').appendChild(b)});
-TOOLS.forEach(function(t){var b=document.createElement('button');b.className='t';b.textContent=t[1]+' '+t[3];b.dataset.t=t[0];b.style.borderColor=t[2];
- b.onclick=function(){tool=t[0];tools()};$('tools').appendChild(b)});
+function renderTools(){$('tools').querySelectorAll('button').forEach(function(b){b.remove()});
+ TOOLS.forEach(function(t){var b=document.createElement('button');b.className='t';b.textContent=t[1]+' '+t[3];b.dataset.t=t[0];b.style.borderColor=t[2];
+  b.onclick=function(){tool=t[0];tools()};$('tools').appendChild(b)});
+ if(!TOOLS.filter(function(t){return t[0]===tool})[0])tool='never';
+ tools()}
+renderTools();
 function tools(){document.querySelectorAll('#tools button').forEach(function(b){var t=TOOLS.filter(function(x){return x[0]===b.dataset.t})[0];
  b.classList.toggle('on',b.dataset.t===tool);b.style.background=b.dataset.t===tool?t[2]:''})}
-function shapes(){cv.style.cursor=shape==='sel'?'pointer':'crosshair';document.querySelectorAll('[data-s]').forEach(function(b){b.classList.toggle('on',b.dataset.s===shape)})}
+function shapes(){cv.style.cursor=shape==='sel'?'pointer':(shape==='sam'?'copy':'crosshair');document.querySelectorAll('[data-s]').forEach(function(b){b.classList.toggle('on',b.dataset.s===shape)});$('samCtl').style.display=shape==='sam'?'flex':'none'}
 document.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){shape=b.dataset.s;shapes()}});
 $('tol').oninput=function(){tol=+this.value;$('tolv').textContent=tol};
 function views(){document.querySelectorAll('[data-v]').forEach(function(b){b.classList.toggle('on',b.dataset.v===view)});
@@ -86,8 +115,9 @@ function hit(p){for(var i=marks.length-1;i>=0;i--){var m=marks[i];
   else if(inPoly(p,m.points))return i}return -1}
 function select(i){sel=i;list();draw();var e=document.querySelector('#list .sel');if(e)e.scrollIntoView({block:'nearest'})}
 function removeSel(){if(sel<0)return;marks.splice(sel,1);sel=-1;save();list();draw()}
-function color(t){return TOOLS.filter(function(x){return x[0]===t})[0][2]}
+function color(t){var m=TOOLS.filter(function(x){return x[0]===t})[0];return m?m[2]:'#8e8e93'}
 function load(c){car=c;document.querySelectorAll('#cars button').forEach(function(b){b.classList.toggle('on',b.dataset.car===c.name)});
+ TOOLS=toolsFor(c);renderTools();samReset();
  marks=[];sel=-1;T=Date.now();$('ph').src=c.name+'/'+c.photo+'?t='+T;$('mk').src=c.name+'/'+c.mask+'?t='+T;
  orig=null;var oi=new Image();oi.onload=function(){var c=document.createElement('canvas');c.width=oi.naturalWidth;c.height=oi.naturalHeight;c.getContext('2d').drawImage(oi,0,0);orig=c.getContext('2d').getImageData(0,0,c.width,c.height);regions()};oi.src=c.name+'/sources/hero.jpg?t='+T;
  $('ph').onload=function(){nw=this.naturalWidth;nh=this.naturalHeight;if(keepView)keepView=false;else fit()};
@@ -106,12 +136,15 @@ function draw(){ctx.clearRect(0,0,cv.width,cv.height);if(mmode!=='hidden')marks.
  path(m.points,true);
  if(mmode==='fill'||i===sel){ctx.fillStyle=c+(mmode==='fill'?(i===sel?'66':'33'):'22');ctx.fill()}
  ctx.lineWidth=i===sel?2.5:1.2;ctx.strokeStyle=c;ctx.stroke()});
- if(cur){ctx.lineWidth=2;ctx.strokeStyle=color(tool);if(shape==='rect'&&cur.length===2){var a=cur[0],b=cur[1];ctx.strokeRect(a[0]*zoom,a[1]*zoom,(b[0]-a[0])*zoom,(b[1]-a[1])*zoom)}else{path(cur,false);ctx.stroke()}}}
+ if(cur){ctx.lineWidth=2;ctx.strokeStyle=color(tool);if(shape==='rect'&&cur.length===2){var a=cur[0],b=cur[1];ctx.strokeRect(a[0]*zoom,a[1]*zoom,(b[0]-a[0])*zoom,(b[1]-a[1])*zoom)}else{path(cur,false);ctx.stroke()}}
+ if(samPreview&&samPreview.length){ctx.setLineDash([6,4]);ctx.lineWidth=2;ctx.strokeStyle=color(tool);path(samPreview,true);ctx.stroke();ctx.setLineDash([])}
+ samPts.forEach(function(p,i){ctx.beginPath();ctx.arc(p[0]*zoom,p[1]*zoom,5,0,6.3);ctx.fillStyle=samLab[i]?'#34c759':'#ff3b30';ctx.fill();ctx.lineWidth=1.5;ctx.strokeStyle='#fff';ctx.stroke()})}
 function pt(e){var r=cv.getBoundingClientRect();return[(e.clientX-r.left)/zoom,(e.clientY-r.top)/zoom]}
 cv.addEventListener('pointerdown',function(e){if(e.button!==0)return;cv.setPointerCapture(e.pointerId);
  if(panning){cv._pan=[e.clientX,e.clientY,vp.scrollLeft,vp.scrollTop];return}
  if(shape==='sel'){select(hit(pt(e)));return}
  if(shape==='wand'){var p=pt(e);var near=-1;marks.forEach(function(m,i){if(m.shape==='wand'&&Math.hypot(p[0]-m.seed[0],p[1]-m.seed[1])*zoom<9)near=i});if(near>=0){select(near);return}var m={type:tool,shape:'wand',seed:[Math.round(p[0]),Math.round(p[1])],tol:tol,note:''};m._cv=regionCanvas(m);marks.push(m);sel=marks.length-1;save();list();draw();return}
+ if(shape==='sam'){var p=pt(e);samPts.push([Math.round(p[0]),Math.round(p[1])]);samLab.push(e.shiftKey?0:1);samRequest();return}
  cur=[pt(e)]});
 cv.addEventListener('pointermove',function(e){if(cv._pan){vp.scrollLeft=cv._pan[2]-(e.clientX-cv._pan[0]);vp.scrollTop=cv._pan[3]-(e.clientY-cv._pan[1]);return}
  if(!cur)return;var p=pt(e),l=cur[cur.length-1];if(shape==='rect'){cur=[cur[0],p];draw();return}if(Math.hypot(p[0]-l[0],p[1]-l[1])*zoom>3){cur.push(p);draw()}});
@@ -119,6 +152,13 @@ cv.addEventListener('pointerup',function(){if(cv._pan){cv._pan=null;return}
  if(cur&&shape==='rect'&&cur.length===2&&Math.abs(cur[1][0]-cur[0][0])*zoom>4&&Math.abs(cur[1][1]-cur[0][1])*zoom>4){var a=cur[0],b=cur[1];marks.push({type:tool,note:'',points:[[a[0],a[1]],[b[0],a[1]],[b[0],b[1]],[a[0],b[1]]].map(function(q){return[Math.round(q[0]*10)/10,Math.round(q[1]*10)/10]})});sel=marks.length-1;save()}
  else if(cur&&shape!=='rect'&&cur.length>=3){marks.push({type:tool,note:'',points:cur.map(function(p){return[Math.round(p[0]*10)/10,Math.round(p[1]*10)/10]})});sel=marks.length-1;save()}
  cur=null;list();draw()});
+function samRequest(){if(!samPts.length||samBusy)return;samBusy=true;$('samSt').textContent='…';
+ fetch('/api/sam/'+car.name,{method:'POST',body:JSON.stringify({points:samPts,labels:samLab})}).then(function(r){return r.json()})
+  .then(function(j){samBusy=false;if(j.ok){samPreview=j.points;$('samSt').textContent=samPreview.length+' pts'}else{samPreview=null;$('samSt').textContent='ERR: '+(j.error||'?')}draw()})
+  .catch(function(){samBusy=false;samPreview=null;$('samSt').textContent='FAILED';draw()})}
+function samReset(){samPts=[];samLab=[];samPreview=null;$('samSt').textContent='';draw()}
+$('samCommit').onclick=function(){if(!samPreview||!samPreview.length)return;marks.push({type:tool,note:'',points:samPreview});sel=marks.length-1;save();list();samReset()};
+$('samClear').onclick=samReset;
 function list(){var l=$('list');l.innerHTML='';$('cnt').textContent=marks.length?'('+marks.length+')':'';
  marks.forEach(function(m,i){var d=document.createElement('div');d.className='m'+(i===sel?' sel':'');
   d.innerHTML='<i style="background:'+color(m.type)+'"></i><span>'+m.type+' · '+(m.shape==='wand'?'click ('+m.seed[0]+','+m.seed[1]+') tol '+m.tol:m.points.length+' pts')+'</span><button>✕</button>'+(m.shape==='wand'?'<input class="tl" type="range" min="5" max="90">':'')+'<input class="nt" placeholder="note (optional)">';
@@ -139,7 +179,9 @@ document.addEventListener('keydown',function(e){if(e.target.tagName==='INPUT')re
  else if((e.ctrlKey||e.metaKey)&&k==='z'){$('undo').click();e.preventDefault()}
  else if(k==='1'||k==='2'||k==='3'){view=['photo','mask','ov'][+k-1];views()}
  else if(k==='+'||k==='=')$('zi').click();else if(k==='-')$('zo').click();else if(k==='0')fit();
- else if(k==='m')mm();else if(k==='s'){shape='sel';shapes()}else if(k==='delete'||k==='backspace'){removeSel();e.preventDefault()}else if(k==='w'){shape='wand';shapes()}else if(k==='b'){shape='rect';shapes()}else if(k==='l'){shape='loop';shapes()}else if(k==='escape'){cur=null;sel=-1;list();draw()}
+ else if(k==='m')mm();else if(k==='s'){shape='sel';shapes()}else if(k==='delete'||k==='backspace'){removeSel();e.preventDefault()}else if(k==='w'){shape='wand';shapes()}else if(k==='b'){shape='rect';shapes()}else if(k==='l'){shape='loop';shapes()}else if(k==='g'){shape='sam';shapes()}
+ else if(k==='enter'&&shape==='sam'){$('samCommit').click();e.preventDefault()}
+ else if(k==='escape'){cur=null;sel=-1;samReset();list();draw()}
  else TOOLS.forEach(function(t){if(t[1].toLowerCase()===k){tool=t[0];tools()}})});
 document.addEventListener('keyup',function(e){if(e.key===' '){panning=false;cv.style.cursor='crosshair'}});
 tools();shapes();views();load(CARS[0]);
@@ -208,6 +250,39 @@ build();Promise.all(CARS.map(prep)).then(redraw);
 
 STEPS = ("make_hero_assets.py", "prepare_hero.py", "build_html.py")
 
+_sam_session = None
+_sam_cache = {}  # car name -> sam_paint_mask.embed() result (encode a photo once, decode per click)
+
+def _sam_get_session():
+    global _sam_session
+    if _sam_session is None:
+        from rembg import new_session
+        _sam_session = new_session("sam")
+    return _sam_session
+
+def _sam_embed(car):
+    if car not in _sam_cache:
+        from PIL import Image
+        import sam_paint_mask as spm
+        photo = Image.open(config.car_sources(car) / "hero.jpg").convert("RGB")
+        _sam_cache[car] = spm.embed(_sam_get_session(), photo)
+    return _sam_cache[car]
+
+def _sam_contour(car, points, labels):
+    """SAM's best mask for these point prompts, as one polygon (list of [x, y]) -- the largest contour,
+    simplified. None if the mask came back empty."""
+    from skimage import measure
+    import sam_paint_mask as spm
+    mask = spm.decode(_sam_get_session(), _sam_embed(car), points, labels)
+    if not mask.any():
+        return None
+    contours = measure.find_contours(mask.astype(float), 0.5)
+    if not contours:
+        return None
+    best = max(contours, key=len)
+    simplified = measure.approximate_polygon(best, tolerance=1.5)
+    return [[round(float(c), 1), round(float(r), 1)] for r, c in simplified]
+
 def _hero_cars():
     for d in sorted(p for p in config.CARS_DIR.iterdir() if (p / "car.json").exists()):
         meta = json.loads((d / "car.json").read_text(encoding="utf-8"))
@@ -251,7 +326,8 @@ class Handler(SimpleHTTPRequestHandler):
                 meta = json.loads((d / "car.json").read_text(encoding="utf-8"))
                 if meta.get("hero"):
                     cars.append({"name": d.name, "display": meta.get("display", d.name),
-                                 "photo": meta["hero"]["photo"], "mask": meta["hero"]["mask"]})
+                                 "photo": meta["hero"]["photo"], "mask": meta["hero"]["mask"],
+                                 "zones": meta["hero"].get("zones") or []})
             body = PAGE.replace("__CARS__", json.dumps(cars)).encode()
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
@@ -278,7 +354,7 @@ class Handler(SimpleHTTPRequestHandler):
                     ok = ok and r.returncode == 0
                 print(f"saved tone {cfg['tone']} for {car}", flush=True)
             return self._json({"ok": ok, "log": "\n".join(log)})
-        m = re.fullmatch(r"/api/(marks|rebuild)/([a-z0-9_-]+)", self.path)
+        m = re.fullmatch(r"/api/(marks|rebuild|sam)/([a-z0-9_-]+)", self.path)
         if not m or not (config.CARS_DIR / m.group(2) / "car.json").exists():
             return self._json({"ok": False, "log": "unknown car or endpoint"}, 404)
         action, car = m.groups()
@@ -287,6 +363,20 @@ class Handler(SimpleHTTPRequestHandler):
             (config.CARS_DIR / car / "hero_marks.json").write_text(json.dumps(data, indent=1) + "\n", encoding="utf-8")
             print(f"saved {len(data.get('marks', []))} marks for {car}", flush=True)
             return self._json({"ok": True})
+        if action == "sam":
+            data = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
+            points, labels = data.get("points") or [], data.get("labels") or []
+            if not points:
+                return self._json({"ok": False, "error": "no points"})
+            try:
+                poly = _sam_contour(car, points, labels)
+            except ImportError:
+                return self._json({"ok": False, "error": 'SAM needs: pip install "rembg[cpu]"'})
+            except Exception as e:
+                return self._json({"ok": False, "error": f"{type(e).__name__}: {e}"})
+            if poly is None:
+                return self._json({"ok": False, "error": "empty mask for these points"})
+            return self._json({"ok": True, "points": poly})
         log, ok = [], True
         for step in STEPS:
             r = subprocess.run([sys.executable, str(Path(__file__).parent / step), "--car", car], capture_output=True, text=True)
