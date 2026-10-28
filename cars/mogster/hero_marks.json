@@ -8,6 +8,14 @@
         [1130, 289], [1170, 293], [1210, 297], [1250, 300], [1290, 304], [1310, 308],
         [1250, 308], [1162, 314], [1142, 316], [1100, 318], [1060, 320], [1000, 323], [915, 327]
       ]
+    },
+    {
+      "type": "paint",
+      "note": "Same roof-ridge highlight-blowout as above, continuing over the windshield frame (the other window's glass polygon was retraced in the same pass, but this strip above it needed forcing too -- same low-chroma cause).",
+      "points": [
+        [1150, 300], [1200, 296], [1260, 294], [1310, 296], [1332, 300],
+        [1332, 322], [1300, 320], [1260, 319], [1200, 320], [1150, 322]
+      ]
     }
   ]
 }
