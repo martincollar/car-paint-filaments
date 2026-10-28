@@ -108,7 +108,7 @@ function hit(p){for(var i=marks.length-1;i>=0;i--){var m=marks[i];
   else if(inPoly(p,m.points))return i}return -1}
 function select(i){sel=i;list();draw();var e=document.querySelector('#list .sel');if(e)e.scrollIntoView({block:'nearest'})}
 function removeSel(){if(sel<0)return;marks.splice(sel,1);sel=-1;save();list();draw()}
-function color(t){return TOOLS.filter(function(x){return x[0]===t})[0][2]}
+function color(t){var m=TOOLS.filter(function(x){return x[0]===t})[0];return m?m[2]:'#8e8e93'}
 function load(c){car=c;document.querySelectorAll('#cars button').forEach(function(b){b.classList.toggle('on',b.dataset.car===c.name)});
  TOOLS=toolsFor(c);renderTools();
  marks=[];sel=-1;T=Date.now();$('ph').src=c.name+'/'+c.photo+'?t='+T;$('mk').src=c.name+'/'+c.mask+'?t='+T;
