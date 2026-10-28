@@ -8,6 +8,8 @@ drag a box (B) or drag a loop (L) around it; the marks are saved at once to
 cars/<car>/hero_marks.json (polygons in pixels of hero.jpg) and merged by make_hero_assets.py:
   never       must not be repainted          paint       must be repainted (body)     roof   must be repainted (roof)
   neutralise  old paint colour is left here  keep        must keep its colour (e.g. turn-signal lens)
+A car's other hero.zones (Doppler's "lower", Torq Summer Pack's "stripe", ...) each get their own button too,
+built from that car's zones list, with the zone's own id as the mark type and its own keyboard shortcut.
 /calibrate: all cars side by side in the same colours, per-car lightness / contrast sliders, saved as "tone" in hero_assets.json.
 "Rebuild" runs make_hero_assets + prepare_hero + build_html for that car, then reloads the images.
 The mask is shown as stored: R channel = body paint, G channel = roof paint.
@@ -52,14 +54,31 @@ button.t{border-width:2px}button.t.on{color:#000;font-weight:600}
 <div id="side"><b>Marks</b> <span id="cnt"></span><div id="list"></div><div id="log"></div></div></div>
 <script>
 var CARS=__CARS__;
-var TOOLS=[['never','N','#ff3b30','must NOT be repainted'],['paint','P','#34c759','must be repainted (body)'],
- ['roof','R','#00c7be','must be repainted (roof)'],['neutralise','O','#ff9500','old colour left here'],['keep','K','#0a84ff','keep its colour']];
+var USED_KEYS=['W','B','L','S']; // shape-tool shortcuts; mark-tool keys must not collide
+var ZONE_PALETTE=['#ff2d55','#5e5ce6','#ffd60a','#bf5af2','#ff9f0a','#30d158'];
+function toolsFor(c){
+ var t=[['never','N','#ff3b30','must NOT be repainted'],['paint','P','#34c759','must be repainted (body)']],used=USED_KEYS.concat(['N','P','R','O','K']);
+ var zones=c.zones||[],roofZone=zones.filter(function(z){return (z.channels||[]).indexOf(1)>=0})[0];
+ t.push(['roof','R','#00c7be','must be repainted ('+(roofZone?roofZone.label.toLowerCase():'roof')+')']);
+ // extra zones: anything not on channel 0 (body, already "paint") or channel 1 (already "roof")
+ zones.filter(function(z){var ch=z.channels||[];return ch.indexOf(0)<0&&ch.indexOf(1)<0}).forEach(function(z,i){
+  var key=null;for(var j=0;j<z.id.length;j++){var c2=z.id[j].toUpperCase();if(c2>='A'&&c2<='Z'&&used.indexOf(c2)<0){key=c2;break}}
+  if(!key)for(var n=1;n<10;n++)if(used.indexOf(''+n)<0){key=''+n;break}
+  used.push(key);t.push([z.id,key,ZONE_PALETTE[i%ZONE_PALETTE.length],'must be repainted ('+z.label.toLowerCase()+')'])});
+ t.push(['neutralise','O','#ff9500','old colour left here']);
+ t.push(['keep','K','#0a84ff','keep its colour']);
+ return t}
+var TOOLS=toolsFor(CARS[0]);
 var keepView=false, shape='wand', tol=30, orig=null, car=CARS[0], marks=[], mmode='outline', view='ov', zoom=1, nw=1, nh=1, tool='never', cur=null, sel=-1, panning=false, T=Date.now(), saveT=null;
 var $=function(i){return document.getElementById(i)}, cv=$('cv'), ctx=cv.getContext('2d'), vp=$('vp'), stage=$('stage');
 function status(t){$('st').textContent=t}
 CARS.forEach(function(c){var b=document.createElement('button');b.textContent=c.display;b.dataset.car=c.name;b.onclick=function(){load(c)};$('cars').appendChild(b)});
-TOOLS.forEach(function(t){var b=document.createElement('button');b.className='t';b.textContent=t[1]+' '+t[3];b.dataset.t=t[0];b.style.borderColor=t[2];
- b.onclick=function(){tool=t[0];tools()};$('tools').appendChild(b)});
+function renderTools(){$('tools').querySelectorAll('button').forEach(function(b){b.remove()});
+ TOOLS.forEach(function(t){var b=document.createElement('button');b.className='t';b.textContent=t[1]+' '+t[3];b.dataset.t=t[0];b.style.borderColor=t[2];
+  b.onclick=function(){tool=t[0];tools()};$('tools').appendChild(b)});
+ if(!TOOLS.filter(function(t){return t[0]===tool})[0])tool='never';
+ tools()}
+renderTools();
 function tools(){document.querySelectorAll('#tools button').forEach(function(b){var t=TOOLS.filter(function(x){return x[0]===b.dataset.t})[0];
  b.classList.toggle('on',b.dataset.t===tool);b.style.background=b.dataset.t===tool?t[2]:''})}
 function shapes(){cv.style.cursor=shape==='sel'?'pointer':'crosshair';document.querySelectorAll('[data-s]').forEach(function(b){b.classList.toggle('on',b.dataset.s===shape)})}
@@ -88,6 +107,7 @@ function select(i){sel=i;list();draw();var e=document.querySelector('#list .sel'
 function removeSel(){if(sel<0)return;marks.splice(sel,1);sel=-1;save();list();draw()}
 function color(t){return TOOLS.filter(function(x){return x[0]===t})[0][2]}
 function load(c){car=c;document.querySelectorAll('#cars button').forEach(function(b){b.classList.toggle('on',b.dataset.car===c.name)});
+ TOOLS=toolsFor(c);renderTools();
  marks=[];sel=-1;T=Date.now();$('ph').src=c.name+'/'+c.photo+'?t='+T;$('mk').src=c.name+'/'+c.mask+'?t='+T;
  orig=null;var oi=new Image();oi.onload=function(){var c=document.createElement('canvas');c.width=oi.naturalWidth;c.height=oi.naturalHeight;c.getContext('2d').drawImage(oi,0,0);orig=c.getContext('2d').getImageData(0,0,c.width,c.height);regions()};oi.src=c.name+'/sources/hero.jpg?t='+T;
  $('ph').onload=function(){nw=this.naturalWidth;nh=this.naturalHeight;if(keepView)keepView=false;else fit()};
@@ -251,7 +271,8 @@ class Handler(SimpleHTTPRequestHandler):
                 meta = json.loads((d / "car.json").read_text(encoding="utf-8"))
                 if meta.get("hero"):
                     cars.append({"name": d.name, "display": meta.get("display", d.name),
-                                 "photo": meta["hero"]["photo"], "mask": meta["hero"]["mask"]})
+                                 "photo": meta["hero"]["photo"], "mask": meta["hero"]["mask"],
+                                 "zones": meta["hero"].get("zones") or []})
             body = PAGE.replace("__CARS__", json.dumps(cars)).encode()
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
