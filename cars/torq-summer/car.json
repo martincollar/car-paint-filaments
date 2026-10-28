@@ -25,8 +25,8 @@
   ],
   "publish": true,
   "index": {
-    "color": "#233764",
-    "order": 180,
+    "color": "#4D7B22",
+    "order": 10,
     "exclude": ["white"],
     "buy_url": "https://3dsets.com/product/model-19-torq-summer-pack/?add-to-cart=70783"
   }
