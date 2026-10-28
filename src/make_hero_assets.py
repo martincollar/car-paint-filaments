@@ -28,11 +28,13 @@ re-download of the same picture):
                 roof part of the alpha goes to the mask's G channel instead of R. Only a hint: its largest blob is
                 kept and grown by `roof_grow` px (default 6, must stay below the chrome gap
                 to the body); `roof_extra` (shapes dict) adds parts the outline misses, e.g. the tip
-  zones         optional extra paint areas of the car beyond body (R) and roof (G): {"<id>": {"channel": 2,
-                "shape": <shapes dict>}}. The part of the body alpha inside the shape moves to that mask channel
-                (B for channel 2), so the page can colour that area on its own (Doppler: "lower" = the body below the
-                chrome line). Slots shown on the page come from `hero.zones` in car.json. Marks of that id
-                (review_hero.py) force an area into the zone.
+  zones         optional extra paint areas of the car beyond body (R): {"<id>": {"channel": 2, "shape": <shapes dict>}}.
+                The part of the body alpha inside the shape moves to that mask channel (B for channel 2), so the page
+                can colour that area on its own (Doppler: "lower" = the body below the chrome line). Channel 1 (G) is
+                normally `roof_shape`'s, but a car with no `roof_shape` can give a zone `"channel": 1` instead (Torq
+                Summer Pack: "interior" = the seats, achromatic like the roof would be, so it needs `hero_marks.json`
+                marks to force it -- the chroma-based hint alone won't find a white area). Slots shown on the page
+                come from `hero.zones` in car.json. Marks of that id (review_hero.py) force an area into the zone.
   grow          px (ref scale) around the existing mask in which "keep" mode neutralises (default 10), or
                 "all" for the whole photo (right when nothing but paint and glass tint has that hue)
   keep_color    rects that stay in their colour (turn-signal lenses)
@@ -196,7 +198,8 @@ def main():
             body_a = body_a * (1 - hint) * (1 - forced)
             out[..., z["channel"]] = (zone_a * 255).astype("uint8")
         out[..., 0] = (body_a * 255).astype("uint8")
-        out[..., 1] = (roof_a * 255).astype("uint8")
+        if not any(z["channel"] == 1 for z in zones.values()):
+            out[..., 1] = (roof_a * 255).astype("uint8")
         Image.fromarray(out).save(src_dir / "hero_mask.png")
         print(f"[{args.car}] body mask from chroma → hero_mask.png")
         if cfg.get("lift"):

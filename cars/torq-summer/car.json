@@ -11,6 +11,7 @@
     "mask": "sources/hero_mask.png",
     "zones": [
       {"id": "body", "label": "Body", "channels": [0]},
+      {"id": "interior", "label": "Interior", "channels": [1]},
       {"id": "stripe", "label": "Billboard stripe", "channels": [2]}
     ],
     "credit": "3D Sets Model 19 Torq Summer Pack",

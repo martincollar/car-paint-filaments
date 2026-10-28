@@ -59,7 +59,10 @@ var ZONE_PALETTE=['#ff2d55','#5e5ce6','#ffd60a','#bf5af2','#ff9f0a','#30d158'];
 function toolsFor(c){
  var t=[['never','N','#ff3b30','must NOT be repainted'],['paint','P','#34c759','must be repainted (body)']],used=USED_KEYS.concat(['N','P','R','O','K']);
  var zones=c.zones||[],roofZone=zones.filter(function(z){return (z.channels||[]).indexOf(1)>=0})[0];
- t.push(['roof','R','#00c7be','must be repainted ('+(roofZone?roofZone.label.toLowerCase():'roof')+')']);
+ // a modern zone can reuse channel 1 under its own id (e.g. an "interior" zone on a car with no roof); only the
+ // legacy id "roof" (or no zone at all there) keeps the mark type "roof"
+ var ch1Type=(roofZone&&roofZone.id!=='roof')?roofZone.id:'roof';
+ t.push([ch1Type,'R','#00c7be','must be repainted ('+(roofZone?roofZone.label.toLowerCase():'roof')+')']);
  // extra zones: anything not on channel 0 (body, already "paint") or channel 1 (already "roof")
  zones.filter(function(z){var ch=z.channels||[];return ch.indexOf(0)<0&&ch.indexOf(1)<0}).forEach(function(z,i){
   var key=null;for(var j=0;j<z.id.length;j++){var c2=z.id[j].toUpperCase();if(c2>='A'&&c2<='Z'&&used.indexOf(c2)<0){key=c2;break}}
