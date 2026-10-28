@@ -12,7 +12,7 @@
     "roof": "#FFFFFF",
     "zones": [
       {"id": "body", "label": "Body", "channels": [0]},
-      {"id": "stripe", "label": "Billboard stripe", "channels": [2], "fixed": true}
+      {"id": "stripe", "label": "Billboard stripe", "channels": [1], "fixed": true}
     ],
     "credit": "3D Sets Model 19 Torq Summer Pack",
     "credit_url": "https://3dsets.com/product/model-19-torq-summer-pack/"
