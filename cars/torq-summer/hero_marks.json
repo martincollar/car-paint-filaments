@@ -1943,15 +1943,6 @@
    ],
    "tol": 30,
    "note": ""
-  },
-  {
-   "type": "interior",
-   "note": "seat (headrest + cushion); re-added after the clean-slate marking pass dropped it, same polygon validated earlier",
-   "points": [
-    [588, 555], [600, 525], [625, 505], [655, 498], [680, 505], [698, 525], [700, 555],
-    [730, 565], [745, 585], [760, 595], [793, 602], [793, 612],
-    [755, 610], [700, 612], [650, 615], [600, 608], [588, 590]
-   ]
   }
  ]
 }
