@@ -1653,6 +1653,296 @@
    ],
    "tol": 30,
    "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    731,
+    624
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    619,
+    612
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    683,
+    617
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    737,
+    620
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    769,
+    620
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    857,
+    619
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    903,
+    616
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    950,
+    613
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    904,
+    624
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1230,
+    599
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1171,
+    598
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1049,
+    601
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    910,
+    642
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1110,
+    617
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1160,
+    601
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    929,
+    634
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1177,
+    650
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1185,
+    614
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1499,
+    763
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1464,
+    751
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1493,
+    825
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    899,
+    635
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    862,
+    655
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    736,
+    687
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    880,
+    836
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    944,
+    813
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    600,
+    853
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    973,
+    872
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    255,
+    803
+   ],
+   "tol": 30,
+   "note": ""
   }
  ]
 }
