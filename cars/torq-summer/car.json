@@ -23,5 +23,10 @@
     "Factory stripe colour was white or black only; no exact per-bodycolour chart survives as text, only scanned option-book images -- the body/stripe pairing here (True Blue body, white stripe) follows the documented general rule (dark body -> white tape), not a verified specific chart.",
     "TODO: an interior/seat zone (channel 1) was tried and pulled back out -- the seat's pale colour against the white backdrop didn't segment cleanly (neither the chroma hint nor a quick SAM attempt gave a clean boundary without bleeding into the background), and the hand-traced polygon that stood in for it was rough. Revisit with a proper multi-point SAM pass (several positive points along the headrest and cushion, tight negatives on the background and windshield frame) before re-adding it."
   ],
-  "publish": false
+  "publish": true,
+  "index": {
+    "color": "#233764",
+    "order": 180,
+    "buy_url": "https://3dsets.com/product/model-19-torq-summer-pack/?add-to-cart=70783"
+  }
 }
