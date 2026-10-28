@@ -191,8 +191,10 @@ def main():
         out = np.zeros(a.shape + (3,), "uint8")
         for zid, z in zones.items():
             # an extra zone takes its share of the body alpha (the shape is only a hint, soft edge), marks of that id force it;
-            # what it takes is removed from the body channel, so a pixel is never half body, half zone
-            hint = shape_mask(src.size, z.get("shape"), k, 1.2)
+            # what it takes is removed from the body channel, so a pixel is never half body, half zone. A "paint" mark
+            # wins over the hint (same as it already wins over the legacy roof split above), so hand-correcting a spot
+            # the zone's shape over-reached into can hand it back to body.
+            hint = shape_mask(src.size, z.get("shape"), k, 1.2) * (1 - marks["paint"])
             forced = marks[zid] * (1 - marks["keep"]) * (1 - marks["never"])
             zone_a = np.maximum(body_a * hint, forced)
             body_a = body_a * (1 - hint) * (1 - forced)
