@@ -1,14 +1,474 @@
 {
-  "marks": [
-    {
-      "type": "stripe",
-      "points": [
-        [95, 600], [120, 588], [150, 583], [200, 575], [300, 582], [400, 576], [450, 581],
-        [500, 594], [550, 613], [600, 629], [625, 645], [635, 655],
-        [630, 700],
-        [600, 770], [550, 785], [500, 795], [460, 780], [430, 705], [400, 710], [350, 700],
-        [300, 690], [250, 690], [200, 695], [150, 705], [120, 690], [95, 670]
-      ]
-    }
-  ]
+ "marks": [
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1209,
+    607
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1121,
+    602
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    999,
+    605
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    933,
+    618
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    917,
+    613
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    881,
+    621
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    796,
+    620
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    623,
+    613
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    723,
+    618
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    611,
+    615
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    650,
+    642
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    918,
+    651
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    577,
+    634
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    560,
+    623
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    517,
+    609
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    417,
+    581
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    423,
+    571
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    552,
+    606
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    496,
+    589
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    313,
+    576
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    383,
+    573
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    350,
+    575
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    250,
+    582
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    285,
+    579
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    128,
+    615
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    117,
+    644
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    245,
+    791
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    465,
+    824
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    470,
+    838
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    683,
+    719
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1346,
+    748
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1750,
+    658
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1657,
+    639
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1602,
+    630
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1701,
+    808
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1708,
+    816
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1654,
+    843
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1485,
+    821
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1474,
+    824
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1043,
+    636
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1176,
+    638
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1184,
+    614
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1114,
+    610
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1083,
+    608
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "paint",
+   "shape": "wand",
+   "seed": [
+    1251,
+    608
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "stripe",
+   "shape": "wand",
+   "seed": [
+    615,
+    663
+   ],
+   "tol": 30,
+   "note": ""
+  },
+  {
+   "type": "stripe",
+   "shape": "wand",
+   "seed": [
+    634,
+    667
+   ],
+   "tol": 30,
+   "note": ""
+  }
+ ]
 }
