@@ -31,9 +31,10 @@ TILE_BASE_CSS = """
 def head_card_html(theme, name, tagline, meta_html, deco_html, filters_html):
     """the detail page's header: the theme's tile look (title, ribbon, decoration) as a wide card, filters inside"""
     name_html, name_len = split_name(name)
+    tag_html = f'<p class="tile-tag">{html.escape(tagline)}</p>' if tagline else ""
     filters = f'<div class="head-filters">{filters_html}</div>' if filters_html else ""
     return (f'<header class="page-head tile tile--{html.escape(theme)} head-card">'
             f'<div class="tile-frame"></div><div class="tile-deco">{deco_html}</div>'
             f'<div class="tile-text"><h1 class="tile-name" style="--n:{name_len}">{name_html}</h1>'
-            f'<p class="tile-tag">{html.escape(tagline)}</p><p class="tile-meta">{meta_html}</p></div>'
+            f'{tag_html}<p class="tile-meta">{meta_html}</p></div>'
             f'{filters}</header>')
