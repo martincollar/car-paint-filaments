@@ -158,30 +158,23 @@ HERO_CSS = """
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
 /* Custom colour: native <input type=color>, styled only from shared vars so every theme gets it for free.
-   A single-zone car gets one swatch in the corner; a multi-zone car gets .hp-zones instead (see below) — never both. */
+   A single-zone car gets one swatch in the corner (#hp-custom); a multi-zone car gets one unlabelled swatch per
+   zone instead, in the same corner (#hp-zones, title-only tooltip for which zone) — never both at once. */
 .hero-preview .hp-custom:empty, .hero-preview .hp-zones:empty { display: none; }
-.hero-preview .hp-custom { position: absolute; top: 12px; left: 12px; width: 24px; height: 24px; display: block; }
+.hero-preview .hp-custom, .hero-preview .hp-zones { position: absolute; top: 12px; left: 12px; display: flex; gap: 4px; }
 .hero-preview .hp-custom input,
-.hero-preview .hp-zone input {
-  padding: 0; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer;
+.hero-preview .hp-zones input {
+  width: 24px; height: 24px; padding: 0; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer;
   background: var(--bg-raised); -webkit-appearance: none; appearance: none;
 }
-.hero-preview .hp-custom input { width: 100%; height: 100%; }
 .hero-preview input[type=color]::-webkit-color-swatch-wrapper { padding: 2px; }
 .hero-preview input[type=color]::-webkit-color-swatch { border: none; border-radius: 2px; }
 .hero-preview input[type=color]::-moz-color-swatch { border: none; border-radius: 2px; }
-/* One labelled picker per zone, pre-loaded with that zone's current colour (filament or custom). */
-.hero-preview .hp-zones { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
-.hero-preview .hp-zone {
-  display: flex; flex-direction: column; align-items: center; gap: 3px; text-align: center;
-  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted);
-}
-.hero-preview .hp-zone input { width: 28px; height: 28px; }
 .hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
-.hero-preview.big .hp-custom { top: 22px; left: 24px; width: 30px; height: 30px; }
-.hero-preview.big .hp-zone input { width: 34px; height: 34px; }
+.hero-preview.big .hp-custom, .hero-preview.big .hp-zones { top: 22px; left: 24px; gap: 6px; }
+.hero-preview.big .hp-custom input, .hero-preview.big .hp-zones input { width: 30px; height: 30px; }
 .hero-preview.big canvas { cursor: zoom-out; }
 .hero-preview.big .hp-credit { letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px; }
 .hero-preview.empty .hp-zoom { display: none; }
@@ -380,8 +373,8 @@ HERO_JS = """
   if (slots.length > 1) {
     document.getElementById('hp-custom').innerHTML = '';
     zonesBox.innerHTML = slots.map(function (z) {
-      return '<label class="hp-zone"><input type="color" data-zone="' + z.id + '" value="' + (z.fixed ? H.roof : '#cccccc') +
-        '" aria-label="Pick a colour for ' + z.label + '">' + z.label + '</label>';
+      return '<input type="color" data-zone="' + z.id + '" value="' + (z.fixed ? H.roof : '#cccccc') +
+        '" title="' + z.label + '" aria-label="Pick a colour for ' + z.label + '">';
     }).join('');
     slots.forEach(function (z) { zoneInputs[z.id] = zonesBox.querySelector('[data-zone="' + z.id + '"]'); });
     zonesBox.addEventListener('input', function (e) {
