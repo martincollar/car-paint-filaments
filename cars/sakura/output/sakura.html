@@ -7937,6 +7937,7 @@ article.row.combo-out { display: none; }
     if (cb) {
       var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
       if (up && lo) {
+        if (picked) { picked.classList.remove('picked'); picked = null; }   // a two-tone replaces any single filament highlight
         if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
         Z.forEach(function (z, k) {
           var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
