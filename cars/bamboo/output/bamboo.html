@@ -62040,9 +62040,10 @@ article.row.combo-out { display: none; }
   }
   function zl(id) { var z = Z.filter(function (x) { return x.id === id; })[0]; return z && z.label || id; }
   function comboSel(up, lo) {
-    return Z.map(function (z, k) {       // slots other than upper / lower (the roof) keep what they have: white until set by hand
+    return Z.map(function (z, k) {       // a zone outside the two-tone (the roof) previews at its default, matching the real click
       var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;
-      return el ? el.dataset.hex : ((sel && sel[k]) || (z.fixed ? H.roof : null));
+      if (el) return el.dataset.hex;
+      return z.fixed ? H.roof : (sel && sel[k]);
     });
   }
   // For the hover bubble of a two-tone: both filaments and the car painted with them.
@@ -62074,8 +62075,9 @@ article.row.combo-out { display: none; }
         if (picked) { picked.classList.remove('picked'); picked = null; }   // a two-tone replaces any single filament highlight
         if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
         Z.forEach(function (z, k) {
-          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
+          var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;
           if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); }
+          else if (z.fixed) { sel[k] = H.roof; picks[k] = null; }   // any zone outside the two-tone (the roof) resets to its default
         });
         last = snap(up.dataset); info.innerHTML = infoHtml(); syncZonePickers();
         box.classList.remove('closed', 'empty');
