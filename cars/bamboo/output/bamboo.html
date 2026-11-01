@@ -307,6 +307,8 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; margin-bottom: 8px; cursor: zoom-in; }
 .hero-preview canvas.swap { opacity: .55; }
 .hero-preview .hp-info:empty { display: none; }
+.hero-preview .hp-custom-slots:empty { display: none; }
+.hero-preview .hp-custom-slots { margin-bottom: 8px; }
 .hero-preview .t-link { display: inline-block; margin-bottom: 6px; }
 .hero-preview .hp-credit { margin-top: 2px; font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
@@ -61815,6 +61817,7 @@ article.row.combo-out { display: none; }
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview"></button>
   <canvas id="hero-canvas"></canvas>
+  <div class="hp-custom-slots" id="hp-custom-slots"></div>
   <div class="hp-info" id="hero-info"></div>
   <div class="hp-credit">Photo: <a href="https://3dsets.com/product/model-9-bamboo-4x4/" target="_blank" rel="noopener">3D Sets Model 9 Bamboo 4x4</a></div>
 </aside>
@@ -61931,54 +61934,66 @@ article.row.combo-out { display: none; }
     off.getContext('2d').drawImage(tmp, 0, 0, off.width, off.height);
     return (small[hex] = off.toDataURL('image/jpeg', 0.85));
   };
-  // "Put on:" buttons for the hover bubble, only for cars with more than one slot.
-  window.heroSlots = function () {
+  // "Put on:" buttons, built from the same markup wherever they're needed (the hover bubble, and the custom-colour
+  // swatch below), only for cars with more than one slot.
+  function slotButtons() {
     if (slots.length < 2) return '';
     return '<div class="t-slots"><span class="t-slots-l">Put on</span>' + slots.map(function (z) {
       return '<button type="button" class="t-slot" data-zone="' + z.id + '">' + z.label + '</button>'; }).join('') + '</div>';
-  };
-  // What the preview names: one filament block per slot (a roof only once it was set by hand), each a link to the shop;
-  // a car with a single colour shows just the filament.
+  }
+  window.heroSlots = slotButtons;
+  // A custom colour shows the same shape as a filament block (swatch + hex), just without a shop link.
+  function customBlockHtml(hex) {
+    return '<div class="filament primary"><div class="swatch mini" style="background:' + hex + '"></div>' +
+      '<div class="finfo"><div class="fname"><strong>Custom colour</strong></div></div>' +
+      '<div class="fsub"><span class="fhex">' + hex.toUpperCase() + '</span></div></div>';
+  }
+  function slotInfo(p) { return p.custom ? customBlockHtml(p.hex) : window.filInfo(p, true); }
+  // What the preview names: one filament (or custom-colour) block per slot (a roof only once it was set by hand),
+  // each a link to the shop; a car with a single colour shows just the one block.
   function infoHtml() {
-    if (slots.length < 2) return last ? window.filInfo(last, true) : '';
+    if (slots.length < 2) return last ? slotInfo(last) : '';
     return slots.map(function (z) {
-      var k = Z.indexOf(z); return picks[k] ? '<div class="hp-slotblock"><div class="t-slotname">' + z.label + '</div>' + window.filInfo(picks[k], true) + '</div>' : '';
+      var k = Z.indexOf(z); return picks[k] ? '<div class="hp-slotblock"><div class="t-slotname">' + z.label + '</div>' + slotInfo(picks[k]) + '</div>' : '';
     }).join('');
   }
   function snap(d) { var c = {}; for (var key in d) c[key] = d[key]; return c; }
-
-  var picked = null;
-  function pick(el, zid) {
-    var d = el.dataset;
+  // Same zone targeting for a plain pick, a "Put on <slot>" pick and a custom colour: no zid = every non-fixed
+  // zone (a fixed one, Doppler's roof, goes back to its own colour); a zid = only that zone, others untouched
+  // (a fixed zone included: it's only protected from a *plain* pick, not from one aimed at it by name).
+  function applyToZones(p, zid) {
     if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
     Z.forEach(function (z, k) {
       if (zid ? z.id === zid : true) {
-        if (!zid && z.fixed) { sel[k] = H.roof; picks[k] = null; } else { sel[k] = d.hex; picks[k] = snap(d); }
+        if (!zid && z.fixed) { sel[k] = H.roof; picks[k] = null; } else { sel[k] = p.hex; picks[k] = p; }
       }
     });
-    last = snap(d); info.innerHTML = infoHtml();
+    last = p; info.innerHTML = infoHtml();
+    box.classList.remove('closed', 'empty');
+    if (loaded < 2) return;
+    cv.classList.add('swap');
+    clearTimeout(repaintTimer);
+    repaintTimer = setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
+  }
+  var picked = null, repaintTimer;
+  function pick(el, zid) {
+    applyToZones(snap(el.dataset), zid);
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
-    box.classList.remove('closed', 'empty');
-    if (loaded < 2) return;
-    cv.classList.add('swap');
-    setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
-  // Custom colour: same as a plain pick (every non-fixed zone, fixed zones stay put), but there's no filament
-  // behind it, so the info line just names the hex instead of going through filInfo().
-  var customTimer;
-  function customPaint(hex) {
-    sel = allHex(hex); picks = Z.map(function () { return null; }); last = null;
+  // Custom colour: the swatch itself (no zone) paints every non-fixed zone, same as a plain filament pick; the
+  // "Put on <slot>" row that appears below it for multi-zone cars targets one zone at a time, same as a filament's.
+  var customColor = document.getElementById('hp-custom-color'), customSlots = document.getElementById('hp-custom-slots');
+  function customPaint(zid) {
     if (picked) { picked.classList.remove('picked'); picked = null; }
-    info.innerHTML = '<div class="t-row"><span class="t-sw" style="background:' + hex + '"></span>' +
-      '<span class="t-name">Custom colour — ' + hex.toUpperCase() + '</span></div>';
-    box.classList.remove('closed', 'empty');
-    if (loaded < 2) return;
-    cv.classList.add('swap');
-    clearTimeout(customTimer);
-    customTimer = setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
+    applyToZones({ custom: true, hex: customColor.value }, zid);
   }
-  document.getElementById('hp-custom-color').addEventListener('input', function () { customPaint(this.value); });
+  customColor.addEventListener('input', function () { customPaint(); });
+  if (slots.length > 1) customSlots.innerHTML = slotButtons();
+  customSlots.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('.t-slot');
+    if (b) { e.stopPropagation(); customPaint(b.dataset.zone); }
+  });
   // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
   // keeps its colour), the rows of its colours are marked and every other row is hidden.
   function bestPick(name, year) {
