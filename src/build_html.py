@@ -349,11 +349,19 @@ HERO_JS = """
     clearTimeout(repaintTimer);
     repaintTimer = setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
-  var picked = null, repaintTimer;
+  var pickedEls = null, repaintTimer;
+  // One highlighted filament row per zone (so a dual/multi-colour car keeps every zone's own filament outlined
+  // at once, not just the last one clicked): pickedEls mirrors sel/picks, index-for-index, and this is the only
+  // place that touches the .picked class.
+  function renderPicked() {
+    document.querySelectorAll('.pick.picked').forEach(function (e) { e.classList.remove('picked'); });
+    if (pickedEls) pickedEls.forEach(function (el) { if (el) el.classList.add('picked'); });
+  }
   function pick(el, zid) {
     applyToZones(snap(el.dataset), zid);
-    if (picked) picked.classList.remove('picked');
-    (picked = el).classList.add('picked');
+    if (!pickedEls) pickedEls = Z.map(function () { return null; });
+    Z.forEach(function (z, k) { if (zid ? z.id === zid : true) pickedEls[k] = (!zid && z.fixed) ? null : el; });
+    renderPicked();
   }
   // Custom colour: a single-zone car gets one swatch in the corner (#hp-custom) that paints the whole car; a
   // multi-zone car gets one labelled picker per zone instead (#hp-zones), each pre-loaded with that zone's current
@@ -367,8 +375,10 @@ HERO_JS = """
     });
   }
   function customPaint(zid, hex) {
-    if (picked) { picked.classList.remove('picked'); picked = null; }
     applyToZones({ custom: true, hex: hex }, zid);
+    if (!pickedEls) pickedEls = Z.map(function () { return null; });
+    Z.forEach(function (z, k) { if (zid ? z.id === zid : true) pickedEls[k] = null; });
+    renderPicked();
   }
   if (slots.length > 1) {
     document.getElementById('hp-custom').innerHTML = '';
@@ -436,13 +446,14 @@ HERO_JS = """
     if (cb) {
       var up = bestPick(cb.dataset.upper, cb.dataset.upperYear), lo = bestPick(cb.dataset.lower, cb.dataset.lowerYear);
       if (up && lo) {
-        if (picked) { picked.classList.remove('picked'); picked = null; }   // a two-tone replaces any single filament highlight
         if (!sel) { sel = Z.map(function (z) { return z.fixed ? H.roof : null; }); picks = Z.map(function () { return null; }); }
+        if (!pickedEls) pickedEls = Z.map(function () { return null; });
         Z.forEach(function (z, k) {
           var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;
-          if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); }
-          else if (z.fixed) { sel[k] = H.roof; picks[k] = null; }   // any zone outside the two-tone (the roof) resets to its default
+          if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); pickedEls[k] = el; }
+          else if (z.fixed) { sel[k] = H.roof; picks[k] = null; pickedEls[k] = null; }   // any zone outside the two-tone (the roof) resets to its default
         });
+        renderPicked();
         last = snap(up.dataset); info.innerHTML = infoHtml(); syncZonePickers();
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
