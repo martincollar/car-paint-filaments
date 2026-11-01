@@ -316,9 +316,19 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 }
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
+/* Custom-colour swatch: a native <input type=color>, styled only from shared vars so every theme gets it for free. */
+.hero-preview .hp-custom { position: absolute; top: 12px; left: 12px; width: 24px; height: 24px; display: block; }
+.hero-preview .hp-custom input {
+  width: 100%; height: 100%; padding: 0; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer;
+  background: var(--bg-raised); -webkit-appearance: none; appearance: none;
+}
+.hero-preview .hp-custom input::-webkit-color-swatch-wrapper { padding: 2px; }
+.hero-preview .hp-custom input::-webkit-color-swatch { border: none; border-radius: 2px; }
+.hero-preview .hp-custom input::-moz-color-swatch { border: none; border-radius: 2px; }
 .hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
+.hero-preview.big .hp-custom { top: 22px; left: 24px; width: 30px; height: 30px; }
 .hero-preview.big canvas { cursor: zoom-out; }
 .hero-preview.big .hp-credit { letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px; }
 .hero-preview.empty .hp-zoom { display: none; }
@@ -12170,6 +12180,9 @@ article.row.combo-out { display: none; }
 </script>
 
 <aside class="hero-preview empty" id="hero-preview" aria-label="Recolored car preview">
+  <label class="hp-custom" title="Pick any colour for the preview">
+    <input type="color" id="hp-custom-color" aria-label="Pick a custom colour for the preview">
+  </label>
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview"></button>
   <canvas id="hero-canvas"></canvas>
@@ -12322,6 +12335,21 @@ article.row.combo-out { display: none; }
     cv.classList.add('swap');
     setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
   }
+  // Custom colour: same as a plain pick (every non-fixed zone, fixed zones stay put), but there's no filament
+  // behind it, so the info line just names the hex instead of going through filInfo().
+  var customTimer;
+  function customPaint(hex) {
+    sel = allHex(hex); picks = Z.map(function () { return null; }); last = null;
+    if (picked) { picked.classList.remove('picked'); picked = null; }
+    info.innerHTML = '<div class="t-row"><span class="t-sw" style="background:' + hex + '"></span>' +
+      '<span class="t-name">Custom colour — ' + hex.toUpperCase() + '</span></div>';
+    box.classList.remove('closed', 'empty');
+    if (loaded < 2) return;
+    cv.classList.add('swap');
+    clearTimeout(customTimer);
+    customTimer = setTimeout(function () { paint(sel); cv.classList.remove('swap'); }, 60);
+  }
+  document.getElementById('hp-custom-color').addEventListener('input', function () { customPaint(this.value); });
   // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
   // keeps its colour), the rows of its colours are marked and every other row is hidden.
   function bestPick(name, year) {
