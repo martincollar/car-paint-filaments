@@ -307,8 +307,6 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 .hero-preview canvas { display: block; width: 100%; height: auto; background: #f8f8f8; transition: opacity .15s; margin-bottom: 8px; cursor: zoom-in; }
 .hero-preview canvas.swap { opacity: .55; }
 .hero-preview .hp-info:empty { display: none; }
-.hero-preview .hp-custom-slots:empty { display: none; }
-.hero-preview .hp-custom-slots { margin-bottom: 8px; }
 .hero-preview .t-link { display: inline-block; margin-bottom: 6px; }
 .hero-preview .hp-credit { margin-top: 2px; font-family: var(--font-mono); font-size: 0.62rem; color: var(--muted); }
 .hero-preview .hp-credit a { color: var(--muted); }
@@ -318,19 +316,31 @@ div.filament.primary .fsub { grid-column: 2; grid-row: 2; margin-top: 3px; }
 }
 .hero-preview .hp-close { right: 12px; }
 .hero-preview .hp-zoom  { right: 42px; }
-/* Custom-colour swatch: a native <input type=color>, styled only from shared vars so every theme gets it for free. */
+/* Custom colour: native <input type=color>, styled only from shared vars so every theme gets it for free.
+   A single-zone car gets one swatch in the corner; a multi-zone car gets .hp-zones instead (see below) — never both. */
+.hero-preview .hp-custom:empty, .hero-preview .hp-zones:empty { display: none; }
 .hero-preview .hp-custom { position: absolute; top: 12px; left: 12px; width: 24px; height: 24px; display: block; }
-.hero-preview .hp-custom input {
-  width: 100%; height: 100%; padding: 0; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer;
+.hero-preview .hp-custom input,
+.hero-preview .hp-zone input {
+  padding: 0; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer;
   background: var(--bg-raised); -webkit-appearance: none; appearance: none;
 }
-.hero-preview .hp-custom input::-webkit-color-swatch-wrapper { padding: 2px; }
-.hero-preview .hp-custom input::-webkit-color-swatch { border: none; border-radius: 2px; }
-.hero-preview .hp-custom input::-moz-color-swatch { border: none; border-radius: 2px; }
+.hero-preview .hp-custom input { width: 100%; height: 100%; }
+.hero-preview input[type=color]::-webkit-color-swatch-wrapper { padding: 2px; }
+.hero-preview input[type=color]::-webkit-color-swatch { border: none; border-radius: 2px; }
+.hero-preview input[type=color]::-moz-color-swatch { border: none; border-radius: 2px; }
+/* One labelled picker per zone, pre-loaded with that zone's current colour (filament or custom). */
+.hero-preview .hp-zones { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+.hero-preview .hp-zone {
+  display: flex; flex-direction: column; align-items: center; gap: 3px; text-align: center;
+  font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted);
+}
+.hero-preview .hp-zone input { width: 28px; height: 28px; }
 .hero-preview.big { width: min(900px, calc(100vw - 24px), calc((100vh - 290px) * 1.5625)); right: 50%; bottom: 50%; transform: translate(50%, 50%); padding: 14px 16px 10px; }
 .hero-preview.big .hp-close, .hero-preview.big .hp-zoom { top: 22px; width: 30px; height: 30px; }
 .hero-preview.big .hp-close { right: 24px; } .hero-preview.big .hp-zoom { right: 62px; }
 .hero-preview.big .hp-custom { top: 22px; left: 24px; width: 30px; height: 30px; }
+.hero-preview.big .hp-zone input { width: 34px; height: 34px; }
 .hero-preview.big canvas { cursor: zoom-out; }
 .hero-preview.big .hp-credit { letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4px; }
 .hero-preview.empty .hp-zoom { display: none; }
@@ -7677,13 +7687,13 @@ article.row.combo-out { display: none; }
 </script>
 
 <aside class="hero-preview empty" id="hero-preview" aria-label="Recolored car preview">
-  <label class="hp-custom" title="Pick any colour for the preview">
+  <label class="hp-custom" id="hp-custom" title="Pick any colour for the preview">
     <input type="color" id="hp-custom-color" aria-label="Pick a custom colour for the preview">
   </label>
   <button class="hp-close" type="button" title="Hide preview" aria-label="Hide preview"></button>
   <button class="hp-zoom" type="button" title="Enlarge" aria-label="Enlarge preview"></button>
   <canvas id="hero-canvas"></canvas>
-  <div class="hp-custom-slots" id="hp-custom-slots"></div>
+  <div class="hp-zones" id="hp-zones"></div>
   <div class="hp-info" id="hero-info"></div>
   <div class="hp-credit">Photo: <a href="https://3dsets.com/product/model-17-sakura-240/" target="_blank" rel="noopener">3D Sets Model 17 Sakura 240</a></div>
 </aside>
@@ -7834,7 +7844,7 @@ article.row.combo-out { display: none; }
         if (!zid && z.fixed) { sel[k] = H.roof; picks[k] = null; } else { sel[k] = p.hex; picks[k] = p; }
       }
     });
-    last = p; info.innerHTML = infoHtml();
+    last = p; info.innerHTML = infoHtml(); syncZonePickers();
     box.classList.remove('closed', 'empty');
     if (loaded < 2) return;
     cv.classList.add('swap');
@@ -7847,19 +7857,35 @@ article.row.combo-out { display: none; }
     if (picked) picked.classList.remove('picked');
     (picked = el).classList.add('picked');
   }
-  // Custom colour: the swatch itself (no zone) paints every non-fixed zone, same as a plain filament pick; the
-  // "Put on <slot>" row that appears below it for multi-zone cars targets one zone at a time, same as a filament's.
-  var customColor = document.getElementById('hp-custom-color'), customSlots = document.getElementById('hp-custom-slots');
-  function customPaint(zid) {
-    if (picked) { picked.classList.remove('picked'); picked = null; }
-    applyToZones({ custom: true, hex: customColor.value }, zid);
+  // Custom colour: a single-zone car gets one swatch in the corner (#hp-custom) that paints the whole car; a
+  // multi-zone car gets one labelled picker per zone instead (#hp-zones), each pre-loaded with that zone's current
+  // colour (filament or custom) and kept in sync by syncZonePickers() whenever anything repaints a zone.
+  var zoneInputs = {}, zonesBox = document.getElementById('hp-zones');
+  function syncZonePickers() {
+    if (!sel) return;
+    slots.forEach(function (z) {
+      var inp = zoneInputs[z.id], v = sel[Z.indexOf(z)];
+      if (inp && v) inp.value = v;
+    });
   }
-  customColor.addEventListener('input', function () { customPaint(); });
-  if (slots.length > 1) customSlots.innerHTML = slotButtons();
-  customSlots.addEventListener('click', function (e) {
-    var b = e.target.closest && e.target.closest('.t-slot');
-    if (b) { e.stopPropagation(); customPaint(b.dataset.zone); }
-  });
+  function customPaint(zid, hex) {
+    if (picked) { picked.classList.remove('picked'); picked = null; }
+    applyToZones({ custom: true, hex: hex }, zid);
+  }
+  if (slots.length > 1) {
+    document.getElementById('hp-custom').innerHTML = '';
+    zonesBox.innerHTML = slots.map(function (z) {
+      return '<label class="hp-zone"><input type="color" data-zone="' + z.id + '" value="' + (z.fixed ? H.roof : '#cccccc') +
+        '" aria-label="Pick a colour for ' + z.label + '">' + z.label + '</label>';
+    }).join('');
+    slots.forEach(function (z) { zoneInputs[z.id] = zonesBox.querySelector('[data-zone="' + z.id + '"]'); });
+    zonesBox.addEventListener('input', function (e) {
+      var inp = e.target.closest && e.target.closest('input[type=color]');
+      if (inp) customPaint(inp.dataset.zone, inp.value);
+    });
+  } else {
+    document.getElementById('hp-custom-color').addEventListener('input', function () { customPaint(null, this.value); });
+  }
   // A factory combination: the best PLA filament of each of its two colours goes to the upper and lower slot (the roof
   // keeps its colour), the rows of its colours are marked and every other row is hidden.
   function bestPick(name, year) {
@@ -7916,7 +7942,7 @@ article.row.combo-out { display: none; }
           var el = z.id === 'upper' ? up : z.id === 'lower' ? lo : null;       // the roof stays as it is
           if (el) { sel[k] = el.dataset.hex; picks[k] = snap(el.dataset); }
         });
-        last = snap(up.dataset); info.innerHTML = infoHtml();
+        last = snap(up.dataset); info.innerHTML = infoHtml(); syncZonePickers();
         box.classList.remove('closed', 'empty');
         if (loaded >= 2) paint(sel);
       }
