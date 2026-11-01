@@ -31320,7 +31320,17 @@ article.row.combo-out { display: none; }
   function place(r) {
     var w = tip.offsetWidth, h = tip.offsetHeight, x = Math.min(Math.max(8, r.left), innerWidth - w - 8),
         y = r.bottom + 6;
-    if (y + h > innerHeight - 8) { y = r.top - h - 6; if (y < 8) y = Math.max(8, innerHeight - h - 8); }
+    if (y + h > innerHeight - 8) {
+      var yAbove = r.top - h - 6;
+      if (yAbove >= 8) {
+        y = yAbove;
+      } else {                               // fits neither below nor above: try beside it rather than covering it
+        var yBeside = Math.min(Math.max(8, r.top), innerHeight - h - 8);
+        if (r.right + 6 + w <= innerWidth - 8) { x = r.right + 6; y = yBeside; }
+        else if (r.left - 6 - w >= 8) { x = r.left - 6 - w; y = yBeside; }
+        else { y = Math.max(8, innerHeight - h - 8); }   // last resort: tip taller than the viewport
+      }
+    }
     tip.style.left = x + 'px'; tip.style.top = y + 'px';
     tip.querySelectorAll('img').forEach(function (i) { if (!i.complete) i.onload = function () { place(r); }; });   // the photo changes the height
   }
